@@ -1,0 +1,55 @@
+name: Update CHANGELOG.md
+
+on:
+  push:
+    tags:
+      - '*'
+    branches:
+      - 'main'
+  workflow_dispatch:
+
+jobs:
+  changelog:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GIT_BOT_TOKEN }}
+          fetch-depth: 0
+
+      - name: Generate a changelog
+        uses: orhun/git-cliff-action@v3
+        with:
+          config: cliff.toml
+          args: --verbose
+        env:
+          OUTPUT: CHANGELOG.md
+
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v2
+        with:
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GIT_ACTIONS_GPG_KEY }}
+
+      - name: Commit and push changes
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            COMMIT_AUTHOR=$(git log -1 --pretty=%an)
+            if [[ "$COMMIT_AUTHOR" != "HeCodes2Much-Bot" ]]; then
+              git config --global user.name ${{ secrets.GIT_NAME }}
+              git config --global user.email ${{ secrets.GIT_EMAIL }}
+          
+              git add -A
+              git commit -m "chore(changelog): Update CHANGELOG.md"
+              git push origin main
+            else
+              echo "WARNING: $COMMIT_AUTHOR last committed."
+            fi
+          else
+            echo "WARNING: No changes were detected."
+          fi
+        shell: bash

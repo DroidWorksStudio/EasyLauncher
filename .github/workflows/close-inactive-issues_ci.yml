@@ -1,0 +1,31 @@
+name: Close Inactive Issues & Pull Requests
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  close-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v5
+        with:
+          days-before-issue-stale: 30
+          days-before-issue-close: 14
+          stale-issue-label: "Status: Stale"
+          stale-issue-message: "This issue is stale because it has been open for 30 days with no activity."
+          close-issue-message: "This issue was closed because it has been inactive for 14 days since being marked as stale."
+          exempt-issue-labels: "Status: Help wanted, Status: Work In Progress, Status: Waiting For a Response, Status: Todo"
+          days-before-pr-stale: 90
+          days-before-pr-close: 30
+          close-issue-reason: "not_planned"
+          stale-pr-label: "Status: Stale"
+          close-pr-label: "Status: Stale"
+          stale-pr-message: "This pull request is stale because it has been open for 30 days with no activity."
+          close-pr-message: "This pull request was closed because it has been inactive for 14 days since being marked as stale."
+          exempt-pr-labels: "Status: Help wanted, Status: Work In Progress, Status: Waiting For a Response, Status: Todo"
+          repo-token: ${{ secrets.GIT_BOT_TOKEN }}

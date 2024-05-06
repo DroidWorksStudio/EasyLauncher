@@ -1,0 +1,60 @@
+# Builds the project
+name: Android Release CI
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    name: Build, Sign & Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GIT_BOT_TOKEN }}
+
+      - name: set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build
+        run: ./gradlew clean && ./gradlew assembleRelease
+
+      - name: Sign APK
+        uses: ilharp/sign-android-release@v1
+        # ID used to access action output
+        id: sign_app
+        with:
+          releaseDir: app/build/outputs/apk/release
+          signingKey: ${{ secrets.SIGNINGKEY_BASE64 }}
+          keyAlias: ${{ secrets.KEY_ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          buildToolsVersion: 33.0.0
+
+      - name: Release to GitHub
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GIT_BOT_TOKEN }}
+          file: ${{steps.sign_app.outputs.signedFile}}
+          asset_name: mLauncher-${{ github.ref_name }}-Signed.apk
+          tag: ${{ github.ref }}
+          overwrite: true

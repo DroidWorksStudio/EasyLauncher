@@ -1,0 +1,194 @@
+<resources>
+	<string name="app_name">
+		Easy Launcher
+	</string>
+	<string name="action_settings">
+		Settings
+	</string>
+	<string name="action_settings_default">
+		Set as default launcher
+	</string>
+	<!-- Strings used for fragments for navigation -->
+	<string name="home_fragment_label">
+		Home Fragment
+	</string>
+	<string name="draw_fragment_label">
+		Draw Fragment
+	</string>
+	<string name="battery_level">
+		%s%%
+	</string>
+	<string name="bottom_dialog_app_rename">
+		Rename
+	</string>
+	<string name="bottom_dialog_add_to_home">
+		Add to Home Screen
+	</string>
+	<string name="bottom_dialog_order_home_apps">
+		Order Home Apps
+	</string>
+	<string name="bottom_dialog_remove_from_home">
+		Remove from Home Screen
+	</string>
+	<string name="bottom_dialog_add_to_hidden">
+		Hidden App
+	</string>
+	<string name="bottom_dialog_remove_to_hidden">
+		Remove Hidden App
+	</string>
+	<string name="bottom_dialog_add_to_lock">
+		Lock App
+	</string>
+	<string name="bottom_dialog_remove_to_unlock">
+		Unlock App
+	</string>
+	<string name="bottom_dialog_app_info">
+		App Info
+	</string>
+	<string name="bottom_dialog_app_uninstall">
+		Uninstall App
+	</string>
+	<string name="settings_name">
+		Launcher Settings
+	</string>
+	<string name="settings_home">
+		Home
+	</string>
+	<string name="settings_title_home_display_preferences">
+		Display Preferences
+	</string>
+	<string name="settings_title_home_style">
+		Home Style
+	</string>
+	<string name="settings_title_date_style">
+		Date Style
+	</string>
+	<string name="settings_title_time_style">
+		Time Style
+	</string>
+	<string name="settings_title_app_manager">
+		App Manage
+	</string>
+	<string name="settings_title_gestures">
+		Gestures
+	</string>
+	<string name="settings_title_more">
+		More
+	</string>
+	<string name="settings_appearance_statue_bar">
+		Show Statue Bar
+	</string>
+	<string name="settings_appearance_date">
+		Show Date
+	</string>
+	<string name="settings_appearance_time">
+		Show Time
+	</string>
+	<string name="settings_appearance_battery">
+		Show Battery
+	</string>
+	<string name="settings_appearance_daily_word">
+		Show Daily Word
+	</string>
+	<string name="settings_appearance_daily_word_default">
+		Keep Going
+	</string>
+	<string name="settings_appearance_date_color">
+		Select Date Color
+	</string>
+	<string name="settings_appearance_time_color">
+		Select Time Color
+	</string>
+	<string name="settings_appearance_battery_color">
+		Select Battery Color
+	</string>
+	<string name="settings_appearance_daily_word_color">
+		Select Daily Word Color
+	</string>
+	<string name="settings_appearance_app_display_color">
+		Select App Color
+	</string>
+	<string name="settings_appearance_wallpaper">
+		Custom Wallpaper
+	</string>
+	<string name="settings_appearance_home_date_alignment">
+		Date Alignment
+	</string>
+	<string name="settings_appearance_home_time_alignment">
+		Time Alignment
+	</string>
+	<string name="settings_appearance_home_app_alignment">
+		Home App Alignment
+	</string>
+	<string name="settings_manager_favorite">
+		Favorite Apps
+	</string>
+	<string name="settings_manager_hidden">
+		Hidden Apps
+	</string>
+	<string name="settings_double_tap_lock">
+		Double tap to lock
+	</string>
+	<string name="authentication_title">
+		Authentication
+	</string>
+	<string name="authentication_subtitle">
+		Please login to get access
+	</string>
+	<string name="authentication_cancel">
+		Authentication Cancel
+	</string>
+	<string name="authentication_succeeded">
+		Authentication Succeeded
+	</string>
+	<string name="authentication_failed">
+		Authentication Failed
+	</string>
+	<string name="authentication_error">
+		Authentication Error
+	</string>
+	<string name="bottom_alignment_star">
+		Star
+	</string>
+	<string name="bottom_alignment_center">
+		Center
+	</string>
+	<string name="bottom_alignment_end">
+		End
+	</string>
+	<string name="accessibility_settings_title">
+		Accessibility Settings
+	</string>
+	<string name="accessibility_settings_enable">
+		Enable
+	</string>
+	<string name="accessibility_settings_disable">
+		Disable
+	</string>
+	<string name="accessibility_service_desc">
+		Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission
+		is used only to turn off your screen.Our accessibility service does not collect or share any data.
+	</string>
+	<string name="receiver_name">
+		Lock - screen locker
+	</string>
+	<!-- Message displayed to the user by system during authorization -->
+	<!-- Small description inside Device Administrator Setting -->
+	<string name="receiver_desc">
+		Allows to lock the screen
+	</string>
+	<string name="admin_permission_message">
+		Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.
+	</string>
+	<string-array name="alignment_options">
+		<item>
+			Left
+		</item>
+		<item>
+			Center
+		</item>
+		<item>
+			Right
+		</item>
+	</string-array>
+</resources>

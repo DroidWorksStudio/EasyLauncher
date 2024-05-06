@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.home.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_DrawFragment"
+            app:destination="@id/DrawFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_SettingsFragment"
+            app:destination="@id/SettingsFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_FavoriteFragment"
+            app:destination="@id/FavoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DrawFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.drawer.DrawFragment"
+        android:label="@string/draw_fragment_label"
+        tools:layout="@layout/fragment_draw">
+    </fragment>
+
+</navigation>
