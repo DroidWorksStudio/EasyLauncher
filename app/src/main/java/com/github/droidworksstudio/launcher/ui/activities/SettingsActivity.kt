@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.launcher.R
@@ -22,7 +22,6 @@ class SettingsActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySettingsBinding
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var navController: NavController
 
     private val preferenceViewModel: PreferenceViewModel by viewModels()
 
@@ -38,7 +37,11 @@ class SettingsActivity : AppCompatActivity() {
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        navController = findNavController(R.id.nav_host_fragment_content_settings)
+        // Find the NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_settings) as NavHostFragment
+
+        // Retrieve the NavController
+        val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
 
         initializeDependencies()

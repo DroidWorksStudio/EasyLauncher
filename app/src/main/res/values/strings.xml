@@ -6,6 +6,7 @@
 	<string name="draw_fragment_label">Draw Fragment</string>
 
 	<string name="battery_level">%s%%</string>
+	<string name="search">Search</string>
 
 	<string name="bottom_dialog_app_rename">Rename</string>
 	<string name="bottom_dialog_add_to_home">Add to Home Screen</string>
@@ -69,7 +70,6 @@
 	<string name="settings_manager_hidden">Hidden Apps</string>
 
 	<string name="settings_double_tap_lock">Double tap to lock</string>
-
 	<string name="settings_select_wallpaper">Select Wallpaper</string>
 
 	<string name="authentication_title">Authentication</string>
@@ -94,7 +94,6 @@
 	<!-- Small description inside Device Administrator Setting -->
 	<string name="receiver_desc">Allows to lock the screen</string>
 	<string name="admin_permission_message">Aster launcher promises to use lock screen permission responsibly.Aster launcher does not collect or share any data.</string>
-	<!-- TODO: Remove or change this placeholder text -->
 	<string-array name="alignment_options">
 		<item>Left</item>
 		<item>Center</item>

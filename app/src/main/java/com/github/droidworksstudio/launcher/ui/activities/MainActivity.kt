@@ -80,9 +80,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupNavController() {
-        navController = findNavController(R.id.nav_host_fragment_content_main)
+        // Find the NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
+
+        // Retrieve the NavController
+        val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
-        //setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     private fun setupViewPagerAdapter() {

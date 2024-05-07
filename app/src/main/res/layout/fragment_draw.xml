@@ -18,21 +18,22 @@
             android:id="@+id/searchViewContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginVertical="16dp"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:orientation="horizontal"
+            tools:ignore="DuplicateClickableBoundsCheck">
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/search_view1"
+                style="@style/TextDefaultStyle"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:hint="search"
-                android:textSize="@dimen/text_super_large"
-                android:textStyle="normal"
                 android:background="@android:color/transparent"
+                android:hint="@string/search"
                 android:inputType="text"
-                style="@style/TextDefaultStyle">
+                android:textSize="@dimen/text_super_large"
+                android:textStyle="normal">
 
             </androidx.appcompat.widget.AppCompatEditText>
 
@@ -57,10 +58,12 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.FloatingActionButton"
         android:clickable="true"
+        android:focusable="true"
         app:backgroundTint="@color/search_button_background"
         android:src="?android:attr/actionModeWebSearchDrawable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="32dp" />
+        android:layout_margin="32dp"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

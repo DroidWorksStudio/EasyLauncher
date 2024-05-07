@@ -159,7 +159,6 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
         preferenceViewModel.showTimeLiveData.observe(viewLifecycleOwner) {
             Log.d("Tag", "ShowTime Home: $it")
-            //updateViewVisibility(binding.clock, showTime)
             appHelper.updateUI(binding.clock,
                 preferenceHelper.homeTimeAlignment,
                 preferenceHelper.timeColor,
@@ -172,7 +171,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             appHelper.updateUI(binding.date,
                 preferenceHelper.homeDateAlignment,
                 preferenceHelper.dateColor,
-                preferenceHelper.timeTextSize,
+                preferenceHelper.dateTextSize,
                 preferenceHelper.showDate
             )
         }
