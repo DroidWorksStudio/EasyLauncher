@@ -1,0 +1,10 @@
+.gradle
+/local.properties
+/.idea/*
+/build
+/pages
+/wiki
+/app/release
+/app/build
+/app/debug
+diff.*

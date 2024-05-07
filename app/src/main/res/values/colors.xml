@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="search_view_hint">#FFFFFFFF</color>
+    <color name="search_button_background">#56A1E6</color>
+
+    <color name="dialog_background">#333333</color>
+
+    <!-- Black -->
+    <color name="black">#000000</color>
+    <color name="blackTrans10">#1A000000</color>
+    <color name="blackTrans25">#30000000</color>
+    <color name="blackTrans50">#80000000</color>
+    <color name="blackTrans80">#CC000000</color>
+    <color name="blackTrans90">#E6000000</color>
+
+    <!-- White -->
+    <color name="white">#FFFFFF</color>
+    <color name="whiteTrans10">#1AFFFFFF</color>
+    <color name="whiteTrans25">#30FFFFFF</color>
+    <color name="whiteTrans50">#65FFFFFF</color>
+    <color name="whiteTrans80">#CCFFFFFF</color>
+    <color name="whiteTrans90">#E6FFFFFF</color>
+</resources>
