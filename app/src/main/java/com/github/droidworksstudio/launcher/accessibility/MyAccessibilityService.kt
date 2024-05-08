@@ -37,7 +37,33 @@ class MyAccessibilityService : AccessibilityService() {
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {}
 
     @RequiresApi(Build.VERSION_CODES.P)
-    fun lockScreen(): Boolean = performGlobalAction(GLOBAL_ACTION_LOCK_SCREEN)
+    fun lockScreen(): Boolean {
+        return performGlobalAction(GLOBAL_ACTION_LOCK_SCREEN)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.P)
+    fun showRecents(): Boolean {
+        return performGlobalAction(GLOBAL_ACTION_RECENTS)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.P)
+    fun openNotifications(): Boolean {
+        return performGlobalAction(GLOBAL_ACTION_NOTIFICATIONS)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.P)
+    fun openQuickSettings(): Boolean {
+        return performGlobalAction(GLOBAL_ACTION_QUICK_SETTINGS)
+    }
+
+    fun openPowerDialog(): Boolean {
+        return performGlobalAction(GLOBAL_ACTION_POWER_DIALOG)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.P)
+    fun takeScreenShot(): Boolean {
+        return performGlobalAction(GLOBAL_ACTION_TAKE_SCREENSHOT)
+    }
 
     companion object {
         private var mInstance: WeakReference<MyAccessibilityService> = WeakReference(null)

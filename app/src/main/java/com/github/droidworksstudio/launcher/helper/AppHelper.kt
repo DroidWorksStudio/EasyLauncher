@@ -66,9 +66,9 @@ class AppHelper @Inject constructor() {
             val method = statusBarManager.getMethod(Constants.NOTIFICATION_METHOD)
             method.invoke(statusBarService)
         } catch (exception: Exception) {
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-//                initActionService(context)?.openNotifications()
-//            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                MyAccessibilityService.instance()?.openNotifications()
+            }
             exception.printStackTrace()
         }
     }
@@ -81,9 +81,9 @@ class AppHelper @Inject constructor() {
             val method = statusBarManager.getMethod(Constants.QUICKSETTINGS_METHOD)
             method.invoke(statusBarService)
         } catch (exception: Exception) {
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-//                initActionService(context)?.openQuickSettings()
-//            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                MyAccessibilityService.instance()?.openQuickSettings()
+            }
             exception.printStackTrace()
         }
     }
@@ -92,14 +92,6 @@ class AppHelper @Inject constructor() {
         val intent = Intent(Intent.ACTION_WEB_SEARCH)
         intent.putExtra(SearchManager.QUERY, "")
         context.startActivity(intent)
-    }
-
-    fun darkThemes(darkThemes: Boolean){
-        if (darkThemes){
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-        }else{
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        }
     }
 
     fun dayNightMod(context: Context, view: View) {
