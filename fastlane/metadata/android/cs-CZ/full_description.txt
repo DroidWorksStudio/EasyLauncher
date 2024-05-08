@@ -1,0 +1,79 @@
+Forked from <a href="https://github.com/tanujnotes/Olauncher">Olauncher</a>. Minimal and clean.
+
+# Forked with extra features
+
+- Removed clutter, like ads and links.
+- You can rename apps in the app-drawer (Renaming apps on the home screen is already supported. Just long-click on an app on the home screen and start typing.)
+- We have added a lot more options for gestures on the home screen:
+    - Gestures are now:
+        - Swiping up, down, left, right
+        - Clicking on the clock
+        - Clicking on the Date
+    - Possible actions now include:
+        - Open specified app
+        - Display app list
+        - Locking the screen
+        - Show Recent opened apps
+        - Opening the notification drawer
+        - Opening the quick settings
+        - Power Dialog
+        - Take A Screenshot
+        - Disable Gesture
+- You can also position the clock independently of the home apps.
+- Change alignment of apps in app-drawer independent from homescreen.
+- Change font size of sections of the homescreen independent of each other.
+- Removed internet permission. You never know what an app developer wants to know about you.
+- Lock settings behind biometrics (toggle)
+- Added the ability to report crashing via email.
+- Added the ability to view app usage time.
+
+## Translations:
+
+- A lot of people have translated the app to the following languages. Many thanks to you all.
+  - Afrikaans
+  - Arabic
+  - Albanian
+  - Bulgarian
+  - Chinese
+  - Croatian
+  - Czech
+  - Danish
+  - English
+  - Estonian
+  - Filipino
+  - Finnish
+  - French
+  - Georgian
+  - German
+  - Greek
+  - Hawaiian
+  - Hebrew
+  - Hindi
+  - Hungarian
+  - Icelandic
+  - Indonesian
+  - Irish
+  - Italian
+  - Japanese
+  - Korean
+  - Lithuanian
+  - Luxembourgish
+  - Malay
+  - Malagasy
+  - Malayalam
+  - Norwegian
+  - Nepali
+  - Persian
+  - Polish
+  - Portuguese (European)
+  - Punjabi
+  - Russian
+  - Serbian
+  - Sindhi
+  - Slovak
+  - Spanish
+  - Swedish
+  - Thai
+  - Turkish
+  - Ukrainian
+  - Vietnamese
