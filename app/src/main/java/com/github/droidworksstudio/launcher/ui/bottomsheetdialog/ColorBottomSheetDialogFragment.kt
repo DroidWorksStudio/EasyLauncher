@@ -75,6 +75,11 @@ class ColorBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragme
             text = bottomDialogHelper.getColorText(preferenceHelper.batteryColor)
             setTextColor(preferenceHelper.batteryColor)
         }
+
+        binding.selectWordTextColor.apply {
+            text = bottomDialogHelper.getColorText(preferenceHelper.dailyWordColor)
+            setTextColor(preferenceHelper.dailyWordColor)
+        }
     }
 
 
@@ -110,6 +115,14 @@ class ColorBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragme
                 preferenceHelper.batteryColor
             )
         }
+
+        binding.bottomColorWordView.setOnClickListener {
+            showColorPickerDialog(
+                binding.selectWordTextColor,
+                REQUEST_KEY_DAILY_WORD_COLOR,
+                preferenceHelper.dailyWordColor
+            )
+        }
     }
 
     private fun showColorPickerDialog(view: View, requestCode: String, color: Int) {
@@ -123,7 +136,6 @@ class ColorBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragme
         ColorChooserDialog.registerListener(this, requestCode, { pickedColor ->
             this.color = pickedColor
             (view as TextView).apply {
-                //text = getColorText(pickedColor)
                 text = bottomDialogHelper.getColorText(pickedColor)
                 setTextColor(pickedColor)
             }

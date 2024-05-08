@@ -70,6 +70,10 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
         binding.selectAppTextSize.apply {
             text = appHelper.gravityToString(preferenceHelper.homeAppAlignment)
         }
+
+        binding.selectWordTextSize.apply {
+            text = appHelper.gravityToString(preferenceHelper.homeDailyWordAlignment)
+        }
     }
 
     private fun observeClickListener(){
@@ -85,6 +89,11 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
 
         binding.bottomAlignmentAppView.setOnClickListener {
             selectedAlignment = REQUEST_KEY_APP_ALIGNMENT
+            showListDialog(selectedAlignment)
+        }
+
+        binding.bottomAlignmentWordView.setOnClickListener {
+            selectedAlignment = REQUEST_KEY_WORD_ALIGNMENT
             showListDialog(selectedAlignment)
         }
     }
@@ -127,6 +136,15 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
                         binding.selectDateTextSize
                     )
                 }
+
+                REQUEST_KEY_WORD_ALIGNMENT -> {
+                    setAlignment(
+                        selectedAlignment,
+                        selectedItem,
+                        gravity,
+                        binding.selectWordTextSize
+                    )
+                }
             }
         }
         dialog.show()
@@ -157,6 +175,11 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
                 alignmentGetter = { preferenceHelper.homeDateAlignment }
             }
 
+            REQUEST_KEY_WORD_ALIGNMENT -> {
+                alignmentPreference = { preferenceViewModel.setHomeDailyWordAppAlignment(it) }
+                alignmentGetter = { preferenceHelper.homeDailyWordAlignment }
+            }
+
             else -> return
         }
 
@@ -169,5 +192,6 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
         private const val REQUEST_KEY_DATE_ALIGNMENT = "REQUEST_KEY_DATE_ALIGNMENT"
         private const val REQUEST_KEY_TIME_ALIGNMENT = "REQUEST_KEY_TIME_ALIGNMENT"
         private const val REQUEST_KEY_APP_ALIGNMENT = "REQUEST_KEY_APP_ALIGNMENT"
+        private const val REQUEST_KEY_WORD_ALIGNMENT = "REQUEST_KEY_WORD_ALIGNMENT"
     }
 }

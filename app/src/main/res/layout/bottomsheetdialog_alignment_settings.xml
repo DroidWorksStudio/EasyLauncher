@@ -32,6 +32,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/select_date_title"
+                style="@style/TextDefaultStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="20dp"
@@ -42,8 +43,7 @@
                 android:textSize="@dimen/text_large"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="RtlHardcoded"
-                style="@style/TextDefaultStyle"/>
+                tools:ignore="RtlHardcoded,TouchTargetSizeCheck" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/select_date_text_size"
@@ -70,18 +70,18 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/select_time_title"
+                style="@style/TextDefaultStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="20dp"
-                android:gravity="left|center"
-                android:text="@string/appearance_bottom_dialog_desc_time"
                 android:background="@android:color/transparent"
-                android:textSize="@dimen/text_large"
+                android:gravity="left|center"
                 android:inputType="number"
+                android:text="@string/appearance_bottom_dialog_desc_time"
+                android:textSize="@dimen/text_large"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="RtlHardcoded"
-                style="@style/TextDefaultStyle"/>
+                tools:ignore="RtlHardcoded,TouchTargetSizeCheck" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/select_time_text_size"
@@ -106,21 +106,57 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/select_app_title"
+                style="@style/TextDefaultStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="20dp"
+                android:background="@android:color/transparent"
                 android:gravity="left|center"
+                android:inputType="number"
                 android:text="@string/appearance_bottom_dialog_desc_app"
+                android:textSize="@dimen/text_large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded,TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/select_app_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:gravity="left|center"
                 android:background="@android:color/transparent"
                 android:textSize="@dimen/text_large"
-                android:inputType="number"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="RtlHardcoded"
                 style="@style/TextDefaultStyle"/>
 
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/bottom_alignment_word_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/select_app_text_size"
+                android:id="@+id/select_word_title"
+                style="@style/TextDefaultStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="left|center"
+                android:inputType="number"
+                android:text="@string/appearance_bottom_dialog_desc_word"
+                android:textSize="@dimen/text_large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded,TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/select_word_text_size"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="20dp"

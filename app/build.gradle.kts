@@ -29,14 +29,14 @@ android {
             isDebuggable = true
             applicationIdSuffix = ".debug"
             proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            resValue("string", "app_name", "EasyLauncher Debug")
+            resValue("string", "app_name", "Easy Launcher (Debug)")
         }
 
         getByName("release") {
-            isMinifyEnabled = false
-            isShrinkResources = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            resValue("string", "app_name", "EasyLauncher")
+            resValue("string", "app_name", "Easy Launcher")
         }
     }
 

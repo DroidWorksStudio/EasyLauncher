@@ -10,6 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.launcher.R
@@ -145,6 +146,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun backToHomeScreen() {
+        navController = findNavController(R.id.nav_host_fragment_content_main)
         if (navController.currentDestination?.id != R.id.HomeFragment)
             navController.popBackStack(R.id.HomeFragment, false)
     }

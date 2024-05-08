@@ -44,7 +44,6 @@
                 android:textSize="@dimen/text_large"
                 style="@style/TextDefaultStyle"/>
 
-
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -186,6 +185,38 @@
                         tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/dailyWord_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/settings_appearance_daily_word"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/dailyWord_switchCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.7"
+                        android:scaleY="0.8"
+                        android:thumb="@drawable/shape_switch_thumb"
+                        app:track="@drawable/selector_switch"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -263,6 +294,28 @@
                         android:layout_weight="1"
                         android:gravity="left|center"
                         android:text="@string/settings_appearance_alignment_title"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/select_appearance_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="20dp"
+                    tools:ignore="MissingConstraints,TextSizeCheck">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/settings_appearance_padding_title"
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -399,10 +452,10 @@
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    tools:ignore="MissingConstraints">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
@@ -411,6 +464,75 @@
                         android:text="@string/settings_title_others"
                         android:textSize="@dimen/text_super_large"
                         style="@style/TextDefaultStyle"/>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        tools:ignore="MissingConstraints">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rate_view"
+                            android:text="@string/settings_title_others"
+                            android:textSize="@dimen/text_large"
+                            style="@style/TextDefaultStyle"
+                            android:layout_weight="1"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/share_view"
+                            android:text="@string/settings_title_others"
+                            android:textSize="@dimen/text_large"
+                            style="@style/TextDefaultStyle"
+                            android:layout_weight="1"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/github_view"
+                            android:text="@string/settings_title_others"
+                            android:textSize="@dimen/text_large"
+                            style="@style/TextDefaultStyle"
+                            android:layout_weight="1"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/feedback_view"
+                            android:text="@string/settings_title_others"
+                            android:textSize="@dimen/text_large"
+                            style="@style/TextDefaultStyle"
+                            android:layout_weight="1"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        tools:ignore="MissingConstraints">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/version_info"
+                            android:text="@string/settings_version"
+                            android:textSize="@dimen/text_large"
+                            style="@style/TextDefaultStyle"
+                            android:layout_weight="1"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </androidx.appcompat.widget.LinearLayoutCompat>

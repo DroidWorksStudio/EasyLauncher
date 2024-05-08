@@ -10,16 +10,16 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogTextSettingsBinding
+import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogPaddingSettingsBinding
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 @AndroidEntryPoint
-class TextBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragment() {
+class PaddingBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragment() {
 
-    private var _binding: BottomsheetdialogTextSettingsBinding? = null
+    private var _binding: BottomsheetdialogPaddingSettingsBinding? = null
     private val binding get() = _binding!!
 
     @Inject
@@ -34,7 +34,7 @@ class TextBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragmen
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = BottomsheetdialogTextSettingsBinding.inflate(inflater, container, false)
+        _binding = BottomsheetdialogPaddingSettingsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -48,28 +48,16 @@ class TextBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragmen
     private fun initView(){
         bottomDialogHelper.setupDialogStyle(dialog)
 
-        binding.selectDateTextSize.setText(preferenceHelper.dateTextSize.toString())
-        binding.selectTimeTextSize.setText(preferenceHelper.timeTextSize.toString())
-        binding.selectAppTextSize.setText(preferenceHelper.appTextSize.toString())
-        binding.selectBatteryTextSize.setText(preferenceHelper.batteryTextSize.toString())
+        binding.selectAppPaddingSize.setText(preferenceHelper.homeAppPadding.toString())
     }
 
     private fun observeValueChange(){
-        val dateValue = binding.selectDateTextSize.text.toString()
-        val timeValue = binding.selectTimeTextSize.text.toString()
-        val appValue = binding.selectAppTextSize.text.toString()
-        val batteryValue = binding.selectBatteryTextSize.text.toString()
+        val appValue = binding.selectAppPaddingSize.text.toString()
 
-        val dateFloatValue = parseFloatValue(dateValue, preferenceHelper.dateTextSize)
-        val timeFloatValue = parseFloatValue(timeValue, preferenceHelper.timeTextSize)
-        val appFloatValue = parseFloatValue(appValue, preferenceHelper.appTextSize)
-        val batteryFloatValue = parseFloatValue(batteryValue, preferenceHelper.batteryTextSize)
+        val appFloatValue = parseFloatValue(appValue, preferenceHelper.homeAppPadding)
         dismiss()
 
-        preferenceViewModel.setDateTextSize(dateFloatValue)
-        preferenceViewModel.setTimeTextSize(timeFloatValue)
-        preferenceViewModel.setAppTextSize(appFloatValue)
-        preferenceViewModel.setBatteryTextSize(batteryFloatValue)
+        preferenceViewModel.setAppPaddingSize(appFloatValue)
     }
 
     private fun parseFloatValue(text: String, defaultValue: Float): Float {

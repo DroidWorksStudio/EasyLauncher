@@ -20,6 +20,7 @@ class PreferenceViewModel @Inject constructor(
     val homeAppAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     val homeDateAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     val homeTimeAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
+    val homeDailyWordAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     val dateColorLiveData: MutableLiveData<Int> = MutableLiveData()
     val timeColorLiveData: MutableLiveData<Int> = MutableLiveData()
     val batteryColorLiveData: MutableLiveData<Int> = MutableLiveData()
@@ -28,7 +29,9 @@ class PreferenceViewModel @Inject constructor(
     val dateTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     val timeTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     val appTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
+    val batteryTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     val tapLockScreenLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
 
     fun setFirstLaunch(firstLaunch: Boolean) {
         preferenceHelper.firstLaunch = firstLaunch
@@ -100,6 +103,11 @@ class PreferenceViewModel @Inject constructor(
         homeTimeAlignmentLiveData.postValue(preferenceHelper.homeTimeAlignment)
     }
 
+    fun setHomeDailyWordAppAlignment(homeDailyWordAlignment: Int) {
+        preferenceHelper.homeDailyWordAlignment = homeDailyWordAlignment
+        homeDailyWordAlignmentLiveData.postValue(preferenceHelper.homeDailyWordAlignment)
+    }
+
     fun setDateTextSize(dateTextSize: Float) {
         preferenceHelper.dateTextSize = dateTextSize
         dateTextSizeLiveData.postValue(preferenceHelper.dateTextSize)
@@ -113,6 +121,16 @@ class PreferenceViewModel @Inject constructor(
     fun setAppTextSize(appTextSize: Float) {
         preferenceHelper.appTextSize = appTextSize
         appTextSizeLiveData.postValue(preferenceHelper.appTextSize)
+    }
+
+    fun setBatteryTextSize(batteryTextSize: Float) {
+        preferenceHelper.batteryTextSize = batteryTextSize
+        batteryTextSizeLiveData.postValue(preferenceHelper.batteryTextSize)
+    }
+
+    fun setAppPaddingSize(appPaddingSize: Float) {
+        preferenceHelper.homeAppPadding = appPaddingSize
+        appPaddingSizeLiveData.postValue(preferenceHelper.homeAppPadding)
     }
 
     fun setDoubleTapLock(tapLockScreen: Boolean){

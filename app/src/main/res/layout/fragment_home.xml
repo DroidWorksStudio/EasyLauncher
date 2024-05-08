@@ -43,7 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:text="Battery"
+                    android:text="@string/battery_level"
                     android:textSize="16sp"
                     style="@style/TextDefaultStyle"/>
 
@@ -52,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:layout_marginVertical="16dp"
+                    android:layout_marginVertical="8dp"
                     android:fontFamily="sans-serif-light"
                     android:format12Hour="h:mm"
                     android:textSize="48sp"
@@ -64,7 +64,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="8dp"
                     android:format12Hour="EEE, dd MMM"
                     android:format24Hour="EEE, dd MMM"
                     android:gravity="start"
@@ -73,15 +72,13 @@
                     tools:text="Thu, 30 Dec"
                     style="@style/TextDefaultStyle"/>
 
-                <!--TextView
+                <TextView
                     android:id="@+id/word"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/settings_appearance_daily_word_default"
                     android:textSize="32sp"
-                    android:visibility="gone"
-                    android:layout_marginBottom="42dp" /-->
+                    android:visibility="gone" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 

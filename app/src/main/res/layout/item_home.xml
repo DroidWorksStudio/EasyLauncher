@@ -21,24 +21,15 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="16dp"
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/appHome_name"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:textSize="24sp"
                 style="@style/TextDefaultStyle"
                 android:gravity="center"/>
-
-            <!--TextView
-                android:id="@+id/package_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:textAlignment="center"
-                android:visibility="gone"/-->
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

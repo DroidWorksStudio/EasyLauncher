@@ -107,6 +107,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
         binding.clock.setOnClickListener { appHelper.launchClock(context) }
         binding.date.setOnClickListener { appHelper.launchCalendar(context) }
+        binding.battery.setOnClickListener { appHelper.openBatteryManager(context) }
     }
 
     private fun setupBattery() {
@@ -129,13 +130,12 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         val marginTopInPixels = 128
         val params: ViewGroup.MarginLayoutParams = binding.appListAdapter.layoutParams as ViewGroup.MarginLayoutParams
         params.topMargin = marginTopInPixels
-        binding.appListAdapter.layoutParams = params
 
         binding.appListAdapter.apply {
             adapter = homeAdapter
+            layoutParams = params
             setHasFixedSize(false)
             layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
-            //itemAnimator = false
             isNestedScrollingEnabled = false
         }
     }
@@ -143,6 +143,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     private fun observeFavoriteAppList() {
         viewModel.compareInstalledAppInfo()
 
+        @Suppress("DEPRECATION")
         viewLifecycleOwner.lifecycleScope.launchWhenCreated {
             viewModel.favoriteApps.flowOn(Dispatchers.Main).collect {
                 homeAdapter.submitList(it)
@@ -176,17 +177,21 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             )
         }
         preferenceViewModel.showBatteryLiveData.observe(viewLifecycleOwner){
-            //binding.battery.setTextColor(preferenceHelper.batteryColor)
-            appHelper.updateUI(binding.battery, Gravity.END,
+            appHelper.updateUI(binding.battery,
+                Gravity.END,
                 preferenceHelper.batteryColor,
-                preferenceHelper.timeTextSize,
+                preferenceHelper.batteryTextSize,
                 preferenceHelper.showBattery
             )
         }
 
         preferenceViewModel.showDailyWordLiveData.observe(viewLifecycleOwner) {
-//            updateViewVisibility(binding.word, showDailyWord)
-//            appHelper.updateUI(binding.word, preferenceHelper.homeDailyWordAlignment, preferenceHelper.dailyWordColor, preferenceHelper.showDailyWord)
+            appHelper.updateUI(binding.word,
+                preferenceHelper.homeDailyWordAlignment,
+                preferenceHelper.dailyWordColor,
+                preferenceHelper.dailyWordTextSize,
+                preferenceHelper.showDailyWord
+            )
         }
         val is24HourFormat = DateFormat.is24HourFormat(requireContext())
         val localLocale = Locale.getDefault()
@@ -199,6 +204,8 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         val datePattern = DateFormat.getBestDateTimePattern(localLocale, "eeeddMMM")
         binding.date.format12Hour = datePattern
         binding.date.format24Hour = datePattern
+
+        binding.word.text = appHelper.wordOfTheDay(resources)
     }
 
     private fun observeBioAuthCheck(appInfo: AppInfo) {
@@ -225,7 +232,11 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             @RequiresApi(Build.VERSION_CODES.P)
             override fun onDoubleClick() {
                 super.onDoubleClick()
-                if(preferenceHelper.tapLockScreen) { MyAccessibilityService.instance()?.lockScreen() } else { return }
+                if(preferenceHelper.tapLockScreen) {
+                    MyAccessibilityService.instance()?.lockScreen()
+                } else {
+                    return
+                }
             }
         }
     }

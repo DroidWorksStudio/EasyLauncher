@@ -4,8 +4,7 @@
 
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
     <uses-permission
@@ -17,7 +16,6 @@
     <queries>
         <intent>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
         </intent>
     </queries>
@@ -30,8 +28,7 @@
         android:icon="@drawable/app_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Launcher"
-        tools:targetApi="31">
+        android:theme="@style/Theme.Launcher">
         <activity
             android:name=".ui.activities.SettingsActivity"
             android:exported="false" />

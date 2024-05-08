@@ -31,7 +31,7 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_BATTERY, value).apply()
 
     var showDailyWord: Boolean
-        get() = prefs.getBoolean(Constants.SHOW_DAILY_WORD, true)
+        get() = prefs.getBoolean(Constants.SHOW_DAILY_WORD, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_DAILY_WORD, value).apply()
 
     var dateColor: Int
@@ -45,6 +45,7 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
     var batteryColor: Int
         get() = prefs.getInt(Constants.BATTERY_COLOR, 0xFFFFFFFF.toInt())
         set(value) = prefs.edit().putInt(Constants.BATTERY_COLOR, value).apply()
+
     var dailyWordColor: Int
         get() = prefs.getInt(Constants.DAILY_WORD_COLOR, 0xFFFFFFFF.toInt())
         set(value) = prefs.edit().putInt(Constants.DAILY_WORD_COLOR, value).apply()
@@ -69,6 +70,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getInt(Constants.HOME_APP_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(Constants.HOME_APP_ALIGNMENT, value).apply()
 
+    var homeAppPadding: Float
+        get() = prefs.getFloat(Constants.APP_TEXT_PADDING, 10f)
+        set(value) = prefs.edit().putFloat(Constants.APP_TEXT_PADDING, value).apply()
+
     var homeDateAlignment: Int
         get() = prefs.getInt(Constants.HOME_DATE_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(Constants.HOME_DATE_ALIGNMENT, value).apply()
@@ -81,6 +86,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getInt(Constants.HOME_DAILY_WORD_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(Constants.HOME_DAILY_WORD_ALIGNMENT,value).apply()
 
+    var batteryTextSize: Float
+        get() = prefs.getFloat(Constants.BATTERY_TEXT_SIZE, 12f)
+        set(value) = prefs.edit().putFloat(Constants.BATTERY_TEXT_SIZE, value).apply()
+
     var dateTextSize: Float
         get() = prefs.getFloat(Constants.DATE_TEXT_SIZE, 32f)
         set(value) = prefs.edit().putFloat(Constants.DATE_TEXT_SIZE, value).apply()
@@ -92,6 +101,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
     var appTextSize: Float
         get() = prefs.getFloat(Constants.APP_TEXT_SIZE, 24f)
         set(value) = prefs.edit().putFloat(Constants.APP_TEXT_SIZE, value).apply()
+
+    var dailyWordTextSize: Float
+        get() = prefs.getFloat(Constants.DAILY_WORD_TEXT_SIZE, 18f)
+        set(value) = prefs.edit().putFloat(Constants.DAILY_WORD_TEXT_SIZE, value).apply()
 
     var tapLockScreen: Boolean
         get() = prefs.getBoolean(Constants.DOUBLE_TAP_LOCK, false)

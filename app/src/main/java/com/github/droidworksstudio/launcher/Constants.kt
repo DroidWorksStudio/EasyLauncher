@@ -3,7 +3,7 @@ package com.github.droidworksstudio.launcher
 object Constants {
     const val PACKAGE_NAME = "com.github.droidworksstudio.launcher"
 
-    const val PREFS_FILENAME = "droidworksstudioLauncher.pref"
+    const val PREFS_FILENAME = "EasyLauncher.pref"
     const val FIRST_LAUNCH = "FIRST_LAUNCH"
     const val SHOW_DATE = "SHOW_DATE"
     const val SHOW_TIME = "SHOW_TIME"
@@ -18,9 +18,13 @@ object Constants {
     const val DAILY_WORD_COLOR = "DAILY_WORD_COLOR"
     const val APP_COLOR = "APP_COLOR"
 
+    const val BATTERY_TEXT_SIZE = "BATTERY_TEXT_SIZE"
     const val DATE_TEXT_SIZE = "DATE_TEXT_SIZE"
     const val TIME_TEXT_SIZE = "TIME_TEXT_SIZE"
     const val APP_TEXT_SIZE = "APP_TEXT_SIZE"
+    const val DAILY_WORD_TEXT_SIZE = "DAILY_WORD_TEXT_SIZE"
+
+    const val APP_TEXT_PADDING = "APP_TEXT_PADDING"
 
     const val SHOW_APP_ICON = "SHOW_APP_ICON"
 

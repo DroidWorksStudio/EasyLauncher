@@ -22,21 +22,11 @@
 ------------
 **Easy Launcher - the minimalist productivity launcher for focus, productivity, keep your focus on what really counts.**
 ------------
-[<img src="https://img.shields.io/github/v/release/DroidWorksStudio/EasyLauncher.svg?logo=github&label=GitHub"
-      alt="GitHub Releases"
-      height="22"/>](https://github.com/DroidWorksStudio/EasyLauncher/releases)
-[<img src="https://img.shields.io/f-droid/v/com.github.droidworksstuido.easylauncher?logo=f-droid&label=F-Droid"
-      alt="F-Droid Releases"
-      height="22"/>](https://f-droid.org/en/packages/com.github.droidworksstuido.easylauncher/)
-[<img src="https://img.shields.io/endpoint?color=blue&logo=google-play&logoColor=gery&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.github.droidworksstuido.easylauncher%26l%3DAndroid%26m%3D%24version"
-      alt="Playstore"
-      height="22"/>](https://play.google.com/store/apps/details?id=com.github.droidworksstyido.easulauncher)
-[<img src="https://img.shields.io/badge/License-GPLv3-blue.svg"
-      alt="Licenses"
-      height="22"/>](https://www.gnu.org/licenses/gpl-3.0)
-[<img src="https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/total?color=red"
-      alt="Download from GitHub"
-      height="22"/>](https://github.com/DroidWorksStudio/EasyLauncher/releases)
+[<img src="https://img.shields.io/github/v/release/DroidWorksStudio/EasyLauncher.svg?logo=github&label=GitHub" alt="GitHub Releases" height="22"/>](https://github.com/DroidWorksStudio/EasyLauncher/releases)
+[<img src="https://img.shields.io/f-droid/v/com.github.droidworksstuido.easylauncher?logo=f-droid&label=F-Droid" alt="F-Droid Releases" height="22"/>](https://f-droid.org/en/packages/com.github.droidworksstuido.easylauncher/)
+[<img src="https://img.shields.io/endpoint?color=blue&logo=google-play&logoColor=gery&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.github.droidworksstuido.easylauncher%26l%3DAndroid%26m%3D%24version" alt="Playstore" height="22"/>](https://play.google.com/store/apps/details?id=com.github.droidworksstyido.easulauncher)
+[<img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="Licenses" height="22"/>](https://www.gnu.org/licenses/gpl-3.0)
+[<img src="https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/total?color=red" alt="Download from GitHub" height="22"/>](https://github.com/DroidWorksStudio/EasyLauncher/releases)
       
 **Features**
 ------------

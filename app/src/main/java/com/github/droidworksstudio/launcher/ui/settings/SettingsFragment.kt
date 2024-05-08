@@ -1,5 +1,6 @@
 package com.github.droidworksstudio.launcher.ui.settings
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -17,6 +18,7 @@ import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AlignmentBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomSheetDialogFragment
+import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.PaddingBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.TextBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -52,6 +54,7 @@ class SettingsFragment : Fragment(), ScrollEventListener {
 
     // Called after the fragment view is created
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        navController = findNavController()
         // Set according to the system theme mode
         appHelper.dayNightMod(requireContext(), binding.nestScrollView)
         super.onViewCreated(view, savedInstanceState)
@@ -60,8 +63,8 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         observeClickListener()
     }
 
+    @SuppressLint("SetTextI18n")
     private fun initializeInjectedDependencies() {
-        navController = findNavController()
         binding.nestScrollView.scrollEventListener = this
 
         // Set initial values and listeners for switches
@@ -69,6 +72,7 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         binding.timeSwitchCompat.isChecked = preferenceHelper.showTime
         binding.dateSwitchCompat.isChecked = preferenceHelper.showDate
         binding.batterySwitchCompat.isChecked = preferenceHelper.showBattery
+        binding.dailyWordSwitchCompat.isChecked = preferenceHelper.showDailyWord
         binding.gesturesLockSwitchCompat1.isChecked = preferenceHelper.tapLockScreen
     }
 
@@ -103,6 +107,11 @@ class SettingsFragment : Fragment(), ScrollEventListener {
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
         }
 
+        binding.selectAppearancePadding.setOnClickListener {
+            val bottomSheetFragment = PaddingBottomSheetDialogFragment(this.requireContext())
+            bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
+        }
+
         binding.selectAppearanceColor.setOnClickListener {
             val bottomSheetFragment = ColorBottomSheetDialogFragment(this.requireContext())
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
@@ -121,9 +130,15 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         binding.dateSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setShowDate(isChecked)
         }
+
         binding.batterySwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setShowBattery(isChecked)
         }
+
+        binding.dailyWordSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setShowDailyWord(isChecked)
+        }
+
         binding.gesturesLockSwitchCompat1.setOnCheckedChangeListener { _, isChecked ->
             appHelper.enableAppAsAccessibilityService(requireContext(), preferenceHelper.tapLockScreen)
             preferenceViewModel.setDoubleTapLock(isChecked)

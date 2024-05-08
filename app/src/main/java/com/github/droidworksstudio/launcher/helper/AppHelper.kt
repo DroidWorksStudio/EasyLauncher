@@ -2,11 +2,13 @@ package com.github.droidworksstudio.launcher.helper
 
 import android.annotation.SuppressLint
 import android.app.SearchManager
+import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.Configuration
+import android.content.res.Resources
 import android.net.Uri
 import android.os.Build
 import android.provider.AlarmClock
@@ -27,6 +29,8 @@ import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.MyAccessibilityService
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
+import java.util.Calendar
+import java.util.Date
 import javax.inject.Inject
 
 class AppHelper @Inject constructor() {
@@ -92,11 +96,11 @@ class AppHelper @Inject constructor() {
     fun dayNightMod(context: Context, view: View) {
         when (context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
             Configuration.UI_MODE_NIGHT_YES -> {
-                view.setBackgroundColor(context.resources.getColor(R.color.whiteTrans25))
+                view.setBackgroundColor(context.resources.getColor(R.color.blackTrans50, context.theme))
             }
 
             Configuration.UI_MODE_NIGHT_NO -> {
-                view.setBackgroundColor(context.resources.getColor(R.color.blackTrans50))
+                view.setBackgroundColor(context.resources.getColor(R.color.whiteTrans50, context.theme))
             }
         }
     }
@@ -132,18 +136,50 @@ class AppHelper @Inject constructor() {
     }
 
     fun launchCalendar(context: Context) {
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.data = CalendarContract.CONTENT_URI
         try {
-            context.startActivity(intent)
+            val cal: Calendar = Calendar.getInstance()
+            cal.time = Date()
+            val time = cal.time.time
+            val builder: Uri.Builder = CalendarContract.CONTENT_URI.buildUpon()
+            builder.appendPath("time")
+            builder.appendPath(time.toString())
+            context.startActivity(Intent(Intent.ACTION_VIEW, builder.build()))
         } catch (e: Exception) {
-            val pickerIntent = Intent(Intent.ACTION_MAIN)
-            pickerIntent.addCategory(Intent.CATEGORY_APP_CALENDAR)
             try {
-                context.startActivity(pickerIntent)
+                val intent = Intent(Intent.ACTION_MAIN)
+                intent.addCategory(Intent.CATEGORY_APP_CALENDAR)
+                context.startActivity(intent)
             } catch (e: Exception) {
-                e.printStackTrace()
+                Log.d("openCalendar", e.toString())
             }
+        }
+    }
+
+    fun openDigitalWellbeing(context: Context) {
+        try {
+            val packageName = "com.google.android.apps.wellbeing"
+            val className = "com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity"
+
+            val intent = Intent()
+            intent.component = ComponentName(packageName, className)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            context.startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+            // Digital Wellbeing app is not installed or cannot be opened
+            // Handle this case as needed
+            showToast(context,"Digital Wellbeing is not available on this device.")
+        }
+    }
+
+    fun openBatteryManager(context: Context) {
+        try {
+            val intent = Intent(Intent.ACTION_POWER_USAGE_SUMMARY)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            context.startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+            // Battery manager settings cannot be opened
+            // Handle this case as needed
+            showToast(context, "Battery manager settings are not available on this device.")
         }
     }
 
@@ -215,6 +251,14 @@ class AppHelper @Inject constructor() {
         }
     }
 
+    fun View.showSoftKeyboard() {
+        if (this.requestFocus()) {
+            val inputMethodManager: InputMethodManager =
+                context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.showSoftInput(this, InputMethodManager.SHOW_IMPLICIT)
+        }
+    }
+
     fun hideKeyboard(context: Context, view: View) {
         val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(view.windowToken, 0)
@@ -224,13 +268,21 @@ class AppHelper @Inject constructor() {
         val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(this.windowToken, 0)
     }
+
+    fun wordOfTheDay(resources: Resources): String {
+        val dailyWordsArray = resources.getStringArray(R.array.settings_appearance_daily_word_default)
+        val dayOfYear = Calendar.getInstance().get(Calendar.DAY_OF_YEAR)
+        val wordIndex = (dayOfYear - 1) % dailyWordsArray.size // Subtracting 1 to align with array indexing
+        return dailyWordsArray[wordIndex]
+    }
+
     fun enableAppAsAccessibilityService(context: Context, accessibilityState: Boolean) {
 
         val myAccessibilityService = MyAccessibilityService.instance()
 
         val state: String = if (myAccessibilityService != null) {
             context.getString(R.string.accessibility_settings_disable)
-        }else{
+        } else {
             context.getString(R.string.accessibility_settings_enable)
         }
 
@@ -242,8 +294,10 @@ class AppHelper @Inject constructor() {
             val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
             context.startActivity(intent)
         }
-            .setNegativeButton(android.R.string.cancel) { dialog, _ -> dialog.dismiss() }
-            .show()
+        builder.setNegativeButton(android.R.string.cancel) { dialog, _ ->
+            dialog.dismiss()
+        }
+        builder.show()
     }
 
 }
