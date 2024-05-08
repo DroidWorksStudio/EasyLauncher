@@ -55,6 +55,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GIT_BOT_TOKEN }}
           file: ${{steps.sign_app.outputs.signedFile}}
-          asset_name: mLauncher-${{ github.ref_name }}-Signed.apk
+          asset_name: EasyLauncher-${{ github.ref_name }}-Signed.apk
           tag: ${{ github.ref }}
           overwrite: true
