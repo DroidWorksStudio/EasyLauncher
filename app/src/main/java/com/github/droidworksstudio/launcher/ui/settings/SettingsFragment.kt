@@ -121,6 +121,18 @@ class SettingsFragment : Fragment(), ScrollEventListener {
             val bottomSheetFragment = ColorBottomSheetDialogFragment(this.requireContext())
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
         }
+
+        binding.shareView.setOnClickListener {
+            appHelper.shareApp(requireContext())
+        }
+
+        binding.githubView.setOnClickListener {
+            appHelper.github(requireContext())
+        }
+
+        binding.feedbackView.setOnClickListener {
+            appHelper.feedback(requireContext())
+        }
     }
 
     private fun setupSwitchListeners() {

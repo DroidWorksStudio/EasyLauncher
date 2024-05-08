@@ -22,6 +22,7 @@ import android.view.WindowInsets
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.LinearLayoutCompat
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.Constants
@@ -91,6 +92,14 @@ class AppHelper @Inject constructor() {
         val intent = Intent(Intent.ACTION_WEB_SEARCH)
         intent.putExtra(SearchManager.QUERY, "")
         context.startActivity(intent)
+    }
+
+    fun darkThemes(darkThemes: Boolean){
+        if (darkThemes){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }else{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
     }
 
     fun dayNightMod(context: Context, view: View) {
@@ -274,6 +283,27 @@ class AppHelper @Inject constructor() {
         val dayOfYear = Calendar.getInstance().get(Calendar.DAY_OF_YEAR)
         val wordIndex = (dayOfYear - 1) % dailyWordsArray.size // Subtracting 1 to align with array indexing
         return dailyWordsArray[wordIndex]
+    }
+
+    fun shareApp(context: Context){
+        val shareIntent = Intent(Intent.ACTION_SEND)
+        shareIntent.type = "text/plain"
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Share Application")
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "https://f-droid.org/packages/" + context.packageName)
+        context.startActivity(Intent.createChooser(shareIntent, "Share Application"))
+    }
+
+    fun github(context: Context){
+        val uri = Uri.parse("https://github.com/DroidWorksStudio/EasyLauncher")
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        context.startActivity(intent)
+    }
+
+    fun feedback(context: Context){
+        val emailIntent = Intent(Intent.ACTION_SENDTO)
+        emailIntent.data = Uri.parse("mailto:droidworksstuido@063240.xyz")
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Easy Launcher")
+        context.startActivity(Intent.createChooser(emailIntent, "Choose Mail Application"))
     }
 
     fun enableAppAsAccessibilityService(context: Context, accessibilityState: Boolean) {
