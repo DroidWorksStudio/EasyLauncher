@@ -12,6 +12,9 @@ object Constants {
     const val SHOW_STATUS_BAR = "SHOW_STATUS_BAR"
     const val DOUBLE_TAP_LOCK = "DOUBLE_TAP_LOCK"
 
+    const val SWIPE_NOTIFICATION = "SWIPE_NOTIFICATION"
+    const val SWIPE_SEARCH = "SWIPE_SEARCH"
+
     const val DATE_COLOR = "DATE_COLOR"
     const val TIME_COLOR = "TIME_COLOR"
     const val BATTERY_COLOR = "BATTERY_COLOR"

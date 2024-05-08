@@ -288,11 +288,11 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     override fun onTopReached() {
-        appHelper.expandNotificationDrawer(context)
+        if (preferenceHelper.swipeNotification) appHelper.expandNotificationDrawer(context)
     }
 
     override fun onBottomReached() {
-        appHelper.searchView(context)
+        if (preferenceHelper.swipeSearch) appHelper.searchView(context)
     }
 
     override fun onScroll(isTopReached: Boolean, isBottomReached: Boolean) {

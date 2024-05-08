@@ -61,6 +61,9 @@ class SettingsFragment : Fragment(), ScrollEventListener {
 
         initializeInjectedDependencies()
         observeClickListener()
+
+        val packageInfo = requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
+        binding.versionInfo.text = getString(R.string.settings_version, getString(R.string.app_name), packageInfo.versionName)
     }
 
     @SuppressLint("SetTextI18n")
@@ -73,7 +76,9 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         binding.dateSwitchCompat.isChecked = preferenceHelper.showDate
         binding.batterySwitchCompat.isChecked = preferenceHelper.showBattery
         binding.dailyWordSwitchCompat.isChecked = preferenceHelper.showDailyWord
-        binding.gesturesLockSwitchCompat1.isChecked = preferenceHelper.tapLockScreen
+        binding.gesturesLockSwitchCompat.isChecked = preferenceHelper.tapLockScreen
+        binding.gesturesNotificationSwitchCompat.isChecked = preferenceHelper.swipeNotification
+        binding.gesturesSearchSwitchCompat.isChecked = preferenceHelper.swipeSearch
     }
 
     private fun observeClickListener() {
@@ -139,9 +144,17 @@ class SettingsFragment : Fragment(), ScrollEventListener {
             preferenceViewModel.setShowDailyWord(isChecked)
         }
 
-        binding.gesturesLockSwitchCompat1.setOnCheckedChangeListener { _, isChecked ->
+        binding.gesturesLockSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             appHelper.enableAppAsAccessibilityService(requireContext(), preferenceHelper.tapLockScreen)
             preferenceViewModel.setDoubleTapLock(isChecked)
+        }
+
+        binding.gesturesNotificationSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setSwipeNotification(isChecked)
+        }
+
+        binding.gesturesSearchSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setSwipeSearch(isChecked)
         }
     }
 

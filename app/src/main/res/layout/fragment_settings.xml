@@ -35,6 +35,16 @@
                 style="@style/TextDefaultStyle"/>
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/version_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/settings_version"
+                android:textSize="@dimen/text_large"
+                style="@style/TextDefaultStyle"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/set_launcher_selector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -439,7 +449,69 @@
                             style="@style/TextDefaultStyle"/>
 
                         <androidx.appcompat.widget.SwitchCompat
-                            android:id="@+id/gestures_lock_switchCompat1"
+                            android:id="@+id/gestures_lock_switchCompat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/shape_switch_thumb"
+                            app:track="@drawable/selector_switch"
+                            android:scaleY="0.8"
+                            android:scaleX="0.7"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_notification_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="@string/settings_swipe_down_notification"
+                            android:textSize="@dimen/text_large"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle"/>
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/gestures_notification_switchCompat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/shape_switch_thumb"
+                            app:track="@drawable/selector_switch"
+                            android:scaleY="0.8"
+                            android:scaleX="0.7"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_search_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="@string/settings_swipe_up_search"
+                            android:textSize="@dimen/text_large"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle"/>
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/gestures_search_switchCompat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:thumb="@drawable/shape_switch_thumb"
@@ -473,66 +545,38 @@
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginBottom="20dp"
                         android:layout_weight="4"
+                        android:gravity="center"
                         tools:ignore="MissingConstraints">
 
-
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/rate_view"
-                            android:text="@string/settings_title_others"
-                            android:textSize="@dimen/text_large"
-                            style="@style/TextDefaultStyle"
-                            android:layout_weight="1"/>
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/share_view"
-                            android:text="@string/settings_title_others"
+                            android:text="@string/settings_others_share"
                             android:textSize="@dimen/text_large"
-                            style="@style/TextDefaultStyle"
-                            android:layout_weight="1"/>
+                            android:layout_marginHorizontal="10dp"
+                            style="@style/TextDefaultStyle"/>
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/github_view"
-                            android:text="@string/settings_title_others"
+                            android:text="@string/settings_others_github"
                             android:textSize="@dimen/text_large"
-                            style="@style/TextDefaultStyle"
-                            android:layout_weight="1"/>
+                            android:layout_marginHorizontal="10dp"
+                            style="@style/TextDefaultStyle"/>
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/feedback_view"
-                            android:text="@string/settings_title_others"
+                            android:text="@string/settings_others_feedback"
                             android:textSize="@dimen/text_large"
-                            style="@style/TextDefaultStyle"
-                            android:layout_weight="1"/>
+                            android:layout_marginHorizontal="10dp"
+                            style="@style/TextDefaultStyle"/>
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_weight="4"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/version_info"
-                            android:text="@string/settings_version"
-                            android:textSize="@dimen/text_large"
-                            style="@style/TextDefaultStyle"
-                            android:layout_weight="1"/>
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </androidx.appcompat.widget.LinearLayoutCompat>

@@ -20,7 +20,7 @@
 	<string name="bottom_dialog_app_uninstall">Uninstall App</string>
 
 	<string name="settings_name">Launcher Settings</string>
-	<string name="settings_version">Version</string>
+	<string name="settings_version">%s Version: %s</string>
 	<string name="settings_home">Home</string>
 
 	<string name="settings_title_home_display_preferences">Display</string>
@@ -71,8 +71,14 @@
 	<string name="settings_manager_favorite">Favorite Apps</string>
 	<string name="settings_manager_hidden">Hidden Apps</string>
 
-	<string name="settings_double_tap_lock">Double tap to lock</string>
 	<string name="settings_select_wallpaper">Select Wallpaper</string>
+	<string name="settings_double_tap_lock">Double tap to lock</string>
+	<string name="settings_swipe_down_notification">Swipe down expand notification</string>
+	<string name="settings_swipe_up_search">Swipe up open search view</string>
+
+	<string name="settings_others_share">Share</string>
+	<string name="settings_others_feedback">Feedback</string>
+	<string name="settings_others_github">Github</string>
 
 	<string name="authentication_title">Authentication</string>
 	<string name="authentication_subtitle">Please login to get access</string>
