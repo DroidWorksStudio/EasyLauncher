@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/mLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the Accessibility settings if required. - ([4c19dbb](https://github.com/DroidWorksStudio/mLauncher/commit/4c19dbbd7f47dda5e82cdafc4cbd516805180295))
+
 ### Language Support:
 
 - Updated Language Files. ([#7](https://github.com/DroidWorksStudio/mLauncher/issues/7)) - ([89ef870](https://github.com/DroidWorksStudio/mLauncher/commit/89ef870cf40846216ff366e96d9f2ebb766e4a89))
