@@ -1,1 +1,1 @@
-mLauncher - Minimal and Clutter Free launcher
+EasyLauncher - Minimal launcher
