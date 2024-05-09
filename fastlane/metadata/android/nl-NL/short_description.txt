@@ -1,1 +1,1 @@
-Forked from Olauncher, +minimalization, +customizability
+EasyLauncher - Minimal and Clutter Free Android launcher
