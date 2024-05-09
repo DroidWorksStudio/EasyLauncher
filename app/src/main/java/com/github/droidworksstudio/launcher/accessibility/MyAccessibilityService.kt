@@ -2,10 +2,14 @@ package com.github.droidworksstudio.launcher.accessibility
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
+import android.content.Context
 import android.content.Intent
 import android.os.Build
+import android.provider.Settings
 import android.view.accessibility.AccessibilityEvent
 import androidx.annotation.RequiresApi
+import com.github.droidworksstudio.launcher.R
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.lang.ref.WeakReference
 
 class MyAccessibilityService : AccessibilityService() {
@@ -65,7 +69,32 @@ class MyAccessibilityService : AccessibilityService() {
         return performGlobalAction(GLOBAL_ACTION_TAKE_SCREENSHOT)
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
+    fun toggleSplitScreen(): Boolean {
+        return performGlobalAction(GLOBAL_ACTION_TOGGLE_SPLIT_SCREEN)
+    }
+
     companion object {
+        fun runAccessibilityMode(context: Context) {
+            if (instance() == null) {
+                val state: String = context.getString(R.string.accessibility_settings_enable)
+
+                val builder = MaterialAlertDialogBuilder(context)
+
+                builder.setTitle(R.string.accessibility_settings_title)
+                builder.setMessage(R.string.accessibility_service_desc)
+                builder.setPositiveButton(state) { _, _ ->
+                    val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+                    context.startActivity(intent)
+                }
+                builder.setNegativeButton(android.R.string.cancel) { dialog, _ ->
+                    dialog.dismiss()
+                }
+                builder.show()
+            }
+            return
+        }
+
         private var mInstance: WeakReference<MyAccessibilityService> = WeakReference(null)
         fun instance(): MyAccessibilityService? {
             return mInstance.get()

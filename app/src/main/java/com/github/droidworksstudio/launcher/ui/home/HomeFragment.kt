@@ -233,6 +233,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             override fun onDoubleClick() {
                 super.onDoubleClick()
                 if(preferenceHelper.tapLockScreen) {
+                    MyAccessibilityService.runAccessibilityMode(context)
                     MyAccessibilityService.instance()?.lockScreen()
                 } else {
                     return

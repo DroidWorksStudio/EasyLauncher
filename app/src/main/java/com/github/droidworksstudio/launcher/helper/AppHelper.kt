@@ -22,7 +22,6 @@ import android.view.WindowInsets
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.LinearLayoutCompat
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.Constants
@@ -67,6 +66,7 @@ class AppHelper @Inject constructor() {
             method.invoke(statusBarService)
         } catch (exception: Exception) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                MyAccessibilityService.runAccessibilityMode(context)
                 MyAccessibilityService.instance()?.openNotifications()
             }
             exception.printStackTrace()
@@ -82,6 +82,7 @@ class AppHelper @Inject constructor() {
             method.invoke(statusBarService)
         } catch (exception: Exception) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                MyAccessibilityService.runAccessibilityMode(context)
                 MyAccessibilityService.instance()?.openQuickSettings()
             }
             exception.printStackTrace()
@@ -299,27 +300,31 @@ class AppHelper @Inject constructor() {
     }
 
     fun enableAppAsAccessibilityService(context: Context, accessibilityState: Boolean) {
-
-        val myAccessibilityService = MyAccessibilityService.instance()
-
-        val state: String = if (myAccessibilityService != null) {
+        val state: String = if (accessibilityState) {
             context.getString(R.string.accessibility_settings_disable)
         } else {
             context.getString(R.string.accessibility_settings_enable)
         }
 
-        val builder = MaterialAlertDialogBuilder(context)
+        when (state) {
+            "Enable" -> {
+                val builder = MaterialAlertDialogBuilder(context)
 
-        builder.setTitle(R.string.accessibility_settings_title)
-        builder.setMessage(R.string.accessibility_service_desc)
-        builder.setPositiveButton(state) { _, _ ->
-            val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
-            context.startActivity(intent)
+                builder.setTitle(R.string.accessibility_settings_title)
+                builder.setMessage(R.string.accessibility_service_desc)
+                builder.setPositiveButton(state) { _, _ ->
+                    val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+                    context.startActivity(intent)
+                }
+                builder.setNegativeButton(android.R.string.cancel) { dialog, _ ->
+                    dialog.dismiss()
+                }
+                builder.show()
+            }
+            else -> {
+                return
+            }
         }
-        builder.setNegativeButton(android.R.string.cancel) { dialog, _ ->
-            dialog.dismiss()
-        }
-        builder.show()
     }
 
 }
