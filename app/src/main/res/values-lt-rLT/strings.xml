@@ -32,6 +32,7 @@
 	<string name="settings_appearance_time">Show Time</string>
 	<string name="settings_appearance_battery">Show Battery</string>
 	<string name="settings_appearance_daily_word">Show Daily Word</string>
+	<string name="settings_appearance_app_icons_word">Show App Icons</string>
 	<string name="settings_appearance_text_size_title">Size</string>
 	<string name="settings_appearance_color_title">Color</string>
 	<string name="settings_appearance_alignment_title">Alignment</string>
