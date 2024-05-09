@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/mLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added support to toggle app icons. - ([f2e80ca](https://github.com/DroidWorksStudio/mLauncher/commit/f2e80cad634ff7e79b15805b42a1d7e3761f009e))
+
 ### Bug Fixes:
 
 - Fixed the Accessibility settings if required. - ([4c19dbb](https://github.com/DroidWorksStudio/mLauncher/commit/4c19dbbd7f47dda5e82cdafc4cbd516805180295))
