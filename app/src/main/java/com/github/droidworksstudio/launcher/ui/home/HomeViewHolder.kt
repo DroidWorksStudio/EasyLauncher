@@ -1,7 +1,7 @@
 package com.github.droidworksstudio.launcher.ui.home
 
-import android.content.Context
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -35,11 +35,24 @@ class HomeViewHolder @Inject constructor(
             appHomeName.textSize = preferenceHelper.appTextSize
             Log.d("Tag", "Home Adapter Color: ${preferenceHelper.appColor}")
 
-            val appIcon = binding.root.context.packageManager.getApplicationIcon(appInfo.packageName)
-            appHomeIcon.setImageDrawable(appIcon)
-            appHomeIcon.layoutParams.width = preferenceHelper.appTextSize.toInt() * 3
-            appHomeIcon.layoutParams.height = preferenceHelper.appTextSize.toInt() * 3
-            appHomeIcon.visibility = View.GONE
+            if (preferenceHelper.showAppIcon) {
+                val appIcon = binding.root.context.packageManager.getApplicationIcon(appInfo.packageName)
+                when (preferenceHelper.homeAppAlignment) {
+                    Gravity.START -> {
+                        appHomeLeftIcon.setImageDrawable(appIcon)
+                        appHomeLeftIcon.layoutParams.width = preferenceHelper.appTextSize.toInt() * 3
+                        appHomeLeftIcon.layoutParams.height = preferenceHelper.appTextSize.toInt() * 3
+                        appHomeLeftIcon.visibility = View.VISIBLE
+                    }
+                    Gravity.END -> {
+                        appHomeRightIcon.setImageDrawable(appIcon)
+                        appHomeRightIcon.layoutParams.width = preferenceHelper.appTextSize.toInt() * 3
+                        appHomeRightIcon.layoutParams.height = preferenceHelper.appTextSize.toInt() * 3
+                        appHomeRightIcon.visibility = View.VISIBLE
+                    }
+                }
+
+            }
         }
 
         itemView.setOnClickListener { onAppClickedListener.onAppClicked(appInfo) }

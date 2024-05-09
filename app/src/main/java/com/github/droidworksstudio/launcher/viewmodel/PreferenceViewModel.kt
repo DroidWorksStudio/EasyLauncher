@@ -17,6 +17,7 @@ class PreferenceViewModel @Inject constructor(
     val showDateLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showDailyWordLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showBatteryLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    val showAppIconLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val homeAppAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     val homeDateAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     val homeTimeAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
@@ -63,6 +64,11 @@ class PreferenceViewModel @Inject constructor(
     fun setShowDailyWord(showDailyWord: Boolean) {
         preferenceHelper.showDailyWord = showDailyWord
         showDailyWordLiveData.postValue(preferenceHelper.showDailyWord)
+    }
+
+    fun setShowAppIcons(showAppIcons: Boolean) {
+        preferenceHelper.showAppIcon = showAppIcons
+        showAppIconLiveData.postValue(preferenceHelper.showAppIcon)
     }
 
     fun setDailyWordColor(dailyWordColor: Int) {

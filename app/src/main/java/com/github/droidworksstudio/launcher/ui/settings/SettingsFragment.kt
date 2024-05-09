@@ -76,6 +76,7 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         binding.dateSwitchCompat.isChecked = preferenceHelper.showDate
         binding.batterySwitchCompat.isChecked = preferenceHelper.showBattery
         binding.dailyWordSwitchCompat.isChecked = preferenceHelper.showDailyWord
+        binding.appIconsSwitchCompat.isChecked = preferenceHelper.showAppIcon
         binding.gesturesLockSwitchCompat.isChecked = preferenceHelper.tapLockScreen
         binding.gesturesNotificationSwitchCompat.isChecked = preferenceHelper.swipeNotification
         binding.gesturesSearchSwitchCompat.isChecked = preferenceHelper.swipeSearch
@@ -154,6 +155,10 @@ class SettingsFragment : Fragment(), ScrollEventListener {
 
         binding.dailyWordSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setShowDailyWord(isChecked)
+        }
+
+        binding.appIconsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setShowAppIcons(isChecked)
         }
 
         binding.gesturesLockSwitchCompat.setOnCheckedChangeListener { _, isChecked ->

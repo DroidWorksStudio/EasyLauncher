@@ -55,7 +55,7 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         set(value) = prefs.edit().putInt(Constants.APP_COLOR, value).apply()
 
     var showAppIcon: Boolean
-        get() = prefs.getBoolean(Constants.SHOW_APP_ICON, true)
+        get() = prefs.getBoolean(Constants.SHOW_APP_ICON, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_APP_ICON, value).apply()
 
     var automaticKeyboard: Boolean
