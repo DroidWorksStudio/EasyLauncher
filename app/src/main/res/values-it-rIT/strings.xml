@@ -39,9 +39,10 @@
 	<string name="settings_appearance_color_title">Color</string>
 	<string name="settings_appearance_alignment_title">Alignment</string>
 	<string name="settings_appearance_padding_title">Padding</string>
-	<string name="settings_appearance_date_size_title">Date Size : </string>
-	<string name="settings_appearance_time_size_title">Time Size : </string>
-	<string name="settings_appearance_app_size_title">App Size : </string>
+	<string name="settings_appearance_wallpaper">Custom Wallpaper</string>
+	<string name="settings_appearance_home_date_alignment">Date Alignment</string>
+	<string name="settings_appearance_home_time_alignment">Time Alignment</string>
+	<string name="settings_appearance_home_app_alignment">Home App Alignment</string>
 	<string name="appearance_bottom_dialog_text_size_title">Size</string>
 	<string name="appearance_bottom_dialog_text_color_title">Color</string>
 	<string name="appearance_bottom_dialog_alignment_title">Alignment</string>
@@ -51,10 +52,6 @@
 	<string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
 	<string name="appearance_bottom_dialog_desc_word">Word\u0020:\u0020</string>
 	<string name="appearance_bottom_dialog_desc_battery">Battery\u0020:\u0020 </string>
-	<string name="settings_appearance_wallpaper">Custom Wallpaper</string>
-	<string name="settings_appearance_home_date_alignment">Date Alignment</string>
-	<string name="settings_appearance_home_time_alignment">Time Alignment</string>
-	<string name="settings_appearance_home_app_alignment">Home App Alignment</string>
 	<string name="settings_manager_favorite">Favorite Apps</string>
 	<string name="settings_manager_hidden">Hidden Apps</string>
 	<string name="settings_select_wallpaper">Select Wallpaper</string>
