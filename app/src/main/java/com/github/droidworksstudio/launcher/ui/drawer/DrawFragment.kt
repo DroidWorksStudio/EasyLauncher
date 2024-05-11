@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.coroutineScope
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -84,6 +85,7 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     private fun observeDrawerApps() {
         viewModel.compareInstalledAppInfo()
 
+        @Suppress("DEPRECATION")
         viewLifecycleOwner.lifecycleScope.launchWhenCreated {
             viewModel.drawApps.collect{
                 drawAdapter.submitList(it)
@@ -93,7 +95,7 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     private fun setupSearch() {
-        binding.searchView1.addTextChangedListener(object: TextWatcher {
+        binding.searchViewText.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 // Do Nothing
             }
@@ -109,19 +111,20 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     private fun observeClickListener(){
-        binding.drawSearchButton.setOnClickListener {appHelper.showSoftKeyboard(context, binding.searchView1)}
+        binding.drawSearchButton.setOnClickListener {appHelper.showSoftKeyboard(context, binding.searchViewText)}
     }
 
     private fun searchApp(query: String?) {
 
         val searchQuery = "%$query%"
+        @Suppress("DEPRECATION")
         viewLifecycleOwner.lifecycle.coroutineScope.launchWhenCreated {
             viewModel.searchAppInfo(searchQuery).collect { drawAdapter.submitList(it) }
         }
     }
 
     private fun showSelectedApp(appInfo: AppInfo) {
-        binding.searchView1.text?.clear()
+        binding.searchViewText.text?.clear()
 
         val bottomSheetFragment = AppInfoBottomSheetFragment(appInfo)
         bottomSheetFragment.setOnBottomSheetDismissedListener(this)
@@ -136,18 +139,19 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     override fun onPause() {
         super.onPause()
-        binding.searchView1.text?.clear()
+        binding.searchViewText.text?.clear()
     }
 
     override fun onResume() {
         super.onResume()
         observeDrawerApps()
         binding.drawAdapter.scrollToPosition(0)
-        appHelper.hideKeyboard(context, binding.searchView1)
+        appHelper.hideKeyboard(context, binding.searchView)
     }
 
     override fun onStop() {
         super.onStop()
+        appHelper.hideKeyboard(context, binding.searchView)
     }
 
     override fun onAppClicked(appInfo: AppInfo) {

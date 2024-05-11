@@ -25,7 +25,7 @@
             tools:ignore="DuplicateClickableBoundsCheck">
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/search_view1"
+                android:id="@+id/search_view_text"
                 style="@style/TextDefaultStyle"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
@@ -33,7 +33,8 @@
                 android:hint="@string/search"
                 android:inputType="text"
                 android:textSize="@dimen/text_super_large"
-                android:textStyle="normal">
+                android:textStyle="normal"
+                tools:ignore="VisualLintTextFieldSize">
 
             </androidx.appcompat.widget.AppCompatEditText>
 
@@ -54,16 +55,16 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/draw_search_button"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_margin="32dp"
         android:clickable="true"
         android:focusable="true"
-        app:backgroundTint="@color/search_button_background"
         android:src="?android:attr/actionModeWebSearchDrawable"
+        app:backgroundTint="@color/search_button_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="32dp"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

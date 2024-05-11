@@ -16,6 +16,11 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Updated Language Files. ([#7](https://github.com/DroidWorksStudio/mLauncher/issues/7)) - ([89ef870](https://github.com/DroidWorksStudio/mLauncher/commit/89ef870cf40846216ff366e96d9f2ebb766e4a89))
 
+### Refactoring:
+
+- Refactor keyboard handling and UI consistency - ([0c59747](https://github.com/DroidWorksStudio/mLauncher/commit/0c59747ff9f583e2d90c412b1c3d1f3e99751412))
+- Refactored keyboard handling methods in AppHelper.kt to improve code clarity. Removed redundant showSoftKeyboard() and hideKeyboard() functions from AppHelper.kt and adjusted references accordingly. Also, ensured UI consistency by renaming search_view1 to search_view_text in fragment_draw.xml for better readability and maintained uniformity in variable naming conventions. Additionally, updated the draw_search_button FloatingActionButton attributes for visual consistency and clarity. - ([0c59747](https://github.com/DroidWorksStudio/mLauncher/commit/0c59747ff9f583e2d90c412b1c3d1f3e99751412))
+
 ## [0.0.1](https://github.com/DroidWorksStudio/mLauncher/tree/0.0.1) - (08, May 2024)
 
 ### Implemented Enhancements:

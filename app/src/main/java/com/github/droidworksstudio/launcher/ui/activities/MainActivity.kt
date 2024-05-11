@@ -1,6 +1,7 @@
 package com.github.droidworksstudio.launcher.ui.activities
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
@@ -10,7 +11,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.launcher.R
@@ -74,6 +74,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun observeUI() {
+        binding.pager.currentItem = 0
         preferenceViewModel.setShowStatusBar(preferenceHelper.showStatusBar)
         preferenceViewModel.showStatusBarLiveData.observe(this) {
             if (it) appHelper.showStatusBar(this.window)
@@ -133,6 +134,7 @@ class MainActivity : AppCompatActivity() {
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         val currentItem = binding.pager.currentItem
+        Log.d("currentItem","$currentItem")
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
         val currentFragment = navHostFragment.childFragmentManager.fragments[0]

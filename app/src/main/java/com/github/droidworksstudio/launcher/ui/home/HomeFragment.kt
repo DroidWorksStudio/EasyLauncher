@@ -15,6 +15,7 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.MyAccessibilityService
@@ -94,6 +95,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     @SuppressLint("ClickableViewAccessibility")
     private fun initializeInjectedDependencies() {
         context = requireContext()
+        appHelper.hideKeyboard(context, binding.mainView)
 
         binding.nestScrollView.scrollEventListener = this
 
@@ -153,6 +155,8 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     private fun observeUserInterfaceSettings() {
+        appHelper.hideKeyboard(context, binding.mainView)
+
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
         preferenceViewModel.setShowDailyWord(preferenceHelper.showDailyWord)
@@ -250,10 +254,12 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     override fun onPause() {
         super.onPause()
+        appHelper.hideKeyboard(context, binding.mainView)
     }
 
     override fun onResume() {
         super.onResume()
+        appHelper.hideKeyboard(context, binding.mainView)
         observeUserInterfaceSettings()
         observeFavoriteAppList()
     }
