@@ -18,12 +18,12 @@
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_marginEnd="16dp"
-            android:visibility="visible"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/linear_layout"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -44,7 +44,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
-            android:visibility="visible"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/linear_layout"/>
 

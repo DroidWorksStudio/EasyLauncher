@@ -1,7 +1,8 @@
 package com.github.droidworksstudio.launcher
 
 object Constants {
-    const val PACKAGE_NAME = "com.github.droidworksstudio.launcher"
+    const val PACKAGE_NAME = "app.easy.launcher"
+    const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
 
     const val PREFS_FILENAME = "EasyLauncher.pref"
     const val FIRST_LAUNCH = "FIRST_LAUNCH"

@@ -109,14 +109,14 @@ class AppInfoRepository @Inject constructor(
             val launcherApps =
                 context.getSystemService(Context.LAUNCHER_APPS_SERVICE) as LauncherApps
 
-            val excludedPackageName = Constants.PACKAGE_NAME
+            val excludedPackageNames = mutableListOf(Constants.PACKAGE_NAME,Constants.PACKAGE_NAME_DEBUG)
 
             val newAppList: List<AppInfo> = userManager.userProfiles
                 .flatMap { profile ->
                     launcherApps.getActivityList(null, profile)
                         .mapNotNull { app ->
                             val packageName = app.applicationInfo.packageName
-                            if (packageName !in existingPackageNames && packageName != excludedPackageName) {
+                            if (packageName !in existingPackageNames && packageName !in excludedPackageNames) {
                                 AppInfo(
                                     appName = app.label.toString(),
                                     packageName = packageName,
