@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added Auto keyboard & Auto Open last app toggle settings. - ([f91bd77](https://github.com/DroidWorksStudio/mLauncher/commit/f91bd777b270e4b27e9a679478596a0e71f94e07))
 - Added setupOrientation to force portrait mode. - ([60114f6](https://github.com/DroidWorksStudio/mLauncher/commit/60114f6e27e1efcab923a0090db30df5b2c8185c))
 
 ### Bug Fixes:
