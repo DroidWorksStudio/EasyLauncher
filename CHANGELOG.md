@@ -13,6 +13,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Hide self from app list. - ([d494284](https://github.com/DroidWorksStudio/mLauncher/commit/d4942849012251cadb0ef991c4b14adfb402cf80))
 
+### Language Support:
+
+- Updated Language Files. ([#12](https://github.com/DroidWorksStudio/mLauncher/issues/12)) - ([70a98fd](https://github.com/DroidWorksStudio/mLauncher/commit/70a98fda4f40549b6a143bf4360a3809f0614b98))
+
 ## [0.0.2](https://github.com/DroidWorksStudio/mLauncher/tree/0.0.2) - (11, May 2024)
 
 ### Implemented Enhancements:
