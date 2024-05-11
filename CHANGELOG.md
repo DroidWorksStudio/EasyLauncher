@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/mLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added setupOrientation to force portrait mode. - ([60114f6](https://github.com/DroidWorksStudio/mLauncher/commit/60114f6e27e1efcab923a0090db30df5b2c8185c))
+
 ### Bug Fixes:
 
 - Hide self from app list. - ([d494284](https://github.com/DroidWorksStudio/mLauncher/commit/d4942849012251cadb0ef991c4b14adfb402cf80))
