@@ -1,6 +1,5 @@
 package com.github.droidworksstudio.launcher.ui.bottomsheetdialog
 
-import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,7 +12,6 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogAlignmentSettingsBinding
-import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogColorSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
@@ -22,7 +20,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragment() {
+class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
     private var _binding: BottomsheetdialogAlignmentSettingsBinding? = null
     private val binding get() = _binding!!
@@ -113,7 +111,6 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
                 REQUEST_KEY_APP_ALIGNMENT -> {
                     setAlignment(
                         selectedAlignment,
-                        selectedItem,
                         gravity,
                         binding.selectAppTextSize
                     )
@@ -122,7 +119,6 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
                 REQUEST_KEY_TIME_ALIGNMENT -> {
                     setAlignment(
                         selectedAlignment,
-                        selectedItem,
                         gravity,
                         binding.selectTimeTextSize
                     )
@@ -131,7 +127,6 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
                 REQUEST_KEY_DATE_ALIGNMENT -> {
                     setAlignment(
                         selectedAlignment,
-                        selectedItem,
                         gravity,
                         binding.selectDateTextSize
                     )
@@ -140,7 +135,6 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
                 REQUEST_KEY_WORD_ALIGNMENT -> {
                     setAlignment(
                         selectedAlignment,
-                        selectedItem,
                         gravity,
                         binding.selectWordTextSize
                     )
@@ -152,7 +146,6 @@ class AlignmentBottomSheetDialogFragment(context: Context) : BottomSheetDialogFr
 
     private fun setAlignment(
         alignmentType: String,
-        selectedItem: String,
         gravity: Int,
         textView: TextView
     ) {

@@ -1,5 +1,8 @@
 package com.github.droidworksstudio.launcher.ui.activities
 
+import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -54,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         initializeDependencies()
         setupNavController()
         setupViewPagerAdapter()
+        setupOrientation()
     }
 
     private fun initializeDependencies() {
@@ -95,6 +99,12 @@ class MainActivity : AppCompatActivity() {
             adapter = viewPagerAdapter
             offscreenPageLimit = 1
         }
+    }
+    @SuppressLint("SourceLockedOrientationActivity")
+    private fun setupOrientation() {
+        if (appHelper.isTablet(this)) return
+        if (Build.VERSION.SDK_INT != Build.VERSION_CODES.O)
+            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -104,22 +104,22 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         }
 
         binding.selectAppearanceTextSize.setOnClickListener {
-            val bottomSheetFragment = TextBottomSheetDialogFragment(this.requireContext())
+            val bottomSheetFragment = TextBottomSheetDialogFragment()
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
         }
 
         binding.selectAppearanceAlignment.setOnClickListener {
-            val bottomSheetFragment = AlignmentBottomSheetDialogFragment(this.requireContext())
+            val bottomSheetFragment = AlignmentBottomSheetDialogFragment()
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
         }
 
         binding.selectAppearancePadding.setOnClickListener {
-            val bottomSheetFragment = PaddingBottomSheetDialogFragment(this.requireContext())
+            val bottomSheetFragment = PaddingBottomSheetDialogFragment()
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
         }
 
         binding.selectAppearanceColor.setOnClickListener {
-            val bottomSheetFragment = ColorBottomSheetDialogFragment(this.requireContext())
+            val bottomSheetFragment = ColorBottomSheetDialogFragment()
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
         }
 

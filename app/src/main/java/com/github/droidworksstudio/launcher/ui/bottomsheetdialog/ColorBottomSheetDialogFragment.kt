@@ -1,6 +1,5 @@
 package com.github.droidworksstudio.launcher.ui.bottomsheetdialog
 
-import android.content.Context
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -22,7 +21,7 @@ import net.mm2d.color.chooser.ColorChooserDialog
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ColorBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragment() {
+class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
     private var _binding: BottomsheetdialogColorSettingsBinding? = null
     private val binding get() = _binding!!

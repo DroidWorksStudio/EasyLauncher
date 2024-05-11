@@ -14,11 +14,13 @@ import android.os.Build
 import android.provider.AlarmClock
 import android.provider.CalendarContract
 import android.provider.Settings
+import android.util.DisplayMetrics
 import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.Window
 import android.view.WindowInsets
+import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import android.widget.Toast
@@ -32,6 +34,8 @@ import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 import java.util.Calendar
 import java.util.Date
 import javax.inject.Inject
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 class AppHelper @Inject constructor() {
 
@@ -243,6 +247,18 @@ class AppHelper @Inject constructor() {
                     View.SYSTEM_UI_FLAG_IMMERSIVE or View.SYSTEM_UI_FLAG_FULLSCREEN
             }
         }
+    }
+
+    fun isTablet(context: Context): Boolean {
+        val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
+        val metrics = DisplayMetrics()
+        @Suppress("DEPRECATION")
+        windowManager.defaultDisplay.getMetrics(metrics)
+        val widthInches = metrics.widthPixels / metrics.xdpi
+        val heightInches = metrics.heightPixels / metrics.ydpi
+        val diagonalInches = sqrt(widthInches.toDouble().pow(2.0) + heightInches.toDouble().pow(2.0))
+        if (diagonalInches >= 7.0) return true
+        return false
     }
 
     fun showSoftKeyboard(context: Context, view: View) {

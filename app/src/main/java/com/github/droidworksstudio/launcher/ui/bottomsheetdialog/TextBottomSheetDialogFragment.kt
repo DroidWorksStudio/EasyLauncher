@@ -1,6 +1,5 @@
 package com.github.droidworksstudio.launcher.ui.bottomsheetdialog
 
-import android.content.Context
 import android.content.DialogInterface
 import android.os.Build
 import android.os.Bundle
@@ -17,7 +16,7 @@ import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 @AndroidEntryPoint
-class TextBottomSheetDialogFragment(context: Context) : BottomSheetDialogFragment() {
+class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
     private var _binding: BottomsheetdialogTextSettingsBinding? = null
     private val binding get() = _binding!!
