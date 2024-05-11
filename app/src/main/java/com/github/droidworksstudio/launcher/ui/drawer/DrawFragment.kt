@@ -13,13 +13,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.coroutineScope
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentDrawBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
+import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
@@ -50,6 +50,9 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     @Inject
     lateinit var fingerHelper: FingerprintHelper
 
+    @Inject
+    lateinit var preferenceHelper: PreferenceHelper
+
     private lateinit var context: Context
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -67,7 +70,6 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         super.onViewCreated(view, savedInstanceState)
 
         context = requireContext()
-
         setupRecyclerView()
         setupSearch()
         observeClickListener()
@@ -111,15 +113,31 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     private fun observeClickListener(){
-        binding.drawSearchButton.setOnClickListener {appHelper.showSoftKeyboard(context, binding.searchViewText)}
+        binding.drawSearchButton.setOnClickListener {
+            appHelper.showSoftKeyboard(context, binding.searchViewText)
+        }
     }
 
     private fun searchApp(query: String?) {
-
         val searchQuery = "%$query%"
         @Suppress("DEPRECATION")
         viewLifecycleOwner.lifecycle.coroutineScope.launchWhenCreated {
-            viewModel.searchAppInfo(searchQuery).collect { drawAdapter.submitList(it) }
+            viewModel.searchAppInfo(searchQuery).collect { searchResults ->
+                val numberOfItemsLeft = searchResults.size
+                val appResults = searchResults.firstOrNull()
+                when (numberOfItemsLeft) {
+                    1 -> {
+                        appResults?.let { appInfo ->
+                            if (preferenceHelper.automaticOpenApp) observeBioAuthCheck(appInfo)
+                        }
+                        drawAdapter.submitList(searchResults)
+                    }
+
+                    else -> {
+                        drawAdapter.submitList(searchResults)
+                    }
+                }
+            }
         }
     }
 
@@ -146,7 +164,7 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         super.onResume()
         observeDrawerApps()
         binding.drawAdapter.scrollToPosition(0)
-        appHelper.hideKeyboard(context, binding.searchView)
+        if (preferenceHelper.automaticKeyboard) appHelper.showSoftKeyboard(context, binding.searchViewText)
     }
 
     override fun onStop() {

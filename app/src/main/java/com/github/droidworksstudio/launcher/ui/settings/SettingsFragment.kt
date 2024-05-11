@@ -77,6 +77,8 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         binding.batterySwitchCompat.isChecked = preferenceHelper.showBattery
         binding.dailyWordSwitchCompat.isChecked = preferenceHelper.showDailyWord
         binding.appIconsSwitchCompat.isChecked = preferenceHelper.showAppIcon
+        binding.automaticKeyboardSwitchCompat.isChecked = preferenceHelper.automaticKeyboard
+        binding.automaticOpenAppSwitchCompat.isChecked = preferenceHelper.automaticOpenApp
         binding.gesturesLockSwitchCompat.isChecked = preferenceHelper.tapLockScreen
         binding.gesturesNotificationSwitchCompat.isChecked = preferenceHelper.swipeNotification
         binding.gesturesSearchSwitchCompat.isChecked = preferenceHelper.swipeSearch
@@ -173,6 +175,16 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         binding.gesturesSearchSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setSwipeSearch(isChecked)
         }
+
+        binding.automaticKeyboardSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setAutoKeyboard(isChecked)
+        }
+
+        binding.automaticOpenAppSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setAutoOpenApp(isChecked)
+        }
+
+
     }
 
     override fun onTopReached() {

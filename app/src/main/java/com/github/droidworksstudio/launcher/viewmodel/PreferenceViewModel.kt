@@ -34,6 +34,8 @@ class PreferenceViewModel @Inject constructor(
     val tapLockScreenLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val swipeNotificationLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val swipeSearchLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    val autoOpenAppsLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
 
     fun setFirstLaunch(firstLaunch: Boolean) {
@@ -154,5 +156,15 @@ class PreferenceViewModel @Inject constructor(
     fun setSwipeSearch(swipeSearch: Boolean){
         preferenceHelper.swipeSearch = swipeSearch
         swipeSearchLiveData.postValue((preferenceHelper.swipeSearch))
+    }
+
+    fun setAutoKeyboard(autoKeyboard: Boolean){
+        preferenceHelper.automaticKeyboard = autoKeyboard
+        autoKeyboardLiveData.postValue((preferenceHelper.automaticKeyboard))
+    }
+
+    fun setAutoOpenApp(autoOpenApp: Boolean){
+        preferenceHelper.automaticOpenApp = autoOpenApp
+        autoOpenAppsLiveData.postValue((preferenceHelper.automaticOpenApp))
     }
 }
