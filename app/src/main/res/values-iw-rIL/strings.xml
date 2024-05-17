@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">Settings</string>
-	<string name="action_settings_default">Set as default launcher</string>
+	<string name="action_settings">הגדרות</string>
+	<string name="action_settings_default">הגדר כמשגר ברירת מחדל</string>
 	<!-- Strings used for fragments for navigation -->
 	<string name="home_fragment_label">Home Fragment</string>
 	<string name="draw_fragment_label">Draw Fragment</string>
 	<string name="battery_level">%s%%</string>
-	<string name="search">Search</string>
+	<string name="search">חיפוש</string>
 	<string name="bottom_dialog_app_rename">Rename</string>
-	<string name="bottom_dialog_add_to_home">Add to Home Screen</string>
-	<string name="bottom_dialog_order_home_apps">Order Home Apps</string>
+	<string name="bottom_dialog_add_to_home">הוסף לדף הבית</string>
+	<string name="bottom_dialog_order_home_apps">סדר מחדש את יישומי דף הבית</string>
 	<string name="bottom_dialog_remove_from_home">Remove from Home Screen</string>
 	<string name="bottom_dialog_add_to_hidden">Hidden App</string>
 	<string name="bottom_dialog_remove_to_hidden">Remove Hidden App</string>
-	<string name="bottom_dialog_add_to_lock">Lock App</string>
+	<string name="bottom_dialog_add_to_lock">נעילת יישומים</string>
 	<string name="bottom_dialog_remove_to_unlock">Unlock App</string>
 	<string name="bottom_dialog_app_info">App Info</string>
 	<string name="bottom_dialog_app_uninstall">Uninstall App</string>
