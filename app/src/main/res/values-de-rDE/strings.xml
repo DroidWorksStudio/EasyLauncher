@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">Settings</string>
-	<string name="action_settings_default">Set as default launcher</string>
+	<string name="action_settings">Einstellungen</string>
+	<string name="action_settings_default">Als Standard-Launcher festlegen</string>
 	<!-- Strings used for fragments for navigation -->
 	<string name="home_fragment_label">Home Fragment</string>
 	<string name="draw_fragment_label">Draw Fragment</string>
 	<string name="battery_level">%s%%</string>
 	<string name="search">Search</string>
 	<string name="bottom_dialog_app_rename">Rename</string>
-	<string name="bottom_dialog_add_to_home">Add to Home Screen</string>
+	<string name="bottom_dialog_add_to_home">Zum Startbildschirm hinzufügen</string>
 	<string name="bottom_dialog_order_home_apps">Order Home Apps</string>
 	<string name="bottom_dialog_remove_from_home">Remove from Home Screen</string>
 	<string name="bottom_dialog_add_to_hidden">Hidden App</string>
@@ -43,8 +43,8 @@
 	<string name="settings_appearance_home_date_alignment">Date Alignment</string>
 	<string name="settings_appearance_home_time_alignment">Time Alignment</string>
 	<string name="settings_appearance_home_app_alignment">Home App Alignment</string>
-	<string name="appearance_bottom_dialog_text_size_title">Size</string>
-	<string name="appearance_bottom_dialog_text_color_title">Color</string>
+	<string name="appearance_bottom_dialog_text_size_title">Größe</string>
+	<string name="appearance_bottom_dialog_text_color_title">Farbe</string>
 	<string name="appearance_bottom_dialog_alignment_title">Alignment</string>
 	<string name="appearance_bottom_dialog_padding_title">Padding</string>
 	<string name="appearance_bottom_dialog_desc_date">Date\u0020:\u0020</string>
@@ -511,8 +511,8 @@
 		<item>Stay determined, succeed.</item>
 		<item>Keep moving towards your goals.</item>
 		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
+		<item>Stärke kommt von innen.</item>
+		<item>Bleiben Sie auf Ihre Ziele fokussiert.</item>
 		<item>You\'re capable of anything.</item>
 		<item>Stay fearless, stay strong.</item>
 		<item>Believe, achieve, succeed!</item>
@@ -532,8 +532,8 @@
 		<item>Dream, believe, achieve!</item>
 	</string-array>
 	<string-array name="alignment_options">
-		<item>Left</item>
-		<item>Center</item>
-		<item>Right</item>
+		<item>Links</item>
+		<item>Mitte</item>
+		<item>Rechts</item>
 	</string-array>
 </resources>
