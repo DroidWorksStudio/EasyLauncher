@@ -28,15 +28,15 @@
 	<string name="settings_title_gestures">Gestures</string>
 	<string name="settings_title_others">Others</string>
 	<string name="settings_display_status_bar">Show Status Bar</string>
-	<string name="settings_display_date">Show Date</string>
-	<string name="settings_display_time">Show Time</string>
-	<string name="settings_display_battery">Show Battery</string>
-	<string name="settings_display_daily_word">Show Daily Word</string>
+	<string name="settings_display_date">Datum anzeigen</string>
+	<string name="settings_display_time">Zeit anzeigen</string>
+	<string name="settings_display_battery">Akku anzeigen</string>
+	<string name="settings_display_daily_word">Wort des Tages anzeigen</string>
 	<string name="settings_display_app_icons">Show App Icons</string>
 	<string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
 	<string name="settings_display_auto_open_apps">Auto Open Last App</string>
-	<string name="settings_appearance_text_size_title">Size</string>
-	<string name="settings_appearance_color_title">Color</string>
+	<string name="settings_appearance_text_size_title">Größe</string>
+	<string name="settings_appearance_color_title">Farbe</string>
 	<string name="settings_appearance_alignment_title">Alignment</string>
 	<string name="settings_appearance_padding_title">Padding</string>
 	<string name="settings_appearance_wallpaper">Custom Wallpaper</string>
@@ -88,11 +88,11 @@
 		<item>Embrace journey.</item>
 		<item>Strength within.</item>
 		<item>Keep pushing!</item>
-		<item>You\'re amazing!</item>
-		<item>Trust, never give.</item>
-		<item>Limitless potential.</item>
-		<item>Progress over perfection.</item>
-		<item>Challenges = growth.</item>
+		<item>Du bist fantastisch!</item>
+		<item>Vertraue, gib niemals auf.</item>
+		<item>Grenzenloses Potenzial.</item>
+		<item>Fortschritt statt Perfektion.</item>
+		<item>Herausforderungen = Wachstum.</item>
 		<item>Worthy of success.</item>
 		<item>Chase your dreams.</item>
 		<item>Overcome all!</item>
