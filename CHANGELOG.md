@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed fDroid - ([fe3848b](https://github.com/DroidWorksStudio/mLauncher/commit/fe3848b820a26597ee5ab64742427796597bd4dc))
 
+### Language Support:
+
+- Updated Language Files. ([#15](https://github.com/DroidWorksStudio/mLauncher/issues/15)) - ([2e05dc5](https://github.com/DroidWorksStudio/mLauncher/commit/2e05dc59da3654eda7ea6d3083460d754c2d9250))
+
 ### Refactoring:
 
 - Refactor settings menu for cleaner look. - ([9cddace](https://github.com/DroidWorksStudio/mLauncher/commit/9cddace27a378ac945e40ae4cf3072bcd056d260))
