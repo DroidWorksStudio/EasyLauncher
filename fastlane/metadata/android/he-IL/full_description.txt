@@ -1,13 +1,13 @@
-EasyLauncher - Minimal and Clutter Free Android launcher
+EasyLauncher - משגר אנדרואיד מינימלי וללא עומס
 
-<b> Features: </b>
+<b> תכונות: </b>
 
-- You can rename apps in the app-drawer. (Sync with home screen)
-- No use of INTERNET permissions.
-- Lock settings behind biometrics (toggle).
+- אתה יכול לשנות את שמות האפליקציות במגירת האפליקציות. (סנכרון עם מסך הבית)
+- אין שימוש בהרשאות אינטרנט.
+- נעילת הגדרות מאחורי ביומטריה (החלפה).
 
-<b>Possible actions now include:</b>
+<b>פעולות אפשריות כוללות כעת:</b>
 
-- Clicking on the Battery Level
-- Clicking on the Clock
-- Clicking on the Date
+- לחיצה על רמת הסוללה
+- לחיצה על השעון
+- לחיצה על התאריך
