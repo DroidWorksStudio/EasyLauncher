@@ -2,71 +2,66 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
-## [Coming Soon](https://github.com/DroidWorksStudio/mLauncher/tree/HEAD)
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
 ### Bug Fixes:
 
-- Fixed fDroid - ([fe3848b](https://github.com/DroidWorksStudio/mLauncher/commit/fe3848b820a26597ee5ab64742427796597bd4dc))
-
-### Chore:
-
-- *(language)* Fix the language files. - ([83d6586](https://github.com/DroidWorksStudio/mLauncher/commit/83d6586184a567b31e5307036f45d026b41b5d57))
-- *(language)* Fix the language files. - ([20dd245](https://github.com/DroidWorksStudio/mLauncher/commit/20dd245c6c3f5e19552b977029e1c17818cb43d3))
+- Fixed fDroid - ([fe3848b](https://github.com/DroidWorksStudio/EasyLauncher/commit/fe3848b820a26597ee5ab64742427796597bd4dc))
 
 ### Language Support:
 
-- Updated Language Files. ([#15](https://github.com/DroidWorksStudio/mLauncher/issues/15)) - ([2e05dc5](https://github.com/DroidWorksStudio/mLauncher/commit/2e05dc59da3654eda7ea6d3083460d754c2d9250))
+- Updated Language Files. ([#15](https://github.com/DroidWorksStudio/EasyLauncher/issues/15)) - ([2e05dc5](https://github.com/DroidWorksStudio/EasyLauncher/commit/2e05dc59da3654eda7ea6d3083460d754c2d9250))
 
 ### Refactoring:
 
-- Refactor settings menu for cleaner look. - ([9cddace](https://github.com/DroidWorksStudio/mLauncher/commit/9cddace27a378ac945e40ae4cf3072bcd056d260))
+- Refactor settings menu for cleaner look. - ([9cddace](https://github.com/DroidWorksStudio/EasyLauncher/commit/9cddace27a378ac945e40ae4cf3072bcd056d260))
 
-## [0.0.3](https://github.com/DroidWorksStudio/mLauncher/tree/0.0.3) - (11, May 2024)
+## [0.0.3](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.3) - (11, May 2024)
 
 ### Implemented Enhancements:
 
-- Added Auto keyboard & Auto Open last app toggle settings. - ([f91bd77](https://github.com/DroidWorksStudio/mLauncher/commit/f91bd777b270e4b27e9a679478596a0e71f94e07))
-- Added setupOrientation to force portrait mode. - ([60114f6](https://github.com/DroidWorksStudio/mLauncher/commit/60114f6e27e1efcab923a0090db30df5b2c8185c))
+- Added Auto keyboard & Auto Open last app toggle settings. - ([f91bd77](https://github.com/DroidWorksStudio/EasyLauncher/commit/f91bd777b270e4b27e9a679478596a0e71f94e07))
+- Added setupOrientation to force portrait mode. - ([60114f6](https://github.com/DroidWorksStudio/EasyLauncher/commit/60114f6e27e1efcab923a0090db30df5b2c8185c))
 
 ### Bug Fixes:
 
-- Hide self from app list. - ([d494284](https://github.com/DroidWorksStudio/mLauncher/commit/d4942849012251cadb0ef991c4b14adfb402cf80))
+- Hide self from app list. - ([d494284](https://github.com/DroidWorksStudio/EasyLauncher/commit/d4942849012251cadb0ef991c4b14adfb402cf80))
 
 ### Language Support:
 
-- Updated Language Files. ([#12](https://github.com/DroidWorksStudio/mLauncher/issues/12)) - ([70a98fd](https://github.com/DroidWorksStudio/mLauncher/commit/70a98fda4f40549b6a143bf4360a3809f0614b98))
+- Updated Language Files. ([#12](https://github.com/DroidWorksStudio/EasyLauncher/issues/12)) - ([70a98fd](https://github.com/DroidWorksStudio/EasyLauncher/commit/70a98fda4f40549b6a143bf4360a3809f0614b98))
 
-## [0.0.2](https://github.com/DroidWorksStudio/mLauncher/tree/0.0.2) - (11, May 2024)
+## [0.0.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.2) - (11, May 2024)
 
 ### Implemented Enhancements:
 
-- Added support to toggle app icons. - ([f2e80ca](https://github.com/DroidWorksStudio/mLauncher/commit/f2e80cad634ff7e79b15805b42a1d7e3761f009e))
+- Added support to toggle app icons. - ([f2e80ca](https://github.com/DroidWorksStudio/EasyLauncher/commit/f2e80cad634ff7e79b15805b42a1d7e3761f009e))
 
 ### Bug Fixes:
 
-- Fixed the Accessibility settings if required. - ([4c19dbb](https://github.com/DroidWorksStudio/mLauncher/commit/4c19dbbd7f47dda5e82cdafc4cbd516805180295))
+- Fixed the Accessibility settings if required. - ([4c19dbb](https://github.com/DroidWorksStudio/EasyLauncher/commit/4c19dbbd7f47dda5e82cdafc4cbd516805180295))
 
 ### Language Support:
 
-- Updated Language Files. ([#9](https://github.com/DroidWorksStudio/mLauncher/issues/9)) - ([960aea8](https://github.com/DroidWorksStudio/mLauncher/commit/960aea882538a5d13403f5f99e10fce0b4a64437))
-- Updated Language Files. ([#7](https://github.com/DroidWorksStudio/mLauncher/issues/7)) - ([89ef870](https://github.com/DroidWorksStudio/mLauncher/commit/89ef870cf40846216ff366e96d9f2ebb766e4a89))
+- Updated Language Files. ([#9](https://github.com/DroidWorksStudio/EasyLauncher/issues/9)) - ([960aea8](https://github.com/DroidWorksStudio/EasyLauncher/commit/960aea882538a5d13403f5f99e10fce0b4a64437))
+- Updated Language Files. ([#7](https://github.com/DroidWorksStudio/EasyLauncher/issues/7)) - ([89ef870](https://github.com/DroidWorksStudio/EasyLauncher/commit/89ef870cf40846216ff366e96d9f2ebb766e4a89))
 
 ### Refactoring:
 
-- Refactor keyboard handling and UI consistency - ([c7313a9](https://github.com/DroidWorksStudio/mLauncher/commit/c7313a9cdd99c1d370e4fadcb4689c327c48904f))
+- Refactor keyboard handling and UI consistency - ([c7313a9](https://github.com/DroidWorksStudio/EasyLauncher/commit/c7313a9cdd99c1d370e4fadcb4689c327c48904f))
 
-## [0.0.1](https://github.com/DroidWorksStudio/mLauncher/tree/0.0.1) - (08, May 2024)
+## [0.0.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.1) - (08, May 2024)
 
 ### Implemented Enhancements:
 
-- Added Swipe Actions / Options. - ([94399ab](https://github.com/DroidWorksStudio/mLauncher/commit/94399ab9d1daf66fac370701c09da8e8cbf5dbbe))
+- Added Swipe Actions / Options. - ([94399ab](https://github.com/DroidWorksStudio/EasyLauncher/commit/94399ab9d1daf66fac370701c09da8e8cbf5dbbe))
 
 ### Bug Fixes:
 
-- Fixed Others Text/Links - ([e91771f](https://github.com/DroidWorksStudio/mLauncher/commit/e91771f4bbf92915e98f758cfb2d261a12cd9adc))
+- Fixed Others Text/Links - ([e91771f](https://github.com/DroidWorksStudio/EasyLauncher/commit/e91771f4bbf92915e98f758cfb2d261a12cd9adc))
 
 ### Refactoring:
 
-- Accessibility actions and helper methods - ([5d3f1fd](https://github.com/DroidWorksStudio/mLauncher/commit/5d3f1fd6e377a5c895ba745dfea5bd198dbf1110))
+- Accessibility actions and helper methods - ([5d3f1fd](https://github.com/DroidWorksStudio/EasyLauncher/commit/5d3f1fd6e377a5c895ba745dfea5bd198dbf1110))
 
 <!-- Generated by DroidWorks Studio -->
