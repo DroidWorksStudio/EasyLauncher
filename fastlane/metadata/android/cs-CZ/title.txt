@@ -1,1 +1,1 @@
-EasyLauncher - Minimal launcher
+EasyLauncher - Minimální spouštěč
