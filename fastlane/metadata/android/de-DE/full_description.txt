@@ -1,0 +1,13 @@
+EasyLauncher - Minimaler und übersichtlicher Android-Launcher
+
+<b> Funktionen: </b>
+
+- Sie können Apps in der App-Schublade umbenennen. (Mit Startbildschirm synchronisieren)
+- Keine Verwendung von INTERNET-Berechtigungen.
+- Einstellungen hinter Biometrie sperren (umschalten).
+
+<b>Mögliche Aktionen sind jetzt:</b>
+
+- Klicken Sie auf den Batteriestand
+- Klicken Sie auf die Uhr
+- Klicken Sie auf das Datum

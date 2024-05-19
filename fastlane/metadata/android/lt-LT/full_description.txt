@@ -1,1 +1,13 @@
-Coming Soon.
+EasyLauncher – minimali ir netvarkinga Android paleidimo priemonė
+
+<b> Savybės: </b>
+
+- Programas galite pervardyti programų stalčiuje. (Sinchronizuoti su pagrindiniu ekranu)
+- Nenaudojami INTERNETO leidimai.
+- Užrakinkite nustatymus už biometrinių duomenų (perjunkite).
+
+<b>Dabar galimi veiksmai:</b>
+
+- Spustelėjus baterijos lygį
+- Paspaudus ant Laikrodžio
+- Paspaudus ant datos

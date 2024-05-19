@@ -1,1 +1,13 @@
-Coming Soon.
+EasyLauncher – minimální a nepořádný spouštěč pro Android
+
+<b> Vlastnosti: </b>
+
+- Aplikace můžete přejmenovat v zásuvce aplikací. (Synchronizace s domovskou obrazovkou)
+- Žádné používání oprávnění INTERNET.
+- Zamknout nastavení za biometrii (přepnout).
+
+<b>Možné akce nyní zahrnují:</b>
+
+- Kliknutím na Úroveň baterie
+- Kliknutím na hodiny
+- Kliknutím na Datum

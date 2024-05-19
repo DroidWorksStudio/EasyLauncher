@@ -1,1 +1,13 @@
-Coming Soon.
+EasyLauncher: launcher Android minimale e privo di disordine
+
+<b> Caratteristiche: </b>
+
+- Puoi rinominare le app nel cassetto delle app. (Sincronizzazione con schermata iniziale)
+- Nessun utilizzo delle autorizzazioni INTERNET.
+- Blocca le impostazioni dietro la biometria (attiva/disattiva).
+
+<b>Le azioni possibili ora includono:</b>
+
+- Facendo clic sul livello della batteria
+- Facendo clic sull'orologio
+- Facendo clic sulla data

@@ -1,1 +1,13 @@
-Coming Soon.
+EasyLauncher - Minimale en overzichtelijke Android-launcher
+
+<b> Kenmerken: </b>
+
+- U kunt apps hernoemen in de app-lade. (Synchroniseren met startscherm)
+- Geen gebruik van INTERNET-machtigingen.
+- Vergrendel instellingen achter biometrie (schakelaar).
+
+<b>Mogelijke acties zijn nu:</b>
+
+- Klik op het batterijniveau
+- Klik op de klok
+- Klik op de datum
