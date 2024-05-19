@@ -90,13 +90,8 @@
 	<string name="accessibility_settings_enable">Enable</string>
 	<string name="accessibility_settings_disable">Disable</string>
 
-	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Aster Launcher.\n\nThis permission
-    is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
-	<string name="receiver_name">Lock - screen locker</string>
-	<!-- Message displayed to the user by system during authorization-->
-	<!-- Small description inside Device Administrator Setting -->
-	<string name="receiver_desc">Allows to lock the screen</string>
-	<string name="admin_permission_message">Aster launcher promises to use lock screen permission responsibly.Aster launcher does not collect or share any data.</string>
+	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
+	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
 
 	<string-array name="settings_appearance_daily_word_default">
 		<item>Stay resilient!</item>
