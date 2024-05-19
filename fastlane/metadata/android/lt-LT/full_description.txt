@@ -1,13 +1,13 @@
-EasyLauncher - Minimal and Clutter Free Android launcher
+EasyLauncher – minimali ir netvarkinga Android paleidimo priemonė
 
-<b> Features: </b>
+<b> Savybės: </b>
 
-- You can rename apps in the app-drawer. (Sync with home screen)
-- No use of INTERNET permissions.
-- Lock settings behind biometrics (toggle).
+- Programas galite pervardyti programų stalčiuje. (Sinchronizuoti su pagrindiniu ekranu)
+- Nenaudojami INTERNETO leidimai.
+- Užrakinkite nustatymus už biometrinių duomenų (perjunkite).
 
-<b>Possible actions now include:</b>
+<b>Dabar galimi veiksmai:</b>
 
-- Clicking on the Battery Level
-- Clicking on the Clock
-- Clicking on the Date
+- Spustelėjus baterijos lygį
+- Paspaudus ant Laikrodžio
+- Paspaudus ant datos
