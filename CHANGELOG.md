@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Coming Soon](https://github.com/DroidWorksStudio/mLauncher/tree/HEAD)
+
+### Bug Fixes:
+
+- Fixed fDroid - ([fe3848b](https://github.com/DroidWorksStudio/mLauncher/commit/fe3848b820a26597ee5ab64742427796597bd4dc))
+
+### Refactoring:
+
+- Refactor settings menu for cleaner look. - ([9cddace](https://github.com/DroidWorksStudio/mLauncher/commit/9cddace27a378ac945e40ae4cf3072bcd056d260))
+
 ## [0.0.3](https://github.com/DroidWorksStudio/mLauncher/tree/0.0.3) - (11, May 2024)
 
 ### Implemented Enhancements:

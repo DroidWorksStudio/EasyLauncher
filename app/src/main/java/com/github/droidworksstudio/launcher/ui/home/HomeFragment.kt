@@ -12,10 +12,11 @@ import android.text.format.DateFormat
 import android.util.Log
 import android.view.*
 import androidx.annotation.RequiresApi
+import androidx.biometric.BiometricPrompt
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.MyAccessibilityService
@@ -34,6 +35,7 @@ import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.launch
 import java.util.Locale
 import javax.inject.Inject
 
@@ -67,6 +69,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     private val homeAdapter: HomeAdapter by lazy { HomeAdapter(this, this, preferenceHelper) }
 
     private lateinit var batteryReceiver: BroadcastReceiver
+    private lateinit var biometricPrompt: BiometricPrompt
 
     private lateinit var context: Context
 
@@ -228,8 +231,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         return object : OnSwipeTouchListener(context) {
             override fun onLongClick() {
                 super.onLongClick()
-                val intent = Intent(requireActivity(), SettingsActivity::class.java)
-                requireActivity().startActivity(intent)
+                trySettings()
                 return
             }
 
@@ -242,6 +244,51 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
                 } else {
                     return
                 }
+            }
+        }
+    }
+
+    private fun trySettings() {
+        lifecycleScope.launch(Dispatchers.Main) {
+            biometricPrompt = BiometricPrompt(this@HomeFragment,
+                ContextCompat.getMainExecutor(requireContext()),
+                object : BiometricPrompt.AuthenticationCallback() {
+                    override fun onAuthenticationError(
+                        errorCode: Int,
+                        errString: CharSequence
+                    ) {
+                        when (errorCode) {
+                            BiometricPrompt.ERROR_USER_CANCELED -> appHelper.showToast(
+                                requireContext(),
+                                getString(R.string.authentication_cancel)
+                            )
+
+                            else -> appHelper.showToast(
+                                requireContext(),
+                                getString(R.string.authentication_error).format(
+                                    errString,
+                                    errorCode
+                                )
+                            )
+                        }
+                    }
+
+                    override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
+                        fingerHelper.sendToTargetActivity(SettingsActivity::class.java)
+                    }
+
+                    override fun onAuthenticationFailed() {
+                        appHelper.showToast(
+                            requireContext(),
+                            getString(R.string.authentication_failed)
+                        )
+                    }
+                })
+
+            if (preferenceHelper.settingsLock) {
+                fingerHelper.startFingerprintSettingsAuth(SettingsActivity::class.java)
+            } else {
+                fingerHelper.sendToTargetActivity(SettingsActivity::class.java)
             }
         }
     }
@@ -291,7 +338,10 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     override fun onAuthenticationError(errorCode: Int, errorMessage: CharSequence?) {
-        appHelper.showToast(context, getString(R.string.authentication_error))
+        when (errorCode) {
+            BiometricPrompt.ERROR_USER_CANCELED -> appHelper.showToast(requireContext(), getString(R.string.authentication_cancel))
+            else -> appHelper.showToast(requireContext(), getString(R.string.authentication_error).format(errorMessage, errorCode))
+        }
     }
 
     override fun onTopReached() {
