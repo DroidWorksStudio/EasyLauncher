@@ -75,12 +75,8 @@
 	<string name="accessibility_settings_title">Pritaikymo neįgaliesiems nustatymai</string>
 	<string name="accessibility_settings_enable">Įgalinti</string>
 	<string name="accessibility_settings_disable">Išjungti</string>
-	<string name="accessibility_service_desc">Įjunkite pritaikymo neįgaliesiems paslaugą, kad galėtumėte naudoti dukart paliesdami užrakinti funkciją Aster Launcher.\n\nŠis leidimas naudojamas tik ekranui išjungti. Mūsų pritaikymo neįgaliesiems paslauga nerenka ir nebendrina jokių duomenų.</string>
-	<string name="receiver_name">Užraktas – ekrano užraktas</string>
-	<!-- Message displayed to the user by system during authorization-->
-	<!-- Small description inside Device Administrator Setting -->
-	<string name="receiver_desc">Leidžia užrakinti ekraną</string>
-	<string name="admin_permission_message">Aster paleidimo priemonė žada atsakingai naudoti užrakinimo ekrano leidimą. Aster paleidimo priemonė nerenka ir nebendrina jokių duomenų.</string>
+	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
+	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
 	<string-array name="settings_appearance_daily_word_default">
 		<item>Išlikite atsparūs!</item>
 		<item>Tu tai supratai!</item>
