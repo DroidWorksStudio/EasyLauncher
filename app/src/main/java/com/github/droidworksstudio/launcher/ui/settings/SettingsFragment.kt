@@ -82,6 +82,7 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         binding.gesturesLockSwitchCompat.isChecked = preferenceHelper.tapLockScreen
         binding.gesturesNotificationSwitchCompat.isChecked = preferenceHelper.swipeNotification
         binding.gesturesSearchSwitchCompat.isChecked = preferenceHelper.swipeSearch
+        binding.lockSettingsSwitchCompat.isChecked = preferenceHelper.settingsLock
     }
 
     private fun observeClickListener() {
@@ -184,7 +185,9 @@ class SettingsFragment : Fragment(), ScrollEventListener {
             preferenceViewModel.setAutoOpenApp(isChecked)
         }
 
-
+        binding.lockSettingsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setLockSettings(isChecked)
+        }
     }
 
     override fun onTopReached() {

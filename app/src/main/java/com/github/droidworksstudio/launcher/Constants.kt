@@ -50,5 +50,7 @@ object Constants {
     const val QUICKSETTINGS_MANAGER = "android.app.StatusBarManager"
     const val QUICKSETTINGS_METHOD = "expandSettingsPanel"
 
+    const val TOGGLE_SETTING_LOCK = "TOGGLE_SETTING_LOCK"
+
     const val REQUEST_CODE_ENABLE_ADMIN = 123
 }

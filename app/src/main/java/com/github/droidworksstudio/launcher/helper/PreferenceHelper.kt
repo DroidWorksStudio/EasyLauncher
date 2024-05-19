@@ -110,6 +110,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.DOUBLE_TAP_LOCK, false)
         set(value) = prefs.edit().putBoolean(Constants.DOUBLE_TAP_LOCK, value).apply()
 
+    var settingsLock: Boolean
+        get() = prefs.getBoolean(Constants.TOGGLE_SETTING_LOCK, false)
+        set(value) = prefs.edit().putBoolean(Constants.TOGGLE_SETTING_LOCK, value).apply()
+
     var swipeNotification: Boolean
         get() = prefs.getBoolean(Constants.SWIPE_NOTIFICATION, true)
         set(value) = prefs.edit().putBoolean(Constants.SWIPE_NOTIFICATION, value).apply()

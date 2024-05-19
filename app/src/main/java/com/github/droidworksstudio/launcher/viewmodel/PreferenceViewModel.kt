@@ -36,6 +36,7 @@ class PreferenceViewModel @Inject constructor(
     val swipeSearchLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val autoOpenAppsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    val lockSettingsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
 
     fun setFirstLaunch(firstLaunch: Boolean) {
@@ -166,5 +167,10 @@ class PreferenceViewModel @Inject constructor(
     fun setAutoOpenApp(autoOpenApp: Boolean){
         preferenceHelper.automaticOpenApp = autoOpenApp
         autoOpenAppsLiveData.postValue((preferenceHelper.automaticOpenApp))
+    }
+
+    fun setLockSettings(lockSettings: Boolean){
+        preferenceHelper.settingsLock = lockSettings
+        lockSettingsLiveData.postValue((preferenceHelper.settingsLock))
     }
 }

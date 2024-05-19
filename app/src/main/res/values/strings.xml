@@ -25,6 +25,7 @@
 	<string name="settings_home">Home</string>
 
 	<string name="settings_title_home_display_preferences">Display</string>
+	<string name="settings_title_home_behavior_preferences">Behavior</string>
 	<string name="settings_title_home_appearance_preferences">Appearance</string>
 	<string name="settings_title_date_style">Date Style</string>
 	<string name="settings_title_time_style">Time Style</string>
@@ -40,6 +41,7 @@
 	<string name="settings_display_app_icons">Show App Icons</string>
 	<string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
 	<string name="settings_display_auto_open_apps">Auto Open Last App</string>
+	<string name="settings_display_lock_settings">Lock Settings</string>
 
 	<string name="settings_appearance_text_size_title">Size</string>
 	<string name="settings_appearance_color_title">Color</string>
@@ -74,11 +76,11 @@
 	<string name="settings_others_github">Github</string>
 
 	<string name="authentication_title">Authentication</string>
-	<string name="authentication_subtitle">Please login to get access</string>
+	<string name="authentication_subtitle">Log in using your biometric credentials.</string>
 	<string name="authentication_cancel">Authentication Cancel</string>
 	<string name="authentication_succeeded">Authentication Succeeded</string>
 	<string name="authentication_failed">Authentication Failed</string>
-	<string name="authentication_error">Authentication Error</string>
+	<string name="authentication_error">Authentication Error: %1$s(code %2$d)</string>
 
 	<string name="bottom_alignment_star">Star</string>
 	<string name="bottom_alignment_center">Center</string>
