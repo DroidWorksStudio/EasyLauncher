@@ -3,539 +3,539 @@
 	<string name="action_settings">הגדרות</string>
 	<string name="action_settings_default">הגדר כמשגר ברירת מחדל</string>
 	<!-- Strings used for fragments for navigation -->
-	<string name="home_fragment_label">Home Fragment</string>
-	<string name="draw_fragment_label">Draw Fragment</string>
+	<string name="home_fragment_label">קטע בית</string>
+	<string name="draw_fragment_label">צייר שבר</string>
 	<string name="battery_level">%s%%</string>
 	<string name="search">חיפוש</string>
-	<string name="bottom_dialog_app_rename">Rename</string>
+	<string name="bottom_dialog_app_rename">שנה שם</string>
 	<string name="bottom_dialog_add_to_home">הוסף לדף הבית</string>
 	<string name="bottom_dialog_order_home_apps">סדר מחדש את יישומי דף הבית</string>
-	<string name="bottom_dialog_remove_from_home">Remove from Home Screen</string>
-	<string name="bottom_dialog_add_to_hidden">Hidden App</string>
-	<string name="bottom_dialog_remove_to_hidden">Remove Hidden App</string>
+	<string name="bottom_dialog_remove_from_home">הסר ממסך הבית</string>
+	<string name="bottom_dialog_add_to_hidden">אפליקציה נסתרת</string>
+	<string name="bottom_dialog_remove_to_hidden">הסר את האפליקציה הנסתרת</string>
 	<string name="bottom_dialog_add_to_lock">נעילת יישומים</string>
-	<string name="bottom_dialog_remove_to_unlock">Unlock App</string>
-	<string name="bottom_dialog_app_info">App Info</string>
-	<string name="bottom_dialog_app_uninstall">Uninstall App</string>
-	<string name="settings_name">Launcher Settings</string>
-	<string name="settings_version">%s Version: %s</string>
-	<string name="settings_home">Home</string>
-	<string name="settings_title_home_display_preferences">Display</string>
-	<string name="settings_title_home_behavior_preferences">Behavior</string>
-	<string name="settings_title_home_appearance_preferences">Appearance</string>
-	<string name="settings_title_date_style">Date Style</string>
-	<string name="settings_title_time_style">Time Style</string>
-	<string name="settings_title_app_manager">App Manage</string>
-	<string name="settings_title_gestures">Gestures</string>
-	<string name="settings_title_others">Others</string>
-	<string name="settings_display_status_bar">Show Status Bar</string>
-	<string name="settings_display_date">Show Date</string>
-	<string name="settings_display_time">Show Time</string>
-	<string name="settings_display_battery">Show Battery</string>
-	<string name="settings_display_daily_word">Show Daily Word</string>
-	<string name="settings_display_app_icons">Show App Icons</string>
+	<string name="bottom_dialog_remove_to_unlock">בטל את נעילת האפליקציה</string>
+	<string name="bottom_dialog_app_info">מידע על האפליקציה</string>
+	<string name="bottom_dialog_app_uninstall">הסר את ההתקנה של האפליקציה</string>
+	<string name="settings_name">הגדרות משגר</string>
+	<string name="settings_version">%s גרסה: %s</string>
+	<string name="settings_home">בית</string>
+	<string name="settings_title_home_display_preferences">לְהַצִיג</string>
+	<string name="settings_title_home_behavior_preferences">התנהגות</string>
+	<string name="settings_title_home_appearance_preferences">מראה חיצוני</string>
+	<string name="settings_title_date_style">סגנון דייט</string>
+	<string name="settings_title_time_style">סגנון זמן</string>
+	<string name="settings_title_app_manager">ניהול אפליקציות</string>
+	<string name="settings_title_gestures">מחוות</string>
+	<string name="settings_title_others">אחרים</string>
+	<string name="settings_display_status_bar">הצג את שורת המצב</string>
+	<string name="settings_display_date">הצג תאריך</string>
+	<string name="settings_display_time">הצג זמן</string>
+	<string name="settings_display_battery">הצג סוללה</string>
+	<string name="settings_display_daily_word">הצג מילה יומית</string>
+	<string name="settings_display_app_icons">הצג סמלי אפליקציה</string>
 	<string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
-	<string name="settings_display_auto_open_apps">Auto Open Last App</string>
-	<string name="settings_display_lock_settings">Lock Settings</string>
-	<string name="settings_appearance_text_size_title">Size</string>
-	<string name="settings_appearance_color_title">Color</string>
-	<string name="settings_appearance_alignment_title">Alignment</string>
-	<string name="settings_appearance_padding_title">Padding</string>
-	<string name="settings_appearance_wallpaper">Custom Wallpaper</string>
-	<string name="settings_appearance_home_date_alignment">Date Alignment</string>
-	<string name="settings_appearance_home_time_alignment">Time Alignment</string>
-	<string name="settings_appearance_home_app_alignment">Home App Alignment</string>
-	<string name="appearance_bottom_dialog_text_size_title">Size</string>
-	<string name="appearance_bottom_dialog_text_color_title">Color</string>
-	<string name="appearance_bottom_dialog_alignment_title">Alignment</string>
-	<string name="appearance_bottom_dialog_padding_title">Padding</string>
-	<string name="appearance_bottom_dialog_desc_date">Date\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_time">Time\u0020:\u0020 </string>
-	<string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_word">Word\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_battery">Battery\u0020:\u0020 </string>
-	<string name="settings_manager_favorite">Favorite Apps</string>
-	<string name="settings_manager_hidden">Hidden Apps</string>
-	<string name="settings_select_wallpaper">Select Wallpaper</string>
-	<string name="settings_double_tap_lock">Double tap to lock</string>
-	<string name="settings_swipe_down_notification">Swipe down expand notification</string>
-	<string name="settings_swipe_up_search">Swipe up open search view</string>
-	<string name="settings_others_share">Share</string>
-	<string name="settings_others_feedback">Feedback</string>
+	<string name="settings_display_auto_open_apps">פתח אוטומטית את האפליקציה האחרונה</string>
+	<string name="settings_display_lock_settings">הגדרות נעילה</string>
+	<string name="settings_appearance_text_size_title">גודל</string>
+	<string name="settings_appearance_color_title">צֶבַע</string>
+	<string name="settings_appearance_alignment_title">יישור</string>
+	<string name="settings_appearance_padding_title">ריפוד</string>
+	<string name="settings_appearance_wallpaper">טפט מותאם אישית</string>
+	<string name="settings_appearance_home_date_alignment">יישור תאריכים</string>
+	<string name="settings_appearance_home_time_alignment">יישור זמן</string>
+	<string name="settings_appearance_home_app_alignment">יישור אפליקציות ביתיות</string>
+	<string name="appearance_bottom_dialog_text_size_title">גודל</string>
+	<string name="appearance_bottom_dialog_text_color_title">צֶבַע</string>
+	<string name="appearance_bottom_dialog_alignment_title">יישור</string>
+	<string name="appearance_bottom_dialog_padding_title">ריפוד</string>
+	<string name="appearance_bottom_dialog_desc_date">תאריך\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_time">זמן\u0020:\u0020 </string>
+	<string name="appearance_bottom_dialog_desc_app">אפליקציה\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_word">מילה\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_battery">סוללה\u0020:\u0020 </string>
+	<string name="settings_manager_favorite">אפליקציות מועדפות</string>
+	<string name="settings_manager_hidden">אפליקציות נסתרות</string>
+	<string name="settings_select_wallpaper">בחר טפט</string>
+	<string name="settings_double_tap_lock">הקש פעמיים כדי לנעול</string>
+	<string name="settings_swipe_down_notification">החלק מטה התראה על הרחבה</string>
+	<string name="settings_swipe_up_search">החלק למעלה תצוגת חיפוש פתוחה</string>
+	<string name="settings_others_share">לַחֲלוֹק</string>
+	<string name="settings_others_feedback">מָשׁוֹב</string>
 	<string name="settings_others_github">Github</string>
-	<string name="authentication_title">Authentication</string>
-	<string name="authentication_subtitle">Log in using your biometric credentials.</string>
-	<string name="authentication_cancel">Authentication Cancel</string>
-	<string name="authentication_succeeded">Authentication Succeeded</string>
-	<string name="authentication_failed">Authentication Failed</string>
-	<string name="authentication_error">Authentication Error: %1$s(code %2$d)</string>
-	<string name="bottom_alignment_star">Star</string>
-	<string name="bottom_alignment_center">Center</string>
-	<string name="bottom_alignment_end">End</string>
-	<string name="accessibility_settings_title">Accessibility Settings</string>
-	<string name="accessibility_settings_enable">Enable</string>
-	<string name="accessibility_settings_disable">Disable</string>
-	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Aster Launcher.\n\nThis permission
-    is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
-	<string name="receiver_name">Lock - screen locker</string>
+	<string name="authentication_title">אימות</string>
+	<string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
+	<string name="authentication_cancel">ביטול האימות</string>
+	<string name="authentication_succeeded">האימות הצליח</string>
+	<string name="authentication_failed">אימות נכשל</string>
+	<string name="authentication_error">שגיאת אימות: %1$s(קוד %2$d)</string>
+	<string name="bottom_alignment_star">כוכב</string>
+	<string name="bottom_alignment_center">מֶרְכָּז</string>
+	<string name="bottom_alignment_end">סוֹף</string>
+	<string name="accessibility_settings_title">הגדרות נגישות</string>
+	<string name="accessibility_settings_enable">לְאַפשֵׁר</string>
+	<string name="accessibility_settings_disable">השבת</string>
+	<string name="accessibility_service_desc">אנא הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב-Aster Launcher.\n\nהרשאה זו
+    משמשת רק כדי לכבות את המסך שלך. שירות הנגישות שלנו אינו אוסף או משתף נתונים כלשהם.</string>
+	<string name="receiver_name">נעילה - לוקר מסך</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->
-	<string name="receiver_desc">Allows to lock the screen</string>
-	<string name="admin_permission_message">Aster launcher promises to use lock screen permission responsibly.Aster launcher does not collect or share any data.</string>
+	<string name="receiver_desc">מאפשר לנעול את המסך</string>
+	<string name="admin_permission_message">משגר Aster מבטיח להשתמש בהרשאת מסך הנעילה באחריות. משגר Aster אינו אוסף או משתף נתונים כלשהם.</string>
 	<string-array name="settings_appearance_daily_word_default">
-		<item>Stay resilient!</item>
-		<item>You got this!</item>
-		<item>Shine bright!</item>
-		<item>Create destiny.</item>
-		<item>Embrace journey.</item>
-		<item>Strength within.</item>
-		<item>Keep pushing!</item>
-		<item>You\'re amazing!</item>
-		<item>Trust, never give.</item>
-		<item>Limitless potential.</item>
-		<item>Progress over perfection.</item>
-		<item>Challenges = growth.</item>
-		<item>Worthy of success.</item>
-		<item>Chase your dreams.</item>
-		<item>Overcome all!</item>
-		<item>Determination wins.</item>
-		<item>Every step counts.</item>
-		<item>Stay positive!</item>
-		<item>Resilience rocks.</item>
-		<item>Strength in you.</item>
-		<item>Celebrate progress.</item>
-		<item>Hard work pays.</item>
-		<item>Trust, have faith.</item>
-		<item>Unique journey.</item>
-		<item>Eyes on prize.</item>
-		<item>Achieve anything!</item>
-		<item>Take bold steps.</item>
-		<item>Passion fuels you.</item>
-		<item>Focus on goals.</item>
-		<item>Persevere, win.</item>
-		<item>Self-belief key.</item>
-		<item>Deserving of good.</item>
-		<item>Reach for dreams.</item>
-		<item>Brave, strong, smart.</item>
-		<item>Positive attitude.</item>
-		<item>Trust the journey.</item>
-		<item>Unwavering determination.</item>
-		<item>Setbacks = comeback.</item>
-		<item>Turn dreams reality.</item>
-		<item>Commit to goals.</item>
-		<item>Strength, no bounds.</item>
-		<item>Head up, breakthrough.</item>
-		<item>Your potential shines.</item>
-		<item>Dreams within reach.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Believe, achieve.</item>
-		<item>Push past limits.</item>
-		<item>Perseverance pays.</item>
-		<item>Stay fearless!</item>
-		<item>Rise above challenges.</item>
-		<item>Keep dreaming big.</item>
-		<item>Live with purpose.</item>
-		<item>Focus on the good.</item>
-		<item>Strength from within.</item>
-		<item>Believe in magic.</item>
-		<item>Smile, you\'ve got this.</item>
-		<item>Never lose hope.</item>
-		<item>Embrace every moment.</item>
-		<item>Be your own hero.</item>
-		<item>You\'re enough.</item>
-		<item>Conquer your fears.</item>
-		<item>Seize the day!</item>
-		<item>Love yourself first.</item>
-		<item>Stay positive, always.</item>
-		<item>You\'re a warrior.</item>
-		<item>Believe in yourself.</item>
-		<item>Embrace possibilities.</item>
-		<item>Live with passion.</item>
-		<item>Keep moving forward.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Stay true to you.</item>
-		<item>Live boldly.</item>
-		<item>Keep the faith.</item>
-		<item>Strength in adversity.</item>
-		<item>Every day, grow.</item>
-		<item>Perseverance, victory.</item>
-		<item>Chase your passions.</item>
-		<item>Find joy in journey.</item>
-		<item>Take risks, thrive.</item>
-		<item>Stay strong, brave.</item>
-		<item>Trust inner wisdom.</item>
-		<item>Keep shining bright.</item>
-		<item>Dream, believe, achieve.</item>
-		<item>Be unstoppable.</item>
-		<item>Own your greatness.</item>
-		<item>Embrace the unknown.</item>
-		<item>Keep pushing forward.</item>
-		<item>Trust in yourself.</item>
-		<item>Spread kindness always.</item>
-		<item>Believe in your dreams.</item>
-		<item>Stay focused, determined.</item>
-		<item>Embrace your journey.</item>
-		<item>Keep your head up.</item>
-		<item>Never give up hope.</item>
-		<item>Strength from within.</item>
-		<item>Stay resilient, strong.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Embrace the challenge.</item>
-		<item>Keep the fire burning.</item>
-		<item>Focus on what\'s possible.</item>
-		<item>Dream big, work hard.</item>
-		<item>Keep your eyes on prize.</item>
-		<item>Trust the process.</item>
-		<item>Stay true to yourself.</item>
-		<item>Believe, achieve, succeed.</item>
-		<item>Stay inspired always.</item>
-		<item>Be fearless in pursuit.</item>
-		<item>Stay grounded, rise.</item>
-		<item>Find strength in struggle.</item>
-		<item>Embrace every challenge.</item>
-		<item>Stay bold, stay bright.</item>
-		<item>You\'re capable of greatness.</item>
-		<item>Trust your journey.</item>
-		<item>Keep fighting, keep rising.</item>
-		<item>Believe in the impossible.</item>
-		<item>Stay resilient, never give.</item>
-		<item>You\'re stronger than you know.</item>
-		<item>Live with passion and purpose.</item>
-		<item>Find joy in every journey.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay positive, stay strong.</item>
-		<item>Every day is a new chance.</item>
-		<item>Embrace every opportunity.</item>
-		<item>Keep pushing past limits.</item>
-		<item>Trust your inner strength.</item>
-		<item>You\'re destined for greatness.</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
+		<item>הישאר עמיד!</item>
+		<item>יש לך את זה!</item>
+		<item>לזרוח בבהירות!</item>
+		<item>צור גורל.</item>
+		<item>מסע חיבוק.</item>
+		<item>כוח בפנים.</item>
+		<item>תמשיך לדחוף!</item>
+		<item>אתה מדהים!</item>
+		<item>תאמין, לעולם אל תתן.</item>
+		<item>פוטנציאל בלתי מוגבל.</item>
+		<item>התקדמות על פני שלמות.</item>
+		<item>אתגרים = צמיחה.</item>
+		<item>ראוי להצלחה.</item>
+		<item>רדוף אחר חלומותיך.</item>
+		<item>להתגבר על הכל!</item>
+		<item>הנחישות מנצחת.</item>
+		<item>כל צעד נחשב.</item>
+		<item>תישאר חיובי!</item>
+		<item>סלעי חוסן.</item>
+		<item>כוח בך.</item>
+		<item>לחגוג את ההתקדמות.</item>
+		<item>עבודה קשה משתלמת.</item>
+		<item>תאמין, תאמין.</item>
+		<item>מסע ייחודי.</item>
+		<item>עיניים לפרס.</item>
+		<item>להשיג כל דבר!</item>
+		<item>בצע צעדים נועזים.</item>
+		<item>תשוקה מתדלקת אותך.</item>
+		<item>התמקד ביעדים.</item>
+		<item>תתמיד, תנצח.</item>
+		<item>מפתח אמונה עצמית.</item>
+		<item>ראוי לטוב.</item>
+		<item>להגיע לחלומות.</item>
+		<item>אמיץ, חזק, חכם.</item>
+		<item>גישה חיובית.</item>
+		<item>סמוך על המסע.</item>
+		<item>נחישות בלתי מעורערת.</item>
+		<item>כישלונות = קאמבק.</item>
+		<item>להפוך חלומות למציאות.</item>
+		<item>התחייבו ליעדים.</item>
+		<item>כוח, אין גבול.</item>
+		<item>ראש למעלה, פריצת דרך.</item>
+		<item>הפוטנציאל שלך זוהר.</item>
+		<item>חלומות בהישג יד.</item>
+		<item>אתה בלתי ניתן לעצירה!</item>
+		<item>תאמין, השג.</item>
+		<item>לדחוף את גבולות העבר.</item>
+		<item>ההתמדה משתלמת.</item>
+		<item>הישארו ללא חת!</item>
+		<item>להתעלות מעל האתגרים.</item>
+		<item>תמשיך לחלום בגדול.</item>
+		<item>חי עם מטרה.</item>
+		<item>התמקדו בטוב.</item>
+		<item>כוח מבפנים.</item>
+		<item>מאמין בקסם.</item>
+		<item>חייך, יש לך את זה.</item>
+		<item>לעולם אל תאבד תקווה.</item>
+		<item>לחבק כל רגע.</item>
+		<item>תהיה הגיבור של עצמך.</item>
+		<item>אתה מספיק.</item>
+		<item>לכבוש את הפחדים שלך.</item>
+		<item>נצל את היום!</item>
+		<item>תאהב את עצמך קודם.</item>
+		<item>הישאר חיובי, תמיד.</item>
+		<item>אתה לוחם.</item>
+		<item>תאמין בעצמך.</item>
+		<item>לאמץ אפשרויות.</item>
+		<item>חיה בתשוקה.</item>
+		<item>תמשיך להתקדם.</item>
+		<item>אתה בלתי ניתן לעצירה!</item>
+		<item>תישאר נאמן לך.</item>
+		<item>חיה באומץ.</item>
+		<item>לשמור על האמונה.</item>
+		<item>כוח במצוקה.</item>
+		<item>כל יום, תגדל.</item>
+		<item>התמדה, ניצחון.</item>
+		<item>תרדוף אחר התשוקות שלך.</item>
+		<item>מצא שמחה במסע.</item>
+		<item>לקחת סיכונים, לשגשג.</item>
+		<item>תישאר חזק, אמיץ.</item>
+		<item>סמוך על חוכמה פנימית.</item>
+		<item>תמשיך לזרוח בהיר.</item>
+		<item>לחלום, להאמין, להשיג.</item>
+		<item>תהיה בלתי ניתן לעצירה.</item>
+		<item>הבעלים של גדולתך.</item>
+		<item>לחבק את הלא נודע.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>תאמין בעצמך.</item>
+		<item>הפיצו חסד תמיד.</item>
+		<item>האמן בחלומותיך.</item>
+		<item>הישארו ממוקדים, נחושים.</item>
+		<item>חבק את המסע שלך.</item>
+		<item>תרים את הראש.</item>
+		<item>לעולם אל תאבד תקווה.</item>
+		<item>כוח מבפנים.</item>
+		<item>הישאר עמיד, חזק.</item>
+		<item>אתה בלתי ניתן לעצירה!</item>
+		<item>אמצו את האתגר.</item>
+		<item>שמור על האש בוערת.</item>
+		<item>תתמקד במה שאפשר.</item>
+		<item>תחלמו בגדול, תעבדו קשה.</item>
+		<item>שימו עיניכם על הפרס.</item>
+		<item>סמוך על התהליך.</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>להאמין, להשיג, להצליח.</item>
+		<item>הישאר בהשראה תמיד.</item>
+		<item>היו חסרי פחד במרדף.</item>
+		<item>הישאר מקורקע, קום.</item>
+		<item>מצא כוח במאבק.</item>
+		<item>אמצו כל אתגר.</item>
+		<item>הישארו נועזים, הישארו בהירים.</item>
+		<item>אתה מסוגל לגדולות.</item>
+		<item>סמוך על המסע שלך.</item>
+		<item>תמשיך להילחם, תמשיך לעלות.</item>
+		<item>מאמין בבלתי אפשרי.</item>
+		<item>הישאר עמיד, לעולם אל תתן.</item>
+		<item>אתה חזק יותר ממה שאתה יודע.</item>
+		<item>לחיות עם תשוקה ומטרה.</item>
+		<item>מצא שמחה בכל מסע.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>תישאר חיובי, תהיה חזק.</item>
+		<item>כל יום הוא הזדמנות חדשה.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>תמשיכי לדחוף מעבר לגבולות.</item>
+		<item>סמוך על הכוח הפנימי שלך.</item>
+		<item>אתה נועד לגדולות.</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו חסרי פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו חסרי פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו חסרי פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>אתה נועד לגדולות!</item>
+		<item>האמן בחלומותיך!</item>
+		<item>הישארו נחושים, תצליחו.</item>
+		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
+		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
+		<item>כוח מגיע מבפנים.</item>
+		<item>הישאר ממוקד ביעדים שלך.</item>
+		<item>אתה מסוגל להכל.</item>
+		<item>הישארו ללא פחד, הישארו חזקים.</item>
+		<item>האמינו, השג, תצליח!</item>
+		<item>בטח במסע שלך.</item>
+		<item>הישארו עמידים, התעלו מעל.</item>
+		<item>יש בך את הכוח בתוכך.</item>
+		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
+		<item>הישארו ממוקדים, הישארו חזקים.</item>
+		<item>אתה חזק יותר ממה שאתה חושב!</item>
+		<item>תאמין בעצמך, תמיד.</item>
+		<item>הישארו נחושים, הישארו חזקים.</item>
+		<item>לאמץ כל הזדמנות.</item>
+		<item>אתה מסוגל לגדולות!</item>
+		<item>השאר נאמן לעצמך.</item>
+		<item>בטח במסע שלך.</item>
+		<item>תמשיכי לדחוף קדימה.</item>
+		<item>חלום, תאמין, השג!</item>
 	</string-array>
 	<string-array name="alignment_options">
-		<item>Left</item>
-		<item>Center</item>
-		<item>Right</item>
+		<item>שמאלה</item>
+		<item>מֶרְכָּז</item>
+		<item>ימין</item>
 	</string-array>
 </resources>
