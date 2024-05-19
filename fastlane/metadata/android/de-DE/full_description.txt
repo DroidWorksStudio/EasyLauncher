@@ -1,13 +1,13 @@
-EasyLauncher - Minimal and Clutter Free Android launcher
+EasyLauncher - Minimaler und übersichtlicher Android-Launcher
 
-<b> Features: </b>
+<b> Funktionen: </b>
 
-- You can rename apps in the app-drawer. (Sync with home screen)
-- No use of INTERNET permissions.
-- Lock settings behind biometrics (toggle).
+- Sie können Apps in der App-Schublade umbenennen. (Mit Startbildschirm synchronisieren)
+- Keine Verwendung von INTERNET-Berechtigungen.
+- Einstellungen hinter Biometrie sperren (umschalten).
 
-<b>Possible actions now include:</b>
+<b>Mögliche Aktionen sind jetzt:</b>
 
-- Clicking on the Battery Level
-- Clicking on the Clock
-- Clicking on the Date
+- Klicken Sie auf den Batteriestand
+- Klicken Sie auf die Uhr
+- Klicken Sie auf das Datum
