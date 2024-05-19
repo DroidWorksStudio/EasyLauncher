@@ -75,12 +75,8 @@
 	<string name="accessibility_settings_title">הגדרות נגישות</string>
 	<string name="accessibility_settings_enable">לְאַפשֵׁר</string>
 	<string name="accessibility_settings_disable">השבת</string>
-	<string name="accessibility_service_desc">אנא הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב-Aster Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות שלנו אינו אוסף או משתף נתונים כלשהם.</string>
-	<string name="receiver_name">נעילה - לוקר מסך</string>
-	<!-- Message displayed to the user by system during authorization-->
-	<!-- Small description inside Device Administrator Setting -->
-	<string name="receiver_desc">מאפשר לנעול את המסך</string>
-	<string name="admin_permission_message">משגר Aster מבטיח להשתמש בהרשאת מסך הנעילה באחריות. משגר Aster אינו אוסף או משתף נתונים כלשהם.</string>
+	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
+	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
 	<string-array name="settings_appearance_daily_word_default">
 		<item>הישאר עמיד!</item>
 		<item>יש לך את זה!</item>
