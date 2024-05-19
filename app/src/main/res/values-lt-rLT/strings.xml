@@ -1,541 +1,541 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">Settings</string>
-	<string name="action_settings_default">Set as default launcher</string>
+	<string name="action_settings">Nustatymai</string>
+	<string name="action_settings_default">Nustatyti kaip numatytąją paleidimo priemonę</string>
 	<!-- Strings used for fragments for navigation -->
-	<string name="home_fragment_label">Home Fragment</string>
-	<string name="draw_fragment_label">Draw Fragment</string>
+	<string name="home_fragment_label">Namo fragmentas</string>
+	<string name="draw_fragment_label">Nupieškite fragmentą</string>
 	<string name="battery_level">%s%%</string>
-	<string name="search">Search</string>
-	<string name="bottom_dialog_app_rename">Rename</string>
-	<string name="bottom_dialog_add_to_home">Add to Home Screen</string>
-	<string name="bottom_dialog_order_home_apps">Order Home Apps</string>
-	<string name="bottom_dialog_remove_from_home">Remove from Home Screen</string>
-	<string name="bottom_dialog_add_to_hidden">Hidden App</string>
-	<string name="bottom_dialog_remove_to_hidden">Remove Hidden App</string>
-	<string name="bottom_dialog_add_to_lock">Lock App</string>
-	<string name="bottom_dialog_remove_to_unlock">Unlock App</string>
-	<string name="bottom_dialog_app_info">App Info</string>
-	<string name="bottom_dialog_app_uninstall">Uninstall App</string>
-	<string name="settings_name">Launcher Settings</string>
-	<string name="settings_version">%s Version: %s</string>
-	<string name="settings_home">Home</string>
-	<string name="settings_title_home_display_preferences">Display</string>
-	<string name="settings_title_home_behavior_preferences">Behavior</string>
-	<string name="settings_title_home_appearance_preferences">Appearance</string>
-	<string name="settings_title_date_style">Date Style</string>
-	<string name="settings_title_time_style">Time Style</string>
-	<string name="settings_title_app_manager">App Manage</string>
-	<string name="settings_title_gestures">Gestures</string>
-	<string name="settings_title_others">Others</string>
-	<string name="settings_display_status_bar">Show Status Bar</string>
-	<string name="settings_display_date">Show Date</string>
-	<string name="settings_display_time">Show Time</string>
-	<string name="settings_display_battery">Show Battery</string>
-	<string name="settings_display_daily_word">Show Daily Word</string>
-	<string name="settings_display_app_icons">Show App Icons</string>
+	<string name="search">Paieška</string>
+	<string name="bottom_dialog_app_rename">Pervardyti</string>
+	<string name="bottom_dialog_add_to_home">Pridėti prie pagrindinio ekrano</string>
+	<string name="bottom_dialog_order_home_apps">Užsisakykite namų programas</string>
+	<string name="bottom_dialog_remove_from_home">Pašalinti iš pagrindinio ekrano</string>
+	<string name="bottom_dialog_add_to_hidden">Paslėpta programa</string>
+	<string name="bottom_dialog_remove_to_hidden">Pašalinkite paslėptą programą</string>
+	<string name="bottom_dialog_add_to_lock">Užrakinti programą</string>
+	<string name="bottom_dialog_remove_to_unlock">Atrakinti programą</string>
+	<string name="bottom_dialog_app_info">Programos informacija</string>
+	<string name="bottom_dialog_app_uninstall">Pašalinkite programą</string>
+	<string name="settings_name">Paleidimo priemonės nustatymai</string>
+	<string name="settings_version">%s Versija: %s</string>
+	<string name="settings_home">Namai</string>
+	<string name="settings_title_home_display_preferences">Ekranas</string>
+	<string name="settings_title_home_behavior_preferences">Elgesys</string>
+	<string name="settings_title_home_appearance_preferences">Išvaizda</string>
+	<string name="settings_title_date_style">Pasimatymo stilius</string>
+	<string name="settings_title_time_style">Laiko stilius</string>
+	<string name="settings_title_app_manager">Programų tvarkymas</string>
+	<string name="settings_title_gestures">Gestai</string>
+	<string name="settings_title_others">Kiti</string>
+	<string name="settings_display_status_bar">Rodyti būsenos juostą</string>
+	<string name="settings_display_date">Rodyti datą</string>
+	<string name="settings_display_time">Pasirodymas</string>
+	<string name="settings_display_battery">Rodyti akumuliatorių</string>
+	<string name="settings_display_daily_word">Rodyti kasdienį žodį</string>
+	<string name="settings_display_app_icons">Rodyti programų piktogramas</string>
 	<string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
-	<string name="settings_display_auto_open_apps">Auto Open Last App</string>
-	<string name="settings_display_lock_settings">Lock Settings</string>
-	<string name="settings_appearance_text_size_title">Size</string>
-	<string name="settings_appearance_color_title">Color</string>
-	<string name="settings_appearance_alignment_title">Alignment</string>
-	<string name="settings_appearance_padding_title">Padding</string>
-	<string name="settings_appearance_wallpaper">Custom Wallpaper</string>
-	<string name="settings_appearance_home_date_alignment">Date Alignment</string>
-	<string name="settings_appearance_home_time_alignment">Time Alignment</string>
+	<string name="settings_display_auto_open_apps">Automatiškai atidaryti paskutinę programą</string>
+	<string name="settings_display_lock_settings">Užrakinimo nustatymai</string>
+	<string name="settings_appearance_text_size_title">Dydis</string>
+	<string name="settings_appearance_color_title">Spalva</string>
+	<string name="settings_appearance_alignment_title">Lygiavimas</string>
+	<string name="settings_appearance_padding_title">Paminkštinimas</string>
+	<string name="settings_appearance_wallpaper">Pasirinktinis ekrano užsklanda</string>
+	<string name="settings_appearance_home_date_alignment">Datos suderinimas</string>
+	<string name="settings_appearance_home_time_alignment">Laiko derinimas</string>
 	<string name="settings_appearance_home_app_alignment">Home App Alignment</string>
-	<string name="appearance_bottom_dialog_text_size_title">Size</string>
-	<string name="appearance_bottom_dialog_text_color_title">Color</string>
-	<string name="appearance_bottom_dialog_alignment_title">Alignment</string>
-	<string name="appearance_bottom_dialog_padding_title">Padding</string>
-	<string name="appearance_bottom_dialog_desc_date">Date\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_time">Time\u0020:\u0020 </string>
-	<string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_word">Word\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_battery">Battery\u0020:\u0020 </string>
-	<string name="settings_manager_favorite">Favorite Apps</string>
-	<string name="settings_manager_hidden">Hidden Apps</string>
-	<string name="settings_select_wallpaper">Select Wallpaper</string>
-	<string name="settings_double_tap_lock">Double tap to lock</string>
-	<string name="settings_swipe_down_notification">Swipe down expand notification</string>
-	<string name="settings_swipe_up_search">Swipe up open search view</string>
-	<string name="settings_others_share">Share</string>
-	<string name="settings_others_feedback">Feedback</string>
+	<string name="appearance_bottom_dialog_text_size_title">Dydis</string>
+	<string name="appearance_bottom_dialog_text_color_title">Spalva</string>
+	<string name="appearance_bottom_dialog_alignment_title">Lygiavimas</string>
+	<string name="appearance_bottom_dialog_padding_title">Paminkštinimas</string>
+	<string name="appearance_bottom_dialog_desc_date">Data\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_time">Laikas\u0020:\u0020 </string>
+	<string name="appearance_bottom_dialog_desc_app">Programa\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_word">Žodis\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_battery">Baterija\u0020:\u0020 </string>
+	<string name="settings_manager_favorite">Mėgstamiausios programos</string>
+	<string name="settings_manager_hidden">Paslėptos programos</string>
+	<string name="settings_select_wallpaper">Pasirinkite Fono paveikslėlis</string>
+	<string name="settings_double_tap_lock">Dukart palieskite, kad užrakintumėte</string>
+	<string name="settings_swipe_down_notification">Braukite žemyn, išskleiskite pranešimą</string>
+	<string name="settings_swipe_up_search">Braukite aukštyn, kad atidarytumėte paieškos rodinį</string>
+	<string name="settings_others_share">Dalintis</string>
+	<string name="settings_others_feedback">Atsiliepimas</string>
 	<string name="settings_others_github">Github</string>
-	<string name="authentication_title">Authentication</string>
-	<string name="authentication_subtitle">Log in using your biometric credentials.</string>
-	<string name="authentication_cancel">Authentication Cancel</string>
-	<string name="authentication_succeeded">Authentication Succeeded</string>
-	<string name="authentication_failed">Authentication Failed</string>
-	<string name="authentication_error">Authentication Error: %1$s(code %2$d)</string>
-	<string name="bottom_alignment_star">Star</string>
-	<string name="bottom_alignment_center">Center</string>
-	<string name="bottom_alignment_end">End</string>
-	<string name="accessibility_settings_title">Accessibility Settings</string>
-	<string name="accessibility_settings_enable">Enable</string>
-	<string name="accessibility_settings_disable">Disable</string>
-	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Aster Launcher.\n\nThis permission
-    is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
-	<string name="receiver_name">Lock - screen locker</string>
+	<string name="authentication_title">Autentifikavimas</string>
+	<string name="authentication_subtitle">Prisijunkite naudodami biometrinius kredencialus.</string>
+	<string name="authentication_cancel">Autentifikavimo atšaukimas</string>
+	<string name="authentication_succeeded">Autentifikavimas pavyko</string>
+	<string name="authentication_failed">Autentifikavimas nepavyko</string>
+	<string name="authentication_error">Autentifikavimo klaida: %1$s(kodas %2$d)</string>
+	<string name="bottom_alignment_star">Žvaigždė</string>
+	<string name="bottom_alignment_center">centras</string>
+	<string name="bottom_alignment_end">Galas</string>
+	<string name="accessibility_settings_title">Pritaikymo neįgaliesiems nustatymai</string>
+	<string name="accessibility_settings_enable">Įgalinti</string>
+	<string name="accessibility_settings_disable">Išjungti</string>
+	<string name="accessibility_service_desc">Įjunkite pritaikymo neįgaliesiems paslaugą, kad galėtumėte naudoti dukart paliesdami užrakinti funkciją Aster Launcher.\n\nŠis leidimas
+    naudojamas tik ekranui išjungti. Mūsų pritaikymo neįgaliesiems paslauga nerenka ir nebendrina jokių duomenų.</string>
+	<string name="receiver_name">Užraktas – ekrano užraktas</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->
-	<string name="receiver_desc">Allows to lock the screen</string>
-	<string name="admin_permission_message">Aster launcher promises to use lock screen permission responsibly.Aster launcher does not collect or share any data.</string>
+	<string name="receiver_desc">Leidžia užrakinti ekraną</string>
+	<string name="admin_permission_message">Aster paleidimo priemonė žada atsakingai naudoti užrakinimo ekrano leidimą. Aster paleidimo priemonė nerenka ir nebendrina jokių duomenų.</string>
 	<string-array name="settings_appearance_daily_word_default">
-		<item>Stay resilient!</item>
-		<item>You got this!</item>
-		<item>Shine bright!</item>
-		<item>Create destiny.</item>
-		<item>Embrace journey.</item>
-		<item>Strength within.</item>
-		<item>Keep pushing!</item>
-		<item>You\'re amazing!</item>
-		<item>Trust, never give.</item>
-		<item>Limitless potential.</item>
-		<item>Progress over perfection.</item>
-		<item>Challenges = growth.</item>
-		<item>Worthy of success.</item>
-		<item>Chase your dreams.</item>
-		<item>Overcome all!</item>
-		<item>Determination wins.</item>
-		<item>Every step counts.</item>
-		<item>Stay positive!</item>
-		<item>Resilience rocks.</item>
-		<item>Strength in you.</item>
-		<item>Celebrate progress.</item>
-		<item>Hard work pays.</item>
-		<item>Trust, have faith.</item>
-		<item>Unique journey.</item>
-		<item>Eyes on prize.</item>
-		<item>Achieve anything!</item>
-		<item>Take bold steps.</item>
-		<item>Passion fuels you.</item>
-		<item>Focus on goals.</item>
-		<item>Persevere, win.</item>
-		<item>Self-belief key.</item>
-		<item>Deserving of good.</item>
-		<item>Reach for dreams.</item>
-		<item>Brave, strong, smart.</item>
-		<item>Positive attitude.</item>
-		<item>Trust the journey.</item>
-		<item>Unwavering determination.</item>
-		<item>Setbacks = comeback.</item>
-		<item>Turn dreams reality.</item>
-		<item>Commit to goals.</item>
-		<item>Strength, no bounds.</item>
-		<item>Head up, breakthrough.</item>
-		<item>Your potential shines.</item>
-		<item>Dreams within reach.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Believe, achieve.</item>
-		<item>Push past limits.</item>
-		<item>Perseverance pays.</item>
-		<item>Stay fearless!</item>
-		<item>Rise above challenges.</item>
-		<item>Keep dreaming big.</item>
-		<item>Live with purpose.</item>
-		<item>Focus on the good.</item>
-		<item>Strength from within.</item>
-		<item>Believe in magic.</item>
-		<item>Smile, you\'ve got this.</item>
-		<item>Never lose hope.</item>
-		<item>Embrace every moment.</item>
-		<item>Be your own hero.</item>
-		<item>You\'re enough.</item>
-		<item>Conquer your fears.</item>
-		<item>Seize the day!</item>
-		<item>Love yourself first.</item>
-		<item>Stay positive, always.</item>
-		<item>You\'re a warrior.</item>
-		<item>Believe in yourself.</item>
-		<item>Embrace possibilities.</item>
-		<item>Live with passion.</item>
-		<item>Keep moving forward.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Stay true to you.</item>
-		<item>Live boldly.</item>
-		<item>Keep the faith.</item>
-		<item>Strength in adversity.</item>
-		<item>Every day, grow.</item>
-		<item>Perseverance, victory.</item>
-		<item>Chase your passions.</item>
-		<item>Find joy in journey.</item>
-		<item>Take risks, thrive.</item>
-		<item>Stay strong, brave.</item>
-		<item>Trust inner wisdom.</item>
-		<item>Keep shining bright.</item>
-		<item>Dream, believe, achieve.</item>
-		<item>Be unstoppable.</item>
-		<item>Own your greatness.</item>
-		<item>Embrace the unknown.</item>
-		<item>Keep pushing forward.</item>
-		<item>Trust in yourself.</item>
-		<item>Spread kindness always.</item>
-		<item>Believe in your dreams.</item>
-		<item>Stay focused, determined.</item>
-		<item>Embrace your journey.</item>
-		<item>Keep your head up.</item>
-		<item>Never give up hope.</item>
-		<item>Strength from within.</item>
-		<item>Stay resilient, strong.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Embrace the challenge.</item>
-		<item>Keep the fire burning.</item>
-		<item>Focus on what\'s possible.</item>
-		<item>Dream big, work hard.</item>
-		<item>Keep your eyes on prize.</item>
-		<item>Trust the process.</item>
-		<item>Stay true to yourself.</item>
-		<item>Believe, achieve, succeed.</item>
-		<item>Stay inspired always.</item>
-		<item>Be fearless in pursuit.</item>
-		<item>Stay grounded, rise.</item>
-		<item>Find strength in struggle.</item>
-		<item>Embrace every challenge.</item>
-		<item>Stay bold, stay bright.</item>
-		<item>You\'re capable of greatness.</item>
-		<item>Trust your journey.</item>
-		<item>Keep fighting, keep rising.</item>
-		<item>Believe in the impossible.</item>
-		<item>Stay resilient, never give.</item>
-		<item>You\'re stronger than you know.</item>
-		<item>Live with passion and purpose.</item>
-		<item>Find joy in every journey.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay positive, stay strong.</item>
-		<item>Every day is a new chance.</item>
-		<item>Embrace every opportunity.</item>
-		<item>Keep pushing past limits.</item>
-		<item>Trust your inner strength.</item>
-		<item>You\'re destined for greatness.</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
+		<item>Išlikite atsparūs!</item>
+		<item>Tu tai supratai!</item>
+		<item>Ryškiai spindėti!</item>
+		<item>Sukurti likimą.</item>
+		<item>Apkabinkite kelionę.</item>
+		<item>Stiprybė viduje.</item>
+		<item>Spausk toliau!</item>
+		<item>Tu nuostabus!</item>
+		<item>Pasitikėk, niekada neduok.</item>
+		<item>Neribotas potencialas.</item>
+		<item>Pažanga prieš tobulumą.</item>
+		<item>Iššūkiai = augimas.</item>
+		<item>Vertas sėkmės.</item>
+		<item>Sek savo svajones.</item>
+		<item>Įveikti viską!</item>
+		<item>Ryžtas laimi.</item>
+		<item>Kiekvienas žingsnis yra svarbus.</item>
+		<item>Išlik pozityvus!</item>
+		<item>Atsparumo akmenys.</item>
+		<item>Stiprybės tavyje.</item>
+		<item>Švęskite progresą.</item>
+		<item>Sunkus darbas atsiperka.</item>
+		<item>Pasitikėk, tikėk.</item>
+		<item>Unikali kelionė.</item>
+		<item>Akys į prizą.</item>
+		<item>Pasiekite bet ką!</item>
+		<item>Ženkite drąsius žingsnius.</item>
+		<item>Aistra tave kursto.</item>
+		<item>Susikoncentruokite į tikslus.</item>
+		<item>Ištverti, laimėti.</item>
+		<item>Tikėjimo savimi raktas.</item>
+		<item>Nusipelnė gero.</item>
+		<item>Siekite svajonių.</item>
+		<item>Drąsus, stiprus, protingas.</item>
+		<item>Teigiamas požiūris.</item>
+		<item>Pasitikėk kelione.</item>
+		<item>Nepajudinamas ryžtas.</item>
+		<item>Nesėkmės = sugrįžimas.</item>
+		<item>Paverskite svajones realybe.</item>
+		<item>Įsipareigokite siekti tikslų.</item>
+		<item>Jėga, be ribų.</item>
+		<item>Galva aukštyn, proveržis.</item>
+		<item>Jūsų potencialas šviečia.</item>
+		<item>Svajonės ranka pasiekiamos.</item>
+		<item>Tu nesustabdomas!</item>
+		<item>Tikėti, pasiekti.</item>
+		<item>Peržengti praeities ribas.</item>
+		<item>Atkaklumas apsimoka.</item>
+		<item>Likite bebaimis!</item>
+		<item>Pakilkite virš iššūkių.</item>
+		<item>Svajokite toliau daug.</item>
+		<item>Gyvenk su tikslu.</item>
+		<item>Susitelk į gerą.</item>
+		<item>Stiprybė iš vidaus.</item>
+		<item>Tikėkite magija.</item>
+		<item>Šypsokis, tu turi tai.</item>
+		<item>Niekada neprarask vilties.</item>
+		<item>Apkabink kiekvieną akimirką.</item>
+		<item>Būk savo herojus.</item>
+		<item>Tau užtenka.</item>
+		<item>Nugalėkite savo baimes.</item>
+		<item>Pasinaudokite diena!</item>
+		<item>Pirmiausia mylėk save.</item>
+		<item>Būkite pozityvus, visada.</item>
+		<item>Tu esi karys.</item>
+		<item>Tikėk savimi.</item>
+		<item>Pasinaudokite galimybėmis.</item>
+		<item>Gyvenk su aistra.</item>
+		<item>Toliau judėkite į priekį.</item>
+		<item>Tu nesustabdomas!</item>
+		<item>Likite sau ištikimi.</item>
+		<item>Gyvenk drąsiai.</item>
+		<item>Neprarask vilties.</item>
+		<item>Stiprybė nelaimėje.</item>
+		<item>Kasdien augk.</item>
+		<item>Atkaklumas, pergalė.</item>
+		<item>Vykdykite savo aistras.</item>
+		<item>Raskite džiaugsmą kelionėje.</item>
+		<item>Rizikuoti, klestėti.</item>
+		<item>Išlik stiprus, drąsus.</item>
+		<item>Pasitikėk vidine išmintimi.</item>
+		<item>Ir toliau ryškiai spindi.</item>
+		<item>Svajokite, tikėkite, pasiekite.</item>
+		<item>Būk nesustabdomas.</item>
+		<item>Turėkite savo didybę.</item>
+		<item>Apkabink nežinomybę.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Pasitikėk savimi.</item>
+		<item>Visada skleiskite gerumą.</item>
+		<item>Tikėk savo svajonėmis.</item>
+		<item>Išlikite susikaupę, ryžtingi.</item>
+		<item>Priimk savo kelionę.</item>
+		<item>Laikyk galvą iškėlęs aukštyn.</item>
+		<item>Niekada nepraleiskite vilties.</item>
+		<item>Stiprybė iš vidaus.</item>
+		<item>Išlikite tvirti, tvirti.</item>
+		<item>Tu nesustabdomas!</item>
+		<item>Priimk iššūkį.</item>
+		<item>Laikykite ugnį degant.</item>
+		<item>Sutelkite dėmesį į tai, kas įmanoma.</item>
+		<item>Svajokite daug, sunkiai dirbkite.</item>
+		<item>Stebėkite prizą.</item>
+		<item>Pasitikėk procesu.</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Tikėkite, pasiekite, pasisek.</item>
+		<item>Visada būkite įkvėptas.</item>
+		<item>Būkite bebaimis siekdami.</item>
+		<item>Laikykitės ant žemės, pakilkite.</item>
+		<item>Raskite jėgų kovoje.</item>
+		<item>Priimk kiekvieną iššūkį.</item>
+		<item>Būkite drąsūs, būkite ryškūs.</item>
+		<item>Tu sugebi didybę.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Kovok toliau, kilk.</item>
+		<item>Tikėkite neįmanomu.</item>
+		<item>Išlik atsparus, niekada neduok.</item>
+		<item>Tu stipresnis nei žinai.</item>
+		<item>Gyvenk su aistra ir tikslu.</item>
+		<item>Raskite džiaugsmo kiekvienoje kelionėje.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Būkite pozityvūs, stiprūs.</item>
+		<item>Kiekviena diena yra nauja galimybė.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Toliau peržengti ribas.</item>
+		<item>Pasitikėk savo vidine jėga.</item>
+		<item>Tau lemta didybė.</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tau lemta didybė!</item>
+		<item>Tikėk savo svajonėmis!</item>
+		<item>Būkite ryžtingi, pasisek.</item>
+		<item>Toliau judėkite savo tikslų link.</item>
+		<item>Nenumaldomai siek savo svajonių.</item>
+		<item>Jėga ateina iš vidaus.</item>
+		<item>Būkite susitelkę ties savo tikslais.</item>
+		<item>Tu sugebi bet ką.</item>
+		<item>Likite bebaimis, būk stiprus.</item>
+		<item>Tikėkite, pasiekite, pasisek!</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Išlik atsparus, pakilk aukščiau.</item>
+		<item>Jūs turite savyje galią.</item>
+		<item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+		<item>Būkite susikaupę, išlikite stiprūs.</item>
+		<item>Jūs esate stipresnis nei manote!</item>
+		<item>Tikėkite savimi, visada.</item>
+		<item>Būkite ryžtingi, stiprūs.</item>
+		<item>Pasinaudokite kiekviena galimybe.</item>
+		<item>Tu sugebi didybę!</item>
+		<item>Likite ištikimi sau.</item>
+		<item>Pasitikėk savo kelione.</item>
+		<item>Toliau stumkite į priekį.</item>
+		<item>Svajokite, tikėkite, pasiekite!</item>
 	</string-array>
 	<string-array name="alignment_options">
-		<item>Left</item>
-		<item>Center</item>
-		<item>Right</item>
+		<item>Kairė</item>
+		<item>centras</item>
+		<item>Teisingai</item>
 	</string-array>
 </resources>
