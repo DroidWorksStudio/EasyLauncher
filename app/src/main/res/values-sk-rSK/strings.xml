@@ -1,541 +1,541 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">Settings</string>
-	<string name="action_settings_default">Set as default launcher</string>
+	<string name="action_settings">nastavenie</string>
+	<string name="action_settings_default">Nastaviť ako predvolený spúšťač</string>
 	<!-- Strings used for fragments for navigation -->
-	<string name="home_fragment_label">Home Fragment</string>
-	<string name="draw_fragment_label">Draw Fragment</string>
+	<string name="home_fragment_label">Domáci Fragment</string>
+	<string name="draw_fragment_label">Nakreslite fragment</string>
 	<string name="battery_level">%s%%</string>
-	<string name="search">Search</string>
-	<string name="bottom_dialog_app_rename">Rename</string>
-	<string name="bottom_dialog_add_to_home">Add to Home Screen</string>
-	<string name="bottom_dialog_order_home_apps">Order Home Apps</string>
-	<string name="bottom_dialog_remove_from_home">Remove from Home Screen</string>
-	<string name="bottom_dialog_add_to_hidden">Hidden App</string>
-	<string name="bottom_dialog_remove_to_hidden">Remove Hidden App</string>
-	<string name="bottom_dialog_add_to_lock">Lock App</string>
-	<string name="bottom_dialog_remove_to_unlock">Unlock App</string>
-	<string name="bottom_dialog_app_info">App Info</string>
-	<string name="bottom_dialog_app_uninstall">Uninstall App</string>
-	<string name="settings_name">Launcher Settings</string>
-	<string name="settings_version">%s Version: %s</string>
-	<string name="settings_home">Home</string>
-	<string name="settings_title_home_display_preferences">Display</string>
-	<string name="settings_title_home_behavior_preferences">Behavior</string>
-	<string name="settings_title_home_appearance_preferences">Appearance</string>
-	<string name="settings_title_date_style">Date Style</string>
-	<string name="settings_title_time_style">Time Style</string>
-	<string name="settings_title_app_manager">App Manage</string>
-	<string name="settings_title_gestures">Gestures</string>
-	<string name="settings_title_others">Others</string>
-	<string name="settings_display_status_bar">Show Status Bar</string>
-	<string name="settings_display_date">Show Date</string>
-	<string name="settings_display_time">Show Time</string>
-	<string name="settings_display_battery">Show Battery</string>
-	<string name="settings_display_daily_word">Show Daily Word</string>
-	<string name="settings_display_app_icons">Show App Icons</string>
-	<string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
-	<string name="settings_display_auto_open_apps">Auto Open Last App</string>
-	<string name="settings_display_lock_settings">Lock Settings</string>
-	<string name="settings_appearance_text_size_title">Size</string>
-	<string name="settings_appearance_color_title">Color</string>
-	<string name="settings_appearance_alignment_title">Alignment</string>
-	<string name="settings_appearance_padding_title">Padding</string>
-	<string name="settings_appearance_wallpaper">Custom Wallpaper</string>
-	<string name="settings_appearance_home_date_alignment">Date Alignment</string>
-	<string name="settings_appearance_home_time_alignment">Time Alignment</string>
-	<string name="settings_appearance_home_app_alignment">Home App Alignment</string>
-	<string name="appearance_bottom_dialog_text_size_title">Size</string>
-	<string name="appearance_bottom_dialog_text_color_title">Color</string>
-	<string name="appearance_bottom_dialog_alignment_title">Alignment</string>
-	<string name="appearance_bottom_dialog_padding_title">Padding</string>
-	<string name="appearance_bottom_dialog_desc_date">Date\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_time">Time\u0020:\u0020 </string>
-	<string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_word">Word\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_battery">Battery\u0020:\u0020 </string>
-	<string name="settings_manager_favorite">Favorite Apps</string>
-	<string name="settings_manager_hidden">Hidden Apps</string>
-	<string name="settings_select_wallpaper">Select Wallpaper</string>
-	<string name="settings_double_tap_lock">Double tap to lock</string>
-	<string name="settings_swipe_down_notification">Swipe down expand notification</string>
-	<string name="settings_swipe_up_search">Swipe up open search view</string>
-	<string name="settings_others_share">Share</string>
-	<string name="settings_others_feedback">Feedback</string>
+	<string name="search">Vyhľadávanie</string>
+	<string name="bottom_dialog_app_rename">Premenovať</string>
+	<string name="bottom_dialog_add_to_home">Pridať na domovskú obrazovku</string>
+	<string name="bottom_dialog_order_home_apps">Objednajte si domáce aplikácie</string>
+	<string name="bottom_dialog_remove_from_home">Odstrániť z domovskej obrazovky</string>
+	<string name="bottom_dialog_add_to_hidden">Skrytá aplikácia</string>
+	<string name="bottom_dialog_remove_to_hidden">Odstráňte skrytú aplikáciu</string>
+	<string name="bottom_dialog_add_to_lock">Zamknúť aplikáciu</string>
+	<string name="bottom_dialog_remove_to_unlock">Odomknúť aplikáciu</string>
+	<string name="bottom_dialog_app_info">Informácie o aplikácii</string>
+	<string name="bottom_dialog_app_uninstall">Odinštalovať aplikáciu</string>
+	<string name="settings_name">Nastavenia spúšťača</string>
+	<string name="settings_version">%s Verzia: %s</string>
+	<string name="settings_home">Domov</string>
+	<string name="settings_title_home_display_preferences">Displej</string>
+	<string name="settings_title_home_behavior_preferences">Správanie</string>
+	<string name="settings_title_home_appearance_preferences">Vzhľad</string>
+	<string name="settings_title_date_style">Štýl dátumu</string>
+	<string name="settings_title_time_style">Časový štýl</string>
+	<string name="settings_title_app_manager">Správa aplikácií</string>
+	<string name="settings_title_gestures">Gestá</string>
+	<string name="settings_title_others">Iní</string>
+	<string name="settings_display_status_bar">Zobraziť stavový riadok</string>
+	<string name="settings_display_date">Zobraziť dátum</string>
+	<string name="settings_display_time">Zobraziť čas</string>
+	<string name="settings_display_battery">Zobraziť batériu</string>
+	<string name="settings_display_daily_word">Zobraziť Daily Word</string>
+	<string name="settings_display_app_icons">Zobraziť ikony aplikácií</string>
+	<string name="settings_display_automatic_keyboard">Automaticky zobraziť klávesnicu</string>
+	<string name="settings_display_auto_open_apps">Automatické otvorenie poslednej aplikácie</string>
+	<string name="settings_display_lock_settings">Nastavenia zámku</string>
+	<string name="settings_appearance_text_size_title">Veľkosť</string>
+	<string name="settings_appearance_color_title">Farba</string>
+	<string name="settings_appearance_alignment_title">Zarovnanie</string>
+	<string name="settings_appearance_padding_title">Vypchávka</string>
+	<string name="settings_appearance_wallpaper">Vlastná tapeta</string>
+	<string name="settings_appearance_home_date_alignment">Dátumové zarovnanie</string>
+	<string name="settings_appearance_home_time_alignment">Časové zarovnanie</string>
+	<string name="settings_appearance_home_app_alignment">Home App Zarovnanie</string>
+	<string name="appearance_bottom_dialog_text_size_title">Veľkosť</string>
+	<string name="appearance_bottom_dialog_text_color_title">Farba</string>
+	<string name="appearance_bottom_dialog_alignment_title">Zarovnanie</string>
+	<string name="appearance_bottom_dialog_padding_title">Vypchávka</string>
+	<string name="appearance_bottom_dialog_desc_date">Dátum\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_time">Čas\u0020:\u0020 </string>
+	<string name="appearance_bottom_dialog_desc_app">Aplikácia\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
+	<string name="appearance_bottom_dialog_desc_battery">Batéria\u0020:\u0020 </string>
+	<string name="settings_manager_favorite">Obľúbené aplikácie</string>
+	<string name="settings_manager_hidden">Skryté aplikácie</string>
+	<string name="settings_select_wallpaper">Vyberte položku Tapeta</string>
+	<string name="settings_double_tap_lock">Dvojitým klepnutím uzamknete</string>
+	<string name="settings_swipe_down_notification">Potiahnutím nadol rozbaliť upozornenie</string>
+	<string name="settings_swipe_up_search">Potiahnutím nahor otvorte zobrazenie vyhľadávania</string>
+	<string name="settings_others_share">zdieľam</string>
+	<string name="settings_others_feedback">Spätná väzba</string>
 	<string name="settings_others_github">Github</string>
-	<string name="authentication_title">Authentication</string>
-	<string name="authentication_subtitle">Log in using your biometric credentials.</string>
-	<string name="authentication_cancel">Authentication Cancel</string>
-	<string name="authentication_succeeded">Authentication Succeeded</string>
-	<string name="authentication_failed">Authentication Failed</string>
-	<string name="authentication_error">Authentication Error: %1$s(code %2$d)</string>
-	<string name="bottom_alignment_star">Star</string>
-	<string name="bottom_alignment_center">Center</string>
-	<string name="bottom_alignment_end">End</string>
-	<string name="accessibility_settings_title">Accessibility Settings</string>
-	<string name="accessibility_settings_enable">Enable</string>
-	<string name="accessibility_settings_disable">Disable</string>
-	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Aster Launcher.\n\nThis permission
-    is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
-	<string name="receiver_name">Lock - screen locker</string>
+	<string name="authentication_title">Overenie</string>
+	<string name="authentication_subtitle">Prihláste sa pomocou svojich biometrických údajov.</string>
+	<string name="authentication_cancel">Zrušenie overenia</string>
+	<string name="authentication_succeeded">Overenie bolo úspešné</string>
+	<string name="authentication_failed">Overenie zlyhalo</string>
+	<string name="authentication_error">Chyba overenia: %1$s(kód %2$d)</string>
+	<string name="bottom_alignment_star">Hviezda</string>
+	<string name="bottom_alignment_center">centrum</string>
+	<string name="bottom_alignment_end">Koniec</string>
+	<string name="accessibility_settings_title">Nastavenia dostupnosti</string>
+	<string name="accessibility_settings_enable">Povoliť</string>
+	<string name="accessibility_settings_disable">Zakázať</string>
+	<string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v spúšťači Aster, zapnite službu dostupnosti.\n\nToto povolenie
+    sa používa iba na vypnutie obrazovky. Naša služba dostupnosti nezhromažďuje ani nezdieľa žiadne údaje.</string>
+	<string name="receiver_name">Zámok - skrinka obrazovky</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->
-	<string name="receiver_desc">Allows to lock the screen</string>
-	<string name="admin_permission_message">Aster launcher promises to use lock screen permission responsibly.Aster launcher does not collect or share any data.</string>
+	<string name="receiver_desc">Umožňuje uzamknúť obrazovku</string>
+	<string name="admin_permission_message">Spúšťač Aster sľubuje, že bude používať povolenie na uzamknutie obrazovky zodpovedne. Spúšťač Aster nezhromažďuje ani nezdieľa žiadne údaje.</string>
 	<string-array name="settings_appearance_daily_word_default">
-		<item>Stay resilient!</item>
-		<item>You got this!</item>
-		<item>Shine bright!</item>
-		<item>Create destiny.</item>
-		<item>Embrace journey.</item>
-		<item>Strength within.</item>
-		<item>Keep pushing!</item>
-		<item>You\'re amazing!</item>
-		<item>Trust, never give.</item>
-		<item>Limitless potential.</item>
-		<item>Progress over perfection.</item>
-		<item>Challenges = growth.</item>
-		<item>Worthy of success.</item>
-		<item>Chase your dreams.</item>
-		<item>Overcome all!</item>
-		<item>Determination wins.</item>
-		<item>Every step counts.</item>
-		<item>Stay positive!</item>
-		<item>Resilience rocks.</item>
-		<item>Strength in you.</item>
-		<item>Celebrate progress.</item>
-		<item>Hard work pays.</item>
-		<item>Trust, have faith.</item>
-		<item>Unique journey.</item>
-		<item>Eyes on prize.</item>
-		<item>Achieve anything!</item>
-		<item>Take bold steps.</item>
-		<item>Passion fuels you.</item>
-		<item>Focus on goals.</item>
-		<item>Persevere, win.</item>
-		<item>Self-belief key.</item>
-		<item>Deserving of good.</item>
-		<item>Reach for dreams.</item>
-		<item>Brave, strong, smart.</item>
-		<item>Positive attitude.</item>
-		<item>Trust the journey.</item>
-		<item>Unwavering determination.</item>
-		<item>Setbacks = comeback.</item>
-		<item>Turn dreams reality.</item>
-		<item>Commit to goals.</item>
-		<item>Strength, no bounds.</item>
-		<item>Head up, breakthrough.</item>
-		<item>Your potential shines.</item>
-		<item>Dreams within reach.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Believe, achieve.</item>
-		<item>Push past limits.</item>
-		<item>Perseverance pays.</item>
-		<item>Stay fearless!</item>
-		<item>Rise above challenges.</item>
-		<item>Keep dreaming big.</item>
-		<item>Live with purpose.</item>
-		<item>Focus on the good.</item>
-		<item>Strength from within.</item>
-		<item>Believe in magic.</item>
-		<item>Smile, you\'ve got this.</item>
-		<item>Never lose hope.</item>
-		<item>Embrace every moment.</item>
-		<item>Be your own hero.</item>
-		<item>You\'re enough.</item>
-		<item>Conquer your fears.</item>
-		<item>Seize the day!</item>
-		<item>Love yourself first.</item>
-		<item>Stay positive, always.</item>
-		<item>You\'re a warrior.</item>
-		<item>Believe in yourself.</item>
-		<item>Embrace possibilities.</item>
-		<item>Live with passion.</item>
-		<item>Keep moving forward.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Stay true to you.</item>
-		<item>Live boldly.</item>
-		<item>Keep the faith.</item>
-		<item>Strength in adversity.</item>
-		<item>Every day, grow.</item>
-		<item>Perseverance, victory.</item>
-		<item>Chase your passions.</item>
-		<item>Find joy in journey.</item>
-		<item>Take risks, thrive.</item>
-		<item>Stay strong, brave.</item>
-		<item>Trust inner wisdom.</item>
-		<item>Keep shining bright.</item>
-		<item>Dream, believe, achieve.</item>
-		<item>Be unstoppable.</item>
-		<item>Own your greatness.</item>
-		<item>Embrace the unknown.</item>
-		<item>Keep pushing forward.</item>
-		<item>Trust in yourself.</item>
-		<item>Spread kindness always.</item>
-		<item>Believe in your dreams.</item>
-		<item>Stay focused, determined.</item>
-		<item>Embrace your journey.</item>
-		<item>Keep your head up.</item>
-		<item>Never give up hope.</item>
-		<item>Strength from within.</item>
-		<item>Stay resilient, strong.</item>
-		<item>You\'re unstoppable!</item>
-		<item>Embrace the challenge.</item>
-		<item>Keep the fire burning.</item>
-		<item>Focus on what\'s possible.</item>
-		<item>Dream big, work hard.</item>
-		<item>Keep your eyes on prize.</item>
-		<item>Trust the process.</item>
-		<item>Stay true to yourself.</item>
-		<item>Believe, achieve, succeed.</item>
-		<item>Stay inspired always.</item>
-		<item>Be fearless in pursuit.</item>
-		<item>Stay grounded, rise.</item>
-		<item>Find strength in struggle.</item>
-		<item>Embrace every challenge.</item>
-		<item>Stay bold, stay bright.</item>
-		<item>You\'re capable of greatness.</item>
-		<item>Trust your journey.</item>
-		<item>Keep fighting, keep rising.</item>
-		<item>Believe in the impossible.</item>
-		<item>Stay resilient, never give.</item>
-		<item>You\'re stronger than you know.</item>
-		<item>Live with passion and purpose.</item>
-		<item>Find joy in every journey.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay positive, stay strong.</item>
-		<item>Every day is a new chance.</item>
-		<item>Embrace every opportunity.</item>
-		<item>Keep pushing past limits.</item>
-		<item>Trust your inner strength.</item>
-		<item>You\'re destined for greatness.</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>You\'re destined for greatness!</item>
-		<item>Believe in your dreams!</item>
-		<item>Stay determined, succeed.</item>
-		<item>Keep moving towards your goals.</item>
-		<item>Chase your dreams relentlessly.</item>
-		<item>Strength comes from within.</item>
-		<item>Stay focused on your goals.</item>
-		<item>You\'re capable of anything.</item>
-		<item>Stay fearless, stay strong.</item>
-		<item>Believe, achieve, succeed!</item>
-		<item>Trust in your journey.</item>
-		<item>Stay resilient, rise above.</item>
-		<item>You have the power within you.</item>
-		<item>Dream big, work hard, achieve.</item>
-		<item>Stay focused, stay strong.</item>
-		<item>You\'re stronger than you think!</item>
-		<item>Believe in yourself, always.</item>
-		<item>Stay determined, stay strong.</item>
-		<item>Embrace every opportunity.</item>
-		<item>You\'re capable of greatness!</item>
-		<item>Stay true to yourself.</item>
-		<item>Trust in your journey.</item>
-		<item>Keep pushing forward.</item>
-		<item>Dream, believe, achieve!</item>
+		<item>Zostaňte odolní!</item>
+		<item>Máš to!</item>
+		<item>Svieť jasno!</item>
+		<item>Vytvorte osud.</item>
+		<item>Objatie cesty.</item>
+		<item>Sila vo vnútri.</item>
+		<item>Neprestavaj tlačiť!</item>
+		<item>Si úžasná!</item>
+		<item>Dôveruj, nikdy nedávaj.</item>
+		<item>Neobmedzený potenciál.</item>
+		<item>Pokrok nad dokonalosťou.</item>
+		<item>Výzvy = rast.</item>
+		<item>Hodné úspechu.</item>
+		<item>Choď za svojimi snami.</item>
+		<item>Prekonajte všetko!</item>
+		<item>Odhodlanie víťazí.</item>
+		<item>Každý krok sa počíta.</item>
+		<item>Zostaň pozitívny!</item>
+		<item>Odolné skaly.</item>
+		<item>Sila vo vás.</item>
+		<item>Oslávte pokrok.</item>
+		<item>Tvrdá práca sa vypláca.</item>
+		<item>Dôveruj, dôveruj.</item>
+		<item>Jedinečná cesta.</item>
+		<item>Oči na cenu.</item>
+		<item>Dosiahnite čokoľvek!</item>
+		<item>Urobte odvážne kroky.</item>
+		<item>Vášeň vás poháňa.</item>
+		<item>Sústreďte sa na ciele.</item>
+		<item>Vydržať, vyhrať.</item>
+		<item>Kľúč k sebadôvere.</item>
+		<item>Zaslúži si dobro.</item>
+		<item>Siahnite po snoch.</item>
+		<item>Odvážny, silný, šikovný.</item>
+		<item>Kladný postoj.</item>
+		<item>Dôverujte ceste.</item>
+		<item>Neochvejné odhodlanie.</item>
+		<item>Neúspechy = návrat.</item>
+		<item>Premeňte sny na skutočnosť.</item>
+		<item>Odhodlať sa k cieľom.</item>
+		<item>Sila, bez hraníc.</item>
+		<item>Hlavu hore, prielom.</item>
+		<item>Váš potenciál žiari.</item>
+		<item>Sny na dosah.</item>
+		<item>Si nezastaviteľná!</item>
+		<item>Veriť, dosiahnuť.</item>
+		<item>Posúvajte hranice.</item>
+		<item>Za vytrvalosť sa platí.</item>
+		<item>Zostaňte nebojácni!</item>
+		<item>Povzniesť sa nad výzvy.</item>
+		<item>Snívajte vo veľkom.</item>
+		<item>Žite s cieľom.</item>
+		<item>Sústreďte sa na to dobré.</item>
+		<item>Sila zvnútra.</item>
+		<item>Verte v mágiu.</item>
+		<item>Usmej sa, máš to.</item>
+		<item>Nikdy nestrácaj nádej.</item>
+		<item>Objímajte každú chvíľu.</item>
+		<item>Buďte svojim vlastným hrdinom.</item>
+		<item>Ty máš dosť.</item>
+		<item>Prekonajte svoje obavy.</item>
+		<item>CHOP sa dňa!</item>
+		<item>Najprv Miluj sám seba.</item>
+		<item>Buďte vždy pozitívni.</item>
+		<item>Si bojovník.</item>
+		<item>Ver v seba.</item>
+		<item>Využite možnosti.</item>
+		<item>Ži vášnivo.</item>
+		<item>Choď stále vpred.</item>
+		<item>Si nezastaviteľná!</item>
+		<item>Zostaňte vám verní.</item>
+		<item>Žite odvážne.</item>
+		<item>Udržať si vieru.</item>
+		<item>Sila v nešťastí.</item>
+		<item>Každý deň rásť.</item>
+		<item>Vytrvalosť, víťazstvo.</item>
+		<item>Choďte za svojimi vášňami.</item>
+		<item>Nájdite radosť na cestách.</item>
+		<item>Riskujte, prosperujte.</item>
+		<item>Zostaň silný, statočný.</item>
+		<item>Dôverujte vnútornej múdrosti.</item>
+		<item>Svieť ďalej.</item>
+		<item>Snívajte, verte, dosahujte.</item>
+		<item>Buďte nezastaviteľní.</item>
+		<item>Vlastniť svoju veľkosť.</item>
+		<item>Prijmite nepoznané.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Verte v seba.</item>
+		<item>Vždy šírte láskavosť.</item>
+		<item>Ver svojim snom.</item>
+		<item>Zostaňte sústredení, odhodlaní.</item>
+		<item>Prijmite svoju cestu.</item>
+		<item>Hlavu hore.</item>
+		<item>Nikdy sa nevzdávajte nádeje.</item>
+		<item>Sila zvnútra.</item>
+		<item>Zostaňte odolný, silný.</item>
+		<item>Si nezastaviteľná!</item>
+		<item>Prijmite výzvu.</item>
+		<item>Udržujte oheň.</item>
+		<item>Sústreďte sa na to, čo je možné.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte.</item>
+		<item>Majte oči na cene.</item>
+		<item>Dôverujte procesu.</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Veriť, dosiahnuť, uspieť.</item>
+		<item>Zostaňte vždy inšpirovaní.</item>
+		<item>Buďte nebojácni pri prenasledovaní.</item>
+		<item>Zostaňte pri zemi, vstaňte.</item>
+		<item>Nájdite silu v boji.</item>
+		<item>Prijmite každú výzvu.</item>
+		<item>Zostaň odvážny, zostaň jasný.</item>
+		<item>Si schopný veľkosti.</item>
+		<item>Verte svojej ceste.</item>
+		<item>Bojuj, vstaň.</item>
+		<item>Verte v nemožné.</item>
+		<item>Zostaňte odolní, nikdy nedávajte.</item>
+		<item>Si silnejší ako vieš.</item>
+		<item>Žite s vášňou a zámerom.</item>
+		<item>Nájdite radosť na každej ceste.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaňte pozitívni, zostaňte silní.</item>
+		<item>Každý deň je nová šanca.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Pokračujte v posúvaní minulých limitov.</item>
+		<item>Dôverujte svojej vnútornej sile.</item>
+		<item>Si predurčený k veľkosti.</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspieť.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspieť.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Si predurčený k veľkosti!</item>
+		<item>Ver svojim snom!</item>
+		<item>Zostaňte odhodlaní, uspejte.</item>
+		<item>Pokračujte smerom k svojim cieľom.</item>
+		<item>Neúnavne choďte za svojimi snami.</item>
+		<item>Sila vychádza zvnútra.</item>
+		<item>Zamerajte sa na svoje ciele.</item>
+		<item>Si schopný všetkého.</item>
+		<item>Zostaň nebojácny, zostaň silný.</item>
+		<item>Veriť, dosiahnuť, uspieť!</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Zostaňte odolní, povzneste sa vyššie.</item>
+		<item>Máte silu v sebe.</item>
+		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+		<item>Zostaňte sústredení, zostaňte silní.</item>
+		<item>Si silnejší, než si myslíš!</item>
+		<item>Ver v seba, vždy.</item>
+		<item>Zostaňte odhodlaní, zostaňte silní.</item>
+		<item>Využite každú príležitosť.</item>
+		<item>Si schopný veľkosti!</item>
+		<item>Buď k sebe úprimný.</item>
+		<item>Dôverujte svojej ceste.</item>
+		<item>Pokračujte v tlačení dopredu.</item>
+		<item>Snívajte, verte, dosahujte!</item>
 	</string-array>
 	<string-array name="alignment_options">
-		<item>Left</item>
-		<item>Center</item>
-		<item>Right</item>
+		<item>Vľavo</item>
+		<item>centrum</item>
+		<item>Správny</item>
 	</string-array>
 </resources>
