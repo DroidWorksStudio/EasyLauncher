@@ -75,12 +75,8 @@
 	<string name="accessibility_settings_title">Eingabehilfen-Einstellungen</string>
 	<string name="accessibility_settings_enable">Aktivieren</string>
 	<string name="accessibility_settings_disable">Deaktivieren</string>
-	<string name="accessibility_service_desc">Bitte aktivieren Sie den Eingabehilfedienst, um die Funktion „Doppeltippen zum Sperren“ im Aster Launcher zu verwenden.\n\nDiese Berechtigung wird nur verwendet, um Ihren Bildschirm auszuschalten. Unser Eingabehilfedienst sammelt oder gibt keine Daten weiter.</string>
-	<string name="receiver_name">Sperrbildschirmsperre</string>
-	<!-- Message displayed to the user by system during authorization-->
-	<!-- Small description inside Device Administrator Setting -->
-	<string name="receiver_desc">Ermöglicht das Sperren des Bildschirms</string>
-	<string name="admin_permission_message">Aster Launcher verspricht, die Sperrbildschirmberechtigung verantwortungsvoll zu verwenden. Aster Launcher sammelt oder gibt keine Daten weiter.</string>
+	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
+	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
 	<string-array name="settings_appearance_daily_word_default">
 		<item>Bleiben Sie widerstandsfähig!</item>
 		<item>Du schaffst das!</item>

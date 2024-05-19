@@ -75,12 +75,8 @@
 	<string name="accessibility_settings_title">Налаштування доступності</string>
 	<string name="accessibility_settings_enable">Увімкнути</string>
 	<string name="accessibility_settings_disable">Вимкнути</string>
-	<string name="accessibility_service_desc">Будь ласка, увімкніть службу доступності, щоб використовувати подвійне торкання для блокування функції в Aster Launcher.\n\nЦей дозвіл використовується лише для вимкнення екрана. Наша служба доступності не збирає та не надає жодних даних.</string>
-	<string name="receiver_name">Блокування - блокування екрана</string>
-	<!-- Message displayed to the user by system during authorization-->
-	<!-- Small description inside Device Administrator Setting -->
-	<string name="receiver_desc">Дозволяє блокувати екран</string>
-	<string name="admin_permission_message">Aster launcher обіцяє відповідально використовувати дозвіл блокування екрана. Aster launcher не збирає та не передає жодних даних.</string>
+	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
+	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
 	<string-array name="settings_appearance_daily_word_default">
 		<item>Будьте витривалими!</item>
 		<item>Ви отримали це!</item>
