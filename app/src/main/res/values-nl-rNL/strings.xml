@@ -75,8 +75,7 @@
 	<string name="accessibility_settings_title">Toegankelijkheidsinstellingen</string>
 	<string name="accessibility_settings_enable">Inschakelen</string>
 	<string name="accessibility_settings_disable">Uitzetten</string>
-	<string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie Dubbeltikken om te vergrendelen in Aster Launcher te gebruiken.\n\nDeze toestemming
-    wordt alleen gebruikt om uw scherm uit te schakelen. Onze toegankelijkheidsservice verzamelt of deelt geen gegevens.</string>
+	<string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie Dubbeltikken om te vergrendelen in Aster Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze toegankelijkheidsservice verzamelt of deelt geen gegevens.</string>
 	<string name="receiver_name">Vergrendelen - schermvergrendeling</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->

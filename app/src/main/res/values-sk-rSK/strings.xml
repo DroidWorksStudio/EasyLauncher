@@ -75,8 +75,7 @@
 	<string name="accessibility_settings_title">Nastavenia dostupnosti</string>
 	<string name="accessibility_settings_enable">Povoliť</string>
 	<string name="accessibility_settings_disable">Zakázať</string>
-	<string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v spúšťači Aster, zapnite službu dostupnosti.\n\nToto povolenie
-    sa používa iba na vypnutie obrazovky. Naša služba dostupnosti nezhromažďuje ani nezdieľa žiadne údaje.</string>
+	<string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v spúšťači Aster, zapnite službu dostupnosti.\n\nToto povolenie sa používa iba na vypnutie obrazovky. Naša služba dostupnosti nezhromažďuje ani nezdieľa žiadne údaje.</string>
 	<string name="receiver_name">Zámok - skrinka obrazovky</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->

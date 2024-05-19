@@ -75,8 +75,7 @@
 	<string name="accessibility_settings_title">Налаштування доступності</string>
 	<string name="accessibility_settings_enable">Увімкнути</string>
 	<string name="accessibility_settings_disable">Вимкнути</string>
-	<string name="accessibility_service_desc">Будь ласка, увімкніть службу доступності, щоб використовувати подвійне торкання для блокування функції в Aster Launcher.\n\nЦей дозвіл
-    використовується лише для вимкнення екрана. Наша служба доступності не збирає та не надає жодних даних.</string>
+	<string name="accessibility_service_desc">Будь ласка, увімкніть службу доступності, щоб використовувати подвійне торкання для блокування функції в Aster Launcher.\n\nЦей дозвіл використовується лише для вимкнення екрана. Наша служба доступності не збирає та не надає жодних даних.</string>
 	<string name="receiver_name">Блокування - блокування екрана</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->

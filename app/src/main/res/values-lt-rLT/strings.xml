@@ -75,8 +75,7 @@
 	<string name="accessibility_settings_title">Pritaikymo neįgaliesiems nustatymai</string>
 	<string name="accessibility_settings_enable">Įgalinti</string>
 	<string name="accessibility_settings_disable">Išjungti</string>
-	<string name="accessibility_service_desc">Įjunkite pritaikymo neįgaliesiems paslaugą, kad galėtumėte naudoti dukart paliesdami užrakinti funkciją Aster Launcher.\n\nŠis leidimas
-    naudojamas tik ekranui išjungti. Mūsų pritaikymo neįgaliesiems paslauga nerenka ir nebendrina jokių duomenų.</string>
+	<string name="accessibility_service_desc">Įjunkite pritaikymo neįgaliesiems paslaugą, kad galėtumėte naudoti dukart paliesdami užrakinti funkciją Aster Launcher.\n\nŠis leidimas naudojamas tik ekranui išjungti. Mūsų pritaikymo neįgaliesiems paslauga nerenka ir nebendrina jokių duomenų.</string>
 	<string name="receiver_name">Užraktas – ekrano užraktas</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->

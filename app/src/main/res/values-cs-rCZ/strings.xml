@@ -75,8 +75,7 @@
 	<string name="accessibility_settings_title">Nastavení usnadnění</string>
 	<string name="accessibility_settings_enable">Umožnit</string>
 	<string name="accessibility_settings_disable">Zakázat</string>
-	<string name="accessibility_service_desc">Chcete-li použít funkci uzamčení dvojitým klepnutím ve spouštěči Aster, zapněte službu usnadnění přístupu.\n\nToto oprávnění
-    se používá pouze k vypnutí obrazovky. Naše služba usnadnění neshromažďuje ani nesdílí žádná data.</string>
+	<string name="accessibility_service_desc">Chcete-li použít funkci uzamčení dvojitým klepnutím ve spouštěči Aster, zapněte službu usnadnění přístupu.\n\nToto oprávnění se používá pouze k vypnutí obrazovky. Naše služba usnadnění neshromažďuje ani nesdílí žádná data.</string>
 	<string name="receiver_name">Zámek - zámek obrazovky</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->

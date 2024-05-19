@@ -75,8 +75,7 @@
 	<string name="accessibility_settings_title">Impostazioni di accessibilità</string>
 	<string name="accessibility_settings_enable">Abilitare</string>
 	<string name="accessibility_settings_disable">disattivare</string>
-	<string name="accessibility_service_desc">Attiva il servizio di accessibilità per utilizzare il doppio tocco per bloccare la funzione in Aster Launcher.\n\nQuesta autorizzazione
-    viene utilizzata solo per spegnere lo schermo. Il nostro servizio di accessibilità non raccoglie né condivide alcun dato.</string>
+	<string name="accessibility_service_desc">Attiva il servizio di accessibilità per utilizzare il doppio tocco per bloccare la funzione in Aster Launcher.\n\nQuesta autorizzazione viene utilizzata solo per spegnere lo schermo. Il nostro servizio di accessibilità non raccoglie né condivide alcun dato.</string>
 	<string name="receiver_name">Blocco: armadietto dello schermo</string>
 	<!-- Message displayed to the user by system during authorization-->
 	<!-- Small description inside Device Administrator Setting -->

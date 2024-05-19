@@ -1,7 +1,6 @@
 package com.github.droidworksstudio.launcher.ui.drawer
 
 import android.util.Log
-import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemDrawBinding
