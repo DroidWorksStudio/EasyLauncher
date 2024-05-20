@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Dependency Updates:
+
+- Updated a few of the dependencies - ([871d38f](https://github.com/DroidWorksStudio/EasyLauncher/commit/871d38f4101d587eea8df89c3248db598dc141be))
+
 ### Refactoring:
 
 - Refactor some of the setting to also work other places. - ([72f212e](https://github.com/DroidWorksStudio/EasyLauncher/commit/72f212ec0876a12d98259cd56dd745f9edf03115))
