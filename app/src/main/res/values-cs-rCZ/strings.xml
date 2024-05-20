@@ -75,8 +75,8 @@
 	<string name="accessibility_settings_title">Nastavení usnadnění</string>
 	<string name="accessibility_settings_enable">Umožnit</string>
 	<string name="accessibility_settings_disable">Zakázat</string>
-	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
-	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
+	<string name="accessibility_service_desc">Chcete-li v Easy Launcher používat funkci uzamčení dvojitým klepnutím, zapněte prosím službu usnadnění.\n\nToto oprávnění se používá pouze k vypnutí obrazovky. Naše služba usnadnění neshromažďuje ani nesdílí žádná data.</string>
+	<string name="admin_permission_message">Easy launcher slibuje zodpovědné používání oprávnění k uzamčení obrazovky. Easy launcher neshromažďuje ani nesdílí žádná data.</string>
 	<string-array name="settings_appearance_daily_word_default">
 		<item>Zůstaňte odolní!</item>
 		<item>Máš to!</item>
