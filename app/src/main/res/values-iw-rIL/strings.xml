@@ -533,4 +533,11 @@
 		<item>מֶרְכָּז</item>
 		<item>ימין</item>
 	</string-array>
+	<string name="search_engine">Search Engine</string>
+	<string name="search_google">Google</string>
+	<string name="search_yahoo">Yahoo</string>
+	<string name="search_duckduckgo">DuckDuckGo</string>
+	<string name="search_bing">Bing</string>
+	<string name="search_brave">Brave</string>
+	<string name="search_swisscow">SwissCows</string>
 </resources>
