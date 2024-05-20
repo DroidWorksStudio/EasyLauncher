@@ -261,19 +261,6 @@ class AppHelper @Inject constructor() {
         return false
     }
 
-    fun showSoftKeyboard(context: Context, view: View) {
-        if (view.requestFocus()) {
-            val inputMethodManager: InputMethodManager =
-                context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            inputMethodManager.showSoftInput(view, InputMethodManager.SHOW_IMPLICIT)
-        }
-    }
-
-    fun hideKeyboard(context: Context, view: View) {
-        val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        imm.hideSoftInputFromWindow(view.windowToken, 0)
-    }
-
     fun wordOfTheDay(resources: Resources): String {
         val dailyWordsArray = resources.getStringArray(R.array.settings_appearance_daily_word_default)
         val dayOfYear = Calendar.getInstance().get(Calendar.DAY_OF_YEAR)
@@ -329,5 +316,4 @@ class AppHelper @Inject constructor() {
             }
         }
     }
-
 }

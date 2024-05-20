@@ -24,7 +24,7 @@
             android:orientation="horizontal"
             tools:ignore="DuplicateClickableBoundsCheck">
 
-            <androidx.appcompat.widget.AppCompatEditText
+            <androidx.appcompat.widget.SearchView
                 android:id="@+id/search_view_text"
                 style="@style/TextDefaultStyle"
                 android:layout_width="match_parent"
@@ -34,23 +34,20 @@
                 android:inputType="text"
                 android:textSize="@dimen/text_super_large"
                 android:textStyle="normal"
-                tools:ignore="VisualLintTextFieldSize">
-
-            </androidx.appcompat.widget.AppCompatEditText>
-
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/searchView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"/>
+                app:closeIcon="@null"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@null"
+                app:searchIcon="@null"
+                app:queryHint="@string/search"
+                tools:ignore="VisualLintTextFieldSize"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/drawAdapter"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

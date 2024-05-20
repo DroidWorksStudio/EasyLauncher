@@ -25,6 +25,7 @@ import com.github.droidworksstudio.launcher.databinding.FragmentHomeBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.helper.hideKeyboard
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
@@ -98,7 +99,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     @SuppressLint("ClickableViewAccessibility")
     private fun initializeInjectedDependencies() {
         context = requireContext()
-        appHelper.hideKeyboard(context, binding.mainView)
+        binding.mainView.hideKeyboard()
 
         binding.nestScrollView.scrollEventListener = this
 
@@ -158,7 +159,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     private fun observeUserInterfaceSettings() {
-        appHelper.hideKeyboard(context, binding.mainView)
+        binding.mainView.hideKeyboard()
 
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
@@ -301,12 +302,12 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     override fun onPause() {
         super.onPause()
-        appHelper.hideKeyboard(context, binding.mainView)
+        binding.mainView.hideKeyboard()
     }
 
     override fun onResume() {
         super.onResume()
-        appHelper.hideKeyboard(context, binding.mainView)
+        binding.mainView.hideKeyboard()
         observeUserInterfaceSettings()
         observeFavoriteAppList()
     }
