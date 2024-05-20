@@ -75,8 +75,8 @@
 	<string name="accessibility_settings_title">Pritaikymo neįgaliesiems nustatymai</string>
 	<string name="accessibility_settings_enable">Įgalinti</string>
 	<string name="accessibility_settings_disable">Išjungti</string>
-	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
-	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
+	<string name="accessibility_service_desc">Įjunkite pritaikymo neįgaliesiems paslaugą, kad galėtumėte naudoti „Easy Launcher“ funkciją dukart paliesdami užrakinti.\n\nŠis leidimas naudojamas tik ekranui išjungti. Mūsų pritaikymo neįgaliesiems paslauga nerenka ir nebendrina jokių duomenų.</string>
+	<string name="admin_permission_message">Lengva paleidimo priemonė žada atsakingai naudoti užrakinimo ekrano leidimą. Lengva paleidimo priemonė nerenka ir nebendrina jokių duomenų.</string>
 	<string-array name="settings_appearance_daily_word_default">
 		<item>Išlikite atsparūs!</item>
 		<item>Tu tai supratai!</item>
@@ -533,4 +533,11 @@
 		<item>centras</item>
 		<item>Teisingai</item>
 	</string-array>
+	<string name="search_engine">Paieškos variklis</string>
+	<string name="search_google">Google</string>
+	<string name="search_yahoo">Yahoo</string>
+	<string name="search_duckduckgo">DuckDuckGo</string>
+	<string name="search_bing">Bing</string>
+	<string name="search_brave">Drąsus</string>
+	<string name="search_swisscow">Šveicarijos karvės</string>
 </resources>

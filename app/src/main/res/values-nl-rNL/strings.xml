@@ -75,8 +75,8 @@
 	<string name="accessibility_settings_title">Toegankelijkheidsinstellingen</string>
 	<string name="accessibility_settings_enable">Inschakelen</string>
 	<string name="accessibility_settings_disable">Uitzetten</string>
-	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
-	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
+	<string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie Dubbeltikken om te vergrendelen in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze toegankelijkheidsdienst verzamelt of deelt geen gegevens.</string>
+	<string name="admin_permission_message">Easy Launcher belooft de toestemming op het vergrendelscherm op verantwoorde wijze te gebruiken. Easy Launcher verzamelt of deelt geen gegevens.</string>
 	<string-array name="settings_appearance_daily_word_default">
 		<item>Blijf veerkrachtig!</item>
 		<item>Je hebt dit!</item>
@@ -533,4 +533,11 @@
 		<item>Centrum</item>
 		<item>Rechts</item>
 	</string-array>
+	<string name="search_engine">Zoekmachine</string>
+	<string name="search_google">Googlen</string>
+	<string name="search_yahoo">Yahoo</string>
+	<string name="search_duckduckgo">DuckDuckGo</string>
+	<string name="search_bing">Bing</string>
+	<string name="search_brave">Moedig</string>
+	<string name="search_swisscow">Zwitserse koeien</string>
 </resources>
