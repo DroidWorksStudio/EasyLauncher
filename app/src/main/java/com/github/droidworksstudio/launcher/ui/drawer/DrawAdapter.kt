@@ -7,10 +7,13 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemDrawBinding
+import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 
 class DrawAdapter(private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
-                  private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener) :
+                  private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener,
+                  private val preferenceHelperProvider: PreferenceHelper
+) :
     ListAdapter<AppInfo, RecyclerView.ViewHolder>(DiffCallback()) {
 
     override fun onCreateViewHolder(
@@ -22,7 +25,9 @@ class DrawAdapter(private val onAppClickedListener: OnItemClickedListener.OnApps
             parent,
             false
         )
-        return DrawViewHolder(binding, onAppClickedListener, onAppLongClickedListener)
+        val preferenceHelper = preferenceHelperProvider
+
+        return DrawViewHolder(binding, onAppClickedListener, onAppLongClickedListener, preferenceHelper)
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {

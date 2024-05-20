@@ -52,5 +52,14 @@ object Constants {
 
     const val TOGGLE_SETTING_LOCK = "TOGGLE_SETTING_LOCK"
 
+    const val URL_DUCK_SEARCH = "https://duckduckgo.com/?q="
+    const val URL_GOOGLE_SEARCH = "https://google.com/search?q="
+    const val URL_YAHOO_SEARCH = "https://search.yahoo.com/search?p="
+    const val URL_BING_SEARCH = "https://bing.com/search?q="
+    const val URL_BRAVE_SEARCH = "https://search.brave.com/search?q="
+    const val URL_SWISSCOW_SEARCH = "https://swisscows.com/web?query="
+    const val URL_GOOGLE_PLAY_STORE = "https://play.google.com/store/search?c=apps&q"
+    const val APP_GOOGLE_PLAY_STORE = "market://search?c=apps&q"
+
     const val REQUEST_CODE_ENABLE_ADMIN = 123
 }

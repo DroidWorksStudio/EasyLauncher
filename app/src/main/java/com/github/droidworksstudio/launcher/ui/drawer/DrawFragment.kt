@@ -1,14 +1,14 @@
 package com.github.droidworksstudio.launcher.ui.drawer
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.coroutineScope
@@ -20,6 +20,11 @@ import com.github.droidworksstudio.launcher.databinding.FragmentDrawBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.helper.hideKeyboard
+import com.github.droidworksstudio.launcher.helper.openSearch
+import com.github.droidworksstudio.launcher.helper.searchCustomSearchEngine
+import com.github.droidworksstudio.launcher.helper.searchOnPlayStore
+import com.github.droidworksstudio.launcher.helper.showKeyboard
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
@@ -40,9 +45,8 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     private val binding get() = _binding!!
 
-    private val viewModel: AppViewModel by viewModels()
-
-    private val drawAdapter: DrawAdapter by lazy { DrawAdapter(this, this) }
+    @Inject
+    lateinit var preferenceHelper: PreferenceHelper
 
     @Inject
     lateinit var appHelper: AppHelper
@@ -50,8 +54,9 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     @Inject
     lateinit var fingerHelper: FingerprintHelper
 
-    @Inject
-    lateinit var preferenceHelper: PreferenceHelper
+    private val viewModel: AppViewModel by viewModels()
+
+    private val drawAdapter: DrawAdapter by lazy { DrawAdapter(this, this, preferenceHelper) }
 
     private lateinit var context: Context
     override fun onCreateView(
@@ -96,29 +101,41 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         }
     }
 
+    @SuppressLint("RestrictedApi")
     private fun setupSearch() {
-        binding.searchViewText.addTextChangedListener(object: TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                // Do Nothing
+        binding.searchViewText.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                query?.let {
+                    val trimmedQuery = it.trim()
+                    if (trimmedQuery.isNotEmpty()) {
+                        if (trimmedQuery.startsWith("!")) {
+                            val searchQuery = trimmedQuery.substringAfter("!")
+                            requireContext().searchCustomSearchEngine(searchQuery)
+                        } else {
+                            if (!requireContext().searchOnPlayStore(trimmedQuery)) {
+                                requireContext().openSearch(trimmedQuery)
+                            }
+                            return true // Exit the function
+                        }
+                    }
+                }
+                return true
             }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                searchApp(s.toString())
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                // Do Nothing
+            override fun onQueryTextChange(newText: String?): Boolean {
+                searchApp(newText.toString())
+                return true
             }
         })
+
     }
 
     private fun observeClickListener(){
         binding.drawSearchButton.setOnClickListener {
-            appHelper.showSoftKeyboard(context, binding.searchViewText)
+            binding.searchViewText.showKeyboard()
         }
     }
 
-    private fun searchApp(query: String?) {
+    private fun searchApp(query: String) {
         val searchQuery = "%$query%"
         @Suppress("DEPRECATION")
         viewLifecycleOwner.lifecycle.coroutineScope.launchWhenCreated {
@@ -142,7 +159,7 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     private fun showSelectedApp(appInfo: AppInfo) {
-        binding.searchViewText.text?.clear()
+        binding.searchViewText.setQuery("", false)
 
         val bottomSheetFragment = AppInfoBottomSheetFragment(appInfo)
         bottomSheetFragment.setOnBottomSheetDismissedListener(this)
@@ -157,19 +174,19 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     override fun onPause() {
         super.onPause()
-        binding.searchViewText.text?.clear()
+        binding.searchViewText.setQuery("", false)
     }
 
     override fun onResume() {
         super.onResume()
         observeDrawerApps()
         binding.drawAdapter.scrollToPosition(0)
-        if (preferenceHelper.automaticKeyboard) appHelper.showSoftKeyboard(context, binding.searchViewText)
+        if (preferenceHelper.automaticKeyboard) binding.searchViewText.showKeyboard()
     }
 
     override fun onStop() {
         super.onStop()
-        appHelper.hideKeyboard(context, binding.searchView)
+        binding.searchViewText.hideKeyboard()
     }
 
     override fun onAppClicked(appInfo: AppInfo) {
