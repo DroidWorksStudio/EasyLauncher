@@ -75,8 +75,8 @@
 	<string name="accessibility_settings_title">Impostazioni di accessibilità</string>
 	<string name="accessibility_settings_enable">Abilitare</string>
 	<string name="accessibility_settings_disable">disattivare</string>
-	<string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
-	<string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
+	<string name="accessibility_service_desc">Attiva il servizio di accessibilità per utilizzare il doppio tocco per bloccare la funzione in Easy Launcher.\n\nQuesta autorizzazione viene utilizzata solo per spegnere lo schermo. Il nostro servizio di accessibilità non raccoglie né condivide alcun dato.</string>
+	<string name="admin_permission_message">Easy Launcher promette di utilizzare l\'autorizzazione della schermata di blocco in modo responsabile. Easy Launcher non raccoglie né condivide alcun dato.</string>
 	<string-array name="settings_appearance_daily_word_default">
 		<item>Rimani resiliente!</item>
 		<item>L\'hai capito!</item>
