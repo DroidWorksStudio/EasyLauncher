@@ -184,6 +184,13 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         if (preferenceHelper.automaticKeyboard) binding.searchViewText.showKeyboard()
     }
 
+    override fun onStart() {
+        super.onStart()
+        observeDrawerApps()
+        binding.drawAdapter.scrollToPosition(0)
+        if (preferenceHelper.automaticKeyboard) binding.searchViewText.showKeyboard()
+    }
+
     override fun onStop() {
         super.onStop()
         binding.searchViewText.hideKeyboard()
