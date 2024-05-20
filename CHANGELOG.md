@@ -2,11 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
-## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
+## [0.0.5](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.5) - (20, May 2024)
 
 ### Dependency Updates:
 
 - Updated a few of the dependencies - ([871d38f](https://github.com/DroidWorksStudio/EasyLauncher/commit/871d38f4101d587eea8df89c3248db598dc141be))
+
+### Language Support:
+
+- Updated Language Files. ([#23](https://github.com/DroidWorksStudio/EasyLauncher/issues/23)) - ([5099282](https://github.com/DroidWorksStudio/EasyLauncher/commit/5099282616d17cf572e5a126dea9e16624d8a052))
 
 ### Refactoring:
 
