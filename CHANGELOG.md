@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added Basic Backup / Restore Feature - ([f6c1f9d](https://github.com/DroidWorksStudio/EasyLauncher/commit/f6c1f9d0f6e48821ca9bb9dc2142f12e12d3a7d6))
+
 ### Bug Fixes:
 
 - Fixed a few DEPRECATION warning. - ([7dfddc7](https://github.com/DroidWorksStudio/EasyLauncher/commit/7dfddc79452203716716e6688b180566ef07668e))
