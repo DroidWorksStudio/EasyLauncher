@@ -27,6 +27,7 @@
 	<string name="settings_title_time_style">Laiko stilius</string>
 	<string name="settings_title_app_manager">Programų tvarkymas</string>
 	<string name="settings_title_gestures">Gestai</string>
+	<string name="settings_title_backups">Backups</string>
 	<string name="settings_title_others">Kiti</string>
 	<string name="settings_display_status_bar">Rodyti būsenos juostą</string>
 	<string name="settings_display_date">Rodyti datą</string>
@@ -63,6 +64,10 @@
 	<string name="settings_others_share">Dalintis</string>
 	<string name="settings_others_feedback">Atsiliepimas</string>
 	<string name="settings_others_github">Github</string>
+	<string name="settings_backups_backup">Backup Preferences</string>
+	<string name="settings_backups_restore">Restore Preferences</string>
+	<string name="settings_reload_app_backup">Preferences backed up.</string>
+	<string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
 	<string name="authentication_title">Autentifikavimas</string>
 	<string name="authentication_subtitle">Prisijunkite naudodami biometrinius kredencialus.</string>
 	<string name="authentication_cancel">Autentifikavimo atšaukimas</string>
