@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed a few DEPRECATION warning. - ([7dfddc7](https://github.com/DroidWorksStudio/EasyLauncher/commit/7dfddc79452203716716e6688b180566ef07668e))
 - Fixed the keyboard from displaying wrong. - ([3d5c704](https://github.com/DroidWorksStudio/EasyLauncher/commit/3d5c70449756d8335a2b47bc85f3f70673b1a707))
 - Fixed the keyboard from still displaying on loading back to homescreen. - ([3d5c704](https://github.com/DroidWorksStudio/EasyLauncher/commit/3d5c70449756d8335a2b47bc85f3f70673b1a707))
 - Removed the auto keyboard from homescreen. - ([96c023e](https://github.com/DroidWorksStudio/EasyLauncher/commit/96c023e94464382eadf2b0dbafaabb1e987a77f0))
