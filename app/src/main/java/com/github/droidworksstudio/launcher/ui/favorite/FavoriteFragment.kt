@@ -24,7 +24,6 @@ import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnItemMoveListener
-import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -36,7 +35,8 @@ import javax.inject.Inject
 class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
-    FingerprintHelper.Callback,OnItemMoveListener.OnItemActionListener{
+    OnItemMoveListener.OnItemActionListener,
+    FingerprintHelper.Callback {
     private var _binding: FragmentFavoriteBinding? = null
 
     private val binding get() = _binding!!
@@ -103,10 +103,10 @@ class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener
 
 
     private fun observeHomeAppOrder() {
-        //binding.favoriteAdapter.adapter = favoriteAdapter
+        binding.favoriteAdapter.adapter = favoriteAdapter
         val listener: OnItemMoveListener.OnItemActionListener = favoriteAdapter
 
-        val simpleItemTouchCallback = object : ItemTouchHelper.Callback() {
+       val simpleItemTouchCallback = object : ItemTouchHelper.Callback() {
 
             override fun onChildDraw(
                 canvas: Canvas, recyclerView: RecyclerView,
@@ -152,6 +152,7 @@ class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                @Suppress("DEPRECATION")
                 listener.onViewSwiped(viewHolder.adapterPosition)
             }
 
@@ -179,14 +180,6 @@ class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener
         } else {
             fingerHelper.startFingerprintAuth(appInfo, this)
         }
-    }
-
-    private fun showSelectedApp(appInfo: AppInfo) {
-        val bottomSheetFragment = AppInfoBottomSheetFragment(appInfo)
-        bottomSheetFragment.setOnBottomSheetDismissedListener(this)
-        bottomSheetFragment.setOnAppStateClickListener(this)
-        bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
-
     }
 
     override fun onBottomSheetDismissed() {

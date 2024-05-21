@@ -29,7 +29,7 @@ class HiddenFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.OnAppLongClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
-    FingerprintHelper.Callback{
+    FingerprintHelper.Callback {
     private var _binding: FragmentHiddenBinding? = null
 
     private val binding get() = _binding!!
@@ -78,6 +78,7 @@ class HiddenFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     private fun observeHiddenApps() {
         viewModel.compareInstalledAppInfo()
+        @Suppress("DEPRECATION")
         viewLifecycleOwner.lifecycleScope.launchWhenCreated {
             viewModel.hiddenApps.collect {
                 hiddenAdapter.updateData(it)
