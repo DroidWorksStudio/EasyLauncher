@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
+
+### Bug Fixes:
+
+- Removed the auto keyboard from homescreen. - ([96c023e](https://github.com/DroidWorksStudio/EasyLauncher/commit/96c023e94464382eadf2b0dbafaabb1e987a77f0))
+
 ## [0.0.5](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.5) - (20, May 2024)
 
 ### Dependency Updates:
