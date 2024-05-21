@@ -175,6 +175,7 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     override fun onPause() {
         super.onPause()
         binding.searchViewText.setQuery("", false)
+        binding.searchViewText.hideKeyboard()
     }
 
     override fun onResume() {
