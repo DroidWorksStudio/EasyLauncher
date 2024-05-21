@@ -3,6 +3,7 @@ package com.github.droidworksstudio.launcher.helper
 import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.pm.LauncherApps
 import android.net.Uri
 import android.os.UserHandle
@@ -10,7 +11,11 @@ import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.github.droidworksstudio.launcher.Constants
+import java.io.File
+import java.io.IOException
 
 fun View.hideKeyboard() {
     this.clearFocus()
@@ -72,6 +77,86 @@ fun Context.searchCustomSearchEngine(searchQuery: String? = null): Boolean {
     Log.d("fullUrl", fullUrl)
     openUrl(fullUrl)
     return true
+}
+
+fun Context.backupSharedPreferences(backupFileName: String) {
+    val sharedPreferences: SharedPreferences = this.getSharedPreferences(Constants.PREFS_FILENAME, 0)
+    val allPrefs = sharedPreferences.all
+    val backupFile = File(filesDir, backupFileName)
+
+    println("Backup SharedPreferences to: ${backupFile.absolutePath}")
+
+    try {
+        backupFile.bufferedWriter().use { writer ->
+            for ((key, value) in allPrefs) {
+                if (value != null) {
+                    val line = when (value) {
+                        is Boolean -> "$key=${value}\n"
+                        is Int -> "$key=${value}\n"
+                        is Float -> "$key=${value}\n"
+                        is Long -> "$key=${value}\n"
+                        is String -> "$key=${value}\n"
+                        is Set<*> -> "$key=${value.joinToString(",")}\n"
+                        else -> null
+                    }
+                    if (line != null) {
+                        writer.write(line)
+                        println("Writing: $line")
+                    } else {
+                        println("Skipping unsupported type for key: $key")
+                    }
+                } else {
+                    println("Null value for key: $key")
+                }
+            }
+        }
+        println("Backup completed successfully.")
+    } catch (e: IOException) {
+        e.printStackTrace()
+        println("Failed to backup SharedPreferences: ${e.message}")
+    }
+}
+
+fun Context.restoreSharedPreferences(backupFileName: String) {
+    val sharedPreferences: SharedPreferences = this.getSharedPreferences(Constants.PREFS_FILENAME, 0)
+    val editor = sharedPreferences.edit()
+    val backupFile = File(filesDir, backupFileName)
+
+    println("Restoring SharedPreferences from: ${backupFile.absolutePath}")
+
+    if (backupFile.exists()) {
+        try {
+            backupFile.forEachLine { line ->
+                val (key, value) = line.split("=", limit = 2)
+                when {
+                    value.toBooleanStrictOrNull() != null -> editor.putBoolean(key, value.toBoolean())
+                    value.toIntOrNull() != null -> editor.putInt(key, value.toInt())
+                    value.toFloatOrNull() != null -> editor.putFloat(key, value.toFloat())
+                    value.toLongOrNull() != null -> editor.putLong(key, value.toLong())
+                    value.contains(",") -> editor.putStringSet(key, value.split(",").toSet())
+                    else -> editor.putString(key, value)
+                }
+                println("Restoring: $key=$value")
+            }
+            editor.apply()
+            println("Restore completed successfully.")
+        } catch (e: IOException) {
+            e.printStackTrace()
+            println("Failed to restore SharedPreferences: ${e.message}")
+        }
+    } else {
+        println("Backup file does not exist.")
+    }
+}
+
+fun Fragment.restartApp() {
+    val packageManager = requireContext().packageManager
+    val intent = packageManager.getLaunchIntentForPackage(requireContext().packageName)
+    intent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+    if (intent != null) {
+        startActivity(intent)
+    }
+    requireActivity().finish()
 }
 
 fun Context.isPackageInstalled(packageName: String, userHandle: UserHandle = android.os.Process.myUserHandle()): Boolean {

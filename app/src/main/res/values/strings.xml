@@ -31,6 +31,7 @@
 	<string name="settings_title_time_style">Time Style</string>
 	<string name="settings_title_app_manager">App Manage</string>
 	<string name="settings_title_gestures">Gestures</string>
+	<string name="settings_title_backups">Backups</string>
 	<string name="settings_title_others">Others</string>
 
 	<string name="settings_display_status_bar">Show Status Bar</string>
@@ -74,6 +75,12 @@
 	<string name="settings_others_share">Share</string>
 	<string name="settings_others_feedback">Feedback</string>
 	<string name="settings_others_github">Github</string>
+
+	<string name="settings_backups_backup">Backup Preferences</string>
+	<string name="settings_backups_restore">Restore Preferences</string>
+
+	<string name="settings_reload_app_backup">Preferences backed up.</string>
+	<string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
 
 	<string name="authentication_title">Authentication</string>
 	<string name="authentication_subtitle">Log in using your biometric credentials.</string>

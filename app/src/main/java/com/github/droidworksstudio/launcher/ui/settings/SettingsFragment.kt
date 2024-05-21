@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
@@ -15,6 +16,7 @@ import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.helper.restartApp
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AlignmentBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomSheetDialogFragment
@@ -30,7 +32,6 @@ class SettingsFragment : Fragment(), ScrollEventListener {
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
 
-    //private val viewModel: AppViewModel by viewModels()
     private val preferenceViewModel: PreferenceViewModel by viewModels()
 
     @Inject
@@ -127,15 +128,27 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         }
 
         binding.shareView.setOnClickListener {
-            appHelper.shareApp(requireContext())
+            appHelper.shareAppButton(requireContext())
         }
 
         binding.githubView.setOnClickListener {
-            appHelper.github(requireContext())
+            appHelper.githubButton(requireContext())
+
         }
 
         binding.feedbackView.setOnClickListener {
-            appHelper.feedback(requireContext())
+            appHelper.feedbackButton(requireContext())
+        }
+
+        binding.backupView.setOnClickListener {
+            appHelper.backupSharedPreferences(requireContext())
+            Toast.makeText(requireContext(), getString(R.string.settings_reload_app_backup), Toast.LENGTH_SHORT).show()
+        }
+
+        binding.restoreView.setOnClickListener {
+            appHelper.restoreSharedPreferences(requireContext())
+            Toast.makeText(requireContext(), getString(R.string.settings_reload_app_restore), Toast.LENGTH_SHORT).show()
+            restartApp()
         }
     }
 

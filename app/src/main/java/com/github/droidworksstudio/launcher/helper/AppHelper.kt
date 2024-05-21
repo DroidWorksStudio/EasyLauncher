@@ -267,7 +267,7 @@ class AppHelper @Inject constructor() {
         return dailyWordsArray[wordIndex]
     }
 
-    fun shareApp(context: Context){
+    fun shareAppButton(context: Context){
         val shareIntent = Intent(Intent.ACTION_SEND)
         shareIntent.type = "text/plain"
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Share Application")
@@ -275,17 +275,25 @@ class AppHelper @Inject constructor() {
         context.startActivity(Intent.createChooser(shareIntent, "Share Application"))
     }
 
-    fun github(context: Context){
+    fun githubButton(context: Context){
         val uri = Uri.parse("https://github.com/DroidWorksStudio/EasyLauncher")
         val intent = Intent(Intent.ACTION_VIEW, uri)
         context.startActivity(intent)
     }
 
-    fun feedback(context: Context){
+    fun feedbackButton(context: Context){
         val emailIntent = Intent(Intent.ACTION_SENDTO)
         emailIntent.data = Uri.parse("mailto:droidworksstuido@063240.xyz")
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Easy Launcher")
         context.startActivity(Intent.createChooser(emailIntent, "Choose Mail Application"))
+    }
+
+    fun backupSharedPreferences(context: Context) {
+        context.backupSharedPreferences(context.getString(R.string.settings_backups_file))
+    }
+
+    fun restoreSharedPreferences(context: Context) {
+        context.restoreSharedPreferences(context.getString(R.string.settings_backups_file))
     }
 
     fun enableAppAsAccessibilityService(context: Context, accessibilityState: Boolean) {

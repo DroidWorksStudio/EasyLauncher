@@ -30,6 +30,7 @@ android {
             applicationIdSuffix = ".debug"
             proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             resValue("string", "app_name", "Easy Launcher (Debug)")
+            resValue("string", "settings_backups_file", "autoBackup.debug.ini")
         }
 
         getByName("release") {
@@ -37,6 +38,7 @@ android {
             isShrinkResources = true
             proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             resValue("string", "app_name", "Easy Launcher")
+            resValue("string", "settings_backups_file", "autoBackup.ini")
         }
     }
 
@@ -87,6 +89,7 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.9.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.viewpager2:viewpager2:1.1.0")
+    implementation("androidx.preference:preference-ktx:1.2.1")
     debugImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
