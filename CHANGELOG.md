@@ -10,6 +10,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Fixed the keyboard from still displaying on loading back to homescreen. - ([3d5c704](https://github.com/DroidWorksStudio/EasyLauncher/commit/3d5c70449756d8335a2b47bc85f3f70673b1a707))
 - Removed the auto keyboard from homescreen. - ([96c023e](https://github.com/DroidWorksStudio/EasyLauncher/commit/96c023e94464382eadf2b0dbafaabb1e987a77f0))
 
+### Dependency Updates:
+
+- Updated Android Gradle Plugin - ([f760740](https://github.com/DroidWorksStudio/EasyLauncher/commit/f7607402e93427705a8796b2862e11fe1bd80523))
+
 ## [0.0.5](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.5) - (20, May 2024)
 
 ### Dependency Updates:
