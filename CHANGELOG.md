@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Basic starter to add Widget support. - ([a3c4e6f](https://github.com/DroidWorksStudio/EasyLauncher/commit/a3c4e6f0af2eb8e71bc78f9f7d8fe653bf697ffd))
+
 ### Language Support:
 
 - Updated Language Files. ([#26](https://github.com/DroidWorksStudio/EasyLauncher/issues/26)) - ([3335975](https://github.com/DroidWorksStudio/EasyLauncher/commit/333597534d31aa68fcb584b1f5b282877b90ed2a))
