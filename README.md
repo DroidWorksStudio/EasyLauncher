@@ -65,6 +65,10 @@ We try to balance customizability and minimalization well still being simple :)<
     - Make pull requests to `main` branch.
 - Any help in translating EasyLauncher into other languages is greatly appreciated. [**Crowdin**](https://crowdin.com/project/easy-launcher).
 
+## Credits
+
+- [https://gitlab.com/neophtex/AsterLauncher](https://gitlab.com/neophtex/AsterLauncher)
+
 ## License
 
 **EasyLauncher is proudly licensed under the open source GPL3 license, granting users the freedom to use, study, modify and distribute it at will.**
@@ -97,6 +101,3 @@ We kindly request that you consider supporting the ongoing development of EasyLa
 <div align='center'>
 <a href="https://www.buymeacoffee.com/HeCodes2Much"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=HeCodes2Much&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 </div>
-
-## Credits
-- [https://gitlab.com/neophtex/AsterLauncher](https://gitlab.com/neophtex/AsterLauncher)
