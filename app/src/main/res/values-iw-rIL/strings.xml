@@ -27,6 +27,7 @@
 	<string name="settings_title_time_style">סגנון זמן</string>
 	<string name="settings_title_app_manager">ניהול אפליקציות</string>
 	<string name="settings_title_gestures">מחוות</string>
+	<string name="settings_title_backups">Backups</string>
 	<string name="settings_title_others">אחרים</string>
 	<string name="settings_display_status_bar">הצג את שורת המצב</string>
 	<string name="settings_display_date">הצג תאריך</string>
@@ -63,6 +64,10 @@
 	<string name="settings_others_share">לַחֲלוֹק</string>
 	<string name="settings_others_feedback">מָשׁוֹב</string>
 	<string name="settings_others_github">Github</string>
+	<string name="settings_backups_backup">Backup Preferences</string>
+	<string name="settings_backups_restore">Restore Preferences</string>
+	<string name="settings_reload_app_backup">Preferences backed up.</string>
+	<string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
 	<string name="authentication_title">אימות</string>
 	<string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
 	<string name="authentication_cancel">ביטול האימות</string>

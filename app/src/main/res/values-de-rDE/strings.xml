@@ -27,6 +27,7 @@
 	<string name="settings_title_time_style">Zeitstil</string>
 	<string name="settings_title_app_manager">App verwalten</string>
 	<string name="settings_title_gestures">Gesten</string>
+	<string name="settings_title_backups">Backups</string>
 	<string name="settings_title_others">Andere</string>
 	<string name="settings_display_status_bar">Zeige Statusleiste</string>
 	<string name="settings_display_date">Datum anzeigen</string>
@@ -63,6 +64,10 @@
 	<string name="settings_others_share">Aktie</string>
 	<string name="settings_others_feedback">Rückmeldung</string>
 	<string name="settings_others_github">Github</string>
+	<string name="settings_backups_backup">Backup Preferences</string>
+	<string name="settings_backups_restore">Restore Preferences</string>
+	<string name="settings_reload_app_backup">Preferences backed up.</string>
+	<string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
 	<string name="authentication_title">Authentifizierung</string>
 	<string name="authentication_subtitle">Melden Sie sich mit Ihren biometrischen Anmeldeinformationen an.</string>
 	<string name="authentication_cancel">Authentifizierung Abbrechen</string>

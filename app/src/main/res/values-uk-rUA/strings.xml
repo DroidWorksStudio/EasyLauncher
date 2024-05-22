@@ -27,6 +27,7 @@
 	<string name="settings_title_time_style">Стиль часу</string>
 	<string name="settings_title_app_manager">Керування додатком</string>
 	<string name="settings_title_gestures">Жести</string>
+	<string name="settings_title_backups">Backups</string>
 	<string name="settings_title_others">інші</string>
 	<string name="settings_display_status_bar">Показати рядок стану</string>
 	<string name="settings_display_date">Показати дату</string>
@@ -63,6 +64,10 @@
 	<string name="settings_others_share">Поділіться</string>
 	<string name="settings_others_feedback">Зворотній зв\'язок</string>
 	<string name="settings_others_github">Github</string>
+	<string name="settings_backups_backup">Backup Preferences</string>
+	<string name="settings_backups_restore">Restore Preferences</string>
+	<string name="settings_reload_app_backup">Preferences backed up.</string>
+	<string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
 	<string name="authentication_title">Аутентифікація</string>
 	<string name="authentication_subtitle">Увійдіть, використовуючи свої біометричні облікові дані.</string>
 	<string name="authentication_cancel">Автентифікація Скасувати</string>
