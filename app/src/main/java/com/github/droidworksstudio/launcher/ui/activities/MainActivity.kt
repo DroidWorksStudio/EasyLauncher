@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun observeUI() {
-        binding.pager.currentItem = 0
+        binding.pager.currentItem = 1
         preferenceViewModel.setShowStatusBar(preferenceHelper.showStatusBar)
         preferenceViewModel.showStatusBarLiveData.observe(this) {
             if (it) appHelper.showStatusBar(this.window)

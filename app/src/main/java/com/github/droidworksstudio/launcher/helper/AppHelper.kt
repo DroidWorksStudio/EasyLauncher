@@ -101,11 +101,11 @@ class AppHelper @Inject constructor() {
     fun dayNightMod(context: Context, view: View) {
         when (context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
             Configuration.UI_MODE_NIGHT_YES -> {
-                view.setBackgroundColor(context.resources.getColor(R.color.blackTrans50, context.theme))
+                view.setBackgroundColor(context.resources.getColor(R.color.blackTrans25, context.theme))
             }
 
             Configuration.UI_MODE_NIGHT_NO -> {
-                view.setBackgroundColor(context.resources.getColor(R.color.whiteTrans50, context.theme))
+                view.setBackgroundColor(context.resources.getColor(R.color.whiteTrans25, context.theme))
             }
         }
     }

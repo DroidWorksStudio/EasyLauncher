@@ -40,7 +40,7 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.OnAppLongClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
-    FingerprintHelper.Callback{
+    FingerprintHelper.Callback {
     private var _binding: FragmentDrawBinding? = null
 
     private val binding get() = _binding!!
@@ -181,14 +181,12 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     override fun onResume() {
         super.onResume()
         observeDrawerApps()
-        binding.drawAdapter.scrollToPosition(0)
         if (preferenceHelper.automaticKeyboard) binding.searchViewText.showKeyboard()
     }
 
     override fun onStart() {
         super.onStart()
         observeDrawerApps()
-        binding.drawAdapter.scrollToPosition(0)
     }
 
     override fun onStop() {

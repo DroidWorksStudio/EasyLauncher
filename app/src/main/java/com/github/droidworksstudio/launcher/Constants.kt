@@ -4,6 +4,9 @@ object Constants {
     const val PACKAGE_NAME = "app.easy.launcher"
     const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
 
+    const val WIDGETS_PREFS = "EasyLauncherWidgets.pref"
+    const val APP_WIDGETS_ID = "APP_WIDGETS_ID"
+
     const val PREFS_FILENAME = "EasyLauncher.pref"
     const val FIRST_LAUNCH = "FIRST_LAUNCH"
     const val SHOW_DATE = "SHOW_DATE"
@@ -39,8 +42,6 @@ object Constants {
     const val HOME_TIME_ALIGNMENT = "HOME_TIME_ALIGNMENT"
     const val HOME_APP_ALIGNMENT = "HOME_APP_ALIGNMENT"
     const val HOME_DAILY_WORD_ALIGNMENT = "HOME_DAILY_WORD_ALIGNMENT"
-    const val HOME_DRAW_ALIGNMENT = "HOME_DRAW_ALIGNMENT"
-    const val HOME_BATTERY_ALIGNMENT = "HOME_BATTERY_ALIGNMENT"
 
     const val NOTIFICATION_SERVICE = "statusbar"
     const val NOTIFICATION_MANAGER = "android.app.StatusBarManager"
@@ -61,5 +62,6 @@ object Constants {
     const val URL_GOOGLE_PLAY_STORE = "https://play.google.com/store/search?c=apps&q"
     const val APP_GOOGLE_PLAY_STORE = "market://search?c=apps&q"
 
+    const val APP_WIDGET_HOST_ID = 1024
     const val REQUEST_CODE_ENABLE_ADMIN = 123
 }
