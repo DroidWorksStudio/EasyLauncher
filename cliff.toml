@@ -102,7 +102,7 @@ commit_parsers = [
     { message = "^release|^Release", group = "<!-- 9 -->Releases:" },
     { message = "^dependency|^deps|^Dependency|^Deps", group = "<!-- 10 -->Dependency Updates:" },
     { message = "^ci|^pipeline|^Ci|^Pipeline", group = "<!-- 11 -->Continuous Integration (CI):" },
-    { message = "^chore|^housekeeping|^Chore|^Housekeeping", group = "<!-- 12 -->Chore:" },
+    { message = "^chore|^housekeeping|^Chore|^Housekeeping", group = "<!-- 12 -->Housekeeping:" },
     { message = "^version|^versioning|^Version|^Versioning", group = "<!-- 13 -->Versioning:" },
     { message = "^config|^configuration|^Config|^Configuration", group = "<!-- 14 -->Configuration Changes:" },
     { message = "^cleanup|^clean\\(up\\)|^Cleanup|^Clean\\(up\\)", group = "<!-- 15 -->Code Cleanup:" },
