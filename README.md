@@ -41,6 +41,7 @@
 - This application can be found on [F-Droid](https://f-droid.org/packages/app.easy.launcher/) and [Github](https://github.com/HeCodes2Much/EasyLauncher/releases/).
 - The latest stable version is available on the [`main`](https://github.com/HeCodes2Much/EasyLauncher/tree/main) branch, which can be cloned to build the application independently.
 - Additionally, a Github action has been set up to automatically generate an APK for every [release](https://github.com/HeCodes2Much/EasyLauncher/releases).
+- The **original** version of the application is also accessible on the [Play Store](https://play.google.com/store/apps/details?id=com.series.aster.launcher), [F-Droid](https://f-droid.org/fr/packages/com.series.aster.launcher/) & [Github](https://github.com/neophtex/AsterLauncher).
 
 We try to balance customizability and minimalization well still being simple :)</h3>
 
@@ -96,3 +97,6 @@ We kindly request that you consider supporting the ongoing development of EasyLa
 <div align='center'>
 <a href="https://www.buymeacoffee.com/HeCodes2Much"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=HeCodes2Much&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 </div>
+
+## Credits
+- [https://gitlab.com/neophtex/AsterLauncher](https://gitlab.com/neophtex/AsterLauncher)
