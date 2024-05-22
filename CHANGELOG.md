@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Updated Language Files. ([#26](https://github.com/DroidWorksStudio/EasyLauncher/issues/26)) - ([3335975](https://github.com/DroidWorksStudio/EasyLauncher/commit/333597534d31aa68fcb584b1f5b282877b90ed2a))
 
+### Refactoring:
+
+- Added libs file to use Kotlin DLS - ([4e2e41c](https://github.com/DroidWorksStudio/EasyLauncher/commit/4e2e41ce198888e2db25cbe429097de9a24f588e))
+
 ## [0.0.6](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.6) - (21, May 2024)
 
 ### Implemented Enhancements:
@@ -22,7 +26,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed a few DEPRECATION warning. - ([7dfddc7](https://github.com/DroidWorksStudio/EasyLauncher/commit/7dfddc79452203716716e6688b180566ef07668e))
 - Fixed the keyboard from displaying wrong. - ([3d5c704](https://github.com/DroidWorksStudio/EasyLauncher/commit/3d5c70449756d8335a2b47bc85f3f70673b1a707))
-- Fixed the keyboard from still displaying on loading back to homescreen. - ([3d5c704](https://github.com/DroidWorksStudio/EasyLauncher/commit/3d5c70449756d8335a2b47bc85f3f70673b1a707))
+- Fixed the keyboard from displaying wrong. - ([3d5c704](https://github.com/DroidWorksStudio/EasyLauncher/commit/3d5c70449756d8335a2b47bc85f3f70673b1a707))
 - Removed the auto keyboard from homescreen. - ([96c023e](https://github.com/DroidWorksStudio/EasyLauncher/commit/96c023e94464382eadf2b0dbafaabb1e987a77f0))
 
 ### Dependency Updates:
@@ -44,10 +48,6 @@ All notable changes to this project will be documented in this file. See [conven
 - Refactor some of the setting to also work other places. - ([72f212e](https://github.com/DroidWorksStudio/EasyLauncher/commit/72f212ec0876a12d98259cd56dd745f9edf03115))
 
 ## [0.0.4](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.4) - (19, May 2024)
-
-### Bug Fixes:
-
-- Fixed fDroid - ([fe3848b](https://github.com/DroidWorksStudio/EasyLauncher/commit/fe3848b820a26597ee5ab64742427796597bd4dc))
 
 ### Language Support:
 
