@@ -1,548 +1,552 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">הגדרות</string>
-	<string name="action_settings_default">הגדר כמשגר ברירת מחדל</string>
-	<!-- Strings used for fragments for navigation -->
-	<string name="home_fragment_label">קטע בית</string>
-	<string name="draw_fragment_label">צייר שבר</string>
-	<string name="battery_level">%s%%</string>
-	<string name="search">חיפוש</string>
-	<string name="bottom_dialog_app_rename">שנה שם</string>
-	<string name="bottom_dialog_add_to_home">הוסף לדף הבית</string>
-	<string name="bottom_dialog_order_home_apps">סדר מחדש את יישומי דף הבית</string>
-	<string name="bottom_dialog_remove_from_home">הסר ממסך הבית</string>
-	<string name="bottom_dialog_add_to_hidden">אפליקציה נסתרת</string>
-	<string name="bottom_dialog_remove_to_hidden">הסר את האפליקציה הנסתרת</string>
-	<string name="bottom_dialog_add_to_lock">נעילת יישומים</string>
-	<string name="bottom_dialog_remove_to_unlock">בטל את נעילת האפליקציה</string>
-	<string name="bottom_dialog_app_info">מידע על האפליקציה</string>
-	<string name="bottom_dialog_app_uninstall">הסר את ההתקנה של האפליקציה</string>
-	<string name="settings_name">הגדרות משגר</string>
-	<string name="settings_version">%s גרסה: %s</string>
-	<string name="settings_home">בית</string>
-	<string name="settings_title_home_display_preferences">לְהַצִיג</string>
-	<string name="settings_title_home_behavior_preferences">התנהגות</string>
-	<string name="settings_title_home_appearance_preferences">מראה חיצוני</string>
-	<string name="settings_title_date_style">סגנון דייט</string>
-	<string name="settings_title_time_style">סגנון זמן</string>
-	<string name="settings_title_app_manager">ניהול אפליקציות</string>
-	<string name="settings_title_gestures">מחוות</string>
-	<string name="settings_title_backups">Backups</string>
-	<string name="settings_title_others">אחרים</string>
-	<string name="settings_display_status_bar">הצג את שורת המצב</string>
-	<string name="settings_display_date">הצג תאריך</string>
-	<string name="settings_display_time">הצג זמן</string>
-	<string name="settings_display_battery">הצג סוללה</string>
-	<string name="settings_display_daily_word">הצג מילה יומית</string>
-	<string name="settings_display_app_icons">הצג סמלי אפליקציה</string>
-	<string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
-	<string name="settings_display_auto_open_apps">פתח אוטומטית את האפליקציה האחרונה</string>
-	<string name="settings_display_lock_settings">הגדרות נעילה</string>
-	<string name="settings_appearance_text_size_title">גודל</string>
-	<string name="settings_appearance_color_title">צֶבַע</string>
-	<string name="settings_appearance_alignment_title">יישור</string>
-	<string name="settings_appearance_padding_title">ריפוד</string>
-	<string name="settings_appearance_wallpaper">טפט מותאם אישית</string>
-	<string name="settings_appearance_home_date_alignment">יישור תאריכים</string>
-	<string name="settings_appearance_home_time_alignment">יישור זמן</string>
-	<string name="settings_appearance_home_app_alignment">יישור אפליקציות ביתיות</string>
-	<string name="appearance_bottom_dialog_text_size_title">גודל</string>
-	<string name="appearance_bottom_dialog_text_color_title">צֶבַע</string>
-	<string name="appearance_bottom_dialog_alignment_title">יישור</string>
-	<string name="appearance_bottom_dialog_padding_title">ריפוד</string>
-	<string name="appearance_bottom_dialog_desc_date">תאריך\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_time">זמן\u0020:\u0020 </string>
-	<string name="appearance_bottom_dialog_desc_app">אפליקציה\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_word">מילה\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_battery">סוללה\u0020:\u0020 </string>
-	<string name="settings_manager_favorite">אפליקציות מועדפות</string>
-	<string name="settings_manager_hidden">אפליקציות נסתרות</string>
-	<string name="settings_select_wallpaper">בחר טפט</string>
-	<string name="settings_double_tap_lock">הקש פעמיים כדי לנעול</string>
-	<string name="settings_swipe_down_notification">החלק מטה התראה על הרחבה</string>
-	<string name="settings_swipe_up_search">החלק למעלה תצוגת חיפוש פתוחה</string>
-	<string name="settings_others_share">לַחֲלוֹק</string>
-	<string name="settings_others_feedback">מָשׁוֹב</string>
-	<string name="settings_others_github">Github</string>
-	<string name="settings_backups_backup">Backup Preferences</string>
-	<string name="settings_backups_restore">Restore Preferences</string>
-	<string name="settings_reload_app_backup">Preferences backed up.</string>
-	<string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
-	<string name="authentication_title">אימות</string>
-	<string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
-	<string name="authentication_cancel">ביטול האימות</string>
-	<string name="authentication_succeeded">האימות הצליח</string>
-	<string name="authentication_failed">אימות נכשל</string>
-	<string name="authentication_error">שגיאת אימות: %1$s(קוד %2$d)</string>
-	<string name="bottom_alignment_star">כוכב</string>
-	<string name="bottom_alignment_center">מֶרְכָּז</string>
-	<string name="bottom_alignment_end">סוֹף</string>
-	<string name="accessibility_settings_title">הגדרות נגישות</string>
-	<string name="accessibility_settings_enable">לְאַפשֵׁר</string>
-	<string name="accessibility_settings_disable">השבת</string>
-	<string name="accessibility_service_desc">הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב- Easy Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות שלנו אינו אוסף או משתף נתונים כלשהם.</string>
-	<string name="admin_permission_message">משגר קל מבטיח להשתמש בהרשאת מסך הנעילה באחריות. משגר קל אינו אוסף או משתף נתונים כלשהם.</string>
-	<string-array name="settings_appearance_daily_word_default">
-		<item>הישאר עמיד!</item>
-		<item>יש לך את זה!</item>
-		<item>לזרוח בבהירות!</item>
-		<item>צור גורל.</item>
-		<item>מסע חיבוק.</item>
-		<item>כוח בפנים.</item>
-		<item>תמשיך לדחוף!</item>
-		<item>אתה מדהים!</item>
-		<item>תאמין, לעולם אל תתן.</item>
-		<item>פוטנציאל בלתי מוגבל.</item>
-		<item>התקדמות על פני שלמות.</item>
-		<item>אתגרים = צמיחה.</item>
-		<item>ראוי להצלחה.</item>
-		<item>רדוף אחר חלומותיך.</item>
-		<item>להתגבר על הכל!</item>
-		<item>הנחישות מנצחת.</item>
-		<item>כל צעד נחשב.</item>
-		<item>תישאר חיובי!</item>
-		<item>סלעי חוסן.</item>
-		<item>כוח בך.</item>
-		<item>לחגוג את ההתקדמות.</item>
-		<item>עבודה קשה משתלמת.</item>
-		<item>תאמין, תאמין.</item>
-		<item>מסע ייחודי.</item>
-		<item>עיניים לפרס.</item>
-		<item>להשיג כל דבר!</item>
-		<item>בצע צעדים נועזים.</item>
-		<item>תשוקה מתדלקת אותך.</item>
-		<item>התמקד ביעדים.</item>
-		<item>תתמיד, תנצח.</item>
-		<item>מפתח אמונה עצמית.</item>
-		<item>ראוי לטוב.</item>
-		<item>להגיע לחלומות.</item>
-		<item>אמיץ, חזק, חכם.</item>
-		<item>גישה חיובית.</item>
-		<item>סמוך על המסע.</item>
-		<item>נחישות בלתי מעורערת.</item>
-		<item>כישלונות = קאמבק.</item>
-		<item>להפוך חלומות למציאות.</item>
-		<item>התחייבו ליעדים.</item>
-		<item>כוח, אין גבול.</item>
-		<item>ראש למעלה, פריצת דרך.</item>
-		<item>הפוטנציאל שלך זוהר.</item>
-		<item>חלומות בהישג יד.</item>
-		<item>אתה בלתי ניתן לעצירה!</item>
-		<item>תאמין, השג.</item>
-		<item>לדחוף את גבולות העבר.</item>
-		<item>ההתמדה משתלמת.</item>
-		<item>הישארו ללא חת!</item>
-		<item>להתעלות מעל האתגרים.</item>
-		<item>תמשיך לחלום בגדול.</item>
-		<item>חי עם מטרה.</item>
-		<item>התמקדו בטוב.</item>
-		<item>כוח מבפנים.</item>
-		<item>מאמין בקסם.</item>
-		<item>חייך, יש לך את זה.</item>
-		<item>לעולם אל תאבד תקווה.</item>
-		<item>לחבק כל רגע.</item>
-		<item>תהיה הגיבור של עצמך.</item>
-		<item>אתה מספיק.</item>
-		<item>לכבוש את הפחדים שלך.</item>
-		<item>נצל את היום!</item>
-		<item>תאהב את עצמך קודם.</item>
-		<item>הישאר חיובי, תמיד.</item>
-		<item>אתה לוחם.</item>
-		<item>תאמין בעצמך.</item>
-		<item>לאמץ אפשרויות.</item>
-		<item>חיה בתשוקה.</item>
-		<item>תמשיך להתקדם.</item>
-		<item>אתה בלתי ניתן לעצירה!</item>
-		<item>תישאר נאמן לך.</item>
-		<item>חיה באומץ.</item>
-		<item>לשמור על האמונה.</item>
-		<item>כוח במצוקה.</item>
-		<item>כל יום, תגדל.</item>
-		<item>התמדה, ניצחון.</item>
-		<item>תרדוף אחר התשוקות שלך.</item>
-		<item>מצא שמחה במסע.</item>
-		<item>לקחת סיכונים, לשגשג.</item>
-		<item>תישאר חזק, אמיץ.</item>
-		<item>סמוך על חוכמה פנימית.</item>
-		<item>תמשיך לזרוח בהיר.</item>
-		<item>לחלום, להאמין, להשיג.</item>
-		<item>תהיה בלתי ניתן לעצירה.</item>
-		<item>הבעלים של גדולתך.</item>
-		<item>לחבק את הלא נודע.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>תאמין בעצמך.</item>
-		<item>הפיצו חסד תמיד.</item>
-		<item>האמן בחלומותיך.</item>
-		<item>הישארו ממוקדים, נחושים.</item>
-		<item>חבק את המסע שלך.</item>
-		<item>תרים את הראש.</item>
-		<item>לעולם אל תאבד תקווה.</item>
-		<item>כוח מבפנים.</item>
-		<item>הישאר עמיד, חזק.</item>
-		<item>אתה בלתי ניתן לעצירה!</item>
-		<item>אמצו את האתגר.</item>
-		<item>שמור על האש בוערת.</item>
-		<item>תתמקד במה שאפשר.</item>
-		<item>תחלמו בגדול, תעבדו קשה.</item>
-		<item>שימו עיניכם על הפרס.</item>
-		<item>סמוך על התהליך.</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>להאמין, להשיג, להצליח.</item>
-		<item>הישאר בהשראה תמיד.</item>
-		<item>היו חסרי פחד במרדף.</item>
-		<item>הישאר מקורקע, קום.</item>
-		<item>מצא כוח במאבק.</item>
-		<item>אמצו כל אתגר.</item>
-		<item>הישארו נועזים, הישארו בהירים.</item>
-		<item>אתה מסוגל לגדולות.</item>
-		<item>סמוך על המסע שלך.</item>
-		<item>תמשיך להילחם, תמשיך לעלות.</item>
-		<item>מאמין בבלתי אפשרי.</item>
-		<item>הישאר עמיד, לעולם אל תתן.</item>
-		<item>אתה חזק יותר ממה שאתה יודע.</item>
-		<item>לחיות עם תשוקה ומטרה.</item>
-		<item>מצא שמחה בכל מסע.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>תישאר חיובי, תהיה חזק.</item>
-		<item>כל יום הוא הזדמנות חדשה.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>תמשיכי לדחוף מעבר לגבולות.</item>
-		<item>סמוך על הכוח הפנימי שלך.</item>
-		<item>אתה נועד לגדולות.</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו חסרי פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו חסרי פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו חסרי פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>אתה נועד לגדולות!</item>
-		<item>האמן בחלומותיך!</item>
-		<item>הישארו נחושים, תצליחו.</item>
-		<item>תמשיך להתקדם לעבר המטרות שלך.</item>
-		<item>רדוף אחרי החלומות שלך ללא הרף.</item>
-		<item>כוח מגיע מבפנים.</item>
-		<item>הישאר ממוקד ביעדים שלך.</item>
-		<item>אתה מסוגל להכל.</item>
-		<item>הישארו ללא פחד, הישארו חזקים.</item>
-		<item>האמינו, השג, תצליח!</item>
-		<item>בטח במסע שלך.</item>
-		<item>הישארו עמידים, התעלו מעל.</item>
-		<item>יש בך את הכוח בתוכך.</item>
-		<item>חולמים בגדול, עובדים קשה, משיגים.</item>
-		<item>הישארו ממוקדים, הישארו חזקים.</item>
-		<item>אתה חזק יותר ממה שאתה חושב!</item>
-		<item>תאמין בעצמך, תמיד.</item>
-		<item>הישארו נחושים, הישארו חזקים.</item>
-		<item>לאמץ כל הזדמנות.</item>
-		<item>אתה מסוגל לגדולות!</item>
-		<item>השאר נאמן לעצמך.</item>
-		<item>בטח במסע שלך.</item>
-		<item>תמשיכי לדחוף קדימה.</item>
-		<item>חלום, תאמין, השג!</item>
-	</string-array>
-	<string-array name="alignment_options">
-		<item>שמאלה</item>
-		<item>מֶרְכָּז</item>
-		<item>ימין</item>
-	</string-array>
-	<string name="search_engine">מנוע חיפוש</string>
-	<string name="search_google">גוגל</string>
-	<string name="search_yahoo">יאהו</string>
-	<string name="search_duckduckgo">DuckDuckGo</string>
-	<string name="search_bing">בינג</string>
-	<string name="search_brave">אַמִיץ</string>
-	<string name="search_swisscow">SwissCows</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="action_settings_default">הגדר כמשגר ברירת מחדל</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">קטע בית</string>
+    <string name="draw_fragment_label">צייר שבר</string>
+    <string name="favorite_fragment_label">קטע אהוב</string>
+    <string name="hidden_fragment_label">שבר מוסתר</string>
+    <string name="settings_fragment_label">קטע הגדרות</string>
+    <string name="widgets_fragment_label">קטע ווידג\'טים</string>
+    <string name="battery_level">%s%%</string>
+    <string name="search">חיפוש</string>
+    <string name="bottom_dialog_app_rename">שנה שם</string>
+    <string name="bottom_dialog_add_to_home">הוסף לדף הבית</string>
+    <string name="bottom_dialog_order_home_apps">סדר מחדש את יישומי דף הבית</string>
+    <string name="bottom_dialog_remove_from_home">הסר ממסך הבית</string>
+    <string name="bottom_dialog_add_to_hidden">אפליקציה נסתרת</string>
+    <string name="bottom_dialog_remove_to_hidden">הסר את האפליקציה הנסתרת</string>
+    <string name="bottom_dialog_add_to_lock">נעילת יישומים</string>
+    <string name="bottom_dialog_remove_to_unlock">בטל את נעילת האפליקציה</string>
+    <string name="bottom_dialog_app_info">מידע על האפליקציה</string>
+    <string name="bottom_dialog_app_uninstall">הסר את ההתקנה של האפליקציה</string>
+    <string name="settings_name">הגדרות משגר</string>
+    <string name="settings_version">%s גרסה: %s</string>
+    <string name="settings_home">בית</string>
+    <string name="settings_title_home_display_preferences">לְהַצִיג</string>
+    <string name="settings_title_home_behavior_preferences">התנהגות</string>
+    <string name="settings_title_home_appearance_preferences">מראה חיצוני</string>
+    <string name="settings_title_date_style">סגנון דייט</string>
+    <string name="settings_title_time_style">סגנון זמן</string>
+    <string name="settings_title_app_manager">ניהול אפליקציות</string>
+    <string name="settings_title_gestures">מחוות</string>
+    <string name="settings_title_backups">גיבויים</string>
+    <string name="settings_title_others">אחרים</string>
+    <string name="settings_display_status_bar">הצג את שורת המצב</string>
+    <string name="settings_display_date">הצג תאריך</string>
+    <string name="settings_display_time">הצג זמן</string>
+    <string name="settings_display_battery">הצג סוללה</string>
+    <string name="settings_display_daily_word">הצג מילה יומית</string>
+    <string name="settings_display_app_icons">הצג סמלי אפליקציה</string>
+    <string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
+    <string name="settings_display_auto_open_apps">פתח אוטומטית את האפליקציה האחרונה</string>
+    <string name="settings_display_lock_settings">הגדרות נעילה</string>
+    <string name="settings_appearance_text_size_title">גודל</string>
+    <string name="settings_appearance_color_title">צֶבַע</string>
+    <string name="settings_appearance_alignment_title">יישור</string>
+    <string name="settings_appearance_padding_title">ריפוד</string>
+    <string name="settings_appearance_wallpaper">טפט מותאם אישית</string>
+    <string name="settings_appearance_home_date_alignment">יישור תאריכים</string>
+    <string name="settings_appearance_home_time_alignment">יישור זמן</string>
+    <string name="settings_appearance_home_app_alignment">יישור אפליקציות ביתיות</string>
+    <string name="appearance_bottom_dialog_text_size_title">גודל</string>
+    <string name="appearance_bottom_dialog_text_color_title">צֶבַע</string>
+    <string name="appearance_bottom_dialog_alignment_title">יישור</string>
+    <string name="appearance_bottom_dialog_padding_title">ריפוד</string>
+    <string name="appearance_bottom_dialog_desc_date">תאריך\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_time">זמן\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_app">אפליקציה\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_word">מילה\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_battery">סוללה\u0020:\u0020 </string>
+    <string name="settings_manager_favorite">אפליקציות מועדפות</string>
+    <string name="settings_manager_hidden">אפליקציות נסתרות</string>
+    <string name="settings_select_wallpaper">בחר טפט</string>
+    <string name="settings_double_tap_lock">הקש פעמיים כדי לנעול</string>
+    <string name="settings_swipe_down_notification">החלק מטה התראה על הרחבה</string>
+    <string name="settings_swipe_up_search">החלק למעלה תצוגת חיפוש פתוחה</string>
+    <string name="settings_others_share">לַחֲלוֹק</string>
+    <string name="settings_others_feedback">מָשׁוֹב</string>
+    <string name="settings_others_github">Github</string>
+    <string name="settings_backups_backup">העדפות גיבוי</string>
+    <string name="settings_backups_restore">שחזר העדפות</string>
+    <string name="settings_reload_app_backup">העדפות מגובות.</string>
+    <string name="settings_reload_app_restore">ההעדפות שוחזרו. מופעל מחדש.</string>
+    <string name="authentication_title">אימות</string>
+    <string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
+    <string name="authentication_cancel">ביטול האימות</string>
+    <string name="authentication_succeeded">האימות הצליח</string>
+    <string name="authentication_failed">אימות נכשל</string>
+    <string name="authentication_error">שגיאת אימות: %1$s(קוד %2$d)</string>
+    <string name="bottom_alignment_star">כוכב</string>
+    <string name="bottom_alignment_center">מֶרְכָּז</string>
+    <string name="bottom_alignment_end">סוֹף</string>
+    <string name="accessibility_settings_title">הגדרות נגישות</string>
+    <string name="accessibility_settings_enable">לְאַפשֵׁר</string>
+    <string name="accessibility_settings_disable">השבת</string>
+    <string name="accessibility_service_desc">הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב- Easy Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות שלנו אינו אוסף או משתף נתונים כלשהם.</string>
+    <string name="admin_permission_message">משגר קל מבטיח להשתמש בהרשאת מסך הנעילה באחריות. משגר קל אינו אוסף או משתף נתונים כלשהם.</string>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>הישאר עמיד!</item>
+        <item>יש לך את זה!</item>
+        <item>לזרוח בבהירות!</item>
+        <item>צור גורל.</item>
+        <item>מסע חיבוק.</item>
+        <item>כוח בפנים.</item>
+        <item>תמשיך לדחוף!</item>
+        <item>אתה מדהים!</item>
+        <item>תאמין, לעולם אל תתן.</item>
+        <item>פוטנציאל בלתי מוגבל.</item>
+        <item>התקדמות על פני שלמות.</item>
+        <item>אתגרים = צמיחה.</item>
+        <item>ראוי להצלחה.</item>
+        <item>רדוף אחר חלומותיך.</item>
+        <item>להתגבר על הכל!</item>
+        <item>הנחישות מנצחת.</item>
+        <item>כל צעד נחשב.</item>
+        <item>תישאר חיובי!</item>
+        <item>סלעי חוסן.</item>
+        <item>כוח בך.</item>
+        <item>לחגוג את ההתקדמות.</item>
+        <item>עבודה קשה משתלמת.</item>
+        <item>תאמין, תאמין.</item>
+        <item>מסע ייחודי.</item>
+        <item>עיניים לפרס.</item>
+        <item>להשיג כל דבר!</item>
+        <item>בצע צעדים נועזים.</item>
+        <item>תשוקה מתדלקת אותך.</item>
+        <item>התמקד ביעדים.</item>
+        <item>תתמיד, תנצח.</item>
+        <item>מפתח אמונה עצמית.</item>
+        <item>ראוי לטוב.</item>
+        <item>להגיע לחלומות.</item>
+        <item>אמיץ, חזק, חכם.</item>
+        <item>גישה חיובית.</item>
+        <item>סמוך על המסע.</item>
+        <item>נחישות בלתי מעורערת.</item>
+        <item>כישלונות = קאמבק.</item>
+        <item>להפוך חלומות למציאות.</item>
+        <item>התחייבו ליעדים.</item>
+        <item>כוח, אין גבול.</item>
+        <item>ראש למעלה, פריצת דרך.</item>
+        <item>הפוטנציאל שלך זוהר.</item>
+        <item>חלומות בהישג יד.</item>
+        <item>אתה בלתי ניתן לעצירה!</item>
+        <item>תאמין, השג.</item>
+        <item>לדחוף את גבולות העבר.</item>
+        <item>ההתמדה משתלמת.</item>
+        <item>הישארו ללא חת!</item>
+        <item>להתעלות מעל האתגרים.</item>
+        <item>תמשיך לחלום בגדול.</item>
+        <item>חי עם מטרה.</item>
+        <item>התמקדו בטוב.</item>
+        <item>כוח מבפנים.</item>
+        <item>מאמין בקסם.</item>
+        <item>חייך, יש לך את זה.</item>
+        <item>לעולם אל תאבד תקווה.</item>
+        <item>לחבק כל רגע.</item>
+        <item>תהיה הגיבור של עצמך.</item>
+        <item>אתה מספיק.</item>
+        <item>לכבוש את הפחדים שלך.</item>
+        <item>נצל את היום!</item>
+        <item>תאהב את עצמך קודם.</item>
+        <item>הישאר חיובי, תמיד.</item>
+        <item>אתה לוחם.</item>
+        <item>תאמין בעצמך.</item>
+        <item>לאמץ אפשרויות.</item>
+        <item>חיה בתשוקה.</item>
+        <item>תמשיך להתקדם.</item>
+        <item>אתה בלתי ניתן לעצירה!</item>
+        <item>תישאר נאמן לך.</item>
+        <item>חיה באומץ.</item>
+        <item>לשמור על האמונה.</item>
+        <item>כוח במצוקה.</item>
+        <item>כל יום, תגדל.</item>
+        <item>התמדה, ניצחון.</item>
+        <item>תרדוף אחר התשוקות שלך.</item>
+        <item>מצא שמחה במסע.</item>
+        <item>לקחת סיכונים, לשגשג.</item>
+        <item>תישאר חזק, אמיץ.</item>
+        <item>סמוך על חוכמה פנימית.</item>
+        <item>תמשיך לזרוח בהיר.</item>
+        <item>לחלום, להאמין, להשיג.</item>
+        <item>תהיה בלתי ניתן לעצירה.</item>
+        <item>הבעלים של גדולתך.</item>
+        <item>לחבק את הלא נודע.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>תאמין בעצמך.</item>
+        <item>הפיצו חסד תמיד.</item>
+        <item>האמן בחלומותיך.</item>
+        <item>הישארו ממוקדים, נחושים.</item>
+        <item>חבק את המסע שלך.</item>
+        <item>תרים את הראש.</item>
+        <item>לעולם אל תאבד תקווה.</item>
+        <item>כוח מבפנים.</item>
+        <item>הישאר עמיד, חזק.</item>
+        <item>אתה בלתי ניתן לעצירה!</item>
+        <item>אמצו את האתגר.</item>
+        <item>שמור על האש בוערת.</item>
+        <item>תתמקד במה שאפשר.</item>
+        <item>תחלמו בגדול, תעבדו קשה.</item>
+        <item>שימו עיניכם על הפרס.</item>
+        <item>סמוך על התהליך.</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>להאמין, להשיג, להצליח.</item>
+        <item>הישאר בהשראה תמיד.</item>
+        <item>היו חסרי פחד במרדף.</item>
+        <item>הישאר מקורקע, קום.</item>
+        <item>מצא כוח במאבק.</item>
+        <item>אמצו כל אתגר.</item>
+        <item>הישארו נועזים, הישארו בהירים.</item>
+        <item>אתה מסוגל לגדולות.</item>
+        <item>סמוך על המסע שלך.</item>
+        <item>תמשיך להילחם, תמשיך לעלות.</item>
+        <item>מאמין בבלתי אפשרי.</item>
+        <item>הישאר עמיד, לעולם אל תתן.</item>
+        <item>אתה חזק יותר ממה שאתה יודע.</item>
+        <item>לחיות עם תשוקה ומטרה.</item>
+        <item>מצא שמחה בכל מסע.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>תישאר חיובי, תהיה חזק.</item>
+        <item>כל יום הוא הזדמנות חדשה.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>תמשיכי לדחוף מעבר לגבולות.</item>
+        <item>סמוך על הכוח הפנימי שלך.</item>
+        <item>אתה נועד לגדולות.</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו חסרי פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו חסרי פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו חסרי פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>אתה נועד לגדולות!</item>
+        <item>האמן בחלומותיך!</item>
+        <item>הישארו נחושים, תצליחו.</item>
+        <item>תמשיך להתקדם לעבר המטרות שלך.</item>
+        <item>רדוף אחרי החלומות שלך ללא הרף.</item>
+        <item>כוח מגיע מבפנים.</item>
+        <item>הישאר ממוקד ביעדים שלך.</item>
+        <item>אתה מסוגל להכל.</item>
+        <item>הישארו ללא פחד, הישארו חזקים.</item>
+        <item>האמינו, השג, תצליח!</item>
+        <item>בטח במסע שלך.</item>
+        <item>הישארו עמידים, התעלו מעל.</item>
+        <item>יש בך את הכוח בתוכך.</item>
+        <item>חולמים בגדול, עובדים קשה, משיגים.</item>
+        <item>הישארו ממוקדים, הישארו חזקים.</item>
+        <item>אתה חזק יותר ממה שאתה חושב!</item>
+        <item>תאמין בעצמך, תמיד.</item>
+        <item>הישארו נחושים, הישארו חזקים.</item>
+        <item>לאמץ כל הזדמנות.</item>
+        <item>אתה מסוגל לגדולות!</item>
+        <item>השאר נאמן לעצמך.</item>
+        <item>בטח במסע שלך.</item>
+        <item>תמשיכי לדחוף קדימה.</item>
+        <item>חלום, תאמין, השג!</item>
+    </string-array>
+    <string-array name="alignment_options">
+        <item>שמאלה</item>
+        <item>מֶרְכָּז</item>
+        <item>ימין</item>
+    </string-array>
+    <string name="search_engine">מנוע חיפוש</string>
+    <string name="search_google">גוגל</string>
+    <string name="search_yahoo">יאהו</string>
+    <string name="search_duckduckgo">DuckDuckGo</string>
+    <string name="search_bing">בינג</string>
+    <string name="search_brave">אַמִיץ</string>
+    <string name="search_swisscow">SwissCows</string>
 </resources>
