@@ -1,6 +1,7 @@
 .gradle
 /local.properties
 /.idea/*
+/.vscode/*
 /build
 /pages
 /wiki
