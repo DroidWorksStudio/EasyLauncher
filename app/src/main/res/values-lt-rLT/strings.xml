@@ -5,10 +5,10 @@
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Namo fragmentas</string>
     <string name="draw_fragment_label">Nupieškite fragmentą</string>
-    <string name="favorite_fragment_label">Favorite Fragment</string>
-    <string name="hidden_fragment_label">Hidden Fragment</string>
-    <string name="settings_fragment_label">Settings Fragment</string>
-    <string name="widgets_fragment_label">Widgets Fragment</string>
+    <string name="favorite_fragment_label">Mėgstamiausias Fragmentas</string>
+    <string name="hidden_fragment_label">Paslėptas fragmentas</string>
+    <string name="settings_fragment_label">Nustatymai Fragmentas</string>
+    <string name="widgets_fragment_label">Valdiklių fragmentas</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Paieška</string>
     <string name="bottom_dialog_app_rename">Pervardyti</string>
