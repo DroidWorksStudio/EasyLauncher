@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Cleaned up the way that we move between fragments - ([9e05fe7](https://github.com/DroidWorksStudio/EasyLauncher/commit/9e05fe7c38a3ddeb08696bf33b3afa038148321c))
 - Cleaned up a few functions - ([355096c](https://github.com/DroidWorksStudio/EasyLauncher/commit/355096c20b3c1c7dc2d8e120b73d393340074192))
 
 ## [0.0.7](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.7) - (22, May 2024)
