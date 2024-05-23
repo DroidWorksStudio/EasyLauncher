@@ -199,10 +199,6 @@ class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener
         }
     }
 
-    override fun onBottomSheetDismissed() {
-        TODO("Not yet implemented")
-    }
-
     override fun onAppStateClicked(appInfo: AppInfo) {
         viewModel.update(appInfo)
     }
@@ -229,9 +225,5 @@ class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener
 
     override fun onViewMoved(oldPosition: Int, newPosition: Int): Boolean {
         return true
-    }
-
-    override fun onViewSwiped(position: Int) {
-        TODO("Not yet implemented")
     }
 }

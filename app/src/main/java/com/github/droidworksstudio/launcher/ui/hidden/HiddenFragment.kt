@@ -139,10 +139,6 @@ class HiddenFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         showSelectedApp(appInfo)
     }
 
-    override fun onBottomSheetDismissed() {
-        TODO("Not yet implemented")
-    }
-
     override fun onAppStateClicked(appInfo: AppInfo) {
         viewModel.update(appInfo)
     }
