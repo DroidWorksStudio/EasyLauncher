@@ -74,12 +74,14 @@ class MainActivity : AppCompatActivity() {
         preferenceViewModel.setShowStatusBar(preferenceHelper.showStatusBar)
         preferenceViewModel.showStatusBarLiveData.observe(this) {
             if (it) appHelper.showStatusBar(this.window)
-            else appHelper.hideStatusBar(this.window) }
+            else appHelper.hideStatusBar(this.window)
+        }
     }
 
     private fun setupNavController() {
         // Find the NavHostFragment
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
 
         // Retrieve the NavController
         val navController = navHostFragment.navController
@@ -113,6 +115,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        backToHomeScreen()
         setupDataBase()
         observeUI()
     }
