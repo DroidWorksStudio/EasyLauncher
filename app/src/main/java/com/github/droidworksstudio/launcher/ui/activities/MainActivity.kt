@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
@@ -20,8 +19,6 @@ import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.ui.drawer.DrawFragment
-import com.github.droidworksstudio.launcher.ui.viewpager.ViewPagerAdapter
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -46,8 +43,6 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var appHelper: AppHelper
 
-    private val viewPagerAdapter: ViewPagerAdapter by lazy { ViewPagerAdapter(supportFragmentManager, lifecycle) }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -56,7 +51,6 @@ class MainActivity : AppCompatActivity() {
 
         initializeDependencies()
         setupNavController()
-        setupViewPagerAdapter()
         setupOrientation()
     }
 
@@ -73,12 +67,10 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             viewModel.initializeInstalledAppInfo(this@MainActivity)
         }
-        //GlobalScope.launch {  }
         preferenceHelper.firstLaunch = false
     }
 
     private fun observeUI() {
-        binding.pager.currentItem = 1
         preferenceViewModel.setShowStatusBar(preferenceHelper.showStatusBar)
         preferenceViewModel.showStatusBarLiveData.observe(this) {
             if (it) appHelper.showStatusBar(this.window)
@@ -94,12 +86,6 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
     }
 
-    private fun setupViewPagerAdapter() {
-        binding.pager.apply {
-            adapter = viewPagerAdapter
-            offscreenPageLimit = 1
-        }
-    }
     @SuppressLint("SourceLockedOrientationActivity")
     private fun setupOrientation() {
         if (appHelper.isTablet(this)) return
@@ -143,18 +129,10 @@ class MainActivity : AppCompatActivity() {
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        val currentItem = binding.pager.currentItem
-        Log.d("currentItem","$currentItem")
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
-        val currentFragment = navHostFragment.childFragmentManager.fragments[0]
-
-        if (currentFragment is DrawFragment) {
-            @Suppress("DEPRECATION")
+        navController = findNavController(R.id.nav_host_fragment_content_main)
+        @Suppress("DEPRECATION")
+        if (navController.currentDestination?.id != R.id.HomeFragment)
             super.onBackPressed()
-        } else {
-            binding.pager.currentItem = currentItem - 1
-        }
     }
 
     private fun backToHomeScreen() {

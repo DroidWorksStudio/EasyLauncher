@@ -28,7 +28,10 @@ android {
             isShrinkResources = false
             isDebuggable = true
             applicationIdSuffix = ".debug"
-            proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
             resValue("string", "app_name", "Easy Launcher (Debug)")
             resValue("string", "settings_backups_file", "autoBackup.debug.ini")
         }
@@ -36,7 +39,10 @@ android {
         getByName("release") {
             isMinifyEnabled = true
             isShrinkResources = true
-            proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
             resValue("string", "app_name", "Easy Launcher")
             resValue("string", "settings_backups_file", "autoBackup.ini")
         }
@@ -89,11 +95,11 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.work.runtime.ktx)
     implementation(libs.recyclerview)
-    implementation(libs.viewpager2)
     implementation(libs.preference)
     implementation(libs.biometric.ktx)
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
+    
     //noinspection KaptUsageInsteadOfKsp
     kapt(libs.room.compiler)
     implementation(libs.dagger.hilt.android)

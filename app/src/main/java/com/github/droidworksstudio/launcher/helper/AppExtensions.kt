@@ -11,7 +11,6 @@ import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.github.droidworksstudio.launcher.Constants
 import java.io.File
@@ -28,7 +27,6 @@ fun View.showKeyboard(show: Boolean = true) {
     if (this.requestFocus())
         this.postDelayed({
             this.findViewById<EditText>(androidx.appcompat.R.id.search_src_text).apply {
-                textSize = 28f
                 isCursorVisible = false
             }
             val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager

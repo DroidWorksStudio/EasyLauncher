@@ -17,6 +17,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.MyAccessibilityService
@@ -90,10 +91,10 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         super.onViewCreated(view, savedInstanceState)
 
         initializeInjectedDependencies()
+        initSwipeTouchListener()
         setupBattery()
         setupRecyclerView()
         observeUserInterfaceSettings()
-
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -108,8 +109,11 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
         preferenceViewModel.setShowDailyWord(preferenceHelper.showDailyWord)
+    }
 
-        binding.mainView.setOnTouchListener(getSwipeGestureListener(context))
+    @SuppressLint("ClickableViewAccessibility")
+    private fun initSwipeTouchListener() {
+        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
 
         binding.clock.setOnClickListener { appHelper.launchClock(context) }
         binding.date.setOnClickListener { appHelper.launchCalendar(context) }
@@ -134,7 +138,8 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     private fun setupRecyclerView() {
         val marginTopInPixels = 128
-        val params: ViewGroup.MarginLayoutParams = binding.appListAdapter.layoutParams as ViewGroup.MarginLayoutParams
+        val params: ViewGroup.MarginLayoutParams =
+            binding.appListAdapter.layoutParams as ViewGroup.MarginLayoutParams
         params.topMargin = marginTopInPixels
 
         binding.appListAdapter.apply {
@@ -168,7 +173,8 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
         preferenceViewModel.showTimeLiveData.observe(viewLifecycleOwner) {
             Log.d("Tag", "ShowTime Home: $it")
-            appHelper.updateUI(binding.clock,
+            appHelper.updateUI(
+                binding.clock,
                 preferenceHelper.homeTimeAlignment,
                 preferenceHelper.timeColor,
                 preferenceHelper.timeTextSize,
@@ -177,15 +183,17 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         }
 
         preferenceViewModel.showDateLiveData.observe(viewLifecycleOwner) {
-            appHelper.updateUI(binding.date,
+            appHelper.updateUI(
+                binding.date,
                 preferenceHelper.homeDateAlignment,
                 preferenceHelper.dateColor,
                 preferenceHelper.dateTextSize,
                 preferenceHelper.showDate
             )
         }
-        preferenceViewModel.showBatteryLiveData.observe(viewLifecycleOwner){
-            appHelper.updateUI(binding.battery,
+        preferenceViewModel.showBatteryLiveData.observe(viewLifecycleOwner) {
+            appHelper.updateUI(
+                binding.battery,
                 Gravity.END,
                 preferenceHelper.batteryColor,
                 preferenceHelper.batteryTextSize,
@@ -194,7 +202,8 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         }
 
         preferenceViewModel.showDailyWordLiveData.observe(viewLifecycleOwner) {
-            appHelper.updateUI(binding.word,
+            appHelper.updateUI(
+                binding.word,
                 preferenceHelper.homeDailyWordAlignment,
                 preferenceHelper.dailyWordColor,
                 preferenceHelper.dailyWordTextSize,
@@ -217,7 +226,10 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     private fun observeBioAuthCheck(appInfo: AppInfo) {
-        if (!appInfo.lock) appHelper.launchApp(context, appInfo) else fingerHelper.startFingerprintAuth(appInfo, this)
+        if (!appInfo.lock) appHelper.launchApp(
+            context,
+            appInfo
+        ) else fingerHelper.startFingerprintAuth(appInfo, this)
     }
 
     private fun showSelectedApp(appInfo: AppInfo) {
@@ -239,12 +251,33 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             @RequiresApi(Build.VERSION_CODES.P)
             override fun onDoubleClick() {
                 super.onDoubleClick()
-                if(preferenceHelper.tapLockScreen) {
+                if (preferenceHelper.tapLockScreen) {
                     MyAccessibilityService.runAccessibilityMode(context)
                     MyAccessibilityService.instance()?.lockScreen()
                 } else {
                     return
                 }
+            }
+
+            override fun onSwipeLeft() {
+                super.onSwipeLeft()
+                findNavController().navigate(R.id.action_HomeFragment_to_DrawFragment)
+            }
+
+            override fun onSwipeRight() {
+                super.onSwipeRight()
+                findNavController().navigate(R.id.action_HomeFragment_to_FavoriteFragment)
+
+            }
+
+            override fun onSwipeDown() {
+                super.onSwipeDown()
+                if (preferenceHelper.swipeNotification) appHelper.expandNotificationDrawer(context)
+            }
+
+            override fun onSwipeUp() {
+                super.onSwipeUp()
+                if (preferenceHelper.swipeSearch) appHelper.searchView(context)
             }
         }
     }
@@ -275,7 +308,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
                     }
 
                     override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
-                        fingerHelper.sendToTargetActivity(SettingsActivity::class.java)
+                        findNavController().navigate(R.id.action_HomeFragment_to_SettingsFragment)
                     }
 
                     override fun onAuthenticationFailed() {
@@ -289,7 +322,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             if (preferenceHelper.settingsLock) {
                 fingerHelper.startFingerprintSettingsAuth(SettingsActivity::class.java)
             } else {
-                fingerHelper.sendToTargetActivity(SettingsActivity::class.java)
+                findNavController().navigate(R.id.action_HomeFragment_to_SettingsFragment)
             }
         }
     }
@@ -321,9 +354,6 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         Log.d("Tag", "Home LiveData Favorite : ${appInfo.favorite}")
     }
 
-    override fun onBottomSheetDismissed() {
-    }
-
     override fun onAppStateClicked(appInfo: AppInfo) {
         viewModel.update(appInfo)
         Log.d("Tag", "${appInfo.appName} : Home Favorite: ${appInfo.favorite}")
@@ -340,20 +370,15 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     override fun onAuthenticationError(errorCode: Int, errorMessage: CharSequence?) {
         when (errorCode) {
-            BiometricPrompt.ERROR_USER_CANCELED -> appHelper.showToast(requireContext(), getString(R.string.authentication_cancel))
-            else -> appHelper.showToast(requireContext(), getString(R.string.authentication_error).format(errorMessage, errorCode))
+            BiometricPrompt.ERROR_USER_CANCELED -> appHelper.showToast(
+                requireContext(),
+                getString(R.string.authentication_cancel)
+            )
+
+            else -> appHelper.showToast(
+                requireContext(),
+                getString(R.string.authentication_error).format(errorMessage, errorCode)
+            )
         }
-    }
-
-    override fun onTopReached() {
-        if (preferenceHelper.swipeNotification) appHelper.expandNotificationDrawer(context)
-    }
-
-    override fun onBottomReached() {
-        if (preferenceHelper.swipeSearch) appHelper.searchView(context)
-    }
-
-    override fun onScroll(isTopReached: Boolean, isBottomReached: Boolean) {
-        Log.d("Tag", "onScroll")
     }
 }

@@ -12,21 +12,57 @@
 
         <action
             android:id="@+id/action_HomeFragment_to_DrawFragment"
-            app:destination="@id/DrawFragment" />
-
+            app:destination="@id/DrawFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_HomeFragment_to_SettingsFragment"
-            app:destination="@id/SettingsFragment" />
+            app:destination="@id/SettingsFragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_bottom" />
         <action
             android:id="@+id/action_HomeFragment_to_FavoriteFragment"
-            app:destination="@id/FavoriteFragment" />
+            app:destination="@id/FavoriteFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_WidgetsFragment"
+            app:destination="@id/WidgetsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
     </fragment>
+
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.settings.SettingsFragment"
+        android:label="@string/settings_fragment_label"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/WidgetsFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.widgetmanager.WidgetManagerFragment"
+        android:label="@string/widgets_fragment_label"
+        tools:layout="@layout/fragment_widget_manager" />
 
     <fragment
         android:id="@+id/DrawFragment"
         android:name="com.github.droidworksstudio.launcher.ui.drawer.DrawFragment"
         android:label="@string/draw_fragment_label"
-        tools:layout="@layout/fragment_draw">
-    </fragment>
+        tools:layout="@layout/fragment_draw" />
+
+    <fragment
+        android:id="@+id/FavoriteFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.favorite.FavoriteFragment"
+        android:label="@string/favorite_fragment_label"
+        tools:layout="@layout/fragment_favorite" />
 
 </navigation>
