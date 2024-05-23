@@ -42,14 +42,17 @@ class AppHelper @Inject constructor() {
         try {
             val packageManager = context.packageManager
             val componentName = ComponentName(context, FakeHomeActivity::class.java)
+
             packageManager.setComponentEnabledSetting(
                 componentName,
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                 PackageManager.DONT_KILL_APP
             )
+
             val selector = Intent(Intent.ACTION_MAIN)
             selector.addCategory(Intent.CATEGORY_HOME)
             context.startActivity(selector)
+
             packageManager.setComponentEnabledSetting(
                 componentName,
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
@@ -57,16 +60,29 @@ class AppHelper @Inject constructor() {
             )
         } catch (e: Exception) {
             e.printStackTrace()
+            // Additional step to open the launcher settings if the first method fails
+            try {
+                val intent = Intent("android.settings.HOME_SETTINGS")
+                context.startActivity(intent)
+            } catch (e: ActivityNotFoundException) {
+                // Fallback to general settings if specific launcher settings are not found
+                try {
+                    val intent = Intent(Settings.ACTION_SETTINGS)
+                    context.startActivity(intent)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
+            }
         }
     }
+
 
     @SuppressLint("WrongConstant", "PrivateApi")
     fun expandNotificationDrawer(context: Context) {
         try {
-            val statusBarService = context.getSystemService(Constants.NOTIFICATION_SERVICE)
-            val statusBarManager = Class.forName(Constants.NOTIFICATION_MANAGER)
-            val method = statusBarManager.getMethod(Constants.NOTIFICATION_METHOD)
-            method.invoke(statusBarService)
+            Class.forName(Constants.NOTIFICATION_MANAGER)
+                .getMethod(Constants.NOTIFICATION_METHOD)
+                .invoke(context.getSystemService(Constants.NOTIFICATION_SERVICE))
         } catch (exception: Exception) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                 MyAccessibilityService.runAccessibilityMode(context)
@@ -79,10 +95,9 @@ class AppHelper @Inject constructor() {
     @SuppressLint("WrongConstant", "PrivateApi")
     private fun expandQuickSettings(context: Context) {
         try {
-            val statusBarService = context.getSystemService(Constants.QUICKSETTINGS_SERVICE)
-            val statusBarManager = Class.forName(Constants.QUICKSETTINGS_MANAGER)
-            val method = statusBarManager.getMethod(Constants.QUICKSETTINGS_METHOD)
-            method.invoke(statusBarService)
+            Class.forName(Constants.QUICKSETTINGS_MANAGER)
+                .getMethod(Constants.QUICKSETTINGS_METHOD)
+                .invoke(context.getSystemService(Constants.QUICKSETTINGS_SERVICE))
         } catch (exception: Exception) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                 MyAccessibilityService.runAccessibilityMode(context)
