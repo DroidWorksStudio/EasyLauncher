@@ -202,16 +202,4 @@ class SettingsFragment : Fragment(), ScrollEventListener {
             preferenceViewModel.setLockSettings(isChecked)
         }
     }
-
-    override fun onTopReached() {
-        requireActivity().onBackPressedDispatcher.onBackPressed()
-    }
-
-    override fun onBottomReached() {
-        Log.d("Tag", "onBottomReached")
-    }
-
-    override fun onScroll(isTopReached: Boolean, isBottomReached: Boolean) {
-        Log.d("Tag", "onScroll")
-    }
 }

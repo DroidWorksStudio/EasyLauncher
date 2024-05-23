@@ -24,11 +24,14 @@ import android.view.WindowManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.LinearLayoutCompat
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.MyAccessibilityService
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
+import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 import java.util.Calendar
 import java.util.Date
