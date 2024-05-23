@@ -1,548 +1,552 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">Instellingen</string>
-	<string name="action_settings_default">Instellen als standaard opstartprogramma</string>
-	<!-- Strings used for fragments for navigation -->
-	<string name="home_fragment_label">Thuisfragment</string>
-	<string name="draw_fragment_label">Fragment tekenen</string>
-	<string name="battery_level">%s%%</string>
-	<string name="search">Zoekopdracht</string>
-	<string name="bottom_dialog_app_rename">Hernoemen</string>
-	<string name="bottom_dialog_add_to_home">Toevoegen aan startscherm</string>
-	<string name="bottom_dialog_order_home_apps">Home-apps bestellen</string>
-	<string name="bottom_dialog_remove_from_home">Verwijderen van startscherm</string>
-	<string name="bottom_dialog_add_to_hidden">Verborgen app</string>
-	<string name="bottom_dialog_remove_to_hidden">Verwijder verborgen app</string>
-	<string name="bottom_dialog_add_to_lock">Vergrendel app</string>
-	<string name="bottom_dialog_remove_to_unlock">Ontgrendel app</string>
-	<string name="bottom_dialog_app_info">App informatie</string>
-	<string name="bottom_dialog_app_uninstall">App verwijderen</string>
-	<string name="settings_name">Launcher-instellingen</string>
-	<string name="settings_version">%s Versie: %s</string>
-	<string name="settings_home">Thuis</string>
-	<string name="settings_title_home_display_preferences">Weergave</string>
-	<string name="settings_title_home_behavior_preferences">Gedrag</string>
-	<string name="settings_title_home_appearance_preferences">Verschijning</string>
-	<string name="settings_title_date_style">Datumstijl</string>
-	<string name="settings_title_time_style">Tijdstijl</string>
-	<string name="settings_title_app_manager">App-beheer</string>
-	<string name="settings_title_gestures">Gebaren</string>
-	<string name="settings_title_backups">Back-ups</string>
-	<string name="settings_title_others">Anderen</string>
-	<string name="settings_display_status_bar">Statusbalk weergeven</string>
-	<string name="settings_display_date">Datum weergeven</string>
-	<string name="settings_display_time">Show Time</string>
-	<string name="settings_display_battery">Toon batterij</string>
-	<string name="settings_display_daily_word">Toon dagelijks woord</string>
-	<string name="settings_display_app_icons">App-pictogrammen weergeven</string>
-	<string name="settings_display_automatic_keyboard">Toetsenbord voor automatische weergave</string>
-	<string name="settings_display_auto_open_apps">Laatste app automatisch openen</string>
-	<string name="settings_display_lock_settings">Instellingen vergrendelen</string>
-	<string name="settings_appearance_text_size_title">Maat</string>
-	<string name="settings_appearance_color_title">Kleur</string>
-	<string name="settings_appearance_alignment_title">Uitlijning</string>
-	<string name="settings_appearance_padding_title">Opvulling</string>
-	<string name="settings_appearance_wallpaper">Aangepaste achtergrond</string>
-	<string name="settings_appearance_home_date_alignment">Datumuitlijning</string>
-	<string name="settings_appearance_home_time_alignment">Tijduitlijning</string>
-	<string name="settings_appearance_home_app_alignment">Uitlijning van de thuisapp</string>
-	<string name="appearance_bottom_dialog_text_size_title">Maat</string>
-	<string name="appearance_bottom_dialog_text_color_title">Kleur</string>
-	<string name="appearance_bottom_dialog_alignment_title">Uitlijning</string>
-	<string name="appearance_bottom_dialog_padding_title">Opvulling</string>
-	<string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_time">Tijd\u0020:\u0020 </string>
-	<string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_word">Woord\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_battery">Batterij\u0020:\u0020 </string>
-	<string name="settings_manager_favorite">Favoriete apps</string>
-	<string name="settings_manager_hidden">Verborgen apps</string>
-	<string name="settings_select_wallpaper">Selecteer Achtergrond</string>
-	<string name="settings_double_tap_lock">Dubbeltik om te vergrendelen</string>
-	<string name="settings_swipe_down_notification">Veeg naar beneden en vouw de melding uit</string>
-	<string name="settings_swipe_up_search">Veeg omhoog om de zoekweergave te openen</string>
-	<string name="settings_others_share">Deel</string>
-	<string name="settings_others_feedback">Feedback</string>
-	<string name="settings_others_github">Github</string>
-	<string name="settings_backups_backup">Back-upvoorkeuren</string>
-	<string name="settings_backups_restore">Voorkeuren herstellen</string>
-	<string name="settings_reload_app_backup">Er is een back-up gemaakt van voorkeuren.</string>
-	<string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
-	<string name="authentication_title">Authenticatie</string>
-	<string name="authentication_subtitle">Log in met uw biometrische gegevens.</string>
-	<string name="authentication_cancel">Authenticatie Annuleren</string>
-	<string name="authentication_succeeded">Authenticatie geslaagd</string>
-	<string name="authentication_failed">Authenticatie mislukt</string>
-	<string name="authentication_error">Authenticatiefout: %1$s(code %2$d)</string>
-	<string name="bottom_alignment_star">Ster</string>
-	<string name="bottom_alignment_center">Centrum</string>
-	<string name="bottom_alignment_end">Einde</string>
-	<string name="accessibility_settings_title">Toegankelijkheidsinstellingen</string>
-	<string name="accessibility_settings_enable">Inschakelen</string>
-	<string name="accessibility_settings_disable">Uitzetten</string>
-	<string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie Dubbeltikken om te vergrendelen in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze toegankelijkheidsdienst verzamelt of deelt geen gegevens.</string>
-	<string name="admin_permission_message">Easy Launcher belooft de toestemming op het vergrendelscherm op verantwoorde wijze te gebruiken. Easy Launcher verzamelt of deelt geen gegevens.</string>
-	<string-array name="settings_appearance_daily_word_default">
-		<item>Blijf veerkrachtig!</item>
-		<item>Je hebt dit!</item>
-		<item>Schijn helder!</item>
-		<item>Creëer het lot.</item>
-		<item>Omarm de reis.</item>
-		<item>Kracht van binnen.</item>
-		<item>Blijf duwen!</item>
-		<item>Je bent geweldig!</item>
-		<item>Vertrouw, geef nooit.</item>
-		<item>Onbegrensd potentieel.</item>
-		<item>Vooruitgang boven perfectie.</item>
-		<item>Uitdagingen = groei.</item>
-		<item>Succes waard.</item>
-		<item>Volg je dromen.</item>
-		<item>Overwin alles!</item>
-		<item>Vastberadenheid wint.</item>
-		<item>Elke stap telt.</item>
-		<item>Blijf positief!</item>
-		<item>Veerkracht rockt.</item>
-		<item>Kracht in jou.</item>
-		<item>Vier de vooruitgang.</item>
-		<item>Hard werken loont.</item>
-		<item>Vertrouw, heb vertrouwen.</item>
-		<item>Unieke reis.</item>
-		<item>Ogen op prijs.</item>
-		<item>Bereik alles!</item>
-		<item>Neem gedurfde stappen.</item>
-		<item>Passie voedt je.</item>
-		<item>Focus op doelen.</item>
-		<item>Volharden, winnen.</item>
-		<item>Zelfvertrouwen sleutel.</item>
-		<item>Het goede verdienen.</item>
-		<item>Reik naar dromen.</item>
-		<item>Dapper, sterk, slim.</item>
-		<item>Positieve instelling.</item>
-		<item>Vertrouw op de reis.</item>
-		<item>Onwrikbare vastberadenheid.</item>
-		<item>Tegenslagen = comeback.</item>
-		<item>Maak dromen werkelijkheid.</item>
-		<item>Zet je in voor doelen.</item>
-		<item>Kracht, geen grenzen.</item>
-		<item>Kop omhoog, doorbraak.</item>
-		<item>Jouw potentieel straalt.</item>
-		<item>Dromen binnen handbereik.</item>
-		<item>Je bent niet te stoppen!</item>
-		<item>Geloof, bereik.</item>
-		<item>Verleg grenzen.</item>
-		<item>Doorzettingsvermogen loont.</item>
-		<item>Blijf onbevreesd!</item>
-		<item>Stijg uit boven uitdagingen.</item>
-		<item>Blijf groots dromen.</item>
-		<item>Leef met een doel.</item>
-		<item>Focus je op het goede.</item>
-		<item>Kracht van binnenuit.</item>
-		<item>Geloof in magie.</item>
-		<item>Glimlach, je hebt dit.</item>
-		<item>Verlies nooit de hoop.</item>
-		<item>Omarm elk moment.</item>
-		<item>Wees je eigen held.</item>
-		<item>Jij bent genoeg.</item>
-		<item>Overwin je angsten.</item>
-		<item>Pluk de dag!</item>
-		<item>Houd eerst van jezelf.</item>
-		<item>Blijf positief, altijd.</item>
-		<item>Je bent een krijger.</item>
-		<item>Geloof in jezelf.</item>
-		<item>Omarm mogelijkheden.</item>
-		<item>Leven met passie.</item>
-		<item>Blijf vooruitgaan.</item>
-		<item>Je bent niet te stoppen!</item>
-		<item>Blijf trouw aan jezelf.</item>
-		<item>Leef moedig.</item>
-		<item>Houd het geloof.</item>
-		<item>Sterkte bij tegenslag.</item>
-		<item>Groei elke dag.</item>
-		<item>Volharding, overwinning.</item>
-		<item>Jaag je passies na.</item>
-		<item>Vind vreugde in de reis.</item>
-		<item>Neem risico\'s, gedijen.</item>
-		<item>Blijf sterk, moedig.</item>
-		<item>Vertrouw op innerlijke wijsheid.</item>
-		<item>Blijf helder schijnen.</item>
-		<item>Droom geloof bereik.</item>
-		<item>Wees niet te stoppen.</item>
-		<item>Bezit je grootsheid.</item>
-		<item>Omarm het onbekende.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Vertrouw in jezelf.</item>
-		<item>Verspreid altijd vriendelijkheid.</item>
-		<item>Geloof in je dromen.</item>
-		<item>Blijf gefocust en vastberaden.</item>
-		<item>Omarm je reis.</item>
-		<item>Hou je hoofd omhoog.</item>
-		<item>Nooit de hoop opgeven.</item>
-		<item>Kracht van binnenuit.</item>
-		<item>Blijf veerkrachtig, sterk.</item>
-		<item>Je bent niet te stoppen!</item>
-		<item>Omarm de uitdaging.</item>
-		<item>Houd het vuur brandend.</item>
-		<item>Focus op wat mogelijk is.</item>
-		<item>Droom groot, werk hard.</item>
-		<item>Houd de prijs in de gaten.</item>
-		<item>Vertrouw het proces.</item>
-		<item>Blijf jezelf.</item>
-		<item>Geloof, bereik, succes.</item>
-		<item>Blijf altijd geïnspireerd.</item>
-		<item>Wees onbevreesd in de achtervolging.</item>
-		<item>Blijf geaard, sta op.</item>
-		<item>Vind kracht in de strijd.</item>
-		<item>Omarm elke uitdaging.</item>
-		<item>Blijf gedurfd, blijf helder.</item>
-		<item>Jij bent in staat tot grootsheid.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vechten, blijf stijgen.</item>
-		<item>Geloof in het onmogelijke.</item>
-		<item>Blijf veerkrachtig, geef nooit.</item>
-		<item>Je bent sterker dan je weet.</item>
-		<item>Leef met passie en doel.</item>
-		<item>Vind vreugde in elke reis.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf positief, blijf sterk.</item>
-		<item>Elke dag is een nieuwe kans.</item>
-		<item>Omarm elke kans.</item>
-		<item>Blijf grenzen verleggen.</item>
-		<item>Vertrouw op je innerlijke kracht.</item>
-		<item>Je bent voorbestemd voor grootsheid.</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op jouw reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op jouw reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op jouw reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Je bent voorbestemd voor grootsheid!</item>
-		<item>Geloof in je dromen!</item>
-		<item>Blijf vastberaden, succes.</item>
-		<item>Blijf in beweging richting je doelen.</item>
-		<item>Jaag je dromen meedogenloos na.</item>
-		<item>Kracht komt van binnenuit.</item>
-		<item>Blijf gefocust op uw doelen.</item>
-		<item>Je bent tot alles in staat.</item>
-		<item>Blijf onbevreesd, blijf sterk.</item>
-		<item>Geloof, bereik, succes!</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf veerkrachtig, sta erboven.</item>
-		<item>Jij hebt de kracht in jezelf.</item>
-		<item>Droom groot, werk hard, bereik.</item>
-		<item>Blijf gefocust, blijf sterk.</item>
-		<item>Je bent sterker dan je denkt!</item>
-		<item>Geloof in jezelf, altijd.</item>
-		<item>Blijf vastberaden, blijf sterk.</item>
-		<item>Omarm elke kans.</item>
-		<item>Jij bent in staat tot grootsheid!</item>
-		<item>Blijf jezelf.</item>
-		<item>Vertrouw op je reis.</item>
-		<item>Blijf vooruit duwen.</item>
-		<item>Droom geloof bereik!</item>
-	</string-array>
-	<string-array name="alignment_options">
-		<item>Links</item>
-		<item>Centrum</item>
-		<item>Rechts</item>
-	</string-array>
-	<string name="search_engine">Zoekmachine</string>
-	<string name="search_google">Googlen</string>
-	<string name="search_yahoo">Yahoo</string>
-	<string name="search_duckduckgo">DuckDuckGo</string>
-	<string name="search_bing">Bing</string>
-	<string name="search_brave">Moedig</string>
-	<string name="search_swisscow">Zwitserse koeien</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="action_settings_default">Instellen als standaard opstartprogramma</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Thuisfragment</string>
+    <string name="draw_fragment_label">Fragment tekenen</string>
+    <string name="favorite_fragment_label">Favorite Fragment</string>
+    <string name="hidden_fragment_label">Hidden Fragment</string>
+    <string name="settings_fragment_label">Settings Fragment</string>
+    <string name="widgets_fragment_label">Widgets Fragment</string>
+    <string name="battery_level">%s%%</string>
+    <string name="search">Zoekopdracht</string>
+    <string name="bottom_dialog_app_rename">Hernoemen</string>
+    <string name="bottom_dialog_add_to_home">Toevoegen aan startscherm</string>
+    <string name="bottom_dialog_order_home_apps">Home-apps bestellen</string>
+    <string name="bottom_dialog_remove_from_home">Verwijderen van startscherm</string>
+    <string name="bottom_dialog_add_to_hidden">Verborgen app</string>
+    <string name="bottom_dialog_remove_to_hidden">Verwijder verborgen app</string>
+    <string name="bottom_dialog_add_to_lock">Vergrendel app</string>
+    <string name="bottom_dialog_remove_to_unlock">Ontgrendel app</string>
+    <string name="bottom_dialog_app_info">App informatie</string>
+    <string name="bottom_dialog_app_uninstall">App verwijderen</string>
+    <string name="settings_name">Launcher-instellingen</string>
+    <string name="settings_version">%s Versie: %s</string>
+    <string name="settings_home">Thuis</string>
+    <string name="settings_title_home_display_preferences">Weergave</string>
+    <string name="settings_title_home_behavior_preferences">Gedrag</string>
+    <string name="settings_title_home_appearance_preferences">Verschijning</string>
+    <string name="settings_title_date_style">Datumstijl</string>
+    <string name="settings_title_time_style">Tijdstijl</string>
+    <string name="settings_title_app_manager">App-beheer</string>
+    <string name="settings_title_gestures">Gebaren</string>
+    <string name="settings_title_backups">Back-ups</string>
+    <string name="settings_title_others">Anderen</string>
+    <string name="settings_display_status_bar">Statusbalk weergeven</string>
+    <string name="settings_display_date">Datum weergeven</string>
+    <string name="settings_display_time">Show Time</string>
+    <string name="settings_display_battery">Toon batterij</string>
+    <string name="settings_display_daily_word">Toon dagelijks woord</string>
+    <string name="settings_display_app_icons">App-pictogrammen weergeven</string>
+    <string name="settings_display_automatic_keyboard">Toetsenbord voor automatische weergave</string>
+    <string name="settings_display_auto_open_apps">Laatste app automatisch openen</string>
+    <string name="settings_display_lock_settings">Instellingen vergrendelen</string>
+    <string name="settings_appearance_text_size_title">Maat</string>
+    <string name="settings_appearance_color_title">Kleur</string>
+    <string name="settings_appearance_alignment_title">Uitlijning</string>
+    <string name="settings_appearance_padding_title">Opvulling</string>
+    <string name="settings_appearance_wallpaper">Aangepaste achtergrond</string>
+    <string name="settings_appearance_home_date_alignment">Datumuitlijning</string>
+    <string name="settings_appearance_home_time_alignment">Tijduitlijning</string>
+    <string name="settings_appearance_home_app_alignment">Uitlijning van de thuisapp</string>
+    <string name="appearance_bottom_dialog_text_size_title">Maat</string>
+    <string name="appearance_bottom_dialog_text_color_title">Kleur</string>
+    <string name="appearance_bottom_dialog_alignment_title">Uitlijning</string>
+    <string name="appearance_bottom_dialog_padding_title">Opvulling</string>
+    <string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_time">Tijd\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_word">Woord\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_battery">Batterij\u0020:\u0020 </string>
+    <string name="settings_manager_favorite">Favoriete apps</string>
+    <string name="settings_manager_hidden">Verborgen apps</string>
+    <string name="settings_select_wallpaper">Selecteer Achtergrond</string>
+    <string name="settings_double_tap_lock">Dubbeltik om te vergrendelen</string>
+    <string name="settings_swipe_down_notification">Veeg naar beneden en vouw de melding uit</string>
+    <string name="settings_swipe_up_search">Veeg omhoog om de zoekweergave te openen</string>
+    <string name="settings_others_share">Deel</string>
+    <string name="settings_others_feedback">Feedback</string>
+    <string name="settings_others_github">Github</string>
+    <string name="settings_backups_backup">Back-upvoorkeuren</string>
+    <string name="settings_backups_restore">Voorkeuren herstellen</string>
+    <string name="settings_reload_app_backup">Er is een back-up gemaakt van voorkeuren.</string>
+    <string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
+    <string name="authentication_title">Authenticatie</string>
+    <string name="authentication_subtitle">Log in met uw biometrische gegevens.</string>
+    <string name="authentication_cancel">Authenticatie Annuleren</string>
+    <string name="authentication_succeeded">Authenticatie geslaagd</string>
+    <string name="authentication_failed">Authenticatie mislukt</string>
+    <string name="authentication_error">Authenticatiefout: %1$s(code %2$d)</string>
+    <string name="bottom_alignment_star">Ster</string>
+    <string name="bottom_alignment_center">Centrum</string>
+    <string name="bottom_alignment_end">Einde</string>
+    <string name="accessibility_settings_title">Toegankelijkheidsinstellingen</string>
+    <string name="accessibility_settings_enable">Inschakelen</string>
+    <string name="accessibility_settings_disable">Uitzetten</string>
+    <string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie Dubbeltikken om te vergrendelen in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze toegankelijkheidsdienst verzamelt of deelt geen gegevens.</string>
+    <string name="admin_permission_message">Easy Launcher belooft de toestemming op het vergrendelscherm op verantwoorde wijze te gebruiken. Easy Launcher verzamelt of deelt geen gegevens.</string>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>Blijf veerkrachtig!</item>
+        <item>Je hebt dit!</item>
+        <item>Schijn helder!</item>
+        <item>Creëer het lot.</item>
+        <item>Omarm de reis.</item>
+        <item>Kracht van binnen.</item>
+        <item>Blijf duwen!</item>
+        <item>Je bent geweldig!</item>
+        <item>Vertrouw, geef nooit.</item>
+        <item>Onbegrensd potentieel.</item>
+        <item>Vooruitgang boven perfectie.</item>
+        <item>Uitdagingen = groei.</item>
+        <item>Succes waard.</item>
+        <item>Volg je dromen.</item>
+        <item>Overwin alles!</item>
+        <item>Vastberadenheid wint.</item>
+        <item>Elke stap telt.</item>
+        <item>Blijf positief!</item>
+        <item>Veerkracht rockt.</item>
+        <item>Kracht in jou.</item>
+        <item>Vier de vooruitgang.</item>
+        <item>Hard werken loont.</item>
+        <item>Vertrouw, heb vertrouwen.</item>
+        <item>Unieke reis.</item>
+        <item>Ogen op prijs.</item>
+        <item>Bereik alles!</item>
+        <item>Neem gedurfde stappen.</item>
+        <item>Passie voedt je.</item>
+        <item>Focus op doelen.</item>
+        <item>Volharden, winnen.</item>
+        <item>Zelfvertrouwen sleutel.</item>
+        <item>Het goede verdienen.</item>
+        <item>Reik naar dromen.</item>
+        <item>Dapper, sterk, slim.</item>
+        <item>Positieve instelling.</item>
+        <item>Vertrouw op de reis.</item>
+        <item>Onwrikbare vastberadenheid.</item>
+        <item>Tegenslagen = comeback.</item>
+        <item>Maak dromen werkelijkheid.</item>
+        <item>Zet je in voor doelen.</item>
+        <item>Kracht, geen grenzen.</item>
+        <item>Kop omhoog, doorbraak.</item>
+        <item>Jouw potentieel straalt.</item>
+        <item>Dromen binnen handbereik.</item>
+        <item>Je bent niet te stoppen!</item>
+        <item>Geloof, bereik.</item>
+        <item>Verleg grenzen.</item>
+        <item>Doorzettingsvermogen loont.</item>
+        <item>Blijf onbevreesd!</item>
+        <item>Stijg uit boven uitdagingen.</item>
+        <item>Blijf groots dromen.</item>
+        <item>Leef met een doel.</item>
+        <item>Focus je op het goede.</item>
+        <item>Kracht van binnenuit.</item>
+        <item>Geloof in magie.</item>
+        <item>Glimlach, je hebt dit.</item>
+        <item>Verlies nooit de hoop.</item>
+        <item>Omarm elk moment.</item>
+        <item>Wees je eigen held.</item>
+        <item>Jij bent genoeg.</item>
+        <item>Overwin je angsten.</item>
+        <item>Pluk de dag!</item>
+        <item>Houd eerst van jezelf.</item>
+        <item>Blijf positief, altijd.</item>
+        <item>Je bent een krijger.</item>
+        <item>Geloof in jezelf.</item>
+        <item>Omarm mogelijkheden.</item>
+        <item>Leven met passie.</item>
+        <item>Blijf vooruitgaan.</item>
+        <item>Je bent niet te stoppen!</item>
+        <item>Blijf trouw aan jezelf.</item>
+        <item>Leef moedig.</item>
+        <item>Houd het geloof.</item>
+        <item>Sterkte bij tegenslag.</item>
+        <item>Groei elke dag.</item>
+        <item>Volharding, overwinning.</item>
+        <item>Jaag je passies na.</item>
+        <item>Vind vreugde in de reis.</item>
+        <item>Neem risico\'s, gedijen.</item>
+        <item>Blijf sterk, moedig.</item>
+        <item>Vertrouw op innerlijke wijsheid.</item>
+        <item>Blijf helder schijnen.</item>
+        <item>Droom geloof bereik.</item>
+        <item>Wees niet te stoppen.</item>
+        <item>Bezit je grootsheid.</item>
+        <item>Omarm het onbekende.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Vertrouw in jezelf.</item>
+        <item>Verspreid altijd vriendelijkheid.</item>
+        <item>Geloof in je dromen.</item>
+        <item>Blijf gefocust en vastberaden.</item>
+        <item>Omarm je reis.</item>
+        <item>Hou je hoofd omhoog.</item>
+        <item>Nooit de hoop opgeven.</item>
+        <item>Kracht van binnenuit.</item>
+        <item>Blijf veerkrachtig, sterk.</item>
+        <item>Je bent niet te stoppen!</item>
+        <item>Omarm de uitdaging.</item>
+        <item>Houd het vuur brandend.</item>
+        <item>Focus op wat mogelijk is.</item>
+        <item>Droom groot, werk hard.</item>
+        <item>Houd de prijs in de gaten.</item>
+        <item>Vertrouw het proces.</item>
+        <item>Blijf jezelf.</item>
+        <item>Geloof, bereik, succes.</item>
+        <item>Blijf altijd geïnspireerd.</item>
+        <item>Wees onbevreesd in de achtervolging.</item>
+        <item>Blijf geaard, sta op.</item>
+        <item>Vind kracht in de strijd.</item>
+        <item>Omarm elke uitdaging.</item>
+        <item>Blijf gedurfd, blijf helder.</item>
+        <item>Jij bent in staat tot grootsheid.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vechten, blijf stijgen.</item>
+        <item>Geloof in het onmogelijke.</item>
+        <item>Blijf veerkrachtig, geef nooit.</item>
+        <item>Je bent sterker dan je weet.</item>
+        <item>Leef met passie en doel.</item>
+        <item>Vind vreugde in elke reis.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf positief, blijf sterk.</item>
+        <item>Elke dag is een nieuwe kans.</item>
+        <item>Omarm elke kans.</item>
+        <item>Blijf grenzen verleggen.</item>
+        <item>Vertrouw op je innerlijke kracht.</item>
+        <item>Je bent voorbestemd voor grootsheid.</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op jouw reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op jouw reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op jouw reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Je bent voorbestemd voor grootsheid!</item>
+        <item>Geloof in je dromen!</item>
+        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf in beweging richting je doelen.</item>
+        <item>Jaag je dromen meedogenloos na.</item>
+        <item>Kracht komt van binnenuit.</item>
+        <item>Blijf gefocust op uw doelen.</item>
+        <item>Je bent tot alles in staat.</item>
+        <item>Blijf onbevreesd, blijf sterk.</item>
+        <item>Geloof, bereik, succes!</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf veerkrachtig, sta erboven.</item>
+        <item>Jij hebt de kracht in jezelf.</item>
+        <item>Droom groot, werk hard, bereik.</item>
+        <item>Blijf gefocust, blijf sterk.</item>
+        <item>Je bent sterker dan je denkt!</item>
+        <item>Geloof in jezelf, altijd.</item>
+        <item>Blijf vastberaden, blijf sterk.</item>
+        <item>Omarm elke kans.</item>
+        <item>Jij bent in staat tot grootsheid!</item>
+        <item>Blijf jezelf.</item>
+        <item>Vertrouw op je reis.</item>
+        <item>Blijf vooruit duwen.</item>
+        <item>Droom geloof bereik!</item>
+    </string-array>
+    <string-array name="alignment_options">
+        <item>Links</item>
+        <item>Centrum</item>
+        <item>Rechts</item>
+    </string-array>
+    <string name="search_engine">Zoekmachine</string>
+    <string name="search_google">Googlen</string>
+    <string name="search_yahoo">Yahoo</string>
+    <string name="search_duckduckgo">DuckDuckGo</string>
+    <string name="search_bing">Bing</string>
+    <string name="search_brave">Moedig</string>
+    <string name="search_swisscow">Zwitserse koeien</string>
 </resources>
