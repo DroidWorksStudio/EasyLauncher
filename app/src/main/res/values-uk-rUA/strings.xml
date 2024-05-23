@@ -5,10 +5,10 @@
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Домашній Фрагмент</string>
     <string name="draw_fragment_label">Намалювати фрагмент</string>
-    <string name="favorite_fragment_label">Favorite Fragment</string>
-    <string name="hidden_fragment_label">Hidden Fragment</string>
-    <string name="settings_fragment_label">Settings Fragment</string>
-    <string name="widgets_fragment_label">Widgets Fragment</string>
+    <string name="favorite_fragment_label">Улюблений фрагмент</string>
+    <string name="hidden_fragment_label">Прихований фрагмент</string>
+    <string name="settings_fragment_label">Фрагмент налаштувань</string>
+    <string name="widgets_fragment_label">Фрагмент віджетів</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Пошук</string>
     <string name="bottom_dialog_app_rename">Перейменувати</string>
