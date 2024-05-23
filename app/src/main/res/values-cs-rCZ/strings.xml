@@ -27,7 +27,7 @@
 	<string name="settings_title_time_style">Styl času</string>
 	<string name="settings_title_app_manager">Správa aplikací</string>
 	<string name="settings_title_gestures">Gesta</string>
-	<string name="settings_title_backups">Backups</string>
+	<string name="settings_title_backups">Zálohy</string>
 	<string name="settings_title_others">Ostatní</string>
 	<string name="settings_display_status_bar">Zobrazit stavový řádek</string>
 	<string name="settings_display_date">Zobrazit datum</string>
@@ -64,10 +64,10 @@
 	<string name="settings_others_share">Podíl</string>
 	<string name="settings_others_feedback">Zpětná vazba</string>
 	<string name="settings_others_github">Github</string>
-	<string name="settings_backups_backup">Backup Preferences</string>
-	<string name="settings_backups_restore">Restore Preferences</string>
-	<string name="settings_reload_app_backup">Preferences backed up.</string>
-	<string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
+	<string name="settings_backups_backup">Předvolby zálohování</string>
+	<string name="settings_backups_restore">Obnovit předvolby</string>
+	<string name="settings_reload_app_backup">Předvolby zálohovány.</string>
+	<string name="settings_reload_app_restore">Předvolby byly obnoveny. Restartování.</string>
 	<string name="authentication_title">Autentizace</string>
 	<string name="authentication_subtitle">Přihlaste se pomocí svých biometrických údajů.</string>
 	<string name="authentication_cancel">Zrušení ověřování</string>
