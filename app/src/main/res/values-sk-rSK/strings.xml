@@ -1,548 +1,552 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">nastavenie</string>
-	<string name="action_settings_default">Nastaviť ako predvolený spúšťač</string>
-	<!-- Strings used for fragments for navigation -->
-	<string name="home_fragment_label">Domáci Fragment</string>
-	<string name="draw_fragment_label">Nakreslite fragment</string>
-	<string name="battery_level">%s%%</string>
-	<string name="search">Vyhľadávanie</string>
-	<string name="bottom_dialog_app_rename">Premenovať</string>
-	<string name="bottom_dialog_add_to_home">Pridať na domovskú obrazovku</string>
-	<string name="bottom_dialog_order_home_apps">Objednajte si domáce aplikácie</string>
-	<string name="bottom_dialog_remove_from_home">Odstrániť z domovskej obrazovky</string>
-	<string name="bottom_dialog_add_to_hidden">Skrytá aplikácia</string>
-	<string name="bottom_dialog_remove_to_hidden">Odstráňte skrytú aplikáciu</string>
-	<string name="bottom_dialog_add_to_lock">Zamknúť aplikáciu</string>
-	<string name="bottom_dialog_remove_to_unlock">Odomknúť aplikáciu</string>
-	<string name="bottom_dialog_app_info">Informácie o aplikácii</string>
-	<string name="bottom_dialog_app_uninstall">Odinštalovať aplikáciu</string>
-	<string name="settings_name">Nastavenia spúšťača</string>
-	<string name="settings_version">%s Verzia: %s</string>
-	<string name="settings_home">Domov</string>
-	<string name="settings_title_home_display_preferences">Displej</string>
-	<string name="settings_title_home_behavior_preferences">Správanie</string>
-	<string name="settings_title_home_appearance_preferences">Vzhľad</string>
-	<string name="settings_title_date_style">Štýl dátumu</string>
-	<string name="settings_title_time_style">Časový štýl</string>
-	<string name="settings_title_app_manager">Správa aplikácií</string>
-	<string name="settings_title_gestures">Gestá</string>
-	<string name="settings_title_backups">Zálohy</string>
-	<string name="settings_title_others">Iní</string>
-	<string name="settings_display_status_bar">Zobraziť stavový riadok</string>
-	<string name="settings_display_date">Zobraziť dátum</string>
-	<string name="settings_display_time">Zobraziť čas</string>
-	<string name="settings_display_battery">Zobraziť batériu</string>
-	<string name="settings_display_daily_word">Zobraziť Daily Word</string>
-	<string name="settings_display_app_icons">Zobraziť ikony aplikácií</string>
-	<string name="settings_display_automatic_keyboard">Automaticky zobraziť klávesnicu</string>
-	<string name="settings_display_auto_open_apps">Automatické otvorenie poslednej aplikácie</string>
-	<string name="settings_display_lock_settings">Nastavenia zámku</string>
-	<string name="settings_appearance_text_size_title">Veľkosť</string>
-	<string name="settings_appearance_color_title">Farba</string>
-	<string name="settings_appearance_alignment_title">Zarovnanie</string>
-	<string name="settings_appearance_padding_title">Vypchávka</string>
-	<string name="settings_appearance_wallpaper">Vlastná tapeta</string>
-	<string name="settings_appearance_home_date_alignment">Dátumové zarovnanie</string>
-	<string name="settings_appearance_home_time_alignment">Časové zarovnanie</string>
-	<string name="settings_appearance_home_app_alignment">Home App Zarovnanie</string>
-	<string name="appearance_bottom_dialog_text_size_title">Veľkosť</string>
-	<string name="appearance_bottom_dialog_text_color_title">Farba</string>
-	<string name="appearance_bottom_dialog_alignment_title">Zarovnanie</string>
-	<string name="appearance_bottom_dialog_padding_title">Vypchávka</string>
-	<string name="appearance_bottom_dialog_desc_date">Dátum\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_time">Čas\u0020:\u0020 </string>
-	<string name="appearance_bottom_dialog_desc_app">Aplikácia\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_battery">Batéria\u0020:\u0020 </string>
-	<string name="settings_manager_favorite">Obľúbené aplikácie</string>
-	<string name="settings_manager_hidden">Skryté aplikácie</string>
-	<string name="settings_select_wallpaper">Vyberte položku Tapeta</string>
-	<string name="settings_double_tap_lock">Dvojitým klepnutím uzamknete</string>
-	<string name="settings_swipe_down_notification">Potiahnutím nadol rozbaliť upozornenie</string>
-	<string name="settings_swipe_up_search">Potiahnutím nahor otvorte zobrazenie vyhľadávania</string>
-	<string name="settings_others_share">zdieľam</string>
-	<string name="settings_others_feedback">Spätná väzba</string>
-	<string name="settings_others_github">Github</string>
-	<string name="settings_backups_backup">Predvoľby zálohovania</string>
-	<string name="settings_backups_restore">Obnoviť predvoľby</string>
-	<string name="settings_reload_app_backup">Predvoľby sú zálohované.</string>
-	<string name="settings_reload_app_restore">Predvoľby boli obnovené. Reštartovanie.</string>
-	<string name="authentication_title">Overenie</string>
-	<string name="authentication_subtitle">Prihláste sa pomocou svojich biometrických údajov.</string>
-	<string name="authentication_cancel">Zrušenie overenia</string>
-	<string name="authentication_succeeded">Overenie bolo úspešné</string>
-	<string name="authentication_failed">Overenie zlyhalo</string>
-	<string name="authentication_error">Chyba overenia: %1$s(kód %2$d)</string>
-	<string name="bottom_alignment_star">Hviezda</string>
-	<string name="bottom_alignment_center">centrum</string>
-	<string name="bottom_alignment_end">Koniec</string>
-	<string name="accessibility_settings_title">Nastavenia dostupnosti</string>
-	<string name="accessibility_settings_enable">Povoliť</string>
-	<string name="accessibility_settings_disable">Zakázať</string>
-	<string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v aplikácii Easy Launcher, zapnite službu dostupnosti.\n\nToto povolenie sa používa iba na vypnutie obrazovky. Naša služba dostupnosti nezhromažďuje ani nezdieľa žiadne údaje.</string>
-	<string name="admin_permission_message">Easy launcher sľubuje zodpovedné používanie povolenia na uzamknutie obrazovky. Easy launcher nezhromažďuje ani nezdieľa žiadne údaje.</string>
-	<string-array name="settings_appearance_daily_word_default">
-		<item>Zostaňte odolní!</item>
-		<item>Máš to!</item>
-		<item>Svieť jasno!</item>
-		<item>Vytvorte osud.</item>
-		<item>Objatie cesty.</item>
-		<item>Sila vo vnútri.</item>
-		<item>Neprestavaj tlačiť!</item>
-		<item>Si úžasná!</item>
-		<item>Dôveruj, nikdy nedávaj.</item>
-		<item>Neobmedzený potenciál.</item>
-		<item>Pokrok nad dokonalosťou.</item>
-		<item>Výzvy = rast.</item>
-		<item>Hodné úspechu.</item>
-		<item>Choď za svojimi snami.</item>
-		<item>Prekonajte všetko!</item>
-		<item>Odhodlanie víťazí.</item>
-		<item>Každý krok sa počíta.</item>
-		<item>Zostaň pozitívny!</item>
-		<item>Odolné skaly.</item>
-		<item>Sila vo vás.</item>
-		<item>Oslávte pokrok.</item>
-		<item>Tvrdá práca sa vypláca.</item>
-		<item>Dôveruj, dôveruj.</item>
-		<item>Jedinečná cesta.</item>
-		<item>Oči na cenu.</item>
-		<item>Dosiahnite čokoľvek!</item>
-		<item>Urobte odvážne kroky.</item>
-		<item>Vášeň vás poháňa.</item>
-		<item>Sústreďte sa na ciele.</item>
-		<item>Vydržať, vyhrať.</item>
-		<item>Kľúč k sebadôvere.</item>
-		<item>Zaslúži si dobro.</item>
-		<item>Siahnite po snoch.</item>
-		<item>Odvážny, silný, šikovný.</item>
-		<item>Kladný postoj.</item>
-		<item>Dôverujte ceste.</item>
-		<item>Neochvejné odhodlanie.</item>
-		<item>Neúspechy = návrat.</item>
-		<item>Premeňte sny na skutočnosť.</item>
-		<item>Odhodlať sa k cieľom.</item>
-		<item>Sila, bez hraníc.</item>
-		<item>Hlavu hore, prielom.</item>
-		<item>Váš potenciál žiari.</item>
-		<item>Sny na dosah.</item>
-		<item>Si nezastaviteľná!</item>
-		<item>Veriť, dosiahnuť.</item>
-		<item>Posúvajte hranice.</item>
-		<item>Za vytrvalosť sa platí.</item>
-		<item>Zostaňte nebojácni!</item>
-		<item>Povzniesť sa nad výzvy.</item>
-		<item>Snívajte vo veľkom.</item>
-		<item>Žite s cieľom.</item>
-		<item>Sústreďte sa na to dobré.</item>
-		<item>Sila zvnútra.</item>
-		<item>Verte v mágiu.</item>
-		<item>Usmej sa, máš to.</item>
-		<item>Nikdy nestrácaj nádej.</item>
-		<item>Objímajte každú chvíľu.</item>
-		<item>Buďte svojim vlastným hrdinom.</item>
-		<item>Ty máš dosť.</item>
-		<item>Prekonajte svoje obavy.</item>
-		<item>CHOP sa dňa!</item>
-		<item>Najprv Miluj sám seba.</item>
-		<item>Buďte vždy pozitívni.</item>
-		<item>Si bojovník.</item>
-		<item>Ver v seba.</item>
-		<item>Využite možnosti.</item>
-		<item>Ži vášnivo.</item>
-		<item>Choď stále vpred.</item>
-		<item>Si nezastaviteľná!</item>
-		<item>Zostaňte vám verní.</item>
-		<item>Žite odvážne.</item>
-		<item>Udržať si vieru.</item>
-		<item>Sila v nešťastí.</item>
-		<item>Každý deň rásť.</item>
-		<item>Vytrvalosť, víťazstvo.</item>
-		<item>Choďte za svojimi vášňami.</item>
-		<item>Nájdite radosť na cestách.</item>
-		<item>Riskujte, prosperujte.</item>
-		<item>Zostaň silný, statočný.</item>
-		<item>Dôverujte vnútornej múdrosti.</item>
-		<item>Svieť ďalej.</item>
-		<item>Snívajte, verte, dosahujte.</item>
-		<item>Buďte nezastaviteľní.</item>
-		<item>Vlastniť svoju veľkosť.</item>
-		<item>Prijmite nepoznané.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Verte v seba.</item>
-		<item>Vždy šírte láskavosť.</item>
-		<item>Ver svojim snom.</item>
-		<item>Zostaňte sústredení, odhodlaní.</item>
-		<item>Prijmite svoju cestu.</item>
-		<item>Hlavu hore.</item>
-		<item>Nikdy sa nevzdávajte nádeje.</item>
-		<item>Sila zvnútra.</item>
-		<item>Zostaňte odolný, silný.</item>
-		<item>Si nezastaviteľná!</item>
-		<item>Prijmite výzvu.</item>
-		<item>Udržujte oheň.</item>
-		<item>Sústreďte sa na to, čo je možné.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte.</item>
-		<item>Majte oči na cene.</item>
-		<item>Dôverujte procesu.</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Veriť, dosiahnuť, uspieť.</item>
-		<item>Zostaňte vždy inšpirovaní.</item>
-		<item>Buďte nebojácni pri prenasledovaní.</item>
-		<item>Zostaňte pri zemi, vstaňte.</item>
-		<item>Nájdite silu v boji.</item>
-		<item>Prijmite každú výzvu.</item>
-		<item>Zostaň odvážny, zostaň jasný.</item>
-		<item>Si schopný veľkosti.</item>
-		<item>Verte svojej ceste.</item>
-		<item>Bojuj, vstaň.</item>
-		<item>Verte v nemožné.</item>
-		<item>Zostaňte odolní, nikdy nedávajte.</item>
-		<item>Si silnejší ako vieš.</item>
-		<item>Žite s vášňou a zámerom.</item>
-		<item>Nájdite radosť na každej ceste.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaňte pozitívni, zostaňte silní.</item>
-		<item>Každý deň je nová šanca.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Pokračujte v posúvaní minulých limitov.</item>
-		<item>Dôverujte svojej vnútornej sile.</item>
-		<item>Si predurčený k veľkosti.</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspieť.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspieť.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Si predurčený k veľkosti!</item>
-		<item>Ver svojim snom!</item>
-		<item>Zostaňte odhodlaní, uspejte.</item>
-		<item>Pokračujte smerom k svojim cieľom.</item>
-		<item>Neúnavne choďte za svojimi snami.</item>
-		<item>Sila vychádza zvnútra.</item>
-		<item>Zamerajte sa na svoje ciele.</item>
-		<item>Si schopný všetkého.</item>
-		<item>Zostaň nebojácny, zostaň silný.</item>
-		<item>Veriť, dosiahnuť, uspieť!</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Zostaňte odolní, povzneste sa vyššie.</item>
-		<item>Máte silu v sebe.</item>
-		<item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
-		<item>Zostaňte sústredení, zostaňte silní.</item>
-		<item>Si silnejší, než si myslíš!</item>
-		<item>Ver v seba, vždy.</item>
-		<item>Zostaňte odhodlaní, zostaňte silní.</item>
-		<item>Využite každú príležitosť.</item>
-		<item>Si schopný veľkosti!</item>
-		<item>Buď k sebe úprimný.</item>
-		<item>Dôverujte svojej ceste.</item>
-		<item>Pokračujte v tlačení dopredu.</item>
-		<item>Snívajte, verte, dosahujte!</item>
-	</string-array>
-	<string-array name="alignment_options">
-		<item>Vľavo</item>
-		<item>centrum</item>
-		<item>Správny</item>
-	</string-array>
-	<string name="search_engine">Vyhľadávač</string>
-	<string name="search_google">Google</string>
-	<string name="search_yahoo">Yahoo</string>
-	<string name="search_duckduckgo">DuckDuckGo</string>
-	<string name="search_bing">Bing</string>
-	<string name="search_brave">Statočný</string>
-	<string name="search_swisscow">SwissCows</string>
+    <string name="action_settings">nastavenie</string>
+    <string name="action_settings_default">Nastaviť ako predvolený spúšťač</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Domáci Fragment</string>
+    <string name="draw_fragment_label">Nakreslite fragment</string>
+    <string name="favorite_fragment_label">Favorite Fragment</string>
+    <string name="hidden_fragment_label">Hidden Fragment</string>
+    <string name="settings_fragment_label">Settings Fragment</string>
+    <string name="widgets_fragment_label">Widgets Fragment</string>
+    <string name="battery_level">%s%%</string>
+    <string name="search">Vyhľadávanie</string>
+    <string name="bottom_dialog_app_rename">Premenovať</string>
+    <string name="bottom_dialog_add_to_home">Pridať na domovskú obrazovku</string>
+    <string name="bottom_dialog_order_home_apps">Objednajte si domáce aplikácie</string>
+    <string name="bottom_dialog_remove_from_home">Odstrániť z domovskej obrazovky</string>
+    <string name="bottom_dialog_add_to_hidden">Skrytá aplikácia</string>
+    <string name="bottom_dialog_remove_to_hidden">Odstráňte skrytú aplikáciu</string>
+    <string name="bottom_dialog_add_to_lock">Zamknúť aplikáciu</string>
+    <string name="bottom_dialog_remove_to_unlock">Odomknúť aplikáciu</string>
+    <string name="bottom_dialog_app_info">Informácie o aplikácii</string>
+    <string name="bottom_dialog_app_uninstall">Odinštalovať aplikáciu</string>
+    <string name="settings_name">Nastavenia spúšťača</string>
+    <string name="settings_version">%s Verzia: %s</string>
+    <string name="settings_home">Domov</string>
+    <string name="settings_title_home_display_preferences">Displej</string>
+    <string name="settings_title_home_behavior_preferences">Správanie</string>
+    <string name="settings_title_home_appearance_preferences">Vzhľad</string>
+    <string name="settings_title_date_style">Štýl dátumu</string>
+    <string name="settings_title_time_style">Časový štýl</string>
+    <string name="settings_title_app_manager">Správa aplikácií</string>
+    <string name="settings_title_gestures">Gestá</string>
+    <string name="settings_title_backups">Zálohy</string>
+    <string name="settings_title_others">Iní</string>
+    <string name="settings_display_status_bar">Zobraziť stavový riadok</string>
+    <string name="settings_display_date">Zobraziť dátum</string>
+    <string name="settings_display_time">Zobraziť čas</string>
+    <string name="settings_display_battery">Zobraziť batériu</string>
+    <string name="settings_display_daily_word">Zobraziť Daily Word</string>
+    <string name="settings_display_app_icons">Zobraziť ikony aplikácií</string>
+    <string name="settings_display_automatic_keyboard">Automaticky zobraziť klávesnicu</string>
+    <string name="settings_display_auto_open_apps">Automatické otvorenie poslednej aplikácie</string>
+    <string name="settings_display_lock_settings">Nastavenia zámku</string>
+    <string name="settings_appearance_text_size_title">Veľkosť</string>
+    <string name="settings_appearance_color_title">Farba</string>
+    <string name="settings_appearance_alignment_title">Zarovnanie</string>
+    <string name="settings_appearance_padding_title">Vypchávka</string>
+    <string name="settings_appearance_wallpaper">Vlastná tapeta</string>
+    <string name="settings_appearance_home_date_alignment">Dátumové zarovnanie</string>
+    <string name="settings_appearance_home_time_alignment">Časové zarovnanie</string>
+    <string name="settings_appearance_home_app_alignment">Home App Zarovnanie</string>
+    <string name="appearance_bottom_dialog_text_size_title">Veľkosť</string>
+    <string name="appearance_bottom_dialog_text_color_title">Farba</string>
+    <string name="appearance_bottom_dialog_alignment_title">Zarovnanie</string>
+    <string name="appearance_bottom_dialog_padding_title">Vypchávka</string>
+    <string name="appearance_bottom_dialog_desc_date">Dátum\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_time">Čas\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_app">Aplikácia\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_battery">Batéria\u0020:\u0020 </string>
+    <string name="settings_manager_favorite">Obľúbené aplikácie</string>
+    <string name="settings_manager_hidden">Skryté aplikácie</string>
+    <string name="settings_select_wallpaper">Vyberte položku Tapeta</string>
+    <string name="settings_double_tap_lock">Dvojitým klepnutím uzamknete</string>
+    <string name="settings_swipe_down_notification">Potiahnutím nadol rozbaliť upozornenie</string>
+    <string name="settings_swipe_up_search">Potiahnutím nahor otvorte zobrazenie vyhľadávania</string>
+    <string name="settings_others_share">zdieľam</string>
+    <string name="settings_others_feedback">Spätná väzba</string>
+    <string name="settings_others_github">Github</string>
+    <string name="settings_backups_backup">Predvoľby zálohovania</string>
+    <string name="settings_backups_restore">Obnoviť predvoľby</string>
+    <string name="settings_reload_app_backup">Predvoľby sú zálohované.</string>
+    <string name="settings_reload_app_restore">Predvoľby boli obnovené. Reštartovanie.</string>
+    <string name="authentication_title">Overenie</string>
+    <string name="authentication_subtitle">Prihláste sa pomocou svojich biometrických údajov.</string>
+    <string name="authentication_cancel">Zrušenie overenia</string>
+    <string name="authentication_succeeded">Overenie bolo úspešné</string>
+    <string name="authentication_failed">Overenie zlyhalo</string>
+    <string name="authentication_error">Chyba overenia: %1$s(kód %2$d)</string>
+    <string name="bottom_alignment_star">Hviezda</string>
+    <string name="bottom_alignment_center">centrum</string>
+    <string name="bottom_alignment_end">Koniec</string>
+    <string name="accessibility_settings_title">Nastavenia dostupnosti</string>
+    <string name="accessibility_settings_enable">Povoliť</string>
+    <string name="accessibility_settings_disable">Zakázať</string>
+    <string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v aplikácii Easy Launcher, zapnite službu dostupnosti.\n\nToto povolenie sa používa iba na vypnutie obrazovky. Naša služba dostupnosti nezhromažďuje ani nezdieľa žiadne údaje.</string>
+    <string name="admin_permission_message">Easy launcher sľubuje zodpovedné používanie povolenia na uzamknutie obrazovky. Easy launcher nezhromažďuje ani nezdieľa žiadne údaje.</string>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>Zostaňte odolní!</item>
+        <item>Máš to!</item>
+        <item>Svieť jasno!</item>
+        <item>Vytvorte osud.</item>
+        <item>Objatie cesty.</item>
+        <item>Sila vo vnútri.</item>
+        <item>Neprestavaj tlačiť!</item>
+        <item>Si úžasná!</item>
+        <item>Dôveruj, nikdy nedávaj.</item>
+        <item>Neobmedzený potenciál.</item>
+        <item>Pokrok nad dokonalosťou.</item>
+        <item>Výzvy = rast.</item>
+        <item>Hodné úspechu.</item>
+        <item>Choď za svojimi snami.</item>
+        <item>Prekonajte všetko!</item>
+        <item>Odhodlanie víťazí.</item>
+        <item>Každý krok sa počíta.</item>
+        <item>Zostaň pozitívny!</item>
+        <item>Odolné skaly.</item>
+        <item>Sila vo vás.</item>
+        <item>Oslávte pokrok.</item>
+        <item>Tvrdá práca sa vypláca.</item>
+        <item>Dôveruj, dôveruj.</item>
+        <item>Jedinečná cesta.</item>
+        <item>Oči na cenu.</item>
+        <item>Dosiahnite čokoľvek!</item>
+        <item>Urobte odvážne kroky.</item>
+        <item>Vášeň vás poháňa.</item>
+        <item>Sústreďte sa na ciele.</item>
+        <item>Vydržať, vyhrať.</item>
+        <item>Kľúč k sebadôvere.</item>
+        <item>Zaslúži si dobro.</item>
+        <item>Siahnite po snoch.</item>
+        <item>Odvážny, silný, šikovný.</item>
+        <item>Kladný postoj.</item>
+        <item>Dôverujte ceste.</item>
+        <item>Neochvejné odhodlanie.</item>
+        <item>Neúspechy = návrat.</item>
+        <item>Premeňte sny na skutočnosť.</item>
+        <item>Odhodlať sa k cieľom.</item>
+        <item>Sila, bez hraníc.</item>
+        <item>Hlavu hore, prielom.</item>
+        <item>Váš potenciál žiari.</item>
+        <item>Sny na dosah.</item>
+        <item>Si nezastaviteľná!</item>
+        <item>Veriť, dosiahnuť.</item>
+        <item>Posúvajte hranice.</item>
+        <item>Za vytrvalosť sa platí.</item>
+        <item>Zostaňte nebojácni!</item>
+        <item>Povzniesť sa nad výzvy.</item>
+        <item>Snívajte vo veľkom.</item>
+        <item>Žite s cieľom.</item>
+        <item>Sústreďte sa na to dobré.</item>
+        <item>Sila zvnútra.</item>
+        <item>Verte v mágiu.</item>
+        <item>Usmej sa, máš to.</item>
+        <item>Nikdy nestrácaj nádej.</item>
+        <item>Objímajte každú chvíľu.</item>
+        <item>Buďte svojim vlastným hrdinom.</item>
+        <item>Ty máš dosť.</item>
+        <item>Prekonajte svoje obavy.</item>
+        <item>CHOP sa dňa!</item>
+        <item>Najprv Miluj sám seba.</item>
+        <item>Buďte vždy pozitívni.</item>
+        <item>Si bojovník.</item>
+        <item>Ver v seba.</item>
+        <item>Využite možnosti.</item>
+        <item>Ži vášnivo.</item>
+        <item>Choď stále vpred.</item>
+        <item>Si nezastaviteľná!</item>
+        <item>Zostaňte vám verní.</item>
+        <item>Žite odvážne.</item>
+        <item>Udržať si vieru.</item>
+        <item>Sila v nešťastí.</item>
+        <item>Každý deň rásť.</item>
+        <item>Vytrvalosť, víťazstvo.</item>
+        <item>Choďte za svojimi vášňami.</item>
+        <item>Nájdite radosť na cestách.</item>
+        <item>Riskujte, prosperujte.</item>
+        <item>Zostaň silný, statočný.</item>
+        <item>Dôverujte vnútornej múdrosti.</item>
+        <item>Svieť ďalej.</item>
+        <item>Snívajte, verte, dosahujte.</item>
+        <item>Buďte nezastaviteľní.</item>
+        <item>Vlastniť svoju veľkosť.</item>
+        <item>Prijmite nepoznané.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Verte v seba.</item>
+        <item>Vždy šírte láskavosť.</item>
+        <item>Ver svojim snom.</item>
+        <item>Zostaňte sústredení, odhodlaní.</item>
+        <item>Prijmite svoju cestu.</item>
+        <item>Hlavu hore.</item>
+        <item>Nikdy sa nevzdávajte nádeje.</item>
+        <item>Sila zvnútra.</item>
+        <item>Zostaňte odolný, silný.</item>
+        <item>Si nezastaviteľná!</item>
+        <item>Prijmite výzvu.</item>
+        <item>Udržujte oheň.</item>
+        <item>Sústreďte sa na to, čo je možné.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte.</item>
+        <item>Majte oči na cene.</item>
+        <item>Dôverujte procesu.</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Veriť, dosiahnuť, uspieť.</item>
+        <item>Zostaňte vždy inšpirovaní.</item>
+        <item>Buďte nebojácni pri prenasledovaní.</item>
+        <item>Zostaňte pri zemi, vstaňte.</item>
+        <item>Nájdite silu v boji.</item>
+        <item>Prijmite každú výzvu.</item>
+        <item>Zostaň odvážny, zostaň jasný.</item>
+        <item>Si schopný veľkosti.</item>
+        <item>Verte svojej ceste.</item>
+        <item>Bojuj, vstaň.</item>
+        <item>Verte v nemožné.</item>
+        <item>Zostaňte odolní, nikdy nedávajte.</item>
+        <item>Si silnejší ako vieš.</item>
+        <item>Žite s vášňou a zámerom.</item>
+        <item>Nájdite radosť na každej ceste.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaňte pozitívni, zostaňte silní.</item>
+        <item>Každý deň je nová šanca.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Pokračujte v posúvaní minulých limitov.</item>
+        <item>Dôverujte svojej vnútornej sile.</item>
+        <item>Si predurčený k veľkosti.</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspieť.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspieť.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Si predurčený k veľkosti!</item>
+        <item>Ver svojim snom!</item>
+        <item>Zostaňte odhodlaní, uspejte.</item>
+        <item>Pokračujte smerom k svojim cieľom.</item>
+        <item>Neúnavne choďte za svojimi snami.</item>
+        <item>Sila vychádza zvnútra.</item>
+        <item>Zamerajte sa na svoje ciele.</item>
+        <item>Si schopný všetkého.</item>
+        <item>Zostaň nebojácny, zostaň silný.</item>
+        <item>Veriť, dosiahnuť, uspieť!</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Zostaňte odolní, povzneste sa vyššie.</item>
+        <item>Máte silu v sebe.</item>
+        <item>Snívajte vo veľkom, tvrdo pracujte, dosahujte.</item>
+        <item>Zostaňte sústredení, zostaňte silní.</item>
+        <item>Si silnejší, než si myslíš!</item>
+        <item>Ver v seba, vždy.</item>
+        <item>Zostaňte odhodlaní, zostaňte silní.</item>
+        <item>Využite každú príležitosť.</item>
+        <item>Si schopný veľkosti!</item>
+        <item>Buď k sebe úprimný.</item>
+        <item>Dôverujte svojej ceste.</item>
+        <item>Pokračujte v tlačení dopredu.</item>
+        <item>Snívajte, verte, dosahujte!</item>
+    </string-array>
+    <string-array name="alignment_options">
+        <item>Vľavo</item>
+        <item>centrum</item>
+        <item>Správny</item>
+    </string-array>
+    <string name="search_engine">Vyhľadávač</string>
+    <string name="search_google">Google</string>
+    <string name="search_yahoo">Yahoo</string>
+    <string name="search_duckduckgo">DuckDuckGo</string>
+    <string name="search_bing">Bing</string>
+    <string name="search_brave">Statočný</string>
+    <string name="search_swisscow">SwissCows</string>
 </resources>
