@@ -5,10 +5,10 @@
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Frammento domestico</string>
     <string name="draw_fragment_label">Disegna il frammento</string>
-    <string name="favorite_fragment_label">Favorite Fragment</string>
-    <string name="hidden_fragment_label">Hidden Fragment</string>
-    <string name="settings_fragment_label">Settings Fragment</string>
-    <string name="widgets_fragment_label">Widgets Fragment</string>
+    <string name="favorite_fragment_label">Frammento preferito</string>
+    <string name="hidden_fragment_label">Frammento nascosto</string>
+    <string name="settings_fragment_label">Frammento Impostazioni</string>
+    <string name="widgets_fragment_label">Frammento di widget</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Ricerca</string>
     <string name="bottom_dialog_app_rename">Rinominare</string>
