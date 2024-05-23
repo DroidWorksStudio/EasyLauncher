@@ -1,548 +1,552 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">Einstellungen</string>
-	<string name="action_settings_default">Als Standard-Launcher festlegen</string>
-	<!-- Strings used for fragments for navigation -->
-	<string name="home_fragment_label">Startseite Fragment</string>
-	<string name="draw_fragment_label">Fragment zeichnen</string>
-	<string name="battery_level">%s%%</string>
-	<string name="search">Suchen</string>
-	<string name="bottom_dialog_app_rename">Umbenennen</string>
-	<string name="bottom_dialog_add_to_home">Zum Startbildschirm hinzufügen</string>
-	<string name="bottom_dialog_order_home_apps">Home Apps bestellen</string>
-	<string name="bottom_dialog_remove_from_home">Vom Home-Bildschirm entfernen</string>
-	<string name="bottom_dialog_add_to_hidden">Versteckte App</string>
-	<string name="bottom_dialog_remove_to_hidden">Versteckte App entfernen</string>
-	<string name="bottom_dialog_add_to_lock">App sperren</string>
-	<string name="bottom_dialog_remove_to_unlock">App entsperren</string>
-	<string name="bottom_dialog_app_info">App-Information</string>
-	<string name="bottom_dialog_app_uninstall">App deinstallieren</string>
-	<string name="settings_name">Launcher-Einstellungen</string>
-	<string name="settings_version">%s Version: %s</string>
-	<string name="settings_home">Heim</string>
-	<string name="settings_title_home_display_preferences">Anzeige</string>
-	<string name="settings_title_home_behavior_preferences">Verhalten</string>
-	<string name="settings_title_home_appearance_preferences">Aussehen</string>
-	<string name="settings_title_date_style">Datumsformat</string>
-	<string name="settings_title_time_style">Zeitstil</string>
-	<string name="settings_title_app_manager">App verwalten</string>
-	<string name="settings_title_gestures">Gesten</string>
-	<string name="settings_title_backups">Backups</string>
-	<string name="settings_title_others">Andere</string>
-	<string name="settings_display_status_bar">Zeige Statusleiste</string>
-	<string name="settings_display_date">Datum anzeigen</string>
-	<string name="settings_display_time">Zeit anzeigen</string>
-	<string name="settings_display_battery">Akku anzeigen</string>
-	<string name="settings_display_daily_word">Wort des Tages anzeigen</string>
-	<string name="settings_display_app_icons">App-Symbole anzeigen</string>
-	<string name="settings_display_automatic_keyboard">Tastatur automatisch einblenden</string>
-	<string name="settings_display_auto_open_apps">Letzte App automatisch öffnen</string>
-	<string name="settings_display_lock_settings">Sperreinstellungen</string>
-	<string name="settings_appearance_text_size_title">Größe</string>
-	<string name="settings_appearance_color_title">Farbe</string>
-	<string name="settings_appearance_alignment_title">Ausrichtung</string>
-	<string name="settings_appearance_padding_title">Polsterung</string>
-	<string name="settings_appearance_wallpaper">Benutzerdefiniertes Hintergrundbild</string>
-	<string name="settings_appearance_home_date_alignment">Datumsausrichtung</string>
-	<string name="settings_appearance_home_time_alignment">Zeitabgleich</string>
-	<string name="settings_appearance_home_app_alignment">Ausrichtung der Home-App</string>
-	<string name="appearance_bottom_dialog_text_size_title">Größe</string>
-	<string name="appearance_bottom_dialog_text_color_title">Farbe</string>
-	<string name="appearance_bottom_dialog_alignment_title">Ausrichtung</string>
-	<string name="appearance_bottom_dialog_padding_title">Polsterung</string>
-	<string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_time">Zeit\u0020:\u0020 </string>
-	<string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_word">Wort\u0020:\u0020</string>
-	<string name="appearance_bottom_dialog_desc_battery">Batterie\u0020:\u0020 </string>
-	<string name="settings_manager_favorite">Lieblings-Apps</string>
-	<string name="settings_manager_hidden">Versteckte Apps</string>
-	<string name="settings_select_wallpaper">Hintergrundbild auswählen</string>
-	<string name="settings_double_tap_lock">Zum Sperren doppeltippen</string>
-	<string name="settings_swipe_down_notification">Wischen Sie nach unten, um die Benachrichtigung zu erweitern</string>
-	<string name="settings_swipe_up_search">Nach oben wischen, um die Suchansicht zu öffnen</string>
-	<string name="settings_others_share">Aktie</string>
-	<string name="settings_others_feedback">Rückmeldung</string>
-	<string name="settings_others_github">Github</string>
-	<string name="settings_backups_backup">Sicherungseinstellungen</string>
-	<string name="settings_backups_restore">Einstellungen wiederherstellen</string>
-	<string name="settings_reload_app_backup">Einstellungen gesichert.</string>
-	<string name="settings_reload_app_restore">Einstellungen wiederhergestellt. Neustart.</string>
-	<string name="authentication_title">Authentifizierung</string>
-	<string name="authentication_subtitle">Melden Sie sich mit Ihren biometrischen Anmeldeinformationen an.</string>
-	<string name="authentication_cancel">Authentifizierung Abbrechen</string>
-	<string name="authentication_succeeded">Authentifizierung erfolgreich</string>
-	<string name="authentication_failed">Authentifizierung fehlgeschlagen</string>
-	<string name="authentication_error">Authentifizierungsfehler: %1$s(Code %2$d)</string>
-	<string name="bottom_alignment_star">Stern</string>
-	<string name="bottom_alignment_center">Center</string>
-	<string name="bottom_alignment_end">Ende</string>
-	<string name="accessibility_settings_title">Eingabehilfen-Einstellungen</string>
-	<string name="accessibility_settings_enable">Aktivieren</string>
-	<string name="accessibility_settings_disable">Deaktivieren</string>
-	<string name="accessibility_service_desc">Bitte aktivieren Sie den Eingabehilfedienst, um die Funktion „Doppeltippen zum Sperren“ im Easy Launcher zu verwenden.\n\nDiese Berechtigung wird nur verwendet, um Ihren Bildschirm auszuschalten. Unser Eingabehilfedienst sammelt oder gibt keine Daten weiter.</string>
-	<string name="admin_permission_message">Easy Launcher verspricht, die Sperrbildschirmberechtigung verantwortungsvoll zu nutzen. Easy Launcher sammelt oder gibt keine Daten weiter.</string>
-	<string-array name="settings_appearance_daily_word_default">
-		<item>Bleiben Sie widerstandsfähig!</item>
-		<item>Du schaffst das!</item>
-		<item>Hell strahlen!</item>
-		<item>Erschaffe Schicksal.</item>
-		<item>Umarme die Reise.</item>
-		<item>Kraft von innen.</item>
-		<item>Weiter so!</item>
-		<item>Du bist fantastisch!</item>
-		<item>Vertraue, gib niemals auf.</item>
-		<item>Grenzenloses Potenzial.</item>
-		<item>Fortschritt statt Perfektion.</item>
-		<item>Herausforderungen = Wachstum.</item>
-		<item>Erfolgreich.</item>
-		<item>Verfolge deine Träume.</item>
-		<item>Überwinde alles!</item>
-		<item>Entschlossenheit siegt.</item>
-		<item>Jeder Schritt zählt.</item>
-		<item>Bleib positiv!</item>
-		<item>Resilienz ist super.</item>
-		<item>Kraft in dir.</item>
-		<item>Feiern Sie den Fortschritt.</item>
-		<item>Harte Arbeit zahlt sich aus.</item>
-		<item>Vertraue, habe Glauben.</item>
-		<item>Einzigartige Reise.</item>
-		<item>Augen auf den Preis gerichtet.</item>
-		<item>Erreichen Sie alles!</item>
-		<item>Machen Sie mutige Schritte.</item>
-		<item>Leidenschaft treibt Sie an.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Durchhalten, gewinnen.</item>
-		<item>Der Schlüssel zum Glauben an sich selbst.</item>
-		<item>Verdient Gutes.</item>
-		<item>Greifen Sie nach Träumen.</item>
-		<item>Mutig, stark, klug.</item>
-		<item>Positive Einstellung.</item>
-		<item>Vertraue der Reise.</item>
-		<item>Unerschütterliche Entschlossenheit.</item>
-		<item>Rückschläge = Comeback.</item>
-		<item>Machen Sie Träume wahr.</item>
-		<item>Setzen Sie sich Ziele.</item>
-		<item>Stärke, keine Grenzen.</item>
-		<item>Kopf hoch, Durchbruch.</item>
-		<item>Ihr Potenzial erstrahlt.</item>
-		<item>Träume in Reichweite.</item>
-		<item>Du bist nicht aufzuhalten!</item>
-		<item>Glauben, Erreichen.</item>
-		<item>Überschreiten Sie Grenzen.</item>
-		<item>Durchhaltevermögen zahlt sich aus.</item>
-		<item>Bleiben Sie furchtlos!</item>
-		<item>Stellen Sie sich den Herausforderungen.</item>
-		<item>Träumen Sie weiterhin groß.</item>
-		<item>Lebe mit einem Ziel.</item>
-		<item>Auf das Gute fokussieren.</item>
-		<item>Kraft von innen.</item>
-		<item>Glaube an Magie.</item>
-		<item>Lächeln Sie, Sie schaffen das.</item>
-		<item>Gib nie die Hoffnung auf.</item>
-		<item>Umarmen jeden Augenblick.</item>
-		<item>Sein eigener Held sein.</item>
-		<item>Du bist genug.</item>
-		<item>Überwinde deine Ängste.</item>
-		<item>Nutze den Tag!</item>
-		<item>Liebe dich zuerst.</item>
-		<item>Bleiben Sie immer positiv.</item>
-		<item>Du bist ein Krieger.</item>
-		<item>An sich selbst glauben.</item>
-		<item>Nutzen Sie die Möglichkeiten.</item>
-		<item>Leben mit Leidenschaft.</item>
-		<item>Gib niemals auf.</item>
-		<item>Du bist nicht aufzuhalten!</item>
-		<item>Bleibe ehrlich zu dir selber.</item>
-		<item>Lebe mutig.</item>
-		<item>Behalte den Glauben.</item>
-		<item>Stärke in der Not.</item>
-		<item>Wachsen Sie jeden Tag.</item>
-		<item>Ausdauer, Sieg.</item>
-		<item>Verfolge deine Leidenschaften.</item>
-		<item>Finden Sie Freude an der Reise.</item>
-		<item>Gehen Sie Risiken ein und haben Sie Erfolg.</item>
-		<item>Bleib stark und mutig.</item>
-		<item>Vertraue der inneren Weisheit.</item>
-		<item>Leuchte weiterhin hell.</item>
-		<item>Träume, glaube, erreiche.</item>
-		<item>Seien Sie unaufhaltsam.</item>
-		<item>Stehen Sie zu Ihrer Größe.</item>
-		<item>Umarme das Unbekannte.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Vertraue dir selbst.</item>
-		<item>Verbreiten Sie immer Freundlichkeit.</item>
-		<item>Glaube an deine Träume.</item>
-		<item>Bleiben Sie konzentriert und zielstrebig.</item>
-		<item>Umarme deine Reise.</item>
-		<item>Kopf hoch.</item>
-		<item>Die Hoffnung nie aufgeben.</item>
-		<item>Kraft von innen.</item>
-		<item>Bleiben Sie belastbar und stark.</item>
-		<item>Du bist nicht aufzuhalten!</item>
-		<item>Nehmen Sie die Herausforderung an.</item>
-		<item>Lass das Feuer brennen.</item>
-		<item>Konzentrieren Sie sich auf das, was möglich ist.</item>
-		<item>Träume groß und arbeite hart.</item>
-		<item>Behalten Sie das Ziel im Auge.</item>
-		<item>Vertraue dem Prozess.</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Glauben, erreichen, erfolgreich sein.</item>
-		<item>Bleiben Sie immer inspiriert.</item>
-		<item>Seien Sie bei der Verfolgung furchtlos.</item>
-		<item>Bleib auf dem Boden, steh auf.</item>
-		<item>Finde Kraft im Kampf.</item>
-		<item>Nehmen Sie jede Herausforderung an.</item>
-		<item>Bleiben Sie mutig und hellwach.</item>
-		<item>Sie sind zu Großem fähig.</item>
-		<item>Vertraue deiner Reise.</item>
-		<item>Kämpfe weiter und steh weiter auf.</item>
-		<item>Glaube an das Unmögliche.</item>
-		<item>Bleiben Sie widerstandsfähig und geben Sie niemals auf.</item>
-		<item>Du bist stärker als du denkst.</item>
-		<item>Lebe mit Leidenschaft und Zielstrebigkeit.</item>
-		<item>Finden Sie Freude auf jeder Reise.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie positiv, bleiben Sie stark.</item>
-		<item>Jeder Tag ist eine neue Chance.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Überschreiten Sie weiterhin Grenzen.</item>
-		<item>Vertraue deiner inneren Stärke.</item>
-		<item>Sie sind zu Großem bestimmt.</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Kraft kommt von innen.</item>
-		<item>Konzentrieren Sie sich auf Ihre Ziele.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Sie sind zu Großem bestimmt!</item>
-		<item>Glaube an deine Träume!</item>
-		<item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
-		<item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
-		<item>Verfolge deine Träume unermüdlich.</item>
-		<item>Stärke kommt von innen.</item>
-		<item>Bleiben Sie auf Ihre Ziele fokussiert.</item>
-		<item>Du bist zu allem fähig.</item>
-		<item>Bleiben Sie furchtlos und stark.</item>
-		<item>Glauben, erreichen, erfolgreich sein!</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
-		<item>Du hast die Kraft in dir.</item>
-		<item>Träume groß, arbeite hart, erreiche etwas.</item>
-		<item>Bleiben Sie konzentriert und stark.</item>
-		<item>Du bist stärker als du denkst!</item>
-		<item>Glauben Sie immer an sich selbst.</item>
-		<item>Bleiben Sie entschlossen und stark.</item>
-		<item>Nutzen Sie jede Gelegenheit.</item>
-		<item>Sie sind zu Großem fähig!</item>
-		<item>Bleib dir selbst treu.</item>
-		<item>Vertraue auf deine Reise.</item>
-		<item>Machen Sie weiter so.</item>
-		<item>Träume, glaube, erreiche!</item>
-	</string-array>
-	<string-array name="alignment_options">
-		<item>Links</item>
-		<item>Mitte</item>
-		<item>Rechts</item>
-	</string-array>
-	<string name="search_engine">Suchmaschine</string>
-	<string name="search_google">Google</string>
-	<string name="search_yahoo">Yahoo</string>
-	<string name="search_duckduckgo">DuckDuckGo</string>
-	<string name="search_bing">Bing</string>
-	<string name="search_brave">Mutig</string>
-	<string name="search_swisscow">Schweizer Kühe</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_settings_default">Als Standard-Launcher festlegen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Startseite Fragment</string>
+    <string name="draw_fragment_label">Fragment zeichnen</string>
+    <string name="favorite_fragment_label">Favorite Fragment</string>
+    <string name="hidden_fragment_label">Hidden Fragment</string>
+    <string name="settings_fragment_label">Settings Fragment</string>
+    <string name="widgets_fragment_label">Widgets Fragment</string>
+    <string name="battery_level">%s%%</string>
+    <string name="search">Suchen</string>
+    <string name="bottom_dialog_app_rename">Umbenennen</string>
+    <string name="bottom_dialog_add_to_home">Zum Startbildschirm hinzufügen</string>
+    <string name="bottom_dialog_order_home_apps">Home Apps bestellen</string>
+    <string name="bottom_dialog_remove_from_home">Vom Home-Bildschirm entfernen</string>
+    <string name="bottom_dialog_add_to_hidden">Versteckte App</string>
+    <string name="bottom_dialog_remove_to_hidden">Versteckte App entfernen</string>
+    <string name="bottom_dialog_add_to_lock">App sperren</string>
+    <string name="bottom_dialog_remove_to_unlock">App entsperren</string>
+    <string name="bottom_dialog_app_info">App-Information</string>
+    <string name="bottom_dialog_app_uninstall">App deinstallieren</string>
+    <string name="settings_name">Launcher-Einstellungen</string>
+    <string name="settings_version">%s Version: %s</string>
+    <string name="settings_home">Heim</string>
+    <string name="settings_title_home_display_preferences">Anzeige</string>
+    <string name="settings_title_home_behavior_preferences">Verhalten</string>
+    <string name="settings_title_home_appearance_preferences">Aussehen</string>
+    <string name="settings_title_date_style">Datumsformat</string>
+    <string name="settings_title_time_style">Zeitstil</string>
+    <string name="settings_title_app_manager">App verwalten</string>
+    <string name="settings_title_gestures">Gesten</string>
+    <string name="settings_title_backups">Backups</string>
+    <string name="settings_title_others">Andere</string>
+    <string name="settings_display_status_bar">Zeige Statusleiste</string>
+    <string name="settings_display_date">Datum anzeigen</string>
+    <string name="settings_display_time">Zeit anzeigen</string>
+    <string name="settings_display_battery">Akku anzeigen</string>
+    <string name="settings_display_daily_word">Wort des Tages anzeigen</string>
+    <string name="settings_display_app_icons">App-Symbole anzeigen</string>
+    <string name="settings_display_automatic_keyboard">Tastatur automatisch einblenden</string>
+    <string name="settings_display_auto_open_apps">Letzte App automatisch öffnen</string>
+    <string name="settings_display_lock_settings">Sperreinstellungen</string>
+    <string name="settings_appearance_text_size_title">Größe</string>
+    <string name="settings_appearance_color_title">Farbe</string>
+    <string name="settings_appearance_alignment_title">Ausrichtung</string>
+    <string name="settings_appearance_padding_title">Polsterung</string>
+    <string name="settings_appearance_wallpaper">Benutzerdefiniertes Hintergrundbild</string>
+    <string name="settings_appearance_home_date_alignment">Datumsausrichtung</string>
+    <string name="settings_appearance_home_time_alignment">Zeitabgleich</string>
+    <string name="settings_appearance_home_app_alignment">Ausrichtung der Home-App</string>
+    <string name="appearance_bottom_dialog_text_size_title">Größe</string>
+    <string name="appearance_bottom_dialog_text_color_title">Farbe</string>
+    <string name="appearance_bottom_dialog_alignment_title">Ausrichtung</string>
+    <string name="appearance_bottom_dialog_padding_title">Polsterung</string>
+    <string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_time">Zeit\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_word">Wort\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_battery">Batterie\u0020:\u0020 </string>
+    <string name="settings_manager_favorite">Lieblings-Apps</string>
+    <string name="settings_manager_hidden">Versteckte Apps</string>
+    <string name="settings_select_wallpaper">Hintergrundbild auswählen</string>
+    <string name="settings_double_tap_lock">Zum Sperren doppeltippen</string>
+    <string name="settings_swipe_down_notification">Wischen Sie nach unten, um die Benachrichtigung zu erweitern</string>
+    <string name="settings_swipe_up_search">Nach oben wischen, um die Suchansicht zu öffnen</string>
+    <string name="settings_others_share">Aktie</string>
+    <string name="settings_others_feedback">Rückmeldung</string>
+    <string name="settings_others_github">Github</string>
+    <string name="settings_backups_backup">Sicherungseinstellungen</string>
+    <string name="settings_backups_restore">Einstellungen wiederherstellen</string>
+    <string name="settings_reload_app_backup">Einstellungen gesichert.</string>
+    <string name="settings_reload_app_restore">Einstellungen wiederhergestellt. Neustart.</string>
+    <string name="authentication_title">Authentifizierung</string>
+    <string name="authentication_subtitle">Melden Sie sich mit Ihren biometrischen Anmeldeinformationen an.</string>
+    <string name="authentication_cancel">Authentifizierung Abbrechen</string>
+    <string name="authentication_succeeded">Authentifizierung erfolgreich</string>
+    <string name="authentication_failed">Authentifizierung fehlgeschlagen</string>
+    <string name="authentication_error">Authentifizierungsfehler: %1$s(Code %2$d)</string>
+    <string name="bottom_alignment_star">Stern</string>
+    <string name="bottom_alignment_center">Center</string>
+    <string name="bottom_alignment_end">Ende</string>
+    <string name="accessibility_settings_title">Eingabehilfen-Einstellungen</string>
+    <string name="accessibility_settings_enable">Aktivieren</string>
+    <string name="accessibility_settings_disable">Deaktivieren</string>
+    <string name="accessibility_service_desc">Bitte aktivieren Sie den Eingabehilfedienst, um die Funktion „Doppeltippen zum Sperren“ im Easy Launcher zu verwenden.\n\nDiese Berechtigung wird nur verwendet, um Ihren Bildschirm auszuschalten. Unser Eingabehilfedienst sammelt oder gibt keine Daten weiter.</string>
+    <string name="admin_permission_message">Easy Launcher verspricht, die Sperrbildschirmberechtigung verantwortungsvoll zu nutzen. Easy Launcher sammelt oder gibt keine Daten weiter.</string>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>Bleiben Sie widerstandsfähig!</item>
+        <item>Du schaffst das!</item>
+        <item>Hell strahlen!</item>
+        <item>Erschaffe Schicksal.</item>
+        <item>Umarme die Reise.</item>
+        <item>Kraft von innen.</item>
+        <item>Weiter so!</item>
+        <item>Du bist fantastisch!</item>
+        <item>Vertraue, gib niemals auf.</item>
+        <item>Grenzenloses Potenzial.</item>
+        <item>Fortschritt statt Perfektion.</item>
+        <item>Herausforderungen = Wachstum.</item>
+        <item>Erfolgreich.</item>
+        <item>Verfolge deine Träume.</item>
+        <item>Überwinde alles!</item>
+        <item>Entschlossenheit siegt.</item>
+        <item>Jeder Schritt zählt.</item>
+        <item>Bleib positiv!</item>
+        <item>Resilienz ist super.</item>
+        <item>Kraft in dir.</item>
+        <item>Feiern Sie den Fortschritt.</item>
+        <item>Harte Arbeit zahlt sich aus.</item>
+        <item>Vertraue, habe Glauben.</item>
+        <item>Einzigartige Reise.</item>
+        <item>Augen auf den Preis gerichtet.</item>
+        <item>Erreichen Sie alles!</item>
+        <item>Machen Sie mutige Schritte.</item>
+        <item>Leidenschaft treibt Sie an.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Durchhalten, gewinnen.</item>
+        <item>Der Schlüssel zum Glauben an sich selbst.</item>
+        <item>Verdient Gutes.</item>
+        <item>Greifen Sie nach Träumen.</item>
+        <item>Mutig, stark, klug.</item>
+        <item>Positive Einstellung.</item>
+        <item>Vertraue der Reise.</item>
+        <item>Unerschütterliche Entschlossenheit.</item>
+        <item>Rückschläge = Comeback.</item>
+        <item>Machen Sie Träume wahr.</item>
+        <item>Setzen Sie sich Ziele.</item>
+        <item>Stärke, keine Grenzen.</item>
+        <item>Kopf hoch, Durchbruch.</item>
+        <item>Ihr Potenzial erstrahlt.</item>
+        <item>Träume in Reichweite.</item>
+        <item>Du bist nicht aufzuhalten!</item>
+        <item>Glauben, Erreichen.</item>
+        <item>Überschreiten Sie Grenzen.</item>
+        <item>Durchhaltevermögen zahlt sich aus.</item>
+        <item>Bleiben Sie furchtlos!</item>
+        <item>Stellen Sie sich den Herausforderungen.</item>
+        <item>Träumen Sie weiterhin groß.</item>
+        <item>Lebe mit einem Ziel.</item>
+        <item>Auf das Gute fokussieren.</item>
+        <item>Kraft von innen.</item>
+        <item>Glaube an Magie.</item>
+        <item>Lächeln Sie, Sie schaffen das.</item>
+        <item>Gib nie die Hoffnung auf.</item>
+        <item>Umarmen jeden Augenblick.</item>
+        <item>Sein eigener Held sein.</item>
+        <item>Du bist genug.</item>
+        <item>Überwinde deine Ängste.</item>
+        <item>Nutze den Tag!</item>
+        <item>Liebe dich zuerst.</item>
+        <item>Bleiben Sie immer positiv.</item>
+        <item>Du bist ein Krieger.</item>
+        <item>An sich selbst glauben.</item>
+        <item>Nutzen Sie die Möglichkeiten.</item>
+        <item>Leben mit Leidenschaft.</item>
+        <item>Gib niemals auf.</item>
+        <item>Du bist nicht aufzuhalten!</item>
+        <item>Bleibe ehrlich zu dir selber.</item>
+        <item>Lebe mutig.</item>
+        <item>Behalte den Glauben.</item>
+        <item>Stärke in der Not.</item>
+        <item>Wachsen Sie jeden Tag.</item>
+        <item>Ausdauer, Sieg.</item>
+        <item>Verfolge deine Leidenschaften.</item>
+        <item>Finden Sie Freude an der Reise.</item>
+        <item>Gehen Sie Risiken ein und haben Sie Erfolg.</item>
+        <item>Bleib stark und mutig.</item>
+        <item>Vertraue der inneren Weisheit.</item>
+        <item>Leuchte weiterhin hell.</item>
+        <item>Träume, glaube, erreiche.</item>
+        <item>Seien Sie unaufhaltsam.</item>
+        <item>Stehen Sie zu Ihrer Größe.</item>
+        <item>Umarme das Unbekannte.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Vertraue dir selbst.</item>
+        <item>Verbreiten Sie immer Freundlichkeit.</item>
+        <item>Glaube an deine Träume.</item>
+        <item>Bleiben Sie konzentriert und zielstrebig.</item>
+        <item>Umarme deine Reise.</item>
+        <item>Kopf hoch.</item>
+        <item>Die Hoffnung nie aufgeben.</item>
+        <item>Kraft von innen.</item>
+        <item>Bleiben Sie belastbar und stark.</item>
+        <item>Du bist nicht aufzuhalten!</item>
+        <item>Nehmen Sie die Herausforderung an.</item>
+        <item>Lass das Feuer brennen.</item>
+        <item>Konzentrieren Sie sich auf das, was möglich ist.</item>
+        <item>Träume groß und arbeite hart.</item>
+        <item>Behalten Sie das Ziel im Auge.</item>
+        <item>Vertraue dem Prozess.</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Glauben, erreichen, erfolgreich sein.</item>
+        <item>Bleiben Sie immer inspiriert.</item>
+        <item>Seien Sie bei der Verfolgung furchtlos.</item>
+        <item>Bleib auf dem Boden, steh auf.</item>
+        <item>Finde Kraft im Kampf.</item>
+        <item>Nehmen Sie jede Herausforderung an.</item>
+        <item>Bleiben Sie mutig und hellwach.</item>
+        <item>Sie sind zu Großem fähig.</item>
+        <item>Vertraue deiner Reise.</item>
+        <item>Kämpfe weiter und steh weiter auf.</item>
+        <item>Glaube an das Unmögliche.</item>
+        <item>Bleiben Sie widerstandsfähig und geben Sie niemals auf.</item>
+        <item>Du bist stärker als du denkst.</item>
+        <item>Lebe mit Leidenschaft und Zielstrebigkeit.</item>
+        <item>Finden Sie Freude auf jeder Reise.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie positiv, bleiben Sie stark.</item>
+        <item>Jeder Tag ist eine neue Chance.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Überschreiten Sie weiterhin Grenzen.</item>
+        <item>Vertraue deiner inneren Stärke.</item>
+        <item>Sie sind zu Großem bestimmt.</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Stärke kommt von innen.</item>
+        <item>Bleiben Sie auf Ihre Ziele fokussiert.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+    </string-array>
+    <string-array name="alignment_options">
+        <item>Links</item>
+        <item>Mitte</item>
+        <item>Rechts</item>
+    </string-array>
+    <string name="search_engine">Suchmaschine</string>
+    <string name="search_google">Google</string>
+    <string name="search_yahoo">Yahoo</string>
+    <string name="search_duckduckgo">DuckDuckGo</string>
+    <string name="search_bing">Bing</string>
+    <string name="search_brave">Mutig</string>
+    <string name="search_swisscow">Schweizer Kühe</string>
 </resources>
