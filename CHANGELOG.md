@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the home screen not being reset. - ([80c9ccd](https://github.com/DroidWorksStudio/EasyLauncher/commit/80c9ccd163e414cd2f9c1b90dc36582fba18457e))
+
 ### Refactoring:
 
 - Cleaned up some TODO junk. - ([45181ba](https://github.com/DroidWorksStudio/EasyLauncher/commit/45181baee8b443d3b0050e7f72568fe5c10a628e))
