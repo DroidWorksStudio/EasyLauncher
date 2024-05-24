@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed navigation and click issues. - ([b297fb2](https://github.com/DroidWorksStudio/EasyLauncher/commit/b297fb246016787011888151c2cb2a10ae7a7811))
 - Fixed the home screen not being reset. - ([80c9ccd](https://github.com/DroidWorksStudio/EasyLauncher/commit/80c9ccd163e414cd2f9c1b90dc36582fba18457e))
 
 ### Language Support:
