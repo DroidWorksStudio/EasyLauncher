@@ -3,7 +3,6 @@ package com.github.droidworksstudio.launcher.ui.settings
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -63,8 +62,13 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         initializeInjectedDependencies()
         observeClickListener()
 
-        val packageInfo = requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
-        binding.versionInfo.text = getString(R.string.settings_version, getString(R.string.app_name), packageInfo.versionName)
+        val packageInfo =
+            requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
+        binding.versionInfo.text = getString(
+            R.string.settings_version,
+            getString(R.string.app_name),
+            packageInfo.versionName
+        )
     }
 
     @SuppressLint("SetTextI18n")
@@ -142,12 +146,20 @@ class SettingsFragment : Fragment(), ScrollEventListener {
 
         binding.backupView.setOnClickListener {
             appHelper.backupSharedPreferences(requireContext())
-            Toast.makeText(requireContext(), getString(R.string.settings_reload_app_backup), Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                getString(R.string.settings_reload_app_backup),
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
         binding.restoreView.setOnClickListener {
             appHelper.restoreSharedPreferences(requireContext())
-            Toast.makeText(requireContext(), getString(R.string.settings_reload_app_restore), Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                getString(R.string.settings_reload_app_restore),
+                Toast.LENGTH_SHORT
+            ).show()
             restartApp()
         }
     }
@@ -178,7 +190,10 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         }
 
         binding.gesturesLockSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
-            appHelper.enableAppAsAccessibilityService(requireContext(), preferenceHelper.tapLockScreen)
+            appHelper.enableAppAsAccessibilityService(
+                requireContext(),
+                preferenceHelper.tapLockScreen
+            )
             preferenceViewModel.setDoubleTapLock(isChecked)
         }
 

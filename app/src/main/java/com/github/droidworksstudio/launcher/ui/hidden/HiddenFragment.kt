@@ -12,7 +12,6 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -20,7 +19,6 @@ import com.github.droidworksstudio.launcher.databinding.FragmentHiddenBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
-import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -66,7 +64,6 @@ class HiddenFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         context = requireContext()
 
         setupRecyclerView()
-        observeSwipeTouchListener()
         observeHiddenApps()
     }
 
@@ -77,20 +74,6 @@ class HiddenFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             setHasFixedSize(false)
         }
 
-    }
-
-    @SuppressLint("ClickableViewAccessibility")
-    private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
-    }
-
-    private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context) {
-            override fun onSwipeLeft() {
-                super.onSwipeLeft()
-                findNavController().popBackStack()
-            }
-        }
     }
 
     private fun observeHiddenApps() {

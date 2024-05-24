@@ -113,7 +113,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     @SuppressLint("ClickableViewAccessibility")
     private fun initSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.nestScrollView.setOnTouchListener(getSwipeGestureListener(context))
 
         binding.clock.setOnClickListener { appHelper.launchClock(context) }
         binding.date.setOnClickListener { appHelper.launchCalendar(context) }

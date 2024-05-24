@@ -24,14 +24,11 @@ import android.view.WindowManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.LinearLayoutCompat
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.MyAccessibilityService
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
-import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 import java.util.Calendar
 import java.util.Date
@@ -42,6 +39,14 @@ import kotlin.math.sqrt
 class AppHelper @Inject constructor() {
 
     fun resetDefaultLauncher(context: Context) {
+        val manufacturer = Build.MANUFACTURER.lowercase()
+        when (manufacturer) {
+            "google", "essential" -> runningStockAndroid(context)
+            else -> notRunningStockAndroid(context)
+        }
+    }
+
+    private fun runningStockAndroid(context: Context) {
         try {
             val packageManager = context.packageManager
             val componentName = ComponentName(context, FakeHomeActivity::class.java)
@@ -63,18 +68,20 @@ class AppHelper @Inject constructor() {
             )
         } catch (e: Exception) {
             e.printStackTrace()
-            // Additional step to open the launcher settings if the first method fails
+        }
+    }
+
+    private fun notRunningStockAndroid(context: Context) {
+        try {
+            val intent = Intent("android.settings.HOME_SETTINGS")
+            context.startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+            // Fallback to general settings if specific launcher settings are not found
             try {
-                val intent = Intent("android.settings.HOME_SETTINGS")
+                val intent = Intent(Settings.ACTION_SETTINGS)
                 context.startActivity(intent)
-            } catch (e: ActivityNotFoundException) {
-                // Fallback to general settings if specific launcher settings are not found
-                try {
-                    val intent = Intent(Settings.ACTION_SETTINGS)
-                    context.startActivity(intent)
-                } catch (e: Exception) {
-                    e.printStackTrace()
-                }
+            } catch (e: Exception) {
+                e.printStackTrace()
             }
         }
     }
@@ -119,11 +126,21 @@ class AppHelper @Inject constructor() {
     fun dayNightMod(context: Context, view: View) {
         when (context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
             Configuration.UI_MODE_NIGHT_YES -> {
-                view.setBackgroundColor(context.resources.getColor(R.color.blackTrans25, context.theme))
+                view.setBackgroundColor(
+                    context.resources.getColor(
+                        R.color.blackTrans25,
+                        context.theme
+                    )
+                )
             }
 
             Configuration.UI_MODE_NIGHT_NO -> {
-                view.setBackgroundColor(context.resources.getColor(R.color.whiteTrans25, context.theme))
+                view.setBackgroundColor(
+                    context.resources.getColor(
+                        R.color.whiteTrans25,
+                        context.theme
+                    )
+                )
             }
         }
     }
@@ -149,6 +166,7 @@ class AppHelper @Inject constructor() {
             showToast(context, "Failed to open the application")
         }
     }
+
     fun launchClock(context: Context) {
         try {
             val intent = Intent(AlarmClock.ACTION_SHOW_ALARMS)
@@ -190,7 +208,7 @@ class AppHelper @Inject constructor() {
         } catch (e: ActivityNotFoundException) {
             // Digital Wellbeing app is not installed or cannot be opened
             // Handle this case as needed
-            showToast(context,"Digital Wellbeing is not available on this device.")
+            showToast(context, "Digital Wellbeing is not available on this device.")
         }
     }
 
@@ -239,7 +257,7 @@ class AppHelper @Inject constructor() {
     }
 
 
-    fun showToast(context: Context,message: String) {
+    fun showToast(context: Context, message: String) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
     }
 
@@ -273,33 +291,39 @@ class AppHelper @Inject constructor() {
         windowManager.defaultDisplay.getMetrics(metrics)
         val widthInches = metrics.widthPixels / metrics.xdpi
         val heightInches = metrics.heightPixels / metrics.ydpi
-        val diagonalInches = sqrt(widthInches.toDouble().pow(2.0) + heightInches.toDouble().pow(2.0))
+        val diagonalInches =
+            sqrt(widthInches.toDouble().pow(2.0) + heightInches.toDouble().pow(2.0))
         if (diagonalInches >= 7.0) return true
         return false
     }
 
     fun wordOfTheDay(resources: Resources): String {
-        val dailyWordsArray = resources.getStringArray(R.array.settings_appearance_daily_word_default)
+        val dailyWordsArray =
+            resources.getStringArray(R.array.settings_appearance_daily_word_default)
         val dayOfYear = Calendar.getInstance().get(Calendar.DAY_OF_YEAR)
-        val wordIndex = (dayOfYear - 1) % dailyWordsArray.size // Subtracting 1 to align with array indexing
+        val wordIndex =
+            (dayOfYear - 1) % dailyWordsArray.size // Subtracting 1 to align with array indexing
         return dailyWordsArray[wordIndex]
     }
 
-    fun shareAppButton(context: Context){
+    fun shareAppButton(context: Context) {
         val shareIntent = Intent(Intent.ACTION_SEND)
         shareIntent.type = "text/plain"
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Share Application")
-        shareIntent.putExtra(Intent.EXTRA_TEXT, "https://f-droid.org/packages/" + context.packageName)
+        shareIntent.putExtra(
+            Intent.EXTRA_TEXT,
+            "https://f-droid.org/packages/" + context.packageName
+        )
         context.startActivity(Intent.createChooser(shareIntent, "Share Application"))
     }
 
-    fun githubButton(context: Context){
+    fun githubButton(context: Context) {
         val uri = Uri.parse("https://github.com/DroidWorksStudio/EasyLauncher")
         val intent = Intent(Intent.ACTION_VIEW, uri)
         context.startActivity(intent)
     }
 
-    fun feedbackButton(context: Context){
+    fun feedbackButton(context: Context) {
         val emailIntent = Intent(Intent.ACTION_SENDTO)
         emailIntent.data = Uri.parse("mailto:droidworksstuido@063240.xyz")
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Easy Launcher")
@@ -336,6 +360,7 @@ class AppHelper @Inject constructor() {
                 }
                 builder.show()
             }
+
             else -> {
                 return
             }

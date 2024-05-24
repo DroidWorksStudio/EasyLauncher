@@ -32,7 +32,7 @@
                 android:layout_marginTop="48dp"
                 android:text="@string/settings_name"
                 android:textSize="@dimen/text_super_large"
-                style="@style/TextDefaultStyle"/>
+                style="@style/TextDefaultStyle" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/version_info"
@@ -42,7 +42,7 @@
                 android:layout_marginTop="18dp"
                 android:text="@string/settings_version"
                 android:textSize="@dimen/text_large"
-                style="@style/TextDefaultStyle"/>
+                style="@style/TextDefaultStyle" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/set_launcher_selector"
@@ -52,7 +52,7 @@
                 android:layout_marginTop="18dp"
                 android:text="@string/action_settings_default"
                 android:textSize="@dimen/text_large"
-                style="@style/TextDefaultStyle"/>
+                style="@style/TextDefaultStyle" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                     android:layout_margin="20dp"
                     android:text="@string/settings_title_app_manager"
                     android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle"/>
+                    style="@style/TextDefaultStyle" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -125,7 +125,7 @@
                     android:layout_margin="20dp"
                     android:text="@string/settings_title_home_behavior_preferences"
                     android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle"/>
+                    style="@style/TextDefaultStyle" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -145,7 +145,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/automaticKeyboard_switchCompat"
@@ -177,7 +177,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/automaticOpenApp_switchCompat"
@@ -209,7 +209,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/lockSettings_switchCompat"
@@ -236,7 +236,7 @@
                     android:layout_margin="20dp"
                     android:text="@string/settings_title_home_display_preferences"
                     android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle"/>
+                    style="@style/TextDefaultStyle" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -256,7 +256,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/statue_bar_switchCompat"
@@ -288,7 +288,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/date_switchCompat"
@@ -320,7 +320,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/time_switchCompat"
@@ -352,7 +352,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/battery_switchCompat"
@@ -384,7 +384,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/dailyWord_switchCompat"
@@ -416,7 +416,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/appIcons_switchCompat"
@@ -443,7 +443,7 @@
                     android:layout_margin="20dp"
                     android:text="@string/settings_title_home_appearance_preferences"
                     android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle"/>
+                    style="@style/TextDefaultStyle" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/select_appearance_text_size"
@@ -464,7 +464,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -487,7 +487,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -576,7 +576,7 @@
                         android:layout_margin="20dp"
                         android:text="@string/settings_title_gestures"
                         android:textSize="@dimen/text_super_large"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
@@ -596,7 +596,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle"/>
+                            style="@style/TextDefaultStyle" />
 
                         <androidx.appcompat.widget.SwitchCompat
                             android:id="@+id/gestures_lock_switchCompat"
@@ -605,7 +605,7 @@
                             android:thumb="@drawable/shape_switch_thumb"
                             app:track="@drawable/selector_switch"
                             android:scaleY="0.8"
-                            android:scaleX="0.7"/>
+                            android:scaleX="0.7" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -627,7 +627,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle"/>
+                            style="@style/TextDefaultStyle" />
 
                         <androidx.appcompat.widget.SwitchCompat
                             android:id="@+id/gestures_notification_switchCompat"
@@ -636,7 +636,7 @@
                             android:thumb="@drawable/shape_switch_thumb"
                             app:track="@drawable/selector_switch"
                             android:scaleY="0.8"
-                            android:scaleX="0.7"/>
+                            android:scaleX="0.7" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -658,7 +658,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle"/>
+                            style="@style/TextDefaultStyle" />
 
                         <androidx.appcompat.widget.SwitchCompat
                             android:id="@+id/gestures_search_switchCompat"
@@ -667,7 +667,7 @@
                             android:thumb="@drawable/shape_switch_thumb"
                             app:track="@drawable/selector_switch"
                             android:scaleY="0.8"
-                            android:scaleX="0.7"/>
+                            android:scaleX="0.7" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -685,7 +685,7 @@
                         android:layout_margin="20dp"
                         android:text="@string/settings_title_backups"
                         android:textSize="@dimen/text_super_large"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
@@ -701,7 +701,7 @@
                             android:text="@string/settings_backups_backup"
                             android:textSize="@dimen/text_large"
                             android:layout_marginVertical="10dp"
-                            style="@style/TextDefaultStyle"/>
+                            style="@style/TextDefaultStyle" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
@@ -710,17 +710,17 @@
                             android:text="@string/settings_backups_restore"
                             android:textSize="@dimen/text_large"
                             android:layout_marginVertical="10dp"
-                            style="@style/TextDefaultStyle"/>
+                            style="@style/TextDefaultStyle" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
@@ -728,7 +728,7 @@
                         android:layout_margin="20dp"
                         android:text="@string/settings_title_others"
                         android:textSize="@dimen/text_super_large"
-                        style="@style/TextDefaultStyle"/>
+                        style="@style/TextDefaultStyle" />
 
 
                     <androidx.appcompat.widget.LinearLayoutCompat
@@ -748,7 +748,7 @@
                             android:text="@string/settings_others_share"
                             android:textSize="@dimen/text_large"
                             android:layout_marginHorizontal="10dp"
-                            style="@style/TextDefaultStyle"/>
+                            style="@style/TextDefaultStyle" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
@@ -757,7 +757,7 @@
                             android:text="@string/settings_others_github"
                             android:textSize="@dimen/text_large"
                             android:layout_marginHorizontal="10dp"
-                            style="@style/TextDefaultStyle"/>
+                            style="@style/TextDefaultStyle" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
@@ -766,7 +766,7 @@
                             android:text="@string/settings_others_feedback"
                             android:textSize="@dimen/text_large"
                             android:layout_marginHorizontal="10dp"
-                            style="@style/TextDefaultStyle"/>
+                            style="@style/TextDefaultStyle" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -776,12 +776,5 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </com.github.droidworksstudio.launcher.view.GestureNestedScrollView>
-
-    <FrameLayout
-        android:id="@+id/touchArea"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
 </FrameLayout>

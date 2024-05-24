@@ -40,7 +40,7 @@
                 app:queryBackground="@null"
                 app:searchIcon="@null"
                 app:queryHint="@string/search"
-                tools:ignore="VisualLintTextFieldSize"/>
+                tools:ignore="VisualLintTextFieldSize" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -50,13 +50,6 @@
             android:layout_height="wrap_content" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <FrameLayout
-        android:id="@+id/touchArea"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/draw_search_button"
