@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -17,6 +16,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentFavoriteBinding
@@ -214,19 +214,21 @@ class FavoriteFragment : Fragment(),
     }
 
     override fun onAuthenticationSucceeded(appInfo: AppInfo) {
-        Toast.makeText(context, getString(R.string.authentication_succeeded), Toast.LENGTH_SHORT)
-            .show()
+        context.showLongToast(getString(R.string.authentication_succeeded))
         appHelper.launchApp(context, appInfo)
     }
 
     override fun onAuthenticationFailed() {
-        Toast.makeText(context, getString(R.string.authentication_failed), Toast.LENGTH_SHORT)
-            .show()
+        context.showLongToast(getString(R.string.authentication_failed))
     }
 
     override fun onAuthenticationError(errorCode: Int, errorMessage: CharSequence?) {
-        Toast.makeText(context, getString(R.string.authentication_error), Toast.LENGTH_SHORT)
-            .show()
+        context.showLongToast(
+            getString(R.string.authentication_error).format(
+                errorMessage,
+                errorCode
+            )
+        )
     }
 
     override fun onViewMoved(oldPosition: Int, newPosition: Int): Boolean {

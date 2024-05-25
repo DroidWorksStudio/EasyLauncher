@@ -8,9 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
+import com.github.droidworksstudio.ktx.showLongToast
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogColorSettingsBinding
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
@@ -52,7 +52,7 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
         observeClickListener()
     }
 
-    private fun initView(){
+    private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
         binding.selectDateTextColor.apply {
@@ -82,7 +82,7 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
     }
 
 
-    private fun observeClickListener(){
+    private fun observeClickListener() {
         binding.bottomColorDateView.setOnClickListener {
             showColorPickerDialog(
                 binding.selectDateTextColor,
@@ -165,7 +165,7 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
                 }
             }
         }) {
-            Toast.makeText(context, "onCancel", Toast.LENGTH_SHORT).show()
+            context?.showLongToast("onCancel")
         }
     }
 

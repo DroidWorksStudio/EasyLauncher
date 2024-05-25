@@ -19,6 +19,8 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.github.droidworksstudio.ktx.hideKeyboard
+import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -26,7 +28,6 @@ import com.github.droidworksstudio.launcher.databinding.FragmentHomeBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.helper.hideKeyboard
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
@@ -295,13 +296,11 @@ class HomeFragment : Fragment(),
                         errString: CharSequence
                     ) {
                         when (errorCode) {
-                            BiometricPrompt.ERROR_USER_CANCELED -> appHelper.showToast(
-                                requireContext(),
+                            BiometricPrompt.ERROR_USER_CANCELED -> requireContext().showLongToast(
                                 getString(R.string.authentication_cancel)
                             )
 
-                            else -> appHelper.showToast(
-                                requireContext(),
+                            else -> requireContext().showLongToast(
                                 getString(R.string.authentication_error).format(
                                     errString,
                                     errorCode
@@ -315,10 +314,7 @@ class HomeFragment : Fragment(),
                     }
 
                     override fun onAuthenticationFailed() {
-                        appHelper.showToast(
-                            requireContext(),
-                            getString(R.string.authentication_failed)
-                        )
+                        requireContext().showLongToast(getString(R.string.authentication_failed))
                     }
                 })
 
@@ -364,23 +360,22 @@ class HomeFragment : Fragment(),
 
     override fun onAuthenticationSucceeded(appInfo: AppInfo) {
         appHelper.launchApp(context, appInfo)
-        appHelper.showToast(context, getString(R.string.authentication_succeeded))
+        requireContext().showLongToast(getString(R.string.authentication_succeeded))
     }
 
     override fun onAuthenticationFailed() {
-        appHelper.showToast(context, getString(R.string.authentication_failed))
+        requireContext().showLongToast(getString(R.string.authentication_failed))
     }
 
     override fun onAuthenticationError(errorCode: Int, errorMessage: CharSequence?) {
         when (errorCode) {
-            BiometricPrompt.ERROR_USER_CANCELED -> appHelper.showToast(
-                requireContext(),
-                getString(R.string.authentication_cancel)
-            )
+            BiometricPrompt.ERROR_USER_CANCELED -> requireContext().showLongToast(getString(R.string.authentication_cancel))
 
-            else -> appHelper.showToast(
-                requireContext(),
-                getString(R.string.authentication_error).format(errorMessage, errorCode)
+            else -> requireContext().showLongToast(
+                getString(R.string.authentication_error).format(
+                    errorMessage,
+                    errorCode
+                )
             )
         }
     }

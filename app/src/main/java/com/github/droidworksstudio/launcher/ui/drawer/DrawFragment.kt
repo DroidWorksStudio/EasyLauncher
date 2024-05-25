@@ -7,7 +7,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -15,17 +14,18 @@ import androidx.lifecycle.coroutineScope
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.github.droidworksstudio.ktx.hideKeyboard
+import com.github.droidworksstudio.ktx.openSearch
+import com.github.droidworksstudio.ktx.showKeyboard
+import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentDrawBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.helper.hideKeyboard
-import com.github.droidworksstudio.launcher.helper.openSearch
 import com.github.droidworksstudio.launcher.helper.searchCustomSearchEngine
 import com.github.droidworksstudio.launcher.helper.searchOnPlayStore
-import com.github.droidworksstudio.launcher.helper.showKeyboard
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
@@ -244,19 +244,21 @@ class DrawFragment : Fragment(),
     }
 
     override fun onAuthenticationSucceeded(appInfo: AppInfo) {
-        Toast.makeText(context, getString(R.string.authentication_succeeded), Toast.LENGTH_SHORT)
-            .show()
+        context.showLongToast(getString(R.string.authentication_succeeded))
         appHelper.launchApp(context, appInfo)
     }
 
     override fun onAuthenticationFailed() {
-        Toast.makeText(context, getString(R.string.authentication_failed), Toast.LENGTH_SHORT)
-            .show()
+        context.showLongToast(getString(R.string.authentication_failed))
     }
 
     override fun onAuthenticationError(errorCode: Int, errorMessage: CharSequence?) {
-        Toast.makeText(context, getString(R.string.authentication_error), Toast.LENGTH_SHORT)
-            .show()
+        context.showLongToast(
+            getString(R.string.authentication_error).format(
+                errorMessage,
+                errorCode
+            )
+        )
     }
 }
 

@@ -24,6 +24,7 @@ import android.view.WindowManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.LinearLayoutCompat
+import com.github.droidworksstudio.ktx.showLongToast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
@@ -163,7 +164,7 @@ class AppHelper @Inject constructor() {
         if (intent != null) {
             context.startActivity(intent)
         } else {
-            showToast(context, "Failed to open the application")
+            context.showLongToast("Failed to open the application")
         }
     }
 
@@ -208,7 +209,7 @@ class AppHelper @Inject constructor() {
         } catch (e: ActivityNotFoundException) {
             // Digital Wellbeing app is not installed or cannot be opened
             // Handle this case as needed
-            showToast(context, "Digital Wellbeing is not available on this device.")
+            context.showLongToast("Digital Wellbeing is not available on this device.")
         }
     }
 
@@ -220,7 +221,7 @@ class AppHelper @Inject constructor() {
         } catch (e: ActivityNotFoundException) {
             // Battery manager settings cannot be opened
             // Handle this case as needed
-            showToast(context, "Battery manager settings are not available on this device.")
+            context.showLongToast("Battery manager settings are not available on this device.")
         }
     }
 
@@ -254,11 +255,6 @@ class AppHelper @Inject constructor() {
             "Right" -> Gravity.END
             else -> Gravity.START
         }
-    }
-
-
-    fun showToast(context: Context, message: String) {
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
     }
 
     fun showStatusBar(window: Window) {

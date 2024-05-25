@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
+import com.github.droidworksstudio.ktx.showLongToast
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -74,9 +75,12 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
         bottomDialogHelper.setupDialogStyle(dialog)
 
         binding.run {
-            bottomSheetFavHidden.text = getString(if (!appInfo.favorite) R.string.bottom_dialog_add_to_home else R.string.bottom_dialog_remove_from_home)
-            bottomSheetHidden.text = getString(if (!appInfo.hidden) R.string.bottom_dialog_add_to_hidden else R.string.bottom_dialog_remove_to_hidden)
-            bottomSheetLock.text = getString(if (!appInfo.lock) R.string.bottom_dialog_add_to_lock else R.string.bottom_dialog_remove_to_unlock)
+            bottomSheetFavHidden.text =
+                getString(if (!appInfo.favorite) R.string.bottom_dialog_add_to_home else R.string.bottom_dialog_remove_from_home)
+            bottomSheetHidden.text =
+                getString(if (!appInfo.hidden) R.string.bottom_dialog_add_to_hidden else R.string.bottom_dialog_remove_to_hidden)
+            bottomSheetLock.text =
+                getString(if (!appInfo.lock) R.string.bottom_dialog_add_to_lock else R.string.bottom_dialog_remove_to_unlock)
             bottomSheetRename.setText(appInfo.appName)
             bottomSheetOrder.text = appInfo.appOrder.toString()
         }
@@ -121,7 +125,12 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
 
             override fun afterTextChanged(s: Editable?) {
                 if (s.isNullOrEmpty()) {
-                    binding.bottomSheetRename.setHintTextColor(ContextCompat.getColor(requireContext(), R.color.white))
+                    binding.bottomSheetRename.setHintTextColor(
+                        ContextCompat.getColor(
+                            requireContext(),
+                            R.color.white
+                        )
+                    )
                     binding.bottomSheetRename.hint = appName
                     appInfo.appName = appName ?: ""
                 } else {
@@ -149,8 +158,7 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
         binding.bottomSheetLock.setOnClickListener {
             if (appInfo.lock) {
                 fingerHelper.startFingerprintAuth(appInfo, this)
-            }
-            else {
+            } else {
                 appInfo.lock = true
                 viewModel.updateAppLock(appInfo, appInfo.lock)
                 dismiss()
@@ -175,14 +183,19 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
         viewModel.updateAppLock(appInfo, appInfo.lock)
         dismiss()
 
-        appHelper.showToast(requireContext(), getString(R.string.authentication_succeeded))
+        requireContext().showLongToast(getString(R.string.authentication_succeeded))
     }
 
     override fun onAuthenticationFailed() {
-        appHelper.showToast(requireContext(), getString(R.string.authentication_failed))
+        requireContext().showLongToast(getString(R.string.authentication_failed))
     }
 
     override fun onAuthenticationError(errorCode: Int, errorMessage: CharSequence?) {
-        appHelper.showToast(requireContext(), getString(R.string.authentication_error))
+        requireContext().showLongToast(
+            getString(R.string.authentication_error).format(
+                errorMessage,
+                errorCode
+            )
+        )
     }
 }

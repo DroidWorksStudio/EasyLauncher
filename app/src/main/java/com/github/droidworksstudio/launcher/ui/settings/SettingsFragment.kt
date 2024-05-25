@@ -7,16 +7,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.github.droidworksstudio.ktx.restartApp
+import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.helper.restartApp
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AlignmentBottomSheetDialogFragment
@@ -154,20 +154,12 @@ class SettingsFragment : Fragment(),
 
         binding.backupView.setOnClickListener {
             appHelper.backupSharedPreferences(requireContext())
-            Toast.makeText(
-                requireContext(),
-                getString(R.string.settings_reload_app_backup),
-                Toast.LENGTH_SHORT
-            ).show()
+            context.showLongToast(getString(R.string.settings_reload_app_backup))
         }
 
         binding.restoreView.setOnClickListener {
             appHelper.restoreSharedPreferences(requireContext())
-            Toast.makeText(
-                requireContext(),
-                getString(R.string.settings_reload_app_restore),
-                Toast.LENGTH_SHORT
-            ).show()
+            context.showLongToast(getString(R.string.settings_reload_app_restore))
             restartApp()
         }
     }

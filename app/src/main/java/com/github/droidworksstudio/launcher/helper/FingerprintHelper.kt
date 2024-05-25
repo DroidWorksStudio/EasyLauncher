@@ -5,6 +5,7 @@ import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import javax.inject.Inject
@@ -66,21 +67,16 @@ class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
                 }
 
                 override fun onAuthenticationFailed() {
-                    appHelper.showToast(
-                        fragment.requireContext(),
-                        fragment.getString(R.string.authentication_failed)
-                    )
+                    fragment.requireContext()
+                        .showLongToast(fragment.getString(R.string.authentication_failed))
                 }
 
                 override fun onAuthenticationError(errorCode: Int, errorMessage: CharSequence) {
                     when (errorCode) {
-                        BiometricPrompt.ERROR_USER_CANCELED -> appHelper.showToast(
-                            fragment.requireContext(),
-                            fragment.getString(R.string.authentication_cancel)
-                        )
+                        BiometricPrompt.ERROR_USER_CANCELED -> fragment.requireContext()
+                            .showLongToast(fragment.getString(R.string.authentication_cancel))
 
-                        else -> appHelper.showToast(
-                            fragment.requireContext(),
+                        else -> fragment.requireContext().showLongToast(
                             fragment.getString(R.string.authentication_error)
                                 .format(errorMessage, errorCode)
                         )
@@ -111,10 +107,8 @@ class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
             BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE,
             BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED -> sendToTarget(runNavigation)
 
-            else -> appHelper.showToast(
-                fragment.requireContext(),
-                fragment.getString(R.string.authentication_failed)
-            )
+            else -> fragment.requireContext()
+                .showLongToast(fragment.getString(R.string.authentication_failed))
         }
     }
 
@@ -122,10 +116,8 @@ class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
         try {
             fragment.findNavController().navigate(runNavigation)
         } catch (e: Exception) {
-            appHelper.showToast(
-                fragment.requireContext(),
-                fragment.getString(R.string.authentication_failed)
-            )
+            fragment.requireContext()
+                .showLongToast(fragment.getString(R.string.authentication_failed))
         }
     }
 }
