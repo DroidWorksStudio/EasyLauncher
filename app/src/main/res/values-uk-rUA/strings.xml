@@ -10,8 +10,8 @@
     <string name="settings_fragment_label">Фрагмент налаштувань</string>
     <string name="widgets_fragment_label">Фрагмент віджетів</string>
     <!-- Strings used for fragments header labels -->
-    <string name="favorite_fragment_name">Favorite Apps</string>
-    <string name="hidden_fragment_name">Hidden Apps</string>
+    <string name="favorite_fragment_name">Улюблені програми</string>
+    <string name="hidden_fragment_name">Приховані програми</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Пошук</string>
     <string name="bottom_dialog_app_rename">Перейменувати</string>
@@ -86,7 +86,7 @@
     <string name="accessibility_settings_title">Налаштування доступності</string>
     <string name="accessibility_settings_enable">Увімкнути</string>
     <string name="accessibility_settings_disable">Вимкнути</string>
-    <string name="accessibility_service_name">Easy Launcher Actions Service</string>
+    <string name="accessibility_service_name">Служба дій Easy Launcher</string>
     <string name="accessibility_service_desc">Будь ласка, увімкніть службу доступності, щоб використовувати подвійне торкання для блокування функції в Easy Launcher.\n\nЦей дозвіл використовується лише для вимкнення вашого екрана. Наша служба доступності не збирає та не надає жодних даних.</string>
     <string name="admin_permission_message">Easy launcher обіцяє відповідально використовувати дозвіл блокування екрана. Easy launcher не збирає та не передає жодних даних.</string>
     <string-array name="settings_appearance_daily_word_default">
