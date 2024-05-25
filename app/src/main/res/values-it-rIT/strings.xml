@@ -10,8 +10,8 @@
     <string name="settings_fragment_label">Frammento Impostazioni</string>
     <string name="widgets_fragment_label">Frammento di widget</string>
     <!-- Strings used for fragments header labels -->
-    <string name="favorite_fragment_name">Favorite Apps</string>
-    <string name="hidden_fragment_name">Hidden Apps</string>
+    <string name="favorite_fragment_name">App preferite</string>
+    <string name="hidden_fragment_name">App nascoste</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Ricerca</string>
     <string name="bottom_dialog_app_rename">Rinominare</string>
@@ -86,7 +86,7 @@
     <string name="accessibility_settings_title">Impostazioni di accessibilità</string>
     <string name="accessibility_settings_enable">Abilitare</string>
     <string name="accessibility_settings_disable">disattivare</string>
-    <string name="accessibility_service_name">Easy Launcher Actions Service</string>
+    <string name="accessibility_service_name">Servizio azioni Easy Launcher</string>
     <string name="accessibility_service_desc">Attiva il servizio di accessibilità per utilizzare il doppio tocco per bloccare la funzione in Easy Launcher.\n\nQuesta autorizzazione viene utilizzata solo per spegnere lo schermo. Il nostro servizio di accessibilità non raccoglie né condivide alcun dato.</string>
     <string name="admin_permission_message">Easy Launcher promette di utilizzare l\'autorizzazione della schermata di blocco in modo responsabile. Easy Launcher non raccoglie né condivide alcun dato.</string>
     <string-array name="settings_appearance_daily_word_default">
