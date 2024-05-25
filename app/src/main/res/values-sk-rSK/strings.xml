@@ -9,6 +9,9 @@
     <string name="hidden_fragment_label">Skrytý Fragment</string>
     <string name="settings_fragment_label">Nastavenia Fragment</string>
     <string name="widgets_fragment_label">Fragment widgetov</string>
+    <!-- Strings used for fragments header labels -->
+    <string name="favorite_fragment_name">Favorite Apps</string>
+    <string name="hidden_fragment_name">Hidden Apps</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Vyhľadávanie</string>
     <string name="bottom_dialog_app_rename">Premenovať</string>
@@ -23,7 +26,6 @@
     <string name="bottom_dialog_app_uninstall">Odinštalovať aplikáciu</string>
     <string name="settings_name">Nastavenia spúšťača</string>
     <string name="settings_version">%s Verzia: %s</string>
-    <string name="settings_home">Domov</string>
     <string name="settings_title_home_display_preferences">Displej</string>
     <string name="settings_title_home_behavior_preferences">Správanie</string>
     <string name="settings_title_home_appearance_preferences">Vzhľad</string>
@@ -84,6 +86,7 @@
     <string name="accessibility_settings_title">Nastavenia dostupnosti</string>
     <string name="accessibility_settings_enable">Povoliť</string>
     <string name="accessibility_settings_disable">Zakázať</string>
+    <string name="accessibility_service_name">Easy Launcher Actions Service</string>
     <string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v aplikácii Easy Launcher, zapnite službu dostupnosti.\n\nToto povolenie sa používa iba na vypnutie obrazovky. Naša služba dostupnosti nezhromažďuje ani nezdieľa žiadne údaje.</string>
     <string name="admin_permission_message">Easy launcher sľubuje zodpovedné používanie povolenia na uzamknutie obrazovky. Easy launcher nezhromažďuje ani nezdieľa žiadne údaje.</string>
     <string-array name="settings_appearance_daily_word_default">
