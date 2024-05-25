@@ -10,8 +10,8 @@
     <string name="settings_fragment_label">Nastavení Fragment</string>
     <string name="widgets_fragment_label">Fragment widgetů</string>
     <!-- Strings used for fragments header labels -->
-    <string name="favorite_fragment_name">Favorite Apps</string>
-    <string name="hidden_fragment_name">Hidden Apps</string>
+    <string name="favorite_fragment_name">Oblíbené aplikace</string>
+    <string name="hidden_fragment_name">Skryté aplikace</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Vyhledávání</string>
     <string name="bottom_dialog_app_rename">Přejmenovat</string>
@@ -86,7 +86,7 @@
     <string name="accessibility_settings_title">Nastavení usnadnění</string>
     <string name="accessibility_settings_enable">Umožnit</string>
     <string name="accessibility_settings_disable">Zakázat</string>
-    <string name="accessibility_service_name">Easy Launcher Actions Service</string>
+    <string name="accessibility_service_name">Služba Easy Launcher Actions Service</string>
     <string name="accessibility_service_desc">Chcete-li v Easy Launcher používat funkci uzamčení dvojitým klepnutím, zapněte prosím službu usnadnění.\n\nToto oprávnění se používá pouze k vypnutí obrazovky. Naše služba usnadnění neshromažďuje ani nesdílí žádná data.</string>
     <string name="admin_permission_message">Easy launcher slibuje zodpovědné používání oprávnění k uzamčení obrazovky. Easy launcher neshromažďuje ani nesdílí žádná data.</string>
     <string-array name="settings_appearance_daily_word_default">
