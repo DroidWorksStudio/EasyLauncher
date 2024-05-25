@@ -1,14 +1,10 @@
 package com.github.droidworksstudio.launcher.ui.widgetmanager
 
-import android.annotation.SuppressLint
 import android.app.Dialog
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import com.github.droidworksstudio.launcher.Constants
-import com.github.droidworksstudio.launcher.R
 
 class WidgetOptionsDialogFragment : DialogFragment() {
 
@@ -18,7 +14,8 @@ class WidgetOptionsDialogFragment : DialogFragment() {
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val appWidgetId = arguments?.getInt(ARG_APP_WIDGET_ID) ?: return super.onCreateDialog(savedInstanceState)
+        val appWidgetId =
+            arguments?.getInt(ARG_APP_WIDGET_ID) ?: return super.onCreateDialog(savedInstanceState)
 
         val builder = AlertDialog.Builder(requireContext())
         builder.setTitle("Widget Options")

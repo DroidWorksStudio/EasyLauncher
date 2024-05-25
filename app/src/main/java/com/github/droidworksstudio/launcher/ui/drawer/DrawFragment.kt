@@ -39,7 +39,8 @@ import javax.inject.Inject
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 @AndroidEntryPoint
-class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
+class DrawFragment : Fragment(),
+    OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.OnAppLongClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
@@ -143,7 +144,8 @@ class DrawFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
-        binding.mainView.setOnTouchListener(getSwipeGestureListener(context))
+        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.drawAdapter.setOnTouchListener(getSwipeGestureListener(context))
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {

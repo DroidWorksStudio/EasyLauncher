@@ -10,6 +10,10 @@
     <string name="settings_fragment_label">Settings Fragment</string>
     <string name="widgets_fragment_label">Widgets Fragment</string>
 
+    <!-- Strings used for fragments header labels -->
+    <string name="favorite_fragment_name">Favorite Apps</string>
+    <string name="hidden_fragment_name">Hidden Apps</string>
+
     <string name="battery_level">%s%%</string>
     <string name="search">Search</string>
 
@@ -26,7 +30,6 @@
 
     <string name="settings_name">Launcher Settings</string>
     <string name="settings_version">%s Version: %s</string>
-    <string name="settings_home">Home</string>
 
     <string name="settings_title_home_display_preferences">Display</string>
     <string name="settings_title_home_behavior_preferences">Behavior</string>
@@ -101,6 +104,7 @@
     <string name="accessibility_settings_enable">Enable</string>
     <string name="accessibility_settings_disable">Disable</string>
 
+    <string name="accessibility_service_name">Easy Launcher Actions Service</string>
     <string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen.Our accessibility service does not collect or share any data.</string>
     <string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
 

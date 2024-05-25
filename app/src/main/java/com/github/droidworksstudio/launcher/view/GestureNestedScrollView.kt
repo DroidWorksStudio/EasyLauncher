@@ -6,7 +6,8 @@ import androidx.core.widget.NestedScrollView
 import androidx.recyclerview.widget.RecyclerView
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 
-class GestureNestedScrollView(context: Context, attrs: AttributeSet) : NestedScrollView(context, attrs){
+class GestureNestedScrollView(context: Context, attrs: AttributeSet) :
+    NestedScrollView(context, attrs) {
 
     var scrollEventListener: ScrollEventListener? = null
 

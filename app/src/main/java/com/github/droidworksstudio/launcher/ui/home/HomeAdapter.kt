@@ -11,11 +11,12 @@ import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import javax.inject.Inject
 
-class HomeAdapter @Inject constructor(private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
-                                      private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener,
-                                      private val preferenceHelperProvider: PreferenceHelper
+class HomeAdapter @Inject constructor(
+    private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
+    private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener,
+    private val preferenceHelperProvider: PreferenceHelper
 ) :
-    ListAdapter<AppInfo,RecyclerView.ViewHolder>(DiffCallback()) {
+    ListAdapter<AppInfo, RecyclerView.ViewHolder>(DiffCallback()) {
 
     override fun onCreateViewHolder(
         parent: android.view.ViewGroup,
@@ -28,7 +29,12 @@ class HomeAdapter @Inject constructor(private val onAppClickedListener: OnItemCl
         )
         val preferenceHelper = preferenceHelperProvider
 
-        return HomeViewHolder(binding, onAppClickedListener, onAppLongClickedListener, preferenceHelper)
+        return HomeViewHolder(
+            binding,
+            onAppClickedListener,
+            onAppLongClickedListener,
+            preferenceHelper
+        )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
@@ -37,7 +43,7 @@ class HomeAdapter @Inject constructor(private val onAppClickedListener: OnItemCl
         (holder as HomeViewHolder).bind(appInfo)
     }
 
-    class DiffCallback : DiffUtil.ItemCallback<AppInfo>()  {
+    class DiffCallback : DiffUtil.ItemCallback<AppInfo>() {
         override fun areItemsTheSame(oldItem: AppInfo, newItem: AppInfo) =
             oldItem.id == newItem.id
 

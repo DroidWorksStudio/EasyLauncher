@@ -10,9 +10,10 @@ import com.github.droidworksstudio.launcher.databinding.ItemDrawBinding
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 
-class DrawAdapter(private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
-                  private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener,
-                  private val preferenceHelperProvider: PreferenceHelper
+class DrawAdapter(
+    private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
+    private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener,
+    private val preferenceHelperProvider: PreferenceHelper
 ) :
     ListAdapter<AppInfo, RecyclerView.ViewHolder>(DiffCallback()) {
 
@@ -27,7 +28,12 @@ class DrawAdapter(private val onAppClickedListener: OnItemClickedListener.OnApps
         )
         val preferenceHelper = preferenceHelperProvider
 
-        return DrawViewHolder(binding, onAppClickedListener, onAppLongClickedListener, preferenceHelper)
+        return DrawViewHolder(
+            binding,
+            onAppClickedListener,
+            onAppLongClickedListener,
+            preferenceHelper
+        )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
@@ -36,7 +42,7 @@ class DrawAdapter(private val onAppClickedListener: OnItemClickedListener.OnApps
         (holder as DrawViewHolder).bind(appInfo)
     }
 
-    class DiffCallback : DiffUtil.ItemCallback<AppInfo>()  {
+    class DiffCallback : DiffUtil.ItemCallback<AppInfo>() {
         override fun areItemsTheSame(oldItem: AppInfo, newItem: AppInfo) =
             oldItem.id == newItem.id
 

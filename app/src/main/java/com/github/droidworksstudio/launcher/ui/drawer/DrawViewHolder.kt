@@ -8,10 +8,12 @@ import com.github.droidworksstudio.launcher.databinding.ItemDrawBinding
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 
-class DrawViewHolder(private val binding: ItemDrawBinding,
-                     private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
-                     private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener,
-                     private val preferenceHelper: PreferenceHelper):
+class DrawViewHolder(
+    private val binding: ItemDrawBinding,
+    private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
+    private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener,
+    private val preferenceHelper: PreferenceHelper
+) :
     RecyclerView.ViewHolder(binding.root) {
     fun bind(appInfo: AppInfo) {
         binding.apply {

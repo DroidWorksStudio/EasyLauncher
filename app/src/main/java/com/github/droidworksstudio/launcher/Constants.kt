@@ -65,5 +65,4 @@ object Constants {
     const val APP_WIDGET_HOST_ID = 1024
     const val TRIPLE_TAP_DELAY_MS = 300
     const val LONG_PRESS_DELAY_MS = 500
-    const val REQUEST_CODE_ENABLE_ADMIN = 123
 }

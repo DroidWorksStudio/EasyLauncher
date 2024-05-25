@@ -10,8 +10,11 @@ import com.github.droidworksstudio.launcher.databinding.ItemFavoriteBinding
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnItemMoveListener
 
-class FavoriteAdapter(private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
-) : ListAdapter<AppInfo, RecyclerView.ViewHolder>(DiffCallback()) ,OnItemMoveListener.OnItemActionListener{
+class FavoriteAdapter(
+    private val onAppClickedListener:
+    OnItemClickedListener.OnAppsClickedListener,
+) : ListAdapter<AppInfo, RecyclerView.ViewHolder>(DiffCallback()),
+    OnItemMoveListener.OnItemActionListener {
 
     private lateinit var touchHelper: ItemTouchHelper
 

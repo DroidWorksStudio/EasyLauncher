@@ -12,7 +12,7 @@ import com.github.droidworksstudio.launcher.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.lang.ref.WeakReference
 
-class MyAccessibilityService : AccessibilityService() {
+class ActionService : AccessibilityService() {
 
     private var info: AccessibilityServiceInfo = AccessibilityServiceInfo()
 
@@ -20,7 +20,8 @@ class MyAccessibilityService : AccessibilityService() {
         mInstance = WeakReference(this)
 
         info.apply {
-            eventTypes = AccessibilityEvent.TYPE_VIEW_CLICKED or AccessibilityEvent.TYPE_VIEW_FOCUSED
+            eventTypes =
+                AccessibilityEvent.TYPE_VIEW_CLICKED or AccessibilityEvent.TYPE_VIEW_FOCUSED
 
             feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC
 
@@ -95,8 +96,8 @@ class MyAccessibilityService : AccessibilityService() {
             return
         }
 
-        private var mInstance: WeakReference<MyAccessibilityService> = WeakReference(null)
-        fun instance(): MyAccessibilityService? {
+        private var mInstance: WeakReference<ActionService> = WeakReference(null)
+        fun instance(): ActionService? {
             return mInstance.get()
         }
     }

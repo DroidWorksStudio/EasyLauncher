@@ -4,7 +4,8 @@
 
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
 
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
@@ -13,10 +14,10 @@
         tools:ignore="QueryAllPackagesPermission" />
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-    <uses-permission android:name="android.permission.BIND_APPWIDGET"
+    <uses-permission
+        android:name="android.permission.BIND_APPWIDGET"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
 
     <queries>
         <intent>
@@ -34,10 +35,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Launcher">
-        <activity
-            android:name=".ui.activities.SettingsActivity"
-            android:exported="false" />
-
         <activity
             android:name=".ui.activities.LauncherActivity"
             android:enabled="false"
@@ -95,13 +92,14 @@
                 android:resource="@xml/policies" />
             <intent-filter>
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name=".accessibility.MyAccessibilityService"
+            android:name=".accessibility.ActionService"
             android:exported="false"
-            android:label="@string/app_name"
+            android:label="@string/accessibility_service_name"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <meta-data
                 android:name="android.accessibilityservice"

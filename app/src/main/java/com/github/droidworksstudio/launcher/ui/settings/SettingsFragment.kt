@@ -1,6 +1,7 @@
 package com.github.droidworksstudio.launcher.ui.settings
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -16,6 +17,7 @@ import com.github.droidworksstudio.launcher.databinding.FragmentSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.helper.restartApp
+import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AlignmentBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomSheetDialogFragment
@@ -26,7 +28,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class SettingsFragment : Fragment(), ScrollEventListener {
+class SettingsFragment : Fragment(),
+    ScrollEventListener {
 
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
@@ -40,6 +43,8 @@ class SettingsFragment : Fragment(), ScrollEventListener {
     lateinit var appHelper: AppHelper
 
     private lateinit var navController: NavController
+
+    private lateinit var context: Context
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -59,8 +64,11 @@ class SettingsFragment : Fragment(), ScrollEventListener {
         appHelper.dayNightMod(requireContext(), binding.nestScrollView)
         super.onViewCreated(view, savedInstanceState)
 
+        context = requireContext()
+
         initializeInjectedDependencies()
         observeClickListener()
+        observeSwipeTouchListener()
 
         val packageInfo =
             requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
@@ -215,6 +223,26 @@ class SettingsFragment : Fragment(), ScrollEventListener {
 
         binding.lockSettingsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setLockSettings(isChecked)
+        }
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    private fun observeSwipeTouchListener() {
+        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+    }
+
+    private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
+        return object : OnSwipeTouchListener(context) {
+            override fun onSwipeLeft() {
+                super.onSwipeLeft()
+                findNavController().popBackStack()
+            }
+
+            override fun onSwipeRight() {
+                super.onSwipeRight()
+                findNavController().popBackStack()
+            }
+
         }
     }
 }

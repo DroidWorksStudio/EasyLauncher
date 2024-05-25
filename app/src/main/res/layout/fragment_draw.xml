@@ -7,6 +7,13 @@
     android:id="@+id/draw_background"
     tools:context=".ui.drawer.DrawFragment">
 
+    <FrameLayout
+        android:id="@+id/touchArea"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/mainView"
         android:layout_width="match_parent"
@@ -46,8 +53,9 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/drawAdapter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/search_view_text" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

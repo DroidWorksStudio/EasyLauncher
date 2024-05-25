@@ -13,6 +13,7 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -24,6 +25,7 @@ import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnItemMoveListener
+import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -32,7 +34,8 @@ import javax.inject.Inject
 
 
 @AndroidEntryPoint
-class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
+class FavoriteFragment : Fragment(),
+    OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
     OnItemMoveListener.OnItemActionListener,
@@ -77,6 +80,7 @@ class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener
         setupRecyclerView()
         observeFavorite()
         observeHomeAppOrder()
+        observeSwipeTouchListener()
     }
 
     private fun setupRecyclerView() {
@@ -101,6 +105,14 @@ class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener
         }
     }
 
+    private fun observeFavorite() {
+        viewModel.compareInstalledAppInfo()
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.favoriteApps.collect {
+                favoriteAdapter.submitList(it)
+            }
+        }
+    }
 
     private fun observeHomeAppOrder() {
         binding.favoriteAdapter.adapter = favoriteAdapter
@@ -165,11 +177,22 @@ class FavoriteFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener
         itemTouchHelper.attachToRecyclerView(binding.favoriteAdapter)
     }
 
-    private fun observeFavorite() {
-        viewModel.compareInstalledAppInfo()
-        viewLifecycleOwner.lifecycleScope.launch {
-            viewModel.favoriteApps.collect {
-                favoriteAdapter.submitList(it)
+    @SuppressLint("ClickableViewAccessibility")
+    private fun observeSwipeTouchListener() {
+        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.favoriteAdapter.setOnTouchListener(getSwipeGestureListener(context))
+    }
+
+    private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
+        return object : OnSwipeTouchListener(context) {
+            override fun onSwipeLeft() {
+                super.onSwipeLeft()
+                findNavController().popBackStack()
+            }
+
+            override fun onSwipeRight() {
+                super.onSwipeRight()
+                findNavController().popBackStack()
             }
         }
     }

@@ -24,7 +24,8 @@ import javax.inject.Inject
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 @AndroidEntryPoint
-class WidgetManagerFragment : Fragment(), WidgetOptionsDialogFragment.WidgetOptionsListener {
+class WidgetManagerFragment : Fragment(),
+    WidgetOptionsDialogFragment.WidgetOptionsListener {
 
     private var _binding: FragmentWidgetManagerBinding? = null
 
@@ -78,47 +79,51 @@ class WidgetManagerFragment : Fragment(), WidgetOptionsDialogFragment.WidgetOpti
         }
 
         // Initialize the ActivityResultLaunchers
-        pickWidgetLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == Activity.RESULT_OK) {
-                val data = result.data
-                data?.let {
-                    val appWidgetId = it.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
-                    if (appWidgetId != -1) {
-                        val appWidgetInfo = appWidgetManager.getAppWidgetInfo(appWidgetId)
-                        if (appWidgetInfo?.configure != null) {
-                            val intent = Intent(AppWidgetManager.ACTION_APPWIDGET_CONFIGURE)
-                            intent.component = appWidgetInfo.configure
-                            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
-                            createWidgetLauncher.launch(intent)
-                        } else {
+        pickWidgetLauncher =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+                if (result.resultCode == Activity.RESULT_OK) {
+                    val data = result.data
+                    data?.let {
+                        val appWidgetId = it.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
+                        if (appWidgetId != -1) {
+                            val appWidgetInfo = appWidgetManager.getAppWidgetInfo(appWidgetId)
+                            if (appWidgetInfo?.configure != null) {
+                                val intent = Intent(AppWidgetManager.ACTION_APPWIDGET_CONFIGURE)
+                                intent.component = appWidgetInfo.configure
+                                intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
+                                createWidgetLauncher.launch(intent)
+                            } else {
+                                addWidget(appWidgetId)
+                            }
+                        }
+                    }
+                } else if (result.resultCode == Activity.RESULT_CANCELED) {
+                    val appWidgetId =
+                        result.data?.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
+                    if (appWidgetId != null && appWidgetId != -1) {
+                        appWidgetHost.deleteAppWidgetId(appWidgetId)
+                    }
+                }
+            }
+
+        createWidgetLauncher =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+                if (result.resultCode == Activity.RESULT_OK) {
+                    val data = result.data
+                    data?.let {
+                        val appWidgetId = it.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
+                        if (appWidgetId != -1) {
                             addWidget(appWidgetId)
                         }
                     }
-                }
-            } else if (result.resultCode == Activity.RESULT_CANCELED) {
-                val appWidgetId = result.data?.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
-                if (appWidgetId != null && appWidgetId != -1) {
-                    appWidgetHost.deleteAppWidgetId(appWidgetId)
-                }
-            }
-        }
-
-        createWidgetLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == Activity.RESULT_OK) {
-                val data = result.data
-                data?.let {
-                    val appWidgetId = it.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
-                    if (appWidgetId != -1) {
-                        addWidget(appWidgetId)
+                } else if (result.resultCode == Activity.RESULT_CANCELED) {
+                    val appWidgetId =
+                        result.data?.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
+                    if (appWidgetId != null && appWidgetId != -1) {
+                        appWidgetHost.deleteAppWidgetId(appWidgetId)
                     }
                 }
-            } else if (result.resultCode == Activity.RESULT_CANCELED) {
-                val appWidgetId = result.data?.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, -1)
-                if (appWidgetId != null && appWidgetId != -1) {
-                    appWidgetHost.deleteAppWidgetId(appWidgetId)
-                }
             }
-        }
 
         // Set long-click listener on the root view
         binding.widgetParent.setOnLongClickListener {
@@ -161,7 +166,8 @@ class WidgetManagerFragment : Fragment(), WidgetOptionsDialogFragment.WidgetOpti
     }
 
     private fun saveWidgetIds(widgetIds: List<Int>) {
-        val sharedPreferences = requireContext().getSharedPreferences(Constants.WIDGETS_PREFS, Activity.MODE_PRIVATE)
+        val sharedPreferences =
+            requireContext().getSharedPreferences(Constants.WIDGETS_PREFS, Activity.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         val widgetIdsSet = widgetIds.map { it.toString() }.toSet()
         editor.putStringSet(Constants.APP_WIDGETS_ID, widgetIdsSet)
@@ -169,7 +175,8 @@ class WidgetManagerFragment : Fragment(), WidgetOptionsDialogFragment.WidgetOpti
     }
 
     private fun loadWidgetIds(): List<Int> {
-        val sharedPreferences = requireContext().getSharedPreferences(Constants.WIDGETS_PREFS, Activity.MODE_PRIVATE)
+        val sharedPreferences =
+            requireContext().getSharedPreferences(Constants.WIDGETS_PREFS, Activity.MODE_PRIVATE)
         val widgetIdsSet = sharedPreferences.getStringSet(Constants.APP_WIDGETS_ID, emptySet())
         return widgetIdsSet?.map { it.toInt() } ?: emptyList()
     }

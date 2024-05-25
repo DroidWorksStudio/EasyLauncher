@@ -27,7 +27,7 @@ import androidx.appcompat.widget.LinearLayoutCompat
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
-import com.github.droidworksstudio.launcher.accessibility.MyAccessibilityService
+import com.github.droidworksstudio.launcher.accessibility.ActionService
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 import java.util.Calendar
@@ -95,8 +95,8 @@ class AppHelper @Inject constructor() {
                 .invoke(context.getSystemService(Constants.NOTIFICATION_SERVICE))
         } catch (exception: Exception) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                MyAccessibilityService.runAccessibilityMode(context)
-                MyAccessibilityService.instance()?.openNotifications()
+                ActionService.runAccessibilityMode(context)
+                ActionService.instance()?.openNotifications()
             }
             exception.printStackTrace()
         }
@@ -110,8 +110,8 @@ class AppHelper @Inject constructor() {
                 .invoke(context.getSystemService(Constants.QUICKSETTINGS_SERVICE))
         } catch (exception: Exception) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                MyAccessibilityService.runAccessibilityMode(context)
-                MyAccessibilityService.instance()?.openQuickSettings()
+                ActionService.runAccessibilityMode(context)
+                ActionService.instance()?.openQuickSettings()
             }
             exception.printStackTrace()
         }

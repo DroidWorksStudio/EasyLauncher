@@ -20,7 +20,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.launcher.R
-import com.github.droidworksstudio.launcher.accessibility.MyAccessibilityService
+import com.github.droidworksstudio.launcher.accessibility.ActionService
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentHomeBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -30,7 +30,6 @@ import com.github.droidworksstudio.launcher.helper.hideKeyboard
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
-import com.github.droidworksstudio.launcher.ui.activities.SettingsActivity
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
@@ -46,7 +45,8 @@ import javax.inject.Inject
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 @AndroidEntryPoint
-class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
+class HomeFragment : Fragment(),
+    OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.OnAppLongClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
@@ -91,16 +91,16 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         super.onViewCreated(view, savedInstanceState)
 
         initializeInjectedDependencies()
-        initSwipeTouchListener()
         setupBattery()
         setupRecyclerView()
+        observeSwipeTouchListener()
         observeUserInterfaceSettings()
     }
 
     @SuppressLint("ClickableViewAccessibility")
     private fun initializeInjectedDependencies() {
         context = requireContext()
-        binding.mainView.hideKeyboard()
+        binding.nestScrollView.hideKeyboard()
 
         binding.nestScrollView.scrollEventListener = this
 
@@ -109,15 +109,6 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
         preferenceViewModel.setShowDailyWord(preferenceHelper.showDailyWord)
-    }
-
-    @SuppressLint("ClickableViewAccessibility")
-    private fun initSwipeTouchListener() {
-        binding.nestScrollView.setOnTouchListener(getSwipeGestureListener(context))
-
-        binding.clock.setOnClickListener { appHelper.launchClock(context) }
-        binding.date.setOnClickListener { appHelper.launchCalendar(context) }
-        binding.battery.setOnClickListener { appHelper.openBatteryManager(context) }
     }
 
     private fun setupBattery() {
@@ -163,8 +154,18 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
         }
     }
 
+    @SuppressLint("ClickableViewAccessibility")
+    private fun observeSwipeTouchListener() {
+        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.nestScrollView.setOnTouchListener(getSwipeGestureListener(context))
+
+        binding.clock.setOnClickListener { appHelper.launchClock(context) }
+        binding.date.setOnClickListener { appHelper.launchCalendar(context) }
+        binding.battery.setOnClickListener { appHelper.openBatteryManager(context) }
+    }
+
     private fun observeUserInterfaceSettings() {
-        binding.mainView.hideKeyboard()
+        binding.nestScrollView.hideKeyboard()
 
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
@@ -226,10 +227,13 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
     }
 
     private fun observeBioAuthCheck(appInfo: AppInfo) {
-        if (!appInfo.lock) appHelper.launchApp(
-            context,
-            appInfo
-        ) else fingerHelper.startFingerprintAuth(appInfo, this)
+        if (!appInfo.lock)
+            appHelper.launchApp(
+                context,
+                appInfo
+            )
+        else
+            fingerHelper.startFingerprintAuth(appInfo, this)
     }
 
     private fun showSelectedApp(appInfo: AppInfo) {
@@ -252,8 +256,8 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             override fun onDoubleClick() {
                 super.onDoubleClick()
                 if (preferenceHelper.tapLockScreen) {
-                    MyAccessibilityService.runAccessibilityMode(context)
-                    MyAccessibilityService.instance()?.lockScreen()
+                    ActionService.runAccessibilityMode(context)
+                    ActionService.instance()?.lockScreen()
                 } else {
                     return
                 }
@@ -267,7 +271,6 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
             override fun onSwipeRight() {
                 super.onSwipeRight()
                 findNavController().navigate(R.id.action_HomeFragment_to_FavoriteFragment)
-
             }
 
             override fun onSwipeDown() {
@@ -320,7 +323,7 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
                 })
 
             if (preferenceHelper.settingsLock) {
-                fingerHelper.startFingerprintSettingsAuth(SettingsActivity::class.java)
+                fingerHelper.startFingerprintSettingsAuth(R.id.action_HomeFragment_to_SettingsFragment)
             } else {
                 findNavController().navigate(R.id.action_HomeFragment_to_SettingsFragment)
             }
@@ -335,12 +338,12 @@ class HomeFragment : Fragment(), OnItemClickedListener.OnAppsClickedListener,
 
     override fun onPause() {
         super.onPause()
-        binding.mainView.hideKeyboard()
+        binding.nestScrollView.hideKeyboard()
     }
 
     override fun onResume() {
         super.onResume()
-        binding.mainView.hideKeyboard()
+        binding.nestScrollView.hideKeyboard()
         observeUserInterfaceSettings()
         observeFavoriteAppList()
     }

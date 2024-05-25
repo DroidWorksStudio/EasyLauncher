@@ -10,11 +10,12 @@ import com.github.droidworksstudio.launcher.databinding.ItemFavoriteBinding
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 
 @SuppressLint("ClickableViewAccessibility")
-class FavoriteViewHolder(private val binding: ItemFavoriteBinding,
-                         private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
-                         private val touchHelper: ItemTouchHelper,
+class FavoriteViewHolder(
+    private val binding: ItemFavoriteBinding,
+    private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
+    private val touchHelper: ItemTouchHelper,
 ) :
-    RecyclerView.ViewHolder(binding.root){
+    RecyclerView.ViewHolder(binding.root) {
 
     init {
         binding.appFavoriteDragIcon.setOnTouchListener { _, event ->
