@@ -14,8 +14,8 @@
     <string name="bottom_dialog_app_rename">שנה שם</string>
     <string name="bottom_dialog_add_to_home">הוסף לדף הבית</string>
     <string name="bottom_dialog_order_home_apps">סדר מחדש את יישומי דף הבית</string>
-    <string name="bottom_dialog_remove_from_home">הסר ממסך הבית</string>
-    <string name="bottom_dialog_add_to_hidden">אפליקציה נסתרת</string>
+    <string name="bottom_dialog_remove_from_home">הסר מדף הבית</string>
+    <string name="bottom_dialog_add_to_hidden">אפליקציה מוסתרת</string>
     <string name="bottom_dialog_remove_to_hidden">הסר את האפליקציה הנסתרת</string>
     <string name="bottom_dialog_add_to_lock">נעילת יישומים</string>
     <string name="bottom_dialog_remove_to_unlock">בטל את נעילת האפליקציה</string>
@@ -24,10 +24,10 @@
     <string name="settings_name">הגדרות משגר</string>
     <string name="settings_version">%s גרסה: %s</string>
     <string name="settings_home">בית</string>
-    <string name="settings_title_home_display_preferences">לְהַצִיג</string>
+    <string name="settings_title_home_display_preferences">תצוגה</string>
     <string name="settings_title_home_behavior_preferences">התנהגות</string>
     <string name="settings_title_home_appearance_preferences">מראה חיצוני</string>
-    <string name="settings_title_date_style">סגנון דייט</string>
+    <string name="settings_title_date_style">סגנון תאריך</string>
     <string name="settings_title_time_style">סגנון זמן</string>
     <string name="settings_title_app_manager">ניהול אפליקציות</string>
     <string name="settings_title_gestures">מחוות</string>
@@ -43,30 +43,30 @@
     <string name="settings_display_auto_open_apps">פתח אוטומטית את האפליקציה האחרונה</string>
     <string name="settings_display_lock_settings">הגדרות נעילה</string>
     <string name="settings_appearance_text_size_title">גודל</string>
-    <string name="settings_appearance_color_title">צֶבַע</string>
+    <string name="settings_appearance_color_title">צבע</string>
     <string name="settings_appearance_alignment_title">יישור</string>
     <string name="settings_appearance_padding_title">ריפוד</string>
     <string name="settings_appearance_wallpaper">טפט מותאם אישית</string>
-    <string name="settings_appearance_home_date_alignment">יישור תאריכים</string>
+    <string name="settings_appearance_home_date_alignment">יישור תאריך</string>
     <string name="settings_appearance_home_time_alignment">יישור זמן</string>
-    <string name="settings_appearance_home_app_alignment">יישור אפליקציות ביתיות</string>
+    <string name="settings_appearance_home_app_alignment">יישור יישומי דף הבית</string>
     <string name="appearance_bottom_dialog_text_size_title">גודל</string>
     <string name="appearance_bottom_dialog_text_color_title">צֶבַע</string>
     <string name="appearance_bottom_dialog_alignment_title">יישור</string>
     <string name="appearance_bottom_dialog_padding_title">ריפוד</string>
     <string name="appearance_bottom_dialog_desc_date">תאריך\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">זמן\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">אפליקציה\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">יישום\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">מילה\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">סוללה\u0020:\u0020 </string>
-    <string name="settings_manager_favorite">אפליקציות מועדפות</string>
-    <string name="settings_manager_hidden">אפליקציות נסתרות</string>
-    <string name="settings_select_wallpaper">בחר טפט</string>
+    <string name="settings_manager_favorite">יישומים מועדפים</string>
+    <string name="settings_manager_hidden">יישומים מוסתרים</string>
+    <string name="settings_select_wallpaper">בחר תמונת רקע</string>
     <string name="settings_double_tap_lock">הקש פעמיים כדי לנעול</string>
     <string name="settings_swipe_down_notification">החלק מטה התראה על הרחבה</string>
     <string name="settings_swipe_up_search">החלק למעלה תצוגת חיפוש פתוחה</string>
-    <string name="settings_others_share">לַחֲלוֹק</string>
-    <string name="settings_others_feedback">מָשׁוֹב</string>
+    <string name="settings_others_share">שיתוף</string>
+    <string name="settings_others_feedback">משוב</string>
     <string name="settings_others_github">Github</string>
     <string name="settings_backups_backup">העדפות גיבוי</string>
     <string name="settings_backups_restore">שחזר העדפות</string>
@@ -79,10 +79,10 @@
     <string name="authentication_failed">אימות נכשל</string>
     <string name="authentication_error">שגיאת אימות: %1$s(קוד %2$d)</string>
     <string name="bottom_alignment_star">כוכב</string>
-    <string name="bottom_alignment_center">מֶרְכָּז</string>
+    <string name="bottom_alignment_center">מרכז</string>
     <string name="bottom_alignment_end">סוֹף</string>
     <string name="accessibility_settings_title">הגדרות נגישות</string>
-    <string name="accessibility_settings_enable">לְאַפשֵׁר</string>
+    <string name="accessibility_settings_enable">אפשר</string>
     <string name="accessibility_settings_disable">השבת</string>
     <string name="accessibility_service_desc">הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב- Easy Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות שלנו אינו אוסף או משתף נתונים כלשהם.</string>
     <string name="admin_permission_message">משגר קל מבטיח להשתמש בהרשאת מסך הנעילה באחריות. משגר קל אינו אוסף או משתף נתונים כלשהם.</string>
@@ -132,10 +132,10 @@
         <item>הפוטנציאל שלך זוהר.</item>
         <item>חלומות בהישג יד.</item>
         <item>אתה בלתי ניתן לעצירה!</item>
-        <item>תאמין, השג.</item>
+        <item>תאמין, תשיג.</item>
         <item>לדחוף את גבולות העבר.</item>
         <item>ההתמדה משתלמת.</item>
-        <item>הישארו ללא חת!</item>
+        <item>היה ללא חת!</item>
         <item>להתעלות מעל האתגרים.</item>
         <item>תמשיך לחלום בגדול.</item>
         <item>חי עם מטרה.</item>
@@ -177,7 +177,7 @@
         <item>תאמין בעצמך.</item>
         <item>הפיצו חסד תמיד.</item>
         <item>האמן בחלומותיך.</item>
-        <item>הישארו ממוקדים, נחושים.</item>
+        <item>הישאר ממוקד, נחוש.</item>
         <item>חבק את המסע שלך.</item>
         <item>תרים את הראש.</item>
         <item>לעולם אל תאבד תקווה.</item>
