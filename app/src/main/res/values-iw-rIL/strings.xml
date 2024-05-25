@@ -9,6 +9,9 @@
     <string name="hidden_fragment_label">שבר מוסתר</string>
     <string name="settings_fragment_label">קטע הגדרות</string>
     <string name="widgets_fragment_label">קטע ווידג\'טים</string>
+    <!-- Strings used for fragments header labels -->
+    <string name="favorite_fragment_name">Favorite Apps</string>
+    <string name="hidden_fragment_name">Hidden Apps</string>
     <string name="battery_level">%s%%</string>
     <string name="search">חיפוש</string>
     <string name="bottom_dialog_app_rename">שנה שם</string>
@@ -23,7 +26,6 @@
     <string name="bottom_dialog_app_uninstall">הסר את ההתקנה של האפליקציה</string>
     <string name="settings_name">הגדרות משגר</string>
     <string name="settings_version">%s גרסה: %s</string>
-    <string name="settings_home">בית</string>
     <string name="settings_title_home_display_preferences">תצוגה</string>
     <string name="settings_title_home_behavior_preferences">התנהגות</string>
     <string name="settings_title_home_appearance_preferences">מראה חיצוני</string>
@@ -84,6 +86,7 @@
     <string name="accessibility_settings_title">הגדרות נגישות</string>
     <string name="accessibility_settings_enable">אפשר</string>
     <string name="accessibility_settings_disable">השבת</string>
+    <string name="accessibility_service_name">Easy Launcher Actions Service</string>
     <string name="accessibility_service_desc">הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב- Easy Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות שלנו אינו אוסף או משתף נתונים כלשהם.</string>
     <string name="admin_permission_message">משגר קל מבטיח להשתמש בהרשאת מסך הנעילה באחריות. משגר קל אינו אוסף או משתף נתונים כלשהם.</string>
     <string-array name="settings_appearance_daily_word_default">
