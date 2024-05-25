@@ -13,9 +13,12 @@ import kotlin.concurrent.schedule
 import kotlin.math.abs
 
 /*
-Swipe, double tap and long press touch listener for a view
-Source: https://www.tutorialspoint.com/how-to-handle-swipe-gestures-in-kotlin
-*/
+ * This function is based on the solution provided in the following tutorial:
+ * "How to handle swipe gestures in Kotlin?"
+ * Tutorial URL: https://www.tutorialspoint.com/how-to-handle-swipe-gestures-in-kotlin
+ *
+ * The original code has been modified to fit the specific requirements of this project.
+ */
 
 internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
     private var longPressOn = false
