@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Worked out a better way for moving around the app. - ([8b1c0a3](https://github.com/DroidWorksStudio/EasyLauncher/commit/8b1c0a390de1bf3ab7bb9f6162adfb68257ba1fc))
 - Cleaned up some TODO junk. - ([45181ba](https://github.com/DroidWorksStudio/EasyLauncher/commit/45181baee8b443d3b0050e7f72568fe5c10a628e))
 - Cleaned up the way that we move between fragments - ([9e05fe7](https://github.com/DroidWorksStudio/EasyLauncher/commit/9e05fe7c38a3ddeb08696bf33b3afa038148321c))
 - Cleaned up a few functions - ([355096c](https://github.com/DroidWorksStudio/EasyLauncher/commit/355096c20b3c1c7dc2d8e120b73d393340074192))
