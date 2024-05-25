@@ -9,6 +9,9 @@
     <string name="hidden_fragment_label">Paslėptas fragmentas</string>
     <string name="settings_fragment_label">Nustatymai Fragmentas</string>
     <string name="widgets_fragment_label">Valdiklių fragmentas</string>
+    <!-- Strings used for fragments header labels -->
+    <string name="favorite_fragment_name">Mėgstamiausios programos</string>
+    <string name="hidden_fragment_name">Paslėptos programos</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Paieška</string>
     <string name="bottom_dialog_app_rename">Pervardyti</string>
@@ -23,7 +26,6 @@
     <string name="bottom_dialog_app_uninstall">Pašalinkite programą</string>
     <string name="settings_name">Paleidimo priemonės nustatymai</string>
     <string name="settings_version">%s Versija: %s</string>
-    <string name="settings_home">Namai</string>
     <string name="settings_title_home_display_preferences">Ekranas</string>
     <string name="settings_title_home_behavior_preferences">Elgesys</string>
     <string name="settings_title_home_appearance_preferences">Išvaizda</string>
@@ -84,6 +86,7 @@
     <string name="accessibility_settings_title">Pritaikymo neįgaliesiems nustatymai</string>
     <string name="accessibility_settings_enable">Įgalinti</string>
     <string name="accessibility_settings_disable">Išjungti</string>
+    <string name="accessibility_service_name">„Easy Launcher“ veiksmų paslauga</string>
     <string name="accessibility_service_desc">Įjunkite pritaikymo neįgaliesiems paslaugą, kad galėtumėte naudoti „Easy Launcher“ funkciją dukart paliesdami užrakinti.\n\nŠis leidimas naudojamas tik ekranui išjungti. Mūsų pritaikymo neįgaliesiems paslauga nerenka ir nebendrina jokių duomenų.</string>
     <string name="admin_permission_message">Lengva paleidimo priemonė žada atsakingai naudoti užrakinimo ekrano leidimą. Lengva paleidimo priemonė nerenka ir nebendrina jokių duomenų.</string>
     <string-array name="settings_appearance_daily_word_default">

@@ -9,6 +9,9 @@
     <string name="hidden_fragment_label">Verborgen Fragment</string>
     <string name="settings_fragment_label">Instellingenfragment</string>
     <string name="widgets_fragment_label">Widgetsfragment</string>
+    <!-- Strings used for fragments header labels -->
+    <string name="favorite_fragment_name">Favoriete apps</string>
+    <string name="hidden_fragment_name">Verborgen apps</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Zoekopdracht</string>
     <string name="bottom_dialog_app_rename">Hernoemen</string>
@@ -23,7 +26,6 @@
     <string name="bottom_dialog_app_uninstall">App verwijderen</string>
     <string name="settings_name">Launcher-instellingen</string>
     <string name="settings_version">%s Versie: %s</string>
-    <string name="settings_home">Thuis</string>
     <string name="settings_title_home_display_preferences">Weergave</string>
     <string name="settings_title_home_behavior_preferences">Gedrag</string>
     <string name="settings_title_home_appearance_preferences">Verschijning</string>
@@ -84,6 +86,7 @@
     <string name="accessibility_settings_title">Toegankelijkheidsinstellingen</string>
     <string name="accessibility_settings_enable">Inschakelen</string>
     <string name="accessibility_settings_disable">Uitzetten</string>
+    <string name="accessibility_service_name">Easy Launcher-actiesservice</string>
     <string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie Dubbeltikken om te vergrendelen in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze toegankelijkheidsdienst verzamelt of deelt geen gegevens.</string>
     <string name="admin_permission_message">Easy Launcher belooft de toestemming op het vergrendelscherm op verantwoorde wijze te gebruiken. Easy Launcher verzamelt of deelt geen gegevens.</string>
     <string-array name="settings_appearance_daily_word_default">

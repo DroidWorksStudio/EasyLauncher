@@ -9,6 +9,9 @@
     <string name="hidden_fragment_label">Verstecktes Fragment</string>
     <string name="settings_fragment_label">Einstellungen-Fragment</string>
     <string name="widgets_fragment_label">Widgets-Fragment</string>
+    <!-- Strings used for fragments header labels -->
+    <string name="favorite_fragment_name">Lieblings-Apps</string>
+    <string name="hidden_fragment_name">Versteckte Apps</string>
     <string name="battery_level">%s%%</string>
     <string name="search">Suchen</string>
     <string name="bottom_dialog_app_rename">Umbenennen</string>
@@ -23,7 +26,6 @@
     <string name="bottom_dialog_app_uninstall">App deinstallieren</string>
     <string name="settings_name">Launcher-Einstellungen</string>
     <string name="settings_version">%s Version: %s</string>
-    <string name="settings_home">Heim</string>
     <string name="settings_title_home_display_preferences">Anzeige</string>
     <string name="settings_title_home_behavior_preferences">Verhalten</string>
     <string name="settings_title_home_appearance_preferences">Aussehen</string>
@@ -84,6 +86,7 @@
     <string name="accessibility_settings_title">Eingabehilfen-Einstellungen</string>
     <string name="accessibility_settings_enable">Aktivieren</string>
     <string name="accessibility_settings_disable">Deaktivieren</string>
+    <string name="accessibility_service_name">Einfacher Launcher-Aktionsdienst</string>
     <string name="accessibility_service_desc">Bitte aktivieren Sie den Eingabehilfedienst, um die Funktion „Doppeltippen zum Sperren“ im Easy Launcher zu verwenden.\n\nDiese Berechtigung wird nur verwendet, um Ihren Bildschirm auszuschalten. Unser Eingabehilfedienst sammelt oder gibt keine Daten weiter.</string>
     <string name="admin_permission_message">Easy Launcher verspricht, die Sperrbildschirmberechtigung verantwortungsvoll zu nutzen. Easy Launcher sammelt oder gibt keine Daten weiter.</string>
     <string-array name="settings_appearance_daily_word_default">
