@@ -16,8 +16,8 @@ android {
         applicationId = "app.easy.launcher"
         minSdk = 24
         targetSdk = 34
-        versionCode = 8
-        versionName = "0.0.8"
+        versionCode = 9
+        versionName = "0.0.9"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -99,7 +99,7 @@ dependencies {
     implementation(libs.biometric.ktx)
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
-    
+
     //noinspection KaptUsageInsteadOfKsp
     kapt(libs.room.compiler)
     implementation(libs.dagger.hilt.android)
