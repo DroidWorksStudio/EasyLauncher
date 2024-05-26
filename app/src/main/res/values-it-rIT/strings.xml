@@ -25,7 +25,7 @@
     <string name="bottom_dialog_app_info">Informazioni sull\'app</string>
     <string name="bottom_dialog_app_uninstall">Disinstallare l\'app</string>
     <string name="settings_name">Impostazioni di avvio</string>
-    <string name="settings_version">%1$s Version: %2$s</string>
+    <string name="settings_version">%1$s Versione: %2$s</string>
     <string name="settings_title_home_display_preferences">Schermo</string>
     <string name="settings_title_home_behavior_preferences">Comportamento</string>
     <string name="settings_title_home_appearance_preferences">Aspetto</string>
