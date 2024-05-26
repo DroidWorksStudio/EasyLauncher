@@ -29,7 +29,7 @@
     <string name="bottom_dialog_app_uninstall">Uninstall App</string>
 
     <string name="settings_name">Launcher Settings</string>
-    <string name="settings_version">%s Version: %s</string>
+    <string name="settings_version">%1$s Version: %2$s</string>
 
     <string name="settings_title_home_display_preferences">Display</string>
     <string name="settings_title_home_behavior_preferences">Behavior</string>
