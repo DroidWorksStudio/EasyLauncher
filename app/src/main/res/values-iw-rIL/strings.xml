@@ -25,7 +25,7 @@
     <string name="bottom_dialog_app_info">מידע על האפליקציה</string>
     <string name="bottom_dialog_app_uninstall">הסר את ההתקנה של האפליקציה</string>
     <string name="settings_name">הגדרות משגר</string>
-    <string name="settings_version">%1$s Version: %2$s</string>
+    <string name="settings_version">%1$s גרסה: %2$s</string>
     <string name="settings_title_home_display_preferences">תצוגה</string>
     <string name="settings_title_home_behavior_preferences">התנהגות</string>
     <string name="settings_title_home_appearance_preferences">מראה חיצוני</string>
