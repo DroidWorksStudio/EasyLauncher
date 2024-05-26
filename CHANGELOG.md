@@ -4,16 +4,6 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
-### Language Support:
-
-- Updated Language Files. ([#33](https://github.com/DroidWorksStudio/EasyLauncher/issues/33)) - ([906c5fd](https://github.com/DroidWorksStudio/EasyLauncher/commit/906c5fd08b4d1b044641245732f958178edd1738))
-
-### Refactoring:
-
-- Created  more usable functions. - ([bd23849](https://github.com/DroidWorksStudio/EasyLauncher/commit/bd23849c536268d583afcbb1b4fe416a48f90eae))
-
-## [0.0.8](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.8) - (25, May 2024)
-
 ### Bug Fixes:
 
 - Fixed navigation and click issues. - ([b297fb2](https://github.com/DroidWorksStudio/EasyLauncher/commit/b297fb246016787011888151c2cb2a10ae7a7811))
@@ -21,10 +11,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Language Support:
 
+- Updated Language Files. ([#33](https://github.com/DroidWorksStudio/EasyLauncher/issues/33)) - ([906c5fd](https://github.com/DroidWorksStudio/EasyLauncher/commit/906c5fd08b4d1b044641245732f958178edd1738))
 - Updated Language Files. ([#29](https://github.com/DroidWorksStudio/EasyLauncher/issues/29)) - ([103c4e2](https://github.com/DroidWorksStudio/EasyLauncher/commit/103c4e26dc10d9389602d05fa5570faa0ca3e0e1))
 
 ### Refactoring:
 
+- Created  more usable functions. - ([bd23849](https://github.com/DroidWorksStudio/EasyLauncher/commit/bd23849c536268d583afcbb1b4fe416a48f90eae))
 - Worked out a better way for moving around the app. - ([8b1c0a3](https://github.com/DroidWorksStudio/EasyLauncher/commit/8b1c0a390de1bf3ab7bb9f6162adfb68257ba1fc))
 - Cleaned up some TODO junk. - ([45181ba](https://github.com/DroidWorksStudio/EasyLauncher/commit/45181baee8b443d3b0050e7f72568fe5c10a628e))
 - Cleaned up the way that we move between fragments - ([9e05fe7](https://github.com/DroidWorksStudio/EasyLauncher/commit/9e05fe7c38a3ddeb08696bf33b3afa038148321c))
