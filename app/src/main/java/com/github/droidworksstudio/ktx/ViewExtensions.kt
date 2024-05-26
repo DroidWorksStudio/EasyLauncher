@@ -54,10 +54,10 @@ inline fun EditText.setHideKeyboardEditorActionListener(crossinline onAction: (I
 }
 
 fun View.showKeyboard() {
-    val imm = context?.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
-    this.let { v ->
-        v.requestFocus()
-        imm?.showSoftInput(v, InputMethodManager.SHOW_IMPLICIT)
+    if (this.requestFocus()) {
+        val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        @Suppress("DEPRECATION")
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY)
     }
 }
 

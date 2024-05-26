@@ -11,15 +11,15 @@ import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ViewModelComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
-import dagger.hilt.android.scopes.ViewModelScoped
+import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
 
 @Module
-@InstallIn(ViewModelComponent::class)
+@InstallIn(SingletonComponent::class)
 object DatabaseModule {
     @Provides
-    @ViewModelScoped
+    @Singleton
     fun provideLocalDatabase(
         @ApplicationContext context: Context
     ): AppDatabase =
@@ -30,35 +30,26 @@ object DatabaseModule {
         ).build()
 
     @Provides
-    @ViewModelScoped
+    @Singleton
     fun provideAppDao(appDatabase: AppDatabase): AppInfoDAO = appDatabase.appDao()
 
     @Provides
-    @ViewModelScoped
     fun providePackageManager(@ApplicationContext context: Context): PackageManager {
         return context.packageManager
     }
 
     @Provides
-    @ViewModelScoped
+    @Singleton
     fun providePreferenceHelper(@ApplicationContext context: Context): PreferenceHelper {
         return PreferenceHelper(context)
     }
 
     @Provides
-    @ViewModelScoped
-    fun provideContext(@ApplicationContext context: Context): Context {
-        return context
-    }
-
-    @Provides
-    @ViewModelScoped
     fun provideAppHelper(): AppHelper {
         return AppHelper()
     }
 
     @Provides
-    @ViewModelScoped
     fun provideBottomDialogHelper(): BottomDialogHelper {
         return BottomDialogHelper()
     }

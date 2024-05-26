@@ -7,11 +7,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 
 fun Fragment.showKeyboard() {
-    val imm = context?.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
-    view?.let { v ->
-        v.requestFocus()
-        imm?.showSoftInput(v, InputMethodManager.SHOW_IMPLICIT)
-    }
+    val view = view?.findFocus() ?: return
+    val imm = view.context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+    @Suppress("DEPRECATION")
+    imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY)
 }
 
 fun Fragment.hideKeyboard() {

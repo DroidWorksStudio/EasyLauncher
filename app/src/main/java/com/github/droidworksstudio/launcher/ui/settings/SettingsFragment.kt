@@ -72,8 +72,7 @@ class SettingsFragment : Fragment(),
 
         val packageInfo =
             requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
-        binding.versionInfo.text = getString(
-            R.string.settings_version,
+        binding.versionInfo.text = getString(R.string.settings_version).format(
             getString(R.string.app_name),
             packageInfo.versionName
         )
