@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the search in all apps feature. - ([db64779](https://github.com/DroidWorksStudio/EasyLauncher/commit/db64779260787861c87da233bcf768f9e8f27926))
+
 ### Housekeeping:
 
 - Cleaned up functions and deleted AppExtensions - ([707e4e0](https://github.com/DroidWorksStudio/EasyLauncher/commit/707e4e01ba3ea05a809e9a80d2d22aa0b990b46d))
