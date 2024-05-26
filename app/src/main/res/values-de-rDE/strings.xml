@@ -25,7 +25,7 @@
     <string name="bottom_dialog_app_info">App-Information</string>
     <string name="bottom_dialog_app_uninstall">App deinstallieren</string>
     <string name="settings_name">Launcher-Einstellungen</string>
-    <string name="settings_version">%s Version: %s</string>
+    <string name="settings_version">%1$s Version: %2$s</string>
     <string name="settings_title_home_display_preferences">Anzeige</string>
     <string name="settings_title_home_behavior_preferences">Verhalten</string>
     <string name="settings_title_home_appearance_preferences">Aussehen</string>
