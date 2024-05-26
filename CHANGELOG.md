@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Housekeeping:
+
+- Cleaned up functions and deleted AppExtensions - ([707e4e0](https://github.com/DroidWorksStudio/EasyLauncher/commit/707e4e01ba3ea05a809e9a80d2d22aa0b990b46d))
+
 ### Refactoring:
 
 - Moved functions into there correct folders. - ([e45a918](https://github.com/DroidWorksStudio/EasyLauncher/commit/e45a918fb0d6ee81ab883886934e1473457368d0))
