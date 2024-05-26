@@ -25,7 +25,7 @@
     <string name="bottom_dialog_app_info">Інформація про додаток</string>
     <string name="bottom_dialog_app_uninstall">Видалити додаток</string>
     <string name="settings_name">Налаштування програми запуску</string>
-    <string name="settings_version">%1$s Version: %2$s</string>
+    <string name="settings_version">%1$s Версія: %2$s</string>
     <string name="settings_title_home_display_preferences">Дисплей</string>
     <string name="settings_title_home_behavior_preferences">Поведінка</string>
     <string name="settings_title_home_appearance_preferences">Зовнішній вигляд</string>
