@@ -13,11 +13,16 @@ import android.graphics.drawable.AdaptiveIconDrawable
 import android.net.Uri
 import android.os.Build
 import android.os.UserHandle
+import android.provider.AlarmClock
+import android.provider.CalendarContract
 import android.provider.Settings
+import android.util.DisplayMetrics
+import android.util.Log
 import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
@@ -27,10 +32,28 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.os.ConfigurationCompat
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
+import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
+import java.util.Calendar
+import java.util.Date
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 fun Context.isTabletConfig(): Boolean =
     resources.configuration.smallestScreenWidthDp >= SMALLEST_WIDTH_600
+
+fun Context.isTablet(): Boolean {
+    val windowManager = this.getSystemService(Context.WINDOW_SERVICE) as WindowManager
+    val metrics = DisplayMetrics()
+    @Suppress("DEPRECATION")
+    windowManager.defaultDisplay.getMetrics(metrics)
+    val widthInches = metrics.widthPixels / metrics.xdpi
+    val heightInches = metrics.heightPixels / metrics.ydpi
+    val diagonalInches =
+        sqrt(widthInches.toDouble().pow(2.0) + heightInches.toDouble().pow(2.0))
+    if (diagonalInches >= 7.0) return true
+    return false
+}
 
 fun Context.isPortraitSw600Config(): Boolean =
     resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT &&
@@ -170,6 +193,74 @@ private fun Context.notRunningStockAndroid() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
+    }
+}
+
+fun Context.searchView() {
+    val intent = Intent(Intent.ACTION_WEB_SEARCH)
+    intent.putExtra(SearchManager.QUERY, "")
+    this.startActivity(intent)
+}
+
+fun Context.unInstallApp(appInfo: AppInfo) {
+    val intent = Intent(Intent.ACTION_DELETE)
+    intent.data = Uri.parse("package:${appInfo.packageName}")
+    this.startActivity(intent)
+}
+
+fun Context.appInfo(appInfo: AppInfo) {
+    val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+    intent.data = Uri.fromParts("package", appInfo.packageName, null)
+    this.startActivity(intent)
+}
+
+fun Context.launchApp(appInfo: AppInfo) {
+    val intent = this.packageManager.getLaunchIntentForPackage(appInfo.packageName)
+    if (intent != null) {
+        this.startActivity(intent)
+    } else {
+        showLongToast("Failed to open the application")
+    }
+}
+
+fun Context.launchClock() {
+    try {
+        val intent = Intent(AlarmClock.ACTION_SHOW_ALARMS)
+        this.startActivity(intent)
+    } catch (e: Exception) {
+        Log.e("launchClock", "Error launching clock app: ${e.message}")
+    }
+}
+
+fun Context.launchCalendar() {
+    try {
+        val cal: Calendar = Calendar.getInstance()
+        cal.time = Date()
+        val time = cal.time.time
+        val builder: Uri.Builder = CalendarContract.CONTENT_URI.buildUpon()
+        builder.appendPath("time")
+        builder.appendPath(time.toString())
+        this.startActivity(Intent(Intent.ACTION_VIEW, builder.build()))
+    } catch (e: Exception) {
+        try {
+            val intent = Intent(Intent.ACTION_MAIN)
+            intent.addCategory(Intent.CATEGORY_APP_CALENDAR)
+            this.startActivity(intent)
+        } catch (e: Exception) {
+            Log.d("openCalendar", e.toString())
+        }
+    }
+}
+
+fun Context.openBatteryManager() {
+    try {
+        val intent = Intent(Intent.ACTION_POWER_USAGE_SUMMARY)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        this.startActivity(intent)
+    } catch (e: ActivityNotFoundException) {
+        // Battery manager settings cannot be opened
+        // Handle this case as needed
+        showLongToast("Battery manager settings are not available on this device.")
     }
 }
 

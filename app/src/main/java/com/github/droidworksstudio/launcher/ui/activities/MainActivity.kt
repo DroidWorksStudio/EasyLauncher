@@ -18,6 +18,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
+import com.github.droidworksstudio.ktx.isTablet
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
@@ -94,7 +95,7 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SourceLockedOrientationActivity")
     private fun setupOrientation() {
-        if (appHelper.isTablet(this)) return
+        if (this.isTablet()) return
         if (Build.VERSION.SDK_INT != Build.VERSION_CODES.O)
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }

@@ -1,12 +1,10 @@
 package com.github.droidworksstudio.launcher.helper
 
 import android.annotation.SuppressLint
-import android.app.SearchManager
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.net.Uri
@@ -22,7 +20,6 @@ import android.view.Window
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.widget.LinearLayoutCompat
 import com.github.droidworksstudio.ktx.showLongToast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -30,7 +27,6 @@ import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
-import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 import java.util.Calendar
 import java.util.Date
 import javax.inject.Inject
@@ -68,12 +64,6 @@ class AppHelper @Inject constructor() {
         }
     }
 
-    fun searchView(context: Context) {
-        val intent = Intent(Intent.ACTION_WEB_SEARCH)
-        intent.putExtra(SearchManager.QUERY, "")
-        context.startActivity(intent)
-    }
-
     fun dayNightMod(context: Context, view: View) {
         when (context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
             Configuration.UI_MODE_NIGHT_YES -> {
@@ -109,44 +99,6 @@ class AppHelper @Inject constructor() {
         }
     }
 
-    fun launchApp(context: Context, appInfo: AppInfo) {
-        val intent = context.packageManager.getLaunchIntentForPackage(appInfo.packageName)
-        if (intent != null) {
-            context.startActivity(intent)
-        } else {
-            context.showLongToast("Failed to open the application")
-        }
-    }
-
-    fun launchClock(context: Context) {
-        try {
-            val intent = Intent(AlarmClock.ACTION_SHOW_ALARMS)
-            context.startActivity(intent)
-        } catch (e: Exception) {
-            Log.e("launchClock", "Error launching clock app: ${e.message}")
-        }
-    }
-
-    fun launchCalendar(context: Context) {
-        try {
-            val cal: Calendar = Calendar.getInstance()
-            cal.time = Date()
-            val time = cal.time.time
-            val builder: Uri.Builder = CalendarContract.CONTENT_URI.buildUpon()
-            builder.appendPath("time")
-            builder.appendPath(time.toString())
-            context.startActivity(Intent(Intent.ACTION_VIEW, builder.build()))
-        } catch (e: Exception) {
-            try {
-                val intent = Intent(Intent.ACTION_MAIN)
-                intent.addCategory(Intent.CATEGORY_APP_CALENDAR)
-                context.startActivity(intent)
-            } catch (e: Exception) {
-                Log.d("openCalendar", e.toString())
-            }
-        }
-    }
-
     fun openDigitalWellbeing(context: Context) {
         try {
             val packageName = "com.google.android.apps.wellbeing"
@@ -161,30 +113,6 @@ class AppHelper @Inject constructor() {
             // Handle this case as needed
             context.showLongToast("Digital Wellbeing is not available on this device.")
         }
-    }
-
-    fun openBatteryManager(context: Context) {
-        try {
-            val intent = Intent(Intent.ACTION_POWER_USAGE_SUMMARY)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            context.startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
-            // Battery manager settings cannot be opened
-            // Handle this case as needed
-            context.showLongToast("Battery manager settings are not available on this device.")
-        }
-    }
-
-    fun unInstallApp(context: Context, appInfo: AppInfo) {
-        val intent = Intent(Intent.ACTION_DELETE)
-        intent.data = Uri.parse("package:${appInfo.packageName}")
-        context.startActivity(intent)
-    }
-
-    fun appInfo(context: Context, appInfo: AppInfo) {
-        val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
-        intent.data = Uri.fromParts("package", appInfo.packageName, null)
-        context.startActivity(intent)
     }
 
     fun gravityToString(gravity: Int): String? {
@@ -228,19 +156,6 @@ class AppHelper @Inject constructor() {
                     View.SYSTEM_UI_FLAG_IMMERSIVE or View.SYSTEM_UI_FLAG_FULLSCREEN
             }
         }
-    }
-
-    fun isTablet(context: Context): Boolean {
-        val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
-        val metrics = DisplayMetrics()
-        @Suppress("DEPRECATION")
-        windowManager.defaultDisplay.getMetrics(metrics)
-        val widthInches = metrics.widthPixels / metrics.xdpi
-        val heightInches = metrics.heightPixels / metrics.ydpi
-        val diagonalInches =
-            sqrt(widthInches.toDouble().pow(2.0) + heightInches.toDouble().pow(2.0))
-        if (diagonalInches >= 7.0) return true
-        return false
     }
 
     fun wordOfTheDay(resources: Resources): String {

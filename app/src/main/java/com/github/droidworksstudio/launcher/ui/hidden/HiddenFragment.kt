@@ -13,6 +13,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.github.droidworksstudio.ktx.launchApp
 import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -112,7 +113,7 @@ class HiddenFragment : Fragment(),
 
     private fun observeBioAuthCheck(appInfo: AppInfo) {
         if (!appInfo.lock) {
-            appHelper.launchApp(context, appInfo)
+            context.launchApp(appInfo)
         } else {
             fingerHelper.startFingerprintAuth(appInfo, this)
         }
@@ -156,7 +157,7 @@ class HiddenFragment : Fragment(),
 
     override fun onAuthenticationSucceeded(appInfo: AppInfo) {
         context.showLongToast(getString(R.string.authentication_succeeded))
-        appHelper.launchApp(context, appInfo)
+        context.launchApp(appInfo)
     }
 
     override fun onAuthenticationFailed() {

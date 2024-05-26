@@ -16,6 +16,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.github.droidworksstudio.ktx.launchApp
 import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -199,7 +200,7 @@ class FavoriteFragment : Fragment(),
 
     private fun observeBioAuthCheck(appInfo: AppInfo) {
         if (!appInfo.lock) {
-            appHelper.launchApp(context, appInfo)
+            context.launchApp(appInfo)
         } else {
             fingerHelper.startFingerprintAuth(appInfo, this)
         }
@@ -215,7 +216,7 @@ class FavoriteFragment : Fragment(),
 
     override fun onAuthenticationSucceeded(appInfo: AppInfo) {
         context.showLongToast(getString(R.string.authentication_succeeded))
-        appHelper.launchApp(context, appInfo)
+        context.launchApp(appInfo)
     }
 
     override fun onAuthenticationFailed() {

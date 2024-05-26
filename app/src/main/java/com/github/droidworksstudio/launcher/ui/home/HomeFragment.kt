@@ -20,6 +20,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.ktx.hideKeyboard
+import com.github.droidworksstudio.ktx.launchApp
+import com.github.droidworksstudio.ktx.launchCalendar
+import com.github.droidworksstudio.ktx.launchClock
+import com.github.droidworksstudio.ktx.openBatteryManager
+import com.github.droidworksstudio.ktx.searchView
 import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
@@ -160,9 +165,9 @@ class HomeFragment : Fragment(),
         binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
         binding.nestScrollView.setOnTouchListener(getSwipeGestureListener(context))
 
-        binding.clock.setOnClickListener { appHelper.launchClock(context) }
-        binding.date.setOnClickListener { appHelper.launchCalendar(context) }
-        binding.battery.setOnClickListener { appHelper.openBatteryManager(context) }
+        binding.clock.setOnClickListener { context.launchClock() }
+        binding.date.setOnClickListener { context.launchCalendar() }
+        binding.battery.setOnClickListener { context.openBatteryManager() }
     }
 
     private fun observeUserInterfaceSettings() {
@@ -229,10 +234,7 @@ class HomeFragment : Fragment(),
 
     private fun observeBioAuthCheck(appInfo: AppInfo) {
         if (!appInfo.lock)
-            appHelper.launchApp(
-                context,
-                appInfo
-            )
+            context.launchApp(appInfo)
         else
             fingerHelper.startFingerprintAuth(appInfo, this)
     }
@@ -281,7 +283,7 @@ class HomeFragment : Fragment(),
 
             override fun onSwipeUp() {
                 super.onSwipeUp()
-                if (preferenceHelper.swipeSearch) appHelper.searchView(context)
+                if (preferenceHelper.swipeSearch) context.searchView()
             }
         }
     }
@@ -359,7 +361,7 @@ class HomeFragment : Fragment(),
     }
 
     override fun onAuthenticationSucceeded(appInfo: AppInfo) {
-        appHelper.launchApp(context, appInfo)
+        context.launchApp(appInfo)
         requireContext().showLongToast(getString(R.string.authentication_succeeded))
     }
 

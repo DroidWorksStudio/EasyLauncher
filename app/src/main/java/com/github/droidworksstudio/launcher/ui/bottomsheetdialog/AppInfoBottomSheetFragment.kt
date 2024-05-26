@@ -11,7 +11,9 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
+import com.github.droidworksstudio.ktx.appInfo
 import com.github.droidworksstudio.ktx.showLongToast
+import com.github.droidworksstudio.ktx.unInstallApp
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -167,12 +169,12 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
 
         binding.bottomSheetUninstall.setOnClickListener {
             appStateClickListener?.onAppStateClicked(appInfo)
-            appHelper.unInstallApp(requireContext(), appInfo)
+            requireContext().unInstallApp(appInfo)
             dismiss()
         }
 
         binding.bottomSheetInfo.setOnClickListener {
-            appHelper.appInfo(requireContext(), appInfo)
+            requireContext().appInfo(appInfo)
             dismiss()
         }
     }
