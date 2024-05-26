@@ -9,29 +9,22 @@ import android.content.res.Configuration
 import android.content.res.Resources
 import android.net.Uri
 import android.os.Build
-import android.provider.AlarmClock
-import android.provider.CalendarContract
 import android.provider.Settings
-import android.util.DisplayMetrics
-import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.Window
 import android.view.WindowInsets
-import android.view.WindowManager
 import android.widget.TextView
 import androidx.appcompat.widget.LinearLayoutCompat
+import com.github.droidworksstudio.ktx.backupSharedPreferences
+import com.github.droidworksstudio.ktx.restoreSharedPreferences
 import com.github.droidworksstudio.ktx.showLongToast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
-import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import java.util.Calendar
-import java.util.Date
 import javax.inject.Inject
-import kotlin.math.pow
-import kotlin.math.sqrt
 
 class AppHelper @Inject constructor() {
     @SuppressLint("WrongConstant", "PrivateApi")

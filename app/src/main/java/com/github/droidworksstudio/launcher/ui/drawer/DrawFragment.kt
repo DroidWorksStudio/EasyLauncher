@@ -17,6 +17,8 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.ktx.hideKeyboard
 import com.github.droidworksstudio.ktx.launchApp
 import com.github.droidworksstudio.ktx.openSearch
+import com.github.droidworksstudio.ktx.searchCustomSearchEngine
+import com.github.droidworksstudio.ktx.searchOnPlayStore
 import com.github.droidworksstudio.ktx.showKeyboard
 import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
@@ -25,8 +27,6 @@ import com.github.droidworksstudio.launcher.databinding.FragmentDrawBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.helper.searchCustomSearchEngine
-import com.github.droidworksstudio.launcher.helper.searchOnPlayStore
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
