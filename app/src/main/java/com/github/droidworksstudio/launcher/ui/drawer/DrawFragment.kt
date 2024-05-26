@@ -118,9 +118,7 @@ class DrawFragment : Fragment(),
                             val searchQuery = trimmedQuery.substringAfter("!")
                             requireContext().searchCustomSearchEngine(searchQuery)
                         } else {
-                            if (!requireContext().searchOnPlayStore(trimmedQuery)) {
-                                requireContext().openSearch(trimmedQuery)
-                            }
+                            checkAppThenRun(trimmedQuery)
                             return true // Exit the function
                         }
                     }
@@ -163,6 +161,29 @@ class DrawFragment : Fragment(),
         }
     }
 
+    private fun checkAppThenRun(query: String) {
+        val searchQuery = "%$query%"
+        @Suppress("DEPRECATION")
+        viewLifecycleOwner.lifecycle.coroutineScope.launchWhenCreated {
+            val trimmedQuery = searchQuery.trim()
+            viewModel.searchAppInfo(trimmedQuery).collect { searchResults ->
+                val numberOfItemsLeft = searchResults.size
+                val appResults = searchResults.firstOrNull()
+                if (numberOfItemsLeft == 0 && !requireContext().searchOnPlayStore(
+                        trimmedQuery
+                    )
+                ) {
+                    requireContext().openSearch(trimmedQuery)
+                } else {
+                    appResults?.let { appInfo ->
+                        observeBioAuthCheck(appInfo)
+                    }
+                    drawAdapter.submitList(searchResults)
+                }
+            }
+        }
+    }
+
 
     private fun searchApp(query: String) {
         val searchQuery = "%$query%"
@@ -186,6 +207,7 @@ class DrawFragment : Fragment(),
             }
         }
     }
+
 
     private fun showSelectedApp(appInfo: AppInfo) {
         binding.searchViewText.setQuery("", false)
