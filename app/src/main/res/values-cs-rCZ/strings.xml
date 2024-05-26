@@ -25,7 +25,7 @@
     <string name="bottom_dialog_app_info">Informace o aplikaci</string>
     <string name="bottom_dialog_app_uninstall">Odinstalovat aplikaci</string>
     <string name="settings_name">Nastavení spouštěče</string>
-    <string name="settings_version">%s Verze: %s</string>
+    <string name="settings_version">%1$s Version: %2$s</string>
     <string name="settings_title_home_display_preferences">Zobrazit</string>
     <string name="settings_title_home_behavior_preferences">Chování</string>
     <string name="settings_title_home_appearance_preferences">Vzhled</string>
