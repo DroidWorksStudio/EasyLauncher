@@ -38,56 +38,6 @@ import kotlin.math.pow
 import kotlin.math.sqrt
 
 class AppHelper @Inject constructor() {
-
-    fun resetDefaultLauncher(context: Context) {
-        val manufacturer = Build.MANUFACTURER.lowercase()
-        when (manufacturer) {
-            "google", "essential" -> runningStockAndroid(context)
-            else -> notRunningStockAndroid(context)
-        }
-    }
-
-    private fun runningStockAndroid(context: Context) {
-        try {
-            val packageManager = context.packageManager
-            val componentName = ComponentName(context, FakeHomeActivity::class.java)
-
-            packageManager.setComponentEnabledSetting(
-                componentName,
-                PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
-                PackageManager.DONT_KILL_APP
-            )
-
-            val selector = Intent(Intent.ACTION_MAIN)
-            selector.addCategory(Intent.CATEGORY_HOME)
-            context.startActivity(selector)
-
-            packageManager.setComponentEnabledSetting(
-                componentName,
-                PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-                PackageManager.DONT_KILL_APP
-            )
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-    }
-
-    private fun notRunningStockAndroid(context: Context) {
-        try {
-            val intent = Intent("android.settings.HOME_SETTINGS")
-            context.startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
-            // Fallback to general settings if specific launcher settings are not found
-            try {
-                val intent = Intent(Settings.ACTION_SETTINGS)
-                context.startActivity(intent)
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-        }
-    }
-
-
     @SuppressLint("WrongConstant", "PrivateApi")
     fun expandNotificationDrawer(context: Context) {
         try {

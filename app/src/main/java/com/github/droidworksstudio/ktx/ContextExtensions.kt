@@ -1,15 +1,19 @@
 package com.github.droidworksstudio.ktx
 
 import android.app.SearchManager
+import android.content.ActivityNotFoundException
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.LauncherApps
+import android.content.pm.PackageManager
 import android.content.res.Configuration
 import android.graphics.Bitmap
 import android.graphics.drawable.AdaptiveIconDrawable
 import android.net.Uri
 import android.os.Build
 import android.os.UserHandle
+import android.provider.Settings
 import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
@@ -23,6 +27,7 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.os.ConfigurationCompat
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
+import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 
 fun Context.isTabletConfig(): Boolean =
     resources.configuration.smallestScreenWidthDp >= SMALLEST_WIDTH_600
@@ -118,6 +123,54 @@ fun Context.openUrl(url: String) {
     val intent = Intent(Intent.ACTION_VIEW)
     intent.data = Uri.parse(url)
     startActivity(intent)
+}
+
+fun Context.resetDefaultLauncher() {
+    val manufacturer = Build.MANUFACTURER.lowercase()
+    when (manufacturer) {
+        "google", "essential" -> runningStockAndroid()
+        else -> notRunningStockAndroid()
+    }
+}
+
+private fun Context.runningStockAndroid() {
+    try {
+        val packageManager = this.packageManager
+        val componentName = ComponentName(this, FakeHomeActivity::class.java)
+
+        packageManager.setComponentEnabledSetting(
+            componentName,
+            PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+            PackageManager.DONT_KILL_APP
+        )
+
+        val selector = Intent(Intent.ACTION_MAIN)
+        selector.addCategory(Intent.CATEGORY_HOME)
+        this.startActivity(selector)
+
+        packageManager.setComponentEnabledSetting(
+            componentName,
+            PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+            PackageManager.DONT_KILL_APP
+        )
+    } catch (e: Exception) {
+        e.printStackTrace()
+    }
+}
+
+private fun Context.notRunningStockAndroid() {
+    try {
+        val intent = Intent("android.settings.HOME_SETTINGS")
+        this.startActivity(intent)
+    } catch (e: ActivityNotFoundException) {
+        // Fallback to general settings if specific launcher settings are not found
+        try {
+            val intent = Intent(Settings.ACTION_SETTINGS)
+            this.startActivity(intent)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
 }
 
 fun Context.isPackageInstalled(
