@@ -1,1 +1,1 @@
-EasyLauncher: programma di avvio minimo
+Easy Launcher - Minimal launcher
