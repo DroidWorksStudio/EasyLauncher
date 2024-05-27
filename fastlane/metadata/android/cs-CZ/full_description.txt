@@ -1,23 +1,23 @@
-<b>Features:</b>
+<b>Vlastnosti:</b>
 
-- Favorite App Quick Access: Display your favorite apps in text format on the home screen for swift access to your most-used apps, streamlining your operations.
-- Hide Apps: Easily conceal apps that you don't want to be visible, keeping your home screen clean and focused on the content you need.
-- Rename Apps: You can rename your apps and they sync between favorite apps and all apps.
-- Locking: Secure your privacy and data by fingerprint to lock selected apps and settings.
-- Internet Permissions: We do not use of INTERNET permissions. You never know what an app developer wants to know about you.
+- Rychlý přístup k oblíbené aplikaci: Zobrazte své oblíbené aplikace v textovém formátu na domovské obrazovce pro rychlý přístup k nejpoužívanějším aplikacím a zefektivněte své operace.
+- Skrýt aplikace: Snadno skryjte aplikace, které nechcete, aby byly viditelné, a udržujte svou domovskou obrazovku čistou a zaměřenou na obsah, který potřebujete.
+- Přejmenovat aplikace: Své aplikace můžete přejmenovat a budou se synchronizovat mezi oblíbenými aplikacemi a všemi aplikacemi.
+- Uzamčení: Zabezpečte své soukromí a data otiskem prstu, abyste uzamkli vybrané aplikace a nastavení.
+- Oprávnění k internetu: Nepoužíváme oprávnění INTERNET. Nikdy nevíte, co o vás chce vývojář aplikace vědět.
 
-<b>Personalized Customization:</b>
+<b>Personalizované přizpůsobení:</b>
 
-- Font Colors: Chose your own font colors using our color picker.
-- Position: Chose from Left, Center, and Right alignments for Date, Time and Apps.
-- Padding: Chose the padding you want between favorite apps and all apps.
-- Font Size: Chose the size of font for each element of the home screen.
-- Disabled: Chose what you want to display on the home screen.
+- Barvy písma: Vyberte si vlastní barvy písma pomocí našeho výběru barev.
+- Pozice: Vyberte ze zarovnání doleva, na střed a doprava pro datum, čas a aplikace.
+- Výplň: Vyberte si požadovanou výplň mezi oblíbenými aplikacemi a všemi aplikacemi.
+- Velikost písma: Vyberte velikost písma pro každý prvek domovské obrazovky.
+- Zakázáno: Vyberte, co chcete zobrazit na domovské obrazovce.
 
-<b>Possible Actions Include:</b>
+<b>Možné akce zahrnují:</b>
 
-- Swipe Left to all apps.
-- Swipe Right to favorite apps.
-- Clicking on the Battery Level.
-- Clicking on the Clock.
-- Clicking on the Date.
+- Přejetím doleva do všech aplikací.
+- Přejeďte prstem doprava na oblíbené aplikace.
+- Kliknutím na Úroveň baterie.
+- Kliknutím na hodiny.
+- Kliknutím na datum.
