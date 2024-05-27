@@ -24,7 +24,6 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent>
     </queries>
-
     <application
         android:name=".Application"
         android:allowBackup="true"
@@ -40,7 +39,6 @@
             android:excludeFromRecents="true"
             android:exported="false"
             android:launchMode="singleTask">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,8 +46,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".ui.activities.MainActivity"
             android:configChanges="uiMode"
@@ -66,7 +62,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.activities.FakeHomeActivity"
             android:enabled="false"
@@ -94,7 +89,6 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
             </intent-filter>
         </receiver>
-
         <service
             android:name=".accessibility.ActionService"
             android:exported="false"
@@ -107,7 +101,5 @@
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
         </service>
-
     </application>
-
 </manifest>
