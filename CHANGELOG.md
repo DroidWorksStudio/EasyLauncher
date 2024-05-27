@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Cleaned up functions and deleted AppExtensions - ([707e4e0](https://github.com/DroidWorksStudio/EasyLauncher/commit/707e4e01ba3ea05a809e9a80d2d22aa0b990b46d))
 
+### Language Support:
+
+- Updated Language Files. ([#38](https://github.com/DroidWorksStudio/EasyLauncher/issues/38)) - ([de423cf](https://github.com/DroidWorksStudio/EasyLauncher/commit/de423cfff1c442ac85a49d3c54bac26a2b6ef820))
+
 ### Refactoring:
 
 - Cleaned up the f-droid about page. - ([6ff0374](https://github.com/DroidWorksStudio/EasyLauncher/commit/6ff03745dab5653616011f74e084416c359471c3))
