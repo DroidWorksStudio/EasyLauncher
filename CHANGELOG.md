@@ -4,12 +4,17 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the search in all apps feature. - ([db64779](https://github.com/DroidWorksStudio/EasyLauncher/commit/db64779260787861c87da233bcf768f9e8f27926))
+
 ### Housekeeping:
 
 - Cleaned up functions and deleted AppExtensions - ([707e4e0](https://github.com/DroidWorksStudio/EasyLauncher/commit/707e4e01ba3ea05a809e9a80d2d22aa0b990b46d))
 
 ### Refactoring:
 
+- Cleaned up the f-droid about page. - ([6ff0374](https://github.com/DroidWorksStudio/EasyLauncher/commit/6ff03745dab5653616011f74e084416c359471c3))
 - Moved functions into there correct folders. - ([e45a918](https://github.com/DroidWorksStudio/EasyLauncher/commit/e45a918fb0d6ee81ab883886934e1473457368d0))
 - Moved to a better location. - ([d6d7f6f](https://github.com/DroidWorksStudio/EasyLauncher/commit/d6d7f6f7214d71bf08aeae6fce109fe4e5e3aff0))
 

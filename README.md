@@ -3,15 +3,17 @@
     <table align='center'>
         Click on any image to enlarge it. To know more, explore and see for yourself.
         <tr>
-            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/0.png' width='150' alt=""></td>
-            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/1.png' width='150' alt=""></td>
-            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/2.png' width='150' alt=""></td>
-            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/3.png' width='150' alt=""></td>
-            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/4.png' width='150' alt=""></td>
-            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/5.png' width='150' alt=""></td>
-            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/6.png' width='150' alt=""></td>
-            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/7.png' width='150' alt=""></td>
+            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/0.png' width='100' alt=""></td>
+            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/1.png' width='100' alt=""></td>
+            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/2.png' width='100' alt=""></td>
+            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/3.png' width='100' alt=""></td>
         </tr>
+	<tr>
+            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/4.png' width='100' alt=""></td>
+            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/5.png' width='100' alt=""></td>
+            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/6.png' width='100' alt=""></td>
+            <td><img src='fastlane/metadata/android/en-US/images/phoneScreenshots/7.png' width='100' alt=""></td>
+	</tr>
     </table>
     <p>
         <a href='https://f-droid.org/packages/app.easy.launcher'><img src='https://github.com/DroidWorksStudio/mLauncher/assets/9284733/a1e7c86f-1c76-46c0-9193-8fde9c9f531c' width="150" alt="fDroid"></a>
@@ -28,7 +30,7 @@
         <img src='https://img.shields.io/badge/Maintained-yes-44cc11?style=flat-square' alt="Maintained">
         <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img src='https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/total?color=44cc11&style=flat-square' alt="releases"></a>
         <br>
-        <a href='https://f-droid.org/packages/app.easy.launcher/'><img alt="F-Droid (including pre-releases)" src="https://img.shields.io/f-droid/v/app.easy.launcher?include_prereleases&style=flat-square"></a>
+        <a href='https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/app.easy.launcher.yml'><img alt="F-Droid (including pre-releases)" src="https://img.shields.io/f-droid/v/app.easy.launcher?include_prereleases&style=flat-square"></a>
         <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/DroidWorksStudio/EasyLauncher?style=flat-square"></a>
     </p>
 </div>
