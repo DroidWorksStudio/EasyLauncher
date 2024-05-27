@@ -1,13 +1,23 @@
-EasyLauncher - משגר אנדרואיד מינימלי וללא עומס
+<b>Features:</b>
 
-<b> תכונות: </b>
+- Favorite App Quick Access: Display your favorite apps in text format on the home screen for swift access to your most-used apps, streamlining your operations.
+- Hide Apps: Easily conceal apps that you don't want to be visible, keeping your home screen clean and focused on the content you need.
+- Rename Apps: You can rename your apps and they sync between favorite apps and all apps.
+- Locking: Secure your privacy and data by fingerprint to lock selected apps and settings.
+- Internet Permissions: We do not use of INTERNET permissions. You never know what an app developer wants to know about you.
 
-- אתה יכול לשנות את שמות האפליקציות במגירת האפליקציות. (סנכרון עם מסך הבית)
-- אין שימוש בהרשאות אינטרנט.
-- נעילת הגדרות מאחורי ביומטריה (החלפה).
+<b>Personalized Customization:</b>
 
-<b>פעולות אפשריות כוללות כעת:</b>
+- Font Colors: Chose your own font colors using our color picker.
+- Position: Chose from Left, Center, and Right alignments for Date, Time and Apps.
+- Padding: Chose the padding you want between favorite apps and all apps.
+- Font Size: Chose the size of font for each element of the home screen.
+- Disabled: Chose what you want to display on the home screen.
 
-- לחיצה על רמת הסוללה
-- לחיצה על השעון
-- לחיצה על התאריך
+<b>Possible Actions Include:</b>
+
+- Swipe Left to all apps.
+- Swipe Right to favorite apps.
+- Clicking on the Battery Level.
+- Clicking on the Clock.
+- Clicking on the Date.
