@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Added app font color to headers of the page. - ([b7ff0d8](https://github.com/DroidWorksStudio/EasyLauncher/commit/b7ff0d8b1ab1de914a9336b98cdb6ec737b10c5b))
 
+### Refactoring:
+
+- Made the animations longer. - ([3136e85](https://github.com/DroidWorksStudio/EasyLauncher/commit/3136e854951901ec00f9f77f333880eaf60579cc))
+
 ## [0.0.9](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.9) - (27, May 2024)
 
 ### Bug Fixes:
