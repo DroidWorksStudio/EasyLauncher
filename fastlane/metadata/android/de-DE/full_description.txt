@@ -1,23 +1,23 @@
-<b>Features:</b>
+<b>Funktionen:</b>
 
-- Favorite App Quick Access: Display your favorite apps in text format on the home screen for swift access to your most-used apps, streamlining your operations.
-- Hide Apps: Easily conceal apps that you don't want to be visible, keeping your home screen clean and focused on the content you need.
-- Rename Apps: You can rename your apps and they sync between favorite apps and all apps.
-- Locking: Secure your privacy and data by fingerprint to lock selected apps and settings.
-- Internet Permissions: We do not use of INTERNET permissions. You never know what an app developer wants to know about you.
+Schnellzugriff auf Ihre Lieblings-Apps: Zeigen Sie Ihre Lieblings-Apps im Textformat auf dem Startbildschirm an, um schnell auf Ihre am häufigsten verwendeten Apps zugreifen zu können und so Ihre Vorgänge zu optimieren.
+- Apps ausblenden: Verbergen Sie ganz einfach Apps, die nicht sichtbar sein sollen, und halten Sie so Ihren Startbildschirm übersichtlich und konzentrieren Sie sich auf die Inhalte, die Sie benötigen.
+- Apps umbenennen: Sie können Ihre Apps umbenennen und sie zwischen Lieblings-Apps und allen Apps synchronisieren.
+- Sperren: Schützen Sie Ihre Privatsphäre und Daten, indem Sie ausgewählte Apps und Einstellungen per Fingerabdruck sperren.
+- Internetberechtigungen: Wir verwenden keine INTERNETberechtigungen. Sie wissen nie, was ein App-Entwickler über Sie wissen möchte.
 
-<b>Personalized Customization:</b>
+<b>Personalisierte Anpassung:</b>
 
-- Font Colors: Chose your own font colors using our color picker.
-- Position: Chose from Left, Center, and Right alignments for Date, Time and Apps.
-- Padding: Chose the padding you want between favorite apps and all apps.
-- Font Size: Chose the size of font for each element of the home screen.
-- Disabled: Chose what you want to display on the home screen.
+- Schriftfarben: Wählen Sie mit unserem Farbwähler Ihre eigenen Schriftfarben.
+- Position: Wählen Sie zwischen der Ausrichtung links, zentriert und rechts für Datum, Uhrzeit und Apps.
+- Polsterung: Wählen Sie die gewünschte Polsterung zwischen Lieblings-Apps und allen Apps.
+- Schriftgröße: Wählen Sie die Schriftgröße für jedes Element des Startbildschirms.
+- Deaktiviert: Wählen Sie aus, was auf dem Startbildschirm angezeigt werden soll.
 
-<b>Possible Actions Include:</b>
+<b>Mögliche Aktionen umfassen:</b>
 
-- Swipe Left to all apps.
-- Swipe Right to favorite apps.
-- Clicking on the Battery Level.
-- Clicking on the Clock.
-- Clicking on the Date.
+- Wischen Sie nach links, um zu allen Apps zu gelangen.
+- Streichen Sie nach rechts zu den Lieblings-Apps.
+- Klicken Sie auf den Batteriestand.
+- Klicken Sie auf die Uhr.
+- Klicken Sie auf das Datum.
