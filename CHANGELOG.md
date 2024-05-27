@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
+
+### Implemented Enhancements:
+
+- Added app font color to headers of the page. - ([b7ff0d8](https://github.com/DroidWorksStudio/EasyLauncher/commit/b7ff0d8b1ab1de914a9336b98cdb6ec737b10c5b))
+
 ## [0.0.9](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.9) - (27, May 2024)
 
 ### Bug Fixes:
