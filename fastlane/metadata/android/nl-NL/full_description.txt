@@ -1,13 +1,23 @@
-EasyLauncher - Minimale en overzichtelijke Android-launcher
+<b>Kenmerken:</b>
 
-<b> Kenmerken: </b>
+- Snelle toegang tot favoriete apps: geef uw favoriete apps in tekstformaat weer op het startscherm voor snelle toegang tot uw meest gebruikte apps, waardoor uw activiteiten worden gestroomlijnd.
+- Apps verbergen: verberg eenvoudig apps die u niet zichtbaar wilt hebben, zodat uw startscherm schoon blijft en gefocust op de inhoud die u nodig heeft.
+- Apps hernoemen: u kunt de naam van uw apps wijzigen en ze synchroniseren tussen favoriete apps en alle apps.
+- Vergrendeling: beveilig uw privacy en gegevens met een vingerafdruk om geselecteerde apps en instellingen te vergrendelen.
+- Internettoestemmingen: we maken geen gebruik van INTERNETtoestemmingen. Je weet nooit wat een app-ontwikkelaar over je wil weten.
 
-- U kunt apps hernoemen in de app-lade. (Synchroniseren met startscherm)
-- Geen gebruik van INTERNET-machtigingen.
-- Vergrendel instellingen achter biometrie (schakelaar).
+<b>Gepersonaliseerde aanpassing:</b>
 
-<b>Mogelijke acties zijn nu:</b>
+- Lettertypekleuren: kies uw eigen lettertypekleuren met behulp van onze kleurenkiezer.
+- Positie: kies uit uitlijningen links, midden en rechts voor datum, tijd en apps.
+- Opvulling: kies de gewenste opvulling tussen favoriete apps en alle apps.
+- Lettergrootte: Kies de lettergrootte voor elk element van het startscherm.
+- Uitgeschakeld: kies wat u op het startscherm wilt weergeven.
 
-- Klik op het batterijniveau
-- Klik op de klok
-- Klik op de datum
+<b>Mogelijke acties zijn:</b>
+
+- Veeg naar links naar alle apps.
+- Veeg naar rechts naar favoriete apps.
+- Klik op het batterijniveau.
+- Klik op de klok.
+- Klik op de datum.

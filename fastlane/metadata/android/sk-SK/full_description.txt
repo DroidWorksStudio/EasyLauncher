@@ -1,13 +1,23 @@
-EasyLauncher – minimálny spúšťač Androidu bez zbytočností
+<b>Vlastnosti:</b>
 
-<b> Vlastnosti: </b>
+- Rýchly prístup k obľúbeným aplikáciám: Zobrazte svoje obľúbené aplikácie v textovom formáte na domovskej obrazovke pre rýchly prístup k najpoužívanejším aplikáciám a zefektívnite tak svoje operácie.
+- Skryť aplikácie: Jednoducho skryte aplikácie, ktoré nechcete, aby boli viditeľné, a udržte tak svoju domovskú obrazovku čistú a zameranú na obsah, ktorý potrebujete.
+- Premenovať aplikácie: Svoje aplikácie môžete premenovať a budú sa synchronizovať medzi obľúbenými aplikáciami a všetkými aplikáciami.
+- Uzamknutie: Zabezpečte svoje súkromie a údaje odtlačkom prsta, aby ste uzamkli vybrané aplikácie a nastavenia.
+- Internetové povolenia: Nepoužívame internetové povolenia. Nikdy neviete, čo o vás chce vývojár aplikácie vedieť.
 
-- Aplikácie môžete premenovať v zásuvke aplikácií. (Synchronizácia s domovskou obrazovkou)
-- Žiadne použitie oprávnení INTERNET.
-- Zamknúť nastavenia za biometriou (prepnúť).
+<b>Personalizované prispôsobenie:</b>
 
-<b>Možné akcie teraz zahŕňajú:</b>
+- Farby písma: Vyberte si svoje vlastné farby písma pomocou nášho výberu farieb.
+- Pozícia: Vyberte si zo zarovnania vľavo, na stred a vpravo pre dátum, čas a aplikácie.
+- Výplň: Vyberte si požadovanú výplň medzi obľúbenými aplikáciami a všetkými aplikáciami.
+- Veľkosť písma: Vyberte veľkosť písma pre každý prvok domovskej obrazovky.
+- Zakázané: Vyberte, čo chcete zobraziť na domovskej obrazovke.
 
-- Kliknutím na úroveň batérie
-- Kliknutím na hodiny
-- Kliknutím na dátum
+<b>Možné akcie:</b>
+
+- Potiahnutím doľava prejdete na všetky aplikácie.
+- Prejdite prstom doprava na obľúbené aplikácie.
+- Kliknutím na úroveň batérie.
+- Kliknutím na hodiny.
+- Kliknutím na dátum.

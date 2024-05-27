@@ -1,13 +1,23 @@
-EasyLauncher – minimální a nepořádný spouštěč pro Android
+<b>Vlastnosti:</b>
 
-<b> Vlastnosti: </b>
+- Rychlý přístup k oblíbené aplikaci: Zobrazte své oblíbené aplikace v textovém formátu na domovské obrazovce pro rychlý přístup k nejpoužívanějším aplikacím a zefektivněte své operace.
+- Skrýt aplikace: Snadno skryjte aplikace, které nechcete, aby byly viditelné, a udržujte svou domovskou obrazovku čistou a zaměřenou na obsah, který potřebujete.
+- Přejmenovat aplikace: Své aplikace můžete přejmenovat a budou se synchronizovat mezi oblíbenými aplikacemi a všemi aplikacemi.
+- Uzamčení: Zabezpečte své soukromí a data otiskem prstu, abyste uzamkli vybrané aplikace a nastavení.
+- Oprávnění k internetu: Nepoužíváme oprávnění INTERNET. Nikdy nevíte, co o vás chce vývojář aplikace vědět.
 
-- Aplikace můžete přejmenovat v zásuvce aplikací. (Synchronizace s domovskou obrazovkou)
-- Žádné používání oprávnění INTERNET.
-- Zamknout nastavení za biometrii (přepnout).
+<b>Personalizované přizpůsobení:</b>
 
-<b>Možné akce nyní zahrnují:</b>
+- Barvy písma: Vyberte si vlastní barvy písma pomocí našeho výběru barev.
+- Pozice: Vyberte ze zarovnání doleva, na střed a doprava pro datum, čas a aplikace.
+- Výplň: Vyberte si požadovanou výplň mezi oblíbenými aplikacemi a všemi aplikacemi.
+- Velikost písma: Vyberte velikost písma pro každý prvek domovské obrazovky.
+- Zakázáno: Vyberte, co chcete zobrazit na domovské obrazovce.
 
-- Kliknutím na Úroveň baterie
-- Kliknutím na hodiny
-- Kliknutím na Datum
+<b>Možné akce zahrnují:</b>
+
+- Přejetím doleva do všech aplikací.
+- Přejeďte prstem doprava na oblíbené aplikace.
+- Kliknutím na Úroveň baterie.
+- Kliknutím na hodiny.
+- Kliknutím na datum.

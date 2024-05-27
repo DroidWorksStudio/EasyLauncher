@@ -1,13 +1,23 @@
-EasyLauncher – minimali ir netvarkinga Android paleidimo priemonė
+<b>Savybės:</b>
 
-<b> Savybės: </b>
+- Mėgstamiausios programos greita prieiga: pagrindiniame ekrane rodykite mėgstamiausias programas teksto formatu, kad galėtumėte greitai pasiekti dažniausiai naudojamas programas ir supaprastinti operacijas.
+- Slėpti programas: lengvai paslėpkite programas, kurių nenorite matyti, išlaikykite švarų pagrindinį ekraną ir sutelkite dėmesį į reikalingą turinį.
+- Pervardyti programas: galite pervardyti programas ir jos sinchronizuojamos tarp mėgstamiausių ir visų programų.
+- Užrakinimas: apsaugokite privatumą ir duomenis pirštų atspaudais, kad užrakintumėte pasirinktas programas ir nustatymus.
+- Interneto leidimai: mes nenaudojame INTERNETO leidimų. Niekada nežinote, ką programos kūrėjas nori sužinoti apie jus.
 
-- Programas galite pervardyti programų stalčiuje. (Sinchronizuoti su pagrindiniu ekranu)
-- Nenaudojami INTERNETO leidimai.
-- Užrakinkite nustatymus už biometrinių duomenų (perjunkite).
+<b>Personalizuotas tinkinimas:</b>
 
-<b>Dabar galimi veiksmai:</b>
+- Šrifto spalvos: pasirinkite savo šrifto spalvas naudodami mūsų spalvų parinkiklį.
+- Padėtis: pasirinkite datos, laiko ir programų lygiavimą kairėje, centre ir dešinėje.
+- Padding: pasirinkite norimą užpildymą tarp mėgstamiausių ir visų programų.
+- Šrifto dydis: pasirinkite kiekvieno pagrindinio ekrano elemento šrifto dydį.
+- Išjungta: pasirinkite, ką norite rodyti pagrindiniame ekrane.
 
-- Spustelėjus baterijos lygį
-- Paspaudus ant Laikrodžio
-- Paspaudus ant datos
+<b>Galimi veiksmai:</b>
+
+- Perbraukite kairėn, kad pamatytumėte visas programas.
+- Braukite dešinėn, kad pamatytumėte mėgstamiausias programas.
+- Spustelėjus baterijos lygį.
+- Paspaudus ant Laikrodžio.
+- Paspaudus ant datos.

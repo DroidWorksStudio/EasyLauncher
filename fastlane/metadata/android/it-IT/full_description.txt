@@ -1,13 +1,23 @@
-EasyLauncher: launcher Android minimale e privo di disordine
+<b>Caratteristiche:</b>
 
-<b> Caratteristiche: </b>
+- Accesso rapido alle app preferite: visualizza le tue app preferite in formato testo sulla schermata iniziale per un accesso rapido alle app più utilizzate, semplificando le tue operazioni.
+- Nascondi app: nascondi facilmente le app che non vuoi che siano visibili, mantenendo la schermata iniziale pulita e focalizzata sui contenuti che ti servono.
+- Rinomina app: puoi rinominare le tue app e queste si sincronizzeranno tra le app preferite e tutte le app.
+- Blocco: proteggi la tua privacy e i tuoi dati tramite l'impronta digitale per bloccare le app e le impostazioni selezionate.
+- Autorizzazioni Internet: non utilizziamo le autorizzazioni INTERNET. Non sai mai cosa vuole sapere di te uno sviluppatore di app.
 
-- Puoi rinominare le app nel cassetto delle app. (Sincronizzazione con schermata iniziale)
-- Nessun utilizzo delle autorizzazioni INTERNET.
-- Blocca le impostazioni dietro la biometria (attiva/disattiva).
+<b>Personalizzazione personalizzata:</b>
 
-<b>Le azioni possibili ora includono:</b>
+- Colori dei caratteri: scegli i colori dei caratteri utilizzando il nostro selettore di colori.
+- Posizione: scegli tra gli allineamenti Sinistra, Centro e Destra per data, ora e app.
+- Padding: scegli il riempimento che desideri tra le app preferite e tutte le app.
+- Dimensione carattere: scegli la dimensione del carattere per ciascun elemento della schermata iniziale.
+- Disabilitato: scegli cosa desideri visualizzare nella schermata principale.
 
-- Facendo clic sul livello della batteria
-- Facendo clic sull'orologio
-- Facendo clic sulla data
+<b>Le azioni possibili includono:</b>
+
+- Scorri verso sinistra per tutte le app.
+- Scorri verso destra per accedere alle app preferite.
+- Facendo clic sul livello della batteria.
+- Facendo clic sull'orologio.
+- Facendo clic sulla data.

@@ -1,13 +1,23 @@
-EasyLauncher - Minimaler und übersichtlicher Android-Launcher
+<b>Funktionen:</b>
 
-<b> Funktionen: </b>
+Schnellzugriff auf Ihre Lieblings-Apps: Zeigen Sie Ihre Lieblings-Apps im Textformat auf dem Startbildschirm an, um schnell auf Ihre am häufigsten verwendeten Apps zugreifen zu können und so Ihre Vorgänge zu optimieren.
+- Apps ausblenden: Verbergen Sie ganz einfach Apps, die nicht sichtbar sein sollen, und halten Sie so Ihren Startbildschirm übersichtlich und konzentrieren Sie sich auf die Inhalte, die Sie benötigen.
+- Apps umbenennen: Sie können Ihre Apps umbenennen und sie zwischen Lieblings-Apps und allen Apps synchronisieren.
+- Sperren: Schützen Sie Ihre Privatsphäre und Daten, indem Sie ausgewählte Apps und Einstellungen per Fingerabdruck sperren.
+- Internetberechtigungen: Wir verwenden keine INTERNETberechtigungen. Sie wissen nie, was ein App-Entwickler über Sie wissen möchte.
 
-- Sie können Apps in der App-Schublade umbenennen. (Mit Startbildschirm synchronisieren)
-- Keine Verwendung von INTERNET-Berechtigungen.
-- Einstellungen hinter Biometrie sperren (umschalten).
+<b>Personalisierte Anpassung:</b>
 
-<b>Mögliche Aktionen sind jetzt:</b>
+- Schriftfarben: Wählen Sie mit unserem Farbwähler Ihre eigenen Schriftfarben.
+- Position: Wählen Sie zwischen der Ausrichtung links, zentriert und rechts für Datum, Uhrzeit und Apps.
+- Polsterung: Wählen Sie die gewünschte Polsterung zwischen Lieblings-Apps und allen Apps.
+- Schriftgröße: Wählen Sie die Schriftgröße für jedes Element des Startbildschirms.
+- Deaktiviert: Wählen Sie aus, was auf dem Startbildschirm angezeigt werden soll.
 
-- Klicken Sie auf den Batteriestand
-- Klicken Sie auf die Uhr
-- Klicken Sie auf das Datum
+<b>Mögliche Aktionen umfassen:</b>
+
+- Wischen Sie nach links, um zu allen Apps zu gelangen.
+- Streichen Sie nach rechts zu den Lieblings-Apps.
+- Klicken Sie auf den Batteriestand.
+- Klicken Sie auf die Uhr.
+- Klicken Sie auf das Datum.
