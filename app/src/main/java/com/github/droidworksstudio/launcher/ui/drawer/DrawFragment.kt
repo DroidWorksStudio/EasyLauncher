@@ -3,6 +3,9 @@ package com.github.droidworksstudio.launcher.ui.drawer
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -97,6 +100,16 @@ class DrawFragment : Fragment(),
 
     private fun observeDrawerApps() {
         viewModel.compareInstalledAppInfo()
+
+        val searchAppsHint = getString(R.string.search)
+        val coloredHint = SpannableString(searchAppsHint)
+        coloredHint.setSpan(
+            ForegroundColorSpan(preferenceHelper.appColor),
+            0,
+            searchAppsHint.length,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+        binding.searchViewText.queryHint = coloredHint
 
         @Suppress("DEPRECATION")
         viewLifecycleOwner.lifecycleScope.launchWhenCreated {

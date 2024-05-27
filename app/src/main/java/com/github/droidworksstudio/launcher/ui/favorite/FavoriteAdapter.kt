@@ -7,12 +7,14 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemFavoriteBinding
+import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnItemMoveListener
 
 class FavoriteAdapter(
     private val onAppClickedListener:
     OnItemClickedListener.OnAppsClickedListener,
+    private val preferenceHelperProvider: PreferenceHelper
 ) : ListAdapter<AppInfo, RecyclerView.ViewHolder>(DiffCallback()),
     OnItemMoveListener.OnItemActionListener {
 
@@ -27,7 +29,13 @@ class FavoriteAdapter(
             parent,
             false
         )
-        return FavoriteViewHolder(binding, onAppClickedListener, touchHelper)
+        val preferenceHelper = preferenceHelperProvider
+        return FavoriteViewHolder(
+            binding,
+            onAppClickedListener,
+            preferenceHelper,
+            touchHelper
+        )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {

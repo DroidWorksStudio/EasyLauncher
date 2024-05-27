@@ -58,7 +58,7 @@ class FavoriteFragment : Fragment(),
     @Inject
     lateinit var appHelper: AppHelper
 
-    private val favoriteAdapter: FavoriteAdapter by lazy { FavoriteAdapter(this) }
+    private val favoriteAdapter: FavoriteAdapter by lazy { FavoriteAdapter(this, preferenceHelper) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -107,6 +107,8 @@ class FavoriteFragment : Fragment(),
     }
 
     private fun observeFavorite() {
+        binding.topTextView.setTextColor(preferenceHelper.appColor)
+        
         viewModel.compareInstalledAppInfo()
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.favoriteApps.collect {
@@ -180,7 +182,7 @@ class FavoriteFragment : Fragment(),
 
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.fragmentContainer.setOnTouchListener(getSwipeGestureListener(context))
         binding.favoriteAdapter.setOnTouchListener(getSwipeGestureListener(context))
     }
 
