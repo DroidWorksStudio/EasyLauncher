@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added work profile support with icon. - ([e61a989](https://github.com/DroidWorksStudio/EasyLauncher/commit/e61a9894b2a0bcde0531b8afb0600f8981fe39ea))
 - Added app font color to headers of the page. - ([b7ff0d8](https://github.com/DroidWorksStudio/EasyLauncher/commit/b7ff0d8b1ab1de914a9336b98cdb6ec737b10c5b))
 
 ### Refactoring:
