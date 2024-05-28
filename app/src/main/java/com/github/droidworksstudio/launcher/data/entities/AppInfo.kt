@@ -26,8 +26,11 @@ data class AppInfo(
     @ColumnInfo(name = "is_lock")
     var lock: Boolean,
 
+    @ColumnInfo(name = "is_work")
+    var work: Boolean,
+
     @ColumnInfo(name = "create_time")
-    var createTime: String = "",
+    var createTime: String,
 
     @ColumnInfo(name = "app_order")
     var appOrder: Int = -1

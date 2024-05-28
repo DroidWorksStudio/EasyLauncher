@@ -1,16 +1,14 @@
 package com.github.droidworksstudio.launcher.ui.activities
 
 import android.annotation.SuppressLint
-import android.app.admin.DevicePolicyManager
-import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
@@ -19,7 +17,6 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.ktx.isTablet
-import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -68,6 +65,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun setupDataBase() {
         lifecycleScope.launch {
             viewModel.initializeInstalledAppInfo(this@MainActivity)
@@ -118,6 +116,7 @@ class MainActivity : AppCompatActivity() {
                 || super.onSupportNavigateUp()
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     override fun onResume() {
         super.onResume()
         backToHomeScreen()

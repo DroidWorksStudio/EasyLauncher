@@ -14,6 +14,7 @@ import android.graphics.drawable.AdaptiveIconDrawable
 import android.net.Uri
 import android.os.Build
 import android.os.UserHandle
+import android.os.UserManager
 import android.provider.AlarmClock
 import android.provider.CalendarContract
 import android.provider.Settings
@@ -295,6 +296,16 @@ fun Context.searchCustomSearchEngine(searchQuery: String? = null): Boolean {
     Log.d("fullUrl", fullUrl)
     openUrl(fullUrl)
     return true
+}
+
+fun Context.isWorkProfileEnabled(): Boolean {
+    val userManager = getSystemService(Context.USER_SERVICE) as? UserManager
+    return if (userManager != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        val profiles = userManager.userProfiles
+        profiles.size > 1
+    } else {
+        false
+    }
 }
 
 fun Context.backupSharedPreferences(backupFileName: String) {

@@ -85,8 +85,8 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
                         if (diffY < 0) onSwipeUp() else onSwipeDown()
                     }
                 }
-            } catch (exception: Exception) {
-                exception.printStackTrace()
+            } catch (exception: NullPointerException) {
+                return false
             }
             return false
         }

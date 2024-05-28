@@ -37,7 +37,6 @@ class DrawAdapter(
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-
         val appInfo = getItem(position)
         (holder as DrawViewHolder).bind(appInfo)
     }

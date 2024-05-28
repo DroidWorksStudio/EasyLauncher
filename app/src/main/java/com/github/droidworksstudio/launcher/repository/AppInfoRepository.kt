@@ -3,8 +3,11 @@ package com.github.droidworksstudio.launcher.repository
 import android.content.Context
 import android.content.pm.LauncherApps
 import android.content.pm.PackageManager
+import android.os.Build
+import android.os.UserHandle
 import android.os.UserManager
 import android.util.Log
+import androidx.annotation.RequiresApi
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.data.dao.AppInfoDAO
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -12,11 +15,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.withContext
+import java.lang.reflect.Method
+import java.time.LocalDateTime
 import javax.inject.Inject
 
 
 class AppInfoRepository @Inject constructor(
-    private val appDao: AppInfoDAO
+    private val appDao: AppInfoDAO,
 ) {
 
     @Inject
@@ -98,7 +103,9 @@ class AppInfoRepository @Inject constructor(
         packages
     }
 
-    suspend fun initInstalledAppInfo(context: Context): List<AppInfo> = withContext(Dispatchers.IO) {
+    @RequiresApi(Build.VERSION_CODES.O)
+    suspend fun initInstalledAppInfo(context: Context): List<AppInfo> =
+        withContext(Dispatchers.IO) {
             val appList: MutableList<AppInfo> = mutableListOf()
 
             val allApps = appDao.getAllAppsFlow().firstOrNull()
@@ -109,28 +116,68 @@ class AppInfoRepository @Inject constructor(
             val launcherApps =
                 context.getSystemService(Context.LAUNCHER_APPS_SERVICE) as LauncherApps
 
-            val excludedPackageNames = mutableListOf(Constants.PACKAGE_NAME,Constants.PACKAGE_NAME_DEBUG)
+            val excludedPackageNames =
+                mutableListOf(Constants.PACKAGE_NAME, Constants.PACKAGE_NAME_DEBUG)
+
+            val getIdentifierMethod: Method =
+                UserHandle::class.java.getDeclaredMethod("getIdentifier")
 
             val newAppList: List<AppInfo> = userManager.userProfiles
                 .flatMap { profile ->
-                    launcherApps.getActivityList(null, profile)
-                        .mapNotNull { app ->
-                            val packageName = app.applicationInfo.packageName
-                            if (packageName !in existingPackageNames && packageName !in excludedPackageNames) {
-                                AppInfo(
-                                    appName = app.label.toString(),
-                                    packageName = packageName,
-                                    favorite = false,
-                                    hidden = false,
-                                    lock = false
-                                )
-                            } else {
-                                val existingApp = getAppByPackageName(packageName)
-                                existingApp?.let { appList.add(it) }
-                                existingApp
-                            }
+                    // Invoke the getIdentifier method on the UserHandle instance
+                    val userId = getIdentifierMethod.invoke(profile) as Int
+
+                    when (userId) {
+                        0 -> {
+                            // Handle the case when profile is UserHandle{0}
+                            launcherApps.getActivityList(null, profile)
+                                .mapNotNull { app ->
+                                    val packageName = app.applicationInfo.packageName
+                                    val currentDateTime = LocalDateTime.now()
+                                    if (packageName !in existingPackageNames && packageName !in excludedPackageNames) {
+                                        AppInfo(
+                                            appName = app.label.toString(),
+                                            packageName = packageName,
+                                            favorite = false,
+                                            hidden = false,
+                                            lock = false,
+                                            createTime = currentDateTime.toString(),
+                                            work = false,
+                                        )
+                                    } else {
+                                        val existingApp = getAppByPackageName(packageName)
+                                        existingApp?.let { appList.add(it) }
+                                        existingApp
+                                    }
+                                }
                         }
+
+                        else -> {
+                            // Handle other profiles
+                            launcherApps.getActivityList(null, profile)
+                                .mapNotNull { app ->
+                                    val packageName = app.applicationInfo.packageName
+                                    val currentDateTime = LocalDateTime.now()
+                                    if (packageName !in existingPackageNames && packageName !in excludedPackageNames) {
+                                        AppInfo(
+                                            appName = app.label.toString(),
+                                            packageName = packageName,
+                                            favorite = false,
+                                            hidden = false,
+                                            lock = false,
+                                            createTime = currentDateTime.toString(),
+                                            work = true,
+                                        )
+                                    } else {
+                                        val existingApp = getAppByPackageNameWork(packageName)
+                                        existingApp?.let { appList.add(it) }
+                                        existingApp
+                                    }
+                                }
+                        }
+                    }
                 }
+
 
             appDao.insertAll(newAppList.sortedBy { it.appName })
             Log.d("Tag", "State: ${newAppList.sortedBy { it.appName }}")
@@ -142,6 +189,7 @@ class AppInfoRepository @Inject constructor(
             appList
         }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     suspend fun compareInstalledApp(): List<AppInfo> = withContext(Dispatchers.IO) {
         val installedPackages = getInstalledPackages()
         val uninstalledApps = mutableListOf<AppInfo>()
@@ -175,5 +223,9 @@ class AppInfoRepository @Inject constructor(
 
     private suspend fun getAppByPackageName(packageName: String): AppInfo? {
         return appDao.getAppByPackageName(packageName)
+    }
+
+    private suspend fun getAppByPackageNameWork(packageName: String): AppInfo? {
+        return appDao.getAppByPackageNameWork(packageName)
     }
 }

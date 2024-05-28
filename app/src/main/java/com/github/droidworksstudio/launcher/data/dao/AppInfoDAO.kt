@@ -17,7 +17,7 @@ interface AppInfoDAO {
     suspend fun update(app: AppInfo)
 
     @Delete
-    suspend fun delete(app: AppInfo)
+    fun delete(app: AppInfo)
 
     @Query("SELECT * FROM app ORDER BY app_name COLLATE NOCASE ASC")
     fun getAllApps(): List<AppInfo>
@@ -73,8 +73,11 @@ interface AppInfoDAO {
     @Query("SELECT * FROM app WHERE is_favorite = 1")
     fun getFavoriteAppInfo(): List<AppInfo>
 
-    @Query("SELECT * FROM app WHERE package_name = :packageName")
+    @Query("SELECT * FROM app WHERE package_name = :packageName AND is_work = 0")
     suspend fun getAppByPackageName(packageName: String): AppInfo?
+
+    @Query("SELECT * FROM app WHERE package_name = :packageName AND is_work = 1")
+    suspend fun getAppByPackageNameWork(packageName: String): AppInfo?
 
     private fun logUpdate(message: String, appInfo: AppInfo) {
         // You can replace this with a logging library like Timber for more advanced logging capabilities.

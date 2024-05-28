@@ -2,6 +2,7 @@ package com.github.droidworksstudio.launcher.ui.drawer
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.os.Build
 import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
@@ -10,6 +11,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -64,7 +66,13 @@ class DrawFragment : Fragment(),
 
     private val viewModel: AppViewModel by viewModels()
 
-    private val drawAdapter: DrawAdapter by lazy { DrawAdapter(this, this, preferenceHelper) }
+    private val drawAdapter: DrawAdapter by lazy {
+        DrawAdapter(
+            this,
+            this,
+            preferenceHelper
+        )
+    }
 
     private lateinit var context: Context
     override fun onCreateView(
@@ -98,6 +106,7 @@ class DrawFragment : Fragment(),
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun observeDrawerApps() {
         viewModel.compareInstalledAppInfo()
 
@@ -242,12 +251,14 @@ class DrawFragment : Fragment(),
         binding.searchViewText.hideKeyboard()
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     override fun onResume() {
         super.onResume()
         observeDrawerApps()
         if (preferenceHelper.automaticKeyboard) binding.searchViewText.showKeyboard()
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     override fun onStart() {
         super.onStart()
         observeDrawerApps()
