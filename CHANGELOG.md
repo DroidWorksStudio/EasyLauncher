@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the font used for home page. - ([62fb291](https://github.com/DroidWorksStudio/EasyLauncher/commit/62fb291c32373ffb8aa80aab3f4865aaa6b3963d))
+
+## [0.1.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.0) - (28, May 2024)
+
 ### Implemented Enhancements:
 
 - Added work profile support with icon. - ([e61a989](https://github.com/DroidWorksStudio/EasyLauncher/commit/e61a9894b2a0bcde0531b8afb0600f8981fe39ea))
