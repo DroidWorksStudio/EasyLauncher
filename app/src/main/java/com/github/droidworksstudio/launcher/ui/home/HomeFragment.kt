@@ -12,6 +12,7 @@ import android.text.format.DateFormat
 import android.util.Log
 import android.view.*
 import androidx.annotation.RequiresApi
+import androidx.appcompat.widget.AppCompatTextView
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -123,7 +124,42 @@ class HomeFragment : Fragment(),
                 val level: Int = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1)
                 val scale: Int = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1)
 
+                // Get the TextView by its ID
+                val batteryTextView: AppCompatTextView = binding.battery
+
                 val batteryLevel = level * 100 / scale.toFloat()
+
+                val batteryDrawable = when {
+                    batteryLevel >= 95 -> ContextCompat.getDrawable(
+                        requireContext(),
+                        R.drawable.app_battery100
+                    )
+
+                    batteryLevel >= 70 -> ContextCompat.getDrawable(
+                        requireContext(),
+                        R.drawable.app_battery75
+                    )
+
+                    batteryLevel >= 45 -> ContextCompat.getDrawable(
+                        requireContext(),
+                        R.drawable.app_battery50
+                    )
+
+                    else -> ContextCompat.getDrawable(requireContext(), R.drawable.app_battery25)
+                }
+
+                batteryDrawable?.let {
+                    // Resize the drawable to match the text size
+                    val textSize = batteryTextView.textSize.toInt()
+                    if (preferenceHelper.showBattery) {
+                        it.setBounds(0, 0, textSize, textSize)
+                        batteryTextView.setCompoundDrawables(it, null, null, null)
+                    } else {
+                        it.setBounds(0, 0, 0, 0)
+                        batteryTextView.setCompoundDrawables(null, null, null, null)
+                    }
+                }
+
                 val batteryLevelText = getString(R.string.battery_level, batteryLevel.toString())
                 binding.battery.text = batteryLevelText
             }
@@ -148,6 +184,7 @@ class HomeFragment : Fragment(),
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun observeFavoriteAppList() {
         viewModel.compareInstalledAppInfo()
 
@@ -339,6 +376,7 @@ class HomeFragment : Fragment(),
         binding.nestScrollView.hideKeyboard()
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     override fun onResume() {
         super.onResume()
         binding.nestScrollView.hideKeyboard()

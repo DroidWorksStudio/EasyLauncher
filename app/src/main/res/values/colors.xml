@@ -23,4 +23,8 @@
     <color name="whiteTrans50">#65FFFFFF</color>
     <color name="whiteTrans80">#CCFFFFFF</color>
     <color name="whiteTrans90">#E6FFFFFF</color>
+
+    <color name="green">#4CAF50</color>
+    <color name="orange">#AF684C</color>
+    <color name="red">#AF4C4C</color>
 </resources>
