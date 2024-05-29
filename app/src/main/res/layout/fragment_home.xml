@@ -60,8 +60,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginVertical="8dp"
-                    android:fontFamily="sans-serif-light"
                     android:format12Hour="h:mm"
+                    android:format24Hour="hhmm"
                     android:textSize="48sp"
                     tools:text="02:34"
                     style="@style/TextDefaultStyle" />
@@ -70,7 +70,7 @@
                     android:id="@+id/date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="start"
                     android:format12Hour="EEE, dd MMM"
                     android:format24Hour="EEE, dd MMM"
                     android:gravity="start"
