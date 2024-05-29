@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added a battery icon. - ([d3c12a6](https://github.com/DroidWorksStudio/EasyLauncher/commit/d3c12a6c3765e2a233b85344a80bee85c6da4a33))
+
 ### Bug Fixes:
 
 - Fixed the font used for home page. - ([62fb291](https://github.com/DroidWorksStudio/EasyLauncher/commit/62fb291c32373ffb8aa80aab3f4865aaa6b3963d))
