@@ -106,9 +106,8 @@ class FavoriteFragment : Fragment(),
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun observeFavorite() {
-        binding.topTextView.setTextColor(preferenceHelper.appColor)
-        
         viewModel.compareInstalledAppInfo()
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.favoriteApps.collect {

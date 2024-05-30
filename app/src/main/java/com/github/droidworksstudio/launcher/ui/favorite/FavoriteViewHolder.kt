@@ -1,11 +1,6 @@
 package com.github.droidworksstudio.launcher.ui.favorite
 
 import android.annotation.SuppressLint
-import android.graphics.BlendMode
-import android.graphics.BlendModeColorFilter
-import android.graphics.PorterDuff
-import android.graphics.PorterDuffColorFilter
-import android.os.Build
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
@@ -62,27 +57,6 @@ class FavoriteViewHolder(
                     preferenceHelper.appTextSize.toInt() * 3
                 appFavoriteLeftIcon.visibility = View.VISIBLE
             }
-
-
-            // Create a BlendModeColorFilter with the specified color and blend mode
-            val blendModeColorFilter = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                BlendModeColorFilter(
-                    preferenceHelper.appColor,
-                    BlendMode.SRC_IN
-                )
-            } else {
-                PorterDuffColorFilter(
-                    preferenceHelper.appColor,
-                    PorterDuff.Mode.SRC_IN
-                )
-            }
-
-            // Get the current drawable set as the background
-            val drawable = appFavoriteDragIcon.background.mutate()
-            // Apply a color filter to change its color
-            drawable.colorFilter = blendModeColorFilter
-            // Set the modified drawable back as the background
-            appFavoriteDragIcon.background = drawable
         }
 
         itemView.setOnClickListener {

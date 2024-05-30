@@ -2,6 +2,7 @@ package com.github.droidworksstudio.launcher.ui.hidden
 
 import android.util.Log
 import android.view.View
+import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemHiddenBinding
@@ -17,7 +18,17 @@ class HiddenViewHolder(
     RecyclerView.ViewHolder(binding.root) {
     fun bind(appInfo: AppInfo) {
         binding.apply {
+            // Get the current LayoutParams of appFavoriteName
+            val layoutParams = appHiddenName.layoutParams as LinearLayoutCompat.LayoutParams
+
+            // Set the margins
+            layoutParams.topMargin = preferenceHelper.homeAppPadding.toInt()
+            layoutParams.bottomMargin = preferenceHelper.homeAppPadding.toInt()
+
+            appHiddenName.layoutParams = layoutParams
             appHiddenName.text = appInfo.appName
+            appHiddenName.setTextColor(preferenceHelper.appColor)
+            appHiddenName.textSize = preferenceHelper.appTextSize
             Log.d("Tag", "Draw Adapter: ${appInfo.appName}")
 
             if (preferenceHelper.showAppIcon) {
