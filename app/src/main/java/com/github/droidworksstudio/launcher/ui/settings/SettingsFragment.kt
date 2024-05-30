@@ -13,7 +13,6 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.github.droidworksstudio.ktx.resetDefaultLauncher
 import com.github.droidworksstudio.ktx.restartApp
-import com.github.droidworksstudio.ktx.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -154,12 +153,10 @@ class SettingsFragment : Fragment(),
 
         binding.backupView.setOnClickListener {
             appHelper.backupSharedPreferences(requireContext())
-            context.showLongToast(getString(R.string.settings_reload_app_backup))
         }
 
         binding.restoreView.setOnClickListener {
             appHelper.restoreSharedPreferences(requireContext())
-            context.showLongToast(getString(R.string.settings_reload_app_restore))
             restartApp()
         }
     }

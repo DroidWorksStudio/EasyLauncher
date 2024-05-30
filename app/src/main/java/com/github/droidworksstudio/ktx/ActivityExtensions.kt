@@ -12,7 +12,6 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.content.getSystemService
-import androidx.fragment.app.Fragment
 
 fun Activity.getDisplayWidth(): Int {
     val windowManager = getSystemService<WindowManager>() ?: return 0

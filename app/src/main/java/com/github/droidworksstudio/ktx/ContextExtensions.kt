@@ -13,6 +13,7 @@ import android.graphics.Bitmap
 import android.graphics.drawable.AdaptiveIconDrawable
 import android.net.Uri
 import android.os.Build
+import android.os.Environment
 import android.os.UserHandle
 import android.os.UserManager
 import android.provider.AlarmClock
@@ -310,50 +311,63 @@ fun Context.isWorkProfileEnabled(): Boolean {
 
 fun Context.backupSharedPreferences(backupFileName: String) {
     val sharedPreferences: SharedPreferences =
-        this.getSharedPreferences(Constants.PREFS_FILENAME, 0)
+        this.getSharedPreferences(Constants.PREFS_FILENAME, Context.MODE_PRIVATE)
     val allPrefs = sharedPreferences.all
-    val backupFile = File(filesDir, backupFileName)
 
-    println("Backup SharedPreferences to: ${backupFile.absolutePath}")
+    // Check if external storage is writable
+    if (!isExternalStorageWritable()) {
+        showLongToast("External storage is not writable.")
+        return
+    }
+
+    val backupDir = ContextCompat.getExternalFilesDirs(this, null)
+    if (backupDir.isEmpty()) {
+        showLongToast("No external storage directories found.")
+        return
+    }
+
+    val backupFile = File(backupDir[0], backupFileName)
 
     try {
         backupFile.bufferedWriter().use { writer ->
             for ((key, value) in allPrefs) {
                 if (value != null) {
                     val line = when (value) {
-                        is Boolean -> "$key=${value}\n"
-                        is Int -> "$key=${value}\n"
-                        is Float -> "$key=${value}\n"
-                        is Long -> "$key=${value}\n"
-                        is String -> "$key=${value}\n"
+                        is Boolean, is Int, is Float, is Long, is String -> "$key=$value\n"
                         is Set<*> -> "$key=${value.joinToString(",")}\n"
                         else -> null
                     }
-                    if (line != null) {
-                        writer.write(line)
-                        println("Writing: $line")
-                    } else {
-                        println("Skipping unsupported type for key: $key")
+                    line?.let {
+                        writer.write(it)
                     }
-                } else {
-                    println("Null value for key: $key")
                 }
             }
         }
-        println("Backup completed successfully.")
+        showLongToast("Backup completed successfully.")
     } catch (e: IOException) {
         e.printStackTrace()
-        println("Failed to backup SharedPreferences: ${e.message}")
+        showLongToast("Failed to backup SharedPreferences: ${e.message}")
     }
+}
+
+private fun isExternalStorageWritable(): Boolean {
+    return Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED
 }
 
 fun Context.restoreSharedPreferences(backupFileName: String) {
     val sharedPreferences: SharedPreferences =
-        this.getSharedPreferences(Constants.PREFS_FILENAME, 0)
+        this.getSharedPreferences(Constants.PREFS_FILENAME, Context.MODE_PRIVATE)
     val editor = sharedPreferences.edit()
-    val backupFile = File(filesDir, backupFileName)
 
-    println("Restoring SharedPreferences from: ${backupFile.absolutePath}")
+    // Check if external storage is readable
+    if (!isExternalStorageReadable()) {
+        showLongToast("External storage is not readable.")
+        return
+    }
+
+    val backupDir = getExternalFilesDir(null)
+    val backupFile = File(backupDir, backupFileName)
+    Log.d("backupFile", "$backupFile")
 
     if (backupFile.exists()) {
         try {
@@ -371,17 +385,21 @@ fun Context.restoreSharedPreferences(backupFileName: String) {
                     value.contains(",") -> editor.putStringSet(key, value.split(",").toSet())
                     else -> editor.putString(key, value)
                 }
-                println("Restoring: $key=$value")
             }
             editor.apply()
-            println("Restore completed successfully.")
+            showLongToast("Restore completed successfully.")
         } catch (e: IOException) {
             e.printStackTrace()
-            println("Failed to restore SharedPreferences: ${e.message}")
+            showLongToast("Failed to restore SharedPreferences: ${e.message}")
         }
     } else {
-        println("Backup file does not exist.")
+        showLongToast("Backup file does not exist.")
     }
+}
+
+private fun isExternalStorageReadable(): Boolean {
+    val state = Environment.getExternalStorageState()
+    return Environment.MEDIA_MOUNTED == state || Environment.MEDIA_MOUNTED_READ_ONLY == state
 }
 
 fun Context.isPackageInstalled(
