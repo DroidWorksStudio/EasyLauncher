@@ -16,8 +16,8 @@ android {
         applicationId = "app.easy.launcher"
         minSdk = 24
         targetSdk = 34
-        versionCode = 10
-        versionName = "0.1.0"
+        versionCode = 11
+        versionName = "0.1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
