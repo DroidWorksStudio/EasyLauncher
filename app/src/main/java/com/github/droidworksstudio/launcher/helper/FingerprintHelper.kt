@@ -47,7 +47,6 @@ class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
             .setTitle(fragment.getString(R.string.authentication_title))
             .setSubtitle(fragment.getString(R.string.authentication_subtitle))
             .setAllowedAuthenticators(BiometricManager.Authenticators.BIOMETRIC_WEAK or BiometricManager.Authenticators.DEVICE_CREDENTIAL)
-            .setNegativeButtonText(fragment.getString(R.string.authentication_cancel))
             .build()
 
         val canAuthenticate = BiometricManager.from(fragment.requireContext())
