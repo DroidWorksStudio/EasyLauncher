@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed locked apps - ([1e0d775](https://github.com/DroidWorksStudio/EasyLauncher/commit/1e0d7755c68898bb0850c484d3f5c9fd35e2eb7b))
 - Fixed the font used for home page. - ([62fb291](https://github.com/DroidWorksStudio/EasyLauncher/commit/62fb291c32373ffb8aa80aab3f4865aaa6b3963d))
 
 ## [0.1.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.0) - (28, May 2024)
