@@ -60,6 +60,17 @@ class DrawViewHolder(
                 appDrawName.setCompoundDrawables(null, null, null, null)
                 appDrawName.compoundDrawablePadding = 0
             }
+
+            if (preferenceHelper.showAppIcon) {
+                val appIcon =
+                    binding.root.context.packageManager.getApplicationIcon(appInfo.packageName)
+                appDrawLeftIcon.setImageDrawable(appIcon)
+                appDrawLeftIcon.layoutParams.width =
+                    preferenceHelper.appTextSize.toInt() * 3
+                appDrawLeftIcon.layoutParams.height =
+                    preferenceHelper.appTextSize.toInt() * 3
+                appDrawLeftIcon.visibility = View.VISIBLE
+            }
         }
 
         itemView.setOnClickListener {

@@ -7,11 +7,13 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemHiddenBinding
+import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 
 class HiddenAdapter(
     private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,
-    private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener
+    private val onAppLongClickedListener: OnItemClickedListener.OnAppLongClickedListener,
+    private val preferenceHelperProvider: PreferenceHelper
 ) : ListAdapter<AppInfo, RecyclerView.ViewHolder>(DiffCallback()) {
 
     override fun onCreateViewHolder(
@@ -23,7 +25,12 @@ class HiddenAdapter(
             parent,
             false
         )
-        return HiddenViewHolder(binding, onAppClickedListener, onAppLongClickedListener)
+        return HiddenViewHolder(
+            binding,
+            onAppClickedListener,
+            onAppLongClickedListener,
+            preferenceHelperProvider
+        )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {

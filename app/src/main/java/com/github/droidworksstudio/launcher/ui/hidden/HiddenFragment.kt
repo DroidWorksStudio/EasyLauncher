@@ -20,6 +20,7 @@ import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentHiddenBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
+import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
@@ -38,8 +39,6 @@ class HiddenFragment : Fragment(),
 
     private val binding get() = _binding!!
 
-    private val hiddenAdapter: HiddenAdapter by lazy { HiddenAdapter(this, this) }
-
     private val viewModel: AppViewModel by viewModels()
 
     private lateinit var context: Context
@@ -49,6 +48,11 @@ class HiddenFragment : Fragment(),
 
     @Inject
     lateinit var appHelper: AppHelper
+
+    @Inject
+    lateinit var preferenceHelper: PreferenceHelper
+
+    private val hiddenAdapter: HiddenAdapter by lazy { HiddenAdapter(this, this, preferenceHelper) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -81,6 +85,7 @@ class HiddenFragment : Fragment(),
 
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun observeHiddenApps() {
         viewModel.compareInstalledAppInfo()
         @Suppress("DEPRECATION")
@@ -137,6 +142,7 @@ class HiddenFragment : Fragment(),
         binding.hiddenAdapter.scrollToPosition(0)
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     @SuppressLint("NotifyDataSetChanged")
     override fun onResume() {
         super.onResume()

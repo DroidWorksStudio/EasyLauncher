@@ -130,17 +130,17 @@ class HomeFragment : Fragment(),
                 val batteryLevel = level * 100 / scale.toFloat()
 
                 val batteryDrawable = when {
-                    batteryLevel >= 95 -> ContextCompat.getDrawable(
+                    batteryLevel >= 76 -> ContextCompat.getDrawable(
                         requireContext(),
                         R.drawable.app_battery100
                     )
 
-                    batteryLevel >= 70 -> ContextCompat.getDrawable(
+                    batteryLevel >= 51 -> ContextCompat.getDrawable(
                         requireContext(),
                         R.drawable.app_battery75
                     )
 
-                    batteryLevel >= 45 -> ContextCompat.getDrawable(
+                    batteryLevel >= 26 -> ContextCompat.getDrawable(
                         requireContext(),
                         R.drawable.app_battery50
                     )

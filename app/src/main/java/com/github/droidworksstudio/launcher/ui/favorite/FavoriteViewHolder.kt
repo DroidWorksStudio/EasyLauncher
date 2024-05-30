@@ -8,6 +8,7 @@ import android.graphics.PorterDuffColorFilter
 import android.os.Build
 import android.util.Log
 import android.view.MotionEvent
+import android.view.View
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
@@ -50,6 +51,17 @@ class FavoriteViewHolder(
             appFavoriteName.setTextColor(preferenceHelper.appColor)
             appFavoriteName.textSize = preferenceHelper.appTextSize
             Log.d("Tag", "Draw Adapter: ${appInfo.appName}")
+
+            if (preferenceHelper.showAppIcon) {
+                val appIcon =
+                    binding.root.context.packageManager.getApplicationIcon(appInfo.packageName)
+                appFavoriteLeftIcon.setImageDrawable(appIcon)
+                appFavoriteLeftIcon.layoutParams.width =
+                    preferenceHelper.appTextSize.toInt() * 3
+                appFavoriteLeftIcon.layoutParams.height =
+                    preferenceHelper.appTextSize.toInt() * 3
+                appFavoriteLeftIcon.visibility = View.VISIBLE
+            }
 
 
             // Create a BlendModeColorFilter with the specified color and blend mode
