@@ -33,6 +33,7 @@
     <string name="settings_title_time_style">Tijdstijl</string>
     <string name="settings_title_app_manager">App-beheer</string>
     <string name="settings_title_gestures">Gebaren</string>
+    <string name="settings_title_miscellaneous">Gemengd</string>
     <string name="settings_title_backups">Back-ups</string>
     <string name="settings_title_others">Anderen</string>
     <string name="settings_display_status_bar">Statusbalk weergeven</string>
@@ -67,6 +68,7 @@
     <string name="settings_double_tap_lock">Dubbeltik om te vergrendelen</string>
     <string name="settings_swipe_down_notification">Veeg naar beneden en vouw de melding uit</string>
     <string name="settings_swipe_up_search">Veeg omhoog om de zoekweergave te openen</string>
+    <string name="settings_search_engine">Zoekmachine</string>
     <string name="settings_others_share">Deel</string>
     <string name="settings_others_feedback">Feedback</string>
     <string name="settings_others_github">Github</string>

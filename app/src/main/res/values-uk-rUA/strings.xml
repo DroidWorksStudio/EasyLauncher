@@ -33,6 +33,7 @@
     <string name="settings_title_time_style">Стиль часу</string>
     <string name="settings_title_app_manager">Керування додатком</string>
     <string name="settings_title_gestures">Жести</string>
+    <string name="settings_title_miscellaneous">Різне</string>
     <string name="settings_title_backups">Резервні копії</string>
     <string name="settings_title_others">інші</string>
     <string name="settings_display_status_bar">Показати рядок стану</string>
@@ -67,6 +68,7 @@
     <string name="settings_double_tap_lock">Двічі торкніться, щоб заблокувати</string>
     <string name="settings_swipe_down_notification">Проведіть пальцем вниз, розгорніть сповіщення</string>
     <string name="settings_swipe_up_search">Проведіть пальцем угору, щоб відкрити вікно пошуку</string>
+    <string name="settings_search_engine">Пошукова система</string>
     <string name="settings_others_share">Поділіться</string>
     <string name="settings_others_feedback">Зворотній зв\'язок</string>
     <string name="settings_others_github">Github</string>

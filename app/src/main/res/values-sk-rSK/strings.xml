@@ -33,6 +33,7 @@
     <string name="settings_title_time_style">Časový štýl</string>
     <string name="settings_title_app_manager">Správa aplikácií</string>
     <string name="settings_title_gestures">Gestá</string>
+    <string name="settings_title_miscellaneous">Zmiešaný</string>
     <string name="settings_title_backups">Zálohy</string>
     <string name="settings_title_others">Iní</string>
     <string name="settings_display_status_bar">Zobraziť stavový riadok</string>
@@ -67,6 +68,7 @@
     <string name="settings_double_tap_lock">Dvojitým klepnutím uzamknete</string>
     <string name="settings_swipe_down_notification">Potiahnutím nadol rozbaliť upozornenie</string>
     <string name="settings_swipe_up_search">Potiahnutím nahor otvorte zobrazenie vyhľadávania</string>
+    <string name="settings_search_engine">Vyhľadávač</string>
     <string name="settings_others_share">zdieľam</string>
     <string name="settings_others_feedback">Spätná väzba</string>
     <string name="settings_others_github">Github</string>
