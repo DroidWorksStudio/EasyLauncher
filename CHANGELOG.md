@@ -20,6 +20,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Removed the over use of app colors. - ([5f7ae81](https://github.com/DroidWorksStudio/EasyLauncher/commit/5f7ae818fe859fe48213158298077af570711360))
 
+### Language Support:
+
+- Updated Language Files. ([#48](https://github.com/DroidWorksStudio/EasyLauncher/issues/48)) - ([94abcb4](https://github.com/DroidWorksStudio/EasyLauncher/commit/94abcb4d4cfa88f318ab271542bb2c379f49e750))
+
 ### Refactoring:
 
 - Replace app icon. - ([4f32f69](https://github.com/DroidWorksStudio/EasyLauncher/commit/4f32f696db2f8bf26fb0be34369ae36dd1bdf078))
