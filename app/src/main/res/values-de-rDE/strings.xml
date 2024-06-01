@@ -33,6 +33,7 @@
     <string name="settings_title_time_style">Zeitstil</string>
     <string name="settings_title_app_manager">App verwalten</string>
     <string name="settings_title_gestures">Gesten</string>
+    <string name="settings_title_miscellaneous">Verschiedenes</string>
     <string name="settings_title_backups">Backups</string>
     <string name="settings_title_others">Andere</string>
     <string name="settings_display_status_bar">Zeige Statusleiste</string>
@@ -67,6 +68,7 @@
     <string name="settings_double_tap_lock">Zum Sperren doppeltippen</string>
     <string name="settings_swipe_down_notification">Wischen Sie nach unten, um die Benachrichtigung zu erweitern</string>
     <string name="settings_swipe_up_search">Nach oben wischen, um die Suchansicht zu öffnen</string>
+    <string name="settings_search_engine">Suchmaschine</string>
     <string name="settings_others_share">Aktie</string>
     <string name="settings_others_feedback">Rückmeldung</string>
     <string name="settings_others_github">Github</string>
