@@ -13,6 +13,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.github.droidworksstudio.ktx.resetDefaultLauncher
 import com.github.droidworksstudio.ktx.restartApp
+import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -24,6 +25,7 @@ import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomShee
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.PaddingBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.TextBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -76,6 +78,9 @@ class SettingsFragment : Fragment(),
             getString(R.string.app_name),
             packageInfo.versionName
         )
+
+        val searchEngine = preferenceHelper.searchEngines.toString()
+        binding.searchEngineText.text = searchEngine
     }
 
     @SuppressLint("SetTextI18n")
@@ -138,6 +143,10 @@ class SettingsFragment : Fragment(),
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
         }
 
+        binding.miscellaneousSearchEngine.setOnClickListener {
+            showSearchEngineDialog()
+        }
+
         binding.shareView.setOnClickListener {
             appHelper.shareAppButton(requireContext())
         }
@@ -160,6 +169,7 @@ class SettingsFragment : Fragment(),
             restartApp()
         }
     }
+
 
     private fun setupSwitchListeners() {
         binding.statueBarSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
@@ -233,5 +243,52 @@ class SettingsFragment : Fragment(),
             }
 
         }
+    }
+
+    private fun showSearchEngineDialog() {
+        // Get the array of SearchEngines enum values
+        val items = Constants.SearchEngines.values()
+
+        // Map the enum values to their string representations
+        val itemStrings = items.map { it.getString(context) }.toTypedArray()
+
+        val dialog = MaterialAlertDialogBuilder(context)
+
+        dialog.setTitle("Select a Search Engine")
+        dialog.setItems(itemStrings) { _, which ->
+            val selectedItem = items[which]
+            when (selectedItem) {
+                Constants.SearchEngines.Google -> {
+                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.Google)
+                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                }
+
+                Constants.SearchEngines.Bing -> {
+                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.Bing)
+                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                }
+
+                Constants.SearchEngines.Brave -> {
+                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.Brave)
+                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                }
+
+                Constants.SearchEngines.Yahoo -> {
+                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.Yahoo)
+                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                }
+
+                Constants.SearchEngines.DuckDuckGo -> {
+                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.DuckDuckGo)
+                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                }
+
+                Constants.SearchEngines.SwissCow -> {
+                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.SwissCow)
+                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                }
+            }
+        }
+        dialog.show()
     }
 }

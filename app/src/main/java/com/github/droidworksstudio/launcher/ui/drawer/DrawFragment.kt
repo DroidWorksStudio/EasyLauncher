@@ -125,7 +125,7 @@ class DrawFragment : Fragment(),
                     if (trimmedQuery.isNotEmpty()) {
                         if (trimmedQuery.startsWith("!")) {
                             val searchQuery = trimmedQuery.substringAfter("!")
-                            requireContext().searchCustomSearchEngine(searchQuery)
+                            requireContext().searchCustomSearchEngine(preferenceHelper, searchQuery)
                         } else {
                             checkAppThenRun(trimmedQuery)
                             return true // Exit the function

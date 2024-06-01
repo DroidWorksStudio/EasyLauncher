@@ -84,7 +84,7 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
 
     var homeDailyWordAlignment: Int
         get() = prefs.getInt(Constants.HOME_DAILY_WORD_ALIGNMENT, Gravity.START)
-        set(value) = prefs.edit().putInt(Constants.HOME_DAILY_WORD_ALIGNMENT,value).apply()
+        set(value) = prefs.edit().putInt(Constants.HOME_DAILY_WORD_ALIGNMENT, value).apply()
 
     var batteryTextSize: Float
         get() = prefs.getFloat(Constants.BATTERY_TEXT_SIZE, 12f)
@@ -121,4 +121,19 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
     var swipeSearch: Boolean
         get() = prefs.getBoolean(Constants.SWIPE_SEARCH, false)
         set(value) = prefs.edit().putBoolean(Constants.SWIPE_SEARCH, value).apply()
+
+    var searchEngines: Constants.SearchEngines
+        get() {
+            return try {
+                Constants.SearchEngines.valueOf(
+                    prefs.getString(
+                        Constants.SEARCH_ENGINE,
+                        Constants.SearchEngines.Google.name
+                    ).toString()
+                )
+            } catch (_: Exception) {
+                Constants.SearchEngines.Google
+            }
+        }
+        set(value) = prefs.edit().putString(Constants.SEARCH_ENGINE, value.name).apply()
 }

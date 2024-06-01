@@ -37,6 +37,7 @@ import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
+import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 import java.io.File
 import java.io.IOException
@@ -290,8 +291,37 @@ fun Context.searchOnPlayStore(query: String? = null): Boolean {
     }
 }
 
-fun Context.searchCustomSearchEngine(searchQuery: String? = null): Boolean {
-    val searchUrl = Constants.URL_GOOGLE_SEARCH
+fun Context.searchCustomSearchEngine(
+    preferenceHelper: PreferenceHelper,
+    searchQuery: String? = null
+): Boolean {
+
+    val searchUrl = when (preferenceHelper.searchEngines) {
+        Constants.SearchEngines.Google -> {
+            Constants.URL_GOOGLE_SEARCH
+        }
+
+        Constants.SearchEngines.Yahoo -> {
+            Constants.URL_YAHOO_SEARCH
+        }
+
+        Constants.SearchEngines.DuckDuckGo -> {
+            Constants.URL_DUCK_SEARCH
+        }
+
+        Constants.SearchEngines.Bing -> {
+            Constants.URL_BING_SEARCH
+        }
+
+        Constants.SearchEngines.Brave -> {
+            Constants.URL_BRAVE_SEARCH
+        }
+
+        Constants.SearchEngines.SwissCow -> {
+            Constants.URL_SWISSCOW_SEARCH
+        }
+    }
+
     val encodedQuery = Uri.encode(searchQuery)
     val fullUrl = "$searchUrl$encodedQuery"
     Log.d("fullUrl", fullUrl)

@@ -52,12 +52,20 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
+
     buildFeatures {
+        compose = true
         viewBinding = true
         dataBinding = true
+        buildConfig = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.3"
     }
 
     applicationVariants.all {
@@ -99,6 +107,8 @@ dependencies {
     implementation(libs.biometric.ktx)
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
+    implementation(libs.androidx.runtime.android)
+    implementation(libs.androidx.ui.android)
 
     //noinspection KaptUsageInsteadOfKsp
     kapt(libs.room.compiler)

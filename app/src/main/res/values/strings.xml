@@ -38,6 +38,7 @@
     <string name="settings_title_time_style">Time Style</string>
     <string name="settings_title_app_manager">App Manage</string>
     <string name="settings_title_gestures">Gestures</string>
+    <string name="settings_title_miscellaneous">Miscellaneous</string>
     <string name="settings_title_backups">Backups</string>
     <string name="settings_title_others">Others</string>
 
@@ -78,6 +79,8 @@
     <string name="settings_double_tap_lock">Double tap to lock</string>
     <string name="settings_swipe_down_notification">Swipe down expand notification</string>
     <string name="settings_swipe_up_search">Swipe up open search view</string>
+
+    <string name="settings_search_engine">Search Engine</string>
 
     <string name="settings_others_share">Share</string>
     <string name="settings_others_feedback">Feedback</string>

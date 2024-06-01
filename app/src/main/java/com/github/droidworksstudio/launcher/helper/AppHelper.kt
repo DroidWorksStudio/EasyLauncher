@@ -16,19 +16,20 @@ import android.view.Window
 import android.view.WindowInsets
 import android.widget.TextView
 import androidx.appcompat.widget.LinearLayoutCompat
+import androidx.fragment.app.viewModels
 import com.github.droidworksstudio.ktx.backupSharedPreferences
 import com.github.droidworksstudio.ktx.restoreSharedPreferences
-//import com.github.droidworksstudio.ktx.backupSharedPreferences
-//import com.github.droidworksstudio.ktx.restoreSharedPreferences
 import com.github.droidworksstudio.ktx.showLongToast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
+import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import java.util.Calendar
 import javax.inject.Inject
 
 class AppHelper @Inject constructor() {
+
     @SuppressLint("WrongConstant", "PrivateApi")
     fun expandNotificationDrawer(context: Context) {
         try {

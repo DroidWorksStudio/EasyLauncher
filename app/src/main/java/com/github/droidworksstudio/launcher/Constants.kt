@@ -1,5 +1,7 @@
 package com.github.droidworksstudio.launcher
 
+import android.content.Context
+
 object Constants {
     const val PACKAGE_NAME = "app.easy.launcher"
     const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
@@ -53,6 +55,7 @@ object Constants {
 
     const val TOGGLE_SETTING_LOCK = "TOGGLE_SETTING_LOCK"
 
+    const val SEARCH_ENGINE = "SEARCH_ENGINE"
     const val URL_DUCK_SEARCH = "https://duckduckgo.com/?q="
     const val URL_GOOGLE_SEARCH = "https://google.com/search?q="
     const val URL_YAHOO_SEARCH = "https://search.yahoo.com/search?p="
@@ -65,4 +68,24 @@ object Constants {
     const val APP_WIDGET_HOST_ID = 1024
     const val TRIPLE_TAP_DELAY_MS = 300
     const val LONG_PRESS_DELAY_MS = 500
+
+    enum class SearchEngines {
+        Google,
+        Yahoo,
+        DuckDuckGo,
+        Bing,
+        Brave,
+        SwissCow;
+
+        fun getString(context: Context): String {
+            return when (this) {
+                Google -> context.getString(R.string.search_google)
+                Yahoo -> context.getString(R.string.search_yahoo)
+                DuckDuckGo -> context.getString(R.string.search_duckduckgo)
+                Bing -> context.getString(R.string.search_bing)
+                Brave -> context.getString(R.string.search_brave)
+                SwissCow -> context.getString(R.string.search_swisscow)
+            }
+        }
+    }
 }

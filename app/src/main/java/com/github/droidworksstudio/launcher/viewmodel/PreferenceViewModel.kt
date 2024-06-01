@@ -2,14 +2,15 @@ package com.github.droidworksstudio.launcher.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.github.droidworksstudio.launcher.Constants
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
 class PreferenceViewModel @Inject constructor(
-    private val preferenceHelper: PreferenceHelper)
-    : ViewModel() {
+    private val preferenceHelper: PreferenceHelper
+) : ViewModel() {
 
     private val firstLaunchLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showStatusBarLiveData: MutableLiveData<Boolean> = MutableLiveData()
@@ -39,6 +40,8 @@ class PreferenceViewModel @Inject constructor(
     private val lockSettingsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
 
+    private val searchEngineLiveData: MutableLiveData<Constants.SearchEngines> = MutableLiveData()
+
     fun setFirstLaunch(firstLaunch: Boolean) {
         preferenceHelper.firstLaunch = firstLaunch
         firstLaunchLiveData.postValue(preferenceHelper.firstLaunch)
@@ -59,7 +62,7 @@ class PreferenceViewModel @Inject constructor(
         showDateLiveData.postValue(preferenceHelper.showDate)
     }
 
-    fun setShowBattery(showBattery: Boolean){
+    fun setShowBattery(showBattery: Boolean) {
         preferenceHelper.showBattery = showBattery
         showBatteryLiveData.postValue(preferenceHelper.showBattery)
     }
@@ -94,7 +97,7 @@ class PreferenceViewModel @Inject constructor(
         timeColorLiveData.postValue(preferenceHelper.timeColor)
     }
 
-    fun setBatteryColor(batteryColor: Int){
+    fun setBatteryColor(batteryColor: Int) {
         preferenceHelper.batteryColor = batteryColor
         batteryColorLiveData.postValue(preferenceHelper.batteryColor)
     }
@@ -144,33 +147,38 @@ class PreferenceViewModel @Inject constructor(
         appPaddingSizeLiveData.postValue(preferenceHelper.homeAppPadding)
     }
 
-    fun setDoubleTapLock(tapLockScreen: Boolean){
+    fun setDoubleTapLock(tapLockScreen: Boolean) {
         preferenceHelper.tapLockScreen = tapLockScreen
         tapLockScreenLiveData.postValue((preferenceHelper.tapLockScreen))
     }
 
-    fun setSwipeNotification(swipeNotification: Boolean){
+    fun setSwipeNotification(swipeNotification: Boolean) {
         preferenceHelper.swipeNotification = swipeNotification
         swipeNotificationLiveData.postValue((preferenceHelper.swipeNotification))
     }
 
-    fun setSwipeSearch(swipeSearch: Boolean){
+    fun setSwipeSearch(swipeSearch: Boolean) {
         preferenceHelper.swipeSearch = swipeSearch
         swipeSearchLiveData.postValue((preferenceHelper.swipeSearch))
     }
 
-    fun setAutoKeyboard(autoKeyboard: Boolean){
+    fun setAutoKeyboard(autoKeyboard: Boolean) {
         preferenceHelper.automaticKeyboard = autoKeyboard
         autoKeyboardLiveData.postValue((preferenceHelper.automaticKeyboard))
     }
 
-    fun setAutoOpenApp(autoOpenApp: Boolean){
+    fun setAutoOpenApp(autoOpenApp: Boolean) {
         preferenceHelper.automaticOpenApp = autoOpenApp
         autoOpenAppsLiveData.postValue((preferenceHelper.automaticOpenApp))
     }
 
-    fun setLockSettings(lockSettings: Boolean){
+    fun setLockSettings(lockSettings: Boolean) {
         preferenceHelper.settingsLock = lockSettings
         lockSettingsLiveData.postValue((preferenceHelper.settingsLock))
+    }
+
+    fun setSearchEngine(searchEngine: Constants.SearchEngines) {
+        preferenceHelper.searchEngines = searchEngine
+        searchEngineLiveData.postValue((preferenceHelper.searchEngines))
     }
 }
