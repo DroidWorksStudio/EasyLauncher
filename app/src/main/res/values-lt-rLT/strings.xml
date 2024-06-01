@@ -33,6 +33,7 @@
     <string name="settings_title_time_style">Laiko stilius</string>
     <string name="settings_title_app_manager">Programų tvarkymas</string>
     <string name="settings_title_gestures">Gestai</string>
+    <string name="settings_title_miscellaneous">Įvairūs</string>
     <string name="settings_title_backups">Atsarginės kopijos</string>
     <string name="settings_title_others">Kiti</string>
     <string name="settings_display_status_bar">Rodyti būsenos juostą</string>
@@ -67,6 +68,7 @@
     <string name="settings_double_tap_lock">Dukart palieskite, kad užrakintumėte</string>
     <string name="settings_swipe_down_notification">Braukite žemyn, išskleiskite pranešimą</string>
     <string name="settings_swipe_up_search">Braukite aukštyn, kad atidarytumėte paieškos rodinį</string>
+    <string name="settings_search_engine">Paieškos variklis</string>
     <string name="settings_others_share">Dalintis</string>
     <string name="settings_others_feedback">Atsiliepimas</string>
     <string name="settings_others_github">Github</string>
