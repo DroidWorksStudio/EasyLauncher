@@ -33,6 +33,7 @@
     <string name="settings_title_time_style">סגנון זמן</string>
     <string name="settings_title_app_manager">ניהול אפליקציות</string>
     <string name="settings_title_gestures">מחוות</string>
+    <string name="settings_title_miscellaneous">שונות</string>
     <string name="settings_title_backups">גיבויים</string>
     <string name="settings_title_others">אחרים</string>
     <string name="settings_display_status_bar">הצג את שורת המצב</string>
@@ -67,6 +68,7 @@
     <string name="settings_double_tap_lock">הקש פעמיים כדי לנעול</string>
     <string name="settings_swipe_down_notification">החלק מטה התראה על הרחבה</string>
     <string name="settings_swipe_up_search">החלק למעלה תצוגת חיפוש פתוחה</string>
+    <string name="settings_search_engine">מנוע חיפוש</string>
     <string name="settings_others_share">שיתוף</string>
     <string name="settings_others_feedback">משוב</string>
     <string name="settings_others_github">Github</string>
