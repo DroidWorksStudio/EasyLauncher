@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added extra search engines to the settings. - ([0d2527a](https://github.com/DroidWorksStudio/EasyLauncher/commit/0d2527a1a2753c417a8aa218ace784eb4d50f05f))
 - Display app icons in more places if enabled. - ([8311d29](https://github.com/DroidWorksStudio/EasyLauncher/commit/8311d29cedc1e11a9c43ddf465fbfac0d2502b5c))
 - Cleaned up backup system to save in a better location. - ([8bbc3b9](https://github.com/DroidWorksStudio/EasyLauncher/commit/8bbc3b9b9569d3dcf589e6ebd85fe27da88e2f41))
 - Added a battery icon. - ([d3c12a6](https://github.com/DroidWorksStudio/EasyLauncher/commit/d3c12a6c3765e2a233b85344a80bee85c6da4a33))
