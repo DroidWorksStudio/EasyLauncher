@@ -20,6 +20,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Updated Language Files. ([#50](https://github.com/DroidWorksStudio/EasyLauncher/issues/50)) - ([81d2242](https://github.com/DroidWorksStudio/EasyLauncher/commit/81d2242b9715d0b47c72391cf985bf7e2359161b))
 
+### Refactoring:
+
+- Added widget page to the gestures. - ([94fe747](https://github.com/DroidWorksStudio/EasyLauncher/commit/94fe747ffdfc869237c1dd200966cda8e2b2fe23))
+
 ## [0.1.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.1) - (01, June 2024)
 
 ### Implemented Enhancements:
