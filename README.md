@@ -70,7 +70,7 @@ We try to balance customizability and minimalization well still being simple :)<
 
 ## Credits
 
-- [https://gitlab.com/neophtex/AsterLauncher](https://gitlab.com/neophtex/AsterLauncher)
+- [https://github.com/neophtex/AsterLauncher](https://gitlab.com/neophtex/AsterLauncher)
 
 ## License
 
