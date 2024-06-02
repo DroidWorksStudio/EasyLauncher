@@ -79,8 +79,14 @@ class SettingsFragment : Fragment(),
             packageInfo.versionName
         )
 
-        val searchEngine = preferenceHelper.searchEngines.toString()
-        binding.searchEngineText.text = searchEngine
+        binding.searchEngineText.text = preferenceHelper.searchEngines.getString(context)
+
+        binding.gesturesDoubleTapControl.text = preferenceHelper.doubleTapAction.getString(context)
+        binding.gesturesSwipeUpControl.text = preferenceHelper.swipeUpAction.getString(context)
+        binding.gesturesSwipeDownControl.text = preferenceHelper.swipeDownAction.getString(context)
+        binding.gesturesSwipeLeftControl.text = preferenceHelper.swipeLeftAction.getString(context)
+        binding.gesturesSwipeRightControl.text =
+            preferenceHelper.swipeRightAction.getString(context)
     }
 
     @SuppressLint("SetTextI18n")
@@ -96,9 +102,6 @@ class SettingsFragment : Fragment(),
         binding.appIconsSwitchCompat.isChecked = preferenceHelper.showAppIcon
         binding.automaticKeyboardSwitchCompat.isChecked = preferenceHelper.automaticKeyboard
         binding.automaticOpenAppSwitchCompat.isChecked = preferenceHelper.automaticOpenApp
-        binding.gesturesLockSwitchCompat.isChecked = preferenceHelper.tapLockScreen
-        binding.gesturesNotificationSwitchCompat.isChecked = preferenceHelper.swipeNotification
-        binding.gesturesSearchSwitchCompat.isChecked = preferenceHelper.swipeSearch
         binding.lockSettingsSwitchCompat.isChecked = preferenceHelper.settingsLock
     }
 
@@ -141,10 +144,6 @@ class SettingsFragment : Fragment(),
         binding.selectAppearanceColor.setOnClickListener {
             val bottomSheetFragment = ColorBottomSheetDialogFragment()
             bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
-        }
-
-        binding.miscellaneousSearchEngine.setOnClickListener {
-            showSearchEngineDialog()
         }
 
         binding.shareView.setOnClickListener {
@@ -196,22 +195,6 @@ class SettingsFragment : Fragment(),
             preferenceViewModel.setShowAppIcons(isChecked)
         }
 
-        binding.gesturesLockSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
-            appHelper.enableAppAsAccessibilityService(
-                requireContext(),
-                preferenceHelper.tapLockScreen
-            )
-            preferenceViewModel.setDoubleTapLock(isChecked)
-        }
-
-        binding.gesturesNotificationSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
-            preferenceViewModel.setSwipeNotification(isChecked)
-        }
-
-        binding.gesturesSearchSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
-            preferenceViewModel.setSwipeSearch(isChecked)
-        }
-
         binding.automaticKeyboardSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setAutoKeyboard(isChecked)
         }
@@ -228,6 +211,30 @@ class SettingsFragment : Fragment(),
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
         binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+
+        binding.miscellaneousSearchEngine.setOnClickListener {
+            showSearchEngineDialog()
+        }
+
+        binding.gesturesDoubleTapText.setOnClickListener {
+            swipeActionClickEvent(Constants.Swipe.DoubleTap)
+        }
+
+        binding.gesturesSwipeUpText.setOnClickListener {
+            swipeActionClickEvent(Constants.Swipe.Up)
+        }
+
+        binding.gesturesSwipeDownText.setOnClickListener {
+            swipeActionClickEvent(Constants.Swipe.Down)
+        }
+
+        binding.gesturesSwipeLeftText.setOnClickListener {
+            swipeActionClickEvent(Constants.Swipe.Left)
+        }
+
+        binding.gesturesSwipeRightText.setOnClickListener {
+            swipeActionClickEvent(Constants.Swipe.Right)
+        }
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
@@ -247,7 +254,7 @@ class SettingsFragment : Fragment(),
 
     private fun showSearchEngineDialog() {
         // Get the array of SearchEngines enum values
-        val items = Constants.SearchEngines.values()
+        val items = Constants.SearchEngines.entries.toTypedArray()
 
         // Map the enum values to their string representations
         val itemStrings = items.map { it.getString(context) }.toTypedArray()
@@ -257,36 +264,58 @@ class SettingsFragment : Fragment(),
         dialog.setTitle("Select a Search Engine")
         dialog.setItems(itemStrings) { _, which ->
             val selectedItem = items[which]
-            when (selectedItem) {
-                Constants.SearchEngines.Google -> {
-                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.Google)
-                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+            preferenceViewModel.setSearchEngine(selectedItem)
+            binding.searchEngineText.text = preferenceHelper.searchEngines.name
+        }
+        dialog.show()
+    }
+
+    private fun swipeActionClickEvent(swipe: Constants.Swipe) {
+        // Get the array of SearchEngines enum values
+        val actions = Constants.Action.entries.toTypedArray()
+        // Map the enum values to their string representations
+        val actionStrings = actions.map { it.getString(context) }.toTypedArray()
+
+        val dialog = MaterialAlertDialogBuilder(context)
+
+        dialog.setTitle("Select a Action")
+        dialog.setItems(actionStrings) { _, which ->
+            val selectedAction = actions[which]
+            when (swipe) {
+                Constants.Swipe.DoubleTap -> {
+                    preferenceViewModel.setDoubleTap(selectedAction)
+                    binding.gesturesDoubleTapControl.text =
+                        preferenceHelper.doubleTapAction.getString(context)
                 }
 
-                Constants.SearchEngines.Bing -> {
-                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.Bing)
-                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                Constants.Swipe.Up -> {
+                    preferenceViewModel.setSwipeUp(selectedAction)
+                    binding.gesturesSwipeUpControl.text =
+                        preferenceHelper.swipeUpAction.getString(context)
+
                 }
 
-                Constants.SearchEngines.Brave -> {
-                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.Brave)
-                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                Constants.Swipe.Down -> {
+                    preferenceViewModel.setSwipeDown(selectedAction)
+                    binding.gesturesSwipeDownControl.text =
+                        preferenceHelper.swipeDownAction.getString(context)
+
                 }
 
-                Constants.SearchEngines.Yahoo -> {
-                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.Yahoo)
-                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                Constants.Swipe.Left -> {
+                    preferenceViewModel.setSwipeLeft(selectedAction)
+                    binding.gesturesSwipeLeftControl.text =
+                        preferenceHelper.swipeLeftAction.getString(context)
+
                 }
 
-                Constants.SearchEngines.DuckDuckGo -> {
-                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.DuckDuckGo)
-                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
+                Constants.Swipe.Right -> {
+                    preferenceViewModel.setSwipeRight(selectedAction)
+                    binding.gesturesSwipeRightControl.text =
+                        preferenceHelper.swipeRightAction.getString(context)
+
                 }
 
-                Constants.SearchEngines.SwissCow -> {
-                    preferenceViewModel.setSearchEngine(Constants.SearchEngines.SwissCow)
-                    binding.searchEngineText.text = preferenceHelper.searchEngines.name
-                }
             }
         }
         dialog.show()

@@ -106,21 +106,9 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getFloat(Constants.DAILY_WORD_TEXT_SIZE, 18f)
         set(value) = prefs.edit().putFloat(Constants.DAILY_WORD_TEXT_SIZE, value).apply()
 
-    var tapLockScreen: Boolean
-        get() = prefs.getBoolean(Constants.DOUBLE_TAP_LOCK, false)
-        set(value) = prefs.edit().putBoolean(Constants.DOUBLE_TAP_LOCK, value).apply()
-
     var settingsLock: Boolean
         get() = prefs.getBoolean(Constants.TOGGLE_SETTING_LOCK, false)
         set(value) = prefs.edit().putBoolean(Constants.TOGGLE_SETTING_LOCK, value).apply()
-
-    var swipeNotification: Boolean
-        get() = prefs.getBoolean(Constants.SWIPE_NOTIFICATION, true)
-        set(value) = prefs.edit().putBoolean(Constants.SWIPE_NOTIFICATION, value).apply()
-
-    var swipeSearch: Boolean
-        get() = prefs.getBoolean(Constants.SWIPE_SEARCH, false)
-        set(value) = prefs.edit().putBoolean(Constants.SWIPE_SEARCH, value).apply()
 
     var searchEngines: Constants.SearchEngines
         get() {
@@ -136,4 +124,36 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
             }
         }
         set(value) = prefs.edit().putString(Constants.SEARCH_ENGINE, value.name).apply()
+
+    var swipeUpAction: Constants.Action
+        get() = loadAction(Constants.SWIPE_UP_ACTION, Constants.Action.ShowRecents)
+        set(value) = storeAction(Constants.SWIPE_UP_ACTION, value)
+
+    var swipeDownAction: Constants.Action
+        get() = loadAction(Constants.SWIPE_DOWN_ACTION, Constants.Action.ShowNotification)
+        set(value) = storeAction(Constants.SWIPE_DOWN_ACTION, value)
+
+    var swipeLeftAction: Constants.Action
+        get() = loadAction(Constants.SWIPE_LEFT_ACTION, Constants.Action.ShowAppList)
+        set(value) = storeAction(Constants.SWIPE_LEFT_ACTION, value)
+
+    var swipeRightAction: Constants.Action
+        get() = loadAction(Constants.SWIPE_RIGHT_ACTION, Constants.Action.ShowFavoriteList)
+        set(value) = storeAction(Constants.SWIPE_RIGHT_ACTION, value)
+
+    var doubleTapAction: Constants.Action
+        get() = loadAction(Constants.DOUBLE_TAP_ACTION, Constants.Action.LockScreen)
+        set(value) = storeAction(Constants.DOUBLE_TAP_ACTION, value)
+
+    private fun loadAction(prefString: String, default: Constants.Action): Constants.Action {
+        val string = prefs.getString(
+            prefString,
+            default.toString()
+        ).toString()
+        return Constants.Action.valueOf(string)
+    }
+
+    private fun storeAction(prefString: String, value: Constants.Action) {
+        prefs.edit().putString(prefString, value.name).apply()
+    }
 }

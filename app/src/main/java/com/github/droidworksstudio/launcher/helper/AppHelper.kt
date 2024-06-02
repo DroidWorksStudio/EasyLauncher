@@ -44,7 +44,7 @@ class AppHelper @Inject constructor() {
     }
 
     @SuppressLint("WrongConstant", "PrivateApi")
-    private fun expandQuickSettings(context: Context) {
+    fun expandQuickSettings(context: Context) {
         try {
             Class.forName(Constants.QUICKSETTINGS_MANAGER)
                 .getMethod(Constants.QUICKSETTINGS_METHOD)
@@ -191,34 +191,5 @@ class AppHelper @Inject constructor() {
 
     fun restoreSharedPreferences(context: Context) {
         context.restoreSharedPreferences(context.getString(R.string.settings_backups_file))
-    }
-
-    fun enableAppAsAccessibilityService(context: Context, accessibilityState: Boolean) {
-        val state: String = if (accessibilityState) {
-            context.getString(R.string.accessibility_settings_disable)
-        } else {
-            context.getString(R.string.accessibility_settings_enable)
-        }
-
-        when (state) {
-            "Enable" -> {
-                val builder = MaterialAlertDialogBuilder(context)
-
-                builder.setTitle(R.string.accessibility_settings_title)
-                builder.setMessage(R.string.accessibility_service_desc)
-                builder.setPositiveButton(state) { _, _ ->
-                    val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
-                    context.startActivity(intent)
-                }
-                builder.setNegativeButton(android.R.string.cancel) { dialog, _ ->
-                    dialog.dismiss()
-                }
-                builder.show()
-            }
-
-            else -> {
-                return
-            }
-        }
     }
 }

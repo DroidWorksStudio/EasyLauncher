@@ -32,15 +32,17 @@ class PreferenceViewModel @Inject constructor(
     private val timeTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val appTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val batteryTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
-    private val tapLockScreenLiveData: MutableLiveData<Boolean> = MutableLiveData()
-    private val swipeNotificationLiveData: MutableLiveData<Boolean> = MutableLiveData()
-    private val swipeSearchLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val autoOpenAppsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val lockSettingsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
 
     private val searchEngineLiveData: MutableLiveData<Constants.SearchEngines> = MutableLiveData()
+    private val doubleTapActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
+    private val swipeUpActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
+    private val swipeDownActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
+    private val swipeLeftActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
+    private val swipeRightActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
 
     fun setFirstLaunch(firstLaunch: Boolean) {
         preferenceHelper.firstLaunch = firstLaunch
@@ -147,19 +149,29 @@ class PreferenceViewModel @Inject constructor(
         appPaddingSizeLiveData.postValue(preferenceHelper.homeAppPadding)
     }
 
-    fun setDoubleTapLock(tapLockScreen: Boolean) {
-        preferenceHelper.tapLockScreen = tapLockScreen
-        tapLockScreenLiveData.postValue((preferenceHelper.tapLockScreen))
+    fun setDoubleTap(action: Constants.Action) {
+        preferenceHelper.doubleTapAction = action
+        doubleTapActionLiveData.postValue((preferenceHelper.doubleTapAction))
     }
 
-    fun setSwipeNotification(swipeNotification: Boolean) {
-        preferenceHelper.swipeNotification = swipeNotification
-        swipeNotificationLiveData.postValue((preferenceHelper.swipeNotification))
+    fun setSwipeUp(action: Constants.Action) {
+        preferenceHelper.swipeUpAction = action
+        swipeUpActionLiveData.postValue((preferenceHelper.swipeUpAction))
     }
 
-    fun setSwipeSearch(swipeSearch: Boolean) {
-        preferenceHelper.swipeSearch = swipeSearch
-        swipeSearchLiveData.postValue((preferenceHelper.swipeSearch))
+    fun setSwipeDown(action: Constants.Action) {
+        preferenceHelper.swipeDownAction = action
+        swipeDownActionLiveData.postValue((preferenceHelper.swipeDownAction))
+    }
+
+    fun setSwipeLeft(action: Constants.Action) {
+        preferenceHelper.swipeLeftAction = action
+        swipeLeftActionLiveData.postValue((preferenceHelper.swipeLeftAction))
+    }
+
+    fun setSwipeRight(action: Constants.Action) {
+        preferenceHelper.swipeRightAction = action
+        swipeRightActionLiveData.postValue((preferenceHelper.swipeRightAction))
     }
 
     fun setAutoKeyboard(autoKeyboard: Boolean) {

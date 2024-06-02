@@ -589,30 +589,32 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
                         android:orientation="horizontal"
                         tools:ignore="MissingConstraints">
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_lock_text"
+                            android:id="@+id/gestures_double_tap_text"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="left|center"
-                            android:text="@string/settings_double_tap_lock"
+                            android:text="@string/settings_double_tap"
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="RtlHardcoded"
                             style="@style/TextDefaultStyle" />
 
-                        <androidx.appcompat.widget.SwitchCompat
-                            android:id="@+id/gestures_lock_switchCompat"
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_double_tap_control"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:thumb="@drawable/shape_switch_thumb"
-                            app:track="@drawable/selector_switch"
-                            android:scaleY="0.8"
-                            android:scaleX="0.7" />
+                            android:gravity="left|center"
+                            android:text="@string/settings_double_tap"
+                            android:textSize="@dimen/text_large"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -620,30 +622,32 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
                         android:orientation="horizontal"
                         tools:ignore="MissingConstraints">
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_notification_text"
+                            android:id="@+id/gestures_swipe_up_text"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="left|center"
-                            android:text="@string/settings_swipe_down_notification"
+                            android:text="@string/settings_swipe_up"
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="RtlHardcoded"
                             style="@style/TextDefaultStyle" />
 
-                        <androidx.appcompat.widget.SwitchCompat
-                            android:id="@+id/gestures_notification_switchCompat"
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_swipe_up_control"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:thumb="@drawable/shape_switch_thumb"
-                            app:track="@drawable/selector_switch"
-                            android:scaleY="0.8"
-                            android:scaleX="0.7" />
+                            android:gravity="left|center"
+                            android:text="@string/settings_swipe_up"
+                            android:textSize="@dimen/text_large"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -651,30 +655,98 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
                         android:orientation="horizontal"
                         tools:ignore="MissingConstraints">
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_search_text"
+                            android:id="@+id/gestures_swipe_down_text"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="left|center"
-                            android:text="@string/settings_swipe_up_search"
+                            android:text="@string/settings_swipe_down"
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="RtlHardcoded"
                             style="@style/TextDefaultStyle" />
 
-                        <androidx.appcompat.widget.SwitchCompat
-                            android:id="@+id/gestures_search_switchCompat"
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_swipe_down_control"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:thumb="@drawable/shape_switch_thumb"
-                            app:track="@drawable/selector_switch"
-                            android:scaleY="0.8"
-                            android:scaleX="0.7" />
+                            android:gravity="left|center"
+                            android:text="@string/settings_swipe_down"
+                            android:textSize="@dimen/text_large"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_swipe_left_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="@string/settings_swipe_left"
+                            android:textSize="@dimen/text_large"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_swipe_left_control"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/settings_swipe_left"
+                            android:textSize="@dimen/text_large"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal"
+                        tools:ignore="MissingConstraints">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_swipe_right_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="@string/settings_swipe_right"
+                            android:textSize="@dimen/text_large"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/gestures_swipe_right_control"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:text="@string/settings_swipe_right"
+                            android:textSize="@dimen/text_large"
+                            tools:ignore="RtlHardcoded"
+                            style="@style/TextDefaultStyle" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -698,6 +770,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="10dp"
                         android:orientation="horizontal"
                         tools:ignore="MissingConstraints">
 
@@ -732,7 +805,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    tools:ignore="MissingConstraints">
+                    tools:ignore="MissingConstraints,TooManyViews">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
