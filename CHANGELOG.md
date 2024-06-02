@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added custom gestures. - ([924e052](https://github.com/DroidWorksStudio/EasyLauncher/commit/924e052598c9f4c8cd990a2d9e0cdb73c4e1dcfa))
+
 ### Dependency Updates:
 
 - Updated Dependencies - ([8e796ca](https://github.com/DroidWorksStudio/EasyLauncher/commit/8e796ca2fe95aa039873c5b47db7ed50dafdbacc))
