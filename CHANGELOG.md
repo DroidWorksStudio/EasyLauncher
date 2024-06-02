@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Updated the app icon. - ([1e1b81c](https://github.com/DroidWorksStudio/EasyLauncher/commit/1e1b81cf83341e28c43efb788a86e5d99d061ef4))
 - Added custom gestures. - ([924e052](https://github.com/DroidWorksStudio/EasyLauncher/commit/924e052598c9f4c8cd990a2d9e0cdb73c4e1dcfa))
 
 ### Dependency Updates:
