@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Moved the getActionType function into AppHelper class. - ([48b2913](https://github.com/DroidWorksStudio/EasyLauncher/commit/48b2913797a46857df9ec89348bb1b9e01164c81))
 - Added widget page to the gestures. - ([94fe747](https://github.com/DroidWorksStudio/EasyLauncher/commit/94fe747ffdfc869237c1dd200966cda8e2b2fe23))
 
 ## [0.1.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.1) - (01, June 2024)
