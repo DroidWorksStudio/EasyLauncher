@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Housekeeping:
+
+- Moved around a few files to be cleaner. - ([0677e37](https://github.com/DroidWorksStudio/EasyLauncher/commit/0677e3792cfa662625010d4fa733ae5e87318e54))
+
+## [0.1.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.1) - (01, June 2024)
+
 ### Implemented Enhancements:
 
 - Added extra search engines to the settings. - ([0d2527a](https://github.com/DroidWorksStudio/EasyLauncher/commit/0d2527a1a2753c417a8aa218ace784eb4d50f05f))
