@@ -85,6 +85,7 @@
     <string name="settings_actions_show_favorite_list">Mostra elenco preferiti</string>
     <string name="settings_actions_open_quick_settings">Apri Impostazioni rapide</string>
     <string name="settings_actions_show_recents">Mostra recenti</string>
+    <string name="settings_actions_show_widgets">Show Widgets</string>
     <string name="settings_actions_open_power_dialog">Apri la finestra di dialogo di alimentazione</string>
     <string name="settings_actions_take_a_screenshot">Fai uno screenshot</string>
     <string name="settings_actions_disabled">Disabilitato</string>
