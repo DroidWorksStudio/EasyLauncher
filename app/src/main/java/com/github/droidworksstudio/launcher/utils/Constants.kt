@@ -101,6 +101,7 @@ object Constants {
         ShowFavoriteList,
         OpenQuickSettings,
         ShowRecents,
+        ShowWidgets,
         OpenPowerDialog,
         TakeScreenShot,
         Disabled;
@@ -114,6 +115,7 @@ object Constants {
                 ShowFavoriteList -> context.getString(R.string.settings_actions_show_favorite_list)
                 OpenQuickSettings -> context.getString(R.string.settings_actions_open_quick_settings)
                 ShowRecents -> context.getString(R.string.settings_actions_show_recents)
+                ShowWidgets -> context.getString(R.string.settings_actions_show_widgets)
                 OpenPowerDialog -> context.getString(R.string.settings_actions_open_power_dialog)
                 TakeScreenShot -> context.getString(R.string.settings_actions_take_a_screenshot)
                 Disabled -> context.getString(R.string.settings_actions_disabled)

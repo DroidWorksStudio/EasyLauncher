@@ -12,33 +12,16 @@
 
         <action
             android:id="@+id/action_HomeFragment_to_DrawFragment"
-            app:destination="@id/DrawFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:destination="@id/DrawFragment" />
         <action
             android:id="@+id/action_HomeFragment_to_SettingsFragment"
-            app:destination="@id/SettingsFragment"
-            app:enterAnim="@anim/slide_in_top"
-            app:exitAnim="@anim/slide_out_top"
-            app:popEnterAnim="@anim/slide_in_bottom"
-            app:popExitAnim="@anim/slide_out_bottom" />
+            app:destination="@id/SettingsFragment" />
         <action
             android:id="@+id/action_HomeFragment_to_FavoriteFragment"
-            app:destination="@id/FavoriteFragment"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_left" />
-
+            app:destination="@id/FavoriteFragment" />
         <action
             android:id="@+id/action_HomeFragment_to_WidgetsFragment"
-            app:destination="@id/WidgetsFragment"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_left" />
+            app:destination="@id/WidgetsFragment" />
     </fragment>
 
     <fragment
@@ -48,18 +31,10 @@
         tools:layout="@layout/fragment_settings">
         <action
             android:id="@+id/action_SettingsFragment_to_FavoriteFragment"
-            app:destination="@id/FavoriteFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:destination="@id/FavoriteFragment" />
         <action
             android:id="@+id/action_SettingsFragment_to_HiddenFragment"
-            app:destination="@id/HiddenFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:destination="@id/HiddenFragment" />
     </fragment>
 
     <fragment

@@ -1,5 +1,6 @@
 package com.github.droidworksstudio.launcher.ui.widgetmanager
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.appwidget.AppWidgetHost
 import android.appwidget.AppWidgetManager
@@ -13,10 +14,12 @@ import android.view.ViewGroup
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.databinding.FragmentWidgetManagerBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
+import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -54,6 +57,7 @@ class WidgetManagerFragment : Fragment(),
 
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         appHelper.dayNightMod(requireContext(), binding.drawBackground)
         super.onViewCreated(view, savedInstanceState)
@@ -125,10 +129,25 @@ class WidgetManagerFragment : Fragment(),
                 }
             }
 
-        // Set long-click listener on the root view
-        binding.widgetParent.setOnLongClickListener {
-            selectWidget()
-            true // Indicate that the long-click event has been handled
+        binding.widgetParent.setOnTouchListener(getSwipeGestureListener(context))
+    }
+
+    private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
+        return object : OnSwipeTouchListener(context) {
+            override fun onLongClick() {
+                super.onLongClick()
+                selectWidget()
+            }
+
+            override fun onSwipeLeft() {
+                super.onSwipeLeft()
+                findNavController().popBackStack()
+            }
+
+            override fun onSwipeRight() {
+                super.onSwipeRight()
+                findNavController().popBackStack()
+            }
         }
     }
 

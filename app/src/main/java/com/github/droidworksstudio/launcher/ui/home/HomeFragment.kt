@@ -20,6 +20,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.common.hideKeyboard
@@ -297,37 +298,37 @@ class HomeFragment : Fragment(),
             @RequiresApi(Build.VERSION_CODES.P)
             override fun onDoubleClick() {
                 super.onDoubleClick()
-                handleOtherAction(preferenceHelper.doubleTapAction)
+                handleOtherAction(preferenceHelper.doubleTapAction, Constants.Swipe.DoubleTap)
             }
 
             @RequiresApi(Build.VERSION_CODES.P)
             override fun onSwipeUp() {
                 super.onSwipeUp()
-                handleOtherAction(preferenceHelper.swipeUpAction)
+                handleOtherAction(preferenceHelper.swipeUpAction, Constants.Swipe.Up)
             }
 
             @RequiresApi(Build.VERSION_CODES.P)
             override fun onSwipeDown() {
                 super.onSwipeDown()
-                handleOtherAction(preferenceHelper.swipeDownAction)
+                handleOtherAction(preferenceHelper.swipeDownAction, Constants.Swipe.Down)
             }
 
             @RequiresApi(Build.VERSION_CODES.P)
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                handleOtherAction(preferenceHelper.swipeLeftAction)
+                handleOtherAction(preferenceHelper.swipeLeftAction, Constants.Swipe.Left)
             }
 
             @RequiresApi(Build.VERSION_CODES.P)
             override fun onSwipeRight() {
                 super.onSwipeRight()
-                handleOtherAction(preferenceHelper.swipeRightAction)
+                handleOtherAction(preferenceHelper.swipeRightAction, Constants.Swipe.Right)
             }
         }
     }
 
     @RequiresApi(Build.VERSION_CODES.P)
-    private fun handleOtherAction(action: Constants.Action) {
+    private fun handleOtherAction(action: Constants.Action, actionType: Constants.Swipe) {
         when (action) {
 //            Constants.Action.OpenApp -> {}
 
@@ -341,14 +342,25 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.ShowAppList -> {
+                val actionTypeNavOptions: NavOptions = getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
-                    findNavController().navigate(R.id.action_HomeFragment_to_DrawFragment)
+                    findNavController().navigate(
+                        R.id.action_HomeFragment_to_DrawFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
                 }
             }
 
+
             Constants.Action.ShowFavoriteList -> {
+                val actionTypeNavOptions: NavOptions = getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
-                    findNavController().navigate(R.id.action_HomeFragment_to_FavoriteFragment)
+                    findNavController().navigate(
+                        R.id.action_HomeFragment_to_FavoriteFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
                 }
             }
 
@@ -359,6 +371,17 @@ class HomeFragment : Fragment(),
             Constants.Action.ShowRecents -> {
                 ActionService.runAccessibilityMode(context)
                 ActionService.instance()?.showRecents()
+            }
+
+            Constants.Action.ShowWidgets -> {
+                val actionTypeNavOptions: NavOptions = getActionType(actionType)
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(
+                        R.id.action_HomeFragment_to_WidgetsFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
             }
 
             Constants.Action.OpenPowerDialog -> {
@@ -372,6 +395,55 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.Disabled -> {}
+        }
+    }
+
+    private fun getActionType(actionType: Constants.Swipe): NavOptions {
+        return when (actionType) {
+            Constants.Swipe.DoubleTap -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.zoom_in)
+                    .setExitAnim(R.anim.zoom_out)
+                    .setPopEnterAnim(R.anim.zoom_in)
+                    .setPopExitAnim(R.anim.zoom_out)
+                    .build()
+            }
+
+            Constants.Swipe.Up -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_in_top)
+                    .setExitAnim(R.anim.slide_out_top)
+                    .setPopEnterAnim(R.anim.slide_in_bottom)
+                    .setPopExitAnim(R.anim.slide_out_bottom)
+                    .build()
+            }
+
+            Constants.Swipe.Down -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_in_bottom)
+                    .setExitAnim(R.anim.slide_out_bottom)
+                    .setPopEnterAnim(R.anim.slide_in_top)
+                    .setPopExitAnim(R.anim.slide_out_top)
+                    .build()
+            }
+
+            Constants.Swipe.Left -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_in_right)
+                    .setExitAnim(R.anim.slide_out_right)
+                    .setPopEnterAnim(R.anim.slide_in_left)
+                    .setPopExitAnim(R.anim.slide_out_left)
+                    .build()
+            }
+
+            Constants.Swipe.Right -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_in_left)
+                    .setExitAnim(R.anim.slide_out_left)
+                    .setPopEnterAnim(R.anim.slide_in_right)
+                    .setPopExitAnim(R.anim.slide_out_right)
+                    .build()
+            }
         }
     }
 
