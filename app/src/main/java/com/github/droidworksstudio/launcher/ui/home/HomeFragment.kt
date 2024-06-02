@@ -342,7 +342,7 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.ShowAppList -> {
-                val actionTypeNavOptions: NavOptions = getActionType(actionType)
+                val actionTypeNavOptions: NavOptions = appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
                         R.id.action_HomeFragment_to_DrawFragment,
@@ -354,7 +354,7 @@ class HomeFragment : Fragment(),
 
 
             Constants.Action.ShowFavoriteList -> {
-                val actionTypeNavOptions: NavOptions = getActionType(actionType)
+                val actionTypeNavOptions: NavOptions = appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
                         R.id.action_HomeFragment_to_FavoriteFragment,
@@ -374,7 +374,7 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.ShowWidgets -> {
-                val actionTypeNavOptions: NavOptions = getActionType(actionType)
+                val actionTypeNavOptions: NavOptions = appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
                         R.id.action_HomeFragment_to_WidgetsFragment,
@@ -395,55 +395,6 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.Disabled -> {}
-        }
-    }
-
-    private fun getActionType(actionType: Constants.Swipe): NavOptions {
-        return when (actionType) {
-            Constants.Swipe.DoubleTap -> {
-                NavOptions.Builder()
-                    .setEnterAnim(R.anim.zoom_in)
-                    .setExitAnim(R.anim.zoom_out)
-                    .setPopEnterAnim(R.anim.zoom_in)
-                    .setPopExitAnim(R.anim.zoom_out)
-                    .build()
-            }
-
-            Constants.Swipe.Up -> {
-                NavOptions.Builder()
-                    .setEnterAnim(R.anim.slide_in_top)
-                    .setExitAnim(R.anim.slide_out_top)
-                    .setPopEnterAnim(R.anim.slide_in_bottom)
-                    .setPopExitAnim(R.anim.slide_out_bottom)
-                    .build()
-            }
-
-            Constants.Swipe.Down -> {
-                NavOptions.Builder()
-                    .setEnterAnim(R.anim.slide_in_bottom)
-                    .setExitAnim(R.anim.slide_out_bottom)
-                    .setPopEnterAnim(R.anim.slide_in_top)
-                    .setPopExitAnim(R.anim.slide_out_top)
-                    .build()
-            }
-
-            Constants.Swipe.Left -> {
-                NavOptions.Builder()
-                    .setEnterAnim(R.anim.slide_in_right)
-                    .setExitAnim(R.anim.slide_out_right)
-                    .setPopEnterAnim(R.anim.slide_in_left)
-                    .setPopExitAnim(R.anim.slide_out_left)
-                    .build()
-            }
-
-            Constants.Swipe.Right -> {
-                NavOptions.Builder()
-                    .setEnterAnim(R.anim.slide_in_left)
-                    .setExitAnim(R.anim.slide_out_left)
-                    .setPopEnterAnim(R.anim.slide_in_right)
-                    .setPopExitAnim(R.anim.slide_out_right)
-                    .build()
-            }
         }
     }
 
@@ -471,7 +422,13 @@ class HomeFragment : Fragment(),
                     }
 
                     override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
-                        findNavController().navigate(R.id.action_HomeFragment_to_SettingsFragment)
+                        val actionTypeNavOptions: NavOptions =
+                            appHelper.getActionType(Constants.Swipe.DoubleTap)
+                        findNavController().navigate(
+                            R.id.action_HomeFragment_to_SettingsFragment,
+                            null,
+                            actionTypeNavOptions
+                        )
                     }
 
                     override fun onAuthenticationFailed() {
@@ -482,7 +439,13 @@ class HomeFragment : Fragment(),
             if (preferenceHelper.settingsLock) {
                 fingerHelper.startFingerprintSettingsAuth(R.id.action_HomeFragment_to_SettingsFragment)
             } else {
-                findNavController().navigate(R.id.action_HomeFragment_to_SettingsFragment)
+                val actionTypeNavOptions: NavOptions =
+                    appHelper.getActionType(Constants.Swipe.DoubleTap)
+                findNavController().navigate(
+                    R.id.action_HomeFragment_to_SettingsFragment,
+                    null,
+                    actionTypeNavOptions
+                )
             }
         }
     }

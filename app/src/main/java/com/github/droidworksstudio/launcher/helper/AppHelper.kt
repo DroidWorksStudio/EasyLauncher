@@ -16,6 +16,7 @@ import android.view.Window
 import android.view.WindowInsets
 import android.widget.TextView
 import androidx.appcompat.widget.LinearLayoutCompat
+import androidx.navigation.NavOptions
 import com.github.droidworksstudio.common.backupSharedPreferences
 import com.github.droidworksstudio.common.restoreSharedPreferences
 import com.github.droidworksstudio.common.showLongToast
@@ -191,5 +192,54 @@ class AppHelper @Inject constructor() {
 
     fun restoreSharedPreferences(context: Context) {
         context.restoreSharedPreferences(context.getString(R.string.settings_backups_file))
+    }
+
+    fun getActionType(actionType: Constants.Swipe): NavOptions {
+        return when (actionType) {
+            Constants.Swipe.DoubleTap -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.zoom_in)
+                    .setExitAnim(R.anim.zoom_out)
+                    .setPopEnterAnim(R.anim.zoom_in)
+                    .setPopExitAnim(R.anim.zoom_out)
+                    .build()
+            }
+
+            Constants.Swipe.Up -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_in_top)
+                    .setExitAnim(R.anim.slide_out_top)
+                    .setPopEnterAnim(R.anim.slide_in_bottom)
+                    .setPopExitAnim(R.anim.slide_out_bottom)
+                    .build()
+            }
+
+            Constants.Swipe.Down -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_in_bottom)
+                    .setExitAnim(R.anim.slide_out_bottom)
+                    .setPopEnterAnim(R.anim.slide_in_top)
+                    .setPopExitAnim(R.anim.slide_out_top)
+                    .build()
+            }
+
+            Constants.Swipe.Left -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_in_right)
+                    .setExitAnim(R.anim.slide_out_right)
+                    .setPopEnterAnim(R.anim.slide_in_left)
+                    .setPopExitAnim(R.anim.slide_out_left)
+                    .build()
+            }
+
+            Constants.Swipe.Right -> {
+                NavOptions.Builder()
+                    .setEnterAnim(R.anim.slide_in_left)
+                    .setExitAnim(R.anim.slide_out_left)
+                    .setPopEnterAnim(R.anim.slide_in_right)
+                    .setPopExitAnim(R.anim.slide_out_right)
+                    .build()
+            }
+        }
     }
 }

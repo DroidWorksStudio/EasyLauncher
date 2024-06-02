@@ -4,10 +4,12 @@ import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
+import com.github.droidworksstudio.launcher.utils.Constants
 import javax.inject.Inject
 
 class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
@@ -62,7 +64,9 @@ class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
         val biometricPrompt =
             BiometricPrompt(fragment, executor, object : BiometricPrompt.AuthenticationCallback() {
                 override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
-                    fragment.findNavController().navigate(runNavigation)
+                    val actionTypeNavOptions: NavOptions =
+                        appHelper.getActionType(Constants.Swipe.DoubleTap)
+                    fragment.findNavController().navigate(runNavigation, null, actionTypeNavOptions)
                 }
 
                 override fun onAuthenticationFailed() {
