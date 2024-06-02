@@ -1,6 +1,7 @@
 package com.github.droidworksstudio.launcher.utils
 
 import android.content.Context
+import androidx.compose.ui.res.stringResource
 import com.github.droidworksstudio.launcher.R
 
 object Constants {
@@ -17,10 +18,6 @@ object Constants {
     const val SHOW_DAILY_WORD = "SHOW_DAILY_WORD"
     const val SHOW_BATTERY = "SHOW_BATTERY"
     const val SHOW_STATUS_BAR = "SHOW_STATUS_BAR"
-    const val DOUBLE_TAP_LOCK = "DOUBLE_TAP_LOCK"
-
-    const val SWIPE_NOTIFICATION = "SWIPE_NOTIFICATION"
-    const val SWIPE_SEARCH = "SWIPE_SEARCH"
 
     const val DATE_COLOR = "DATE_COLOR"
     const val TIME_COLOR = "TIME_COLOR"
@@ -88,5 +85,47 @@ object Constants {
                 SwissCow -> context.getString(R.string.search_swisscow)
             }
         }
+    }
+
+    const val SWIPE_UP_ACTION = "SWIPE_UP_ACTION"
+    const val SWIPE_DOWN_ACTION = "SWIPE_DOWN_ACTION"
+    const val SWIPE_LEFT_ACTION = "SWIPE_LEFT_ACTION"
+    const val SWIPE_RIGHT_ACTION = "SWIPE_RIGHT_ACTION"
+    const val DOUBLE_TAP_ACTION = "DOUBLE_TAP_ACTION"
+
+    enum class Action {
+        //        OpenApp,
+        LockScreen,
+        ShowNotification,
+        ShowAppList,
+        ShowFavoriteList,
+        OpenQuickSettings,
+        ShowRecents,
+        OpenPowerDialog,
+        TakeScreenShot,
+        Disabled;
+
+        fun getString(context: Context): String {
+            return when (this) {
+//                OpenApp -> context.getString(R.string.settings_actions_open_app)
+                LockScreen -> context.getString(R.string.settings_actions_lock_screen)
+                ShowNotification -> context.getString(R.string.settings_actions_show_notifications)
+                ShowAppList -> context.getString(R.string.settings_actions_show_app_list)
+                ShowFavoriteList -> context.getString(R.string.settings_actions_show_favorite_list)
+                OpenQuickSettings -> context.getString(R.string.settings_actions_open_quick_settings)
+                ShowRecents -> context.getString(R.string.settings_actions_show_recents)
+                OpenPowerDialog -> context.getString(R.string.settings_actions_open_power_dialog)
+                TakeScreenShot -> context.getString(R.string.settings_actions_take_a_screenshot)
+                Disabled -> context.getString(R.string.settings_actions_disabled)
+            }
+        }
+    }
+
+    enum class Swipe {
+        DoubleTap,
+        Left,
+        Right,
+        Up,
+        Down;
     }
 }

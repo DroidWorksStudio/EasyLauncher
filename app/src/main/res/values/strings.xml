@@ -76,9 +76,12 @@
     <string name="settings_manager_hidden">Hidden Apps</string>
 
     <string name="settings_select_wallpaper">Select Wallpaper</string>
-    <string name="settings_double_tap_lock">Double tap to lock</string>
-    <string name="settings_swipe_down_notification">Swipe down expand notification</string>
-    <string name="settings_swipe_up_search">Swipe up open search view</string>
+    <string name="settings_double_tap">Double Tap</string>
+    <string name="settings_swipe_up">Swipe Up</string>
+    <string name="settings_swipe_down">Swipe Down</string>
+    <string name="settings_swipe_left">Swipe Left</string>
+    <string name="settings_swipe_right">Swipe Right</string>
+
 
     <string name="settings_search_engine">Search Engine</string>
 
@@ -91,6 +94,17 @@
 
     <string name="settings_reload_app_backup">Preferences backed up.</string>
     <string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
+
+    <string name="settings_actions_open_app">Open App</string>
+    <string name="settings_actions_lock_screen">Lock Screen</string>
+    <string name="settings_actions_show_notifications">Show Notifications</string>
+    <string name="settings_actions_show_app_list">Show Apps List</string>
+    <string name="settings_actions_show_favorite_list">Show Favorites List</string>
+    <string name="settings_actions_open_quick_settings">Open Quick Settings</string>
+    <string name="settings_actions_show_recents">Show Recents</string>
+    <string name="settings_actions_open_power_dialog">Open Power Dialog</string>
+    <string name="settings_actions_take_a_screenshot">Take a ScreenShot</string>
+    <string name="settings_actions_disabled">Disabled</string>
 
     <string name="authentication_title">Authentication</string>
     <string name="authentication_subtitle">Log in using your biometric credentials.</string>

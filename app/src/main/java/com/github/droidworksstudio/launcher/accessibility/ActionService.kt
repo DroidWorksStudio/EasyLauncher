@@ -5,6 +5,8 @@ import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import android.provider.Settings
 import android.view.accessibility.AccessibilityEvent
 import androidx.annotation.RequiresApi
@@ -61,6 +63,7 @@ class ActionService : AccessibilityService() {
         return performGlobalAction(GLOBAL_ACTION_QUICK_SETTINGS)
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     fun openPowerDialog(): Boolean {
         return performGlobalAction(GLOBAL_ACTION_POWER_DIALOG)
     }
@@ -78,22 +81,23 @@ class ActionService : AccessibilityService() {
     companion object {
         fun runAccessibilityMode(context: Context) {
             if (instance() == null) {
-                val state: String = context.getString(R.string.accessibility_settings_enable)
+                // Create a Handler that posts to the main thread
+                Handler(Looper.getMainLooper()).post {
+                    val state: String = context.getString(R.string.accessibility_settings_enable)
 
-                val builder = MaterialAlertDialogBuilder(context)
-
-                builder.setTitle(R.string.accessibility_settings_title)
-                builder.setMessage(R.string.accessibility_service_desc)
-                builder.setPositiveButton(state) { _, _ ->
-                    val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
-                    context.startActivity(intent)
+                    val builder = MaterialAlertDialogBuilder(context)
+                    builder.setTitle(R.string.accessibility_settings_title)
+                    builder.setMessage(R.string.accessibility_service_desc)
+                    builder.setPositiveButton(state) { _, _ ->
+                        val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+                        context.startActivity(intent)
+                    }
+                    builder.setNegativeButton(android.R.string.cancel) { dialog, _ ->
+                        dialog.dismiss()
+                    }
+                    builder.show()
                 }
-                builder.setNegativeButton(android.R.string.cancel) { dialog, _ ->
-                    dialog.dismiss()
-                }
-                builder.show()
             }
-            return
         }
 
         private var mInstance: WeakReference<ActionService> = WeakReference(null)

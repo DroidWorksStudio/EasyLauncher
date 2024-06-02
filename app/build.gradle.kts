@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
     id("kotlin-android")
     id("kotlin-kapt")
     id("kotlin-parcelize")
@@ -16,8 +17,8 @@ android {
         applicationId = "app.easy.launcher"
         minSdk = 24
         targetSdk = 34
-        versionCode = 11
-        versionName = "0.1.1"
+        versionCode = 12
+        versionName = "0.1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -65,7 +66,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.5.14"
     }
 
     applicationVariants.all {

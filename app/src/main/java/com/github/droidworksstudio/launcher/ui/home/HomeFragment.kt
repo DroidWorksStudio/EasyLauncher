@@ -8,6 +8,8 @@ import android.content.IntentFilter
 import android.os.BatteryManager
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.format.DateFormat
 import android.util.Log
 import android.view.*
@@ -25,7 +27,6 @@ import com.github.droidworksstudio.common.launchApp
 import com.github.droidworksstudio.common.launchCalendar
 import com.github.droidworksstudio.common.launchClock
 import com.github.droidworksstudio.common.openBatteryManager
-import com.github.droidworksstudio.common.searchView
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
@@ -38,6 +39,7 @@ import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -295,33 +297,81 @@ class HomeFragment : Fragment(),
             @RequiresApi(Build.VERSION_CODES.P)
             override fun onDoubleClick() {
                 super.onDoubleClick()
-                if (preferenceHelper.tapLockScreen) {
-                    ActionService.runAccessibilityMode(context)
-                    ActionService.instance()?.lockScreen()
-                } else {
-                    return
+                handleOtherAction(preferenceHelper.doubleTapAction)
+            }
+
+            @RequiresApi(Build.VERSION_CODES.P)
+            override fun onSwipeUp() {
+                super.onSwipeUp()
+                handleOtherAction(preferenceHelper.swipeUpAction)
+            }
+
+            @RequiresApi(Build.VERSION_CODES.P)
+            override fun onSwipeDown() {
+                super.onSwipeDown()
+                handleOtherAction(preferenceHelper.swipeDownAction)
+            }
+
+            @RequiresApi(Build.VERSION_CODES.P)
+            override fun onSwipeLeft() {
+                super.onSwipeLeft()
+                handleOtherAction(preferenceHelper.swipeLeftAction)
+            }
+
+            @RequiresApi(Build.VERSION_CODES.P)
+            override fun onSwipeRight() {
+                super.onSwipeRight()
+                handleOtherAction(preferenceHelper.swipeRightAction)
+            }
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.P)
+    private fun handleOtherAction(action: Constants.Action) {
+        when (action) {
+//            Constants.Action.OpenApp -> {}
+
+            Constants.Action.LockScreen -> {
+                ActionService.runAccessibilityMode(context)
+                ActionService.instance()?.lockScreen()
+            }
+
+            Constants.Action.ShowNotification -> {
+                appHelper.expandNotificationDrawer(context)
+            }
+
+            Constants.Action.ShowAppList -> {
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(R.id.action_HomeFragment_to_DrawFragment)
                 }
             }
 
-            override fun onSwipeLeft() {
-                super.onSwipeLeft()
-                findNavController().navigate(R.id.action_HomeFragment_to_DrawFragment)
+            Constants.Action.ShowFavoriteList -> {
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(R.id.action_HomeFragment_to_FavoriteFragment)
+                }
             }
 
-            override fun onSwipeRight() {
-                super.onSwipeRight()
-                findNavController().navigate(R.id.action_HomeFragment_to_FavoriteFragment)
+            Constants.Action.OpenQuickSettings -> {
+                appHelper.expandQuickSettings(context)
             }
 
-            override fun onSwipeDown() {
-                super.onSwipeDown()
-                if (preferenceHelper.swipeNotification) appHelper.expandNotificationDrawer(context)
+            Constants.Action.ShowRecents -> {
+                ActionService.runAccessibilityMode(context)
+                ActionService.instance()?.showRecents()
             }
 
-            override fun onSwipeUp() {
-                super.onSwipeUp()
-                if (preferenceHelper.swipeSearch) context.searchView()
+            Constants.Action.OpenPowerDialog -> {
+                ActionService.runAccessibilityMode(context)
+                ActionService.instance()?.openPowerDialog()
             }
+
+            Constants.Action.TakeScreenShot -> {
+                ActionService.runAccessibilityMode(context)
+                ActionService.instance()?.takeScreenShot()
+            }
+
+            Constants.Action.Disabled -> {}
         }
     }
 
