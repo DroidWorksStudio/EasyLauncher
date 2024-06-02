@@ -8,7 +8,7 @@ import android.os.UserHandle
 import android.os.UserManager
 import android.util.Log
 import androidx.annotation.RequiresApi
-import com.github.droidworksstudio.launcher.Constants
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.data.dao.AppInfoDAO
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import kotlinx.coroutines.Dispatchers

@@ -14,7 +14,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.droidworksstudio.launcher.Constants
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.databinding.FragmentWidgetManagerBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import dagger.hilt.android.AndroidEntryPoint

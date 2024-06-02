@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
-import com.github.droidworksstudio.ktx.showLongToast
+import com.github.droidworksstudio.common.showLongToast
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogColorSettingsBinding
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper

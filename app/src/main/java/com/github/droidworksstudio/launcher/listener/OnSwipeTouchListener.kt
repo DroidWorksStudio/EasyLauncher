@@ -7,7 +7,7 @@ import android.view.GestureDetector.SimpleOnGestureListener
 import android.view.MotionEvent
 import android.view.View
 import android.view.View.OnTouchListener
-import com.github.droidworksstudio.launcher.Constants
+import com.github.droidworksstudio.launcher.utils.Constants
 import java.util.*
 import kotlin.concurrent.schedule
 import kotlin.math.abs

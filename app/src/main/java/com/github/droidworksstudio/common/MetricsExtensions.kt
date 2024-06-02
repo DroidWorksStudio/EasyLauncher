@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.ktx
+package com.github.droidworksstudio.common
 
 import android.content.res.Resources
 import android.util.TypedValue

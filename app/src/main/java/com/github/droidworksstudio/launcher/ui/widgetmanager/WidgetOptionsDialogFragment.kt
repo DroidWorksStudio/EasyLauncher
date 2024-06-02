@@ -4,7 +4,7 @@ import android.app.Dialog
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
-import com.github.droidworksstudio.launcher.Constants
+import com.github.droidworksstudio.launcher.utils.Constants
 
 class WidgetOptionsDialogFragment : DialogFragment() {
 

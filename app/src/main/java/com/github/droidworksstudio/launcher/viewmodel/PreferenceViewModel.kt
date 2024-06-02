@@ -2,7 +2,7 @@ package com.github.droidworksstudio.launcher.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.github.droidworksstudio.launcher.Constants
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject

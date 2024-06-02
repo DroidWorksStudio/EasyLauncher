@@ -6,8 +6,8 @@ import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.github.droidworksstudio.ktx.dpToPx
-import com.github.droidworksstudio.ktx.isWorkProfileEnabled
+import com.github.droidworksstudio.common.dpToPx
+import com.github.droidworksstudio.common.isWorkProfileEnabled
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemDrawBinding

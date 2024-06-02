@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.ktx
+package com.github.droidworksstudio.common
 
 import android.annotation.SuppressLint
 import android.content.Context

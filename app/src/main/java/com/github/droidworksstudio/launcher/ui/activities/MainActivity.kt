@@ -16,7 +16,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
-import com.github.droidworksstudio.ktx.isTablet
+import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper

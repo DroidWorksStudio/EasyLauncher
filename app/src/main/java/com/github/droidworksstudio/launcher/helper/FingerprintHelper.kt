@@ -5,7 +5,7 @@ import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.github.droidworksstudio.ktx.showLongToast
+import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import javax.inject.Inject

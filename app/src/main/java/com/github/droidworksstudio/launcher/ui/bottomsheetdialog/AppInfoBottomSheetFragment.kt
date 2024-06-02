@@ -11,9 +11,9 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
-import com.github.droidworksstudio.ktx.appInfo
-import com.github.droidworksstudio.ktx.showLongToast
-import com.github.droidworksstudio.ktx.unInstallApp
+import com.github.droidworksstudio.common.appInfo
+import com.github.droidworksstudio.common.showLongToast
+import com.github.droidworksstudio.common.unInstallApp
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo

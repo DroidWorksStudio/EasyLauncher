@@ -13,8 +13,8 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.github.droidworksstudio.ktx.launchApp
-import com.github.droidworksstudio.ktx.showLongToast
+import com.github.droidworksstudio.common.launchApp
+import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentHiddenBinding

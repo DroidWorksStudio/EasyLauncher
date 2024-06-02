@@ -3,7 +3,7 @@ package com.github.droidworksstudio.launcher.helper
 import android.content.Context
 import android.content.SharedPreferences
 import android.view.Gravity
-import com.github.droidworksstudio.launcher.Constants
+import com.github.droidworksstudio.launcher.utils.Constants
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 

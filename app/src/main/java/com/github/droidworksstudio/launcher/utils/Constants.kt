@@ -1,6 +1,7 @@
-package com.github.droidworksstudio.launcher
+package com.github.droidworksstudio.launcher.utils
 
 import android.content.Context
+import com.github.droidworksstudio.launcher.R
 
 object Constants {
     const val PACKAGE_NAME = "app.easy.launcher"

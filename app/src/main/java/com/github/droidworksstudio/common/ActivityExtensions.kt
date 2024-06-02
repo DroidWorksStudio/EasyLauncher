@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.ktx
+package com.github.droidworksstudio.common
 
 import android.app.Activity
 import android.content.Intent

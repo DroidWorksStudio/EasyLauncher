@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.ktx
+package com.github.droidworksstudio.common
 
 import android.app.SearchManager
 import android.content.ActivityNotFoundException
@@ -35,7 +35,7 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.os.ConfigurationCompat
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import com.github.droidworksstudio.launcher.Constants
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity

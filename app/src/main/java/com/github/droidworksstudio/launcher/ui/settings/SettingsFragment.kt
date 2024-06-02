@@ -11,9 +11,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
-import com.github.droidworksstudio.ktx.resetDefaultLauncher
-import com.github.droidworksstudio.ktx.restartApp
-import com.github.droidworksstudio.launcher.Constants
+import com.github.droidworksstudio.common.resetDefaultLauncher
+import com.github.droidworksstudio.common.restartApp
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
