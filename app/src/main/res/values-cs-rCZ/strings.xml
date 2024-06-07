@@ -61,8 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">Aplikace\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Baterie\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
-    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Pozadí widgetu\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Text widgetu\u0020:\u0020</string>
     <string name="settings_manager_favorite">Oblíbené aplikace</string>
     <string name="settings_manager_hidden">Skryté aplikace</string>
     <string name="settings_select_wallpaper">Vyberte Tapeta</string>
@@ -90,8 +90,8 @@
     <string name="settings_actions_open_power_dialog">Otevřete dialogové okno napájení</string>
     <string name="settings_actions_take_a_screenshot">Pořiďte snímek obrazovky</string>
     <string name="settings_actions_disabled">Zakázáno</string>
-    <string name="settings_units_metric">Metric</string>
-    <string name="settings_units_imperial">Imperial</string>
+    <string name="settings_units_metric">Metrický</string>
+    <string name="settings_units_imperial">Císařský</string>
     <string name="authentication_title">Autentizace</string>
     <string name="authentication_subtitle">Přihlaste se pomocí svých biometrických údajů.</string>
     <string name="authentication_cancel">Zrušení ověřování</string>
