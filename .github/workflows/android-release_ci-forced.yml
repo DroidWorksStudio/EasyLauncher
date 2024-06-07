@@ -33,8 +33,11 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Get weather.properties from secrets
+        run: printf "%s" "${{ secrets.WEATHER_PROPERTIES }}" > $GITHUB_WORKSPACE/weather.properties
+
       - name: Build with Gradle
-        run: ./gradlew clean && ./gradlew assembleAppWithInternetRelease && ./gradlew assembleAppWithoutInternetRelease
+        run: ./gradlew clean && ./gradlew assembleAppWithInternet && ./gradlew assembleAppWithoutInternet
 
       - name: Sign APK - WithInternet
         uses: ilharp/sign-android-release@v1
