@@ -39,9 +39,9 @@
 
     <fragment
         android:id="@+id/WidgetsFragment"
-        android:name="com.github.droidworksstudio.launcher.ui.widgetmanager.WidgetManagerFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.widgets.WidgetFragment"
         android:label="@string/widgets_fragment_label"
-        tools:layout="@layout/fragment_widget_manager" />
+        tools:layout="@layout/fragment_widgets" />
 
     <fragment
         android:id="@+id/DrawFragment"

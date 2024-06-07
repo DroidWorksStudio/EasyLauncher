@@ -27,6 +27,8 @@ class PreferenceViewModel @Inject constructor(
     private val timeColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val batteryColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val dailyWordColorLiveData: MutableLiveData<Int> = MutableLiveData()
+    private val widgetBackgroundColorLiveData: MutableLiveData<Int> = MutableLiveData()
+    private val widgetTextColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val appColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val dateTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val timeTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
@@ -97,6 +99,16 @@ class PreferenceViewModel @Inject constructor(
     fun setTimeColor(timeColor: Int) {
         preferenceHelper.timeColor = timeColor
         timeColorLiveData.postValue(preferenceHelper.timeColor)
+    }
+
+    fun setWidgetBackgroundColor(timeColor: Int) {
+        preferenceHelper.widgetBackgroundColor = timeColor
+        widgetBackgroundColorLiveData.postValue(preferenceHelper.widgetBackgroundColor)
+    }
+
+    fun setWidgetTextColor(timeColor: Int) {
+        preferenceHelper.widgetTextColor = timeColor
+        widgetTextColorLiveData.postValue(preferenceHelper.widgetTextColor)
     }
 
     fun setBatteryColor(batteryColor: Int) {

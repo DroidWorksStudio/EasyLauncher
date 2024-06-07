@@ -13,8 +13,7 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Favorite Apps</string>
     <string name="hidden_fragment_name">Hidden Apps</string>
-
-    <string name="battery_level">%s%%</string>
+    
     <string name="search">Search</string>
 
     <string name="bottom_dialog_app_rename">Rename</string>
@@ -72,6 +71,9 @@
     <string name="appearance_bottom_dialog_desc_word">Word\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Battery\u0020:\u0020 </string>
 
+    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
+
     <string name="settings_manager_favorite">Favorite Apps</string>
     <string name="settings_manager_hidden">Hidden Apps</string>
 
@@ -106,6 +108,9 @@
     <string name="settings_actions_open_power_dialog">Open Power Dialog</string>
     <string name="settings_actions_take_a_screenshot">Take a ScreenShot</string>
     <string name="settings_actions_disabled">Disabled</string>
+
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
 
     <string name="authentication_title">Authentication</string>
     <string name="authentication_subtitle">Log in using your biometric credentials.</string>

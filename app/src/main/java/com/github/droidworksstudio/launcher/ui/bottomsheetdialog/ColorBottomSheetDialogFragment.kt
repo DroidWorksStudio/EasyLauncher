@@ -79,6 +79,16 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
             text = bottomDialogHelper.getColorText(preferenceHelper.dailyWordColor)
             setTextColor(preferenceHelper.dailyWordColor)
         }
+
+        binding.selectWidgetBackgroundColor.apply {
+            text = bottomDialogHelper.getColorText(preferenceHelper.widgetBackgroundColor)
+            setTextColor(preferenceHelper.widgetBackgroundColor)
+        }
+
+        binding.selectWidgetTextColor.apply {
+            text = bottomDialogHelper.getColorText(preferenceHelper.widgetTextColor)
+            setTextColor(preferenceHelper.widgetTextColor)
+        }
     }
 
 
@@ -122,6 +132,22 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
                 preferenceHelper.dailyWordColor
             )
         }
+
+        binding.bottomColorWidgetBackgroundView.setOnClickListener {
+            showColorPickerDialog(
+                binding.selectWidgetBackgroundColor,
+                REQUEST_KEY_WIDGET_BACKGROUND_COLOR,
+                preferenceHelper.widgetBackgroundColor
+            )
+        }
+
+        binding.bottomColorWidgetTextView.setOnClickListener {
+            showColorPickerDialog(
+                binding.selectWidgetTextColor,
+                REQUEST_KEY_WIDGET_TEXT_COLOR,
+                preferenceHelper.widgetTextColor
+            )
+        }
     }
 
     private fun showColorPickerDialog(view: View, requestCode: String, color: Int) {
@@ -163,6 +189,16 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
                     preferenceViewModel.setTimeColor(pickedColor)
                     Log.d("Tag", "Settings Time Color: ${Integer.toHexString(color)}")
                 }
+
+                REQUEST_KEY_WIDGET_BACKGROUND_COLOR -> {
+                    preferenceViewModel.setWidgetBackgroundColor(pickedColor)
+                    Log.d("Tag", "Settings Widget Background Color: ${Integer.toHexString(color)}")
+                }
+
+                REQUEST_KEY_WIDGET_TEXT_COLOR -> {
+                    preferenceViewModel.setWidgetTextColor(pickedColor)
+                    Log.d("Tag", "Settings Widget Text Color: ${Integer.toHexString(color)}")
+                }
             }
         }) {
             context?.showLongToast("onCancel")
@@ -175,5 +211,7 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
         private const val REQUEST_KEY_DAILY_WORD_COLOR = "REQUEST_DAILY_WORD_COLOR"
         private const val REQUEST_KEY_APP_COLOR = "REQUEST_APP_COLOR"
         private const val REQUEST_KEY_BATTERY_COLOR = "REQUEST_BATTERY_COLOR"
+        private const val REQUEST_KEY_WIDGET_BACKGROUND_COLOR = "REQUEST_WIDGET_BACKGROUND_COLOR"
+        private const val REQUEST_KEY_WIDGET_TEXT_COLOR = "REQUEST_WIDGET_TEXT_COLOR"
     }
 }

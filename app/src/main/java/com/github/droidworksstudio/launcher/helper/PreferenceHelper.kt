@@ -50,6 +50,14 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getInt(Constants.DAILY_WORD_COLOR, 0xFFFFFFFF.toInt())
         set(value) = prefs.edit().putInt(Constants.DAILY_WORD_COLOR, value).apply()
 
+    var widgetBackgroundColor: Int
+        get() = prefs.getInt(Constants.WIDGET_BACKGROUND_COLOR, 0xFF000000.toInt())
+        set(value) = prefs.edit().putInt(Constants.WIDGET_BACKGROUND_COLOR, value).apply()
+
+    var widgetTextColor: Int
+        get() = prefs.getInt(Constants.WIDGET_TEXT_COLOR, 0xFFFFFFFF.toInt())
+        set(value) = prefs.edit().putInt(Constants.WIDGET_TEXT_COLOR, value).apply()
+
     var appColor: Int
         get() = prefs.getInt(Constants.APP_COLOR, 0xFFFFFFFF.toInt())
         set(value) = prefs.edit().putInt(Constants.APP_COLOR, value).apply()
@@ -144,6 +152,21 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
     var doubleTapAction: Constants.Action
         get() = loadAction(Constants.DOUBLE_TAP_ACTION, Constants.Action.LockScreen)
         set(value) = storeAction(Constants.DOUBLE_TAP_ACTION, value)
+
+    var weatherUnits: Constants.Units
+        get() {
+            return try {
+                Constants.Units.valueOf(
+                    prefs.getString(
+                        Constants.WEATHER_UNITS,
+                        Constants.Units.Metric.name
+                    ).toString()
+                )
+            } catch (_: Exception) {
+                Constants.Units.Metric
+            }
+        }
+        set(value) = prefs.edit().putString(Constants.WEATHER_UNITS, value.name).apply()
 
     private fun loadAction(prefString: String, default: Constants.Action): Constants.Action {
         val string = prefs.getString(
