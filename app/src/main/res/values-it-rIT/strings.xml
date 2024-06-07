@@ -12,7 +12,6 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">App preferite</string>
     <string name="hidden_fragment_name">App nascoste</string>
-    <string name="battery_level">%s%%</string>
     <string name="search">Ricerca</string>
     <string name="bottom_dialog_app_rename">Rinominare</string>
     <string name="bottom_dialog_add_to_home">Aggiungere alla schermata Home</string>
@@ -62,6 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">Applicazione\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Parola\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batteria\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
     <string name="settings_manager_favorite">App preferite</string>
     <string name="settings_manager_hidden">App nascoste</string>
     <string name="settings_select_wallpaper">Seleziona Sfondo</string>
@@ -89,6 +90,8 @@
     <string name="settings_actions_open_power_dialog">Apri la finestra di dialogo di alimentazione</string>
     <string name="settings_actions_take_a_screenshot">Fai uno screenshot</string>
     <string name="settings_actions_disabled">Disabilitato</string>
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
     <string name="authentication_title">Autenticazione</string>
     <string name="authentication_subtitle">Accedi utilizzando le tue credenziali biometriche.</string>
     <string name="authentication_cancel">Autenticazione Annulla</string>
