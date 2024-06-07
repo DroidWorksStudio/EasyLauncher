@@ -85,8 +85,7 @@ class SettingsFragment : Fragment(),
         binding.gesturesSwipeUpControl.text = preferenceHelper.swipeUpAction.getString(context)
         binding.gesturesSwipeDownControl.text = preferenceHelper.swipeDownAction.getString(context)
         binding.gesturesSwipeLeftControl.text = preferenceHelper.swipeLeftAction.getString(context)
-        binding.gesturesSwipeRightControl.text =
-            preferenceHelper.swipeRightAction.getString(context)
+        binding.gesturesSwipeRightControl.text = preferenceHelper.swipeRightAction.getString(context)
     }
 
     @SuppressLint("SetTextI18n")

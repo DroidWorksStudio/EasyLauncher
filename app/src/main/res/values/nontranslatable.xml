@@ -2,7 +2,7 @@
     <string name="battery_level" translatable="false">%s%%</string>
 
     <string name="widget_weather_refresh" translatable="false">%1$s</string>
-    <string name="widget_weather_location" translatable="false">%1$s</string>
+    <string name="widget_weather_location" translatable="false">%1$s, %2$s</string>
     <string name="widget_weather_temp" translatable="false">%1$.2f %2$s</string>
     <string name="widget_weather_description" translatable="false">%1$s</string>
 
