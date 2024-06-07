@@ -12,7 +12,6 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Улюблені програми</string>
     <string name="hidden_fragment_name">Приховані програми</string>
-    <string name="battery_level">%s%%</string>
     <string name="search">Пошук</string>
     <string name="bottom_dialog_app_rename">Перейменувати</string>
     <string name="bottom_dialog_add_to_home">Додати на головний екран</string>
@@ -62,6 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">Додаток\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Слово\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Акумулятор\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
     <string name="settings_manager_favorite">Улюблені програми</string>
     <string name="settings_manager_hidden">Приховані програми</string>
     <string name="settings_select_wallpaper">Виберіть Шпалери</string>
@@ -89,6 +90,8 @@
     <string name="settings_actions_open_power_dialog">Відкрити діалог живлення</string>
     <string name="settings_actions_take_a_screenshot">Зробіть знімок екрана</string>
     <string name="settings_actions_disabled">Вимкнено</string>
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
     <string name="authentication_title">Аутентифікація</string>
     <string name="authentication_subtitle">Увійдіть, використовуючи свої біометричні облікові дані.</string>
     <string name="authentication_cancel">Автентифікація Скасувати</string>
