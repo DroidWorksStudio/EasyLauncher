@@ -39,7 +39,7 @@ jobs:
         run: printf "%s" "${{ secrets.WEATHER_PROPERTIES }}" > $GITHUB_WORKSPACE/weather.properties
 
       - name: Build with Gradle
-        run: ./gradlew clean && ./gradlew assembleAppWithInternet && ./gradlew assembleAppWithoutInternet
+        run: ./gradlew clean && ./gradlew assembleWithInternetRelease && ./gradlew assembleWithoutInternetRelease
 
       - name: Sign APK - WithInternet
         uses: ilharp/sign-android-release@v1

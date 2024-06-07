@@ -42,7 +42,7 @@ jobs:
         run: printf "%s" "${{ secrets.WEATHER_PROPERTIES }}" > $GITHUB_WORKSPACE/weather.properties
 
       - name: Build with Gradle
-        run: ./gradlew clean && ./gradlew assembleAppWithInternet && ./gradlew assembleAppWithoutInternet
+        run: ./gradlew clean && ./gradlew assembleWithInternetDebug && ./gradlew assembleWithoutInternetDebug
 
       - name: Upload Artifact - WithInternet
         uses: actions/upload-artifact@v4
