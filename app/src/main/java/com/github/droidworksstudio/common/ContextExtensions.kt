@@ -1,5 +1,6 @@
 package com.github.droidworksstudio.common
 
+import android.Manifest
 import android.app.SearchManager
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
@@ -430,6 +431,12 @@ fun Context.restoreSharedPreferences(backupFileName: String) {
 private fun isExternalStorageReadable(): Boolean {
     val state = Environment.getExternalStorageState()
     return Environment.MEDIA_MOUNTED == state || Environment.MEDIA_MOUNTED_READ_ONLY == state
+}
+
+fun Context.hasInternetPermission(): Boolean {
+    val permission = Manifest.permission.INTERNET
+    val result = ContextCompat.checkSelfPermission(this, permission)
+    return result == PackageManager.PERMISSION_GRANTED
 }
 
 fun Context.isPackageInstalled(

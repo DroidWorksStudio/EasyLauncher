@@ -1,7 +1,6 @@
 package com.github.droidworksstudio.launcher.utils
 
 import android.content.Context
-import androidx.compose.ui.res.stringResource
 import com.github.droidworksstudio.launcher.R
 
 object Constants {
@@ -9,7 +8,10 @@ object Constants {
     const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
 
     const val WIDGETS_PREFS = "EasyLauncherWidgets.pref"
-    const val APP_WIDGETS_ID = "APP_WIDGETS_ID"
+
+    const val WEATHER_PREFS = "EasyWeather.pref"
+    const val LATITUDE = "LATITUDE"
+    const val LONGITUDE = "LONGITUDE"
 
     const val PREFS_FILENAME = "EasyLauncher.pref"
     const val FIRST_LAUNCH = "FIRST_LAUNCH"
@@ -23,6 +25,8 @@ object Constants {
     const val TIME_COLOR = "TIME_COLOR"
     const val BATTERY_COLOR = "BATTERY_COLOR"
     const val DAILY_WORD_COLOR = "DAILY_WORD_COLOR"
+    const val WIDGET_BACKGROUND_COLOR = "WIDGET_BACKGROUND_COLOR"
+    const val WIDGET_TEXT_COLOR = "WIDGET_TEXT_COLOR"
     const val APP_COLOR = "APP_COLOR"
 
     const val BATTERY_TEXT_SIZE = "BATTERY_TEXT_SIZE"
@@ -63,7 +67,8 @@ object Constants {
     const val URL_GOOGLE_PLAY_STORE = "https://play.google.com/store/search?c=apps&q"
     const val APP_GOOGLE_PLAY_STORE = "market://search?c=apps&q"
 
-    const val APP_WIDGET_HOST_ID = 1024
+    const val WEATHER_UNITS = "WEATHER_UNITS"
+
     const val TRIPLE_TAP_DELAY_MS = 300
     const val LONG_PRESS_DELAY_MS = 500
 
@@ -129,5 +134,17 @@ object Constants {
         Right,
         Up,
         Down;
+    }
+
+    enum class Units {
+        Metric,
+        Imperial;
+
+        fun getString(context: Context): String {
+            return when (this) {
+                Metric -> context.getString(R.string.settings_units_metric)
+                Imperial -> context.getString(R.string.settings_units_imperial)
+            }
+        }
     }
 }

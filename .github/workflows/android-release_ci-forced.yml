@@ -33,24 +33,46 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build
-        run: ./gradlew clean && ./gradlew assembleRelease
+      - name: Get weather.properties from secrets
+        run: printf "%s" "${{ secrets.WEATHER_PROPERTIES }}" > $GITHUB_WORKSPACE/weather.properties
 
-      - name: Sign APK
+      - name: Build with Gradle
+        run: ./gradlew clean && ./gradlew assembleWithInternetRelease && ./gradlew assembleWithoutInternetRelease
+
+      - name: Sign APK - WithInternet
         uses: ilharp/sign-android-release@v1
         # ID used to access action output
-        id: sign_app
+        id: sign_app_withInternet
         with:
-          releaseDir: app/build/outputs/apk/release
+          releaseDir: app/build/outputs/apk/withInternet/release
           signingKey: ${{ secrets.SIGNINGKEY_BASE64 }}
           keyAlias: ${{ secrets.KEY_ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
           buildToolsVersion: 33.0.0
 
-      - name: Upload Artifact
+      - name: Upload Artifact - WithInternet
         uses: actions/upload-artifact@v4
         with:
-          name: Signed app bundle
-          path: app/build/outputs/apk/release/*.apk
+          name: Signed app bundle - WithInternet
+          path: app/build/outputs/apk/withInternet/release/*.apk
+          retention-days: 3
+
+      - name: Sign APK - WithInternet
+        uses: ilharp/sign-android-release@v1
+        # ID used to access action output
+        id: sign_app_withoutInternet
+        with:
+          releaseDir: app/build/outputs/apk/withoutInternet/release
+          signingKey: ${{ secrets.SIGNINGKEY_BASE64 }}
+          keyAlias: ${{ secrets.KEY_ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          buildToolsVersion: 33.0.0
+
+      - name: Upload Artifact - WithoutInternet
+        uses: actions/upload-artifact@v4
+        with:
+          name: Signed app bundle - WithoutInternet
+          path: app/build/outputs/apk/withoutInternet/release/*.apk
           retention-days: 3

@@ -24,8 +24,13 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- More widget stuff and fixing of files. - ([327f144](https://github.com/DroidWorksStudio/EasyLauncher/commit/327f1447a77a4fe9f18aeaa6a98700e85e3d25bc))
 - Moved the getActionType function into AppHelper class. - ([48b2913](https://github.com/DroidWorksStudio/EasyLauncher/commit/48b2913797a46857df9ec89348bb1b9e01164c81))
 - Added widget page to the gestures. - ([94fe747](https://github.com/DroidWorksStudio/EasyLauncher/commit/94fe747ffdfc869237c1dd200966cda8e2b2fe23))
+
+### Reverts:
+
+- Revert "chore(deps): bump androidx.biometric:biometric-ktx ([#53](https://github.com/DroidWorksStudio/EasyLauncher/issues/53))" ([#54](https://github.com/DroidWorksStudio/EasyLauncher/issues/54)) - ([623a353](https://github.com/DroidWorksStudio/EasyLauncher/commit/623a353de56aabf7cf7c4c2cf89ecd80f79a00ff))
 
 ## [0.1.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.1) - (01, June 2024)
 

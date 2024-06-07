@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -21,6 +23,17 @@ android {
         versionName = "0.1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
+
+        val weatherFile = project.rootProject.file("weather.properties")
+        val properties = Properties()
+        properties.load(weatherFile.inputStream())
+        val apiKey = properties.getProperty("WEATHER_API_KEY") ?: ""
+        buildConfigField(
+            type = "String",
+            name = "API_KEY",
+            value = "\"$apiKey\""
+        )
     }
 
     buildTypes {
@@ -65,6 +78,21 @@ android {
         buildConfig = true
     }
 
+    flavorDimensions.add("internet")
+    productFlavors {
+        create("withInternet") {
+            dimension = "internet"
+            manifestPlaceholders["hasInternetPermission"] = true
+            manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
+        }
+
+        create("withoutInternet") {
+            dimension = "internet"
+            manifestPlaceholders["hasInternetPermission"] = false
+            manifestPlaceholders["internetPermission"] = "REMOVE"
+        }
+    }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.14"
     }
@@ -96,6 +124,8 @@ dependencies {
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
     implementation(libs.constraintlayout)
     implementation(libs.navigation.fragment.ktx)
     implementation(libs.navigation.ui.ktx)

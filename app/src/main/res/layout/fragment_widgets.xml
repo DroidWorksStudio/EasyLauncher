@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".ui.widgets.WidgetFragment">
+
+    <FrameLayout
+        android:id="@+id/touchArea"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
+        android:id="@+id/nestScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fadingEdgeLength="48dp"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/weather_root"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="50dp"
+            android:background="@drawable/widget_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/topHeader"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/weather_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textSize="18sp"
+                    tools:text="Kayamkulam, IN" />
+
+                <ImageButton
+                    android:id="@+id/weather_button_refresh"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/widget_weather_refresh"
+                    android:src="@drawable/icon_refresh" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@id/topHeader"
+                android:gravity="center_vertical"
+                android:paddingEnd="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingStart="8dp">
+
+                <ImageView
+                    android:id="@+id/weather_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.3"
+                    android:contentDescription="@string/widget_weather_description" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/weather_temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textAlignment="viewStart"
+                        android:lines="1"
+                        android:text="@string/widget_weather_temp"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/weather_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:paddingTop="2dp"
+                        android:text="@string/widget_weather_description"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/weather_wind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingTop="2dp"
+                        android:text="@string/widget_weather_wind"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/weather_humidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingTop="2dp"
+                        android:text="@string/widget_weather_humidity"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/weather_pressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:ellipsize="end"
+                        android:text="@string/widget_weather_pressure"
+                        android:lines="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.github.droidworksstudio.launcher.view.GestureNestedScrollView>
+
+</FrameLayout>

@@ -9,7 +9,6 @@ import android.content.res.Configuration
 import android.content.res.Resources
 import android.net.Uri
 import android.os.Build
-import android.provider.Settings
 import android.view.Gravity
 import android.view.View
 import android.view.Window
@@ -20,11 +19,19 @@ import androidx.navigation.NavOptions
 import com.github.droidworksstudio.common.backupSharedPreferences
 import com.github.droidworksstudio.common.restoreSharedPreferences
 import com.github.droidworksstudio.common.showLongToast
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.github.droidworksstudio.launcher.BuildConfig
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
+import com.github.droidworksstudio.launcher.helper.weather.WeatherResponse
+import com.github.droidworksstudio.launcher.utils.WeatherApiService
+import com.google.gson.Gson
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.util.Calendar
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 class AppHelper @Inject constructor() {
@@ -64,7 +71,7 @@ class AppHelper @Inject constructor() {
             Configuration.UI_MODE_NIGHT_YES -> {
                 view.setBackgroundColor(
                     context.resources.getColor(
-                        R.color.blackTrans25,
+                        R.color.blackTrans10,
                         context.theme
                     )
                 )
@@ -73,7 +80,7 @@ class AppHelper @Inject constructor() {
             Configuration.UI_MODE_NIGHT_NO -> {
                 view.setBackgroundColor(
                     context.resources.getColor(
-                        R.color.whiteTrans25,
+                        R.color.whiteTrans10,
                         context.theme
                     )
                 )
@@ -242,4 +249,73 @@ class AppHelper @Inject constructor() {
             }
         }
     }
+
+    suspend fun fetchWeatherData(
+        context: Context,
+        latitude: Float,
+        longitude: Float
+    ): WeatherResponse {
+        // Check if cached data is available and not expired
+        val cachedWeatherData = context.getWeatherDataFromCache()
+        if (cachedWeatherData != null && System.currentTimeMillis() - cachedWeatherData.timestamp < TimeUnit.MINUTES.toMillis(
+                5
+            )
+        ) {
+            return cachedWeatherData.weatherResponse
+        }
+
+        // Fetch weather data from the network
+        val apiKey = BuildConfig.API_KEY
+        val units = "metric"
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://api.openweathermap.org/data/2.5/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        val service = retrofit.create(WeatherApiService::class.java)
+
+        return withContext(Dispatchers.IO) {
+            val response = service.getWeather("$latitude", "$longitude", units, apiKey).execute()
+            if (response.isSuccessful) {
+                val weatherResponse = response.body()
+                if (weatherResponse != null) {
+                    // Cache the fetched weather data
+                    context.cacheWeatherData(weatherResponse)
+                    weatherResponse
+                } else {
+                    throw NullPointerException("Weather response body is null")
+                }
+            } else {
+                throw Exception("Failed to fetch weather data: ${response.errorBody()}")
+            }
+        }
+    }
+
+    // Function to cache weather data
+    private fun Context.cacheWeatherData(weatherResponse: WeatherResponse) {
+        val timestamp = System.currentTimeMillis()
+        val cachedData = CachedWeatherData(timestamp, weatherResponse)
+        // Save cached data to SharedPreferences
+        val sharedPreferences = getSharedPreferences(Constants.WEATHER_PREFS, Context.MODE_PRIVATE)
+        sharedPreferences.edit()
+            .putLong("cachedDataTimestamp", cachedData.timestamp)
+            .putString("weatherResponse", Gson().toJson(cachedData.weatherResponse))
+            .apply()
+    }
+
+    // Function to retrieve weather data from cache
+    private fun Context.getWeatherDataFromCache(): CachedWeatherData? {
+        val sharedPreferences = getSharedPreferences("WeatherCache", Context.MODE_PRIVATE)
+        val timestamp = sharedPreferences.getLong("timestamp", -1)
+        val weatherResponseJson = sharedPreferences.getString("weatherResponse", null)
+        if (timestamp != -1L && weatherResponseJson != null) {
+            val weatherResponse = Gson().fromJson(weatherResponseJson, WeatherResponse::class.java)
+            return CachedWeatherData(timestamp, weatherResponse)
+        }
+        return null
+    }
+
+    // Data class to hold cached weather data along with timestamp
+    data class CachedWeatherData(val timestamp: Long, val weatherResponse: WeatherResponse)
 }

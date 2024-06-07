@@ -1,5 +1,5 @@
 .gradle
-/local.properties
+/*.properties
 /.idea/*
 /.kotlin/*
 /.vscode/*
