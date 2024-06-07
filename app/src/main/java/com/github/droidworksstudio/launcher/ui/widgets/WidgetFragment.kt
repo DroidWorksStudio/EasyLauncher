@@ -115,7 +115,7 @@ class WidgetFragment : Fragment(),
                 binding.weatherPressure.text =
                     getString(R.string.widget_weather_pressure, weatherResponse.main.pressure)
 
-                val weatherWidgetDrawable = binding.weatherButtonRefresh.background
+                val weatherWidgetDrawable = binding.weatherRoot.background
                 if (weatherWidgetDrawable is GradientDrawable) {
                     weatherWidgetDrawable.setColor(preferenceHelper.widgetBackgroundColor)
                 }

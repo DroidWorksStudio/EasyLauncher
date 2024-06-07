@@ -1,21 +1,17 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.kts.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# Keep the WeatherResponse and its nested classes
+-keep class com.github.droidworksstudio.launcher.helper.weather.WeatherResponse { *; }
+-keep class com.github.droidworksstudio.launcher.helper.weather.Wind { *; }
+-keep class com.github.droidworksstudio.launcher.helper.weather.Main { *; }
+-keep class com.github.droidworksstudio.launcher.helper.weather.Weather { *; }
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# Keep all model classes and their fields that Gson might use for serialization/deserialization
+-keep class com.github.droidworksstudio.launcher.helper.weather.** { *; }
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Keep Gson specific annotations
+-keepattributes Signature
+-keepattributes *Annotation*
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# Keep the default constructor of the data classes
+-keepclassmembers class com.github.droidworksstudio.launcher.helper.weather.** {
+    public <init>(...);
+}
