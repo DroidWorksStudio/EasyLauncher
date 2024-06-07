@@ -61,8 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">Додаток\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Слово\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Акумулятор\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
-    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Фон віджета\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Текст віджета\u0020:\u0020</string>
     <string name="settings_manager_favorite">Улюблені програми</string>
     <string name="settings_manager_hidden">Приховані програми</string>
     <string name="settings_select_wallpaper">Виберіть Шпалери</string>
@@ -90,8 +90,8 @@
     <string name="settings_actions_open_power_dialog">Відкрити діалог живлення</string>
     <string name="settings_actions_take_a_screenshot">Зробіть знімок екрана</string>
     <string name="settings_actions_disabled">Вимкнено</string>
-    <string name="settings_units_metric">Metric</string>
-    <string name="settings_units_imperial">Imperial</string>
+    <string name="settings_units_metric">Метрика</string>
+    <string name="settings_units_imperial">Імператорський</string>
     <string name="authentication_title">Аутентифікація</string>
     <string name="authentication_subtitle">Увійдіть, використовуючи свої біометричні облікові дані.</string>
     <string name="authentication_cancel">Автентифікація Скасувати</string>
