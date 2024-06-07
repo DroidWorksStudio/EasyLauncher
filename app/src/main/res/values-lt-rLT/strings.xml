@@ -12,7 +12,6 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Mėgstamiausios programos</string>
     <string name="hidden_fragment_name">Paslėptos programos</string>
-    <string name="battery_level">%s%%</string>
     <string name="search">Paieška</string>
     <string name="bottom_dialog_app_rename">Pervardyti</string>
     <string name="bottom_dialog_add_to_home">Pridėti prie pagrindinio ekrano</string>
@@ -62,6 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">Programa\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Žodis\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Baterija\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
     <string name="settings_manager_favorite">Mėgstamiausios programos</string>
     <string name="settings_manager_hidden">Paslėptos programos</string>
     <string name="settings_select_wallpaper">Pasirinkite Fono paveikslėlis</string>
@@ -89,6 +90,8 @@
     <string name="settings_actions_open_power_dialog">Atidarykite maitinimo dialogo langą</string>
     <string name="settings_actions_take_a_screenshot">Padarykite ekrano kopiją</string>
     <string name="settings_actions_disabled">Išjungta</string>
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
     <string name="authentication_title">Autentifikavimas</string>
     <string name="authentication_subtitle">Prisijunkite naudodami biometrinius kredencialus.</string>
     <string name="authentication_cancel">Autentifikavimo atšaukimas</string>
