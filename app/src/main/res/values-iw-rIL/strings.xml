@@ -12,7 +12,6 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">אפליקציות מועדפות</string>
     <string name="hidden_fragment_name">אפליקציות נסתרות</string>
-    <string name="battery_level">%s%%</string>
     <string name="search">חיפוש</string>
     <string name="bottom_dialog_app_rename">שנה שם</string>
     <string name="bottom_dialog_add_to_home">הוסף לדף הבית</string>
@@ -62,6 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">יישום\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">מילה\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">סוללה\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
     <string name="settings_manager_favorite">יישומים מועדפים</string>
     <string name="settings_manager_hidden">יישומים מוסתרים</string>
     <string name="settings_select_wallpaper">בחר תמונת רקע</string>
@@ -89,6 +90,8 @@
     <string name="settings_actions_open_power_dialog">פתח את תיבת הכוח</string>
     <string name="settings_actions_take_a_screenshot">צלם מסך</string>
     <string name="settings_actions_disabled">נָכֶה</string>
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
     <string name="authentication_title">אימות</string>
     <string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
     <string name="authentication_cancel">ביטול האימות</string>
