@@ -12,7 +12,6 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Obľúbené aplikácie</string>
     <string name="hidden_fragment_name">Skryté aplikácie</string>
-    <string name="battery_level">%s%%</string>
     <string name="search">Vyhľadávanie</string>
     <string name="bottom_dialog_app_rename">Premenovať</string>
     <string name="bottom_dialog_add_to_home">Pridať na domovskú obrazovku</string>
@@ -62,6 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">Aplikácia\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batéria\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Pozadie miniaplikácie\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Text miniaplikácie\u0020:\u0020</string>
     <string name="settings_manager_favorite">Obľúbené aplikácie</string>
     <string name="settings_manager_hidden">Skryté aplikácie</string>
     <string name="settings_select_wallpaper">Vyberte položku Tapeta</string>
@@ -85,10 +86,12 @@
     <string name="settings_actions_show_favorite_list">Zobraziť zoznam obľúbených</string>
     <string name="settings_actions_open_quick_settings">Otvorte Rýchle nastavenia</string>
     <string name="settings_actions_show_recents">Zobraziť Nedávne</string>
-    <string name="settings_actions_show_widgets">Show Widgets</string>
+    <string name="settings_actions_show_widgets">Zobraziť miniaplikácie</string>
     <string name="settings_actions_open_power_dialog">Otvorte dialógové okno napájania</string>
     <string name="settings_actions_take_a_screenshot">Urobte snímku obrazovky</string>
     <string name="settings_actions_disabled">Zakázané</string>
+    <string name="settings_units_metric">Metrické</string>
+    <string name="settings_units_imperial">cisársky</string>
     <string name="authentication_title">Overenie</string>
     <string name="authentication_subtitle">Prihláste sa pomocou svojich biometrických údajov.</string>
     <string name="authentication_cancel">Zrušenie overenia</string>
