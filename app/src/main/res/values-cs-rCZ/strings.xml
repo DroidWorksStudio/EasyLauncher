@@ -12,7 +12,6 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Oblíbené aplikace</string>
     <string name="hidden_fragment_name">Skryté aplikace</string>
-    <string name="battery_level">%s%%</string>
     <string name="search">Vyhledávání</string>
     <string name="bottom_dialog_app_rename">Přejmenovat</string>
     <string name="bottom_dialog_add_to_home">Přidat na domácí obrazovku</string>
@@ -62,6 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">Aplikace\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Baterie\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
     <string name="settings_manager_favorite">Oblíbené aplikace</string>
     <string name="settings_manager_hidden">Skryté aplikace</string>
     <string name="settings_select_wallpaper">Vyberte Tapeta</string>
@@ -89,6 +90,8 @@
     <string name="settings_actions_open_power_dialog">Otevřete dialogové okno napájení</string>
     <string name="settings_actions_take_a_screenshot">Pořiďte snímek obrazovky</string>
     <string name="settings_actions_disabled">Zakázáno</string>
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
     <string name="authentication_title">Autentizace</string>
     <string name="authentication_subtitle">Přihlaste se pomocí svých biometrických údajů.</string>
     <string name="authentication_cancel">Zrušení ověřování</string>
