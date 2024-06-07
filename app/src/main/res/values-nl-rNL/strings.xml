@@ -61,8 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Woord\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batterij\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
-    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Widgetachtergrond\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Widgettekst\u0020:\u0020</string>
     <string name="settings_manager_favorite">Favoriete apps</string>
     <string name="settings_manager_hidden">Verborgen apps</string>
     <string name="settings_select_wallpaper">Selecteer Achtergrond</string>
@@ -90,8 +90,8 @@
     <string name="settings_actions_open_power_dialog">Open het energiedialoogvenster</string>
     <string name="settings_actions_take_a_screenshot">Maak een screenshot</string>
     <string name="settings_actions_disabled">Gehandicapt</string>
-    <string name="settings_units_metric">Metric</string>
-    <string name="settings_units_imperial">Imperial</string>
+    <string name="settings_units_metric">Metriek</string>
+    <string name="settings_units_imperial">Imperiaal</string>
     <string name="authentication_title">Authenticatie</string>
     <string name="authentication_subtitle">Log in met uw biometrische gegevens.</string>
     <string name="authentication_cancel">Authenticatie Annuleren</string>
