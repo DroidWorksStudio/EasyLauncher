@@ -61,8 +61,8 @@
     <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Wort\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batterie\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
-    <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Widget-Hintergrund\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Widget-Text\u0020:\u0020</string>
     <string name="settings_manager_favorite">Lieblings-Apps</string>
     <string name="settings_manager_hidden">Versteckte Apps</string>
     <string name="settings_select_wallpaper">Hintergrundbild auswählen</string>
@@ -90,8 +90,8 @@
     <string name="settings_actions_open_power_dialog">Dialogfeld „Power“ öffnen</string>
     <string name="settings_actions_take_a_screenshot">Mach ein Bildschirmfoto</string>
     <string name="settings_actions_disabled">Deaktiviert</string>
-    <string name="settings_units_metric">Metric</string>
-    <string name="settings_units_imperial">Imperial</string>
+    <string name="settings_units_metric">Metrisch</string>
+    <string name="settings_units_imperial">Kaiserliche</string>
     <string name="authentication_title">Authentifizierung</string>
     <string name="authentication_subtitle">Melden Sie sich mit Ihren biometrischen Anmeldeinformationen an.</string>
     <string name="authentication_cancel">Authentifizierung Abbrechen</string>
