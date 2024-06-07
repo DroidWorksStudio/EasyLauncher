@@ -9,10 +9,6 @@ All notable changes to this project will be documented in this file. See [conven
 - Updated the app icon. - ([1e1b81c](https://github.com/DroidWorksStudio/EasyLauncher/commit/1e1b81cf83341e28c43efb788a86e5d99d061ef4))
 - Added custom gestures. - ([924e052](https://github.com/DroidWorksStudio/EasyLauncher/commit/924e052598c9f4c8cd990a2d9e0cdb73c4e1dcfa))
 
-### Bug Fixes:
-
-- Fixed .gitignore - ([7c3090f](https://github.com/DroidWorksStudio/EasyLauncher/commit/7c3090fb3b2921ddb094e92d5ccf199554021b0c))
-
 ### Dependency Updates:
 
 - Updated Dependencies - ([8e796ca](https://github.com/DroidWorksStudio/EasyLauncher/commit/8e796ca2fe95aa039873c5b47db7ed50dafdbacc))
@@ -28,7 +24,6 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
-- Fixing of workflows - ([204acd4](https://github.com/DroidWorksStudio/EasyLauncher/commit/204acd4b71646e72d5cb1be1350812198e9ec244))
 - More widget stuff and fixing of files. - ([327f144](https://github.com/DroidWorksStudio/EasyLauncher/commit/327f1447a77a4fe9f18aeaa6a98700e85e3d25bc))
 - Moved the getActionType function into AppHelper class. - ([48b2913](https://github.com/DroidWorksStudio/EasyLauncher/commit/48b2913797a46857df9ec89348bb1b9e01164c81))
 - Added widget page to the gestures. - ([94fe747](https://github.com/DroidWorksStudio/EasyLauncher/commit/94fe747ffdfc869237c1dd200966cda8e2b2fe23))
