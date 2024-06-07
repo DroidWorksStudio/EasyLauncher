@@ -4,16 +4,15 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
-### Bug Fixes:
-
-- Fixed a workflow so it works correctly - ([773a2f5](https://github.com/DroidWorksStudio/EasyLauncher/commit/773a2f546f218f040ce6cf2666692d18818b65d1))
-
-## [0.1.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.2) - (07, June 2024)
-
 ### Implemented Enhancements:
 
 - Updated the app icon. - ([1e1b81c](https://github.com/DroidWorksStudio/EasyLauncher/commit/1e1b81cf83341e28c43efb788a86e5d99d061ef4))
 - Added custom gestures. - ([924e052](https://github.com/DroidWorksStudio/EasyLauncher/commit/924e052598c9f4c8cd990a2d9e0cdb73c4e1dcfa))
+
+### Bug Fixes:
+
+- Fixed proguard building - ([80ecd90](https://github.com/DroidWorksStudio/EasyLauncher/commit/80ecd906e731b14b276944fb3ee07578fd079822))
+- Fixed a workflow so it works correctly - ([773a2f5](https://github.com/DroidWorksStudio/EasyLauncher/commit/773a2f546f218f040ce6cf2666692d18818b65d1))
 
 ### Dependency Updates:
 
