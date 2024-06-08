@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Add icon to weather widget. - ([75afa09](https://github.com/DroidWorksStudio/EasyLauncher/commit/75afa09bea44e66b8c09cc437529e6fa7b933dad))
 
+### Refactoring:
+
+- Reduce animation timers. - ([84d948f](https://github.com/DroidWorksStudio/EasyLauncher/commit/84d948f8d1eb333e8d1e56203019304b98429249))
+
 ## [0.1.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.2) - (07, June 2024)
 
 ### Implemented Enhancements:
