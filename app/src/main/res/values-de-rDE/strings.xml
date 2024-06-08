@@ -570,4 +570,10 @@
     <string name="search_bing">Bing</string>
     <string name="search_brave">Mutig</string>
     <string name="search_swisscow">Schweizer Kühe</string>
+    <string name="widgets_battery_level">Battery Level : %d %%</string>
+    <string name="widgets_battery_count">Battery Charge Count : %1$d</string>
+    <string name="widgets_battery_status">Charging Status : %1$s</string>
+    <string name="widgets_battery_health">Battery Health : %1$s</string>
+    <string name="widgets_battery_voltage">Battery Voltage : %1$d %2$s</string>
+    <string name="widgets_battery_temperature">Battery Temperature : %1$d %2$s</string>
 </resources>
