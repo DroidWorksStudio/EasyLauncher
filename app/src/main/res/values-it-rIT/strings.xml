@@ -570,4 +570,10 @@
     <string name="search_bing">Bing</string>
     <string name="search_brave">Coraggioso</string>
     <string name="search_swisscow">Mucche svizzere</string>
+    <string name="widgets_battery_level">Livello della batteria: %d%%</string>
+    <string name="widgets_battery_count">Conteggio carica batteria: %1$d</string>
+    <string name="widgets_battery_status">Stato di carica: %1$s</string>
+    <string name="widgets_battery_health">Stato della batteria: %1$s</string>
+    <string name="widgets_battery_voltage">Voltaggio della batteria: %1$d %2$s</string>
+    <string name="widgets_battery_temperature">Temperatura della batteria: %1$d %2$s</string>
 </resources>
