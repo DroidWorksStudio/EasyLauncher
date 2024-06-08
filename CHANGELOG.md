@@ -6,6 +6,17 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added batter status widget. - ([316b755](https://github.com/DroidWorksStudio/EasyLauncher/commit/316b755eaddfe9cf53f6c82bfd0368ac461baf91))
+- Add icon to weather widget. - ([75afa09](https://github.com/DroidWorksStudio/EasyLauncher/commit/75afa09bea44e66b8c09cc437529e6fa7b933dad))
+
+### Refactoring:
+
+- Reduce animation timers. - ([84d948f](https://github.com/DroidWorksStudio/EasyLauncher/commit/84d948f8d1eb333e8d1e56203019304b98429249))
+
+## [0.1.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.2) - (07, June 2024)
+
+### Implemented Enhancements:
+
 - Updated the app icon. - ([1e1b81c](https://github.com/DroidWorksStudio/EasyLauncher/commit/1e1b81cf83341e28c43efb788a86e5d99d061ef4))
 - Added custom gestures. - ([924e052](https://github.com/DroidWorksStudio/EasyLauncher/commit/924e052598c9f4c8cd990a2d9e0cdb73c4e1dcfa))
 

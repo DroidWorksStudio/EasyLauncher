@@ -257,12 +257,10 @@ class AppHelper @Inject constructor() {
     ): WeatherResponse {
         // Check if cached data is available and not expired
         val cachedWeatherData = context.getWeatherDataFromCache()
-        if (cachedWeatherData != null && System.currentTimeMillis() - cachedWeatherData.timestamp < TimeUnit.MINUTES.toMillis(
-                5
-            )
-        ) {
+        if (cachedWeatherData?.let { System.currentTimeMillis() - it.timestamp < TimeUnit.MINUTES.toMillis(15) } == true) {
             return cachedWeatherData.weatherResponse
         }
+
 
         // Fetch weather data from the network
         val apiKey = BuildConfig.API_KEY
@@ -306,8 +304,8 @@ class AppHelper @Inject constructor() {
 
     // Function to retrieve weather data from cache
     private fun Context.getWeatherDataFromCache(): CachedWeatherData? {
-        val sharedPreferences = getSharedPreferences("WeatherCache", Context.MODE_PRIVATE)
-        val timestamp = sharedPreferences.getLong("timestamp", -1)
+        val sharedPreferences = getSharedPreferences(Constants.WEATHER_PREFS, Context.MODE_PRIVATE)
+        val timestamp = sharedPreferences.getLong("cachedDataTimestamp", -1)
         val weatherResponseJson = sharedPreferences.getString("weatherResponse", null)
         if (timestamp != -1L && weatherResponseJson != null) {
             val weatherResponse = Gson().fromJson(weatherResponseJson, WeatherResponse::class.java)

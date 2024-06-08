@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="refresh_icon" translatable="false">&#xF04C;</string>
+
+    <string name="humidity_icon" translatable="false">&#xf07a;</string>
+    <string name="pressure_icon" translatable="false">&#xf079;</string>
+    <string name="speed_icon" translatable="false">&#xf050;</string>
+    <string name="sunrise_icon" translatable="false">&#xf051;</string>
+    <string name="sunset_icon" translatable="false">&#xf052;</string>
+
+    <string name="weather_sunny" translatable="false">&#xf00d;</string>
+    <string name="weather_clear_night" translatable="false">&#xf02e;</string>
+    <string name="weather_foggy" translatable="false">&#xf014;</string>
+    <string name="weather_cloudy" translatable="false">&#xf013;</string>
+    <string name="weather_rainy" translatable="false">&#xf019;</string>
+    <string name="weather_snowy" translatable="false">&#xf01b;</string>
+    <string name="weather_thunder" translatable="false">&#xf01e;</string>
+    <string name="weather_drizzle" translatable="false">&#xf01a;</string>
+</resources>

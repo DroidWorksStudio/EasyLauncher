@@ -1,17 +1,18 @@
 <resources>
     <string name="battery_level" translatable="false">%s%%</string>
+    <string name="widget_mv" translatable="false">mV</string>
+
+
+    <string name="widget_c" translatable="false">°C</string>
+    <string name="widget_f" translatable="false">°F</string>
 
     <string name="widget_weather_refresh" translatable="false">%1$s</string>
-    <string name="widget_weather_location" translatable="false">%1$s</string>
-    <string name="widget_weather_temp" translatable="false">%1$.2f %2$s</string>
+    <string name="widget_weather_location" translatable="false">%1$s, %2$s</string>
+    <string name="widget_weather_temp" translatable="false">%1$.0f %2$s</string>
     <string name="widget_weather_description" translatable="false">%1$s</string>
 
-    <string name="weather_mps" translatable="false">m/s</string>
-    <string name="weather_mph" translatable="false">mil/h</string>
-    <string name="weather_mm" translatable="false">mm</string>
-
-    <string name="weather_c" translatable="false">°C</string>
-    <string name="weather_f" translatable="false">°F</string>
+    <string name="widget_weather_mps" translatable="false">m/s</string>
+    <string name="widget_weather_mph" translatable="false">mil/h</string>
 
     <string name="widget_weather_feels_like" translatable="false">Feels Like : %s%</string>
     <string name="widget_weather_wind" translatable="false">Wind : %1$.2f %2$s</string>

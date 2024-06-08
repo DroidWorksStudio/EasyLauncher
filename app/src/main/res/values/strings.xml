@@ -13,7 +13,7 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Favorite Apps</string>
     <string name="hidden_fragment_name">Hidden Apps</string>
-    
+
     <string name="search">Search</string>
 
     <string name="bottom_dialog_app_rename">Rename</string>
@@ -595,4 +595,13 @@
     <string name="search_bing">Bing</string>
     <string name="search_brave">Brave</string>
     <string name="search_swisscow">SwissCows</string>
+
+    <string name="widgets_battery_level">Battery Level : %d %%</string>
+    <string name="widgets_battery_count">Battery Charge Count : %1$d</string>
+    <string name="widgets_battery_status">Charging Status : %1$s</string>
+    <string name="widgets_battery_health">Battery Health : %1$s</string>
+    <string name="widgets_battery_voltage">Battery Voltage : %1$d %2$s</string>
+    <string name="widgets_battery_temperature">Battery Temperature : %1$d %2$s</string>
+
+
 </resources>
