@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="refresh_icon" translatable="false">&#xF04C;</string>
+
     <string name="humidity_icon" translatable="false">&#xf07a;</string>
     <string name="pressure_icon" translatable="false">&#xf079;</string>
     <string name="speed_icon" translatable="false">&#xf050;</string>
@@ -14,6 +16,4 @@
     <string name="weather_snowy" translatable="false">&#xf01b;</string>
     <string name="weather_thunder" translatable="false">&#xf01e;</string>
     <string name="weather_drizzle" translatable="false">&#xf01a;</string>
-    <string name="rain" translatable="false">&#xf019;</string>
-    <string name="snow" translatable="false">&#xf01b;</string>
 </resources>

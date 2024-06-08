@@ -24,16 +24,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
-
-        val weatherFile = project.rootProject.file("weather.properties")
-        val properties = Properties()
-        properties.load(weatherFile.inputStream())
-        val apiKey = properties.getProperty("WEATHER_API_KEY") ?: ""
-        buildConfigField(
-            type = "String",
-            name = "API_KEY",
-            value = "\"$apiKey\""
-        )
     }
 
     buildTypes {
@@ -82,14 +72,26 @@ android {
     productFlavors {
         create("withInternet") {
             dimension = "internet"
-            manifestPlaceholders["hasInternetPermission"] = true
             manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
+            val weatherFile = project.rootProject.file("weather.properties")
+            val properties = Properties()
+            properties.load(weatherFile.inputStream())
+            val apiKey = properties.getProperty("WEATHER_API_KEY") ?: ""
+            buildConfigField(
+                type = "String",
+                name = "API_KEY",
+                value = "\"$apiKey\""
+            )
         }
 
         create("withoutInternet") {
             dimension = "internet"
-            manifestPlaceholders["hasInternetPermission"] = false
             manifestPlaceholders["internetPermission"] = "REMOVE"
+            buildConfigField(
+                type = "String",
+                name = "API_KEY",
+                value = "\"REMOVE\""
+            )
         }
     }
 

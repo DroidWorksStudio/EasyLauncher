@@ -13,6 +13,7 @@ import android.text.style.StyleSpan
 import android.view.View
 import android.widget.Toast
 import androidx.core.text.getSpans
+import java.util.Locale
 
 /**
  * Returns [Spannable] where the term is
@@ -101,4 +102,8 @@ fun String.showLongToast(context: Context) {
 
 fun String.showShortToast(context: Context) {
     Toast.makeText(context, this, Toast.LENGTH_SHORT).show()
+}
+
+fun String.capitalizeEachWord(): String {
+    return this.split(" ").joinToString(" ") { it.replaceFirstChar { str -> if (str.isLowerCase()) str.titlecase(Locale.getDefault()) else str.toString() } }
 }
