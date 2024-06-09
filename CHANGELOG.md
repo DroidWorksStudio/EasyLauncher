@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
+
+### Implemented Enhancements:
+
+- Fixed settings location to click. - ([c5e9117](https://github.com/DroidWorksStudio/EasyLauncher/commit/c5e91179deedceee9be795f81552a5d141448ec5))
+
 ## [0.1.3](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.3) - (09, June 2024)
 
 ### Implemented Enhancements:
