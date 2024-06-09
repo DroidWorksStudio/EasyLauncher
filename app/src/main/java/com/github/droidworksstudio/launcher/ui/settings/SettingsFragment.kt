@@ -79,7 +79,7 @@ class SettingsFragment : Fragment(),
             packageInfo.versionName
         )
 
-        binding.searchEngineText.text = preferenceHelper.searchEngines.getString(context)
+        binding.miscellaneousSearchEngineText.text = preferenceHelper.searchEngines.getString(context)
 
         binding.gesturesDoubleTapControl.text = preferenceHelper.doubleTapAction.getString(context)
         binding.gesturesSwipeUpControl.text = preferenceHelper.swipeUpAction.getString(context)
@@ -211,27 +211,27 @@ class SettingsFragment : Fragment(),
     private fun observeSwipeTouchListener() {
         binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
 
-        binding.miscellaneousSearchEngine.setOnClickListener {
+        binding.miscellaneousSearchEngineControl.setOnClickListener {
             showSearchEngineDialog()
         }
 
-        binding.gesturesDoubleTapText.setOnClickListener {
+        binding.gesturesDoubleTapControl.setOnClickListener {
             swipeActionClickEvent(Constants.Swipe.DoubleTap)
         }
 
-        binding.gesturesSwipeUpText.setOnClickListener {
+        binding.gesturesSwipeUpControl.setOnClickListener {
             swipeActionClickEvent(Constants.Swipe.Up)
         }
 
-        binding.gesturesSwipeDownText.setOnClickListener {
+        binding.gesturesSwipeDownControl.setOnClickListener {
             swipeActionClickEvent(Constants.Swipe.Down)
         }
 
-        binding.gesturesSwipeLeftText.setOnClickListener {
+        binding.gesturesSwipeLeftControl.setOnClickListener {
             swipeActionClickEvent(Constants.Swipe.Left)
         }
 
-        binding.gesturesSwipeRightText.setOnClickListener {
+        binding.gesturesSwipeRightControl.setOnClickListener {
             swipeActionClickEvent(Constants.Swipe.Right)
         }
     }
@@ -264,7 +264,7 @@ class SettingsFragment : Fragment(),
         dialog.setItems(itemStrings) { _, which ->
             val selectedItem = items[which]
             preferenceViewModel.setSearchEngine(selectedItem)
-            binding.searchEngineText.text = preferenceHelper.searchEngines.name
+            binding.miscellaneousSearchEngineText.text = preferenceHelper.searchEngines.name
         }
         dialog.show()
     }
