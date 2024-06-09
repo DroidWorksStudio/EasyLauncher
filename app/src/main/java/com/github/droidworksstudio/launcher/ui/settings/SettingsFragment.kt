@@ -270,7 +270,7 @@ class SettingsFragment : Fragment(),
     }
 
     private fun swipeActionClickEvent(swipe: Constants.Swipe) {
-        // Get the array of SearchEngines enum values
+        // Get the array of Action enum values
         val actions = Constants.Action.entries.toTypedArray()
         // Map the enum values to their string representations
         val actionStrings = actions.map { it.getString(context) }.toTypedArray()
