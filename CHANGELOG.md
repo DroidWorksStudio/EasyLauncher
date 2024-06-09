@@ -21,6 +21,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Reduce animation timers. - ([84d948f](https://github.com/DroidWorksStudio/EasyLauncher/commit/84d948f8d1eb333e8d1e56203019304b98429249))
 
+### Releases:
+
+- Prepare for version 0.1.3 - ([3d6fbd3](https://github.com/DroidWorksStudio/EasyLauncher/commit/3d6fbd3baf44aefc34ed607f7ccef66d94e15deb))
+
 ## [0.1.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.2) - (07, June 2024)
 
 ### Implemented Enhancements:
