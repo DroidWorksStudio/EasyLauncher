@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Added batter status widget. - ([316b755](https://github.com/DroidWorksStudio/EasyLauncher/commit/316b755eaddfe9cf53f6c82bfd0368ac461baf91))
 - Add icon to weather widget. - ([75afa09](https://github.com/DroidWorksStudio/EasyLauncher/commit/75afa09bea44e66b8c09cc437529e6fa7b933dad))
 
+### Bug Fixes:
+
+- Fixed some widget elements colors. - ([581b142](https://github.com/DroidWorksStudio/EasyLauncher/commit/581b142b43c3084afc7a28713e2cb98f130500a7))
+
 ### Language Support:
 
 - Updated Language Files. ([#60](https://github.com/DroidWorksStudio/EasyLauncher/issues/60)) - ([b22d67f](https://github.com/DroidWorksStudio/EasyLauncher/commit/b22d67fdf552a3d73c829525297b09e932cffb86))
