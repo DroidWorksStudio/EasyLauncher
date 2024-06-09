@@ -124,6 +124,7 @@ class WidgetFragment : Fragment(),
 
                 val weatherIcon = createWeatherIcon(context, setWeatherIcon(context, weatherResponse.weather[0].id))
                 binding.weatherIcon.setImageBitmap(weatherIcon)
+                binding.weatherIcon.setColorFilter(preferenceHelper.widgetTextColor)
 
                 val weatherWidgetDrawable = binding.weatherRoot.background
                 if (weatherWidgetDrawable is GradientDrawable) {
@@ -184,6 +185,7 @@ class WidgetFragment : Fragment(),
     private fun setupBatteryWidget() {
         try {
             binding.batteryLevel.setTextColor(preferenceHelper.widgetTextColor)
+            binding.batteryCount.setTextColor(preferenceHelper.widgetTextColor)
             binding.chargingStatus.setTextColor(preferenceHelper.widgetTextColor)
             binding.batteryHealth.setTextColor(preferenceHelper.widgetTextColor)
             binding.batteryVoltage.setTextColor(preferenceHelper.widgetTextColor)
