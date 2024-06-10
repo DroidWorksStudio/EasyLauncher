@@ -8,6 +8,18 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed settings location to click. - ([c5e9117](https://github.com/DroidWorksStudio/EasyLauncher/commit/c5e91179deedceee9be795f81552a5d141448ec5))
 
+### Dependency Updates:
+
+- Bump androidx.biometric:biometric-ktx  - ([cb98844](https://github.com/DroidWorksStudio/EasyLauncher/commit/cb988448570359084c9bf9c011fd19c6ec88557e))
+- Bump androidx.biometric:biometric-ktx  - ([cb98844](https://github.com/DroidWorksStudio/EasyLauncher/commit/cb988448570359084c9bf9c011fd19c6ec88557e))
+- Bump agp from 8.4.1 to 8.4.2 - ([dee52c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/dee52c1a14106a1a072f20e9bc0d7e150d6770f5))
+- Bump agp from 8.4.1 to 8.4.2 - ([dee52c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/dee52c1a14106a1a072f20e9bc0d7e150d6770f5))
+- Bump agp from 8.4.1 to 8.4.2 - ([dee52c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/dee52c1a14106a1a072f20e9bc0d7e150d6770f5))
+
+### Language Support:
+
+- Updated Language Files. ([#62](https://github.com/DroidWorksStudio/EasyLauncher/issues/62)) - ([803f47f](https://github.com/DroidWorksStudio/EasyLauncher/commit/803f47f6b0e8408e79f73bb3c02ce434a42e3955))
+
 ### Refactoring:
 
 - Refactored the settings for widgets. - ([91d34ae](https://github.com/DroidWorksStudio/EasyLauncher/commit/91d34ae6b37a9efc51eda98d6d0351b2c9ce6a50))
