@@ -25,6 +25,7 @@
     <string name="bottom_dialog_app_uninstall">Disinstallare l\'app</string>
     <string name="settings_name">Impostazioni di avvio</string>
     <string name="settings_version">%1$s Versione: %2$s</string>
+    <string name="settings_widgets_name">Widgets Settings</string>
     <string name="settings_title_home_display_preferences">Schermo</string>
     <string name="settings_title_home_behavior_preferences">Comportamento</string>
     <string name="settings_title_home_appearance_preferences">Aspetto</string>
@@ -572,8 +573,13 @@
     <string name="search_swisscow">Mucche svizzere</string>
     <string name="widgets_battery_level">Livello della batteria: %d%%</string>
     <string name="widgets_battery_count">Conteggio carica batteria: %1$d</string>
+    <string name="widgets_battery_current">Battery Current : %1$d %2$s</string>
     <string name="widgets_battery_status">Stato di carica: %1$s</string>
     <string name="widgets_battery_health">Stato della batteria: %1$s</string>
     <string name="widgets_battery_voltage">Voltaggio della batteria: %1$d %2$s</string>
-    <string name="widgets_battery_temperature">Temperatura della batteria: %1$d %2$s</string>
+    <string name="widgets_battery_temperature">Battery Temperature : %1.2f %2$s</string>
+    <string name="widgets_settings_display_weather">Weather Widget</string>
+    <string name="widgets_settings_display_battery">Battery Widget</string>
+    <string name="widgets_settings_display">Display</string>
+    <string name="widgets_settings_select_order">Select Order</string>
 </resources>
