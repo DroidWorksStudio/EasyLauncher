@@ -18,6 +18,8 @@ class PreferenceViewModel @Inject constructor(
     val showDateLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showDailyWordLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showBatteryLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    private val showWeatherWidgetLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    private val showBatteryWidgetLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showAppIconLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val homeAppAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val homeDateAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
@@ -38,6 +40,9 @@ class PreferenceViewModel @Inject constructor(
     private val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val lockSettingsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
+
+    private val weatherOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
+    private val batteryOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
 
     private val searchEngineLiveData: MutableLiveData<Constants.SearchEngines> = MutableLiveData()
     private val doubleTapActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
@@ -86,9 +91,29 @@ class PreferenceViewModel @Inject constructor(
         dailyWordColorLiveData.postValue(preferenceHelper.dailyWordColor)
     }
 
+    fun setShowWeatherWidget(showWeather: Boolean) {
+        preferenceHelper.showWeatherWidget = showWeather
+        showWeatherWidgetLiveData.postValue(preferenceHelper.showWeatherWidget)
+    }
+
+    fun setShowBatteryWidget(showBattery: Boolean) {
+        preferenceHelper.showBatteryWidget = showBattery
+        showBatteryWidgetLiveData.postValue(preferenceHelper.showBatteryWidget)
+    }
+
     fun setAppColor(appColor: Int) {
         preferenceHelper.appColor = appColor
         appColorLiveData.postValue(preferenceHelper.appColor)
+    }
+
+    fun setWeatherOrderNumber(orderNumber: Int) {
+        preferenceHelper.weatherOrderNumber = orderNumber
+        weatherOrderNumberLiveData.postValue(preferenceHelper.weatherOrderNumber)
+    }
+
+    fun setBatteryOrderNumber(orderNumber: Int) {
+        preferenceHelper.batteryOrderNumber = orderNumber
+        batteryOrderNumberLiveData.postValue(preferenceHelper.batteryOrderNumber)
     }
 
     fun setDateColor(dateColor: Int) {

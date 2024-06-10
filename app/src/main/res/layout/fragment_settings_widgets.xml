@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <FrameLayout
+        android:id="@+id/touchArea"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nestScrollView"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fadingEdgeLength="48dp"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="none"
+        tools:ignore="TooManyViews">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="32dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/settings_widgets_name"
+                android:textSize="@dimen/text_super_large"
+                style="@style/TextDefaultStyle" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/widgets_settings_display_weather"
+                    android:textSize="@dimen/text_super_large"
+                    style="@style/TextDefaultStyle" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/weather_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/widgets_settings_display"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/weather_switchCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.7"
+                        android:scaleY="0.8"
+                        android:thumb="@drawable/shape_switch_thumb"
+                        app:track="@drawable/selector_switch"
+                        tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/weather_order_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/widgets_settings_select_order"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/weather_order_control"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:text="@string/widgets_settings_select_order"
+                        android:textSize="@dimen/text_large"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/select_weather_widget_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/settings_appearance_color_title"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/widgets_settings_display_battery"
+                    android:textSize="@dimen/text_super_large"
+                    style="@style/TextDefaultStyle" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/battery_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/widgets_settings_display"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/battery_switchCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.7"
+                        android:scaleY="0.8"
+                        android:thumb="@drawable/shape_switch_thumb"
+                        app:track="@drawable/selector_switch"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/battery_order_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/widgets_settings_select_order"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/battery_order_control"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:text="@string/widgets_settings_select_order"
+                        android:textSize="@dimen/text_large"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/select_battery_widget_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/settings_appearance_color_title"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.github.droidworksstudio.launcher.view.GestureNestedScrollView>
+
+</FrameLayout>

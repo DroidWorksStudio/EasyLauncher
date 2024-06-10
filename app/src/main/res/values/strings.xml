@@ -29,6 +29,7 @@
 
     <string name="settings_name">Launcher Settings</string>
     <string name="settings_version">%1$s Version: %2$s</string>
+    <string name="settings_widgets_name">Widgets Settings</string>
 
     <string name="settings_title_home_display_preferences">Display</string>
     <string name="settings_title_home_behavior_preferences">Behavior</string>
@@ -83,7 +84,6 @@
     <string name="settings_swipe_down">Swipe Down</string>
     <string name="settings_swipe_left">Swipe Left</string>
     <string name="settings_swipe_right">Swipe Right</string>
-
 
     <string name="settings_search_engine">Search Engine</string>
 
@@ -598,10 +598,14 @@
 
     <string name="widgets_battery_level">Battery Level : %d %%</string>
     <string name="widgets_battery_count">Battery Charge Count : %1$d</string>
+    <string name="widgets_battery_current">Battery Current : %1$d %2$s</string>
     <string name="widgets_battery_status">Charging Status : %1$s</string>
     <string name="widgets_battery_health">Battery Health : %1$s</string>
     <string name="widgets_battery_voltage">Battery Voltage : %1$d %2$s</string>
-    <string name="widgets_battery_temperature">Battery Temperature : %1$d %2$s</string>
+    <string name="widgets_battery_temperature">Battery Temperature : %1.2f %2$s</string>
 
-
+    <string name="widgets_settings_display_weather">Weather Widget</string>
+    <string name="widgets_settings_display_battery">Battery Widget</string>
+    <string name="widgets_settings_display">Display</string>
+    <string name="widgets_settings_select_order">Select Order</string>
 </resources>

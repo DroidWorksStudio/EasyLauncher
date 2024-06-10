@@ -1,7 +1,8 @@
 <resources>
     <string name="battery_level" translatable="false">%s%%</string>
-    <string name="widget_mv" translatable="false">mV</string>
 
+    <string name="widget_mv" translatable="false">mV</string>
+    <string name="widget_ma" translatable="false">mA</string>
 
     <string name="widget_c" translatable="false">°C</string>
     <string name="widget_f" translatable="false">°F</string>

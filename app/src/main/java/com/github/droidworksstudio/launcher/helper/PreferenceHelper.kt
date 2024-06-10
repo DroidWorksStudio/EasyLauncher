@@ -34,6 +34,14 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.SHOW_DAILY_WORD, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_DAILY_WORD, value).apply()
 
+    var showWeatherWidget: Boolean
+        get() = prefs.getBoolean(Constants.SHOW_WEATHER_WIDGET, false)
+        set(value) = prefs.edit().putBoolean(Constants.SHOW_WEATHER_WIDGET, value).apply()
+
+    var showBatteryWidget: Boolean
+        get() = prefs.getBoolean(Constants.SHOW_BATTERY_WIDGET, false)
+        set(value) = prefs.edit().putBoolean(Constants.SHOW_BATTERY_WIDGET, value).apply()
+
     var dateColor: Int
         get() = prefs.getInt(Constants.DATE_COLOR, 0xFFFFFFFF.toInt())
         set(value) = prefs.edit().putInt(Constants.DATE_COLOR, value).apply()
@@ -113,6 +121,14 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
     var dailyWordTextSize: Float
         get() = prefs.getFloat(Constants.DAILY_WORD_TEXT_SIZE, 18f)
         set(value) = prefs.edit().putFloat(Constants.DAILY_WORD_TEXT_SIZE, value).apply()
+
+    var weatherOrderNumber: Int
+        get() = prefs.getInt(Constants.WIDGET_WEATHER, 1)
+        set(value) = prefs.edit().putInt(Constants.WIDGET_WEATHER, value).apply()
+
+    var batteryOrderNumber: Int
+        get() = prefs.getInt(Constants.WIDGET_BATTERY, 2)
+        set(value) = prefs.edit().putInt(Constants.WIDGET_BATTERY, value).apply()
 
     var settingsLock: Boolean
         get() = prefs.getBoolean(Constants.TOGGLE_SETTING_LOCK, false)

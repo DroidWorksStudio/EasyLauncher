@@ -41,7 +41,18 @@
         android:id="@+id/WidgetsFragment"
         android:name="com.github.droidworksstudio.launcher.ui.widgets.WidgetFragment"
         android:label="@string/widgets_fragment_label"
-        tools:layout="@layout/fragment_widgets" />
+        tools:layout="@layout/fragment_widgets">
+
+        <action
+            android:id="@+id/action_WidgetsFragment_to_WidgetsSettingsFragment"
+            app:destination="@id/WidgetsSettingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/WidgetsSettingsFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.widgets.settings.SettingsFragment"
+        android:label="@string/widgets_fragment_label"
+        tools:layout="@layout/fragment_settings_widgets" />
 
     <fragment
         android:id="@+id/DrawFragment"
