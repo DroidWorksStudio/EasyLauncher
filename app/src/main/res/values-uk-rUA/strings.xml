@@ -573,10 +573,10 @@
     <string name="search_swisscow">SwissCows</string>
     <string name="widgets_battery_level">Рівень заряду батареї: %d%%</string>
     <string name="widgets_battery_count">Кількість зарядів батареї: %1$d</string>
-    <string name="widgets_battery_current">Струм батареї: %1$d %2$s</string>
+    <string name="widgets_battery_current">Battery Current : %1$.2f %2$s</string>
     <string name="widgets_battery_status">Стан зарядки: %1$s</string>
     <string name="widgets_battery_health">Заряд батареї: %1$s</string>
-    <string name="widgets_battery_voltage">Напруга батареї: %1$d %2$s</string>
+    <string name="widgets_battery_voltage">Battery Voltage : %1$.2f %2$s</string>
     <string name="widgets_battery_temperature">Температура батареї: %1$.2f %2$s</string>
     <string name="widgets_settings_display_weather">Віджет погоди</string>
     <string name="widgets_settings_display_battery">Віджет батареї</string>
