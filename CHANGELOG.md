@@ -17,6 +17,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Bump agp from 8.4.1 to 8.4.2 - ([dee52c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/dee52c1a14106a1a072f20e9bc0d7e150d6770f5))
 - Bump agp from 8.4.1 to 8.4.2 - ([dee52c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/dee52c1a14106a1a072f20e9bc0d7e150d6770f5))
 
+### Housekeeping:
+
+- Removed unneeded imports - ([d0c3b2d](https://github.com/DroidWorksStudio/EasyLauncher/commit/d0c3b2df97a2797e079eae60ebeb10f44d7f79d1))
+
 ### Language Support:
 
 - Updated Language Files. ([#62](https://github.com/DroidWorksStudio/EasyLauncher/issues/62)) - ([803f47f](https://github.com/DroidWorksStudio/EasyLauncher/commit/803f47f6b0e8408e79f73bb3c02ce434a42e3955))
