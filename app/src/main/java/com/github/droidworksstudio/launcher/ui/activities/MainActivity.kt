@@ -2,17 +2,24 @@ package com.github.droidworksstudio.launcher.ui.activities
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.app.DownloadManager
+import android.content.BroadcastReceiver
 import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Environment
 import android.os.Handler
 import android.os.Looper
+import android.provider.Settings
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -23,6 +30,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -31,6 +39,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
+import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.BuildConfig
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
@@ -39,8 +48,18 @@ import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import okhttp3.Call
+import okhttp3.Callback
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.Response
+import org.json.JSONObject
+import java.io.File
+import java.io.IOException
+import java.util.Date
 import javax.inject.Inject
 
 
@@ -92,8 +111,6 @@ class MainActivity : AppCompatActivity(), LocationListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.d("BuildConfig.FLAVOR", BuildConfig.FLAVOR)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -107,6 +124,7 @@ class MainActivity : AppCompatActivity(), LocationListener {
 
         if (applicationContext.hasInternetPermission()) {
             checkLocationPermission()
+            checkForUpdates()
         }
     }
 
@@ -299,5 +317,150 @@ class MainActivity : AppCompatActivity(), LocationListener {
         navController = findNavController(R.id.nav_host_fragment_content_main)
         if (navController.currentDestination?.id != R.id.HomeFragment)
             navController.popBackStack(R.id.HomeFragment, false)
+    }
+
+    private fun checkForUpdates() {
+        val currentVersion = BuildConfig.VERSION_NAME
+        val url = "https://api.github.com/repos/DroidWorksStudio/EasyLauncher/releases/latest"
+
+        val request = Request.Builder().url(url).build()
+        OkHttpClient().newCall(request).enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+                // Handle the error
+            }
+
+            @SuppressLint("NewApi")
+            override fun onResponse(call: Call, response: Response) {
+                if (response.isSuccessful) {
+                    val json = response.body()?.string()
+                    val jsonObject = JSONObject(json.toString())
+                    val tagName = jsonObject.getString("tag_name")
+                    val latestVersion = tagName.replace("v", "")
+                    val assets = jsonObject.getJSONArray("assets")
+                    val apkUrl = (assets.get(1) as JSONObject).getString("browser_download_url")
+
+                    Log.d("testingIssues", "$latestVersion > $currentVersion")
+
+                    if (latestVersion > currentVersion) {
+                        val sharedPreferences = getSharedPreferences("update_prefs", Context.MODE_PRIVATE)
+                        val declinedVersion = sharedPreferences.getString("declined_version", "")
+
+                        if (latestVersion != declinedVersion) {
+                            // Ask the user if they want to update
+                            runOnUiThread {
+                                showUpdateDialog(latestVersion, apkUrl)
+                            }
+                        }
+                    }
+                }
+            }
+        })
+    }
+
+    @SuppressLint("NewApi")
+    fun showUpdateDialog(latestVersion: String, apkUrl: String) {
+        MaterialAlertDialogBuilder(this).apply {
+            setTitle("Update Available")
+            setMessage("A new version of the app is available. Do you want to update?")
+            setPositiveButton("Update") { _, _ ->
+                downloadApk(apkUrl)
+            }
+            setNegativeButton("Later") { _, _ ->
+                // Save the declined version
+                val sharedPreferences = getSharedPreferences("update_prefs", Context.MODE_PRIVATE)
+                with(sharedPreferences.edit()) {
+                    putString("declined_version", latestVersion)
+                    apply()
+                }
+            }
+            setCancelable(false)
+            show()
+        }
+    }
+
+    @SuppressLint("NewApi")
+    private fun downloadApk(apkUrl: String) {
+        val request = DownloadManager.Request(Uri.parse(apkUrl)).apply {
+            setTitle("Downloading update")
+            setDescription("Your app is downloading the latest update")
+            setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+            setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "${Constants.PACKAGE_NAME}.apk")
+        }
+
+        val manager = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
+        val downloadId = manager.enqueue(request)
+
+        // Register a BroadcastReceiver to listen for completion of the download
+        val onComplete = object : BroadcastReceiver() {
+            override fun onReceive(context: Context, intent: Intent) {
+                val action = intent.action
+                if (DownloadManager.ACTION_DOWNLOAD_COMPLETE == action) {
+                    val query = DownloadManager.Query().setFilterById(downloadId)
+                    val cursor = manager.query(query)
+                    if (cursor != null && cursor.moveToFirst()) {
+                        val statusIndex = cursor.getColumnIndex(DownloadManager.COLUMN_STATUS)
+                        if (statusIndex != -1) {
+                            val status = cursor.getInt(statusIndex)
+                            if (status == DownloadManager.STATUS_SUCCESSFUL) {
+                                // Download completed successfully, now call installApk()
+                                requestInstallPermission()
+                            }
+                        }
+                    }
+                    cursor?.close()
+                }
+            }
+        }
+
+        registerReceiver(onComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE), RECEIVER_EXPORTED)
+    }
+
+    private fun requestInstallPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            if (!packageManager.canRequestPackageInstalls()) {
+                val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES).apply {
+                    data = Uri.parse("package:$packageName")
+                }
+                @Suppress("DEPRECATION")
+                startActivityForResult(intent, Constants.REQUEST_INSTALL_PERMISSION)
+                return
+            } else {
+                // Permission already granted, proceed with installation
+                installApk()
+            }
+        } else {
+            // For devices below Android Oreo, installation permission is granted by default
+            installApk()
+        }
+    }
+
+    private fun installApk() {
+        val apkFile = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "${Constants.PACKAGE_NAME}.apk")
+        val apkUri = FileProvider.getUriForFile(applicationContext, "$packageName.provider", apkFile)
+
+        val intent = Intent(Intent.ACTION_VIEW).apply {
+            setDataAndType(apkUri, "application/vnd.android.package-archive")
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        }
+
+        startActivity(intent)
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == Constants.REQUEST_INSTALL_PERMISSION) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                val canInstallPackages = packageManager.canRequestPackageInstalls()
+                if (canInstallPackages) {
+                    // Permission granted, proceed with installation
+                    installApk()
+                } else {
+                    // Permission still not granted, handle accordingly
+                    applicationContext.showLongToast("Please allow install permission to install.")
+                }
+            }
+        }
     }
 }

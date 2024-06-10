@@ -14,13 +14,14 @@ plugins {
 android {
     namespace = "com.github.droidworksstudio.launcher"
     compileSdk = 34
+    compileSdkPreview = "VanillaIceCream"
 
     defaultConfig {
         applicationId = "app.easy.launcher"
         minSdk = 24
         targetSdk = 34
         versionCode = 14
-        versionName = "0.1.4"
+        versionName = "0.1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"

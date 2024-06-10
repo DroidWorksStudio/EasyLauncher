@@ -7,10 +7,11 @@ object Constants {
     const val PACKAGE_NAME = "app.easy.launcher"
     const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
 
-    const val WIDGETS_PREFS = "EasyLauncherWidgets.pref"
     const val WIDGETS_COUNT = 2
     const val WIDGET_WEATHER = "WIDGET_WEATHER"
     const val WIDGET_BATTERY = "WIDGET_BATTERY"
+
+    const val WEATHER_UNITS = "WEATHER_UNITS"
 
     const val WEATHER_PREFS = "EasyWeather.pref"
     const val LATITUDE = "LATITUDE"
@@ -73,7 +74,7 @@ object Constants {
     const val URL_GOOGLE_PLAY_STORE = "https://play.google.com/store/search?c=apps&q"
     const val APP_GOOGLE_PLAY_STORE = "market://search?c=apps&q"
 
-    const val WEATHER_UNITS = "WEATHER_UNITS"
+    const val REQUEST_INSTALL_PERMISSION = 123
 
     const val TRIPLE_TAP_DELAY_MS = 300
     const val LONG_PRESS_DELAY_MS = 500
