@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added auto update. - ([9fd9c15](https://github.com/DroidWorksStudio/EasyLauncher/commit/9fd9c15f54873f2edb5ca6998f958260ff9725ca))
 - Fixed settings location to click. - ([c5e9117](https://github.com/DroidWorksStudio/EasyLauncher/commit/c5e91179deedceee9be795f81552a5d141448ec5))
 
 ### Dependency Updates:
