@@ -8,6 +8,9 @@ object Constants {
     const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
 
     const val WIDGETS_PREFS = "EasyLauncherWidgets.pref"
+    const val WIDGETS_COUNT = 2
+    const val WIDGET_WEATHER = "WIDGET_WEATHER"
+    const val WIDGET_BATTERY = "WIDGET_BATTERY"
 
     const val WEATHER_PREFS = "EasyWeather.pref"
     const val LATITUDE = "LATITUDE"
@@ -20,6 +23,9 @@ object Constants {
     const val SHOW_DAILY_WORD = "SHOW_DAILY_WORD"
     const val SHOW_BATTERY = "SHOW_BATTERY"
     const val SHOW_STATUS_BAR = "SHOW_STATUS_BAR"
+
+    const val SHOW_WEATHER_WIDGET = "SHOW_WEATHER_WIDGET"
+    const val SHOW_BATTERY_WIDGET = "SHOW_BATTERY_WIDGET"
 
     const val DATE_COLOR = "DATE_COLOR"
     const val TIME_COLOR = "TIME_COLOR"

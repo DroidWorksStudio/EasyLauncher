@@ -21,7 +21,8 @@
         android:fadingEdgeLength="48dp"
         android:overScrollMode="never"
         android:requiresFadingEdge="vertical"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        tools:ignore="TooManyViews">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -117,6 +118,7 @@
                         tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
+
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -228,6 +230,7 @@
                         tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
+
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -435,6 +438,7 @@
                         tools:ignore="TouchTargetSizeCheck" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
+
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -456,7 +460,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginVertical="10dp"
                     android:orientation="horizontal"
                     tools:ignore="MissingConstraints">
 
@@ -479,7 +483,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginVertical="10dp"
                     android:orientation="horizontal"
                     tools:ignore="MissingConstraints">
 
@@ -502,7 +506,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="28dp"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginVertical="10dp"
                     tools:ignore="MissingConstraints,TextSizeCheck">
 
                     <androidx.appcompat.widget.AppCompatTextView
@@ -524,7 +528,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="28dp"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginVertical="10dp"
                     tools:ignore="MissingConstraints,TextSizeCheck">
 
                     <androidx.appcompat.widget.AppCompatTextView
@@ -546,7 +550,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="28dp"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginVertical="10dp"
                     tools:ignore="MissingConstraints,TextSizeCheck">
 
                     <androidx.appcompat.widget.AppCompatTextView
@@ -751,6 +755,14 @@
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -774,7 +786,7 @@
                         tools:ignore="MissingConstraints">
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/miscellaneous_searchEngine"
+                            android:id="@+id/miscellaneous_searchEngine_text"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -787,7 +799,7 @@
                             style="@style/TextDefaultStyle" />
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/searchEngine_text"
+                            android:id="@+id/miscellaneous_searchEngine_control"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="left|center"
@@ -800,11 +812,19 @@
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    tools:ignore="MissingConstraints,TooManyViews">
+                    tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
@@ -843,6 +863,14 @@
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -863,7 +891,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginHorizontal="20dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginVertical="10dp"
                         android:layout_weight="4"
                         android:gravity="center"
                         tools:ignore="MissingConstraints">
