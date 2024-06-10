@@ -14,7 +14,6 @@ plugins {
 android {
     namespace = "com.github.droidworksstudio.launcher"
     compileSdk = 34
-    compileSdkPreview = "VanillaIceCream"
 
     defaultConfig {
         applicationId = "app.easy.launcher"

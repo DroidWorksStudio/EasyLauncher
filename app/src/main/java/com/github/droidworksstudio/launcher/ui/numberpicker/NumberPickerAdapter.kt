@@ -17,10 +17,14 @@ class NumberPickerAdapter(
 
         init {
             itemView.setOnClickListener {
-                onNumberSelected(numbers[adapterPosition])
+                val position = bindingAdapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    onNumberSelected(numbers[position])
+                }
             }
         }
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NumberViewHolder {
         val view = LayoutInflater.from(parent.context)
