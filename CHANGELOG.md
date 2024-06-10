@@ -6,20 +6,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
-- Added auto update. - ([9fd9c15](https://github.com/DroidWorksStudio/EasyLauncher/commit/9fd9c15f54873f2edb5ca6998f958260ff9725ca))
+- Added auto update. - ([2dcb4ae](https://github.com/DroidWorksStudio/EasyLauncher/commit/2dcb4ae4b8dacb229ae4664470cbb3b08d8348b4))
 - Fixed settings location to click. - ([c5e9117](https://github.com/DroidWorksStudio/EasyLauncher/commit/c5e91179deedceee9be795f81552a5d141448ec5))
-
-### Dependency Updates:
-
-- Bump androidx.biometric:biometric-ktx  - ([cb98844](https://github.com/DroidWorksStudio/EasyLauncher/commit/cb988448570359084c9bf9c011fd19c6ec88557e))
-- Bump androidx.biometric:biometric-ktx  - ([cb98844](https://github.com/DroidWorksStudio/EasyLauncher/commit/cb988448570359084c9bf9c011fd19c6ec88557e))
-- Bump agp from 8.4.1 to 8.4.2 - ([dee52c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/dee52c1a14106a1a072f20e9bc0d7e150d6770f5))
-- Bump agp from 8.4.1 to 8.4.2 - ([dee52c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/dee52c1a14106a1a072f20e9bc0d7e150d6770f5))
-- Bump agp from 8.4.1 to 8.4.2 - ([dee52c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/dee52c1a14106a1a072f20e9bc0d7e150d6770f5))
 
 ### Housekeeping:
 
-- Removed unneeded imports - ([d0c3b2d](https://github.com/DroidWorksStudio/EasyLauncher/commit/d0c3b2df97a2797e079eae60ebeb10f44d7f79d1))
+- Removed unneeded imports - ([5066d2b](https://github.com/DroidWorksStudio/EasyLauncher/commit/5066d2b3598e2ff0a4db9a3618dd157134659839))
 
 ### Language Support:
 
