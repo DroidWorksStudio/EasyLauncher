@@ -268,10 +268,12 @@ class WidgetFragment : Fragment(),
                 val isCharging = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1)
                 val health = intent.getIntExtra(BatteryManager.EXTRA_HEALTH, BatteryManager.BATTERY_HEALTH_UNKNOWN)
                 val count = intent.getIntExtra(BatteryManager.EXTRA_CYCLE_COUNT, 0)
-                val current = batteryManager.getIntProperty(BatteryManager.BATTERY_PROPERTY_CURRENT_NOW)
+                val currentMicroAmps = batteryManager.getIntProperty(BatteryManager.BATTERY_PROPERTY_CURRENT_NOW)
+                val current = (currentMicroAmps / 1000.0)
                 val voltage = intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE, 0)
+                val voltageVolts = (voltage / 1.0)
                 val temperature = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0)
-                val temperatureCelsius = temperature / 10.0
+                val temperatureCelsius = (temperature / 10.0)
 
                 val voltageScale = getString(R.string.widget_mv)
                 val currentScale = getString(R.string.widget_ma)
@@ -296,7 +298,7 @@ class WidgetFragment : Fragment(),
                 binding.batteryCount.text = getString(R.string.widgets_battery_count, count)
                 binding.chargingStatus.text = getString(R.string.widgets_battery_status, chargingStatusText)
                 binding.batteryHealth.text = getString(R.string.widgets_battery_health, healthStatus)
-                binding.batteryVoltage.text = getString(R.string.widgets_battery_voltage, voltage, voltageScale)
+                binding.batteryVoltage.text = getString(R.string.widgets_battery_voltage, voltageVolts, voltageScale)
                 binding.batteryCurrent.text = getString(R.string.widgets_battery_current, current, currentScale)
                 binding.batteryTemperature.text = getString(R.string.widgets_battery_temperature, temperatureCelsius, temperatureScale)
             }
