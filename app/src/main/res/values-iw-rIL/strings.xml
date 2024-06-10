@@ -573,10 +573,10 @@
     <string name="search_swisscow">SwissCows</string>
     <string name="widgets_battery_level">רמת סוללה: %d%%</string>
     <string name="widgets_battery_count">ספירת טעינת סוללה: %1$d</string>
-    <string name="widgets_battery_current">זרם סוללה: %1$d %2$s</string>
+    <string name="widgets_battery_current">Battery Current : %1$.2f %2$s</string>
     <string name="widgets_battery_status">מצב טעינה: %1$s</string>
     <string name="widgets_battery_health">בריאות הסוללה: %1$s</string>
-    <string name="widgets_battery_voltage">מתח סוללה: %1$d %2$s</string>
+    <string name="widgets_battery_voltage">Battery Voltage : %1$.2f %2$s</string>
     <string name="widgets_battery_temperature">טמפרטורת סוללה: %1$.2f %2$s</string>
     <string name="widgets_settings_display_weather">ווידג\'ט מזג אוויר</string>
     <string name="widgets_settings_display_battery">יישומון סוללה</string>
