@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
+
+### Bug Fixes:
+
+- Fixed the battery current and voltage numbers. - ([e0256f8](https://github.com/DroidWorksStudio/EasyLauncher/commit/e0256f823c29f30b9654f167a5190851b97c42e6))
+
 ## [0.1.4](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.4) - (10, June 2024)
 
 ### Implemented Enhancements:
