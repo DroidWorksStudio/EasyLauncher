@@ -573,10 +573,10 @@
     <string name="search_swisscow">SwissCows</string>
     <string name="widgets_battery_level">Úroveň nabitia batérie: %d%%</string>
     <string name="widgets_battery_count">Počet nabití batérie: %1$d</string>
-    <string name="widgets_battery_current">Prúd batérie: %1$d %2$s</string>
+    <string name="widgets_battery_current">Prúd batérie: %1$.2f %2$s</string>
     <string name="widgets_battery_status">Stav nabíjania: %1$s</string>
     <string name="widgets_battery_health">Stav batérie: %1$s</string>
-    <string name="widgets_battery_voltage">Napätie batérie: %1$d %2$s</string>
+    <string name="widgets_battery_voltage">Napätie batérie: %1$.2f %2$s</string>
     <string name="widgets_battery_temperature">Teplota batérie: %1$.2f %2$s</string>
     <string name="widgets_settings_display_weather">Widget počasia</string>
     <string name="widgets_settings_display_battery">Widget batérie</string>

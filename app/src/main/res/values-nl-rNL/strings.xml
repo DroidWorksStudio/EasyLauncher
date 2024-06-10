@@ -573,10 +573,10 @@
     <string name="search_swisscow">Zwitserse koeien</string>
     <string name="widgets_battery_level">Batterijniveau: %d%%</string>
     <string name="widgets_battery_count">Aantal batterijladingen: %1$d</string>
-    <string name="widgets_battery_current">Batterijstroom: %1$d %2$s</string>
+    <string name="widgets_battery_current">Batterijstroom: %1$.2f %2$s</string>
     <string name="widgets_battery_status">Oplaadstatus: %1$s</string>
     <string name="widgets_battery_health">Batterijstatus: %1$s</string>
-    <string name="widgets_battery_voltage">Batterijspanning: %1$d %2$s</string>
+    <string name="widgets_battery_voltage">Batterijspanning: %1$.2f %2$s</string>
     <string name="widgets_battery_temperature">Batterijtemperatuur: %1$.2f %2$s</string>
     <string name="widgets_settings_display_weather">Weerwidget</string>
     <string name="widgets_settings_display_battery">Batterijwidget</string>
