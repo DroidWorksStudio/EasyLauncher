@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed settings location to click. - ([c5e9117](https://github.com/DroidWorksStudio/EasyLauncher/commit/c5e91179deedceee9be795f81552a5d141448ec5))
 
+### Refactoring:
+
+- Refactored the settings for widgets. - ([91d34ae](https://github.com/DroidWorksStudio/EasyLauncher/commit/91d34ae6b37a9efc51eda98d6d0351b2c9ce6a50))
+
 ## [0.1.3](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.3) - (09, June 2024)
 
 ### Implemented Enhancements:
