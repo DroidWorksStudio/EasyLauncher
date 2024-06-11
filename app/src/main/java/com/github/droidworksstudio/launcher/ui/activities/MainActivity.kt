@@ -20,7 +20,6 @@ import android.os.Environment
 import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
@@ -337,8 +336,6 @@ class MainActivity : AppCompatActivity(), LocationListener {
                     val latestVersion = tagName.replace("v", "")
                     val assets = jsonObject.getJSONArray("assets")
                     val apkUrl = (assets.get(1) as JSONObject).getString("browser_download_url")
-
-                    Log.d("testingIssues", "$latestVersion > $currentVersion")
 
                     if (latestVersion > currentVersion) {
                         val sharedPreferences = getSharedPreferences("update_prefs", Context.MODE_PRIVATE)

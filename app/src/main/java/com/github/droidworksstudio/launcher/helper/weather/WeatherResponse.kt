@@ -2,6 +2,7 @@ package com.github.droidworksstudio.launcher.helper.weather
 
 data class WeatherResponse(
     val name: String,
+    val dt: Long,
     val main: Main,
     val wind: Wind,
     val sys: Sys,
@@ -22,13 +23,13 @@ data class Main(
     val humidity: Int
 )
 
-data class Weather(
-    val description: String,
-    val id: Int
-)
-
 data class Sys(
     val country: String,
     val sunrise: Int,
     val sunset: Int
+)
+
+data class Weather(
+    val description: String,
+    val id: Int
 )

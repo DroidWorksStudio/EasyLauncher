@@ -46,7 +46,6 @@ import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 import javax.inject.Inject
-import kotlin.math.absoluteValue
 
 
 @AndroidEntryPoint
@@ -127,7 +126,6 @@ class WidgetFragment : Fragment(),
             context.getSharedPreferences(Constants.WEATHER_PREFS, Context.MODE_PRIVATE)
         val latitude = sharedPreferences.getFloat(Constants.LATITUDE, 0f)
         val longitude = sharedPreferences.getFloat(Constants.LONGITUDE, 0f)
-        val timestamp = convertTimestampToReadableDate(sharedPreferences.getLong("cachedDataTimestamp", 0))
 
         // Pre-fetch preferences
         val showWeatherWidget = preferenceHelper.showWeatherWidget
@@ -162,6 +160,7 @@ class WidgetFragment : Fragment(),
                 Log.d("weatherResponse", "$weatherResponse")
 
                 withContext(Dispatchers.Main) {
+                    val timestamp = convertTimestampToReadableDate(weatherResponse.dt)
                     binding.apply {
                         weatherCity.text = getString(R.string.widget_weather_location, weatherResponse.name, weatherResponse.sys.country)
                         weatherTemperature.text = getString(R.string.widget_weather_temp, weatherResponse.main.temp, temperatureScale)
@@ -230,10 +229,12 @@ class WidgetFragment : Fragment(),
     }
 
     private fun convertTimestampToReadableDate(timestamp: Long): String {
-        val date = Date(timestamp)
+        // Multiply by 1000 to convert seconds to milliseconds if the timestamp is in seconds
+        val date = Date(timestamp * 1000)
         val format = SimpleDateFormat("hh:mm aa", Locale.getDefault())
         return format.format(date)
     }
+
 
     private fun setupBatteryWidget() {
         lifecycleScope.launch {
