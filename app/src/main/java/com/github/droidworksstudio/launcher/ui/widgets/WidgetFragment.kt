@@ -18,7 +18,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
@@ -260,7 +259,6 @@ class WidgetFragment : Fragment(),
     }
 
     private val batteryReceiver = object : BroadcastReceiver() {
-        @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
         override fun onReceive(context: Context?, intent: Intent?) {
             val batteryManager = requireContext().getSystemService(Context.BATTERY_SERVICE) as BatteryManager
             if (intent?.action == Intent.ACTION_BATTERY_CHANGED) {
@@ -268,7 +266,11 @@ class WidgetFragment : Fragment(),
                 val scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1)
                 val isCharging = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1)
                 val health = intent.getIntExtra(BatteryManager.EXTRA_HEALTH, BatteryManager.BATTERY_HEALTH_UNKNOWN)
-                val count = intent.getIntExtra(BatteryManager.EXTRA_CYCLE_COUNT, 0)
+                val count = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                    intent.getIntExtra(BatteryManager.EXTRA_CYCLE_COUNT, 0)
+                } else {
+                    0
+                }
                 val currentMicroAmps = batteryManager.getIntProperty(BatteryManager.BATTERY_PROPERTY_CURRENT_NOW)
                 val current = (currentMicroAmps / 1000.0)
                 val voltage = intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE, 0)
