@@ -37,7 +37,6 @@ android {
                 "proguard-rules.pro"
             )
             resValue("string", "app_name", "Easy Launcher (Debug)")
-//            resValue("string", "settings_backups_file", "autoBackup.debug.ini")
         }
 
         getByName("release") {
@@ -48,7 +47,6 @@ android {
                 "proguard-rules.pro"
             )
             resValue("string", "app_name", "Easy Launcher")
-//            resValue("string", "settings_backups_file", "autoBackup.ini")
         }
     }
 
