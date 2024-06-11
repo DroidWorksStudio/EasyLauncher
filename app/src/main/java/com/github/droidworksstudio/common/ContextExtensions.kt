@@ -22,7 +22,6 @@ import android.provider.CalendarContract
 import android.provider.Settings
 import android.util.DisplayMetrics
 import android.util.Log
-import android.util.Xml
 import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
@@ -43,12 +42,9 @@ import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserFactory
-import org.xmlpull.v1.XmlSerializer
 import java.io.File
 import java.io.FileInputStream
-import java.io.FileOutputStream
 import java.io.IOException
-import java.io.OutputStreamWriter
 import java.util.Calendar
 import java.util.Date
 import kotlin.math.pow
