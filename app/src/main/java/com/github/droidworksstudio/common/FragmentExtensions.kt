@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.github.droidworksstudio.launcher.ui.activities.MainActivity
 
 fun Fragment.showKeyboard() {
     val view = view?.findFocus() ?: return
@@ -30,11 +31,7 @@ fun Fragment.showShortToast(message: String) {
 }
 
 fun Fragment.restartApp() {
-    val packageManager = requireContext().packageManager
-    val intent = packageManager.getLaunchIntentForPackage(requireContext().packageName)
-    intent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-    if (intent != null) {
-        startActivity(intent)
-    }
-    requireActivity().finish()
+    val intent = Intent(requireContext(), MainActivity::class.java)
+    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+    requireContext().startActivity(intent)
 }

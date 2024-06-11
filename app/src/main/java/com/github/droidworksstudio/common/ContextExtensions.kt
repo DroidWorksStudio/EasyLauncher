@@ -22,6 +22,7 @@ import android.provider.CalendarContract
 import android.provider.Settings
 import android.util.DisplayMetrics
 import android.util.Log
+import android.util.Xml
 import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
@@ -40,8 +41,14 @@ import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
+import org.xmlpull.v1.XmlPullParser
+import org.xmlpull.v1.XmlPullParserFactory
+import org.xmlpull.v1.XmlSerializer
 import java.io.File
+import java.io.FileInputStream
+import java.io.FileOutputStream
 import java.io.IOException
+import java.io.OutputStreamWriter
 import java.util.Calendar
 import java.util.Date
 import kotlin.math.pow
@@ -340,92 +347,144 @@ fun Context.isWorkProfileEnabled(): Boolean {
     }
 }
 
-fun Context.backupSharedPreferences(backupFileName: String) {
-    val sharedPreferences: SharedPreferences =
-        this.getSharedPreferences(Constants.PREFS_FILENAME, Context.MODE_PRIVATE)
-    val allPrefs = sharedPreferences.all
-
+fun Context.backupSharedPreferences(backupFileNames: Array<String>) {
     // Check if external storage is writable
     if (!isExternalStorageWritable()) {
         showLongToast("External storage is not writable.")
         return
     }
 
-    val backupDir = ContextCompat.getExternalFilesDirs(this, null)
-    if (backupDir.isEmpty()) {
-        showLongToast("No external storage directories found.")
-        return
+    val downloadDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+    val backupDir = File(downloadDir, Constants.PACKAGE_NAME)
+
+    // Ensure the directory exists, create it if necessary
+    if (!backupDir.exists()) {
+        backupDir.mkdirs()
     }
 
-    val backupFile = File(backupDir[0], backupFileName)
+    for (backupFileName in backupFileNames) {
+        val sharedPreferences: SharedPreferences =
+            this.getSharedPreferences(backupFileName, Context.MODE_PRIVATE)
+        val allPrefs = sharedPreferences.all
 
-    try {
-        backupFile.bufferedWriter().use { writer ->
-            for ((key, value) in allPrefs) {
-                if (value != null) {
-                    val line = when (value) {
-                        is Boolean, is Int, is Float, is Long, is String -> "$key=$value\n"
-                        is Set<*> -> "$key=${value.joinToString(",")}\n"
-                        else -> null
-                    }
-                    line?.let {
-                        writer.write(it)
+        val backupFile = File(backupDir, "$backupFileName.xml")
+
+        try {
+            backupFile.bufferedWriter().use { writer ->
+                writer.write("<?xml version='1.0' encoding='utf-8' standalone='yes' ?>\n")
+                writer.write("<map>\n")
+
+                // Loop through all preferences
+                for ((key, value) in allPrefs) {
+                    if (value != null) {
+                        val valueString = value.toString().replace("'", "&apos;")
+                        val line = when (value) {
+                            is Boolean, is Int, is Float, is Long, is String -> "\t<${value::class.simpleName!!.lowercase()} name='$key' value='$valueString' />\n"
+                            else -> null
+                        }
+                        line?.let {
+                            writer.write(it)
+                        }
                     }
                 }
+
+                writer.write("</map>")
             }
+            showLongToast("Backup for $backupFileName completed successfully.")
+        } catch (e: IOException) {
+            e.printStackTrace()
+            showLongToast("Failed to backup SharedPreferences $backupFileName: ${e.message}")
         }
-        showLongToast("Backup completed successfully.")
-    } catch (e: IOException) {
-        e.printStackTrace()
-        showLongToast("Failed to backup SharedPreferences: ${e.message}")
     }
 }
+
 
 private fun isExternalStorageWritable(): Boolean {
     return Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED
 }
 
-fun Context.restoreSharedPreferences(backupFileName: String) {
-    val sharedPreferences: SharedPreferences =
-        this.getSharedPreferences(Constants.PREFS_FILENAME, Context.MODE_PRIVATE)
-    val editor = sharedPreferences.edit()
-
+fun Context.restoreSharedPreferences(backupFileNames: Array<String>) {
     // Check if external storage is readable
     if (!isExternalStorageReadable()) {
         showLongToast("External storage is not readable.")
         return
     }
 
-    val backupDir = getExternalFilesDir(null)
-    val backupFile = File(backupDir, backupFileName)
-    Log.d("backupFile", "$backupFile")
+    val downloadDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+    val backupDir = File(downloadDir, Constants.PACKAGE_NAME)
 
-    if (backupFile.exists()) {
-        try {
-            backupFile.forEachLine { line ->
-                val (key, value) = line.split("=", limit = 2)
-                when {
-                    value.toBooleanStrictOrNull() != null -> editor.putBoolean(
-                        key,
-                        value.toBoolean()
-                    )
+    for (backupFileName in backupFileNames) {
+        val backupFile = File(backupDir, "$backupFileName.xml")
 
-                    value.toIntOrNull() != null -> editor.putInt(key, value.toInt())
-                    value.toFloatOrNull() != null -> editor.putFloat(key, value.toFloat())
-                    value.toLongOrNull() != null -> editor.putLong(key, value.toLong())
-                    value.contains(",") -> editor.putStringSet(key, value.split(",").toSet())
-                    else -> editor.putString(key, value)
+        if (backupFile.exists()) {
+            try {
+                FileInputStream(backupFile).use { fileInputStream ->
+                    val factory = XmlPullParserFactory.newInstance()
+                    factory.isNamespaceAware = true
+                    val xpp = factory.newPullParser()
+                    xpp.setInput(fileInputStream, null)
+
+                    var eventType = xpp.eventType
+                    var key: String? = null
+                    var value: Any? = null
+
+                    while (eventType != XmlPullParser.END_DOCUMENT) {
+                        when (eventType) {
+                            XmlPullParser.START_TAG -> {
+                                when (xpp.name) {
+                                    "boolean", "int", "float", "long", "string" -> {
+                                        key = xpp.getAttributeValue(null, "name")
+                                        val valueString = xpp.getAttributeValue(null, "value")
+                                        value = when (xpp.name) {
+                                            "boolean" -> valueString.toBoolean()
+                                            "int" -> valueString.toInt()
+                                            "float" -> valueString.toFloat()
+                                            "long" -> valueString.toLong()
+                                            else -> valueString
+                                        }
+                                    }
+                                }
+                            }
+
+                            XmlPullParser.END_TAG -> {
+                                when (xpp.name) {
+                                    "boolean", "int", "float", "long", "string" -> {
+                                        if (key != null && value != null) {
+                                            saveToSharedPreferences(backupFileName, key, value)
+                                            key = null
+                                            value = null
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        eventType = xpp.next()
+                    }
                 }
+                showLongToast("Restore for $backupFileName completed successfully.")
+            } catch (e: Exception) {
+                Log.e("Exception", e.toString())
+                showLongToast("Failed to restore SharedPreferences $backupFileName: ${e.message}")
             }
-            editor.apply()
-            showLongToast("Restore completed successfully.")
-        } catch (e: IOException) {
-            e.printStackTrace()
-            showLongToast("Failed to restore SharedPreferences: ${e.message}")
+        } else {
+            showLongToast("Backup file for $backupFileName does not exist.")
         }
-    } else {
-        showLongToast("Backup file does not exist.")
     }
+}
+
+private fun Context.saveToSharedPreferences(prefsFileName: String, key: String, value: Any) {
+    val sharedPreferences: SharedPreferences = this.getSharedPreferences(prefsFileName, Context.MODE_PRIVATE)
+    val editor = sharedPreferences.edit()
+
+    when (value) {
+        is Boolean -> editor.putBoolean(key, value)
+        is Int -> editor.putInt(key, value)
+        is Float -> editor.putFloat(key, value)
+        is Long -> editor.putLong(key, value)
+        is String -> editor.putString(key, value)
+    }
+
+    editor.apply()
 }
 
 private fun isExternalStorageReadable(): Boolean {

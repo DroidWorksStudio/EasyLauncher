@@ -75,6 +75,7 @@ object Constants {
     const val APP_GOOGLE_PLAY_STORE = "market://search?c=apps&q"
 
     const val REQUEST_INSTALL_PERMISSION = 123
+    const val REQUEST_LOCATION_PERMISSION_CODE = 246
 
     const val TRIPLE_TAP_DELAY_MS = 300
     const val LONG_PRESS_DELAY_MS = 500

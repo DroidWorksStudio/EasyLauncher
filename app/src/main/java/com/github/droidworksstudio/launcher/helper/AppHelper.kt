@@ -194,11 +194,13 @@ class AppHelper @Inject constructor() {
     }
 
     fun backupSharedPreferences(context: Context) {
-        context.backupSharedPreferences(context.getString(R.string.settings_backups_file))
+        val backupFileNames = arrayOf(Constants.PREFS_FILENAME, Constants.WEATHER_PREFS)
+        context.backupSharedPreferences(backupFileNames)
     }
 
     fun restoreSharedPreferences(context: Context) {
-        context.restoreSharedPreferences(context.getString(R.string.settings_backups_file))
+        val backupFileNames = arrayOf(Constants.PREFS_FILENAME, Constants.WEATHER_PREFS)
+        context.restoreSharedPreferences(backupFileNames)
     }
 
     fun getActionType(actionType: Constants.Swipe): NavOptions {
