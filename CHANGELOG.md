@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Made backup system more advanced. - ([6533a3c](https://github.com/DroidWorksStudio/EasyLauncher/commit/6533a3c0bebca63396f2ccc223cecc34200c384d))
 - Removed the need for forcing API version - ([1be632d](https://github.com/DroidWorksStudio/EasyLauncher/commit/1be632d82363b2da0d41fb041e3bb64826517843))
 
 ### Releases:
