@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Fixed the last updated time. - ([806ea26](https://github.com/DroidWorksStudio/EasyLauncher/commit/806ea2616b33a81e37e1a1d5582cc5008b87e348))
 - Fixed the battery current and voltage numbers. - ([e0256f8](https://github.com/DroidWorksStudio/EasyLauncher/commit/e0256f823c29f30b9654f167a5190851b97c42e6))
 
+### Housekeeping:
+
+- Cleared UnNeeded resValue - ([3b883d3](https://github.com/DroidWorksStudio/EasyLauncher/commit/3b883d360e75ade568bf6c270dc767bd692177de))
+
 ### Language Support:
 
 - Updated Language Files. ([#68](https://github.com/DroidWorksStudio/EasyLauncher/issues/68)) - ([bf48342](https://github.com/DroidWorksStudio/EasyLauncher/commit/bf48342ae32ac1f8feb84b9cf0430e090ed5f107))
