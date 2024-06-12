@@ -240,12 +240,12 @@ class SettingsFragment : Fragment(),
         return object : OnSwipeTouchListener(context) {
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                findNavController().popBackStack()
+                findNavController().navigateUp()
             }
 
             override fun onSwipeRight() {
                 super.onSwipeRight()
-                findNavController().popBackStack()
+                findNavController().navigateUp()
             }
 
         }

@@ -369,12 +369,12 @@ class WidgetFragment : Fragment(),
 
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                findNavController().popBackStack()
+                findNavController().navigateUp()
             }
 
             override fun onSwipeRight() {
                 super.onSwipeRight()
-                findNavController().popBackStack()
+                findNavController().navigateUp()
             }
         }
     }

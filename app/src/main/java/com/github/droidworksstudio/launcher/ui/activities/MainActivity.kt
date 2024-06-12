@@ -35,7 +35,7 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.popBackStack
+import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.common.showLongToast
@@ -275,10 +275,10 @@ class MainActivity : AppCompatActivity(), LocationListener {
         }
     }
 
-    override fun onSupportpopBackStack(): Boolean {
+    override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.popBackStack(appBarConfiguration)
-                || super.onSupportpopBackStack()
+        return navController.navigateUp(appBarConfiguration)
+                || super.onSupportNavigateUp()
     }
 
     @RequiresApi(Build.VERSION_CODES.R)
