@@ -4,8 +4,13 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added sunset and sunrise to weather widget. - ([63465c0](https://github.com/DroidWorksStudio/EasyLauncher/commit/63465c088ed1bf530b6861fef6f5e816004f101a))
+
 ### Bug Fixes:
 
+- Fixed the way the app is navigated. - ([ec3a88d](https://github.com/DroidWorksStudio/EasyLauncher/commit/ec3a88dc5790fe66809664496c10c23ada96ded5))
 - Fixed the last updated time. - ([806ea26](https://github.com/DroidWorksStudio/EasyLauncher/commit/806ea2616b33a81e37e1a1d5582cc5008b87e348))
 - Fixed the battery current and voltage numbers. - ([e0256f8](https://github.com/DroidWorksStudio/EasyLauncher/commit/e0256f823c29f30b9654f167a5190851b97c42e6))
 
