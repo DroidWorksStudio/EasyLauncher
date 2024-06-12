@@ -35,7 +35,7 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.popBackStack
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.common.showLongToast
@@ -275,10 +275,10 @@ class MainActivity : AppCompatActivity(), LocationListener {
         }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
+    override fun onSupportpopBackStack(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
+        return navController.popBackStack(appBarConfiguration)
+                || super.onSupportpopBackStack()
     }
 
     @RequiresApi(Build.VERSION_CODES.R)
@@ -310,7 +310,7 @@ class MainActivity : AppCompatActivity(), LocationListener {
     private fun backToHomeScreen() {
         navController = findNavController(R.id.nav_host_fragment_content_main)
         if (navController.currentDestination?.id != R.id.HomeFragment)
-            navController.popBackStack(R.id.HomeFragment, false)
+            navController.navigate(R.id.HomeFragment)
     }
 
     private fun checkForUpdates() {

@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.launcher.ui.numberpicker
+package com.github.droidworksstudio.launcher.adapter.numberpicker
 
 import android.view.LayoutInflater
 import android.view.View

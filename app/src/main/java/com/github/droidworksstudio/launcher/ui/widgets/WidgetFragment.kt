@@ -144,6 +144,11 @@ class WidgetFragment : Fragment(),
                 // Prepare UI elements concurrently
                 withContext(Dispatchers.Main) {
                     binding.apply {
+                        val weatherWidgetDrawable = weatherRoot.background
+                        if (weatherWidgetDrawable is GradientDrawable) {
+                            weatherWidgetDrawable.setColor(widgetBackgroundColor)
+                        }
+
                         weatherCity.setTextColor(widgetTextColor)
                         weatherTemperature.setTextColor(widgetTextColor)
                         weatherDescription.setTextColor(widgetTextColor)
@@ -151,6 +156,9 @@ class WidgetFragment : Fragment(),
                         weatherHumidity.setTextColor(widgetTextColor)
                         weatherRefresh.setTextColor(widgetTextColor)
                         weatherLastRun.setTextColor(widgetTextColor)
+
+                        sunsetText.setTextColor(widgetTextColor)
+                        sunriseText.setTextColor(widgetTextColor)
                         weatherRefresh.typeface = ResourcesCompat.getFont(requireActivity(), R.font.weather)
                     }
                 }
@@ -173,10 +181,21 @@ class WidgetFragment : Fragment(),
                         weatherIcon.setImageBitmap(weatherIconBitmap) // Ensure this matches your ImageView ID
                         weatherIcon.setColorFilter(widgetTextColor)
 
-                        val weatherWidgetDrawable = weatherRoot.background
-                        if (weatherWidgetDrawable is GradientDrawable) {
-                            weatherWidgetDrawable.setColor(widgetBackgroundColor)
-                        }
+                        val sunriseIconBitmap = createSunIcon(context, getString(R.string.sunrise_icon))
+                        sunriseIcon.setImageBitmap(sunriseIconBitmap)
+                        sunriseIcon.setColorFilter(widgetTextColor)
+
+                        val sunsetIconBitmap = createSunIcon(context, getString(R.string.sunset_icon))
+                        sunsetIcon.setImageBitmap(sunsetIconBitmap)
+                        sunsetIcon.setColorFilter(widgetTextColor)
+
+                        val sunriseTime = convertTimestampToReadableDate(weatherResponse.sys.sunrise)
+                        sunriseText.text = getString(R.string.widget_sunrise_time, sunriseTime)
+
+                        val sunsetTime = convertTimestampToReadableDate(weatherResponse.sys.sunset)
+                        sunsetText.text = getString(R.string.widget_sunset_time, sunsetTime)
+
+
                         weatherRoot.visibility = View.VISIBLE
                     }
                 }
@@ -197,9 +216,25 @@ class WidgetFragment : Fragment(),
         paint.typeface = weatherFont
         paint.style = Paint.Style.FILL
         paint.color = ContextCompat.getColor(context, R.color.white)
-        paint.textSize = 180f
+        paint.textSize = 200f
         paint.textAlign = Paint.Align.CENTER
         canvas.drawText(text, 128f, 200f, paint)
+        return bitmap
+    }
+
+    private fun createSunIcon(context: Context, text: String): Bitmap {
+        val bitmap = Bitmap.createBitmap(128, 128, Bitmap.Config.ARGB_8888)
+        val canvas = Canvas(bitmap)
+        val paint = Paint()
+        val weatherFont = ResourcesCompat.getFont(requireActivity(), R.font.weather)
+        paint.isAntiAlias = true
+        paint.isSubpixelText = true
+        paint.typeface = weatherFont
+        paint.style = Paint.Style.FILL
+        paint.color = ContextCompat.getColor(context, R.color.white)
+        paint.textSize = 96f
+        paint.textAlign = Paint.Align.CENTER
+        canvas.drawText(text, 64f, 96f, paint)
         return bitmap
     }
 
@@ -239,6 +274,11 @@ class WidgetFragment : Fragment(),
         lifecycleScope.launch {
             if (!preferenceHelper.showBatteryWidget) return@launch
             try {
+                val weatherBatteryDrawable = binding.batteryRoot.background
+                if (weatherBatteryDrawable is GradientDrawable) {
+                    weatherBatteryDrawable.setColor(preferenceHelper.widgetBackgroundColor)
+                }
+
                 binding.batteryLevel.setTextColor(preferenceHelper.widgetTextColor)
                 binding.batteryCount.setTextColor(preferenceHelper.widgetTextColor)
                 binding.chargingStatus.setTextColor(preferenceHelper.widgetTextColor)
@@ -247,10 +287,6 @@ class WidgetFragment : Fragment(),
                 binding.batteryVoltage.setTextColor(preferenceHelper.widgetTextColor)
                 binding.batteryTemperature.setTextColor(preferenceHelper.widgetTextColor)
 
-                val weatherBatteryDrawable = binding.batteryRoot.background
-                if (weatherBatteryDrawable is GradientDrawable) {
-                    weatherBatteryDrawable.setColor(preferenceHelper.widgetBackgroundColor)
-                }
                 binding.batteryRoot.visibility = View.VISIBLE
             } catch (e: Exception) {
                 Log.e("Battery", "Failed to fetch battery data: ${e.message}")

@@ -12,6 +12,9 @@
     <string name="widget_weather_temp" translatable="false">%1$.0f %2$s</string>
     <string name="widget_weather_description" translatable="false">%1$s</string>
 
+    <string name="widget_sunset_time" translatable="false">%1$s</string>
+    <string name="widget_sunrise_time" translatable="false">%1$s</string>
+
     <string name="widget_weather_mps" translatable="false">m/s</string>
     <string name="widget_weather_mph" translatable="false">mil/h</string>
 

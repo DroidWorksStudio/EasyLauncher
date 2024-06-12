@@ -91,8 +91,8 @@
 
                 </LinearLayout>
 
-
                 <LinearLayout
+                    android:id="@+id/weather_info"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/topHeaderWeather"
@@ -159,6 +159,69 @@
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
+
+                <!-- Horizontal LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/weather_info"
+                    android:layout_marginTop="22dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!-- Left Vertical LinearLayout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/sunrise_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/widget_weather_description" />
+
+                        <!-- TextView -->
+                        <TextView
+                            android:id="@+id/sunrise_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/sunrise_icon"
+                            android:gravity="center_horizontal" />
+                    </LinearLayout>
+
+                    <!-- Right Vertical LinearLayout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <!-- ImageView -->
+                        <ImageView
+                            android:id="@+id/sunset_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/widget_weather_description" />
+
+                        <!-- TextView -->
+                        <TextView
+                            android:id="@+id/sunset_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/sunset_icon"
+                            android:gravity="center_horizontal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </RelativeLayout>
 
             <RelativeLayout
