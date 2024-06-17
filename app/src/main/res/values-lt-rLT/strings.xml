@@ -85,7 +85,7 @@
     <string name="settings_actions_show_notifications">Rodyti pranešimus</string>
     <string name="settings_actions_show_app_list">Rodyti programų sąrašą</string>
     <string name="settings_actions_show_favorite_list">Rodyti mėgstamiausių sąrašą</string>
-    <string name="settings_actions_show_hidden_list">Show Hidden List</string>
+    <string name="settings_actions_show_hidden_list">Rodyti paslėptą sąrašą</string>
     <string name="settings_actions_open_quick_settings">Atidarykite sparčiuosius nustatymus</string>
     <string name="settings_actions_show_recents">Rodyti naujausius</string>
     <string name="settings_actions_show_widgets">Rodyti valdiklius</string>
