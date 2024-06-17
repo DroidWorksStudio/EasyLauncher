@@ -20,6 +20,9 @@
             android:id="@+id/action_HomeFragment_to_FavoriteFragment"
             app:destination="@id/FavoriteFragment" />
         <action
+            android:id="@+id/action_HomeFragment_to_HiddenFragment"
+            app:destination="@id/HiddenFragment" />
+        <action
             android:id="@+id/action_HomeFragment_to_WidgetsFragment"
             app:destination="@id/WidgetsFragment" />
     </fragment>
@@ -35,6 +38,9 @@
         <action
             android:id="@+id/action_SettingsFragment_to_HiddenFragment"
             app:destination="@id/HiddenFragment" />
+        <action
+            android:id="@+id/action_SettingsFragment_to_WidgetsSettingsFragment"
+            app:destination="@id/WidgetsSettingsFragment" />
     </fragment>
 
     <fragment

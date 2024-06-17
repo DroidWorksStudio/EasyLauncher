@@ -102,6 +102,7 @@
     <string name="settings_actions_show_notifications">Show Notifications</string>
     <string name="settings_actions_show_app_list">Show Apps List</string>
     <string name="settings_actions_show_favorite_list">Show Favorites List</string>
+    <string name="settings_actions_show_hidden_list">Show Hidden List</string>
     <string name="settings_actions_open_quick_settings">Open Quick Settings</string>
     <string name="settings_actions_show_recents">Show Recents</string>
     <string name="settings_actions_show_widgets">Show Widgets</string>

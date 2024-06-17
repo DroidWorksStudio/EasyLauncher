@@ -152,7 +152,7 @@ class DrawFragment : Fragment(),
 
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.mainView.setOnTouchListener(getSwipeGestureListener(context))
         binding.drawAdapter.setOnTouchListener(getSwipeGestureListener(context))
     }
 

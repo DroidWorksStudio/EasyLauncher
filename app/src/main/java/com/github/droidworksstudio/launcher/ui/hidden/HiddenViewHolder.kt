@@ -1,6 +1,7 @@
 package com.github.droidworksstudio.launcher.ui.hidden
 
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -19,11 +20,14 @@ class HiddenViewHolder(
     fun bind(appInfo: AppInfo) {
         binding.apply {
             // Get the current LayoutParams of appFavoriteName
-            val layoutParams = appHiddenName.layoutParams as LinearLayoutCompat.LayoutParams
-
-            // Set the margins
-            layoutParams.topMargin = preferenceHelper.homeAppPadding.toInt()
-            layoutParams.bottomMargin = preferenceHelper.homeAppPadding.toInt()
+            val layoutParams = LinearLayoutCompat.LayoutParams(
+                LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
+                LinearLayoutCompat.LayoutParams.WRAP_CONTENT
+            ).apply {
+                gravity = Gravity.START
+                topMargin = preferenceHelper.homeAppPadding.toInt()
+                bottomMargin = preferenceHelper.homeAppPadding.toInt()
+            }
 
             appHiddenName.layoutParams = layoutParams
             appHiddenName.text = appInfo.appName

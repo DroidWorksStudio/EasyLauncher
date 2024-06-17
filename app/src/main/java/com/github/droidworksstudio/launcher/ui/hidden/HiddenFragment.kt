@@ -98,7 +98,7 @@ class HiddenFragment : Fragment(),
 
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.fragmentContainer.setOnTouchListener(getSwipeGestureListener(context))
         binding.hiddenAdapter.setOnTouchListener(getSwipeGestureListener(context))
     }
 

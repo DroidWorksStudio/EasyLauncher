@@ -364,6 +364,17 @@ class HomeFragment : Fragment(),
                 }
             }
 
+            Constants.Action.ShowHiddenList -> {
+                val actionTypeNavOptions: NavOptions = appHelper.getActionType(actionType)
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(
+                        R.id.action_HomeFragment_to_HiddenFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
+            }
+
             Constants.Action.OpenQuickSettings -> {
                 appHelper.expandQuickSettings(context)
             }

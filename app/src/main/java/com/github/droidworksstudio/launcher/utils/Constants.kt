@@ -113,6 +113,7 @@ object Constants {
         ShowNotification,
         ShowAppList,
         ShowFavoriteList,
+        ShowHiddenList,
         OpenQuickSettings,
         ShowRecents,
         ShowWidgets,
@@ -127,6 +128,7 @@ object Constants {
                 ShowNotification -> context.getString(R.string.settings_actions_show_notifications)
                 ShowAppList -> context.getString(R.string.settings_actions_show_app_list)
                 ShowFavoriteList -> context.getString(R.string.settings_actions_show_favorite_list)
+                ShowHiddenList -> context.getString(R.string.settings_actions_show_hidden_list)
                 OpenQuickSettings -> context.getString(R.string.settings_actions_open_quick_settings)
                 ShowRecents -> context.getString(R.string.settings_actions_show_recents)
                 ShowWidgets -> context.getString(R.string.settings_actions_show_widgets)
