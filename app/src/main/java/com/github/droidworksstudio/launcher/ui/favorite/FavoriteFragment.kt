@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.common.launchApp
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
+import com.github.droidworksstudio.launcher.adapter.favorite.FavoriteAdapter
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentFavoriteBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper

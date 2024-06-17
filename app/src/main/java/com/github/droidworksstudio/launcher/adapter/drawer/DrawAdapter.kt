@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.launcher.ui.drawer
+package com.github.droidworksstudio.launcher.adapter.drawer
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemDrawBinding
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
+import com.github.droidworksstudio.launcher.ui.drawer.DrawViewHolder
 
 class DrawAdapter(
     private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,

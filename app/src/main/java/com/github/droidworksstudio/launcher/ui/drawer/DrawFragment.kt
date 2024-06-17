@@ -24,6 +24,7 @@ import com.github.droidworksstudio.common.searchOnPlayStore
 import com.github.droidworksstudio.common.showKeyboard
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
+import com.github.droidworksstudio.launcher.adapter.drawer.DrawAdapter
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentDrawBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
