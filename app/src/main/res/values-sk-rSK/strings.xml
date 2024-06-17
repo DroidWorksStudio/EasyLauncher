@@ -578,9 +578,9 @@
     <string name="widgets_battery_health">Stav batérie: %1$s</string>
     <string name="widgets_battery_voltage">Napätie batérie: %1$.2f %2$s</string>
     <string name="widgets_battery_temperature">Teplota batérie: %1$.2f %2$s</string>
-    <string name="widgets_settings_show_weather">Weather Widget</string>
-    <string name="widgets_settings_show_weather_sun">Show Sunset &amp; Sunrise</string>
-    <string name="widgets_settings_show_battery">Battery Widget</string>
+    <string name="widgets_settings_show_weather">Widget počasia</string>
+    <string name="widgets_settings_show_weather_sun">Zobraziť západ slnka &amp; východ slnka</string>
+    <string name="widgets_settings_show_battery">Widget batérie</string>
     <string name="widgets_settings_display">Displej</string>
     <string name="widgets_settings_select_order">Vyberte položku Objednávka</string>
     <string name="acra_crash">Zrútiť sa</string>
