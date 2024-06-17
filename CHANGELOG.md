@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the hasInternetPermission stuff to run every time the app runs not just on install. - ([9db3a6c](https://github.com/DroidWorksStudio/EasyLauncher/commit/9db3a6c55d43e39ccaedab5b4521595aaa85d83b))
+
 ### Releases:
 
 - Prepare for version 0.1.6 - ([9dbe1a3](https://github.com/DroidWorksStudio/EasyLauncher/commit/9dbe1a3f91c73d9ccfa71f3d9e745c83cf39ca49))
