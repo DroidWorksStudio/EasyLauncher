@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added a toggle for sun set and sun rise info. - ([0cb3aa6](https://github.com/DroidWorksStudio/EasyLauncher/commit/0cb3aa6729174ebd0778454381d9b59163112a34))
 - Added crash report system. - ([66eb7c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/66eb7c123ec209458f66d1b42774f78ca32fd577))
 
 ### Bug Fixes:
