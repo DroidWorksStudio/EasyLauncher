@@ -85,6 +85,7 @@
     <string name="settings_actions_show_notifications">Zeige Benachrichtigungen</string>
     <string name="settings_actions_show_app_list">Apps-Liste anzeigen</string>
     <string name="settings_actions_show_favorite_list">Favoritenliste anzeigen</string>
+    <string name="settings_actions_show_hidden_list">Show Hidden List</string>
     <string name="settings_actions_open_quick_settings">Schnelleinstellungen öffnen</string>
     <string name="settings_actions_show_recents">Zuletzt verwendetes anzeigen</string>
     <string name="settings_actions_show_widgets">Widgets anzeigen</string>
