@@ -13,6 +13,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed the hasInternetPermission stuff to run every time the app runs not just on install. - ([9db3a6c](https://github.com/DroidWorksStudio/EasyLauncher/commit/9db3a6c55d43e39ccaedab5b4521595aaa85d83b))
 
+### Housekeeping:
+
+- Removed the unneeded Prefs files - ([0430108](https://github.com/DroidWorksStudio/EasyLauncher/commit/043010812c84cc104edeb16a7832a5f84ffb7e95))
+
 ### Language Support:
 
 - Updated Language Files. ([#77](https://github.com/DroidWorksStudio/EasyLauncher/issues/77)) - ([a572872](https://github.com/DroidWorksStudio/EasyLauncher/commit/a5728721ad629796a9232687894eef1a208311dc))
