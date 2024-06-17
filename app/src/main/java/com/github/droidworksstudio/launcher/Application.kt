@@ -1,7 +1,6 @@
 package com.github.droidworksstudio.launcher
 
 import android.app.Application
-import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import dagger.hilt.android.HiltAndroidApp
 import org.acra.ACRA
 import org.acra.ReportField
@@ -13,12 +12,8 @@ import org.acra.ktx.initAcra
 
 @HiltAndroidApp
 class Application : Application() {
-    private lateinit var preferenceHelper: PreferenceHelper
     override fun onCreate() {
         super.onCreate()
-
-        // Initialize prefs here
-        preferenceHelper = PreferenceHelper(this)
 
         val pkgName = getString(R.string.app_name)
         val pkgVersion = this.packageManager.getPackageInfo(
