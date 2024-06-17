@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.launcher.ui.hidden
+package com.github.droidworksstudio.launcher.adapter.hidden
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemHiddenBinding
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
+import com.github.droidworksstudio.launcher.ui.hidden.HiddenViewHolder
 
 class HiddenAdapter(
     private val onAppClickedListener: OnItemClickedListener.OnAppsClickedListener,

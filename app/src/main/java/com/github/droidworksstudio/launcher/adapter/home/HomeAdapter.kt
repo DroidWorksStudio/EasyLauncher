@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.launcher.ui.home
+package com.github.droidworksstudio.launcher.adapter.home
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemHomeBinding
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
+import com.github.droidworksstudio.launcher.ui.home.HomeViewHolder
 import javax.inject.Inject
 
 class HomeAdapter @Inject constructor(

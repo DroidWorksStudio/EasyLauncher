@@ -23,6 +23,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Updated Language Files. ([#77](https://github.com/DroidWorksStudio/EasyLauncher/issues/77)) - ([a572872](https://github.com/DroidWorksStudio/EasyLauncher/commit/a5728721ad629796a9232687894eef1a208311dc))
 - Updated Language Files. ([#76](https://github.com/DroidWorksStudio/EasyLauncher/issues/76)) - ([ccf5964](https://github.com/DroidWorksStudio/EasyLauncher/commit/ccf5964435f1591d5fa6b4da0a56f4c1dee50fd1))
 
+### Refactoring:
+
+- Moved the Adapters to there correct locations. - ([ff990ba](https://github.com/DroidWorksStudio/EasyLauncher/commit/ff990ba7ef100b23c5331485f09be2c8bb3e4ab2))
+
 ### Releases:
 
 - Prepare for version 0.1.6 - ([9dbe1a3](https://github.com/DroidWorksStudio/EasyLauncher/commit/9dbe1a3f91c73d9ccfa71f3d9e745c83cf39ca49))

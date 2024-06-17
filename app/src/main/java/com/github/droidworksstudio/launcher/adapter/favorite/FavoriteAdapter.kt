@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.launcher.ui.favorite
+package com.github.droidworksstudio.launcher.adapter.favorite
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import com.github.droidworksstudio.launcher.databinding.ItemFavoriteBinding
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnItemMoveListener
+import com.github.droidworksstudio.launcher.ui.favorite.FavoriteViewHolder
 
 class FavoriteAdapter(
     private val onAppClickedListener:

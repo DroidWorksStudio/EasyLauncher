@@ -31,6 +31,7 @@ import com.github.droidworksstudio.common.openBatteryManager
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
+import com.github.droidworksstudio.launcher.adapter.home.HomeAdapter
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentHomeBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
