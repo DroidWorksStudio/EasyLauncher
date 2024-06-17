@@ -162,13 +162,15 @@
 
                 <!-- Horizontal LinearLayout -->
                 <LinearLayout
+                    android:id="@+id/weather_sunset_sunrise"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/weather_info"
                     android:layout_marginTop="22dp"
                     android:baselineAligned="false"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <!-- Left Vertical LinearLayout -->
                     <LinearLayout

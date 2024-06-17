@@ -14,6 +14,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsWidgetsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -74,12 +75,31 @@ class SettingsFragment : Fragment(),
     private fun initializeInjectedDependencies() {
         binding.nestScrollView.scrollEventListener = this
 
-        // Set initial values and listeners for switches
-        binding.weatherSwitchCompat.isChecked = preferenceHelper.showWeatherWidget
-        binding.batterySwitchCompat.isChecked = preferenceHelper.showBatteryWidget
+        binding.apply {
+            // Weather stuff here
+            weatherSwitchCompat.isChecked = preferenceHelper.showWeatherWidget
+            weatherSunsetSunriseSwitchCompat.isChecked = preferenceHelper.showWeatherWidgetSunSetRise
 
-        binding.weatherOrderControl.text = preferenceHelper.weatherOrderNumber.toString()
-        binding.batteryOrderControl.text = preferenceHelper.batteryOrderNumber.toString()
+            weatherOrderControl.text = preferenceHelper.weatherOrderNumber.toString()
+
+            if (!context.hasInternetPermission()) {
+                weatherSettings.visibility = View.GONE
+            }
+
+            val weatherVisibility = if (weatherSwitchCompat.isChecked) View.VISIBLE else View.GONE
+            weatherOrderMenu.visibility = weatherVisibility
+            weatherSunsetSunriseMenu.visibility = weatherVisibility
+            selectWeatherWidgetColor.visibility = View.GONE
+
+            // Battery stuff here
+            batterySwitchCompat.isChecked = preferenceHelper.showBatteryWidget
+
+            batteryOrderControl.text = preferenceHelper.batteryOrderNumber.toString()
+
+            val batteryVisibility = if (batterySwitchCompat.isChecked) View.VISIBLE else View.GONE
+            batteryOrderMenu.visibility = batteryVisibility
+            selectBatteryWidgetColor.visibility = View.GONE
+        }
     }
 
     private fun observeClickListener() {
@@ -107,10 +127,25 @@ class SettingsFragment : Fragment(),
     private fun setupSwitchListeners() {
         binding.weatherSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setShowWeatherWidget(isChecked)
+            binding.apply {
+                val weatherVisibility = if (isChecked) View.VISIBLE else View.GONE
+                weatherOrderMenu.visibility = weatherVisibility
+                weatherSunsetSunriseMenu.visibility = weatherVisibility
+                selectWeatherWidgetColor.visibility = View.GONE
+            }
+        }
+
+        binding.weatherSunsetSunriseSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setShowWeatherWidgetSunSetRise(isChecked)
         }
 
         binding.batterySwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setShowBatteryWidget(isChecked)
+            binding.apply {
+                val batteryVisibility = if (isChecked) View.VISIBLE else View.GONE
+                batteryOrderMenu.visibility = batteryVisibility
+                selectBatteryWidgetColor.visibility = View.GONE
+            }
         }
     }
 

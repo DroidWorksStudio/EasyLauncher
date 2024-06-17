@@ -19,6 +19,7 @@ class PreferenceViewModel @Inject constructor(
     val showDailyWordLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showBatteryLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showWeatherWidgetLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    private val showWeatherWidgetSunSetRiseLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showBatteryWidgetLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showAppIconLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val homeAppAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
@@ -94,6 +95,11 @@ class PreferenceViewModel @Inject constructor(
     fun setShowWeatherWidget(showWeather: Boolean) {
         preferenceHelper.showWeatherWidget = showWeather
         showWeatherWidgetLiveData.postValue(preferenceHelper.showWeatherWidget)
+    }
+
+    fun setShowWeatherWidgetSunSetRise(showWeatherSunSetRise: Boolean) {
+        preferenceHelper.showWeatherWidgetSunSetRise = showWeatherSunSetRise
+        showWeatherWidgetSunSetRiseLiveData.postValue(preferenceHelper.showWeatherWidgetSunSetRise)
     }
 
     fun setShowBatteryWidget(showBattery: Boolean) {

@@ -38,6 +38,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.SHOW_WEATHER_WIDGET, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_WEATHER_WIDGET, value).apply()
 
+    var showWeatherWidgetSunSetRise: Boolean
+        get() = prefs.getBoolean(Constants.SHOW_WEATHER_WIDGET_SUN_SET_RISE, true)
+        set(value) = prefs.edit().putBoolean(Constants.SHOW_WEATHER_WIDGET_SUN_SET_RISE, value).apply()
+
     var showBatteryWidget: Boolean
         get() = prefs.getBoolean(Constants.SHOW_BATTERY_WIDGET, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_BATTERY_WIDGET, value).apply()

@@ -279,6 +279,10 @@ class WidgetFragment : Fragment(),
                     weatherBatteryDrawable.setColor(preferenceHelper.widgetBackgroundColor)
                 }
 
+                if (preferenceHelper.showWeatherWidgetSunSetRise) {
+                    binding.weatherSunsetSunrise.visibility = View.VISIBLE
+                }
+
                 binding.batteryLevel.setTextColor(preferenceHelper.widgetTextColor)
                 binding.batteryCount.setTextColor(preferenceHelper.widgetTextColor)
                 binding.chargingStatus.setTextColor(preferenceHelper.widgetTextColor)

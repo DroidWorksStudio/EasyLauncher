@@ -42,6 +42,7 @@
                 style="@style/TextDefaultStyle" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/weather_settings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -51,7 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
-                    android:text="@string/widgets_settings_display_weather"
+                    android:text="@string/widgets_settings_show_weather"
                     android:textSize="@dimen/text_super_large"
                     style="@style/TextDefaultStyle" />
 
@@ -88,6 +89,40 @@
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/weather_sunset_sunrise_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/weather_sunset_sunrise_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/widgets_settings_show_weather_sun"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded"
+                        style="@style/TextDefaultStyle" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/weather_sunset_sunrise_switchCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.7"
+                        android:scaleY="0.8"
+                        android:thumb="@drawable/shape_switch_thumb"
+                        app:track="@drawable/selector_switch"
+                        tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/weather_order_menu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
@@ -145,6 +180,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/battery_settings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -154,7 +190,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
-                    android:text="@string/widgets_settings_display_battery"
+                    android:text="@string/widgets_settings_show_battery"
                     android:textSize="@dimen/text_super_large"
                     style="@style/TextDefaultStyle" />
 
@@ -191,6 +227,7 @@
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/battery_order_menu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
