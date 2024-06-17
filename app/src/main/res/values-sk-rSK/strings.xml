@@ -85,6 +85,7 @@
     <string name="settings_actions_show_notifications">Zobraziť upozornenia</string>
     <string name="settings_actions_show_app_list">Zobraziť zoznam aplikácií</string>
     <string name="settings_actions_show_favorite_list">Zobraziť zoznam obľúbených</string>
+    <string name="settings_actions_show_hidden_list">Show Hidden List</string>
     <string name="settings_actions_open_quick_settings">Otvorte Rýchle nastavenia</string>
     <string name="settings_actions_show_recents">Zobraziť Nedávne</string>
     <string name="settings_actions_show_widgets">Zobraziť miniaplikácie</string>
