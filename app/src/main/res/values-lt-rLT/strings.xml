@@ -582,9 +582,9 @@
     <string name="widgets_settings_display_battery">Baterijos valdiklis</string>
     <string name="widgets_settings_display">Ekranas</string>
     <string name="widgets_settings_select_order">Pasirinkite Užsakyti</string>
-    <string name="acra_crash">Crash</string>
-    <string name="acra_dialog_text">We\'re sorry, but %1$s has encountered an unexpected issue and needs to close. Please help us improve by sending a crash report.\n\n%1$s values your privacy and the data collected is solely used for improving app stability. No personal information is collected. Thank you for your support!</string>
-    <string name="acra_send_report">Send Report</string>
-    <string name="acra_dont_send">Don\'t Send</string>
-    <string name="acra_mail_body">Please describe the issue you encountered:</string>
+    <string name="acra_crash">Avarija</string>
+    <string name="acra_dialog_text">Atsiprašome, bet %1$s susidūrė su netikėta problema ir ją reikia uždaryti. Padėkite mums tobulėti išsiųsdami strigčių ataskaitą.\n\n%1$s vertina jūsų privatumą, o surinkti duomenys naudojami tik programos stabilumui pagerinti. Jokia asmeninė informacija nerenkama. Dėkojame už palaikymą!</string>
+    <string name="acra_send_report">Siųsti ataskaitą</string>
+    <string name="acra_dont_send">Nesiųsti</string>
+    <string name="acra_mail_body">Aprašykite problemą, su kuria susidūrėte:</string>
 </resources>
