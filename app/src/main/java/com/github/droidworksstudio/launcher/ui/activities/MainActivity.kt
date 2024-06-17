@@ -115,11 +115,6 @@ class MainActivity : AppCompatActivity(), LocationListener {
         initializeDependencies()
         setupNavController()
         setupOrientation()
-
-        if (applicationContext.hasInternetPermission()) {
-            checkLocationPermission()
-            checkForUpdates()
-        }
     }
 
     override fun onPause() {
@@ -285,6 +280,10 @@ class MainActivity : AppCompatActivity(), LocationListener {
     override fun onResume() {
         super.onResume()
         backToHomeScreen()
+        if (applicationContext.hasInternetPermission()) {
+            checkLocationPermission()
+            checkForUpdates()
+        }
         setupDataBase()
         observeUI()
     }
