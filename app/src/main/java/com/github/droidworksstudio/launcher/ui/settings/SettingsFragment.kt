@@ -79,7 +79,7 @@ class SettingsFragment : Fragment(),
             packageInfo.versionName
         )
 
-        binding.miscellaneousSearchEngineText.text = preferenceHelper.searchEngines.getString(context)
+        binding.miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.getString(context)
 
         binding.gesturesDoubleTapControl.text = preferenceHelper.doubleTapAction.getString(context)
         binding.gesturesSwipeUpControl.text = preferenceHelper.swipeUpAction.getString(context)
@@ -240,12 +240,12 @@ class SettingsFragment : Fragment(),
         return object : OnSwipeTouchListener(context) {
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                findNavController().popBackStack()
+                findNavController().navigateUp()
             }
 
             override fun onSwipeRight() {
                 super.onSwipeRight()
-                findNavController().popBackStack()
+                findNavController().navigateUp()
             }
 
         }
@@ -264,7 +264,7 @@ class SettingsFragment : Fragment(),
         dialog.setItems(itemStrings) { _, which ->
             val selectedItem = items[which]
             preferenceViewModel.setSearchEngine(selectedItem)
-            binding.miscellaneousSearchEngineText.text = preferenceHelper.searchEngines.name
+            binding.miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.name
         }
         dialog.show()
     }

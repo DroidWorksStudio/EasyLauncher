@@ -49,13 +49,11 @@
         <item name="materialAlertDialogTheme">@style/CustomAlertDialog</item>
 
 
-
     </style>
 
     <!-- Base application theme. -->
 
-    <style name="AppBottomSheetDialogTheme"
-        parent="Theme.Design.Light.BottomSheetDialog">
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
     </style>
 
@@ -77,5 +75,9 @@
         <item name="android:shadowDx">1</item>
         <item name="android:shadowDy">1</item>
         <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="MaterialDialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
     </style>
 </resources>

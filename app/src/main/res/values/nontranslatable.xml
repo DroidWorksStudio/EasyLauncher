@@ -12,6 +12,9 @@
     <string name="widget_weather_temp" translatable="false">%1$.0f %2$s</string>
     <string name="widget_weather_description" translatable="false">%1$s</string>
 
+    <string name="widget_sunset_time" translatable="false">%1$s</string>
+    <string name="widget_sunrise_time" translatable="false">%1$s</string>
+
     <string name="widget_weather_mps" translatable="false">m/s</string>
     <string name="widget_weather_mph" translatable="false">mil/h</string>
 
@@ -19,4 +22,6 @@
     <string name="widget_weather_wind" translatable="false">Wind : %1$.2f %2$s</string>
     <string name="widget_weather_humidity" translatable="false">Humidity : %d %%</string>
     <string name="widget_weather_pressure" translatable="false">Pressure : %d hPa</string>
+
+    <string name="acra_email" translatable="false">droidworksstudio@063240.xyz</string>
 </resources>

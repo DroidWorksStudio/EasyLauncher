@@ -21,7 +21,7 @@ import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomSheetDialogFragment
-import com.github.droidworksstudio.launcher.ui.numberpicker.NumberPickerAdapter
+import com.github.droidworksstudio.launcher.adapter.numberpicker.NumberPickerAdapter
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -123,12 +123,12 @@ class SettingsFragment : Fragment(),
         return object : OnSwipeTouchListener(context) {
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                findNavController().popBackStack()
+                findNavController().navigateUp()
             }
 
             override fun onSwipeRight() {
                 super.onSwipeRight()
-                findNavController().popBackStack()
+                findNavController().navigateUp()
             }
 
         }

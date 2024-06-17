@@ -115,11 +115,6 @@ class MainActivity : AppCompatActivity(), LocationListener {
         initializeDependencies()
         setupNavController()
         setupOrientation()
-
-        if (applicationContext.hasInternetPermission()) {
-            checkLocationPermission()
-            checkForUpdates()
-        }
     }
 
     override fun onPause() {
@@ -285,6 +280,10 @@ class MainActivity : AppCompatActivity(), LocationListener {
     override fun onResume() {
         super.onResume()
         backToHomeScreen()
+        if (applicationContext.hasInternetPermission()) {
+            checkLocationPermission()
+            checkForUpdates()
+        }
         setupDataBase()
         observeUI()
     }
@@ -310,7 +309,7 @@ class MainActivity : AppCompatActivity(), LocationListener {
     private fun backToHomeScreen() {
         navController = findNavController(R.id.nav_host_fragment_content_main)
         if (navController.currentDestination?.id != R.id.HomeFragment)
-            navController.popBackStack(R.id.HomeFragment, false)
+            navController.navigate(R.id.HomeFragment)
     }
 
     private fun checkForUpdates() {

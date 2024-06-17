@@ -4,8 +4,28 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added crash report system. - ([66eb7c1](https://github.com/DroidWorksStudio/EasyLauncher/commit/66eb7c123ec209458f66d1b42774f78ca32fd577))
+
 ### Bug Fixes:
 
+- Fixed the hasInternetPermission stuff to run every time the app runs not just on install. - ([9db3a6c](https://github.com/DroidWorksStudio/EasyLauncher/commit/9db3a6c55d43e39ccaedab5b4521595aaa85d83b))
+
+### Releases:
+
+- Prepare for version 0.1.6 - ([9dbe1a3](https://github.com/DroidWorksStudio/EasyLauncher/commit/9dbe1a3f91c73d9ccfa71f3d9e745c83cf39ca49))
+
+## [0.1.5](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.5) - (16, June 2024)
+
+### Implemented Enhancements:
+
+- Added sunset and sunrise to weather widget. - ([63465c0](https://github.com/DroidWorksStudio/EasyLauncher/commit/63465c088ed1bf530b6861fef6f5e816004f101a))
+
+### Bug Fixes:
+
+- Selected Search engine on wrong element. - ([1857c2d](https://github.com/DroidWorksStudio/EasyLauncher/commit/1857c2d267b7ca455c4f02925a718f75cbbb1752))
+- Fixed the way the app is navigated. - ([ec3a88d](https://github.com/DroidWorksStudio/EasyLauncher/commit/ec3a88dc5790fe66809664496c10c23ada96ded5))
 - Fixed the last updated time. - ([806ea26](https://github.com/DroidWorksStudio/EasyLauncher/commit/806ea2616b33a81e37e1a1d5582cc5008b87e348))
 - Fixed the battery current and voltage numbers. - ([e0256f8](https://github.com/DroidWorksStudio/EasyLauncher/commit/e0256f823c29f30b9654f167a5190851b97c42e6))
 

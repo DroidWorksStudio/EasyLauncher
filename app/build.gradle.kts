@@ -19,8 +19,8 @@ android {
         applicationId = "app.easy.launcher"
         minSdk = 24
         targetSdk = 34
-        versionCode = 15
-        versionName = "0.1.5"
+        versionCode = 16
+        versionName = "0.1.6"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
@@ -140,6 +140,10 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.androidx.runtime.android)
     implementation(libs.androidx.ui.android)
+
+    implementation(libs.acra.core)
+    implementation(libs.acra.dialog)
+    implementation(libs.acra.mail)
 
     //noinspection KaptUsageInsteadOfKsp
     kapt(libs.room.compiler)

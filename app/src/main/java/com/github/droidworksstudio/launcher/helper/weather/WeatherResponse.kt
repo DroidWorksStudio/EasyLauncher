@@ -25,8 +25,8 @@ data class Main(
 
 data class Sys(
     val country: String,
-    val sunrise: Int,
-    val sunset: Int
+    val sunrise: Long,
+    val sunset: Long
 )
 
 data class Weather(
