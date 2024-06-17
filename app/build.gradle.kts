@@ -141,6 +141,10 @@ dependencies {
     implementation(libs.androidx.runtime.android)
     implementation(libs.androidx.ui.android)
 
+    implementation(libs.acra.core)
+    implementation(libs.acra.dialog)
+    implementation(libs.acra.mail)
+
     //noinspection KaptUsageInsteadOfKsp
     kapt(libs.room.compiler)
     implementation(libs.dagger.hilt.android)
