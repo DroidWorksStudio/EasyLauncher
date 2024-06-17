@@ -578,9 +578,9 @@
     <string name="widgets_battery_health">Baterijos būklė: %1$s</string>
     <string name="widgets_battery_voltage">Baterijos įtampa: %1$.2f %2$s</string>
     <string name="widgets_battery_temperature">Baterijos temperatūra: %1$.2f %2$s</string>
-    <string name="widgets_settings_show_weather">Weather Widget</string>
-    <string name="widgets_settings_show_weather_sun">Show Sunset &amp; Sunrise</string>
-    <string name="widgets_settings_show_battery">Battery Widget</string>
+    <string name="widgets_settings_show_weather">Orų valdiklis</string>
+    <string name="widgets_settings_show_weather_sun">Rodyti saulėlydį &amp; saulėtekį</string>
+    <string name="widgets_settings_show_battery">Baterijos valdiklis</string>
     <string name="widgets_settings_display">Ekranas</string>
     <string name="widgets_settings_select_order">Pasirinkite Užsakyti</string>
     <string name="acra_crash">Avarija</string>
