@@ -582,9 +582,9 @@
     <string name="widgets_settings_display_battery">Widget batteria</string>
     <string name="widgets_settings_display">Schermo</string>
     <string name="widgets_settings_select_order">Seleziona l\'ordine</string>
-    <string name="acra_crash">Crash</string>
-    <string name="acra_dialog_text">We\'re sorry, but %1$s has encountered an unexpected issue and needs to close. Please help us improve by sending a crash report.\n\n%1$s values your privacy and the data collected is solely used for improving app stability. No personal information is collected. Thank you for your support!</string>
-    <string name="acra_send_report">Send Report</string>
-    <string name="acra_dont_send">Don\'t Send</string>
-    <string name="acra_mail_body">Please describe the issue you encountered:</string>
+    <string name="acra_crash">Incidente</string>
+    <string name="acra_dialog_text">Siamo spiacenti, ma %1$s ha riscontrato un problema imprevisto e deve essere chiuso. Aiutaci a migliorare inviando un rapporto sugli arresti anomali.\n\n%1$s valorizza la tua privacy e i dati raccolti vengono utilizzati esclusivamente per migliorare la stabilità dell\'app. Non viene raccolta alcuna informazione personale. Grazie per il vostro sostegno!</string>
+    <string name="acra_send_report">Spedisci il rapporto</string>
+    <string name="acra_dont_send">Non inviare</string>
+    <string name="acra_mail_body">Descrivi il problema riscontrato:</string>
 </resources>
