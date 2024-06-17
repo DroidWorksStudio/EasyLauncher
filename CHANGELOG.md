@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed the navigation well adding hidden apps to swipes - ([aa030e4](https://github.com/DroidWorksStudio/EasyLauncher/commit/aa030e46355eda676152427d9d69745112a2e7c8))
 - Fixed the hasInternetPermission stuff to run every time the app runs not just on install. - ([9db3a6c](https://github.com/DroidWorksStudio/EasyLauncher/commit/9db3a6c55d43e39ccaedab5b4521595aaa85d83b))
 
 ### Housekeeping:
