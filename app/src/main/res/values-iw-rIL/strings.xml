@@ -578,9 +578,9 @@
     <string name="widgets_battery_health">בריאות הסוללה: %1$s</string>
     <string name="widgets_battery_voltage">מתח סוללה: %1$.2f %2$s</string>
     <string name="widgets_battery_temperature">טמפרטורת סוללה: %1$.2f %2$s</string>
-    <string name="widgets_settings_show_weather">Weather Widget</string>
-    <string name="widgets_settings_show_weather_sun">Show Sunset &amp; Sunrise</string>
-    <string name="widgets_settings_show_battery">Battery Widget</string>
+    <string name="widgets_settings_show_weather">ווידג\'ט מזג אוויר</string>
+    <string name="widgets_settings_show_weather_sun">הצג שקיעה &amp; זריחה</string>
+    <string name="widgets_settings_show_battery">יישומון סוללה</string>
     <string name="widgets_settings_display">לְהַצִיג</string>
     <string name="widgets_settings_select_order">בחר הזמנה</string>
     <string name="acra_crash">לְהִתְרַסֵק</string>
