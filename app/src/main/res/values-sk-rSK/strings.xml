@@ -582,4 +582,9 @@
     <string name="widgets_settings_display_battery">Widget batérie</string>
     <string name="widgets_settings_display">Displej</string>
     <string name="widgets_settings_select_order">Vyberte položku Objednávka</string>
+    <string name="acra_crash">Zrútiť sa</string>
+    <string name="acra_dialog_text">Ľutujeme, ale %1$s sa vyskytol neočakávaný problém a je potrebné ho zavrieť. Pomôžte nám zlepšiť sa odoslaním správy o zlyhaní.\n\n%1$s si váži vaše súkromie a zhromaždené údaje sa používajú výlučne na zlepšenie stability aplikácie. Nezhromažďujú sa žiadne osobné údaje. Ďakujem za tvoju podporu!</string>
+    <string name="acra_send_report">Odoslať správu</string>
+    <string name="acra_dont_send">Neposielajte</string>
+    <string name="acra_mail_body">Popíšte problém, s ktorým ste sa stretli:</string>
 </resources>

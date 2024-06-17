@@ -582,4 +582,9 @@
     <string name="widgets_settings_display_battery">יישומון סוללה</string>
     <string name="widgets_settings_display">לְהַצִיג</string>
     <string name="widgets_settings_select_order">בחר הזמנה</string>
+    <string name="acra_crash">לְהִתְרַסֵק</string>
+    <string name="acra_dialog_text">אנו מצטערים, אבל %1$s נתקל בבעיה בלתי צפויה וצריך להיסגר. אנא עזור לנו להשתפר על ידי שליחת דוח קריסה.\n\n%1$s מעריכה את הפרטיות שלך והנתונים שנאספים משמשים אך ורק לשיפור יציבות האפליקציה. לא נאסף מידע אישי. תודה על תמיכתך!</string>
+    <string name="acra_send_report">שלח דו\"ח</string>
+    <string name="acra_dont_send">אל תשלח</string>
+    <string name="acra_mail_body">אנא תאר את הבעיה שבה נתקלת:</string>
 </resources>

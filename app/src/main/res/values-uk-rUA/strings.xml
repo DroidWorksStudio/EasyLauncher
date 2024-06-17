@@ -582,4 +582,9 @@
     <string name="widgets_settings_display_battery">Віджет батареї</string>
     <string name="widgets_settings_display">Дисплей</string>
     <string name="widgets_settings_select_order">Виберіть Замовлення</string>
+    <string name="acra_crash">Збій</string>
+    <string name="acra_dialog_text">Нам дуже шкода, але %1$s зіткнувся з неочікуваною проблемою та має закритися. Будь ласка, допоможіть нам покращити, надіславши звіт про збій.\n\n%1$s цінує вашу конфіденційність, а зібрані дані використовуються виключно для покращення стабільності програми. Особиста інформація не збирається. Спасибі вам за вашу підтримку!</string>
+    <string name="acra_send_report">Надіслати звіт</string>
+    <string name="acra_dont_send">Не надсилайте</string>
+    <string name="acra_mail_body">Опишіть проблему, з якою ви зіткнулися:</string>
 </resources>

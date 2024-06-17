@@ -582,4 +582,9 @@
     <string name="widgets_settings_display_battery">Baterijos valdiklis</string>
     <string name="widgets_settings_display">Ekranas</string>
     <string name="widgets_settings_select_order">Pasirinkite Užsakyti</string>
+    <string name="acra_crash">Avarija</string>
+    <string name="acra_dialog_text">Atsiprašome, bet %1$s susidūrė su netikėta problema ir ją reikia uždaryti. Padėkite mums tobulėti išsiųsdami strigčių ataskaitą.\n\n%1$s vertina jūsų privatumą, o surinkti duomenys naudojami tik programos stabilumui pagerinti. Jokia asmeninė informacija nerenkama. Dėkojame už palaikymą!</string>
+    <string name="acra_send_report">Siųsti ataskaitą</string>
+    <string name="acra_dont_send">Nesiųsti</string>
+    <string name="acra_mail_body">Aprašykite problemą, su kuria susidūrėte:</string>
 </resources>
