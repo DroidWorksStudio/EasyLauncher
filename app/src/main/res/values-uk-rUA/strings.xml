@@ -1,1752 +1,591 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">
-		Налаштування
-	</string>
-    <string name="action_settings_default">
-		Встановити як програму запуску за умовчанням
-	</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="action_settings_default">Встановити як програму запуску за умовчанням</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="home_fragment_label">
-		Домашній Фрагмент
-	</string>
-    <string name="draw_fragment_label">
-		Намалювати фрагмент
-	</string>
-    <string name="favorite_fragment_label">
-		Улюблений фрагмент
-	</string>
-    <string name="hidden_fragment_label">
-		Прихований фрагмент
-	</string>
-    <string name="settings_fragment_label">
-		Фрагмент налаштувань
-	</string>
-    <string name="widgets_fragment_label">
-		Фрагмент віджетів
-	</string>
+    <string name="home_fragment_label">Домашній Фрагмент</string>
+    <string name="draw_fragment_label">Намалювати фрагмент</string>
+    <string name="favorite_fragment_label">Улюблений фрагмент</string>
+    <string name="hidden_fragment_label">Прихований фрагмент</string>
+    <string name="settings_fragment_label">Фрагмент налаштувань</string>
+    <string name="widgets_fragment_label">Фрагмент віджетів</string>
     <!-- Strings used for fragments header labels -->
-    <string name="favorite_fragment_name">
-		Улюблені програми
-	</string>
-    <string name="hidden_fragment_name">
-		Приховані програми
-	</string>
-    <string name="search">
-		Пошук
-	</string>
-    <string name="bottom_dialog_app_rename">
-		Перейменувати
-	</string>
-    <string name="bottom_dialog_add_to_home">
-		Додати на головний екран
-	</string>
-    <string name="bottom_dialog_order_home_apps">
-		Замовляйте програми для дому
-	</string>
-    <string name="bottom_dialog_remove_from_home">
-		Видалити з головного екрана
-	</string>
-    <string name="bottom_dialog_add_to_hidden">
-		Прихований додаток
-	</string>
-    <string name="bottom_dialog_remove_to_hidden">
-		Видалити приховану програму
-	</string>
-    <string name="bottom_dialog_add_to_lock">
-		Блокування програми
-	</string>
-    <string name="bottom_dialog_remove_to_unlock">
-		Розблокувати додаток
-	</string>
-    <string name="bottom_dialog_app_info">
-		Інформація про додаток
-	</string>
-    <string name="bottom_dialog_app_uninstall">
-		Видалити додаток
-	</string>
-    <string name="settings_name">
-		Налаштування програми запуску
-	</string>
-    <string name="settings_version">
-		%1$s Версія: %2$s
-	</string>
-    <string name="settings_widgets_name">
-		Налаштування віджетів
-	</string>
-    <string name="settings_title_home_display_preferences">
-		Дисплей
-	</string>
-    <string name="settings_title_home_behavior_preferences">
-		Поведінка
-	</string>
-    <string name="settings_title_home_appearance_preferences">
-		Зовнішній вигляд
-	</string>
-    <string name="settings_title_date_style">
-		Стиль дати
-	</string>
-    <string name="settings_title_time_style">
-		Стиль часу
-	</string>
-    <string name="settings_title_app_manager">
-		Керування додатком
-	</string>
-    <string name="settings_title_gestures">
-		Жести
-	</string>
-    <string name="settings_title_miscellaneous">
-		Різне
-	</string>
-    <string name="settings_title_backups">
-		Резервні копії
-	</string>
-    <string name="settings_title_others">
-		інші
-	</string>
-    <string name="settings_display_status_bar">
-		Показати рядок стану
-	</string>
-    <string name="settings_display_date">
-		Показати дату
-	</string>
-    <string name="settings_display_time">
-		Показати час
-	</string>
-    <string name="settings_display_battery">
-		Показати батарею
-	</string>
-    <string name="settings_display_daily_word">
-		Показати Daily Word
-	</string>
-    <string name="settings_display_app_icons">
-		Показати значки програм
-	</string>
-    <string name="settings_display_automatic_keyboard">
-		Автоматичне відображення клавіатури
-	</string>
-    <string name="settings_display_auto_open_apps">
-		Автоматичне відкриття останньої програми
-	</string>
-    <string name="settings_display_lock_settings">
-		Налаштування блокування
-	</string>
-    <string name="settings_appearance_text_size_title">
-		Розмір
-	</string>
-    <string name="settings_appearance_color_title">
-		Колір
-	</string>
-    <string name="settings_appearance_alignment_title">
-		Вирівнювання
-	</string>
-    <string name="settings_appearance_padding_title">
-		Підкладка
-	</string>
-    <string name="settings_appearance_wallpaper">
-		Шпалери на замовлення
-	</string>
-    <string name="settings_appearance_home_date_alignment">
-		Вирівнювання дати
-	</string>
-    <string name="settings_appearance_home_time_alignment">
-		Вирівнювання часу
-	</string>
-    <string name="settings_appearance_home_app_alignment">
-		Home App Alignment
-	</string>
-    <string name="appearance_bottom_dialog_text_size_title">
-		Розмір
-	</string>
-    <string name="appearance_bottom_dialog_text_color_title">
-		Колір
-	</string>
-    <string name="appearance_bottom_dialog_alignment_title">
-		Вирівнювання
-	</string>
-    <string name="appearance_bottom_dialog_padding_title">
-		Підкладка
-	</string>
-    <string name="appearance_bottom_dialog_desc_date">
-		Дата\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_time">
-		Час\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_app">
-		Додаток\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_word">
-		Слово\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_battery">
-		Акумулятор\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_widget_background">
-		Фон віджета\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_widget_text">
-		Текст віджета\u0020:\u0020
-	</string>
-    <string name="settings_manager_favorite">
-		Улюблені програми
-	</string>
-    <string name="settings_manager_hidden">
-		Приховані програми
-	</string>
-    <string name="settings_select_wallpaper">
-		Виберіть Шпалери
-	</string>
-    <string name="settings_double_tap">
-		Двічі натисніть
-	</string>
-    <string name="settings_swipe_up">
-		Проведіть пальцем вгору
-	</string>
-    <string name="settings_swipe_down">
-		Проведіть пальцем вниз
-	</string>
-    <string name="settings_swipe_left">
-		Проведіть вліво
-	</string>
-    <string name="settings_swipe_right">
-		Проведіть праворуч
-	</string>
-    <string name="settings_search_engine">
-		Пошукова система
-	</string>
-    <string name="settings_others_share">
-		Поділіться
-	</string>
-    <string name="settings_others_feedback">
-		Зворотній зв\'язок
-	</string>
-    <string name="settings_others_github">
-		Github
-	</string>
-    <string name="settings_backups_backup">
-		Налаштування резервного копіювання
-	</string>
-    <string name="settings_backups_restore">
-		Відновити налаштування
-	</string>
-    <string name="settings_reload_app_backup">
-		Налаштування створено.
-	</string>
-    <string name="settings_reload_app_restore">
-		Налаштування відновлено. Перезапуск.
-	</string>
-    <string name="settings_actions_open_app">
-		Відкрийте додаток
-	</string>
-    <string name="settings_actions_lock_screen">
-		Екран блокування
-	</string>
-    <string name="settings_actions_show_notifications">
-		Показати сповіщення
-	</string>
-    <string name="settings_actions_show_app_list">
-		Показати список програм
-	</string>
-    <string name="settings_actions_show_favorite_list">
-		Показати список уподобань
-	</string>
-    <string name="settings_actions_open_quick_settings">
-		Відкрийте швидкі налаштування
-	</string>
-    <string name="settings_actions_show_recents">
-		Показати останні
-	</string>
-    <string name="settings_actions_show_widgets">
-		Показати віджети
-	</string>
-    <string name="settings_actions_open_power_dialog">
-		Відкрити діалог живлення
-	</string>
-    <string name="settings_actions_take_a_screenshot">
-		Зробіть знімок екрана
-	</string>
-    <string name="settings_actions_disabled">
-		Вимкнено
-	</string>
-    <string name="settings_units_metric">
-		Метрика
-	</string>
-    <string name="settings_units_imperial">
-		Імператорський
-	</string>
-    <string name="authentication_title">
-		Аутентифікація
-	</string>
-    <string name="authentication_subtitle">
-		Увійдіть, використовуючи свої біометричні облікові дані.
-	</string>
-    <string name="authentication_cancel">
-		Автентифікація Скасувати
-	</string>
-    <string name="authentication_succeeded">
-		Автентифікація успішна
-	</string>
-    <string name="authentication_failed">
-		Помилка автентифікації
-	</string>
-    <string name="authentication_error">
-		Помилка автентифікації: %1$s(код %2$d)
-	</string>
-    <string name="bottom_alignment_star">
-		зірка
-	</string>
-    <string name="bottom_alignment_center">
-		центр
-	</string>
-    <string name="bottom_alignment_end">
-		Кінець
-	</string>
-    <string name="accessibility_settings_title">
-		Налаштування доступності
-	</string>
-    <string name="accessibility_settings_enable">
-		Увімкнути
-	</string>
-    <string name="accessibility_settings_disable">
-		Вимкнути
-	</string>
-    <string name="accessibility_service_name">
-		Служба дій Easy Launcher
-	</string>
-    <string name="accessibility_service_desc">
-		Будь ласка, увімкніть службу доступності, щоб використовувати подвійне торкання для блокування функції в Easy Launcher.\n\nЦей дозвіл використовується лише для вимкнення вашого екрана. Наша служба доступності не збирає та не надає жодних даних.
-	</string>
-    <string name="admin_permission_message">
-		Easy launcher обіцяє відповідально використовувати дозвіл блокування екрана. Easy launcher не збирає та не передає жодних даних.
-	</string>
+    <string name="favorite_fragment_name">Улюблені програми</string>
+    <string name="hidden_fragment_name">Приховані програми</string>
+    <string name="search">Пошук</string>
+    <string name="bottom_dialog_app_rename">Перейменувати</string>
+    <string name="bottom_dialog_add_to_home">Додати на головний екран</string>
+    <string name="bottom_dialog_order_home_apps">Замовляйте програми для дому</string>
+    <string name="bottom_dialog_remove_from_home">Видалити з головного екрана</string>
+    <string name="bottom_dialog_add_to_hidden">Прихований додаток</string>
+    <string name="bottom_dialog_remove_to_hidden">Видалити приховану програму</string>
+    <string name="bottom_dialog_add_to_lock">Блокування програми</string>
+    <string name="bottom_dialog_remove_to_unlock">Розблокувати додаток</string>
+    <string name="bottom_dialog_app_info">Інформація про додаток</string>
+    <string name="bottom_dialog_app_uninstall">Видалити додаток</string>
+    <string name="settings_name">Налаштування програми запуску</string>
+    <string name="settings_version">%1$s Версія: %2$s</string>
+    <string name="settings_widgets_name">Налаштування віджетів</string>
+    <string name="settings_title_home_display_preferences">Дисплей</string>
+    <string name="settings_title_home_behavior_preferences">Поведінка</string>
+    <string name="settings_title_home_appearance_preferences">Зовнішній вигляд</string>
+    <string name="settings_title_date_style">Стиль дати</string>
+    <string name="settings_title_time_style">Стиль часу</string>
+    <string name="settings_title_app_manager">Керування додатком</string>
+    <string name="settings_title_gestures">Жести</string>
+    <string name="settings_title_miscellaneous">Різне</string>
+    <string name="settings_title_backups">Резервні копії</string>
+    <string name="settings_title_others">інші</string>
+    <string name="settings_display_status_bar">Показати рядок стану</string>
+    <string name="settings_display_date">Показати дату</string>
+    <string name="settings_display_time">Показати час</string>
+    <string name="settings_display_battery">Показати батарею</string>
+    <string name="settings_display_daily_word">Показати Daily Word</string>
+    <string name="settings_display_app_icons">Показати значки програм</string>
+    <string name="settings_display_automatic_keyboard">Автоматичне відображення клавіатури</string>
+    <string name="settings_display_auto_open_apps">Автоматичне відкриття останньої програми</string>
+    <string name="settings_display_lock_settings">Налаштування блокування</string>
+    <string name="settings_appearance_text_size_title">Розмір</string>
+    <string name="settings_appearance_color_title">Колір</string>
+    <string name="settings_appearance_alignment_title">Вирівнювання</string>
+    <string name="settings_appearance_padding_title">Підкладка</string>
+    <string name="settings_appearance_wallpaper">Шпалери на замовлення</string>
+    <string name="settings_appearance_home_date_alignment">Вирівнювання дати</string>
+    <string name="settings_appearance_home_time_alignment">Вирівнювання часу</string>
+    <string name="settings_appearance_home_app_alignment">Home App Alignment</string>
+    <string name="appearance_bottom_dialog_text_size_title">Розмір</string>
+    <string name="appearance_bottom_dialog_text_color_title">Колір</string>
+    <string name="appearance_bottom_dialog_alignment_title">Вирівнювання</string>
+    <string name="appearance_bottom_dialog_padding_title">Підкладка</string>
+    <string name="appearance_bottom_dialog_desc_date">Дата\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_time">Час\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_app">Додаток\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_word">Слово\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_battery">Акумулятор\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Фон віджета\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Текст віджета\u0020:\u0020</string>
+    <string name="settings_manager_favorite">Улюблені програми</string>
+    <string name="settings_manager_hidden">Приховані програми</string>
+    <string name="settings_select_wallpaper">Виберіть Шпалери</string>
+    <string name="settings_double_tap">Двічі натисніть</string>
+    <string name="settings_swipe_up">Проведіть пальцем вгору</string>
+    <string name="settings_swipe_down">Проведіть пальцем вниз</string>
+    <string name="settings_swipe_left">Проведіть вліво</string>
+    <string name="settings_swipe_right">Проведіть праворуч</string>
+    <string name="settings_search_engine">Пошукова система</string>
+    <string name="settings_others_share">Поділіться</string>
+    <string name="settings_others_feedback">Зворотній зв\'язок</string>
+    <string name="settings_others_github">Github</string>
+    <string name="settings_backups_backup">Налаштування резервного копіювання</string>
+    <string name="settings_backups_restore">Відновити налаштування</string>
+    <string name="settings_reload_app_backup">Налаштування створено.</string>
+    <string name="settings_reload_app_restore">Налаштування відновлено. Перезапуск.</string>
+    <string name="settings_actions_open_app">Відкрийте додаток</string>
+    <string name="settings_actions_lock_screen">Екран блокування</string>
+    <string name="settings_actions_show_notifications">Показати сповіщення</string>
+    <string name="settings_actions_show_app_list">Показати список програм</string>
+    <string name="settings_actions_show_favorite_list">Показати список уподобань</string>
+    <string name="settings_actions_open_quick_settings">Відкрийте швидкі налаштування</string>
+    <string name="settings_actions_show_recents">Показати останні</string>
+    <string name="settings_actions_show_widgets">Показати віджети</string>
+    <string name="settings_actions_open_power_dialog">Відкрити діалог живлення</string>
+    <string name="settings_actions_take_a_screenshot">Зробіть знімок екрана</string>
+    <string name="settings_actions_disabled">Вимкнено</string>
+    <string name="settings_units_metric">Метрика</string>
+    <string name="settings_units_imperial">Імператорський</string>
+    <string name="authentication_title">Аутентифікація</string>
+    <string name="authentication_subtitle">Увійдіть, використовуючи свої біометричні облікові дані.</string>
+    <string name="authentication_cancel">Автентифікація Скасувати</string>
+    <string name="authentication_succeeded">Автентифікація успішна</string>
+    <string name="authentication_failed">Помилка автентифікації</string>
+    <string name="authentication_error">Помилка автентифікації: %1$s(код %2$d)</string>
+    <string name="bottom_alignment_star">зірка</string>
+    <string name="bottom_alignment_center">центр</string>
+    <string name="bottom_alignment_end">Кінець</string>
+    <string name="accessibility_settings_title">Налаштування доступності</string>
+    <string name="accessibility_settings_enable">Увімкнути</string>
+    <string name="accessibility_settings_disable">Вимкнути</string>
+    <string name="accessibility_service_name">Служба дій Easy Launcher</string>
+    <string name="accessibility_service_desc">Будь ласка, увімкніть службу доступності, щоб використовувати подвійне торкання для блокування функції в Easy Launcher.\n\nЦей дозвіл використовується лише для вимкнення вашого екрана. Наша служба доступності не збирає та не надає жодних даних.</string>
+    <string name="admin_permission_message">Easy launcher обіцяє відповідально використовувати дозвіл блокування екрана. Easy launcher не збирає та не передає жодних даних.</string>
     <string-array name="settings_appearance_daily_word_default">
-		<item>
-			Будьте витривалими!
-		</item>
-        <item>
-			Ви отримали це!
-		</item>
-        <item>
-			Сяяти яскраво!
-		</item>
-        <item>
-			Творити долю.
-		</item>
-        <item>
-			Обійми подорож.
-		</item>
-        <item>
-			Сила всередині.
-		</item>
-        <item>
-			Продовжуйте натискати!
-		</item>
-        <item>
-			Ви чудові!
-		</item>
-        <item>
-			Довіряйте, ніколи не віддавайте.
-		</item>
-        <item>
-			Безмежний потенціал.
-		</item>
-        <item>
-			Прогрес над досконалістю.
-		</item>
-        <item>
-			Виклики = зростання.
-		</item>
-        <item>
-			Гідний успіху.
-		</item>
-        <item>
-			Слідуй за своїми мріями.
-		</item>
-        <item>
-			Здолати все!
-		</item>
-        <item>
-			Рішучість перемагає.
-		</item>
-        <item>
-			Кожен крок має значення.
-		</item>
-        <item>
-			Залишатися позитивним!
-		</item>
-        <item>
-			Стійкість порід.
-		</item>
-        <item>
-			Сила в тобі.
-		</item>
-        <item>
-			Святкуйте прогрес.
-		</item>
-        <item>
-			Важка праця окупається.
-		</item>
-        <item>
-			Довіряйте, майте віру.
-		</item>
-        <item>
-			Унікальна подорож.
-		</item>
-        <item>
-			Очі на приз.
-		</item>
-        <item>
-			Досягніть будь-чого!
-		</item>
-        <item>
-			Робіть сміливі кроки.
-		</item>
-        <item>
-			Пристрасть живить вас.
-		</item>
-        <item>
-			Зосередьтеся на цілях.
-		</item>
-        <item>
-			Вистояти, перемагати.
-		</item>
-        <item>
-			Ключ до віри в себе.
-		</item>
-        <item>
-			Заслуговує добра.
-		</item>
-        <item>
-			Дотягнутися до мрій.
-		</item>
-        <item>
-			Сміливий, сильний, розумний.
-		</item>
-        <item>
-			Позитивне ставлення.
-		</item>
-        <item>
-			Довіртеся подорожі.
-		</item>
-        <item>
-			Непохитна рішучість.
-		</item>
-        <item>
-			Невдачі = повернення.
-		</item>
-        <item>
-			Перетворити мрії в реальність.
-		</item>
-        <item>
-			Відданість цілям.
-		</item>
-        <item>
-			Сила безмежна.
-		</item>
-        <item>
-			Голову вгору, прорив.
-		</item>
-        <item>
-			Ваш потенціал сяє.
-		</item>
-        <item>
-			Мрії в межах досяжності.
-		</item>
-        <item>
-			Вас не зупинити!
-		</item>
-        <item>
-			Вірте, досягайте.
-		</item>
-        <item>
-			Перевищити межі.
-		</item>
-        <item>
-			Наполегливість окупається.
-		</item>
-        <item>
-			Залишайся безстрашним!
-		</item>
-        <item>
-			Підніміться над викликами.
-		</item>
-        <item>
-			Продовжуйте мріяти про великі мрії.
-		</item>
-        <item>
-			Живіть з метою.
-		</item>
-        <item>
-			Зосередьтеся на хорошому.
-		</item>
-        <item>
-			Сила зсередини.
-		</item>
-        <item>
-			Вірте в магію.
-		</item>
-        <item>
-			Посміхніться, ви отримали це.
-		</item>
-        <item>
-			Ніколи не втрачай надію.
-		</item>
-        <item>
-			Обійми кожну мить.
-		</item>
-        <item>
-			Будь сам собі героєм.
-		</item>
-        <item>
-			Вам достатньо.
-		</item>
-        <item>
-			Перемагайте свої страхи.
-		</item>
-        <item>
-			Ловіть день!
-		</item>
-        <item>
-			Любити себе в першу чергу.
-		</item>
-        <item>
-			Залишайтеся на позитиві завжди.
-		</item>
-        <item>
-			Ти воїн.
-		</item>
-        <item>
-			Вірте в себе.
-		</item>
-        <item>
-			Оцініть можливості.
-		</item>
-        <item>
-			Живіть із пристрастю.
-		</item>
-        <item>
-			Продовжувати рухатись вперед.
-		</item>
-        <item>
-			Вас не зупинити!
-		</item>
-        <item>
-			Залишайся вірним тобі.
-		</item>
-        <item>
-			Живи сміливо.
-		</item>
-        <item>
-			Вір.
-		</item>
-        <item>
-			Сила в біді.
-		</item>
-        <item>
-			З кожним днем рости.
-		</item>
-        <item>
-			Наполегливість, перемога.
-		</item>
-        <item>
-			Переслідуйте свої пристрасті.
-		</item>
-        <item>
-			Знайдіть радість у подорожі.
-		</item>
-        <item>
-			Ризикуйте, процвітайте.
-		</item>
-        <item>
-			Будь сильним, сміливим.
-		</item>
-        <item>
-			Довіртеся внутрішній мудрості.
-		</item>
-        <item>
-			Продовжуйте сяяти яскраво.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте.
-		</item>
-        <item>
-			Будь нестримним.
-		</item>
-        <item>
-			Приймайте свою велич.
-		</item>
-        <item>
-			Прийміть невідоме.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Довіряйте собі.
-		</item>
-        <item>
-			Завжди поширюйте добро.
-		</item>
-        <item>
-			Вірте у свої мрії.
-		</item>
-        <item>
-			Залишайтеся зосередженими, рішучими.
-		</item>
-        <item>
-			Прийміть свою подорож.
-		</item>
-        <item>
-			Не опускай голови.
-		</item>
-        <item>
-			Ніколи не втрачай надії.
-		</item>
-        <item>
-			Сила зсередини.
-		</item>
-        <item>
-			Залишайся витривалим, сильним.
-		</item>
-        <item>
-			Вас не зупинити!
-		</item>
-        <item>
-			Прийміть виклик.
-		</item>
-        <item>
-			Підтримуйте вогонь.
-		</item>
-        <item>
-			Зосередьтеся на тому, що можливо.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте.
-		</item>
-        <item>
-			Слідкуйте за призом.
-		</item>
-        <item>
-			Довіряйте процесу.
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху.
-		</item>
-        <item>
-			Будьте завжди натхненні.
-		</item>
-        <item>
-			Будь безстрашним у погоні.
-		</item>
-        <item>
-			Залишайтеся на землі, підніміться.
-		</item>
-        <item>
-			Знайти силу в боротьбі.
-		</item>
-        <item>
-			Прийміть будь-який виклик.
-		</item>
-        <item>
-			Будьте сміливими, залишайтеся яскравими.
-		</item>
-        <item>
-			Ви здатні на велич.
-		</item>
-        <item>
-			Довіряйте своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте боротися, продовжуйте підніматися.
-		</item>
-        <item>
-			Вірте в неможливе.
-		</item>
-        <item>
-			Будьте стійкими, ніколи не давайте.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш.
-		</item>
-        <item>
-			Живіть із пристрастю та метою.
-		</item>
-        <item>
-			Знаходьте радість у кожній подорожі.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся позитивними, будьте сильними.
-		</item>
-        <item>
-			Кожен день - це новий шанс.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Продовжуйте перевищувати межі.
-		</item>
-        <item>
-			Довіртеся своїй внутрішній силі.
-		</item>
-        <item>
-			Ви приречені на велич.
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіряйте своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, будьте сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіряйте своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіряйте своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіряйте своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіряйте своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіряйте своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Ви приречені на велич!
-		</item>
-        <item>
-			Вірте у свої мрії!
-		</item>
-        <item>
-			Будьте рішучі, досягайте успіху.
-		</item>
-        <item>
-			Продовжуйте рухатися до своїх цілей.
-		</item>
-        <item>
-			Невпинно стежте за своїми мріями.
-		</item>
-        <item>
-			Сила йде зсередини.
-		</item>
-        <item>
-			Залишайтеся зосередженими на своїх цілях.
-		</item>
-        <item>
-			Ви здатні на все.
-		</item>
-        <item>
-			Залишайтеся безстрашними, залишайтеся сильними.
-		</item>
-        <item>
-			Вірте, досягайте, досягайте успіху!
-		</item>
-        <item>
-			Довіртеся своїй подорожі.
-		</item>
-        <item>
-			Залишайтеся стійкими, піднімайтеся вище.
-		</item>
-        <item>
-			У вас є сила.
-		</item>
-        <item>
-			Мрійте про великі мрії, наполегливо працюйте, досягайте.
-		</item>
-        <item>
-			Залишайтеся зосередженими, залишайтеся сильними.
-		</item>
-        <item>
-			Ти сильніший, ніж ти думаєш!
-		</item>
-        <item>
-			Вірте в себе, завжди.
-		</item>
-        <item>
-			Залишайтеся рішучими, залишайтеся сильними.
-		</item>
-        <item>
-			Використовуйте кожну можливість.
-		</item>
-        <item>
-			Ви здатні на велич!
-		</item>
-        <item>
-			Залишайтеся вірними собі.
-		</item>
-        <item>
-			Довіряйте своїй подорожі.
-		</item>
-        <item>
-			Продовжуйте рухатися вперед.
-		</item>
-        <item>
-			Мрійте, вірте, досягайте!
-		</item>
+        <item>Будьте витривалими!</item>
+        <item>Ви отримали це!</item>
+        <item>Сяяти яскраво!</item>
+        <item>Творити долю.</item>
+        <item>Обійми подорож.</item>
+        <item>Сила всередині.</item>
+        <item>Продовжуйте натискати!</item>
+        <item>Ви чудові!</item>
+        <item>Довіряйте, ніколи не віддавайте.</item>
+        <item>Безмежний потенціал.</item>
+        <item>Прогрес над досконалістю.</item>
+        <item>Виклики = зростання.</item>
+        <item>Гідний успіху.</item>
+        <item>Слідуй за своїми мріями.</item>
+        <item>Здолати все!</item>
+        <item>Рішучість перемагає.</item>
+        <item>Кожен крок має значення.</item>
+        <item>Залишатися позитивним!</item>
+        <item>Стійкість порід.</item>
+        <item>Сила в тобі.</item>
+        <item>Святкуйте прогрес.</item>
+        <item>Важка праця окупається.</item>
+        <item>Довіряйте, майте віру.</item>
+        <item>Унікальна подорож.</item>
+        <item>Очі на приз.</item>
+        <item>Досягніть будь-чого!</item>
+        <item>Робіть сміливі кроки.</item>
+        <item>Пристрасть живить вас.</item>
+        <item>Зосередьтеся на цілях.</item>
+        <item>Вистояти, перемагати.</item>
+        <item>Ключ до віри в себе.</item>
+        <item>Заслуговує добра.</item>
+        <item>Дотягнутися до мрій.</item>
+        <item>Сміливий, сильний, розумний.</item>
+        <item>Позитивне ставлення.</item>
+        <item>Довіртеся подорожі.</item>
+        <item>Непохитна рішучість.</item>
+        <item>Невдачі = повернення.</item>
+        <item>Перетворити мрії в реальність.</item>
+        <item>Відданість цілям.</item>
+        <item>Сила безмежна.</item>
+        <item>Голову вгору, прорив.</item>
+        <item>Ваш потенціал сяє.</item>
+        <item>Мрії в межах досяжності.</item>
+        <item>Вас не зупинити!</item>
+        <item>Вірте, досягайте.</item>
+        <item>Перевищити межі.</item>
+        <item>Наполегливість окупається.</item>
+        <item>Залишайся безстрашним!</item>
+        <item>Підніміться над викликами.</item>
+        <item>Продовжуйте мріяти про великі мрії.</item>
+        <item>Живіть з метою.</item>
+        <item>Зосередьтеся на хорошому.</item>
+        <item>Сила зсередини.</item>
+        <item>Вірте в магію.</item>
+        <item>Посміхніться, ви отримали це.</item>
+        <item>Ніколи не втрачай надію.</item>
+        <item>Обійми кожну мить.</item>
+        <item>Будь сам собі героєм.</item>
+        <item>Вам достатньо.</item>
+        <item>Перемагайте свої страхи.</item>
+        <item>Ловіть день!</item>
+        <item>Любити себе в першу чергу.</item>
+        <item>Залишайтеся на позитиві завжди.</item>
+        <item>Ти воїн.</item>
+        <item>Вірте в себе.</item>
+        <item>Оцініть можливості.</item>
+        <item>Живіть із пристрастю.</item>
+        <item>Продовжувати рухатись вперед.</item>
+        <item>Вас не зупинити!</item>
+        <item>Залишайся вірним тобі.</item>
+        <item>Живи сміливо.</item>
+        <item>Вір.</item>
+        <item>Сила в біді.</item>
+        <item>З кожним днем рости.</item>
+        <item>Наполегливість, перемога.</item>
+        <item>Переслідуйте свої пристрасті.</item>
+        <item>Знайдіть радість у подорожі.</item>
+        <item>Ризикуйте, процвітайте.</item>
+        <item>Будь сильним, сміливим.</item>
+        <item>Довіртеся внутрішній мудрості.</item>
+        <item>Продовжуйте сяяти яскраво.</item>
+        <item>Мрійте, вірте, досягайте.</item>
+        <item>Будь нестримним.</item>
+        <item>Приймайте свою велич.</item>
+        <item>Прийміть невідоме.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Довіряйте собі.</item>
+        <item>Завжди поширюйте добро.</item>
+        <item>Вірте у свої мрії.</item>
+        <item>Залишайтеся зосередженими, рішучими.</item>
+        <item>Прийміть свою подорож.</item>
+        <item>Не опускай голови.</item>
+        <item>Ніколи не втрачай надії.</item>
+        <item>Сила зсередини.</item>
+        <item>Залишайся витривалим, сильним.</item>
+        <item>Вас не зупинити!</item>
+        <item>Прийміть виклик.</item>
+        <item>Підтримуйте вогонь.</item>
+        <item>Зосередьтеся на тому, що можливо.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте.</item>
+        <item>Слідкуйте за призом.</item>
+        <item>Довіряйте процесу.</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Вірте, досягайте, досягайте успіху.</item>
+        <item>Будьте завжди натхненні.</item>
+        <item>Будь безстрашним у погоні.</item>
+        <item>Залишайтеся на землі, підніміться.</item>
+        <item>Знайти силу в боротьбі.</item>
+        <item>Прийміть будь-який виклик.</item>
+        <item>Будьте сміливими, залишайтеся яскравими.</item>
+        <item>Ви здатні на велич.</item>
+        <item>Довіряйте своїй подорожі.</item>
+        <item>Продовжуйте боротися, продовжуйте підніматися.</item>
+        <item>Вірте в неможливе.</item>
+        <item>Будьте стійкими, ніколи не давайте.</item>
+        <item>Ти сильніший, ніж ти думаєш.</item>
+        <item>Живіть із пристрастю та метою.</item>
+        <item>Знаходьте радість у кожній подорожі.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся позитивними, будьте сильними.</item>
+        <item>Кожен день - це новий шанс.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Продовжуйте перевищувати межі.</item>
+        <item>Довіртеся своїй внутрішній силі.</item>
+        <item>Ви приречені на велич.</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіряйте своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, будьте сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіряйте своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіряйте своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіряйте своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіряйте своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіряйте своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Ви приречені на велич!</item>
+        <item>Вірте у свої мрії!</item>
+        <item>Будьте рішучі, досягайте успіху.</item>
+        <item>Продовжуйте рухатися до своїх цілей.</item>
+        <item>Невпинно стежте за своїми мріями.</item>
+        <item>Сила йде зсередини.</item>
+        <item>Залишайтеся зосередженими на своїх цілях.</item>
+        <item>Ви здатні на все.</item>
+        <item>Залишайтеся безстрашними, залишайтеся сильними.</item>
+        <item>Вірте, досягайте, досягайте успіху!</item>
+        <item>Довіртеся своїй подорожі.</item>
+        <item>Залишайтеся стійкими, піднімайтеся вище.</item>
+        <item>У вас є сила.</item>
+        <item>Мрійте про великі мрії, наполегливо працюйте, досягайте.</item>
+        <item>Залишайтеся зосередженими, залишайтеся сильними.</item>
+        <item>Ти сильніший, ніж ти думаєш!</item>
+        <item>Вірте в себе, завжди.</item>
+        <item>Залишайтеся рішучими, залишайтеся сильними.</item>
+        <item>Використовуйте кожну можливість.</item>
+        <item>Ви здатні на велич!</item>
+        <item>Залишайтеся вірними собі.</item>
+        <item>Довіряйте своїй подорожі.</item>
+        <item>Продовжуйте рухатися вперед.</item>
+        <item>Мрійте, вірте, досягайте!</item>
     </string-array>
     <string-array name="alignment_options">
-		<item>
-			Ліворуч
-		</item>
-        <item>
-			центр
-		</item>
-        <item>
-			правильно
-		</item>
+        <item>Ліворуч</item>
+        <item>центр</item>
+        <item>правильно</item>
     </string-array>
-    <string name="search_engine">
-		Пошукова система
-	</string>
-    <string name="search_google">
-		Google
-	</string>
-    <string name="search_yahoo">
-		Yahoo
-	</string>
-    <string name="search_duckduckgo">
-		DuckDuckGo
-	</string>
-    <string name="search_bing">
-		Bing
-	</string>
-    <string name="search_brave">
-		Хоробрий
-	</string>
-    <string name="search_swisscow">
-		SwissCows
-	</string>
-    <string name="widgets_battery_level">
-		Рівень заряду батареї: %d%%
-	</string>
-    <string name="widgets_battery_count">
-		Кількість зарядів батареї: %1$d
-	</string>
-    <string name="widgets_battery_current">
-		Струм батареї: %1$.2f %2$s
-	</string>
-    <string name="widgets_battery_status">
-		Стан зарядки: %1$s
-	</string>
-    <string name="widgets_battery_health">
-		Заряд батареї: %1$s
-	</string>
-    <string name="widgets_battery_voltage">
-		Напруга батареї: %1$.2f %2$s
-	</string>
-    <string name="widgets_battery_temperature">
-		Температура батареї: %1$.2f %2$s
-	</string>
-    <string name="widgets_settings_show_weather">
-		Віджет погоди
-	</string>
-    <string name="widgets_settings_show_battery">
-		Віджет батареї
-	</string>
-    <string name="widgets_settings_display">
-		Дисплей
-	</string>
-    <string name="widgets_settings_select_order">
-		Виберіть Замовлення
-	</string>
-    <string name="acra_crash">
-		Збій
-	</string>
-    <string name="acra_dialog_text">
-		Нам дуже шкода, але %1$s зіткнувся з неочікуваною проблемою та має закритися. Будь ласка, допоможіть нам покращити, надіславши звіт про збій.\n\n%1$s цінує вашу конфіденційність, а зібрані дані використовуються виключно для покращення стабільності програми. Особиста інформація не збирається. Спасибі вам за вашу підтримку!
-	</string>
-    <string name="acra_send_report">
-		Надіслати звіт
-	</string>
-    <string name="acra_dont_send">
-		Не надсилайте
-	</string>
-    <string name="acra_mail_body">
-		Опишіть проблему, з якою ви зіткнулися:
-	</string>
+    <string name="search_engine">Пошукова система</string>
+    <string name="search_google">Google</string>
+    <string name="search_yahoo">Yahoo</string>
+    <string name="search_duckduckgo">DuckDuckGo</string>
+    <string name="search_bing">Bing</string>
+    <string name="search_brave">Хоробрий</string>
+    <string name="search_swisscow">SwissCows</string>
+    <string name="widgets_battery_level">Рівень заряду батареї: %d%%</string>
+    <string name="widgets_battery_count">Кількість зарядів батареї: %1$d</string>
+    <string name="widgets_battery_current">Струм батареї: %1$.2f %2$s</string>
+    <string name="widgets_battery_status">Стан зарядки: %1$s</string>
+    <string name="widgets_battery_health">Заряд батареї: %1$s</string>
+    <string name="widgets_battery_voltage">Напруга батареї: %1$.2f %2$s</string>
+    <string name="widgets_battery_temperature">Температура батареї: %1$.2f %2$s</string>
+    <string name="widgets_settings_show_weather">Віджет погоди</string>
+    <string name="widgets_settings_show_weather_sun">Показати захід &amp; схід сонця</string>
+    <string name="widgets_settings_show_battery">Віджет батареї</string>
+    <string name="widgets_settings_display">Дисплей</string>
+    <string name="widgets_settings_select_order">Виберіть Замовлення</string>
+    <string name="acra_crash">Збій</string>
+    <string name="acra_dialog_text">Нам дуже шкода, але %1$s зіткнувся з неочікуваною проблемою та має закритися. Будь ласка, допоможіть нам покращити, надіславши звіт про збій.\n\n%1$s цінує вашу конфіденційність, а зібрані дані використовуються виключно для покращення стабільності програми. Особиста інформація не збирається. Спасибі вам за вашу підтримку!</string>
+    <string name="acra_send_report">Надіслати звіт</string>
+    <string name="acra_dont_send">Не надсилайте</string>
+    <string name="acra_mail_body">Опишіть проблему, з якою ви зіткнулися:</string>
 </resources>

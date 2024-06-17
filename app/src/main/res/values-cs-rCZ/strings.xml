@@ -1,1752 +1,591 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="action_settings">
-		Nastavení
-	</string>
-    <string name="action_settings_default">
-		Nastavit jako výchozí spouštěč
-	</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="action_settings_default">Nastavit jako výchozí spouštěč</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="home_fragment_label">
-		Domácí Fragment
-	</string>
-    <string name="draw_fragment_label">
-		Nakreslete fragment
-	</string>
-    <string name="favorite_fragment_label">
-		Oblíbený Fragment
-	</string>
-    <string name="hidden_fragment_label">
-		Skrytý Fragment
-	</string>
-    <string name="settings_fragment_label">
-		Nastavení Fragment
-	</string>
-    <string name="widgets_fragment_label">
-		Fragment widgetů
-	</string>
+    <string name="home_fragment_label">Domácí Fragment</string>
+    <string name="draw_fragment_label">Nakreslete fragment</string>
+    <string name="favorite_fragment_label">Oblíbený Fragment</string>
+    <string name="hidden_fragment_label">Skrytý Fragment</string>
+    <string name="settings_fragment_label">Nastavení Fragment</string>
+    <string name="widgets_fragment_label">Fragment widgetů</string>
     <!-- Strings used for fragments header labels -->
-    <string name="favorite_fragment_name">
-		Oblíbené aplikace
-	</string>
-    <string name="hidden_fragment_name">
-		Skryté aplikace
-	</string>
-    <string name="search">
-		Vyhledávání
-	</string>
-    <string name="bottom_dialog_app_rename">
-		Přejmenovat
-	</string>
-    <string name="bottom_dialog_add_to_home">
-		Přidat na domácí obrazovku
-	</string>
-    <string name="bottom_dialog_order_home_apps">
-		Objednejte si domácí aplikace
-	</string>
-    <string name="bottom_dialog_remove_from_home">
-		Odebrat z domovské obrazovky
-	</string>
-    <string name="bottom_dialog_add_to_hidden">
-		Skrytá aplikace
-	</string>
-    <string name="bottom_dialog_remove_to_hidden">
-		Odebrat skrytou aplikaci
-	</string>
-    <string name="bottom_dialog_add_to_lock">
-		Zamknout aplikaci
-	</string>
-    <string name="bottom_dialog_remove_to_unlock">
-		Odemknout aplikaci
-	</string>
-    <string name="bottom_dialog_app_info">
-		Informace o aplikaci
-	</string>
-    <string name="bottom_dialog_app_uninstall">
-		Odinstalovat aplikaci
-	</string>
-    <string name="settings_name">
-		Nastavení spouštěče
-	</string>
-    <string name="settings_version">
-		%1$s Verze: %2$s
-	</string>
-    <string name="settings_widgets_name">
-		Nastavení widgetů
-	</string>
-    <string name="settings_title_home_display_preferences">
-		Zobrazit
-	</string>
-    <string name="settings_title_home_behavior_preferences">
-		Chování
-	</string>
-    <string name="settings_title_home_appearance_preferences">
-		Vzhled
-	</string>
-    <string name="settings_title_date_style">
-		Styl data
-	</string>
-    <string name="settings_title_time_style">
-		Styl času
-	</string>
-    <string name="settings_title_app_manager">
-		Správa aplikací
-	</string>
-    <string name="settings_title_gestures">
-		Gesta
-	</string>
-    <string name="settings_title_miscellaneous">
-		Smíšený
-	</string>
-    <string name="settings_title_backups">
-		Zálohy
-	</string>
-    <string name="settings_title_others">
-		Ostatní
-	</string>
-    <string name="settings_display_status_bar">
-		Zobrazit stavový řádek
-	</string>
-    <string name="settings_display_date">
-		Zobrazit datum
-	</string>
-    <string name="settings_display_time">
-		Zobrazit čas
-	</string>
-    <string name="settings_display_battery">
-		Zobrazit baterii
-	</string>
-    <string name="settings_display_daily_word">
-		Zobrazit Daily Word
-	</string>
-    <string name="settings_display_app_icons">
-		Zobrazit ikony aplikací
-	</string>
-    <string name="settings_display_automatic_keyboard">
-		Automatické zobrazení klávesnice
-	</string>
-    <string name="settings_display_auto_open_apps">
-		Automatické otevření poslední aplikace
-	</string>
-    <string name="settings_display_lock_settings">
-		Nastavení zámku
-	</string>
-    <string name="settings_appearance_text_size_title">
-		Velikost
-	</string>
-    <string name="settings_appearance_color_title">
-		Barva
-	</string>
-    <string name="settings_appearance_alignment_title">
-		Zarovnání
-	</string>
-    <string name="settings_appearance_padding_title">
-		Vycpávka
-	</string>
-    <string name="settings_appearance_wallpaper">
-		Vlastní tapeta
-	</string>
-    <string name="settings_appearance_home_date_alignment">
-		Datum zarovnání
-	</string>
-    <string name="settings_appearance_home_time_alignment">
-		Časové zarovnání
-	</string>
-    <string name="settings_appearance_home_app_alignment">
-		Home App Zarovnání
-	</string>
-    <string name="appearance_bottom_dialog_text_size_title">
-		Velikost
-	</string>
-    <string name="appearance_bottom_dialog_text_color_title">
-		Barva
-	</string>
-    <string name="appearance_bottom_dialog_alignment_title">
-		Zarovnání
-	</string>
-    <string name="appearance_bottom_dialog_padding_title">
-		Vycpávka
-	</string>
-    <string name="appearance_bottom_dialog_desc_date">
-		Datum\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_time">
-		Čas\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_app">
-		Aplikace\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_word">
-		Slovo\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_battery">
-		Baterie\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_widget_background">
-		Pozadí widgetu\u0020:\u0020
-	</string>
-    <string name="appearance_bottom_dialog_desc_widget_text">
-		Text widgetu\u0020:\u0020
-	</string>
-    <string name="settings_manager_favorite">
-		Oblíbené aplikace
-	</string>
-    <string name="settings_manager_hidden">
-		Skryté aplikace
-	</string>
-    <string name="settings_select_wallpaper">
-		Vyberte Tapeta
-	</string>
-    <string name="settings_double_tap">
-		Dvojí poklepání
-	</string>
-    <string name="settings_swipe_up">
-		Přejeďte nahoru
-	</string>
-    <string name="settings_swipe_down">
-		Přejeďte prstem dolů
-	</string>
-    <string name="settings_swipe_left">
-		Přejeďte doleva
-	</string>
-    <string name="settings_swipe_right">
-		Přejeďte doprava
-	</string>
-    <string name="settings_search_engine">
-		Vyhledávač
-	</string>
-    <string name="settings_others_share">
-		Podíl
-	</string>
-    <string name="settings_others_feedback">
-		Zpětná vazba
-	</string>
-    <string name="settings_others_github">
-		Github
-	</string>
-    <string name="settings_backups_backup">
-		Předvolby zálohování
-	</string>
-    <string name="settings_backups_restore">
-		Obnovit předvolby
-	</string>
-    <string name="settings_reload_app_backup">
-		Předvolby zálohovány.
-	</string>
-    <string name="settings_reload_app_restore">
-		Předvolby byly obnoveny. Restartování.
-	</string>
-    <string name="settings_actions_open_app">
-		Otevřete aplikaci
-	</string>
-    <string name="settings_actions_lock_screen">
-		Uzamknout obrazovku
-	</string>
-    <string name="settings_actions_show_notifications">
-		Ukázat notifikace
-	</string>
-    <string name="settings_actions_show_app_list">
-		Zobrazit seznam aplikací
-	</string>
-    <string name="settings_actions_show_favorite_list">
-		Zobrazit seznam oblíbených
-	</string>
-    <string name="settings_actions_open_quick_settings">
-		Otevřete Rychlé nastavení
-	</string>
-    <string name="settings_actions_show_recents">
-		Zobrazit poslední
-	</string>
-    <string name="settings_actions_show_widgets">
-		Zobrazit widgety
-	</string>
-    <string name="settings_actions_open_power_dialog">
-		Otevřete dialogové okno napájení
-	</string>
-    <string name="settings_actions_take_a_screenshot">
-		Pořiďte snímek obrazovky
-	</string>
-    <string name="settings_actions_disabled">
-		Zakázáno
-	</string>
-    <string name="settings_units_metric">
-		Metrický
-	</string>
-    <string name="settings_units_imperial">
-		Císařský
-	</string>
-    <string name="authentication_title">
-		Autentizace
-	</string>
-    <string name="authentication_subtitle">
-		Přihlaste se pomocí svých biometrických údajů.
-	</string>
-    <string name="authentication_cancel">
-		Zrušení ověřování
-	</string>
-    <string name="authentication_succeeded">
-		Autentizace byla úspěšná
-	</string>
-    <string name="authentication_failed">
-		Ověření se nezdařilo
-	</string>
-    <string name="authentication_error">
-		Chyba ověření: %1$s(kód %2$d)
-	</string>
-    <string name="bottom_alignment_star">
-		Hvězda
-	</string>
-    <string name="bottom_alignment_center">
-		Centrum
-	</string>
-    <string name="bottom_alignment_end">
-		Konec
-	</string>
-    <string name="accessibility_settings_title">
-		Nastavení usnadnění
-	</string>
-    <string name="accessibility_settings_enable">
-		Umožnit
-	</string>
-    <string name="accessibility_settings_disable">
-		Zakázat
-	</string>
-    <string name="accessibility_service_name">
-		Služba Easy Launcher Actions Service
-	</string>
-    <string name="accessibility_service_desc">
-		Chcete-li v Easy Launcher používat funkci uzamčení dvojitým klepnutím, zapněte prosím službu usnadnění.\n\nToto oprávnění se používá pouze k vypnutí obrazovky. Naše služba usnadnění neshromažďuje ani nesdílí žádná data.
-	</string>
-    <string name="admin_permission_message">
-		Easy launcher slibuje zodpovědné používání oprávnění k uzamčení obrazovky. Easy launcher neshromažďuje ani nesdílí žádná data.
-	</string>
+    <string name="favorite_fragment_name">Oblíbené aplikace</string>
+    <string name="hidden_fragment_name">Skryté aplikace</string>
+    <string name="search">Vyhledávání</string>
+    <string name="bottom_dialog_app_rename">Přejmenovat</string>
+    <string name="bottom_dialog_add_to_home">Přidat na domácí obrazovku</string>
+    <string name="bottom_dialog_order_home_apps">Objednejte si domácí aplikace</string>
+    <string name="bottom_dialog_remove_from_home">Odebrat z domovské obrazovky</string>
+    <string name="bottom_dialog_add_to_hidden">Skrytá aplikace</string>
+    <string name="bottom_dialog_remove_to_hidden">Odebrat skrytou aplikaci</string>
+    <string name="bottom_dialog_add_to_lock">Zamknout aplikaci</string>
+    <string name="bottom_dialog_remove_to_unlock">Odemknout aplikaci</string>
+    <string name="bottom_dialog_app_info">Informace o aplikaci</string>
+    <string name="bottom_dialog_app_uninstall">Odinstalovat aplikaci</string>
+    <string name="settings_name">Nastavení spouštěče</string>
+    <string name="settings_version">%1$s Verze: %2$s</string>
+    <string name="settings_widgets_name">Nastavení widgetů</string>
+    <string name="settings_title_home_display_preferences">Zobrazit</string>
+    <string name="settings_title_home_behavior_preferences">Chování</string>
+    <string name="settings_title_home_appearance_preferences">Vzhled</string>
+    <string name="settings_title_date_style">Styl data</string>
+    <string name="settings_title_time_style">Styl času</string>
+    <string name="settings_title_app_manager">Správa aplikací</string>
+    <string name="settings_title_gestures">Gesta</string>
+    <string name="settings_title_miscellaneous">Smíšený</string>
+    <string name="settings_title_backups">Zálohy</string>
+    <string name="settings_title_others">Ostatní</string>
+    <string name="settings_display_status_bar">Zobrazit stavový řádek</string>
+    <string name="settings_display_date">Zobrazit datum</string>
+    <string name="settings_display_time">Zobrazit čas</string>
+    <string name="settings_display_battery">Zobrazit baterii</string>
+    <string name="settings_display_daily_word">Zobrazit Daily Word</string>
+    <string name="settings_display_app_icons">Zobrazit ikony aplikací</string>
+    <string name="settings_display_automatic_keyboard">Automatické zobrazení klávesnice</string>
+    <string name="settings_display_auto_open_apps">Automatické otevření poslední aplikace</string>
+    <string name="settings_display_lock_settings">Nastavení zámku</string>
+    <string name="settings_appearance_text_size_title">Velikost</string>
+    <string name="settings_appearance_color_title">Barva</string>
+    <string name="settings_appearance_alignment_title">Zarovnání</string>
+    <string name="settings_appearance_padding_title">Vycpávka</string>
+    <string name="settings_appearance_wallpaper">Vlastní tapeta</string>
+    <string name="settings_appearance_home_date_alignment">Datum zarovnání</string>
+    <string name="settings_appearance_home_time_alignment">Časové zarovnání</string>
+    <string name="settings_appearance_home_app_alignment">Home App Zarovnání</string>
+    <string name="appearance_bottom_dialog_text_size_title">Velikost</string>
+    <string name="appearance_bottom_dialog_text_color_title">Barva</string>
+    <string name="appearance_bottom_dialog_alignment_title">Zarovnání</string>
+    <string name="appearance_bottom_dialog_padding_title">Vycpávka</string>
+    <string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_time">Čas\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_app">Aplikace\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_battery">Baterie\u0020:\u0020 </string>
+    <string name="appearance_bottom_dialog_desc_widget_background">Pozadí widgetu\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_widget_text">Text widgetu\u0020:\u0020</string>
+    <string name="settings_manager_favorite">Oblíbené aplikace</string>
+    <string name="settings_manager_hidden">Skryté aplikace</string>
+    <string name="settings_select_wallpaper">Vyberte Tapeta</string>
+    <string name="settings_double_tap">Dvojí poklepání</string>
+    <string name="settings_swipe_up">Přejeďte nahoru</string>
+    <string name="settings_swipe_down">Přejeďte prstem dolů</string>
+    <string name="settings_swipe_left">Přejeďte doleva</string>
+    <string name="settings_swipe_right">Přejeďte doprava</string>
+    <string name="settings_search_engine">Vyhledávač</string>
+    <string name="settings_others_share">Podíl</string>
+    <string name="settings_others_feedback">Zpětná vazba</string>
+    <string name="settings_others_github">Github</string>
+    <string name="settings_backups_backup">Předvolby zálohování</string>
+    <string name="settings_backups_restore">Obnovit předvolby</string>
+    <string name="settings_reload_app_backup">Předvolby zálohovány.</string>
+    <string name="settings_reload_app_restore">Předvolby byly obnoveny. Restartování.</string>
+    <string name="settings_actions_open_app">Otevřete aplikaci</string>
+    <string name="settings_actions_lock_screen">Uzamknout obrazovku</string>
+    <string name="settings_actions_show_notifications">Ukázat notifikace</string>
+    <string name="settings_actions_show_app_list">Zobrazit seznam aplikací</string>
+    <string name="settings_actions_show_favorite_list">Zobrazit seznam oblíbených</string>
+    <string name="settings_actions_open_quick_settings">Otevřete Rychlé nastavení</string>
+    <string name="settings_actions_show_recents">Zobrazit poslední</string>
+    <string name="settings_actions_show_widgets">Zobrazit widgety</string>
+    <string name="settings_actions_open_power_dialog">Otevřete dialogové okno napájení</string>
+    <string name="settings_actions_take_a_screenshot">Pořiďte snímek obrazovky</string>
+    <string name="settings_actions_disabled">Zakázáno</string>
+    <string name="settings_units_metric">Metrický</string>
+    <string name="settings_units_imperial">Císařský</string>
+    <string name="authentication_title">Autentizace</string>
+    <string name="authentication_subtitle">Přihlaste se pomocí svých biometrických údajů.</string>
+    <string name="authentication_cancel">Zrušení ověřování</string>
+    <string name="authentication_succeeded">Autentizace byla úspěšná</string>
+    <string name="authentication_failed">Ověření se nezdařilo</string>
+    <string name="authentication_error">Chyba ověření: %1$s(kód %2$d)</string>
+    <string name="bottom_alignment_star">Hvězda</string>
+    <string name="bottom_alignment_center">Centrum</string>
+    <string name="bottom_alignment_end">Konec</string>
+    <string name="accessibility_settings_title">Nastavení usnadnění</string>
+    <string name="accessibility_settings_enable">Umožnit</string>
+    <string name="accessibility_settings_disable">Zakázat</string>
+    <string name="accessibility_service_name">Služba Easy Launcher Actions Service</string>
+    <string name="accessibility_service_desc">Chcete-li v Easy Launcher používat funkci uzamčení dvojitým klepnutím, zapněte prosím službu usnadnění.\n\nToto oprávnění se používá pouze k vypnutí obrazovky. Naše služba usnadnění neshromažďuje ani nesdílí žádná data.</string>
+    <string name="admin_permission_message">Easy launcher slibuje zodpovědné používání oprávnění k uzamčení obrazovky. Easy launcher neshromažďuje ani nesdílí žádná data.</string>
     <string-array name="settings_appearance_daily_word_default">
-		<item>
-			Zůstaňte odolní!
-		</item>
-        <item>
-			Máš to!
-		</item>
-        <item>
-			Zářit jasně!
-		</item>
-        <item>
-			Vytvořte osud.
-		</item>
-        <item>
-			Objetí cesty.
-		</item>
-        <item>
-			Síla uvnitř.
-		</item>
-        <item>
-			Dál prosazovat!
-		</item>
-        <item>
-			Jsi úžasná!
-		</item>
-        <item>
-			Důvěřuj, nikdy nedej.
-		</item>
-        <item>
-			Neomezený potenciál.
-		</item>
-        <item>
-			Pokrok nad dokonalostí.
-		</item>
-        <item>
-			Výzvy = růst.
-		</item>
-        <item>
-			Hodný úspěchu.
-		</item>
-        <item>
-			Jdi za svým snem.
-		</item>
-        <item>
-			Překonat všechny!
-		</item>
-        <item>
-			Odhodlání vítězí.
-		</item>
-        <item>
-			Každý krok se počítá.
-		</item>
-        <item>
-			Zůstaň pozitivní!
-		</item>
-        <item>
-			Odolnost skály.
-		</item>
-        <item>
-			Síla v tobě.
-		</item>
-        <item>
-			Oslavte pokrok.
-		</item>
-        <item>
-			Tvrdá práce se vyplácí.
-		</item>
-        <item>
-			Důvěřuj, věř.
-		</item>
-        <item>
-			Jedinečná cesta.
-		</item>
-        <item>
-			Oči na cenu.
-		</item>
-        <item>
-			Dosáhnout čehokoli!
-		</item>
-        <item>
-			Udělejte odvážné kroky.
-		</item>
-        <item>
-			Vášeň vás pohání.
-		</item>
-        <item>
-			Zaměřte se na cíle.
-		</item>
-        <item>
-			Vytrvat, vyhrát.
-		</item>
-        <item>
-			Klíč sebevědomí.
-		</item>
-        <item>
-			Zaslouží si dobro.
-		</item>
-        <item>
-			Sáhněte po snech.
-		</item>
-        <item>
-			Odvážný, silný, chytrý.
-		</item>
-        <item>
-			Kladný postoj.
-		</item>
-        <item>
-			Důvěřujte cestě.
-		</item>
-        <item>
-			Neochvějné odhodlání.
-		</item>
-        <item>
-			Neúspěchy = návrat.
-		</item>
-        <item>
-			Proměňte sny ve skutečnost.
-		</item>
-        <item>
-			Zavázat se k cílům.
-		</item>
-        <item>
-			Síla, meze se nekladou.
-		</item>
-        <item>
-			Hlavu vzhůru, průlom.
-		</item>
-        <item>
-			Váš potenciál září.
-		</item>
-        <item>
-			Sny na dosah.
-		</item>
-        <item>
-			Jsi nezastavitelný!
-		</item>
-        <item>
-			Věřit, dosáhnout.
-		</item>
-        <item>
-			Posuňte za hranice.
-		</item>
-        <item>
-			Vytrvalost se vyplácí.
-		</item>
-        <item>
-			Zůstaňte nebojácní!
-		</item>
-        <item>
-			Povznést se nad výzvy.
-		</item>
-        <item>
-			Sni dál ve velkém.
-		</item>
-        <item>
-			Žijte účelově.
-		</item>
-        <item>
-			Zaměřte se na to dobré.
-		</item>
-        <item>
-			Síla zevnitř.
-		</item>
-        <item>
-			Věřte v magii.
-		</item>
-        <item>
-			Usmívej se, máš to.
-		</item>
-        <item>
-			Nikdy neztrácej naději.
-		</item>
-        <item>
-			Objímejte každý okamžik.
-		</item>
-        <item>
-			Buď svým vlastním hrdinou.
-		</item>
-        <item>
-			Ty stačí.
-		</item>
-        <item>
-			Překonejte své strachy.
-		</item>
-        <item>
-			Využijte den!
-		</item>
-        <item>
-			Miluj především sebe.
-		</item>
-        <item>
-			Zůstaňte pozitivní, vždy.
-		</item>
-        <item>
-			Jsi válečník.
-		</item>
-        <item>
-			Věřte v sebe.
-		</item>
-        <item>
-			Využijte možnosti.
-		</item>
-        <item>
-			Žít s vášní.
-		</item>
-        <item>
-			Pokračuj v pohybu vpřed.
-		</item>
-        <item>
-			Jsi nezastavitelný!
-		</item>
-        <item>
-			Zůstaňte vám věrní.
-		</item>
-        <item>
-			Žijte odvážně.
-		</item>
-        <item>
-			Udržovat víru.
-		</item>
-        <item>
-			Síla v neštěstí.
-		</item>
-        <item>
-			Každý den, růst.
-		</item>
-        <item>
-			Vytrvalost, vítězství.
-		</item>
-        <item>
-			Pronásledujte své vášně.
-		</item>
-        <item>
-			Najděte radost na cestách.
-		</item>
-        <item>
-			Riskujte, prosperujte.
-		</item>
-        <item>
-			Zůstaň silný, statečný.
-		</item>
-        <item>
-			Věřte vnitřní moudrosti.
-		</item>
-        <item>
-			Svítit dál.
-		</item>
-        <item>
-			Sni věř Dosáhni.
-		</item>
-        <item>
-			Buďte nezastavitelní.
-		</item>
-        <item>
-			Vlastnit svou velikost.
-		</item>
-        <item>
-			Přijmout neznámé.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Věř v sebe.
-		</item>
-        <item>
-			Vždy rozdávejte laskavost.
-		</item>
-        <item>
-			Věřte ve své sny.
-		</item>
-        <item>
-			Zůstaňte soustředění, odhodlaní.
-		</item>
-        <item>
-			Přijměte svou cestu.
-		</item>
-        <item>
-			Hlavu vzhůru.
-		</item>
-        <item>
-			Nikdy se nevzdávej naděje.
-		</item>
-        <item>
-			Síla zevnitř.
-		</item>
-        <item>
-			Zůstaňte odolní, silní.
-		</item>
-        <item>
-			Jsi nezastavitelný!
-		</item>
-        <item>
-			Přijměte výzvu.
-		</item>
-        <item>
-			Udržujte oheň v plamenech.
-		</item>
-        <item>
-			Soustřeďte se na to, co je možné.
-		</item>
-        <item>
-			Sni ve velkém, tvrdě pracuj.
-		</item>
-        <item>
-			Mějte oči na ceně.
-		</item>
-        <item>
-			Důvěřujte procesu.
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět.
-		</item>
-        <item>
-			Zůstaňte vždy inspirováni.
-		</item>
-        <item>
-			Buďte nebojácní při pronásledování.
-		</item>
-        <item>
-			Zůstaňte při zemi, vstaňte.
-		</item>
-        <item>
-			Najděte sílu v boji.
-		</item>
-        <item>
-			Přijměte každou výzvu.
-		</item>
-        <item>
-			Zůstaň odvážný, zůstaň jasný.
-		</item>
-        <item>
-			Jste schopni velikosti.
-		</item>
-        <item>
-			Věřte své cestě.
-		</item>
-        <item>
-			Bojuj dál, zvedni se.
-		</item>
-        <item>
-			Věřit v nemožné.
-		</item>
-        <item>
-			Zůstaňte odolní, nikdy nedávejte.
-		</item>
-        <item>
-			Jsi silnější, než víš.
-		</item>
-        <item>
-			Žijte s vášní a záměrem.
-		</item>
-        <item>
-			Najděte radost na každé cestě.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaňte pozitivní, zůstaňte silní.
-		</item>
-        <item>
-			Každý den je nová šance.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Pokračujte v posouvání za hranice.
-		</item>
-        <item>
-			Věřte své vnitřní síle.
-		</item>
-        <item>
-			Jsi předurčen k velikosti.
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Jste předurčeni k velikosti!
-		</item>
-        <item>
-			Věřte ve své sny!
-		</item>
-        <item>
-			Zůstaňte odhodlaní, uspěte.
-		</item>
-        <item>
-			Pokračujte v cestě ke svým cílům.
-		</item>
-        <item>
-			Neúnavně jděte za svými sny.
-		</item>
-        <item>
-			Síla pochází zevnitř.
-		</item>
-        <item>
-			Soustřeďte se na své cíle.
-		</item>
-        <item>
-			Jsi schopen všeho.
-		</item>
-        <item>
-			Zůstaň nebojácný, zůstaň silný.
-		</item>
-        <item>
-			Věřit, dosáhnout, uspět!
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Zůstaňte odolní, povzneste se výše.
-		</item>
-        <item>
-			Sílu máte v sobě.
-		</item>
-        <item>
-			Snít ve velkém, tvrdě pracovat, dosáhnout.
-		</item>
-        <item>
-			Zůstaňte soustředění, zůstaňte silní.
-		</item>
-        <item>
-			Jsi silnější, než si myslíš!
-		</item>
-        <item>
-			Věř v sebe, vždy.
-		</item>
-        <item>
-			Zůstaňte odhodlaní, zůstaňte silní.
-		</item>
-        <item>
-			Využijte každou příležitost.
-		</item>
-        <item>
-			Jste schopni velikosti!
-		</item>
-        <item>
-			Zůstaňte věrní sami sobě.
-		</item>
-        <item>
-			Důvěřujte své cestě.
-		</item>
-        <item>
-			Pokračujte v tlačení dopředu.
-		</item>
-        <item>
-			Sni věř Dosáhni!
-		</item>
+        <item>Zůstaňte odolní!</item>
+        <item>Máš to!</item>
+        <item>Zářit jasně!</item>
+        <item>Vytvořte osud.</item>
+        <item>Objetí cesty.</item>
+        <item>Síla uvnitř.</item>
+        <item>Dál prosazovat!</item>
+        <item>Jsi úžasná!</item>
+        <item>Důvěřuj, nikdy nedej.</item>
+        <item>Neomezený potenciál.</item>
+        <item>Pokrok nad dokonalostí.</item>
+        <item>Výzvy = růst.</item>
+        <item>Hodný úspěchu.</item>
+        <item>Jdi za svým snem.</item>
+        <item>Překonat všechny!</item>
+        <item>Odhodlání vítězí.</item>
+        <item>Každý krok se počítá.</item>
+        <item>Zůstaň pozitivní!</item>
+        <item>Odolnost skály.</item>
+        <item>Síla v tobě.</item>
+        <item>Oslavte pokrok.</item>
+        <item>Tvrdá práce se vyplácí.</item>
+        <item>Důvěřuj, věř.</item>
+        <item>Jedinečná cesta.</item>
+        <item>Oči na cenu.</item>
+        <item>Dosáhnout čehokoli!</item>
+        <item>Udělejte odvážné kroky.</item>
+        <item>Vášeň vás pohání.</item>
+        <item>Zaměřte se na cíle.</item>
+        <item>Vytrvat, vyhrát.</item>
+        <item>Klíč sebevědomí.</item>
+        <item>Zaslouží si dobro.</item>
+        <item>Sáhněte po snech.</item>
+        <item>Odvážný, silný, chytrý.</item>
+        <item>Kladný postoj.</item>
+        <item>Důvěřujte cestě.</item>
+        <item>Neochvějné odhodlání.</item>
+        <item>Neúspěchy = návrat.</item>
+        <item>Proměňte sny ve skutečnost.</item>
+        <item>Zavázat se k cílům.</item>
+        <item>Síla, meze se nekladou.</item>
+        <item>Hlavu vzhůru, průlom.</item>
+        <item>Váš potenciál září.</item>
+        <item>Sny na dosah.</item>
+        <item>Jsi nezastavitelný!</item>
+        <item>Věřit, dosáhnout.</item>
+        <item>Posuňte za hranice.</item>
+        <item>Vytrvalost se vyplácí.</item>
+        <item>Zůstaňte nebojácní!</item>
+        <item>Povznést se nad výzvy.</item>
+        <item>Sni dál ve velkém.</item>
+        <item>Žijte účelově.</item>
+        <item>Zaměřte se na to dobré.</item>
+        <item>Síla zevnitř.</item>
+        <item>Věřte v magii.</item>
+        <item>Usmívej se, máš to.</item>
+        <item>Nikdy neztrácej naději.</item>
+        <item>Objímejte každý okamžik.</item>
+        <item>Buď svým vlastním hrdinou.</item>
+        <item>Ty stačí.</item>
+        <item>Překonejte své strachy.</item>
+        <item>Využijte den!</item>
+        <item>Miluj především sebe.</item>
+        <item>Zůstaňte pozitivní, vždy.</item>
+        <item>Jsi válečník.</item>
+        <item>Věřte v sebe.</item>
+        <item>Využijte možnosti.</item>
+        <item>Žít s vášní.</item>
+        <item>Pokračuj v pohybu vpřed.</item>
+        <item>Jsi nezastavitelný!</item>
+        <item>Zůstaňte vám věrní.</item>
+        <item>Žijte odvážně.</item>
+        <item>Udržovat víru.</item>
+        <item>Síla v neštěstí.</item>
+        <item>Každý den, růst.</item>
+        <item>Vytrvalost, vítězství.</item>
+        <item>Pronásledujte své vášně.</item>
+        <item>Najděte radost na cestách.</item>
+        <item>Riskujte, prosperujte.</item>
+        <item>Zůstaň silný, statečný.</item>
+        <item>Věřte vnitřní moudrosti.</item>
+        <item>Svítit dál.</item>
+        <item>Sni věř Dosáhni.</item>
+        <item>Buďte nezastavitelní.</item>
+        <item>Vlastnit svou velikost.</item>
+        <item>Přijmout neznámé.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Věř v sebe.</item>
+        <item>Vždy rozdávejte laskavost.</item>
+        <item>Věřte ve své sny.</item>
+        <item>Zůstaňte soustředění, odhodlaní.</item>
+        <item>Přijměte svou cestu.</item>
+        <item>Hlavu vzhůru.</item>
+        <item>Nikdy se nevzdávej naděje.</item>
+        <item>Síla zevnitř.</item>
+        <item>Zůstaňte odolní, silní.</item>
+        <item>Jsi nezastavitelný!</item>
+        <item>Přijměte výzvu.</item>
+        <item>Udržujte oheň v plamenech.</item>
+        <item>Soustřeďte se na to, co je možné.</item>
+        <item>Sni ve velkém, tvrdě pracuj.</item>
+        <item>Mějte oči na ceně.</item>
+        <item>Důvěřujte procesu.</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Věřit, dosáhnout, uspět.</item>
+        <item>Zůstaňte vždy inspirováni.</item>
+        <item>Buďte nebojácní při pronásledování.</item>
+        <item>Zůstaňte při zemi, vstaňte.</item>
+        <item>Najděte sílu v boji.</item>
+        <item>Přijměte každou výzvu.</item>
+        <item>Zůstaň odvážný, zůstaň jasný.</item>
+        <item>Jste schopni velikosti.</item>
+        <item>Věřte své cestě.</item>
+        <item>Bojuj dál, zvedni se.</item>
+        <item>Věřit v nemožné.</item>
+        <item>Zůstaňte odolní, nikdy nedávejte.</item>
+        <item>Jsi silnější, než víš.</item>
+        <item>Žijte s vášní a záměrem.</item>
+        <item>Najděte radost na každé cestě.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaňte pozitivní, zůstaňte silní.</item>
+        <item>Každý den je nová šance.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Pokračujte v posouvání za hranice.</item>
+        <item>Věřte své vnitřní síle.</item>
+        <item>Jsi předurčen k velikosti.</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
     </string-array>
     <string-array name="alignment_options">
-		<item>
-			Vlevo, odjet
-		</item>
-        <item>
-			Centrum
-		</item>
-        <item>
-			Že jo
-		</item>
+        <item>Vlevo, odjet</item>
+        <item>Centrum</item>
+        <item>Že jo</item>
     </string-array>
-    <string name="search_engine">
-		Vyhledávač
-	</string>
-    <string name="search_google">
-		Google
-	</string>
-    <string name="search_yahoo">
-		Yahoo
-	</string>
-    <string name="search_duckduckgo">
-		DuckDuckGo
-	</string>
-    <string name="search_bing">
-		Bing
-	</string>
-    <string name="search_brave">
-		Statečný
-	</string>
-    <string name="search_swisscow">
-		SwissCows
-	</string>
-    <string name="widgets_battery_level">
-		Úroveň baterie: %d%%
-	</string>
-    <string name="widgets_battery_count">
-		Počet nabití baterie: %1$d
-	</string>
-    <string name="widgets_battery_current">
-		Proud baterie: %1$.2f %2$s
-	</string>
-    <string name="widgets_battery_status">
-		Stav nabíjení: %1$s
-	</string>
-    <string name="widgets_battery_health">
-		Stav baterie: %1$s
-	</string>
-    <string name="widgets_battery_voltage">
-		Napětí baterie: %1$.2f %2$s
-	</string>
-    <string name="widgets_battery_temperature">
-		Teplota baterie: %1$.2f %2$s
-	</string>
-    <string name="widgets_settings_show_weather">
-		Widget počasí
-	</string>
-    <string name="widgets_settings_show_battery">
-		Widget baterie
-	</string>
-    <string name="widgets_settings_display">
-		Zobrazit
-	</string>
-    <string name="widgets_settings_select_order">
-		Vyberte Objednat
-	</string>
-    <string name="acra_crash">
-		Pád
-	</string>
-    <string name="acra_dialog_text">
-		Je nám líto, ale %1$s došlo k neočekávanému problému a je třeba ji zavřít. Pomozte nám zlepšit se zasláním zprávy o selhání.\n\n%1$s si váží vašeho soukromí a shromážděná data slouží výhradně ke zlepšení stability aplikace. Neshromažďují se žádné osobní údaje. Děkuji za vaší podporu!
-	</string>
-    <string name="acra_send_report">
-		Poslat zprávu
-	</string>
-    <string name="acra_dont_send">
-		Neposílejte
-	</string>
-    <string name="acra_mail_body">
-		Popište prosím problém, na který jste narazili:
-	</string>
+    <string name="search_engine">Vyhledávač</string>
+    <string name="search_google">Google</string>
+    <string name="search_yahoo">Yahoo</string>
+    <string name="search_duckduckgo">DuckDuckGo</string>
+    <string name="search_bing">Bing</string>
+    <string name="search_brave">Statečný</string>
+    <string name="search_swisscow">SwissCows</string>
+    <string name="widgets_battery_level">Úroveň baterie: %d%%</string>
+    <string name="widgets_battery_count">Počet nabití baterie: %1$d</string>
+    <string name="widgets_battery_current">Proud baterie: %1$.2f %2$s</string>
+    <string name="widgets_battery_status">Stav nabíjení: %1$s</string>
+    <string name="widgets_battery_health">Stav baterie: %1$s</string>
+    <string name="widgets_battery_voltage">Napětí baterie: %1$.2f %2$s</string>
+    <string name="widgets_battery_temperature">Teplota baterie: %1$.2f %2$s</string>
+    <string name="widgets_settings_show_weather">Widget počasí</string>
+    <string name="widgets_settings_show_weather_sun">Zobrazit západ slunce &amp; Východ slunce</string>
+    <string name="widgets_settings_show_battery">Widget baterie</string>
+    <string name="widgets_settings_display">Zobrazit</string>
+    <string name="widgets_settings_select_order">Vyberte Objednat</string>
+    <string name="acra_crash">Pád</string>
+    <string name="acra_dialog_text">Je nám líto, ale %1$s došlo k neočekávanému problému a je třeba ji zavřít. Pomozte nám zlepšit se zasláním zprávy o selhání.\n\n%1$s si váží vašeho soukromí a shromážděná data slouží výhradně ke zlepšení stability aplikace. Neshromažďují se žádné osobní údaje. Děkuji za vaší podporu!</string>
+    <string name="acra_send_report">Poslat zprávu</string>
+    <string name="acra_dont_send">Neposílejte</string>
+    <string name="acra_mail_body">Popište prosím problém, na který jste narazili:</string>
 </resources>
