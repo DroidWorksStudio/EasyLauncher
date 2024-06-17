@@ -582,9 +582,9 @@
     <string name="widgets_settings_display_battery">Віджет батареї</string>
     <string name="widgets_settings_display">Дисплей</string>
     <string name="widgets_settings_select_order">Виберіть Замовлення</string>
-    <string name="acra_crash">Crash</string>
-    <string name="acra_dialog_text">We\'re sorry, but %1$s has encountered an unexpected issue and needs to close. Please help us improve by sending a crash report.\n\n%1$s values your privacy and the data collected is solely used for improving app stability. No personal information is collected. Thank you for your support!</string>
-    <string name="acra_send_report">Send Report</string>
-    <string name="acra_dont_send">Don\'t Send</string>
-    <string name="acra_mail_body">Please describe the issue you encountered:</string>
+    <string name="acra_crash">Збій</string>
+    <string name="acra_dialog_text">Нам дуже шкода, але %1$s зіткнувся з неочікуваною проблемою та має закритися. Будь ласка, допоможіть нам покращити, надіславши звіт про збій.\n\n%1$s цінує вашу конфіденційність, а зібрані дані використовуються виключно для покращення стабільності програми. Особиста інформація не збирається. Спасибі вам за вашу підтримку!</string>
+    <string name="acra_send_report">Надіслати звіт</string>
+    <string name="acra_dont_send">Не надсилайте</string>
+    <string name="acra_mail_body">Опишіть проблему, з якою ви зіткнулися:</string>
 </resources>
