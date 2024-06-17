@@ -103,7 +103,7 @@ android {
                 val output = this as? com.android.build.gradle.internal.api.BaseVariantOutputImpl
                 if (output?.outputFileName?.endsWith(".apk") == true) {
                     output.outputFileName =
-                        "${defaultConfig.applicationId}_v${defaultConfig.versionName}-Signed.apk"
+                        "${defaultConfig.applicationId}_v${defaultConfig.versionName}-Release.apk"
                 }
             }
         }
