@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Language Support:
+
+- Updated Language Files. ([#78](https://github.com/DroidWorksStudio/EasyLauncher/issues/78)) - ([2d743f8](https://github.com/DroidWorksStudio/EasyLauncher/commit/2d743f8706cc1cf47e0c20d625f183c92f344027))
+
+## [0.1.6](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.6) - (17, June 2024)
+
 ### Implemented Enhancements:
 
 - Added a toggle for sun set and sun rise info. - ([0cb3aa6](https://github.com/DroidWorksStudio/EasyLauncher/commit/0cb3aa6729174ebd0778454381d9b59163112a34))
