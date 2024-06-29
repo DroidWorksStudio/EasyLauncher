@@ -85,6 +85,7 @@
     <string name="settings_actions_show_notifications">Toon meldingen</string>
     <string name="settings_actions_show_app_list">Toon appslijst</string>
     <string name="settings_actions_show_favorite_list">Favorietenlijst weergeven</string>
+    <string name="settings_actions_show_hidden_list">Toon verborgen lijst</string>
     <string name="settings_actions_open_quick_settings">Open Snelle instellingen</string>
     <string name="settings_actions_show_recents">Toon recent</string>
     <string name="settings_actions_show_widgets">Widgets weergeven</string>
