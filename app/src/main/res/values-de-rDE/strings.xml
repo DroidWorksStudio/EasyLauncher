@@ -588,5 +588,19 @@
     <string name="acra_dialog_text">Es tut uns leid, aber bei %1$s ist ein unerwartetes Problem aufgetreten und es muss geschlossen werden. Bitte helfen Sie uns, uns zu verbessern, indem Sie einen Absturzbericht senden.\n\n%1$s schätzt Ihre Privatsphäre und die gesammelten Daten werden ausschließlich zur Verbesserung der App-Stabilität verwendet. Es werden keine persönlichen Daten gesammelt. Vielen Dank für Ihre Unterstützung!</string>
     <string name="acra_send_report">Bericht senden</string>
     <string name="acra_dont_send">Nicht senden</string>
-    <string name="acra_mail_body">Bitte beschreiben Sie das aufgetretene Problem:</string>
+    <string name="acra_mail_body">        A crash has occurred in the application.\n
+        \n
+        Below are the details of the device. The error log has been attached as a file for your reference. We would appreciate your assistance in resolving this issue.\n
+        \n
+        Device Information: \n[PLEASE fill in the information below also removing anything between the square brackets or this will be ignored.]\n
+        \n
+        - App Version: [0.0.1]\n
+        - Android Version: [14]\n
+        - Device Name: [Android Pixel 69]\n
+        - Install Location: [github, fdroid, obtanium, self]\n
+        \n
+        Your prompt attention to this matter is greatly appreciated.\n
+        \n
+        Thank you.\n
+    </string>
 </resources>
