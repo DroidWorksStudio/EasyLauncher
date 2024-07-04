@@ -72,7 +72,10 @@
     <string name="settings_swipe_down">החלק למטה</string>
     <string name="settings_swipe_left">החלק שמאלה</string>
     <string name="settings_swipe_right">החלק ימינה</string>
+    <string name="settings_select_search_engine">Select a Search Engine</string>
     <string name="settings_search_engine">מנוע חיפוש</string>
+    <string name="settings_select_launcher_font">Select a Font Family</string>
+    <string name="settings_launcher_font">Font Family</string>
     <string name="settings_others_share">שיתוף</string>
     <string name="settings_others_feedback">משוב</string>
     <string name="settings_others_github">Github</string>
@@ -94,6 +97,7 @@
     <string name="settings_actions_disabled">נָכֶה</string>
     <string name="settings_units_metric">מֶטרִי</string>
     <string name="settings_units_imperial">קֵיסָרִי</string>
+    <string name="settings_font_system">System</string>
     <string name="authentication_title">אימות</string>
     <string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
     <string name="authentication_cancel">ביטול האימות</string>
