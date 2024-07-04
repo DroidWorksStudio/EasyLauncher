@@ -32,6 +32,6 @@
     <string name="settings_font_merriweather" translatable="false">Merriweather</string>
     <string name="settings_font_droidsans" translatable="false">Droid Sans</string>
     <string name="settings_font_raleway" translatable="false">Raleway</string>
-    <string name="settings_font_sourcecodepro" translatable="false">SourceCodePro</string>
+    <string name="settings_font_sourcecodepro" translatable="false">Source Code Pro</string>
     <string name="settings_font_quicksand" translatable="false">Quicksand</string>
 </resources>
