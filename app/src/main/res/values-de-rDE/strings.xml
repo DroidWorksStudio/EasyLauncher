@@ -72,7 +72,10 @@
     <string name="settings_swipe_down">Nach unten wischen</string>
     <string name="settings_swipe_left">Nach links wischen</string>
     <string name="settings_swipe_right">Wische nach rechts</string>
+    <string name="settings_select_search_engine">Select a Search Engine</string>
     <string name="settings_search_engine">Suchmaschine</string>
+    <string name="settings_select_launcher_font">Select a Font Family</string>
+    <string name="settings_launcher_font">Font Family</string>
     <string name="settings_others_share">Aktie</string>
     <string name="settings_others_feedback">Rückmeldung</string>
     <string name="settings_others_github">Github</string>
@@ -94,6 +97,7 @@
     <string name="settings_actions_disabled">Deaktiviert</string>
     <string name="settings_units_metric">Metrisch</string>
     <string name="settings_units_imperial">Kaiserliche</string>
+    <string name="settings_font_system">System</string>
     <string name="authentication_title">Authentifizierung</string>
     <string name="authentication_subtitle">Melden Sie sich mit Ihren biometrischen Anmeldeinformationen an.</string>
     <string name="authentication_cancel">Authentifizierung Abbrechen</string>
