@@ -1,8 +1,8 @@
 name: Question
 description: Ask about anything related
-labels: ['Type: Question']
+labels: [ 'Type: Question' ]
 title: '[Question] add text here'
-assignees: ['HeCodes2Much']
+assignees: [ 'HeCodes2Much' ]
 body:
   - type: markdown
     attributes:
@@ -16,9 +16,9 @@ body:
       options:
         - label: "I will make sure to have the issue written in English with an English title."
           required: true
-        - label: "I made sure that there are **no existing issues** - [open](https://github.com/HeCodes2MuchDroidWorksStudio/mLauncher/issues) or [closed](https://github.com/HeCodes2MuchDroidWorksStudio/mLauncher/issues?q=is%3Aissue+is%3Aclosed) - which I could contribute my information to."
+        - label: "I made sure that there are **no existing issues** - [open](https://github.com/DroidWorksStudio/mLauncher/issues) or [closed](https://github.com/DroidWorksStudio/mLauncher/issues?q=is%3Aissue+is%3Aclosed) - which I could contribute my information to."
           required: true
-        - label: "I have already checked the [WIKI](https://github.com/HeCodes2MuchDroidWorksStudio/mLauncher/wiki) pages."
+        - label: "I have already checked the [WIKI](https://github.com/DroidWorksStudio/mLauncher/wiki) pages."
           required: true
         - label: "I've verified that this issue hasn't been addressed in the [changelogs](https://github.com/DroidWorksStudio/mLauncher/blob/main/CHANGELOG.md)."
           required: true

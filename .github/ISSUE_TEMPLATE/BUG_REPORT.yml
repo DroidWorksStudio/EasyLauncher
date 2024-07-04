@@ -17,7 +17,7 @@ body:
       options:
         - label: "I will make sure to have the issue written in English with an English title."
           required: true
-        - label: "I made sure that there are **no existing issues** - [open](https://github.com/HeCodes2MuchDroidWorksStudio/mLauncher/issues) or [closed](https://github.com/HeCodes2MuchDroidWorksStudio/mLauncher/issues?q=is%3Aissue+is%3Aclosed) - which I could contribute my information to."
+        - label: "I made sure that there are **no existing issues** - [open](https://github.com/DroidWorksStudio/mLauncher/issues) or [closed](https://github.com/DroidWorksStudio/mLauncher/issues?q=is%3Aissue+is%3Aclosed) - which I could contribute my information to."
           required: true
         - label: "I've verified that this issue hasn't been addressed in the [changelogs](https://github.com/DroidWorksStudio/mLauncher/blob/main/CHANGELOG.md)."
           required: true
