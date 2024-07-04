@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed the issue report urls for the wiki. - ([9a1fe83](https://github.com/DroidWorksStudio/EasyLauncher/commit/9a1fe83330f7797133769513370562d270903f9c))
 
+### Dependency Updates:
+
+- Updated the dependencies for the launcher. - ([cb91acf](https://github.com/DroidWorksStudio/EasyLauncher/commit/cb91acf50855c7f5c0ae56a68bf012d5f27e5ed2))
+
 ### Language Support:
 
 - Updated Language Files. ([#78](https://github.com/DroidWorksStudio/EasyLauncher/issues/78)) - ([2d743f8](https://github.com/DroidWorksStudio/EasyLauncher/commit/2d743f8706cc1cf47e0c20d625f183c92f344027))
