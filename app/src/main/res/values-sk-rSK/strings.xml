@@ -588,5 +588,5 @@
     <string name="acra_dialog_text">Ľutujeme, ale %1$s sa vyskytol neočakávaný problém a je potrebné ho zavrieť. Pomôžte nám zlepšiť sa odoslaním správy o zlyhaní.\n\n%1$s si váži vaše súkromie a zhromaždené údaje sa používajú výlučne na zlepšenie stability aplikácie. Nezhromažďujú sa žiadne osobné údaje. Ďakujem za tvoju podporu!</string>
     <string name="acra_send_report">Odoslať správu</string>
     <string name="acra_dont_send">Neposielajte</string>
-    <string name="acra_mail_body">Popíšte problém, s ktorým ste sa stretli:</string>
+    <string name="acra_mail_body">V aplikácii došlo k zlyhaniu.\n\nNižšie sú uvedené podrobnosti o zariadení. Protokol chýb bol priložený ako súbor pre vašu referenciu. Ocenili by sme vašu pomoc pri riešení tohto problému.\n\nInformácie o zariadení: \n[VYPLŇTE, PROSÍM, nižšie uvedené informácie a odstráňte aj čokoľvek medzi hranatými zátvorkami, inak to bude ignorované.]\n\n- Verzia aplikácie: [0.0.1]\n- Verzia systému Android: [14]\n- Názov zariadenia: [Android Pixel 69]\n- Umiestnenie inštalácie: [github, fdroid, obtanium, self]\n\nVašu okamžitú pozornosť venovanú tejto záležitosti si veľmi ceníme.\n\nĎakujem.\n</string>
 </resources>
