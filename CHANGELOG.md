@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added font selection to select font used throughout the launcher - ([e125d44](https://github.com/DroidWorksStudio/EasyLauncher/commit/e125d443bb5635744e76608381e72b3437511e1c))
+
 ### Bug Fixes:
 
 - Fixed the UpdateManager so that it can now get the apkUrl correctly - ([2024635](https://github.com/DroidWorksStudio/EasyLauncher/commit/2024635046c842578ea33bae00370e021e20ed33))
