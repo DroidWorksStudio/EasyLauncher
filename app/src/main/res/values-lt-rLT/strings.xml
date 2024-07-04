@@ -72,7 +72,10 @@
     <string name="settings_swipe_down">Braukite žemyn</string>
     <string name="settings_swipe_left">Braukite kairėn</string>
     <string name="settings_swipe_right">Braukite dešinėn</string>
+    <string name="settings_select_search_engine">Select a Search Engine</string>
     <string name="settings_search_engine">Paieškos variklis</string>
+    <string name="settings_select_launcher_font">Select a Font Family</string>
+    <string name="settings_launcher_font">Font Family</string>
     <string name="settings_others_share">Dalintis</string>
     <string name="settings_others_feedback">Atsiliepimas</string>
     <string name="settings_others_github">Github</string>
@@ -94,6 +97,7 @@
     <string name="settings_actions_disabled">Išjungta</string>
     <string name="settings_units_metric">Metrika</string>
     <string name="settings_units_imperial">Imperatoriškasis</string>
+    <string name="settings_font_system">System</string>
     <string name="authentication_title">Autentifikavimas</string>
     <string name="authentication_subtitle">Prisijunkite naudodami biometrinius kredencialus.</string>
     <string name="authentication_cancel">Autentifikavimo atšaukimas</string>
