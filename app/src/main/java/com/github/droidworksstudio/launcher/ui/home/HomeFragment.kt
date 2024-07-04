@@ -37,6 +37,7 @@ import com.github.droidworksstudio.launcher.databinding.FragmentHomeBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.FingerprintHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.helper.UpdateManagerHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
@@ -73,6 +74,7 @@ class HomeFragment : Fragment(),
     @Inject
     lateinit var appHelper: AppHelper
 
+
     @Inject
     lateinit var fingerHelper: FingerprintHelper
 
@@ -83,6 +85,7 @@ class HomeFragment : Fragment(),
 
     private lateinit var batteryReceiver: BroadcastReceiver
     private lateinit var biometricPrompt: BiometricPrompt
+    private lateinit var updateManager: UpdateManagerHelper
 
     private lateinit var context: Context
 
@@ -106,6 +109,9 @@ class HomeFragment : Fragment(),
         setupRecyclerView()
         observeSwipeTouchListener()
         observeUserInterfaceSettings()
+
+        updateManager = UpdateManagerHelper(this)
+        updateManager.checkForUpdates()
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -479,6 +485,8 @@ class HomeFragment : Fragment(),
         binding.nestScrollView.hideKeyboard()
         observeUserInterfaceSettings()
         observeFavoriteAppList()
+
+        updateManager.checkForUpdates()
     }
 
     override fun onAppClicked(appInfo: AppInfo) {
