@@ -1,6 +1,11 @@
 package com.github.droidworksstudio.launcher
 
 import android.app.Application
+import android.content.Context
+import android.graphics.Typeface
+import android.os.Build
+import androidx.annotation.RequiresApi
+import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import dagger.hilt.android.HiltAndroidApp
 import org.acra.ACRA
 import org.acra.ReportField
@@ -8,12 +13,20 @@ import org.acra.config.dialog
 import org.acra.config.mailSender
 import org.acra.data.StringFormat
 import org.acra.ktx.initAcra
+import javax.inject.Inject
 
 
 @HiltAndroidApp
 class Application : Application() {
+
+    @Inject
+    lateinit var preferenceHelper: PreferenceHelper
+
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate() {
         super.onCreate()
+
+        setCustomFont(applicationContext)
 
         val pkgName = getString(R.string.app_name)
         val pkgVersion = this.packageManager.getPackageInfo(
@@ -62,6 +75,33 @@ class Application : Application() {
                 //defaults to empty
                 body = getString(R.string.acra_mail_body)
             }
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun setCustomFont(context: Context) {
+        // Load the custom font from resources
+        val customFont = preferenceHelper.launcherFont.getFont(context)
+
+        // Apply the custom font to different font families
+        if (customFont != null) {
+            TypefaceUtil.setDefaultFont("DEFAULT", customFont)
+            TypefaceUtil.setDefaultFont("MONOSPACE", customFont)
+            TypefaceUtil.setDefaultFont("SERIF", customFont)
+            TypefaceUtil.setDefaultFont("SANS_SERIF", customFont)
+        }
+    }
+}
+
+object TypefaceUtil {
+
+    fun setDefaultFont(staticTypefaceFieldName: String, fontAssetName: Typeface) {
+        try {
+            val staticField = Typeface::class.java.getDeclaredField(staticTypefaceFieldName)
+            staticField.isAccessible = true
+            staticField.set(null, fontAssetName)
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
     }
 }

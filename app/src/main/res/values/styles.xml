@@ -2,6 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Launcher" parent="Theme.MaterialComponents.Light.NoActionBar">
 
+        <item name="android:fontFamily">@android:fontFamily/system_font</item>
+
         <item name="android:windowDisablePreview">true</item>
 
         <!-- Primary brand color. -->
@@ -54,14 +56,20 @@
     <!-- Base application theme. -->
 
     <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:fontFamily">@android:fontFamily/system_font</item>
+
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
     </style>
 
     <style name="AppModalStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:fontFamily">@android:fontFamily/system_font</item>
+
         <item name="android:background">@drawable/bottom_dialog_style</item>
     </style>
 
     <style name="CustomAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:fontFamily">@android:fontFamily/system_font</item>
+
         <item name="shapeAppearanceOverlay">@style/RoundedCorners</item>
     </style>
 
@@ -71,6 +79,8 @@
     </style>
 
     <style name="TextDefaultStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">@android:fontFamily/system_font</item>
+
         <item name="android:shadowColor">?attr/primaryTextShadowColor</item>
         <item name="android:shadowDx">1</item>
         <item name="android:shadowDy">1</item>
@@ -78,6 +88,8 @@
     </style>
 
     <style name="MaterialDialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:fontFamily">@android:fontFamily/system_font</item>
+
         <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
     </style>
 </resources>

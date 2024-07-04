@@ -29,9 +29,3 @@ fun Fragment.showLongToast(message: String) {
 fun Fragment.showShortToast(message: String) {
     Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
 }
-
-fun Fragment.restartApp() {
-    val intent = Intent(requireContext(), MainActivity::class.java)
-    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
-    requireContext().startActivity(intent)
-}

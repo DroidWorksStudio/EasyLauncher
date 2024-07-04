@@ -46,6 +46,7 @@ class PreferenceViewModel @Inject constructor(
     private val batteryOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
 
     private val searchEngineLiveData: MutableLiveData<Constants.SearchEngines> = MutableLiveData()
+    private val launcherFontLiveData: MutableLiveData<Constants.Fonts> = MutableLiveData()
     private val doubleTapActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
     private val swipeUpActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
     private val swipeDownActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
@@ -235,5 +236,10 @@ class PreferenceViewModel @Inject constructor(
     fun setSearchEngine(searchEngine: Constants.SearchEngines) {
         preferenceHelper.searchEngines = searchEngine
         searchEngineLiveData.postValue((preferenceHelper.searchEngines))
+    }
+
+    fun setLauncherFont(launcherFont: Constants.Fonts) {
+        preferenceHelper.launcherFont = launcherFont
+        launcherFontLiveData.postValue((preferenceHelper.launcherFont))
     }
 }

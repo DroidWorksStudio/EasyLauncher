@@ -153,6 +153,21 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         }
         set(value) = prefs.edit().putString(Constants.SEARCH_ENGINE, value.name).apply()
 
+    var launcherFont: Constants.Fonts
+        get() {
+            return try {
+                Constants.Fonts.valueOf(
+                    prefs.getString(
+                        Constants.LAUNCHER_FONT,
+                        Constants.Fonts.System.name
+                    ).toString()
+                )
+            } catch (_: Exception) {
+                Constants.Fonts.System
+            }
+        }
+        set(value) = prefs.edit().putString(Constants.LAUNCHER_FONT, value.name).apply()
+
     var swipeUpAction: Constants.Action
         get() = loadAction(Constants.SWIPE_UP_ACTION, Constants.Action.ShowRecents)
         set(value) = storeAction(Constants.SWIPE_UP_ACTION, value)

@@ -85,7 +85,11 @@
     <string name="settings_swipe_left">Swipe Left</string>
     <string name="settings_swipe_right">Swipe Right</string>
 
+    <string name="settings_select_search_engine">Select a Search Engine</string>
     <string name="settings_search_engine">Search Engine</string>
+
+    <string name="settings_select_launcher_font">Select a Font Family</string>
+    <string name="settings_launcher_font">Font Family</string>
 
     <string name="settings_others_share">Share</string>
     <string name="settings_others_feedback">Feedback</string>
@@ -112,6 +116,8 @@
 
     <string name="settings_units_metric">Metric</string>
     <string name="settings_units_imperial">Imperial</string>
+
+    <string name="settings_font_system">System</string>
 
     <string name="authentication_title">Authentication</string>
     <string name="authentication_subtitle">Log in using your biometric credentials.</string>

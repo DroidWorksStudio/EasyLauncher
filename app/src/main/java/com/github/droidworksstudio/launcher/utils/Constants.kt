@@ -1,6 +1,8 @@
 package com.github.droidworksstudio.launcher.utils
 
 import android.content.Context
+import android.graphics.Typeface
+import androidx.core.content.res.ResourcesCompat
 import com.github.droidworksstudio.launcher.R
 
 object Constants {
@@ -74,6 +76,8 @@ object Constants {
     const val URL_SWISSCOW_SEARCH = "https://swisscows.com/web?query="
     const val URL_GOOGLE_PLAY_STORE = "https://play.google.com/store/search?c=apps&q"
     const val APP_GOOGLE_PLAY_STORE = "market://search?c=apps&q"
+
+    const val LAUNCHER_FONT = "LAUNCHER_FONT"
 
     const val REQUEST_INSTALL_PERMISSION = 123
     const val REQUEST_LOCATION_PERMISSION_CODE = 246
@@ -155,6 +159,49 @@ object Constants {
             return when (this) {
                 Metric -> context.getString(R.string.settings_units_metric)
                 Imperial -> context.getString(R.string.settings_units_imperial)
+            }
+        }
+    }
+
+    enum class Fonts {
+        System,
+        Roboto,
+        OpenSans,
+        Lato,
+        Montserrat,
+        Merriweather,
+        DroidSans,
+        Raleway,
+        SourceCodePro,
+        Quicksand;
+
+        fun getFont(context: Context): Typeface? {
+            return when (this) {
+                System -> Typeface.DEFAULT
+                Roboto -> ResourcesCompat.getFont(context, R.font.roboto)
+                OpenSans -> ResourcesCompat.getFont(context, R.font.open_sans)
+                Lato -> ResourcesCompat.getFont(context, R.font.lato)
+                Montserrat -> ResourcesCompat.getFont(context, R.font.montserrat)
+                Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
+                DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
+                Raleway -> ResourcesCompat.getFont(context, R.font.raleway)
+                SourceCodePro -> ResourcesCompat.getFont(context, R.font.source_code_pro)
+                Quicksand -> ResourcesCompat.getFont(context, R.font.quicksand)
+            }
+        }
+
+        fun getString(context: Context): String {
+            return when (this) {
+                System -> context.getString(R.string.settings_font_system)
+                Roboto -> context.getString(R.string.settings_font_roboto)
+                OpenSans -> context.getString(R.string.settings_font_opensans)
+                Lato -> context.getString(R.string.settings_font_lato)
+                Montserrat -> context.getString(R.string.settings_font_montserrat)
+                Merriweather -> context.getString(R.string.settings_font_merriweather)
+                DroidSans -> context.getString(R.string.settings_font_droidsans)
+                Raleway -> context.getString(R.string.settings_font_raleway)
+                SourceCodePro -> context.getString(R.string.settings_font_sourcecodepro)
+                Quicksand -> context.getString(R.string.settings_font_quicksand)
             }
         }
     }
