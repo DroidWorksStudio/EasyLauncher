@@ -588,19 +588,5 @@
     <string name="acra_dialog_text">Je nám líto, ale %1$s došlo k neočekávanému problému a je třeba ji zavřít. Pomozte nám zlepšit se zasláním zprávy o selhání.\n\n%1$s si váží vašeho soukromí a shromážděná data slouží výhradně ke zlepšení stability aplikace. Neshromažďují se žádné osobní údaje. Děkuji za vaší podporu!</string>
     <string name="acra_send_report">Poslat zprávu</string>
     <string name="acra_dont_send">Neposílejte</string>
-    <string name="acra_mail_body">        A crash has occurred in the application.\n
-        \n
-        Below are the details of the device. The error log has been attached as a file for your reference. We would appreciate your assistance in resolving this issue.\n
-        \n
-        Device Information: \n[PLEASE fill in the information below also removing anything between the square brackets or this will be ignored.]\n
-        \n
-        - App Version: [0.0.1]\n
-        - Android Version: [14]\n
-        - Device Name: [Android Pixel 69]\n
-        - Install Location: [github, fdroid, obtanium, self]\n
-        \n
-        Your prompt attention to this matter is greatly appreciated.\n
-        \n
-        Thank you.\n
-    </string>
+    <string name="acra_mail_body">A crash has occurred in the application.\n\nBelow are the details of the device. The error log has been attached as a file for your reference. We would appreciate your assistance in resolving this issue.\n\nDevice Information: \n[PLEASE fill in the information below also removing anything between the square brackets or this will be ignored.]\n\n- App Version: [0.0.1]\n- Android Version: [14]\n- Device Name: [Android Pixel 69]\n- Install Location: [github, fdroid, obtanium, self]\n\nYour prompt attention to this matter is greatly appreciated.\n\nThank you.\n</string>
 </resources>
