@@ -46,21 +46,26 @@ class UpdateManagerHelper(private val fragment: Fragment) {
                     val tagName = jsonObject.getString("tag_name")
                     val latestVersion = tagName.replace("v", "")
                     val assets = jsonObject.getJSONArray("assets")
-                    val apkUrl = (assets.get(1) as JSONObject).getString("browser_download_url")
 
-                    Log.d("UpdateManager", "Latest version: $latestVersion | Current version: $currentVersion")
+                    // Check if assets array has elements
+                    if (assets.length() > 0) {
+                        val apkUrl = (assets.get(0) as JSONObject).getString("browser_download_url")
+                        Log.d("UpdateManager", "APK URL: $apkUrl | Latest version: $latestVersion | Current version: $currentVersion")
 
-                    if (latestVersion > currentVersion) {
-                        val declinedVersion = sharedPreferences.getString("declined_version", "")
+                        if (latestVersion > currentVersion) {
+                            val declinedVersion = sharedPreferences.getString("declined_version", "")
 
-                        Log.d("UpdateManager", "Declined version: $declinedVersion")
+                            Log.d("UpdateManager", "Declined version: $declinedVersion")
 
-                        if (latestVersion != declinedVersion) {
-                            // Ask the user if they want to update
-                            activity.runOnUiThread {
-                                showUpdateDialog(latestVersion, apkUrl)
+                            if (latestVersion != declinedVersion) {
+                                // Ask the user if they want to update
+                                activity.runOnUiThread {
+                                    showUpdateDialog(latestVersion, apkUrl)
+                                }
                             }
                         }
+                    } else {
+                        Log.e("UpdateManager", "Assets array is empty")
                     }
                 }
             }
