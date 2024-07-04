@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed a font name in strings. - ([1ea3899](https://github.com/DroidWorksStudio/EasyLauncher/commit/1ea3899b767ed026ee5f8cc4301814f34dab475b))
 - Fixed the UpdateManager so that it can now get the apkUrl correctly - ([2024635](https://github.com/DroidWorksStudio/EasyLauncher/commit/2024635046c842578ea33bae00370e021e20ed33))
 - Fixed the update manager to work when reloading app. - ([69dc514](https://github.com/DroidWorksStudio/EasyLauncher/commit/69dc514407dc6d165ae043f04d47b41df8b0f1ec))
 - Fixed acra_mail_body string - ([ef4bec6](https://github.com/DroidWorksStudio/EasyLauncher/commit/ef4bec64f9feb75188a6f10b078ccf7317fb20ef))
