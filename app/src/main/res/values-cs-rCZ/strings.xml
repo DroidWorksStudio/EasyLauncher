@@ -72,10 +72,10 @@
     <string name="settings_swipe_down">Přejeďte prstem dolů</string>
     <string name="settings_swipe_left">Přejeďte doleva</string>
     <string name="settings_swipe_right">Přejeďte doprava</string>
-    <string name="settings_select_search_engine">Select a Search Engine</string>
+    <string name="settings_select_search_engine">Vyberte vyhledávač</string>
     <string name="settings_search_engine">Vyhledávač</string>
-    <string name="settings_select_launcher_font">Select a Font Family</string>
-    <string name="settings_launcher_font">Font Family</string>
+    <string name="settings_select_launcher_font">Vyberte rodinu písem</string>
+    <string name="settings_launcher_font">Rodina písem</string>
     <string name="settings_others_share">Podíl</string>
     <string name="settings_others_feedback">Zpětná vazba</string>
     <string name="settings_others_github">Github</string>
@@ -97,7 +97,7 @@
     <string name="settings_actions_disabled">Zakázáno</string>
     <string name="settings_units_metric">Metrický</string>
     <string name="settings_units_imperial">Císařský</string>
-    <string name="settings_font_system">System</string>
+    <string name="settings_font_system">Systém</string>
     <string name="authentication_title">Autentizace</string>
     <string name="authentication_subtitle">Přihlaste se pomocí svých biometrických údajů.</string>
     <string name="authentication_cancel">Zrušení ověřování</string>

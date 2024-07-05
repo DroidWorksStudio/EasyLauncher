@@ -72,10 +72,10 @@
     <string name="settings_swipe_down">Scorri verso il basso</string>
     <string name="settings_swipe_left">Scorrere verso sinistra</string>
     <string name="settings_swipe_right">Scorri verso destra</string>
-    <string name="settings_select_search_engine">Select a Search Engine</string>
+    <string name="settings_select_search_engine">Seleziona un motore di ricerca</string>
     <string name="settings_search_engine">Motore di ricerca</string>
-    <string name="settings_select_launcher_font">Select a Font Family</string>
-    <string name="settings_launcher_font">Font Family</string>
+    <string name="settings_select_launcher_font">Seleziona una famiglia di caratteri</string>
+    <string name="settings_launcher_font">Famiglia di font</string>
     <string name="settings_others_share">Condividere</string>
     <string name="settings_others_feedback">Feedback</string>
     <string name="settings_others_github">Github</string>
@@ -97,7 +97,7 @@
     <string name="settings_actions_disabled">Disabilitato</string>
     <string name="settings_units_metric">Metrico</string>
     <string name="settings_units_imperial">Imperiale</string>
-    <string name="settings_font_system">System</string>
+    <string name="settings_font_system">Sistema</string>
     <string name="authentication_title">Autenticazione</string>
     <string name="authentication_subtitle">Accedi utilizzando le tue credenziali biometriche.</string>
     <string name="authentication_cancel">Autenticazione Annulla</string>
