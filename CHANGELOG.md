@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added 3 new fonts to select from. - ([50d59e7](https://github.com/DroidWorksStudio/EasyLauncher/commit/50d59e715ef2eaa613d9f47ad877ebc75b78d2c1))
+
 ### Bug Fixes:
 
 - Fixed error with fetchWeatherData not finding url. - ([6d32eed](https://github.com/DroidWorksStudio/EasyLauncher/commit/6d32eedbe1ba0371b42e3be91db16d22721a478c))
