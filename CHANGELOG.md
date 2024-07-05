@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
+
+### Refactoring:
+
+- Cleaned up code for HomeViewHolder. - ([9956333](https://github.com/DroidWorksStudio/EasyLauncher/commit/9956333323f94586f6b8136467d04e4f8627ddc9))
+
 ## [0.1.7](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.7) - (05, July 2024)
 
 ### Implemented Enhancements:
