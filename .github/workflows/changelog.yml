@@ -33,7 +33,7 @@ jobs:
           git_user_signingkey: true
           git_commit_gpgsign: true
         env:
-          GPG_PRIVATE_KEY: ${{ secrets.GIT_ACTIONS_GPG_KEY }}
+          gpg_private_key: ${{ secrets.GIT_ACTIONS_GPG_KEY }}
 
       - name: Commit and push changes
         run: |
