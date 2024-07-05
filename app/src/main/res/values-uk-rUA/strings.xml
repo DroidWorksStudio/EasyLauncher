@@ -72,10 +72,10 @@
     <string name="settings_swipe_down">Проведіть пальцем вниз</string>
     <string name="settings_swipe_left">Проведіть вліво</string>
     <string name="settings_swipe_right">Проведіть праворуч</string>
-    <string name="settings_select_search_engine">Select a Search Engine</string>
+    <string name="settings_select_search_engine">Виберіть пошукову систему</string>
     <string name="settings_search_engine">Пошукова система</string>
-    <string name="settings_select_launcher_font">Select a Font Family</string>
-    <string name="settings_launcher_font">Font Family</string>
+    <string name="settings_select_launcher_font">Виберіть сімейство шрифтів</string>
+    <string name="settings_launcher_font">Сімейство шрифтів</string>
     <string name="settings_others_share">Поділіться</string>
     <string name="settings_others_feedback">Зворотній зв\'язок</string>
     <string name="settings_others_github">Github</string>
@@ -97,7 +97,7 @@
     <string name="settings_actions_disabled">Вимкнено</string>
     <string name="settings_units_metric">Метрика</string>
     <string name="settings_units_imperial">Імператорський</string>
-    <string name="settings_font_system">System</string>
+    <string name="settings_font_system">система</string>
     <string name="authentication_title">Аутентифікація</string>
     <string name="authentication_subtitle">Увійдіть, використовуючи свої біометричні облікові дані.</string>
     <string name="authentication_cancel">Автентифікація Скасувати</string>
