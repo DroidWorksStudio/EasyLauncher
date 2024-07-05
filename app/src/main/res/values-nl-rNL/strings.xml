@@ -72,7 +72,10 @@
     <string name="settings_swipe_down">Naar beneden swipen</string>
     <string name="settings_swipe_left">Veeg naar links</string>
     <string name="settings_swipe_right">Veeg naar rechts</string>
+    <string name="settings_select_search_engine">Select a Search Engine</string>
     <string name="settings_search_engine">Zoekmachine</string>
+    <string name="settings_select_launcher_font">Select a Font Family</string>
+    <string name="settings_launcher_font">Font Family</string>
     <string name="settings_others_share">Deel</string>
     <string name="settings_others_feedback">Feedback</string>
     <string name="settings_others_github">Github</string>
@@ -94,6 +97,7 @@
     <string name="settings_actions_disabled">Gehandicapt</string>
     <string name="settings_units_metric">Metriek</string>
     <string name="settings_units_imperial">Imperiaal</string>
+    <string name="settings_font_system">System</string>
     <string name="authentication_title">Authenticatie</string>
     <string name="authentication_subtitle">Log in met uw biometrische gegevens.</string>
     <string name="authentication_cancel">Authenticatie Annuleren</string>
