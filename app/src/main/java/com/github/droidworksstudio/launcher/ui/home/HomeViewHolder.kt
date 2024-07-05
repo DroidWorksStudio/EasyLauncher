@@ -1,6 +1,7 @@
 package com.github.droidworksstudio.launcher.ui.home
 
 import android.annotation.SuppressLint
+import android.content.pm.PackageManager
 import android.util.Log
 import android.view.Gravity
 import android.view.View
@@ -37,8 +38,9 @@ class HomeViewHolder @Inject constructor(
             Log.d("Tag", "Home Adapter Color: ${preferenceHelper.appColor}")
 
             if (preferenceHelper.showAppIcon) {
-                val appIcon =
-                    binding.root.context.packageManager.getApplicationIcon(appInfo.packageName)
+                val pm: PackageManager = binding.root.context.packageManager
+
+                val appIcon = pm.getApplicationIcon(appInfo.packageName)
                 when (preferenceHelper.homeAppAlignment) {
                     Gravity.START -> {
                         appHomeLeftIcon.setImageDrawable(appIcon)
