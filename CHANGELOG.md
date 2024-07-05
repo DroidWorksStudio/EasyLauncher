@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed error with fetchWeatherData not finding url. - ([6d32eed](https://github.com/DroidWorksStudio/EasyLauncher/commit/6d32eedbe1ba0371b42e3be91db16d22721a478c))
+
 ### Language Support:
 
 - Updated Language Files. ([#87](https://github.com/DroidWorksStudio/EasyLauncher/issues/87)) - ([ac92fa7](https://github.com/DroidWorksStudio/EasyLauncher/commit/ac92fa7f68a7de60ae48b82e70a5835c5663e95c))
