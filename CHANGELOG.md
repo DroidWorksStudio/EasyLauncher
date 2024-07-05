@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Language Support:
+
+- Updated Language Files. ([#87](https://github.com/DroidWorksStudio/EasyLauncher/issues/87)) - ([ac92fa7](https://github.com/DroidWorksStudio/EasyLauncher/commit/ac92fa7f68a7de60ae48b82e70a5835c5663e95c))
+
 ### Refactoring:
 
 - Cleaned up code for HomeViewHolder. - ([9956333](https://github.com/DroidWorksStudio/EasyLauncher/commit/9956333323f94586f6b8136467d04e4f8627ddc9))
