@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7
         with:
           fetch-depth: 0 # fetch all history so multiple commits can be scanned
       - name: GitGuardian scan
-        uses: GitGuardian/ggshield/actions/secret@v1.26.0
+        uses: GitGuardian/ggshield/actions/secret@v1.29.0
         env:
           GITHUB_PUSH_BEFORE_SHA: ${{ github.event.before }}
           GITHUB_PUSH_BASE_SHA: ${{ github.event.base }}

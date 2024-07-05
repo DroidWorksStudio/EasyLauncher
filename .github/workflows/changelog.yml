@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7
         with:
           token: ${{ secrets.GIT_BOT_TOKEN }}
           fetch-depth: 0
 
       - name: Generate a changelog
-        uses: orhun/git-cliff-action@v3
+        uses: orhun/git-cliff-action@v3.2.0
         with:
           config: cliff.toml
           args: --verbose
@@ -28,7 +28,7 @@ jobs:
 
       - name: Import GPG key
         id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v2
+        uses: crazy-max/ghaction-import-gpg@v6.1.0
         with:
           git_user_signingkey: true
           git_commit_gpgsign: true

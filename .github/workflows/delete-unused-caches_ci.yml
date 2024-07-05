@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Do other steps like checkout, install, compile, etc.
-      - uses: MyAlbum/purge-cache@master
+      - uses: MyAlbum/purge-cache@v2.1.0
         with:
           max-age: 1800 # Cache max 7 days since last use (this is the default)
           debug: true # Set to true to output debug info
