@@ -34,6 +34,7 @@ class FontAdapter(
         return when (item) {
             Constants.Fonts.Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
             Constants.Fonts.DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
+            Constants.Fonts.GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
             Constants.Fonts.Lato -> ResourcesCompat.getFont(context, R.font.lato)
             Constants.Fonts.Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
             Constants.Fonts.Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
@@ -45,7 +46,7 @@ class FontAdapter(
             Constants.Fonts.Roboto -> ResourcesCompat.getFont(context, R.font.roboto)
             Constants.Fonts.SourceCodePro -> ResourcesCompat.getFont(context, R.font.source_code_pro)
             // Add other fonts as needed
-            else -> Typeface.DEFAULT
+            else -> ResourcesCompat.getFont(context, R.font.roboto)
         }
     }
 }

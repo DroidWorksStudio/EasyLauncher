@@ -167,6 +167,7 @@ object Constants {
         System,
         Bitter,
         DroidSans,
+        GreatVibes,
         Lato,
         Lobster,
         Merriweather,
@@ -183,6 +184,7 @@ object Constants {
                 System -> Typeface.DEFAULT
                 Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
                 DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
+                GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
                 Lato -> ResourcesCompat.getFont(context, R.font.lato)
                 Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
                 Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
@@ -201,6 +203,7 @@ object Constants {
                 System -> context.getString(R.string.settings_font_system)
                 Bitter -> context.getString(R.string.settings_font_bitter)
                 DroidSans -> context.getString(R.string.settings_font_droidsans)
+                GreatVibes -> context.getString(R.string.settings_font_greatvibes)
                 Lato -> context.getString(R.string.settings_font_lato)
                 Lobster -> context.getString(R.string.settings_font_lobster)
                 Merriweather -> context.getString(R.string.settings_font_merriweather)
