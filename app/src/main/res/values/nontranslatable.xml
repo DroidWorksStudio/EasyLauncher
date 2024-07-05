@@ -25,13 +25,16 @@
 
     <string name="acra_email" translatable="false">droidworksstudio@063240.xyz</string>
 
-    <string name="settings_font_roboto" translatable="false">Roboto</string>
-    <string name="settings_font_opensans" translatable="false">Open Sans</string>
-    <string name="settings_font_lato" translatable="false">Lato</string>
-    <string name="settings_font_montserrat" translatable="false">Montserrat</string>
-    <string name="settings_font_merriweather" translatable="false">Merriweather</string>
+    <string name="settings_font_bitter" translatable="false">Bitter</string>
     <string name="settings_font_droidsans" translatable="false">Droid Sans</string>
-    <string name="settings_font_raleway" translatable="false">Raleway</string>
-    <string name="settings_font_sourcecodepro" translatable="false">Source Code Pro</string>
+    <string name="settings_font_lato" translatable="false">Lato</string>
+    <string name="settings_font_lobster" translatable="false">Lobster</string>
+    <string name="settings_font_merriweather" translatable="false">Merriweather</string>
+    <string name="settings_font_montserrat" translatable="false">Montserrat</string>
+    <string name="settings_font_opensans" translatable="false">Open Sans</string>
+    <string name="settings_font_pacifico" translatable="false">Pacifico</string>
     <string name="settings_font_quicksand" translatable="false">Quicksand</string>
+    <string name="settings_font_raleway" translatable="false">Raleway</string>
+    <string name="settings_font_roboto" translatable="false">Roboto</string>
+    <string name="settings_font_sourcecodepro" translatable="false">Source Code Pro</string>
 </resources>

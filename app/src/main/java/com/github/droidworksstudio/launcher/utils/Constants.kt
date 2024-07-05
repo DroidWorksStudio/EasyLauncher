@@ -165,43 +165,52 @@ object Constants {
 
     enum class Fonts {
         System,
-        Roboto,
-        OpenSans,
-        Lato,
-        Montserrat,
-        Merriweather,
+        Bitter,
         DroidSans,
+        Lato,
+        Lobster,
+        Merriweather,
+        Montserrat,
+        OpenSans,
+        Pacifico,
+        Quicksand,
         Raleway,
-        SourceCodePro,
-        Quicksand;
+        Roboto,
+        SourceCodePro;
 
         fun getFont(context: Context): Typeface? {
             return when (this) {
                 System -> Typeface.DEFAULT
-                Roboto -> ResourcesCompat.getFont(context, R.font.roboto)
-                OpenSans -> ResourcesCompat.getFont(context, R.font.open_sans)
-                Lato -> ResourcesCompat.getFont(context, R.font.lato)
-                Montserrat -> ResourcesCompat.getFont(context, R.font.montserrat)
-                Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
+                Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
                 DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
-                Raleway -> ResourcesCompat.getFont(context, R.font.raleway)
-                SourceCodePro -> ResourcesCompat.getFont(context, R.font.source_code_pro)
+                Lato -> ResourcesCompat.getFont(context, R.font.lato)
+                Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
+                Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
+                Montserrat -> ResourcesCompat.getFont(context, R.font.montserrat)
+                OpenSans -> ResourcesCompat.getFont(context, R.font.open_sans)
+                Pacifico -> ResourcesCompat.getFont(context, R.font.pacifico)
                 Quicksand -> ResourcesCompat.getFont(context, R.font.quicksand)
+                Raleway -> ResourcesCompat.getFont(context, R.font.raleway)
+                Roboto -> ResourcesCompat.getFont(context, R.font.roboto)
+                SourceCodePro -> ResourcesCompat.getFont(context, R.font.source_code_pro)
             }
         }
 
         fun getString(context: Context): String {
             return when (this) {
                 System -> context.getString(R.string.settings_font_system)
-                Roboto -> context.getString(R.string.settings_font_roboto)
-                OpenSans -> context.getString(R.string.settings_font_opensans)
-                Lato -> context.getString(R.string.settings_font_lato)
-                Montserrat -> context.getString(R.string.settings_font_montserrat)
-                Merriweather -> context.getString(R.string.settings_font_merriweather)
+                Bitter -> context.getString(R.string.settings_font_bitter)
                 DroidSans -> context.getString(R.string.settings_font_droidsans)
-                Raleway -> context.getString(R.string.settings_font_raleway)
-                SourceCodePro -> context.getString(R.string.settings_font_sourcecodepro)
+                Lato -> context.getString(R.string.settings_font_lato)
+                Lobster -> context.getString(R.string.settings_font_lobster)
+                Merriweather -> context.getString(R.string.settings_font_merriweather)
+                Montserrat -> context.getString(R.string.settings_font_montserrat)
+                OpenSans -> context.getString(R.string.settings_font_opensans)
+                Pacifico -> context.getString(R.string.settings_font_pacifico)
                 Quicksand -> context.getString(R.string.settings_font_quicksand)
+                Raleway -> context.getString(R.string.settings_font_raleway)
+                Roboto -> context.getString(R.string.settings_font_roboto)
+                SourceCodePro -> context.getString(R.string.settings_font_sourcecodepro)
             }
         }
     }

@@ -32,15 +32,18 @@ class FontAdapter(
 
     private fun getCustomTypefaceForItem(context: Context, item: Constants.Fonts): Typeface? {
         return when (item) {
-            Constants.Fonts.Roboto -> ResourcesCompat.getFont(context, R.font.roboto)
-            Constants.Fonts.OpenSans -> ResourcesCompat.getFont(context, R.font.open_sans)
+            Constants.Fonts.Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
+            Constants.Fonts.DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
             Constants.Fonts.Lato -> ResourcesCompat.getFont(context, R.font.lato)
+            Constants.Fonts.Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
+            Constants.Fonts.Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
             Constants.Fonts.Montserrat -> ResourcesCompat.getFont(context, R.font.montserrat)
-            Constants.Fonts.Merriweather -> ResourcesCompat.getFont(context, R.font.montserrat)
-            Constants.Fonts.DroidSans -> ResourcesCompat.getFont(context, R.font.droid_sans)
-            Constants.Fonts.Raleway -> ResourcesCompat.getFont(context, R.font.open_sans)
-            Constants.Fonts.SourceCodePro -> ResourcesCompat.getFont(context, R.font.open_sans)
+            Constants.Fonts.OpenSans -> ResourcesCompat.getFont(context, R.font.open_sans)
+            Constants.Fonts.Pacifico -> ResourcesCompat.getFont(context, R.font.pacifico)
             Constants.Fonts.Quicksand -> ResourcesCompat.getFont(context, R.font.quicksand)
+            Constants.Fonts.Raleway -> ResourcesCompat.getFont(context, R.font.raleway)
+            Constants.Fonts.Roboto -> ResourcesCompat.getFont(context, R.font.roboto)
+            Constants.Fonts.SourceCodePro -> ResourcesCompat.getFont(context, R.font.source_code_pro)
             // Add other fonts as needed
             else -> Typeface.DEFAULT
         }
