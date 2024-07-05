@@ -28,6 +28,7 @@ import androidx.navigation.fragment.findNavController
 import com.github.droidworksstudio.common.capitalizeEachWord
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.hideKeyboard
+import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentWidgetsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -36,7 +37,9 @@ import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.utils.Constants
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -120,6 +123,7 @@ class WidgetFragment : Fragment(),
 
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     private fun setupWeatherWidget() {
         val sharedPreferences =
             context.getSharedPreferences(Constants.WEATHER_PREFS, Context.MODE_PRIVATE)
@@ -139,7 +143,9 @@ class WidgetFragment : Fragment(),
             if (!showWeatherWidget || !context.hasInternetPermission()) return@launch
 
             try {
-                val weatherDeferred = async { appHelper.fetchWeatherData(context, latitude, longitude) }
+                val weatherDeferred = GlobalScope.async {
+                    appHelper.fetchWeatherData(context, latitude, longitude)
+                }
 
                 // Prepare UI elements concurrently
                 withContext(Dispatchers.Main) {
@@ -163,40 +169,50 @@ class WidgetFragment : Fragment(),
                     }
                 }
 
-                val weatherResponse = weatherDeferred.await()
-                Log.d("weatherResponse", "$weatherResponse")
+                val result = weatherDeferred.await()
+                Log.d("weatherResponse", "$result")
 
-                withContext(Dispatchers.Main) {
-                    val timestamp = convertTimestampToReadableDate(weatherResponse.dt)
-                    binding.apply {
-                        weatherCity.text = getString(R.string.widget_weather_location, weatherResponse.name, weatherResponse.sys.country)
-                        weatherTemperature.text = getString(R.string.widget_weather_temp, weatherResponse.main.temp, temperatureScale)
-                        weatherDescription.text = getString(R.string.widget_weather_description, weatherResponse.weather[0].description).capitalizeEachWord()
-                        weatherWind.text = getString(R.string.widget_weather_wind, weatherResponse.wind.speed, speedScale)
-                        weatherHumidity.text = getString(R.string.widget_weather_humidity, weatherResponse.main.humidity)
-                        weatherLastRun.text = timestamp
-                        weatherRefresh.text = getString(R.string.widget_weather_refresh, getString(R.string.refresh_icon))
+                when (result) {
+                    is AppHelper.WeatherResult.Success -> {
+                        val weatherResponse = result.weatherResponse
 
-                        val weatherIconBitmap = createWeatherIcon(context, setWeatherIcon(context, weatherResponse.weather[0].id))
-                        weatherIcon.setImageBitmap(weatherIconBitmap) // Ensure this matches your ImageView ID
-                        weatherIcon.setColorFilter(widgetTextColor)
+                        withContext(Dispatchers.Main) {
+                            val timestamp = convertTimestampToReadableDate(weatherResponse.dt)
+                            binding.apply {
+                                weatherCity.text = getString(R.string.widget_weather_location, weatherResponse.name, weatherResponse.sys.country)
+                                weatherTemperature.text = getString(R.string.widget_weather_temp, weatherResponse.main.temp, temperatureScale)
+                                weatherDescription.text = getString(R.string.widget_weather_description, weatherResponse.weather[0].description).capitalizeEachWord()
+                                weatherWind.text = getString(R.string.widget_weather_wind, weatherResponse.wind.speed, speedScale)
+                                weatherHumidity.text = getString(R.string.widget_weather_humidity, weatherResponse.main.humidity)
+                                weatherLastRun.text = timestamp
+                                weatherRefresh.text = getString(R.string.widget_weather_refresh, getString(R.string.refresh_icon))
 
-                        val sunriseIconBitmap = createSunIcon(context, getString(R.string.sunrise_icon))
-                        sunriseIcon.setImageBitmap(sunriseIconBitmap)
-                        sunriseIcon.setColorFilter(widgetTextColor)
+                                val weatherIconBitmap = createWeatherIcon(context, setWeatherIcon(context, weatherResponse.weather[0].id))
+                                weatherIcon.setImageBitmap(weatherIconBitmap) // Ensure this matches your ImageView ID
+                                weatherIcon.setColorFilter(widgetTextColor)
 
-                        val sunsetIconBitmap = createSunIcon(context, getString(R.string.sunset_icon))
-                        sunsetIcon.setImageBitmap(sunsetIconBitmap)
-                        sunsetIcon.setColorFilter(widgetTextColor)
+                                val sunriseIconBitmap = createSunIcon(context, getString(R.string.sunrise_icon))
+                                sunriseIcon.setImageBitmap(sunriseIconBitmap)
+                                sunriseIcon.setColorFilter(widgetTextColor)
 
-                        val sunriseTime = convertTimestampToReadableDate(weatherResponse.sys.sunrise)
-                        sunriseText.text = getString(R.string.widget_sunrise_time, sunriseTime)
+                                val sunsetIconBitmap = createSunIcon(context, getString(R.string.sunset_icon))
+                                sunsetIcon.setImageBitmap(sunsetIconBitmap)
+                                sunsetIcon.setColorFilter(widgetTextColor)
 
-                        val sunsetTime = convertTimestampToReadableDate(weatherResponse.sys.sunset)
-                        sunsetText.text = getString(R.string.widget_sunset_time, sunsetTime)
+                                val sunriseTime = convertTimestampToReadableDate(weatherResponse.sys.sunrise)
+                                sunriseText.text = getString(R.string.widget_sunrise_time, sunriseTime)
 
+                                val sunsetTime = convertTimestampToReadableDate(weatherResponse.sys.sunset)
+                                sunsetText.text = getString(R.string.widget_sunset_time, sunsetTime)
 
-                        weatherRoot.visibility = View.VISIBLE
+                                weatherRoot.visibility = View.VISIBLE
+                            }
+                        }
+                    }
+
+                    is AppHelper.WeatherResult.Failure -> {
+                        val errorMessage = result.errorMessage
+                        context.showLongToast(errorMessage)
                     }
                 }
             } catch (e: Exception) {

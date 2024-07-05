@@ -26,10 +26,9 @@ import com.github.droidworksstudio.launcher.accessibility.ActionService
 import com.github.droidworksstudio.launcher.helper.weather.WeatherResponse
 import com.github.droidworksstudio.launcher.utils.WeatherApiService
 import com.google.gson.Gson
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.net.UnknownHostException
 import java.util.Calendar
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
@@ -252,43 +251,52 @@ class AppHelper @Inject constructor() {
         }
     }
 
-    suspend fun fetchWeatherData(
+    sealed class WeatherResult {
+        data class Success(val weatherResponse: WeatherResponse) : WeatherResult()
+        data class Failure(val errorMessage: String) : WeatherResult()
+    }
+
+    fun fetchWeatherData(
         context: Context,
         latitude: Float,
         longitude: Float
-    ): WeatherResponse {
+    ): WeatherResult {
         // Check if cached data is available and not expired
         val cachedWeatherData = context.getWeatherDataFromCache()
         if (cachedWeatherData?.let { System.currentTimeMillis() - it.timestamp < TimeUnit.MINUTES.toMillis(15) } == true) {
-            return cachedWeatherData.weatherResponse
+            return WeatherResult.Success(cachedWeatherData.weatherResponse)
         }
-
 
         // Fetch weather data from the network
         val apiKey = BuildConfig.API_KEY
+        val baseURL = "api.openweathermap.org"
         val units = "metric"
 
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.openweathermap.org/data/2.5/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
+        try {
+            val retrofit = Retrofit.Builder()
+                .baseUrl("https://$baseURL/data/2.5/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
 
-        val service = retrofit.create(WeatherApiService::class.java)
+            val service = retrofit.create(WeatherApiService::class.java)
 
-        return withContext(Dispatchers.IO) {
             val response = service.getWeather("$latitude", "$longitude", units, apiKey).execute()
             if (response.isSuccessful) {
                 val weatherResponse = response.body()
                 if (weatherResponse != null) {
                     // Cache the fetched weather data
                     context.cacheWeatherData(weatherResponse)
-                    weatherResponse
+                    return WeatherResult.Success(weatherResponse)
                 } else {
-                    throw NullPointerException("Weather response body is null")
+                    return WeatherResult.Failure("Weather response body is null")
                 }
             } else {
-                throw Exception("Failed to fetch weather data: ${response.errorBody()}")
+                return WeatherResult.Failure("Failed to fetch weather data: ${response.errorBody()}")
             }
+        } catch (e: UnknownHostException) {
+            return WeatherResult.Failure("Unknown Host : $baseURL")
+        } catch (e: Exception) {
+            return WeatherResult.Failure("${e.message}")
         }
     }
 
