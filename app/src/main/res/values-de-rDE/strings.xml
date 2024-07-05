@@ -72,10 +72,10 @@
     <string name="settings_swipe_down">Nach unten wischen</string>
     <string name="settings_swipe_left">Nach links wischen</string>
     <string name="settings_swipe_right">Wische nach rechts</string>
-    <string name="settings_select_search_engine">Select a Search Engine</string>
+    <string name="settings_select_search_engine">Wählen Sie eine Suchmaschine</string>
     <string name="settings_search_engine">Suchmaschine</string>
-    <string name="settings_select_launcher_font">Select a Font Family</string>
-    <string name="settings_launcher_font">Font Family</string>
+    <string name="settings_select_launcher_font">Wählen Sie eine Schriftfamilie aus</string>
+    <string name="settings_launcher_font">Schriftfamilie</string>
     <string name="settings_others_share">Aktie</string>
     <string name="settings_others_feedback">Rückmeldung</string>
     <string name="settings_others_github">Github</string>
