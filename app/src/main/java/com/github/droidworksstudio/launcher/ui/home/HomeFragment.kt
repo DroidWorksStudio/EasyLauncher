@@ -35,7 +35,7 @@ import com.github.droidworksstudio.launcher.adapter.home.HomeAdapter
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentHomeBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
-import com.github.droidworksstudio.launcher.helper.FingerprintHelper
+import com.github.droidworksstudio.launcher.helper.BiometricHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.helper.UpdateManagerHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
@@ -62,7 +62,7 @@ class HomeFragment : Fragment(),
     OnItemClickedListener.OnAppLongClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
-    FingerprintHelper.Callback, ScrollEventListener {
+    BiometricHelper.Callback, ScrollEventListener {
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -76,7 +76,7 @@ class HomeFragment : Fragment(),
 
 
     @Inject
-    lateinit var fingerHelper: FingerprintHelper
+    lateinit var fingerHelper: BiometricHelper
 
     private val viewModel: AppViewModel by viewModels()
     private val preferenceViewModel: PreferenceViewModel by viewModels()
@@ -283,7 +283,7 @@ class HomeFragment : Fragment(),
         if (!appInfo.lock)
             context.launchApp(appInfo)
         else
-            fingerHelper.startFingerprintAuth(appInfo, this)
+            fingerHelper.startBiometricAuth(appInfo, this)
     }
 
     private fun showSelectedApp(appInfo: AppInfo) {
@@ -455,7 +455,7 @@ class HomeFragment : Fragment(),
                 })
 
             if (preferenceHelper.settingsLock) {
-                fingerHelper.startFingerprintSettingsAuth(R.id.action_HomeFragment_to_SettingsFragment)
+                fingerHelper.startBiometricSettingsAuth(R.id.action_HomeFragment_to_SettingsFragment)
             } else {
                 val actionTypeNavOptions: NavOptions =
                     appHelper.getActionType(Constants.Swipe.DoubleTap)

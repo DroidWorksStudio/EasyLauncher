@@ -20,7 +20,7 @@ import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.BottomsheetDialogBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
-import com.github.droidworksstudio.launcher.helper.FingerprintHelper
+import com.github.droidworksstudio.launcher.helper.BiometricHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -28,7 +28,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDialogFragment(),
-    FingerprintHelper.Callback {
+    BiometricHelper.Callback {
 
     private var _binding: BottomsheetDialogBinding? = null
 
@@ -43,7 +43,7 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
     lateinit var bottomDialogHelper: BottomDialogHelper
 
     @Inject
-    lateinit var fingerHelper: FingerprintHelper
+    lateinit var fingerHelper: BiometricHelper
 
     private var appStateClickListener: OnItemClickedListener.OnAppStateClickListener? = null
 
@@ -159,7 +159,7 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
 
         binding.bottomSheetLock.setOnClickListener {
             if (appInfo.lock) {
-                fingerHelper.startFingerprintAuth(appInfo, this)
+                fingerHelper.startBiometricAuth(appInfo, this)
             } else {
                 appInfo.lock = true
                 viewModel.updateAppLock(appInfo, appInfo.lock)

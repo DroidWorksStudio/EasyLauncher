@@ -28,7 +28,7 @@ import com.github.droidworksstudio.launcher.adapter.drawer.DrawAdapter
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentDrawBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
-import com.github.droidworksstudio.launcher.helper.FingerprintHelper
+import com.github.droidworksstudio.launcher.helper.BiometricHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
@@ -48,7 +48,7 @@ class DrawFragment : Fragment(),
     OnItemClickedListener.OnAppLongClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
-    FingerprintHelper.Callback, ScrollEventListener {
+    BiometricHelper.Callback, ScrollEventListener {
     private var _binding: FragmentDrawBinding? = null
 
     private val binding get() = _binding!!
@@ -60,7 +60,7 @@ class DrawFragment : Fragment(),
     lateinit var appHelper: AppHelper
 
     @Inject
-    lateinit var fingerHelper: FingerprintHelper
+    lateinit var fingerHelper: BiometricHelper
 
     private val viewModel: AppViewModel by viewModels()
 
@@ -274,7 +274,7 @@ class DrawFragment : Fragment(),
         if (!appInfo.lock) {
             context.launchApp(appInfo)
         } else {
-            fingerHelper.startFingerprintAuth(appInfo, this)
+            fingerHelper.startBiometricAuth(appInfo, this)
         }
     }
 

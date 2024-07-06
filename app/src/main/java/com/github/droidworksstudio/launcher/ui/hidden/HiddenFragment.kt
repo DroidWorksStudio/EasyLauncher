@@ -20,7 +20,7 @@ import com.github.droidworksstudio.launcher.adapter.hidden.HiddenAdapter
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentHiddenBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
-import com.github.droidworksstudio.launcher.helper.FingerprintHelper
+import com.github.droidworksstudio.launcher.helper.BiometricHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
@@ -35,7 +35,7 @@ class HiddenFragment : Fragment(),
     OnItemClickedListener.OnAppLongClickedListener,
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
-    FingerprintHelper.Callback {
+    BiometricHelper.Callback {
     private var _binding: FragmentHiddenBinding? = null
 
     private val binding get() = _binding!!
@@ -45,7 +45,7 @@ class HiddenFragment : Fragment(),
     private lateinit var context: Context
 
     @Inject
-    lateinit var fingerHelper: FingerprintHelper
+    lateinit var fingerHelper: BiometricHelper
 
     @Inject
     lateinit var appHelper: AppHelper
@@ -121,7 +121,7 @@ class HiddenFragment : Fragment(),
         if (!appInfo.lock) {
             context.launchApp(appInfo)
         } else {
-            fingerHelper.startFingerprintAuth(appInfo, this)
+            fingerHelper.startBiometricAuth(appInfo, this)
         }
     }
 

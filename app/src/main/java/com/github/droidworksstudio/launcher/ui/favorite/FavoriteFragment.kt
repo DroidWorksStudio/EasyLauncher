@@ -23,7 +23,7 @@ import com.github.droidworksstudio.launcher.adapter.favorite.FavoriteAdapter
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.FragmentFavoriteBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
-import com.github.droidworksstudio.launcher.helper.FingerprintHelper
+import com.github.droidworksstudio.launcher.helper.BiometricHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnItemMoveListener
@@ -41,7 +41,7 @@ class FavoriteFragment : Fragment(),
     OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
     OnItemMoveListener.OnItemActionListener,
-    FingerprintHelper.Callback {
+    BiometricHelper.Callback {
     private var _binding: FragmentFavoriteBinding? = null
 
     private val binding get() = _binding!!
@@ -54,7 +54,7 @@ class FavoriteFragment : Fragment(),
     lateinit var preferenceHelper: PreferenceHelper
 
     @Inject
-    lateinit var fingerHelper: FingerprintHelper
+    lateinit var fingerHelper: BiometricHelper
 
     @Inject
     lateinit var appHelper: AppHelper
@@ -204,7 +204,7 @@ class FavoriteFragment : Fragment(),
         if (!appInfo.lock) {
             context.launchApp(appInfo)
         } else {
-            fingerHelper.startFingerprintAuth(appInfo, this)
+            fingerHelper.startBiometricAuth(appInfo, this)
         }
     }
 

@@ -12,7 +12,7 @@ import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.utils.Constants
 import javax.inject.Inject
 
-class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
+class BiometricHelper @Inject constructor(private val fragment: Fragment) {
 
     private lateinit var callback: Callback
 
@@ -25,7 +25,7 @@ class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
         fun onAuthenticationError(errorCode: Int, errorMessage: CharSequence?)
     }
 
-    fun startFingerprintAuth(appInfo: AppInfo, callback: Callback) {
+    fun startBiometricAuth(appInfo: AppInfo, callback: Callback) {
         this.callback = callback
 
         val authenticationCallback = object : BiometricPrompt.AuthenticationCallback() {
@@ -45,20 +45,23 @@ class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
         val executor = ContextCompat.getMainExecutor(fragment.requireContext())
         val biometricPrompt = BiometricPrompt(fragment, executor, authenticationCallback)
 
+        val authenticators =
+            BiometricManager.Authenticators.BIOMETRIC_STRONG or BiometricManager.Authenticators.DEVICE_CREDENTIAL
+        val canAuthenticate =
+            BiometricManager.from(fragment.requireContext()).canAuthenticate(authenticators)
+
         val promptInfo = BiometricPrompt.PromptInfo.Builder()
             .setTitle(fragment.getString(R.string.authentication_title))
             .setSubtitle(fragment.getString(R.string.authentication_subtitle))
-            .setAllowedAuthenticators(BiometricManager.Authenticators.BIOMETRIC_WEAK or BiometricManager.Authenticators.DEVICE_CREDENTIAL)
+            .setAllowedAuthenticators(authenticators)
             .build()
 
-        val canAuthenticate = BiometricManager.from(fragment.requireContext())
-            .canAuthenticate(BiometricManager.Authenticators.BIOMETRIC_STRONG)
         if (canAuthenticate == BiometricManager.BIOMETRIC_SUCCESS) {
             biometricPrompt.authenticate(promptInfo)
         }
     }
 
-    fun startFingerprintSettingsAuth(runNavigation: Int) {
+    fun startBiometricSettingsAuth(runNavigation: Int) {
         val executor = ContextCompat.getMainExecutor(fragment.requireContext())
 
         val biometricPrompt =
@@ -92,7 +95,7 @@ class FingerprintHelper @Inject constructor(private val fragment: Fragment) {
             .setSubtitle(fragment.getString(R.string.authentication_subtitle))
 
         val authenticators =
-            BiometricManager.Authenticators.BIOMETRIC_WEAK or BiometricManager.Authenticators.DEVICE_CREDENTIAL
+            BiometricManager.Authenticators.BIOMETRIC_STRONG or BiometricManager.Authenticators.DEVICE_CREDENTIAL
         val canAuthenticate =
             BiometricManager.from(fragment.requireContext()).canAuthenticate(authenticators)
 
