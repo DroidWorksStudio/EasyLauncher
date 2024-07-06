@@ -23,6 +23,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.hideKeyboard
 import com.github.droidworksstudio.common.launchApp
 import com.github.droidworksstudio.common.launchCalendar
@@ -110,8 +111,10 @@ class HomeFragment : Fragment(),
         observeSwipeTouchListener()
         observeUserInterfaceSettings()
 
-        updateManager = UpdateManagerHelper(this)
-        updateManager.checkForUpdates()
+        if (context.hasInternetPermission()) {
+            updateManager = UpdateManagerHelper(this)
+            updateManager.checkForUpdates()
+        }
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -486,7 +489,9 @@ class HomeFragment : Fragment(),
         observeUserInterfaceSettings()
         observeFavoriteAppList()
 
-        updateManager.checkForUpdates()
+        if (context.hasInternetPermission()) {
+            updateManager.checkForUpdates()
+        }
     }
 
     override fun onAppClicked(appInfo: AppInfo) {
