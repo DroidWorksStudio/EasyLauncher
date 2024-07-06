@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Changed Dotness font name. - ([c98e008](https://github.com/DroidWorksStudio/EasyLauncher/commit/c98e008bf919e4e21b0c251c2bc1fbc384e13d76))
 - Cleaned up code for HomeViewHolder. - ([9956333](https://github.com/DroidWorksStudio/EasyLauncher/commit/9956333323f94586f6b8136467d04e4f8627ddc9))
 
 ## [0.1.7](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.7) - (05, July 2024)
