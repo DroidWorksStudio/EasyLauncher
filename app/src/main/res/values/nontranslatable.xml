@@ -26,6 +26,7 @@
     <string name="acra_email" translatable="false">droidworksstudio@063240.xyz</string>
 
     <string name="settings_font_bitter" translatable="false">Bitter</string>
+    <string name="settings_font_dotness" translatable="false">Dotness</string>
     <string name="settings_font_droidsans" translatable="false">Droid Sans</string>
     <string name="settings_font_greatvibes" translatable="false">Great Vibes</string>
     <string name="settings_font_lato" translatable="false">Lato</string>

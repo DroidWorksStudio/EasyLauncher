@@ -33,6 +33,7 @@ class FontAdapter(
     private fun getCustomTypefaceForItem(context: Context, item: Constants.Fonts): Typeface? {
         return when (item) {
             Constants.Fonts.Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
+            Constants.Fonts.DotToDot -> ResourcesCompat.getFont(context, R.font.dotness)
             Constants.Fonts.DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
             Constants.Fonts.GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
             Constants.Fonts.Lato -> ResourcesCompat.getFont(context, R.font.lato)

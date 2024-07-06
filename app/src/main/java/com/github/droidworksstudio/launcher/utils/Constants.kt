@@ -166,6 +166,7 @@ object Constants {
     enum class Fonts {
         System,
         Bitter,
+        DotToDot,
         DroidSans,
         GreatVibes,
         Lato,
@@ -183,6 +184,7 @@ object Constants {
             return when (this) {
                 System -> Typeface.DEFAULT
                 Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
+                DotToDot -> ResourcesCompat.getFont(context, R.font.dotness)
                 DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
                 GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
                 Lato -> ResourcesCompat.getFont(context, R.font.lato)
@@ -202,6 +204,7 @@ object Constants {
             return when (this) {
                 System -> context.getString(R.string.settings_font_system)
                 Bitter -> context.getString(R.string.settings_font_bitter)
+                DotToDot -> context.getString(R.string.settings_font_dotness)
                 DroidSans -> context.getString(R.string.settings_font_droidsans)
                 GreatVibes -> context.getString(R.string.settings_font_greatvibes)
                 Lato -> context.getString(R.string.settings_font_lato)
