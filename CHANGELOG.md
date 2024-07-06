@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added Dotness font as requested. - ([1340ad9](https://github.com/DroidWorksStudio/EasyLauncher/commit/1340ad99fb78bdca660f23597e383fe4582041a1))
 - Added GreatVibes font as requested. - ([2c8c04d](https://github.com/DroidWorksStudio/EasyLauncher/commit/2c8c04d61530815cf1822267b6d64c5fd5d840e6))
 - Added 3 new fonts to select from. - ([50d59e7](https://github.com/DroidWorksStudio/EasyLauncher/commit/50d59e715ef2eaa613d9f47ad877ebc75b78d2c1))
 
