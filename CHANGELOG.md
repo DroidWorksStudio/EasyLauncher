@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed the withoutInternet build from trying to find new build. - ([b830eed](https://github.com/DroidWorksStudio/EasyLauncher/commit/b830eedfd692376d0dddba148428447cda4587ba))
 - Fixed locked apps to also allow DEVICE_CREDENTIAL not only Fingerprint - ([d2a0faf](https://github.com/DroidWorksStudio/EasyLauncher/commit/d2a0faf31e160482fdef4656a1f5135fe7647d73))
 - Fixed error with fetchWeatherData not finding url. - ([6d32eed](https://github.com/DroidWorksStudio/EasyLauncher/commit/6d32eedbe1ba0371b42e3be91db16d22721a478c))
 
