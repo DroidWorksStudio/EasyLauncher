@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.1.9 - ([4ed1592](https://github.com/DroidWorksStudio/EasyLauncher/commit/4ed159262be81a870b89ab2d134184de895580b2))
+
+## [0.1.8](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.8) - (06, July 2024)
+
 ### Implemented Enhancements:
 
 - Added Dotness font as requested. - ([1340ad9](https://github.com/DroidWorksStudio/EasyLauncher/commit/1340ad99fb78bdca660f23597e383fe4582041a1))
