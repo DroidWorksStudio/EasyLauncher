@@ -1,0 +1,66 @@
+name: Nightly Release
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # This runs at midnight UTC every day
+  workflow_dispatch:   # This allows the workflow to be triggered manually
+
+jobs:
+  check-commits:
+    runs-on: ubuntu-latest
+    outputs:
+      has_new_commits: ${{ steps.check-for-commits.outputs.has_new_commits }}
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Get the date of the last run
+        id: last-run
+        run: echo "DATE=$(date -u -d '1 day ago' +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
+
+      - name: Check for new commits since the last run
+        id: check-for-commits
+        run: |
+          last_run_date=$(echo "${{ env.DATE }}" | xargs -I {} date -u -d {} +'%Y-%m-%dT%H:%M:%SZ')
+          new_commits=$(git log --since="$last_run_date" --oneline)
+          if [ -n "$new_commits" ]; then
+            echo "::set-output name=has_new_commits::true"
+          else
+            echo "::set-output name=has_new_commits::false"
+          fi
+
+  release:
+    runs-on: ubuntu-latest
+    needs: check-commits
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Delete existing nightly release
+        if: needs.check-commits.outputs.has_new_commits == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          release_id=$(curl -sSf -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/tags/nightly" | jq -r '.id')
+          if [ -n "$release_id" ]; then
+            curl -sSf \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -X DELETE \
+              "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${release_id}"
+          fi
+
+      - name: Create new release
+        if: needs.check-commits.outputs.has_new_commits == 'true'
+        uses: actions/create-release@v1.1.4
+        with:
+          tag_name: nightly
+          release_name: Nightly Build
+          draft: false
+          prerelease: true
+          body: "This is a Nightly build"
+
+      - name: No new commits
+        if: needs.check-commits.outputs.has_new_commits == 'false'
+        run: echo "No new commits found."
