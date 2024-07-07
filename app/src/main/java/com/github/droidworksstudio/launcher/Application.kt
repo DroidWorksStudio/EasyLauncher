@@ -3,8 +3,6 @@ package com.github.droidworksstudio.launcher
 import android.app.Application
 import android.content.Context
 import android.graphics.Typeface
-import android.os.Build
-import androidx.annotation.RequiresApi
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import dagger.hilt.android.HiltAndroidApp
 import org.acra.ACRA
@@ -22,7 +20,6 @@ class Application : Application() {
     @Inject
     lateinit var preferenceHelper: PreferenceHelper
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate() {
         super.onCreate()
 
@@ -78,7 +75,6 @@ class Application : Application() {
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     private fun setCustomFont(context: Context) {
         // Load the custom font from resources
         val customFont = preferenceHelper.launcherFont.getFont(context)
