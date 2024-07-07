@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the download update to install the internet build. - ([124c4d9](https://github.com/DroidWorksStudio/EasyLauncher/commit/124c4d91aecedabe2c19b58cd09e5e315c407f92))
+
 ### Releases:
 
 - Prepare for version 0.1.9 - ([4ed1592](https://github.com/DroidWorksStudio/EasyLauncher/commit/4ed159262be81a870b89ab2d134184de895580b2))
