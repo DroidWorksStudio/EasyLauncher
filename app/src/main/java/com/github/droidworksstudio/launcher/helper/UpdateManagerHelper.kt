@@ -49,7 +49,7 @@ class UpdateManagerHelper(private val fragment: Fragment) {
 
                     // Check if assets array has elements
                     if (assets.length() > 0) {
-                        val apkUrl = (assets.get(0) as JSONObject).getString("browser_download_url")
+                        val apkUrl = (assets.get(1) as JSONObject).getString("browser_download_url")
                         Log.d("UpdateManager", "APK URL: $apkUrl | Latest version: $latestVersion | Current version: $currentVersion")
 
                         if (latestVersion > currentVersion) {
