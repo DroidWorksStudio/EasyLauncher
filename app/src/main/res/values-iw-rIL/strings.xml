@@ -84,6 +84,7 @@
     <string name="settings_reload_app_backup">העדפות מגובות.</string>
     <string name="settings_reload_app_restore">ההעדפות שוחזרו. מופעל מחדש.</string>
     <string name="settings_actions_open_app">אפליקציה פתוחה</string>
+    <string name="settings_actions_open_app_run">פתח את %s</string>
     <string name="settings_actions_lock_screen">מסך נעילה</string>
     <string name="settings_actions_show_notifications">תראה התראות</string>
     <string name="settings_actions_show_app_list">הצג רשימת אפליקציות</string>
