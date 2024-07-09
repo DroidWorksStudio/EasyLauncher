@@ -1,38 +1,38 @@
 <b>Особливості:</b>
 
-- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
-- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
-- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
-- Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
-- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
-- Crash Reports: Report crashes via email, including log files for effective troubleshooting.
+- Швидкий доступ до улюблених програм: відображайте програми, якими найчастіше користуєтеся, на головному екрані в текстовому форматі для швидкого доступу та оптимізації ваших операцій.
+- Приховати програми: легко приховуйте програми, які ви не хочете бачити, зберігаючи головний екран чистим і зосередженим на важливому вмісті.
+- Перейменування додатків: персоналізуйте свої додатки за допомогою користувацьких імен, які синхронізуються між вибраним і всіма додатками.
+- Блокування: захистіть свою конфіденційність і дані за допомогою блокування відбитком пальця для вибраних програм і налаштувань.
+- Без доступу до Інтернету: дозволи для доступу до Інтернету не використовуються, гарантуючи, що ваші дані залишаються конфіденційними.
+- Звіти про збої: повідомляйте про збої електронною поштою, включаючи файли журналу для ефективного усунення несправностей.
 
 <b>Персоналізована настройка:</b>
 
-- Font Colors: Customize font colors using our color picker.
-- Position: Align Date, Time, and Apps to Left, Center, or Right.
-- Padding: Adjust padding between favorite apps and all apps.
-- Font Size: Set font size for each element on the home screen.
-- Toggle Items: Control display preferences on the home screen.
+- Кольори шрифту: налаштуйте кольори шрифту за допомогою нашого засобу вибору кольорів.
+- Позиція: вирівняйте дату, час і програми ліворуч, по центру або праворуч.
+- Відступ: налаштуйте відступ між улюбленими програмами та всіма програмами.
+- Розмір шрифту: установіть розмір шрифту для кожного елемента на головному екрані.
+- Перемикати елементи: керуйте параметрами відображення на головному екрані.
 
-<b>Possible Gestures Include:</b>
+<b>Можливі жести:</b>
 
-- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
-- Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
-- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
-- Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
-- Battery Icon: Tap on the battery icon to access battery usage details.
+- Жести пальцем: переміщуйтесь, проводячи пальцем у різних напрямках (вгору, вниз, ліворуч, праворуч), щоб отримати доступ до різних функцій або переходити між екранами.
+- Подвійний дотик: швидко двічі торкніться екрана, щоб виконати попередньо визначену дію або активувати функцію.
+- Взаємодія з годинником: торкніться годинника, щоб відобразити додаткову інформацію, наприклад будильники або світовий час.
+- Взаємодія з датою: торкніться дати, щоб відкрити програму календаря для розкладу та планування.
+- Піктограма батареї: торкніться піктограми батареї, щоб переглянути відомості про використання батареї.
 
 <b>Можливі дії:</b>
 
-- Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
-- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
-- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
-- Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
-- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
-- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
-- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
-- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
-- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
+- Відкрити вказану програму: миттєво запускайте будь-яку вибрану програму для безперешкодного доступу до вибраного.
+- Відображення списку додатків: ефективно переглядайте встановлені додатки та керуйте ними за допомогою повного відображення списку.
+- Блокування екрана: захистіть свій пристрій і конфіденційність за допомогою швидкого та зручного блокування екрана.
+- Показувати нещодавно відкриті програми: легко відкривайте нещодавно використані програми для швидкої багатозадачності.
+- Доступ до ящика сповіщень: відкривайте ящик сповіщень одним дотиком, щоб перевірити оновлення та сповіщення.
+- Швидкі налаштування: швидко керуйте налаштуваннями пристрою, відкриваючи швидкі налаштування безпосередньо з головного екрана.
+- Діалогове вікно живлення: легко керуйте параметрами живлення, такими як перезапуск, вимкнення тощо, за допомогою діалогового вікна живлення.
+- Зробіть знімок екрана: миттєво зробіть знімок екрана, щоб зберегти та поділитися важливою інформацією та моментами.
+- Вимкнути жести: тимчасово або назавжди вимкніть певні жести, щоб налаштувати взаємодію з пристроєм.
 
-For more details visit the <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> page.
+Щоб дізнатися більше, відвідайте сторінку <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> .
