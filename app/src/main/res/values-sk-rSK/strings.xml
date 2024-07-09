@@ -84,7 +84,7 @@
     <string name="settings_reload_app_backup">Predvoľby sú zálohované.</string>
     <string name="settings_reload_app_restore">Predvoľby boli obnovené. Reštartovanie.</string>
     <string name="settings_actions_open_app">Otvorte aplikáciu</string>
-    <string name="settings_actions_open_app_run">Open %s</string>
+    <string name="settings_actions_open_app_run">Otvorte %s</string>
     <string name="settings_actions_lock_screen">Zamknúť obrazovku</string>
     <string name="settings_actions_show_notifications">Zobraziť upozornenia</string>
     <string name="settings_actions_show_app_list">Zobraziť zoznam aplikácií</string>
