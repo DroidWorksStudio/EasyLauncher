@@ -84,6 +84,7 @@
     <string name="settings_reload_app_backup">Er is een back-up gemaakt van voorkeuren.</string>
     <string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
     <string name="settings_actions_open_app">Open app</string>
+    <string name="settings_actions_open_app_run">Open %s</string>
     <string name="settings_actions_lock_screen">Vergrendel scherm</string>
     <string name="settings_actions_show_notifications">Toon meldingen</string>
     <string name="settings_actions_show_app_list">Toon appslijst</string>
