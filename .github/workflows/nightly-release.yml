@@ -22,10 +22,17 @@ jobs:
         run: |
           release_id=$(curl -sSf -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/tags/nightly" | jq -r '.id')
           if [ -n "$release_id" ]; then
+            # Delete the release
             curl -sSf \
               -H "Authorization: Bearer $GITHUB_TOKEN" \
               -X DELETE \
               "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${release_id}"
+
+            # Delete the tag
+            curl -sSf \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -X DELETE \
+              "https://api.github.com/repos/${GITHUB_REPOSITORY}/git/refs/tags/nightly"
           fi
 
   build:
