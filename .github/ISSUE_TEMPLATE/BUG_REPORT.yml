@@ -31,7 +31,7 @@ body:
   - type: input
     id: phone-make-model
     attributes:
-      label: Phone Make $ model
+      label: Phone Make & model
       description: "What make and model is your phone?"
       placeholder: "Google - Pixel 7"
     validations:
