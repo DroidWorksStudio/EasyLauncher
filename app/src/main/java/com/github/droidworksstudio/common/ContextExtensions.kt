@@ -167,7 +167,7 @@ fun Context.resetDefaultLauncher() {
     }
 }
 
-private fun Context.runningStockAndroid() {
+fun Context.runningStockAndroid() {
     try {
         val packageManager = this.packageManager
         val componentName = ComponentName(this, FakeHomeActivity::class.java)
@@ -192,7 +192,7 @@ private fun Context.runningStockAndroid() {
     }
 }
 
-private fun Context.notRunningStockAndroid() {
+fun Context.notRunningStockAndroid() {
     try {
         val intent = Intent("android.settings.HOME_SETTINGS")
         this.startActivity(intent)
@@ -468,7 +468,7 @@ fun Context.restoreSharedPreferences(backupFileNames: Array<String>) {
     }
 }
 
-private fun Context.saveToSharedPreferences(prefsFileName: String, key: String, value: Any) {
+fun Context.saveToSharedPreferences(prefsFileName: String, key: String, value: Any) {
     val sharedPreferences: SharedPreferences = this.getSharedPreferences(prefsFileName, Context.MODE_PRIVATE)
     val editor = sharedPreferences.edit()
 

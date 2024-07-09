@@ -30,6 +30,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
+import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -236,6 +237,22 @@ class MainActivity : AppCompatActivity(), LocationListener {
         // Save the location data immediately
         saveLocation(latitude, longitude)
         lastKnownLocation = location
+    }
+
+    override fun onProviderEnabled(provider: String) {
+        // Handle provider enabled
+        when (provider) {
+            LocationManager.GPS_PROVIDER -> applicationContext.showLongToast("GPS Provider Enabled")
+            LocationManager.NETWORK_PROVIDER -> applicationContext.showLongToast("Network Provider Enabled")
+        }
+    }
+
+    override fun onProviderDisabled(provider: String) {
+        // Handle provider disabled
+        when (provider) {
+            LocationManager.GPS_PROVIDER -> applicationContext.showLongToast("GPS Provider Disabled")
+            LocationManager.NETWORK_PROVIDER -> applicationContext.showLongToast("Network Provider Disabled")
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
