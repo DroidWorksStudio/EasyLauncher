@@ -1,38 +1,38 @@
 <b>תכונות:</b>
 
-- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
-- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
-- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
-- Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
-- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
-- Crash Reports: Report crashes via email, including log files for effective troubleshooting.
+- גישה מהירה לאפליקציה מועדפת: הצג את האפליקציות הנפוצות ביותר שלך במסך הבית בפורמט טקסט לגישה מהירה, לייעל את הפעולות שלך.
+- הסתר אפליקציות: הסתר בקלות אפליקציות שאינך רוצה שיוצגו, שמירה על מסך הבית שלך נקי וממוקד בתוכן חיוני.
+- שנה שם אפליקציות: התאם אישית את האפליקציות שלך עם שמות מותאמים אישית המסונכרנים בצורה חלקה בין המועדפים וכל האפליקציות.
+- נעילה: אבטח את הפרטיות והנתונים שלך עם נעילת טביעת אצבע עבור אפליקציות והגדרות נבחרות.
+- ללא הרשאות אינטרנט: אין שימוש בהרשאות אינטרנט, מה שמבטיח שהנתונים שלך יישארו פרטיים.
+- דוחות קריסה: דווח על קריסות באמצעות דואר אלקטרוני, כולל קובצי יומן לפתרון בעיות יעיל.
 
 <b>התאמה אישית:</b>
 
-- Font Colors: Customize font colors using our color picker.
-- Position: Align Date, Time, and Apps to Left, Center, or Right.
-- Padding: Adjust padding between favorite apps and all apps.
-- Font Size: Set font size for each element on the home screen.
-- Toggle Items: Control display preferences on the home screen.
+- צבעי גופן: התאם אישית את צבעי הגופן באמצעות בורר הצבעים שלנו.
+- מיקום: יישר תאריך, שעה ואפליקציות לשמאל, למרכז או לימין.
+- ריפוד: התאם ריפוד בין האפליקציות המועדפות לכל האפליקציות.
+- גודל גופן: הגדר גודל גופן עבור כל רכיב במסך הבית.
+- החלף בין פריטים: שליטה בהעדפות התצוגה במסך הבית.
 
-<b>Possible Gestures Include:</b>
+<b>מחוות אפשריות כוללות:</b>
 
-- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
-- Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
-- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
-- Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
-- Battery Icon: Tap on the battery icon to access battery usage details.
+- תנועות החלקה: נווט על ידי החלקה בכיוונים שונים (מעלה, למטה, שמאלה, ימינה) כדי לגשת לתכונות שונות או לעבור בין מסכים.
+- הקשה כפולה: הקש במהירות פעמיים על המסך כדי לבצע פעולה מוגדרת מראש או להפעיל תכונה.
+- אינטראקציית שעון: הקש על השעון כדי להציג מידע נוסף כגון אזעקות או שעון עולמי.
+- אינטראקציה עם תאריך: הקש על התאריך כדי לפתוח את אפליקציית לוח השנה לתזמון ותכנון.
+- סמל סוללה: הקש על סמל הסוללה כדי לגשת לפרטי השימוש בסוללה.
 
 <b>פעולות אפשריות כוללות:</b>
 
-- Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
-- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
-- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
-- Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
-- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
-- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
-- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
-- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
-- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
+- פתח את האפליקציה שצוינה: הפעל מיידית כל אפליקציה שתבחר לגישה חלקה למועדפים שלך.
+- הצג רשימת אפליקציות: הצג ונהל את האפליקציות המותקנות שלך ביעילות עם תצוגת רשימה מקיפה.
+- נעילת מסך: אבטח את המכשיר שלך והגן על פרטיותך עם נעילת מסך מהירה ונוחה.
+- הצג אפליקציות שנפתחו לאחרונה: גש לאפליקציות שבהן השתמשת לאחרונה ללא מאמץ לריבוי משימות מהיר.
+- גישה למגירת הודעות: פתח את מגירת ההודעות בלחיצה אחת כדי לבדוק עדכונים והתראות.
+- הגדרות מהירות: נהל את הגדרות המכשיר במהירות על ידי גישה להגדרות מהירות ישירות ממסך הבית.
+- דיאלוג הפעלה: שליטה באפשרויות ההפעלה כגון הפעלה מחדש, כיבוי ועוד בקלות באמצעות תיבת ההפעלה.
+- צלם צילום מסך: צלם את המסך שלך באופן מיידי כדי לשמור ולשתף מידע ורגעים חשובים.
+- השבת מחוות: השבת באופן זמני או לצמיתות מחוות ספציפיות כדי להתאים אישית את חוויית האינטראקציה במכשיר שלך.
 
-For more details visit the <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> page.
+לפרטים נוספים בקר בדף <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> .
