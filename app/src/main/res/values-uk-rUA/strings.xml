@@ -84,6 +84,7 @@
     <string name="settings_reload_app_backup">Налаштування створено.</string>
     <string name="settings_reload_app_restore">Налаштування відновлено. Перезапуск.</string>
     <string name="settings_actions_open_app">Відкрийте додаток</string>
+    <string name="settings_actions_open_app_run">Open %s</string>
     <string name="settings_actions_lock_screen">Екран блокування</string>
     <string name="settings_actions_show_notifications">Показати сповіщення</string>
     <string name="settings_actions_show_app_list">Показати список програм</string>
