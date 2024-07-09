@@ -84,7 +84,7 @@
     <string name="settings_reload_app_backup">Backup delle preferenze.</string>
     <string name="settings_reload_app_restore">Preferenze ripristinate. Riavvio.</string>
     <string name="settings_actions_open_app">Apri l\'app</string>
-    <string name="settings_actions_open_app_run">Open %s</string>
+    <string name="settings_actions_open_app_run">Apri %s</string>
     <string name="settings_actions_lock_screen">Blocca schermo</string>
     <string name="settings_actions_show_notifications">Mostra notifiche</string>
     <string name="settings_actions_show_app_list">Mostra elenco app</string>
