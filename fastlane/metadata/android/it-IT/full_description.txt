@@ -1,23 +1,38 @@
 <b>Caratteristiche:</b>
 
-- Accesso rapido alle app preferite: visualizza le tue app preferite in formato testo sulla schermata iniziale per un accesso rapido alle app più utilizzate, semplificando le tue operazioni.
-- Nascondi app: nascondi facilmente le app che non vuoi che siano visibili, mantenendo la schermata iniziale pulita e focalizzata sui contenuti che ti servono.
-- Rinomina app: puoi rinominare le tue app e queste si sincronizzeranno tra le app preferite e tutte le app.
-- Blocco: proteggi la tua privacy e i tuoi dati tramite l'impronta digitale per bloccare le app e le impostazioni selezionate.
-- Autorizzazioni Internet: non utilizziamo le autorizzazioni INTERNET. Non sai mai cosa vuole sapere di te uno sviluppatore di app.
+- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
+- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
+- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
+- Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
+- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
+- Crash Reports: Report crashes via email, including log files for effective troubleshooting.
 
 <b>Personalizzazione personalizzata:</b>
 
-- Colori dei caratteri: scegli i colori dei caratteri utilizzando il nostro selettore di colori.
-- Posizione: scegli tra gli allineamenti Sinistra, Centro e Destra per data, ora e app.
-- Padding: scegli il riempimento che desideri tra le app preferite e tutte le app.
-- Dimensione carattere: scegli la dimensione del carattere per ciascun elemento della schermata iniziale.
-- Disabilitato: scegli cosa desideri visualizzare nella schermata principale.
+- Font Colors: Customize font colors using our color picker.
+- Position: Align Date, Time, and Apps to Left, Center, or Right.
+- Padding: Adjust padding between favorite apps and all apps.
+- Font Size: Set font size for each element on the home screen.
+- Toggle Items: Control display preferences on the home screen.
+
+<b>Possible Gestures Include:</b>
+
+- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
+- Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
+- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
+- Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
+- Battery Icon: Tap on the battery icon to access battery usage details.
 
 <b>Le azioni possibili includono:</b>
 
-- Scorri verso sinistra per tutte le app.
-- Scorri verso destra per accedere alle app preferite.
-- Facendo clic sul livello della batteria.
-- Facendo clic sull'orologio.
-- Facendo clic sulla data.
+- Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
+- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
+- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
+- Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
+- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
+- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
+- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
+- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
+- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
+
+For more details visit the <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> page.
