@@ -1,23 +1,38 @@
 <b>Savybės:</b>
 
-- Mėgstamiausios programos greita prieiga: pagrindiniame ekrane rodykite mėgstamiausias programas teksto formatu, kad galėtumėte greitai pasiekti dažniausiai naudojamas programas ir supaprastinti operacijas.
-- Slėpti programas: lengvai paslėpkite programas, kurių nenorite matyti, išlaikykite švarų pagrindinį ekraną ir sutelkite dėmesį į reikalingą turinį.
-- Pervardyti programas: galite pervardyti programas ir jos sinchronizuojamos tarp mėgstamiausių ir visų programų.
-- Užrakinimas: apsaugokite privatumą ir duomenis pirštų atspaudais, kad užrakintumėte pasirinktas programas ir nustatymus.
-- Interneto leidimai: mes nenaudojame INTERNETO leidimų. Niekada nežinote, ką programos kūrėjas nori sužinoti apie jus.
+- Mėgstamiausios programos greita prieiga: pagrindiniame ekrane rodykite dažniausiai naudojamas programas teksto formatu, kad galėtumėte greitai pasiekti ir supaprastinti savo operacijas.
+- Slėpti programas: lengvai paslėpkite programas, kurių nenorite matyti, laikykite pagrindinį ekraną švarų ir sutelkite dėmesį į esminį turinį.
+- Pervardykite programas: suasmeninkite programas naudodami pasirinktinius pavadinimus, kurie sklandžiai sinchronizuojami tarp mėgstamiausių ir visų programų.
+- Užrakinimas: apsaugokite savo privatumą ir duomenis naudodami pirštų atspaudų užraktą pasirinktoms programoms ir nustatymams.
+- Nėra interneto leidimų: nenaudojami INTERNETO leidimai, užtikrinant, kad jūsų duomenys išliktų privatūs.
+– Strigčių ataskaitos: praneškite apie gedimus el. paštu, įskaitant žurnalo failus, kad būtų galima veiksmingai šalinti triktis.
 
 <b>Personalizuotas tinkinimas:</b>
 
-- Šrifto spalvos: pasirinkite savo šrifto spalvas naudodami mūsų spalvų parinkiklį.
-- Padėtis: pasirinkite datos, laiko ir programų lygiavimą kairėje, centre ir dešinėje.
-- Padding: pasirinkite norimą užpildymą tarp mėgstamiausių ir visų programų.
-- Šrifto dydis: pasirinkite kiekvieno pagrindinio ekrano elemento šrifto dydį.
-- Išjungta: pasirinkite, ką norite rodyti pagrindiniame ekrane.
+- Šrifto spalvos: tinkinkite šrifto spalvas naudodami mūsų spalvų parinkiklį.
+- Padėtis: sulygiuokite datą, laiką ir programas į kairę, centrą arba dešinę.
+- Padding: koreguokite paminkštinimą tarp mėgstamiausių ir visų programų.
+- Šrifto dydis: nustatykite kiekvieno elemento šrifto dydį pagrindiniame ekrane.
+- Perjungti elementus: valdykite rodymo nuostatas pagrindiniame ekrane.
+
+<b>Galimi gestai:</b>
+
+- Perbraukimo gestai: naršykite braukdami įvairiomis kryptimis (aukštyn, žemyn, kairėn, dešinėn), kad pasiektumėte įvairias funkcijas arba pereitumėte iš vieno ekrano į kitą.
+- Dukart bakstelėjimas: greitai bakstelėkite ekraną du kartus, kad atliktumėte iš anksto nustatytą veiksmą arba suaktyvintumėte funkciją.
+- Laikrodžio sąveika: bakstelėkite laikrodį, kad būtų rodoma papildoma informacija, pvz., žadintuvai ar pasaulio laikrodis.
+- Datos sąveika: bakstelėkite datą, kad atidarytumėte kalendoriaus programą, skirtą planuoti ir planuoti.
+- Akumuliatoriaus piktograma: bakstelėkite akumuliatoriaus piktogramą, kad pasiektumėte baterijos naudojimo informaciją.
 
 <b>Galimi veiksmai:</b>
 
-- Perbraukite kairėn, kad pamatytumėte visas programas.
-- Braukite dešinėn, kad pamatytumėte mėgstamiausias programas.
-- Spustelėjus baterijos lygį.
-- Paspaudus ant Laikrodžio.
-- Paspaudus ant datos.
+- Atidarykite nurodytą programą: akimirksniu paleiskite bet kurią pasirinktą programą, kad galėtumėte sklandžiai pasiekti savo parankinius.
+- Rodyti programų sąrašą: efektyviai peržiūrėkite ir valdykite įdiegtas programas naudodami išsamų sąrašą.
+- Ekrano užraktas: apsaugokite savo įrenginį ir apsaugokite savo privatumą greitai ir patogiai užrakindami ekraną.
+- Rodyti neseniai atidarytas programas: lengvai pasiekite neseniai naudotas programas, kad galėtumėte greitai atlikti kelias užduotis.
+- Prieiga prie pranešimų stalčiaus: atidarykite pranešimų stalčių vienu bakstelėjimu, kad patikrintumėte naujinimus ir įspėjimus.
+- Spartieji nustatymai: greitai tvarkykite įrenginio nustatymus pasiekdami greituosius nustatymus tiesiai iš pagrindinio ekrano.
+- Maitinimo dialogo langas: lengvai valdykite maitinimo parinktis, pvz., iš naujo paleisti, išjungti ir daugiau, naudodami maitinimo dialogo langą.
+- Padarykite ekrano kopiją: akimirksniu užfiksuokite ekraną, kad išsaugotumėte ir bendrintumėte svarbią informaciją bei akimirkas.
+- Išjungti gestus: laikinai arba visam laikui išjunkite konkrečius gestus, kad tinkintumėte įrenginio sąveikos patirtį.
+
+Norėdami gauti daugiau informacijos, apsilankykite <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> puslapyje.

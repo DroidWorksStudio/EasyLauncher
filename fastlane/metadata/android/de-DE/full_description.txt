@@ -1,23 +1,38 @@
 <b>Funktionen:</b>
 
-Schnellzugriff auf Ihre Lieblings-Apps: Zeigen Sie Ihre Lieblings-Apps im Textformat auf dem Startbildschirm an, um schnell auf Ihre am häufigsten verwendeten Apps zugreifen zu können und so Ihre Vorgänge zu optimieren.
-- Apps ausblenden: Verbergen Sie ganz einfach Apps, die nicht sichtbar sein sollen, und halten Sie so Ihren Startbildschirm übersichtlich und konzentrieren Sie sich auf die Inhalte, die Sie benötigen.
-- Apps umbenennen: Sie können Ihre Apps umbenennen und sie zwischen Lieblings-Apps und allen Apps synchronisieren.
-- Sperren: Schützen Sie Ihre Privatsphäre und Daten, indem Sie ausgewählte Apps und Einstellungen per Fingerabdruck sperren.
-- Internetberechtigungen: Wir verwenden keine INTERNETberechtigungen. Sie wissen nie, was ein App-Entwickler über Sie wissen möchte.
+Schnellzugriff auf Lieblings-Apps: Zeigen Sie Ihre am häufigsten verwendeten Apps auf dem Startbildschirm im Textformat an, um schnell darauf zugreifen zu können und so Ihre Vorgänge zu optimieren.
+- Apps ausblenden: Verbergen Sie ganz einfach Apps, die Sie nicht sehen möchten, und halten Sie so Ihren Startbildschirm übersichtlich und konzentrieren Sie sich auf die wesentlichen Inhalte.
+- Apps umbenennen: Personalisieren Sie Ihre Apps mit benutzerdefinierten Namen, die nahtlos zwischen Favoriten und allen Apps synchronisiert werden.
+- Sperren: Schützen Sie Ihre Privatsphäre und Daten mit der Fingerabdrucksperre für ausgewählte Apps und Einstellungen.
+- Keine Internetberechtigungen: Keine Verwendung von INTERNETberechtigungen, um sicherzustellen, dass Ihre Daten privat bleiben.
+- Absturzberichte: Melden Sie Abstürze per E-Mail, einschließlich Protokolldateien zur effektiven Fehlerbehebung.
 
 <b>Personalisierte Anpassung:</b>
 
-- Schriftfarben: Wählen Sie mit unserem Farbwähler Ihre eigenen Schriftfarben.
-- Position: Wählen Sie zwischen der Ausrichtung links, zentriert und rechts für Datum, Uhrzeit und Apps.
-- Polsterung: Wählen Sie die gewünschte Polsterung zwischen Lieblings-Apps und allen Apps.
-- Schriftgröße: Wählen Sie die Schriftgröße für jedes Element des Startbildschirms.
-- Deaktiviert: Wählen Sie aus, was auf dem Startbildschirm angezeigt werden soll.
+- Schriftfarben: Passen Sie die Schriftfarben mit unserem Farbwähler an.
+- Position: Richten Sie Datum, Uhrzeit und Apps links, mittig oder rechts aus.
+- Polsterung: Passen Sie die Polsterung zwischen Lieblings-Apps und allen Apps an.
+- Schriftgröße: Legen Sie die Schriftgröße für jedes Element auf dem Startbildschirm fest.
+- Elemente umschalten: Anzeigeeinstellungen auf dem Startbildschirm steuern.
+
+<b>Mögliche Gesten sind:</b>
+
+- Wischbewegungen: Navigieren Sie durch Wischen in verschiedene Richtungen (nach oben, unten, links, rechts), um auf verschiedene Funktionen zuzugreifen oder zwischen Bildschirmen zu wechseln.
+- Doppeltippen: Tippen Sie schnell zweimal auf den Bildschirm, um eine vordefinierte Aktion auszuführen oder eine Funktion zu aktivieren.
+- Uhr-Interaktion: Tippen Sie auf die Uhr, um zusätzliche Informationen wie Alarme oder die Weltzeituhr anzuzeigen.
+- Datumsinteraktion: Tippen Sie auf das Datum, um die Kalender-App zum Terminieren und Planen zu öffnen.
+- Batteriesymbol: Tippen Sie auf das Batteriesymbol, um auf Details zur Batterienutzung zuzugreifen.
 
 <b>Mögliche Aktionen umfassen:</b>
 
-- Wischen Sie nach links, um zu allen Apps zu gelangen.
-- Streichen Sie nach rechts zu den Lieblings-Apps.
-- Klicken Sie auf den Batteriestand.
-- Klicken Sie auf die Uhr.
-- Klicken Sie auf das Datum.
+- Bestimmte App öffnen: Starten Sie sofort eine beliebige App für den nahtlosen Zugriff auf Ihre Favoriten.
+- App-Liste anzeigen: Zeigen Sie Ihre installierten Apps effizient an und verwalten Sie sie mit einer umfassenden Listenanzeige.
+- Bildschirmsperre: Sichern Sie Ihr Gerät und schützen Sie Ihre Privatsphäre mit einer schnellen und bequemen Bildschirmsperre.
+- Zuletzt geöffnete Apps anzeigen: Greifen Sie mühelos auf zuletzt verwendete Apps zu, um schnelles Multitasking zu ermöglichen.
+- Zugriff auf das Benachrichtigungsfach: Öffnen Sie das Benachrichtigungsfach mit einem einzigen Fingertipp, um Aktualisierungen und Warnungen zu prüfen.
+- Schnelleinstellungen: Verwalten Sie die Geräteeinstellungen schnell, indem Sie direkt vom Startbildschirm aus auf die Schnelleinstellungen zugreifen.
+- Energiedialogfeld: Steuern Sie Energieoptionen wie Neustart, Ausschalten und mehr ganz einfach über das Energiedialogfeld.
+- Machen Sie einen Screenshot: Erfassen Sie Ihren Bildschirm sofort, um wichtige Informationen und Momente zu speichern und zu teilen.
+- Gesten deaktivieren: Deaktivieren Sie vorübergehend oder dauerhaft bestimmte Gesten, um die Interaktion mit Ihrem Gerät individuell anzupassen.
+
+Weitere Einzelheiten finden Sie auf der <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github-Seite</a> .

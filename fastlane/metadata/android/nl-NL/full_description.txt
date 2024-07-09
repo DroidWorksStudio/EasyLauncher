@@ -1,23 +1,38 @@
 <b>Kenmerken:</b>
 
-- Snelle toegang tot favoriete apps: geef uw favoriete apps in tekstformaat weer op het startscherm voor snelle toegang tot uw meest gebruikte apps, waardoor uw activiteiten worden gestroomlijnd.
-- Apps verbergen: verberg eenvoudig apps die u niet zichtbaar wilt hebben, zodat uw startscherm schoon blijft en gefocust op de inhoud die u nodig heeft.
-- Apps hernoemen: u kunt de naam van uw apps wijzigen en ze synchroniseren tussen favoriete apps en alle apps.
-- Vergrendeling: beveilig uw privacy en gegevens met een vingerafdruk om geselecteerde apps en instellingen te vergrendelen.
-- Internettoestemmingen: we maken geen gebruik van INTERNETtoestemmingen. Je weet nooit wat een app-ontwikkelaar over je wil weten.
+- Snelle toegang tot favoriete apps: geef uw meest gebruikte apps in tekstformaat weer op het startscherm voor snelle toegang, waardoor uw activiteiten worden gestroomlijnd.
+- Apps verbergen: verberg eenvoudig apps die u niet zichtbaar wilt hebben, zodat uw startscherm schoon blijft en gefocust op essentiële inhoud.
+- Apps hernoemen: personaliseer uw apps met aangepaste namen die naadloos synchroniseren tussen favorieten en alle apps.
+- Vergrendeling: beveilig uw privacy en gegevens met vingerafdrukvergrendeling voor geselecteerde apps en instellingen.
+- Geen internetrechten: geen gebruik van INTERNET-rechten, zodat uw gegevens privé blijven.
+- Crashrapporten: rapporteer crashes via e-mail, inclusief logbestanden voor effectieve probleemoplossing.
 
 <b>Gepersonaliseerde aanpassing:</b>
 
-- Lettertypekleuren: kies uw eigen lettertypekleuren met behulp van onze kleurenkiezer.
-- Positie: kies uit uitlijningen links, midden en rechts voor datum, tijd en apps.
-- Opvulling: kies de gewenste opvulling tussen favoriete apps en alle apps.
-- Lettergrootte: Kies de lettergrootte voor elk element van het startscherm.
-- Uitgeschakeld: kies wat u op het startscherm wilt weergeven.
+- Lettertypekleuren: pas de lettertypekleuren aan met onze kleurenkiezer.
+- Positie: lijn datum, tijd en apps uit naar links, midden of rechts.
+- Opvulling: Pas de opvulling aan tussen favoriete apps en alle apps.
+- Lettergrootte: stel de lettergrootte in voor elk element op het startscherm.
+- Items wisselen: beheer weergavevoorkeuren op het startscherm.
+
+<b>Mogelijke gebaren zijn:</b>
+
+- Veegbewegingen: navigeer door in verschillende richtingen te vegen (omhoog, omlaag, links, rechts) om toegang te krijgen tot verschillende functies of om tussen schermen te schakelen.
+- Dubbeltikken: tik tweemaal snel op het scherm om een vooraf gedefinieerde actie uit te voeren of een functie te activeren.
+- Klokinteractie: tik op de klok om aanvullende informatie weer te geven, zoals alarmen of wereldklok.
+- Datuminteractie: tik op de datum om de kalender-app te openen voor planning en planning.
+- Batterijpictogram: tik op het batterijpictogram om toegang te krijgen tot details over het batterijgebruik.
 
 <b>Mogelijke acties zijn:</b>
 
-- Veeg naar links naar alle apps.
-- Veeg naar rechts naar favoriete apps.
-- Klik op het batterijniveau.
-- Klik op de klok.
-- Klik op de datum.
+- Open de gespecificeerde app: start onmiddellijk elke gewenste app voor naadloze toegang tot uw favorieten.
+- App-lijst weergeven: bekijk en beheer uw geïnstalleerde apps efficiënt met een uitgebreide lijstweergave.
+- Schermvergrendeling: beveilig uw apparaat en bescherm uw privacy met snelle en gemakkelijke schermvergrendeling.
+- Toon recent geopende apps: Krijg moeiteloos toegang tot recent gebruikte apps voor snelle multitasking.
+- Toegang tot meldingenlade: open de meldingenlade met een enkele tik om updates en waarschuwingen te controleren.
+- Snelle instellingen: beheer apparaatinstellingen snel door rechtstreeks vanuit het startscherm toegang te krijgen tot de snelle instellingen.
+- Energiedialoog: beheer eenvoudig energieopties zoals opnieuw opstarten, uitschakelen en meer met behulp van de energiedialoog.
+- Maak een screenshot: leg uw scherm direct vast om belangrijke informatie en momenten op te slaan en te delen.
+- Gebaren uitschakelen: schakel specifieke gebaren tijdelijk of permanent uit om de interactie-ervaring met uw apparaat aan te passen.
+
+Bezoek de <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> pagina voor meer details.

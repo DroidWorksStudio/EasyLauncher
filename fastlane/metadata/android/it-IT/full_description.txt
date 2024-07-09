@@ -1,23 +1,38 @@
 <b>Caratteristiche:</b>
 
-- Accesso rapido alle app preferite: visualizza le tue app preferite in formato testo sulla schermata iniziale per un accesso rapido alle app più utilizzate, semplificando le tue operazioni.
-- Nascondi app: nascondi facilmente le app che non vuoi che siano visibili, mantenendo la schermata iniziale pulita e focalizzata sui contenuti che ti servono.
-- Rinomina app: puoi rinominare le tue app e queste si sincronizzeranno tra le app preferite e tutte le app.
-- Blocco: proteggi la tua privacy e i tuoi dati tramite l'impronta digitale per bloccare le app e le impostazioni selezionate.
-- Autorizzazioni Internet: non utilizziamo le autorizzazioni INTERNET. Non sai mai cosa vuole sapere di te uno sviluppatore di app.
+- Accesso rapido alle app preferite: visualizza le app più utilizzate sulla schermata iniziale in formato testo per un accesso rapido, semplificando le tue operazioni.
+- Nascondi app: nascondi facilmente le app che non desideri siano visibili, mantenendo la schermata iniziale pulita e focalizzata sui contenuti essenziali.
+- Rinomina app: personalizza le tue app con nomi personalizzati che si sincronizzano perfettamente tra i preferiti e tutte le app.
+- Blocco: proteggi la tua privacy e i tuoi dati con il blocco dell'impronta digitale per app e impostazioni selezionate.
+- Nessuna autorizzazione Internet: nessun utilizzo delle autorizzazioni INTERNET, garantendo che i tuoi dati rimangano privati.
+- Rapporti sugli arresti anomali: segnala gli arresti anomali tramite e-mail, inclusi i file di registro per una risoluzione dei problemi efficace.
 
 <b>Personalizzazione personalizzata:</b>
 
-- Colori dei caratteri: scegli i colori dei caratteri utilizzando il nostro selettore di colori.
-- Posizione: scegli tra gli allineamenti Sinistra, Centro e Destra per data, ora e app.
-- Padding: scegli il riempimento che desideri tra le app preferite e tutte le app.
-- Dimensione carattere: scegli la dimensione del carattere per ciascun elemento della schermata iniziale.
-- Disabilitato: scegli cosa desideri visualizzare nella schermata principale.
+- Colori dei caratteri: personalizza i colori dei caratteri utilizzando il nostro selettore di colori.
+- Posizione: allinea data, ora e app a sinistra, al centro o a destra.
+- Imbottitura: regola l'imbottitura tra le app preferite e tutte le app.
+- Dimensione carattere: imposta la dimensione del carattere per ciascun elemento nella schermata principale.
+- Attiva/disattiva elementi: controlla le preferenze di visualizzazione nella schermata principale.
+
+<b>I gesti possibili includono:</b>
+
+- Gesti di scorrimento: naviga scorrendo in diverse direzioni (su, giù, sinistra, destra) per accedere a varie funzionalità o spostarti tra le schermate.
+- Doppio tocco: tocca rapidamente due volte lo schermo per eseguire un'azione predefinita o attivare una funzione.
+- Interazione orologio: tocca l'orologio per visualizzare informazioni aggiuntive come sveglie o orologio mondiale.
+- Interazione con la data: tocca la data per aprire l'app calendario per la pianificazione e la pianificazione.
+- Icona batteria: tocca l'icona della batteria per accedere ai dettagli sull'utilizzo della batteria.
 
 <b>Le azioni possibili includono:</b>
 
-- Scorri verso sinistra per tutte le app.
-- Scorri verso destra per accedere alle app preferite.
-- Facendo clic sul livello della batteria.
-- Facendo clic sull'orologio.
-- Facendo clic sulla data.
+- Apri l'app specificata: avvia immediatamente qualsiasi app scelta per accedere senza problemi ai tuoi preferiti.
+- Visualizza l'elenco delle app: visualizza e gestisci le app installate in modo efficiente con una visualizzazione dell'elenco completo.
+- Blocco schermo: proteggi il tuo dispositivo e la tua privacy con un blocco schermo pratico e veloce.
+- Mostra le app aperte di recente: accedi facilmente alle app utilizzate di recente per un rapido multitasking.
+- Accesso al cassetto delle notifiche: apri il cassetto delle notifiche con un solo tocco per controllare aggiornamenti e avvisi.
+- Impostazioni rapide: gestisci rapidamente le impostazioni del dispositivo accedendo alle impostazioni rapide direttamente dalla schermata principale.
+- Finestra di dialogo di alimentazione: controlla facilmente le opzioni di alimentazione come riavvio, spegnimento e altro utilizzando la finestra di dialogo di alimentazione.
+- Acquisisci uno screenshot: cattura istantaneamente il tuo schermo per salvare e condividere informazioni e momenti importanti.
+- Disattiva gesti: disattiva temporaneamente o permanentemente gesti specifici per personalizzare l'esperienza di interazione del tuo dispositivo.
+
+Per maggiori dettagli visita la pagina <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> .

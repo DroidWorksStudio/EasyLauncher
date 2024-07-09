@@ -1,23 +1,38 @@
 <b>Vlastnosti:</b>
 
-- Rychlý přístup k oblíbené aplikaci: Zobrazte své oblíbené aplikace v textovém formátu na domovské obrazovce pro rychlý přístup k nejpoužívanějším aplikacím a zefektivněte své operace.
-- Skrýt aplikace: Snadno skryjte aplikace, které nechcete, aby byly viditelné, a udržujte svou domovskou obrazovku čistou a zaměřenou na obsah, který potřebujete.
-- Přejmenovat aplikace: Své aplikace můžete přejmenovat a budou se synchronizovat mezi oblíbenými aplikacemi a všemi aplikacemi.
-- Uzamčení: Zabezpečte své soukromí a data otiskem prstu, abyste uzamkli vybrané aplikace a nastavení.
-- Oprávnění k internetu: Nepoužíváme oprávnění INTERNET. Nikdy nevíte, co o vás chce vývojář aplikace vědět.
+- Rychlý přístup k oblíbené aplikaci: Zobrazte své nejpoužívanější aplikace na domovské obrazovce v textovém formátu pro rychlý přístup a zefektivněte své operace.
+- Skrýt aplikace: Snadno skryjte aplikace, které nechcete, aby byly viditelné, a udržujte svou domovskou obrazovku čistou a zaměřenou na základní obsah.
+- Přejmenovat aplikace: Přizpůsobte si své aplikace vlastními názvy, které se hladce synchronizují mezi oblíbenými a všemi aplikacemi.
+- Uzamčení: Zabezpečte své soukromí a data pomocí zámku otisků prstů pro vybrané aplikace a nastavení.
+- Žádná oprávnění k internetu: Žádné používání oprávnění INTERNET, což zajišťuje, že vaše data zůstanou soukromá.
+- Zprávy o selhání: Zprávy o selhání prostřednictvím e-mailu, včetně souborů protokolu pro efektivní řešení problémů.
 
 <b>Personalizované přizpůsobení:</b>
 
-- Barvy písma: Vyberte si vlastní barvy písma pomocí našeho výběru barev.
-- Pozice: Vyberte ze zarovnání doleva, na střed a doprava pro datum, čas a aplikace.
-- Výplň: Vyberte si požadovanou výplň mezi oblíbenými aplikacemi a všemi aplikacemi.
-- Velikost písma: Vyberte velikost písma pro každý prvek domovské obrazovky.
-- Zakázáno: Vyberte, co chcete zobrazit na domovské obrazovce.
+- Barvy písma: Přizpůsobte barvy písma pomocí našeho nástroje pro výběr barev.
+- Pozice: Zarovnejte datum, čas a aplikace doleva, na střed nebo doprava.
+- Odsazení: Upravte odsazení mezi oblíbenými aplikacemi a všemi aplikacemi.
+- Velikost písma: Nastavte velikost písma pro každý prvek na domovské obrazovce.
+- Přepnout položky: Ovládání předvoleb zobrazení na domovské obrazovce.
+
+<b>Mezi možná gesta patří:</b>
+
+- Gesta přejetí: Procházejte přejížděním v různých směrech (nahoru, dolů, doleva, doprava), abyste získali přístup k různým funkcím nebo se pohybovali mezi obrazovkami.
+- Dvojité klepnutí: Dvojím rychlým klepnutím na obrazovku provedete předem definovanou akci nebo aktivujete funkci.
+- Interakce s hodinami: Klepnutím na hodiny zobrazíte další informace, jako jsou budíky nebo světový čas.
+- Interakce s datem: Klepnutím na datum otevřete aplikaci kalendáře pro plánování a plánování.
+- Ikona baterie: Klepnutím na ikonu baterie zobrazíte podrobnosti o využití baterie.
 
 <b>Možné akce zahrnují:</b>
 
-- Přejetím doleva do všech aplikací.
-- Přejeďte prstem doprava na oblíbené aplikace.
-- Kliknutím na Úroveň baterie.
-- Kliknutím na hodiny.
-- Kliknutím na datum.
+- Otevřít specifikovanou aplikaci: Okamžitě spusťte libovolnou aplikaci, kterou si vyberete, abyste získali bezproblémový přístup ke svým oblíbeným položkám.
+- Zobrazení seznamu aplikací: Zobrazte a spravujte efektivně nainstalované aplikace pomocí zobrazení komplexního seznamu.
+- Uzamčení obrazovky: Zabezpečte své zařízení a chraňte své soukromí pomocí rychlého a pohodlného uzamčení obrazovky.
+- Zobrazit naposledy otevřené aplikace: Snadný přístup k nedávno použitým aplikacím pro rychlý multitasking.
+- Přístup k zásuvce oznámení: Otevřete zásuvku oznámení jediným klepnutím a zkontrolujte aktualizace a upozornění.
+- Rychlá nastavení: Spravujte nastavení zařízení rychle přístupem k rychlým nastavením přímo z domovské obrazovky.
+- Dialogové okno napájení: Pomocí dialogového okna napájení můžete snadno ovládat možnosti napájení, jako je restart, vypnutí a další.
+- Pořiďte snímek obrazovky: Okamžitě zachyťte obrazovku a uložte a sdílejte důležité informace a okamžiky.
+- Deaktivovat gesta: Dočasně nebo trvale deaktivujte konkrétní gesta, abyste si přizpůsobili zážitek z interakce se zařízením.
+
+Pro více podrobností navštivte stránku <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> .

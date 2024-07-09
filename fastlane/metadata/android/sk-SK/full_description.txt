@@ -1,23 +1,38 @@
 <b>Vlastnosti:</b>
 
-- Rýchly prístup k obľúbeným aplikáciám: Zobrazte svoje obľúbené aplikácie v textovom formáte na domovskej obrazovke pre rýchly prístup k najpoužívanejším aplikáciám a zefektívnite tak svoje operácie.
-- Skryť aplikácie: Jednoducho skryte aplikácie, ktoré nechcete, aby boli viditeľné, a udržte tak svoju domovskú obrazovku čistú a zameranú na obsah, ktorý potrebujete.
-- Premenovať aplikácie: Svoje aplikácie môžete premenovať a budú sa synchronizovať medzi obľúbenými aplikáciami a všetkými aplikáciami.
-- Uzamknutie: Zabezpečte svoje súkromie a údaje odtlačkom prsta, aby ste uzamkli vybrané aplikácie a nastavenia.
-- Internetové povolenia: Nepoužívame internetové povolenia. Nikdy neviete, čo o vás chce vývojár aplikácie vedieť.
+- Rýchly prístup k obľúbeným aplikáciám: Zobrazte svoje najpoužívanejšie aplikácie na domovskej obrazovke v textovom formáte pre rýchly prístup a zefektívnenie vašich operácií.
+- Skryť aplikácie: Ľahko skryte aplikácie, ktoré nechcete, aby boli viditeľné, a udržte tak svoju domovskú obrazovku čistú a zameranú na dôležitý obsah.
+- Premenovať aplikácie: Prispôsobte si aplikácie pomocou vlastných názvov, ktoré sa bezproblémovo synchronizujú medzi obľúbenými a všetkými aplikáciami.
+- Uzamykanie: Zabezpečte svoje súkromie a údaje pomocou zámku odtlačkov prstov pre vybrané aplikácie a nastavenia.
+- Žiadne oprávnenia na internet: Nepoužívať oprávnenia INTERNET, čím sa zabezpečí, že vaše údaje zostanú súkromné.
+- Hlásenia o zlyhaní: Hlásenie o zlyhaní prostredníctvom e-mailu vrátane súborov denníka na efektívne riešenie problémov.
 
 <b>Personalizované prispôsobenie:</b>
 
-- Farby písma: Vyberte si svoje vlastné farby písma pomocou nášho výberu farieb.
-- Pozícia: Vyberte si zo zarovnania vľavo, na stred a vpravo pre dátum, čas a aplikácie.
-- Výplň: Vyberte si požadovanú výplň medzi obľúbenými aplikáciami a všetkými aplikáciami.
-- Veľkosť písma: Vyberte veľkosť písma pre každý prvok domovskej obrazovky.
-- Zakázané: Vyberte, čo chcete zobraziť na domovskej obrazovke.
+- Farby písma: Prispôsobte farby písma pomocou nášho výberu farieb.
+- Pozícia: Zarovnajte dátum, čas a aplikácie doľava, na stred alebo doprava.
+- Výplň: Upravte výplň medzi obľúbenými aplikáciami a všetkými aplikáciami.
+- Veľkosť písma: Nastavte veľkosť písma pre každý prvok na domovskej obrazovke.
+- Prepínať položky: Ovládajte predvoľby zobrazenia na domovskej obrazovke.
+
+<b>Možné gestá zahŕňajú:</b>
+
+- Gestá potiahnutia: Navigujte potiahnutím prstom v rôznych smeroch (hore, nadol, doľava, doprava), aby ste získali prístup k rôznym funkciám alebo sa pohybovali medzi obrazovkami.
+- Dvojité klepnutie: Dvakrát rýchlo ťuknite na obrazovku, aby ste vykonali preddefinovanú akciu alebo aktivovali funkciu.
+- Interakcia s hodinami: Klepnutím na hodiny zobrazíte ďalšie informácie, ako sú budíky alebo svetový čas.
+- Interakcia s dátumom: Klepnutím na dátum otvoríte aplikáciu kalendára na plánovanie a plánovanie.
+- Ikona batérie: Klepnutím na ikonu batérie získate prístup k podrobnostiam o využití batérie.
 
 <b>Možné akcie:</b>
 
-- Potiahnutím doľava prejdete na všetky aplikácie.
-- Prejdite prstom doprava na obľúbené aplikácie.
-- Kliknutím na úroveň batérie.
-- Kliknutím na hodiny.
-- Kliknutím na dátum.
+- Otvorte špecifikovanú aplikáciu: Okamžite spustite ľubovoľnú aplikáciu, ktorú si vyberiete, aby ste mali bezproblémový prístup k svojim obľúbeným.
+- Zobrazenie zoznamu aplikácií: Zobrazte a spravujte svoje nainštalované aplikácie efektívne pomocou komplexného zobrazenia zoznamu.
+- Uzamknutie obrazovky: Zabezpečte svoje zariadenie a chráňte svoje súkromie pomocou rýchleho a pohodlného uzamknutia obrazovky.
+- Zobraziť nedávno otvorené aplikácie: Získajte jednoduchý prístup k nedávno použitým aplikáciám pre rýchly multitasking.
+- Prístup k zásuvke upozornení: Otvorte zásuvku upozornení jediným klepnutím a skontrolujte aktualizácie a upozornenia.
+- Rýchle nastavenia: Spravujte nastavenia zariadenia rýchlo prístupom k rýchlym nastaveniam priamo z domovskej obrazovky.
+- Dialógové okno napájania: Ovládajte možnosti napájania, ako je reštart, vypnutie a ďalšie, jednoducho pomocou dialógového okna napájania.
+- Urobte snímku obrazovky: Okamžite zachyťte svoju obrazovku a uložte a zdieľajte dôležité informácie a momenty.
+- Zakázať gestá: Dočasne alebo natrvalo zakážte konkrétne gestá, aby ste si prispôsobili zážitok z interakcie so zariadením.
+
+Ďalšie podrobnosti nájdete na stránke <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> .
