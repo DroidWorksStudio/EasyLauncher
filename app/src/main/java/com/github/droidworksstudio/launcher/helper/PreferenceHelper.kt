@@ -188,6 +188,26 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = loadAction(Constants.DOUBLE_TAP_ACTION, Constants.Action.LockScreen)
         set(value) = storeAction(Constants.DOUBLE_TAP_ACTION, value)
 
+    var swipeUpApp: String
+        get() = prefs.getString(Constants.SWIPE_UP_APP, "").toString()
+        set(value) = prefs.edit().putString(Constants.SWIPE_UP_APP, value).apply()
+
+    var swipeDownApp: String
+        get() = prefs.getString(Constants.SWIPE_DOWN_APP, "").toString()
+        set(value) = prefs.edit().putString(Constants.SWIPE_DOWN_APP, value).apply()
+
+    var swipeLeftApp: String
+        get() = prefs.getString(Constants.SWIPE_LEFT_APP, "").toString()
+        set(value) = prefs.edit().putString(Constants.SWIPE_LEFT_APP, value).apply()
+
+    var swipeRightApp: String
+        get() = prefs.getString(Constants.SWIPE_RIGHT_APP, "").toString()
+        set(value) = prefs.edit().putString(Constants.SWIPE_RIGHT_APP, value).apply()
+
+    var doubleTapApp: String
+        get() = prefs.getString(Constants.DOUBLE_TAP_APP, "").toString()
+        set(value) = prefs.edit().putString(Constants.DOUBLE_TAP_APP, value).apply()
+
     var weatherUnits: Constants.Units
         get() {
             return try {

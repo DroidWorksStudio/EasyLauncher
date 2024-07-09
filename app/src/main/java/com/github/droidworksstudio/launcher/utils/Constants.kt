@@ -106,13 +106,18 @@ object Constants {
     }
 
     const val SWIPE_UP_ACTION = "SWIPE_UP_ACTION"
+    const val SWIPE_UP_APP = "SWIPE_UP_APP"
     const val SWIPE_DOWN_ACTION = "SWIPE_DOWN_ACTION"
+    const val SWIPE_DOWN_APP = "SWIPE_DOWN_APP"
     const val SWIPE_LEFT_ACTION = "SWIPE_LEFT_ACTION"
+    const val SWIPE_LEFT_APP = "SWIPE_LEFT_APP"
     const val SWIPE_RIGHT_ACTION = "SWIPE_RIGHT_ACTION"
+    const val SWIPE_RIGHT_APP = "SWIPE_RIGHT_APP"
     const val DOUBLE_TAP_ACTION = "DOUBLE_TAP_ACTION"
+    const val DOUBLE_TAP_APP = "DOUBLE_TAP_APP"
 
     enum class Action {
-        //        OpenApp,
+        OpenApp,
         LockScreen,
         ShowNotification,
         ShowAppList,
@@ -127,7 +132,7 @@ object Constants {
 
         fun getString(context: Context): String {
             return when (this) {
-//                OpenApp -> context.getString(R.string.settings_actions_open_app)
+                OpenApp -> context.getString(R.string.settings_actions_open_app)
                 LockScreen -> context.getString(R.string.settings_actions_lock_screen)
                 ShowNotification -> context.getString(R.string.settings_actions_show_notifications)
                 ShowAppList -> context.getString(R.string.settings_actions_show_app_list)
@@ -145,10 +150,10 @@ object Constants {
 
     enum class Swipe {
         DoubleTap,
-        Left,
-        Right,
         Up,
-        Down;
+        Down,
+        Left,
+        Right;
     }
 
     enum class Units {

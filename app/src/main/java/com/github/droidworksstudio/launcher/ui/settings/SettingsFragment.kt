@@ -9,11 +9,14 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import com.github.droidworksstudio.common.getAppNameFromPackageName
 import com.github.droidworksstudio.common.resetDefaultLauncher
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.R
@@ -24,6 +27,7 @@ import com.github.droidworksstudio.launcher.helper.AppReloader
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
+import com.github.droidworksstudio.launcher.repository.AppInfoRepository
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AlignmentBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.PaddingBottomSheetDialogFragment
@@ -31,6 +35,8 @@ import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.TextBottomSheet
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -44,6 +50,9 @@ class SettingsFragment : Fragment(),
 
     @Inject
     lateinit var preferenceHelper: PreferenceHelper
+
+    @Inject
+    lateinit var appInfoRepository: AppInfoRepository
 
     @Inject
     lateinit var appHelper: AppHelper
@@ -86,11 +95,27 @@ class SettingsFragment : Fragment(),
         binding.miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.getString(context)
         binding.miscellaneousLauncherFontsControl.text = preferenceHelper.launcherFont.getString(context)
 
-        binding.gesturesDoubleTapControl.text = preferenceHelper.doubleTapAction.getString(context)
-        binding.gesturesSwipeUpControl.text = preferenceHelper.swipeUpAction.getString(context)
-        binding.gesturesSwipeDownControl.text = preferenceHelper.swipeDownAction.getString(context)
-        binding.gesturesSwipeLeftControl.text = preferenceHelper.swipeLeftAction.getString(context)
-        binding.gesturesSwipeRightControl.text = preferenceHelper.swipeRightAction.getString(context)
+        updateGestureControlText(context, preferenceHelper.doubleTapAction, preferenceHelper.doubleTapApp, binding.gesturesDoubleTapControl)
+        updateGestureControlText(context, preferenceHelper.swipeUpAction, preferenceHelper.swipeUpApp, binding.gesturesSwipeUpControl)
+        updateGestureControlText(context, preferenceHelper.swipeDownAction, preferenceHelper.swipeDownApp, binding.gesturesSwipeDownControl)
+        updateGestureControlText(context, preferenceHelper.swipeLeftAction, preferenceHelper.swipeLeftApp, binding.gesturesSwipeLeftControl)
+        updateGestureControlText(context, preferenceHelper.swipeRightAction, preferenceHelper.swipeRightApp, binding.gesturesSwipeRightControl)
+    }
+
+    // Function to update UI text based on action and app name
+    private fun updateGestureControlText(
+        context: Context,
+        action: Constants.Action,
+        appPackageName: String?,
+        textView: TextView
+    ) {
+        val appName = appPackageName?.let { context.getAppNameFromPackageName(it) }
+        val actionText = if (action == Constants.Action.OpenApp) {
+            context.getString(R.string.settings_actions_open_app_run, appName)
+        } else {
+            action.getString(context)
+        }
+        textView.text = actionText
     }
 
     @SuppressLint("SetTextI18n")
@@ -320,6 +345,65 @@ class SettingsFragment : Fragment(),
         searchEngineDialog?.dismiss()
     }
 
+    private fun showAppSelectionDialog(swipeType: Constants.Swipe) {
+        // Make sure this method is called within a lifecycle owner scope
+        lifecycleScope.launch(Dispatchers.Main) {
+            // Collect the flow of installed apps
+            appInfoRepository.getDrawApps().collect { installedApps ->
+                // Extract app names and package names
+                val appNames = installedApps.map { it.appName }.toTypedArray()
+                val packageNames = installedApps.map { it.packageName }
+
+                // Build and display the dialog
+                val builder = AlertDialog.Builder(binding.root.context)
+                builder.setTitle("Select an App")
+                builder.setItems(appNames) { _, which ->
+                    val selectedPackageName = packageNames[which]
+                    when (swipeType) {
+                        Constants.Swipe.DoubleTap,
+                        Constants.Swipe.Up,
+                        Constants.Swipe.Down,
+                        Constants.Swipe.Left,
+                        Constants.Swipe.Right -> handleSwipeAction(swipeType, selectedPackageName)
+                    }
+
+                }
+                builder.show()
+            }
+        }
+    }
+
+    private fun handleSwipeAction(swipeType: Constants.Swipe, selectedPackageName: String) {
+        val selectedApp = context.getAppNameFromPackageName(selectedPackageName)
+
+        when (swipeType) {
+            Constants.Swipe.DoubleTap -> {
+                binding.gesturesDoubleTapControl.text = "Open $selectedApp"
+                preferenceHelper.doubleTapApp = selectedPackageName
+            }
+
+            Constants.Swipe.Up -> {
+                binding.gesturesSwipeUpControl.text = "Open $selectedApp"
+                preferenceHelper.swipeUpApp = selectedPackageName
+            }
+
+            Constants.Swipe.Down -> {
+                binding.gesturesSwipeDownControl.text = "Open $selectedApp"
+                preferenceHelper.swipeDownApp = selectedPackageName
+            }
+
+            Constants.Swipe.Left -> {
+                binding.gesturesSwipeLeftControl.text = "Open $selectedApp"
+                preferenceHelper.swipeLeftApp = selectedPackageName
+            }
+
+            Constants.Swipe.Right -> {
+                binding.gesturesSwipeRightControl.text = "Open $selectedApp"
+                preferenceHelper.swipeRightApp = selectedPackageName
+            }
+        }
+    }
+
 
     private fun swipeActionClickEvent(swipe: Constants.Swipe) {
         // Get the array of Action enum values
@@ -333,43 +417,64 @@ class SettingsFragment : Fragment(),
         dialog.setItems(actionStrings) { _, which ->
             val selectedAction = actions[which]
             when (swipe) {
-                Constants.Swipe.DoubleTap -> {
-                    preferenceViewModel.setDoubleTap(selectedAction)
-                    binding.gesturesDoubleTapControl.text =
-                        preferenceHelper.doubleTapAction.getString(context)
-                }
-
-                Constants.Swipe.Up -> {
-                    preferenceViewModel.setSwipeUp(selectedAction)
-                    binding.gesturesSwipeUpControl.text =
-                        preferenceHelper.swipeUpAction.getString(context)
-
-                }
-
-                Constants.Swipe.Down -> {
-                    preferenceViewModel.setSwipeDown(selectedAction)
-                    binding.gesturesSwipeDownControl.text =
-                        preferenceHelper.swipeDownAction.getString(context)
-
-                }
-
-                Constants.Swipe.Left -> {
-                    preferenceViewModel.setSwipeLeft(selectedAction)
-                    binding.gesturesSwipeLeftControl.text =
-                        preferenceHelper.swipeLeftAction.getString(context)
-
-                }
-
-                Constants.Swipe.Right -> {
-                    preferenceViewModel.setSwipeRight(selectedAction)
-                    binding.gesturesSwipeRightControl.text =
-                        preferenceHelper.swipeRightAction.getString(context)
-
-                }
-
+                Constants.Swipe.DoubleTap -> handleSwipeAction(context, Constants.Swipe.DoubleTap, selectedAction, binding)
+                Constants.Swipe.Up -> handleSwipeAction(context, Constants.Swipe.Up, selectedAction, binding)
+                Constants.Swipe.Down -> handleSwipeAction(context, Constants.Swipe.Down, selectedAction, binding)
+                Constants.Swipe.Left -> handleSwipeAction(context, Constants.Swipe.Left, selectedAction, binding)
+                Constants.Swipe.Right -> handleSwipeAction(context, Constants.Swipe.Right, selectedAction, binding)
             }
         }
         dialog.show()
+    }
+
+    // Function to handle setting action and updating UI
+    private fun handleSwipeAction(context: Context, swipe: Constants.Swipe, action: Constants.Action, binding: FragmentSettingsBinding) {
+        preferenceViewModel.setSwipeAction(swipe, action)
+
+        when (action) {
+            Constants.Action.OpenApp -> {
+                val selectedApp = when (swipe) {
+                    Constants.Swipe.DoubleTap -> context.getAppNameFromPackageName(preferenceHelper.doubleTapApp)
+                    Constants.Swipe.Up -> context.getAppNameFromPackageName(preferenceHelper.swipeUpApp)
+                    Constants.Swipe.Down -> context.getAppNameFromPackageName(preferenceHelper.swipeDownApp)
+                    Constants.Swipe.Left -> context.getAppNameFromPackageName(preferenceHelper.swipeLeftApp)
+                    Constants.Swipe.Right -> context.getAppNameFromPackageName(preferenceHelper.swipeRightApp)
+                }
+                binding.apply {
+                    when (swipe) {
+                        Constants.Swipe.DoubleTap -> gesturesDoubleTapControl.text = "Open $selectedApp"
+                        Constants.Swipe.Up -> gesturesSwipeUpControl.text = "Open $selectedApp"
+                        Constants.Swipe.Down -> gesturesSwipeDownControl.text = "Open $selectedApp"
+                        Constants.Swipe.Left -> gesturesSwipeLeftControl.text = "Open $selectedApp"
+                        Constants.Swipe.Right -> gesturesSwipeRightControl.text = "Open $selectedApp"
+                    }
+                }
+                showAppSelectionDialog(swipe)
+            }
+
+            else -> {
+                binding.apply {
+                    when (swipe) {
+                        Constants.Swipe.DoubleTap -> gesturesDoubleTapControl.text = preferenceHelper.doubleTapAction.getString(context)
+                        Constants.Swipe.Up -> gesturesSwipeUpControl.text = preferenceHelper.swipeUpAction.getString(context)
+                        Constants.Swipe.Down -> gesturesSwipeDownControl.text = preferenceHelper.swipeDownAction.getString(context)
+                        Constants.Swipe.Left -> gesturesSwipeLeftControl.text = preferenceHelper.swipeLeftAction.getString(context)
+                        Constants.Swipe.Right -> gesturesSwipeRightControl.text = preferenceHelper.swipeRightAction.getString(context)
+                    }
+                }
+            }
+        }
+    }
+
+    // Extension function to set swipe action in ViewModel
+    private fun PreferenceViewModel.setSwipeAction(swipe: Constants.Swipe, action: Constants.Action) {
+        when (swipe) {
+            Constants.Swipe.DoubleTap -> setDoubleTap(action)
+            Constants.Swipe.Up -> setSwipeUp(action)
+            Constants.Swipe.Down -> setSwipeDown(action)
+            Constants.Swipe.Left -> setSwipeLeft(action)
+            Constants.Swipe.Right -> setSwipeRight(action)
+        }
     }
 
     override fun onStop() {

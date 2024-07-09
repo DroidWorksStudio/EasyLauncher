@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.pm.PackageManager
 import android.os.BatteryManager
 import android.os.Build
 import android.os.Bundle
@@ -25,6 +26,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.hideKeyboard
+import com.github.droidworksstudio.common.isPackageInstalled
 import com.github.droidworksstudio.common.launchApp
 import com.github.droidworksstudio.common.launchCalendar
 import com.github.droidworksstudio.common.launchClock
@@ -337,10 +339,48 @@ class HomeFragment : Fragment(),
         }
     }
 
+    private fun openApp(packageName: String) {
+        val context = binding.root.context
+        val pm: PackageManager = context.packageManager
+        val intent = pm.getLaunchIntentForPackage(packageName)
+        if (intent != null) {
+            context.startActivity(intent)
+        } else {
+            Log.e("HomeViewHolder", "Unable to find app with package name: $packageName")
+        }
+    }
+
     @RequiresApi(Build.VERSION_CODES.P)
     private fun handleOtherAction(action: Constants.Action, actionType: Constants.Swipe) {
         when (action) {
-//            Constants.Action.OpenApp -> {}
+            Constants.Action.OpenApp -> {
+                when (actionType) {
+                    Constants.Swipe.DoubleTap,
+                    Constants.Swipe.Up,
+                    Constants.Swipe.Down,
+                    Constants.Swipe.Left,
+                    Constants.Swipe.Right -> {
+                        val packageName = when (actionType) {
+                            Constants.Swipe.DoubleTap -> preferenceHelper.doubleTapApp
+                            Constants.Swipe.Up -> preferenceHelper.swipeUpApp
+                            Constants.Swipe.Down -> preferenceHelper.swipeDownApp
+                            Constants.Swipe.Left -> preferenceHelper.swipeLeftApp
+                            Constants.Swipe.Right -> preferenceHelper.swipeRightApp
+                        }
+
+                        if (packageName.isNotEmpty()) {
+                            if (context.isPackageInstalled(packageName)) {
+                                openApp(packageName)
+                            } else {
+                                Log.e("HomeViewHolder", "App $packageName is not installed")
+                                context.showLongToast("App $packageName is not installed")
+                            }
+                        } else {
+                            Log.e("HomeViewHolder", "No package name found in preferences")
+                        }
+                    }
+                }
+            }
 
             Constants.Action.LockScreen -> {
                 ActionService.runAccessibilityMode(context)

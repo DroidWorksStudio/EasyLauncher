@@ -502,3 +502,14 @@ fun Context.isPackageInstalled(
     val activityInfo = launcher.getActivityList(packageName, userHandle)
     return activityInfo.size > 0
 }
+
+fun Context.getAppNameFromPackageName(packageName: String): String? {
+    val packageManager = this.packageManager
+    return try {
+        val appInfo = packageManager.getApplicationInfo(packageName, 0)
+        packageManager.getApplicationLabel(appInfo) as String
+    } catch (e: PackageManager.NameNotFoundException) {
+        e.printStackTrace()
+        null
+    }
+}

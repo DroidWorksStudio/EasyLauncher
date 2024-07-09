@@ -102,6 +102,7 @@
     <string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
 
     <string name="settings_actions_open_app">Open App</string>
+    <string name="settings_actions_open_app_run">Open %s</string>
     <string name="settings_actions_lock_screen">Lock Screen</string>
     <string name="settings_actions_show_notifications">Show Notifications</string>
     <string name="settings_actions_show_app_list">Show Apps List</string>
