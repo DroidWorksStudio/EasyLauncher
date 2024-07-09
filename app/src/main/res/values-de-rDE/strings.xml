@@ -84,6 +84,7 @@
     <string name="settings_reload_app_backup">Einstellungen gesichert.</string>
     <string name="settings_reload_app_restore">Einstellungen wiederhergestellt. Neustart.</string>
     <string name="settings_actions_open_app">Öffne App</string>
+    <string name="settings_actions_open_app_run">Open %s</string>
     <string name="settings_actions_lock_screen">Sperrbildschirm</string>
     <string name="settings_actions_show_notifications">Zeige Benachrichtigungen</string>
     <string name="settings_actions_show_app_list">Apps-Liste anzeigen</string>
