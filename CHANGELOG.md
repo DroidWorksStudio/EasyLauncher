@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Making the issue types a bit better. - ([64593af](https://github.com/DroidWorksStudio/EasyLauncher/commit/64593af2b8fff6d1acd44880fa12336bacf091f7))
 
+### Releases:
+
+- Prepare for version 0.2.0 - ([6981953](https://github.com/DroidWorksStudio/EasyLauncher/commit/6981953fbb2b6ce24dcde2ff52bfb47582018ac8))
+
 ## [0.1.9](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.9) - (09, July 2024)
 
 ### Implemented Enhancements:
