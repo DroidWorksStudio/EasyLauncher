@@ -23,18 +23,20 @@
 
 <div align='center'>
     <p>
-        <img src='https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white' alt="Android">
-        <img src='https://img.shields.io/badge/SDK-34-3DDC84?style=flat-square' alt="SDK-34">
-        <a href='https://github.com/DroidWorksStudio/EasyLauncher/blob/main/LICENSE'><img src='https://img.shields.io/github/license/DroidWorksStudio/EasyLauncher?color=3DDC84&style=flat-square' alt="LICENSE"></a>
+        <img src='https://img.shields.io/badge/Android-BD93F9?style=flat-square&logo=android&logoColor=white' alt="Android">
+        <img src='https://img.shields.io/badge/SDK-34-BD93F9?style=flat-square' alt="SDK-34">
+        <a href='https://github.com/DroidWorksStudio/EasyLauncher/blob/main/LICENSE'><img src='https://img.shields.io/github/license/DroidWorksStudio/EasyLauncher?color=BD93F9&style=flat-square' alt="LICENSE"></a>
         <br>
-        <img src='https://img.shields.io/badge/Maintained-yes-44cc11?style=flat-square' alt="Maintained">
-        <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img src='https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/total?color=44cc11&style=flat-square' alt="releases"></a>
+        <img src='https://img.shields.io/badge/Maintained-yes-50FA7B?style=flat-square' alt="Maintained">
+        <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img src='https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/total?color=50FA7B&style=flat-square' alt="releases"></a>
         <br>
-        <a href='https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/app.easy.launcher.yml'><img alt="F-Droid (including pre-releases)" src="https://img.shields.io/f-droid/v/app.easy.launcher?include_prereleases&style=flat-square"></a>
-        <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/DroidWorksStudio/EasyLauncher?style=flat-square"></a>
+        <a href='https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/app.easy.launcher.yml'><img alt="F-Droid (including pre-releases)" src="https://img.shields.io/f-droid/v/app.easy.launcher?color=FFB86C&style=flat-square"></a>
+        <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/DroidWorksStudio/EasyLauncher?color=FFB86C&style=flat-square"></a>
+        <br>
+        <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img src="https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/latest/total?color=FF5555&style=flat-square" alt="GitHub Downloads (all assets, latest release)"></a>
     </p>
-</div>
 
+</div>
 
 ## About
 
@@ -44,7 +46,8 @@
 - This application can be found on [F-Droid](https://f-droid.org/packages/app.easy.launcher/) and [Github](https://github.com/HeCodes2Much/EasyLauncher/releases/).
 - The latest stable version is available on the [`main`](https://github.com/HeCodes2Much/EasyLauncher/tree/main) branch, which can be cloned to build the application independently.
 - Additionally, a Github action has been set up to automatically generate an APK for every [release](https://github.com/HeCodes2Much/EasyLauncher/releases).
-- The **original** version of the application is also accessible on the [Play Store](https://play.google.com/store/apps/details?id=com.series.aster.launcher), [F-Droid](https://f-droid.org/fr/packages/com.series.aster.launcher/) & [Github](https://github.com/neophtex/AsterLauncher).
+- The **original** version of the application is also accessible on
+  the [Play Store](https://play.google.com/store/apps/details?id=com.series.aster.launcher), [F-Droid](https://f-droid.org/fr/packages/com.series.aster.launcher/) & [Github](https://github.com/neophtex/AsterLauncher).
 
 We try to balance customizability and minimalization well still being simple :)</h3>
 
@@ -58,11 +61,10 @@ We try to balance customizability and minimalization well still being simple :)<
 
 - Personalized Customization: Choose the font color and position for time, date, and favorite apps, making your home screen truly reflect your style.
 
-
-
 ## Contribute
 
-- If you are unhappy with any part of the app or feel like missing something, you can open a pull request or an [**issue**](https://github.com/HeCodes2Much/EasyLauncher/issues/new/choose) as you like.
+- If you are unhappy with any part of the app or feel like missing something, you can open a pull request or an [**issue
+  **](https://github.com/HeCodes2Much/EasyLauncher/issues/new/choose) as you like.
     - Please go through the issues marked as `Bug report`, `Crash report` or `Feature request`.
     - Please can we discuss before sending pull requests.
     - Make pull requests to `main` branch.
@@ -76,7 +78,8 @@ We try to balance customizability and minimalization well still being simple :)<
 
 **EasyLauncher is proudly licensed under the open source GPL3 license, granting users the freedom to use, study, modify and distribute it at will.**
 
-The Copyleft provision guarantees that these freedoms remain intact, ensuring that EasyLauncher will remain a fully open-source project. With access to the full source code, anyone can build, fork, and customize the application to their heart's content, unleashing its full potential.
+The Copyleft provision guarantees that these freedoms remain intact, ensuring that EasyLauncher will remain a fully open-source project. With access to the full source code, anyone
+can build, fork, and customize the application to their heart's content, unleashing its full potential.
 
 - EasyLauncher does not have network access.
 - EasyLauncher does not collect or transmit any data in any way whatsoever.
@@ -96,10 +99,12 @@ EasyLauncher uses the following permissions:
 - `android.permission.PACKAGE_USAGE_STATS`
     - Allows EasyLauncher to see usage of other apps to list last used apps first in the app list.
 
-
 ## Donation
 
-We kindly request that you consider supporting the ongoing development of EasyLauncher by making a donation if you find it to be a useful application. As a free and open-source product, EasyLauncher depends entirely on the support and generosity of its users to maintain its continued growth and accessibility to all. Please note that while purchasing is not obligatory, even a small donation would go a long way in helping us to keep EasyLauncher alive and thriving. We appreciate your continued support, and thank you for your contribution towards the betterment of our product. 😊
+We kindly request that you consider supporting the ongoing development of EasyLauncher by making a donation if you find it to be a useful application. As a free and open-source
+product, EasyLauncher depends entirely on the support and generosity of its users to maintain its continued growth and accessibility to all. Please note that while purchasing is
+not obligatory, even a small donation would go a long way in helping us to keep EasyLauncher alive and thriving. We appreciate your continued support, and thank you for your
+contribution towards the betterment of our product. 😊
 
 <div align='center'>
 <a href="https://www.buymeacoffee.com/HeCodes2Much"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=HeCodes2Much&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
