@@ -90,7 +90,7 @@ jobs:
           file: ${{steps.sign_app_withInternet.outputs.signedFile}}
           asset_name: EasyLauncher-Internet-Nightly-Signed.apk
           tag: nightly
-          body: "This is a nightly build."
+          body: "This is a nightly build. [changelogs](https://github.com/DroidWorksStudio/EasyLauncher/blob/main/CHANGELOG.md)"
           prerelease: true
           overwrite: true
           draft: false
@@ -115,7 +115,7 @@ jobs:
           file: ${{steps.sign_app_withoutInternet.outputs.signedFile}}
           asset_name: EasyLauncher-Nightly-Signed.apk
           tag: nightly
-          body: "This is a nightly build."
+          body: "This is a nightly build. [changelogs](https://github.com/DroidWorksStudio/EasyLauncher/blob/main/CHANGELOG.md)"
           prerelease: true
           overwrite: true
           draft: false
