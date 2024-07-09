@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the appSelectionDialog from not closing right. - ([3efe245](https://github.com/DroidWorksStudio/EasyLauncher/commit/3efe24503c40a2902a075707a8c87a25332b45bf))
+
 ### Housekeeping:
 
 - Making the issue types a bit better. - ([64593af](https://github.com/DroidWorksStudio/EasyLauncher/commit/64593af2b8fff6d1acd44880fa12336bacf091f7))

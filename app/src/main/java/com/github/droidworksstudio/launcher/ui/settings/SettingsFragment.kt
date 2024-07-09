@@ -339,15 +339,14 @@ class SettingsFragment : Fragment(),
         launcherFontDialog?.show()
     }
 
-    // Add this function to dismiss the dialog if it's showing
-    private fun dismissDialogs() {
-        launcherFontDialog?.dismiss()
-        searchEngineDialog?.dismiss()
-    }
+    private var appSelectionDialog: AlertDialog? = null
 
     private fun showAppSelectionDialog(swipeType: Constants.Swipe) {
         // Make sure this method is called within a lifecycle owner scope
         lifecycleScope.launch(Dispatchers.Main) {
+            // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
+            appSelectionDialog?.dismiss()
+
             // Collect the flow of installed apps
             appInfoRepository.getDrawApps().collect { installedApps ->
                 // Extract app names and package names
@@ -355,9 +354,9 @@ class SettingsFragment : Fragment(),
                 val packageNames = installedApps.map { it.packageName }
 
                 // Build and display the dialog
-                val builder = AlertDialog.Builder(binding.root.context)
-                builder.setTitle("Select an App")
-                builder.setItems(appNames) { _, which ->
+                val dialogBuilder = MaterialAlertDialogBuilder(context)
+                dialogBuilder.setTitle("Select an App")
+                dialogBuilder.setItems(appNames) { _, which ->
                     val selectedPackageName = packageNames[which]
                     when (swipeType) {
                         Constants.Swipe.DoubleTap,
@@ -368,9 +367,19 @@ class SettingsFragment : Fragment(),
                     }
 
                 }
-                builder.show()
+
+                // Assign the created dialog to launcherFontDialog
+                appSelectionDialog = dialogBuilder.create()
+                appSelectionDialog?.show()
             }
         }
+    }
+
+    // Add this function to dismiss the dialog if it's showing
+    private fun dismissDialogs() {
+        launcherFontDialog?.dismiss()
+        searchEngineDialog?.dismiss()
+        appSelectionDialog?.dismiss()
     }
 
     private fun handleSwipeAction(swipeType: Constants.Swipe, selectedPackageName: String) {
