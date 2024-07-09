@@ -91,6 +91,34 @@ android {
                 value = "\"REMOVE\""
             )
         }
+
+        create("withInternetNightly") {
+            dimension = "internet"
+            applicationIdSuffix = ".nightly"
+            manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
+            val weatherFile = project.rootProject.file("weather.properties")
+            val properties = Properties()
+            properties.load(weatherFile.inputStream())
+            val apiKey = properties.getProperty("WEATHER_API_KEY") ?: ""
+            buildConfigField(
+                type = "String",
+                name = "API_KEY",
+                value = "\"$apiKey\""
+            )
+            resValue("string", "app_name", "Easy Launcher (Nightly)")
+        }
+
+        create("withoutInternetNightly") {
+            dimension = "internet"
+            applicationIdSuffix = ".nightly"
+            manifestPlaceholders["internetPermission"] = "REMOVE"
+            buildConfigField(
+                type = "String",
+                name = "API_KEY",
+                value = "\"REMOVE\""
+            )
+            resValue("string", "app_name", "Easy Launcher (Nightly)")
+        }
     }
 
     composeOptions {
