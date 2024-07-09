@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fix. Fixed location permissions - ([42a806d](https://github.com/DroidWorksStudio/EasyLauncher/commit/42a806d15368d802f0c01b152d3adc588577b5e1))
 - Fix. Fixed onProviderEnabled and onProviderDisabled for LocationListener - ([60374fe](https://github.com/DroidWorksStudio/EasyLauncher/commit/60374fe6b1634e10c5fdd85bf369b6fdd9fd6476))
 - Fixed nightly builds to not overlap with other versions - ([e8d6a9a](https://github.com/DroidWorksStudio/EasyLauncher/commit/e8d6a9abf5463ea5f7670c40962f5a61a3fa2787))
 - Fixed the download update to install the internet build. - ([124c4d9](https://github.com/DroidWorksStudio/EasyLauncher/commit/124c4d91aecedabe2c19b58cd09e5e315c407f92))
