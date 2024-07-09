@@ -84,6 +84,7 @@
     <string name="settings_reload_app_backup">Nuostatų atsarginė kopija sukurta.</string>
     <string name="settings_reload_app_restore">Parinktys atkurtos. Paleidimas iš naujo.</string>
     <string name="settings_actions_open_app">Atidarykite programą</string>
+    <string name="settings_actions_open_app_run">Open %s</string>
     <string name="settings_actions_lock_screen">Užrakinti ekraną</string>
     <string name="settings_actions_show_notifications">Rodyti pranešimus</string>
     <string name="settings_actions_show_app_list">Rodyti programų sąrašą</string>
