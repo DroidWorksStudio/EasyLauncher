@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Housekeeping:
+
+- Making the issue types a bit better. - ([64593af](https://github.com/DroidWorksStudio/EasyLauncher/commit/64593af2b8fff6d1acd44880fa12336bacf091f7))
+
+## [0.1.9](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.1.9) - (09, July 2024)
+
 ### Implemented Enhancements:
 
 - Added support for open app via gesture. - ([e600252](https://github.com/DroidWorksStudio/EasyLauncher/commit/e6002526020a2c19c4dbb094ac830ed458680fbc))
