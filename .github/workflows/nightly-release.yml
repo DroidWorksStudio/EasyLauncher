@@ -26,15 +26,6 @@ jobs:
                       "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${release_id}"
                   fi
 
-            - name: Create new release
-              uses: actions/create-release@v1.1.4
-              with:
-                  tag_name: nightly
-                  release_name: Nightly Build
-                  draft: false
-                  prerelease: true
-                  body: "This is a Nightly build"
-
     build:
         name: Build, Sign & Release
         runs-on: ubuntu-latest
@@ -93,6 +84,7 @@ jobs:
                   body: "This is a nightly build."
                   prerelease: true
                   overwrite: true
+                  draft: false
 
             - name: Sign APK - WithoutInternet
               uses: ilharp/sign-android-release@v1.0.4
@@ -117,3 +109,4 @@ jobs:
                   body: "This is a nightly build."
                   prerelease: true
                   overwrite: true
+                  draft: false

@@ -1,24 +1,24 @@
 name: Thank New Reporters
 
 on:
-  issues:
-    types:
-      - reopened
-      - opened
+    issues:
+        types:
+            - reopened
+            - opened
 
 jobs:
-  comment:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/github-script@v7.0.1
-        with:
-          github-token: ${{ secrets.GIT_BOT_TOKEN }}
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `👋 Thanks for reporting!
+    comment:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/github-script@v7.0.1
+              with:
+                  github-token: ${{ secrets.GIT_BOT_TOKEN }}
+                  script: |
+                      github.rest.issues.createComment({
+                        issue_number: context.issue.number,
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        body: `👋 Thanks for reporting!
 
-              We will get back to you soon about this issue.`
-            })
+                        We will get back to you soon about this issue.`
+                      })
