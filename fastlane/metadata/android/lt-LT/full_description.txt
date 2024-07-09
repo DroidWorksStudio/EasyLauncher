@@ -1,38 +1,38 @@
 <b>Savybės:</b>
 
-- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
-- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
-- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
-- Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
-- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
-- Crash Reports: Report crashes via email, including log files for effective troubleshooting.
+- Mėgstamiausios programos greita prieiga: pagrindiniame ekrane rodykite dažniausiai naudojamas programas teksto formatu, kad galėtumėte greitai pasiekti ir supaprastinti savo operacijas.
+- Slėpti programas: lengvai paslėpkite programas, kurių nenorite matyti, laikykite pagrindinį ekraną švarų ir sutelkite dėmesį į esminį turinį.
+- Pervardykite programas: suasmeninkite programas naudodami pasirinktinius pavadinimus, kurie sklandžiai sinchronizuojami tarp mėgstamiausių ir visų programų.
+- Užrakinimas: apsaugokite savo privatumą ir duomenis naudodami pirštų atspaudų užraktą pasirinktoms programoms ir nustatymams.
+- Nėra interneto leidimų: nenaudojami INTERNETO leidimai, užtikrinant, kad jūsų duomenys išliktų privatūs.
+– Strigčių ataskaitos: praneškite apie gedimus el. paštu, įskaitant žurnalo failus, kad būtų galima veiksmingai šalinti triktis.
 
 <b>Personalizuotas tinkinimas:</b>
 
-- Font Colors: Customize font colors using our color picker.
-- Position: Align Date, Time, and Apps to Left, Center, or Right.
-- Padding: Adjust padding between favorite apps and all apps.
-- Font Size: Set font size for each element on the home screen.
-- Toggle Items: Control display preferences on the home screen.
+- Šrifto spalvos: tinkinkite šrifto spalvas naudodami mūsų spalvų parinkiklį.
+- Padėtis: sulygiuokite datą, laiką ir programas į kairę, centrą arba dešinę.
+- Padding: koreguokite paminkštinimą tarp mėgstamiausių ir visų programų.
+- Šrifto dydis: nustatykite kiekvieno elemento šrifto dydį pagrindiniame ekrane.
+- Perjungti elementus: valdykite rodymo nuostatas pagrindiniame ekrane.
 
-<b>Possible Gestures Include:</b>
+<b>Galimi gestai:</b>
 
-- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
-- Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
-- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
-- Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
-- Battery Icon: Tap on the battery icon to access battery usage details.
+- Perbraukimo gestai: naršykite braukdami įvairiomis kryptimis (aukštyn, žemyn, kairėn, dešinėn), kad pasiektumėte įvairias funkcijas arba pereitumėte iš vieno ekrano į kitą.
+- Dukart bakstelėjimas: greitai bakstelėkite ekraną du kartus, kad atliktumėte iš anksto nustatytą veiksmą arba suaktyvintumėte funkciją.
+- Laikrodžio sąveika: bakstelėkite laikrodį, kad būtų rodoma papildoma informacija, pvz., žadintuvai ar pasaulio laikrodis.
+- Datos sąveika: bakstelėkite datą, kad atidarytumėte kalendoriaus programą, skirtą planuoti ir planuoti.
+- Akumuliatoriaus piktograma: bakstelėkite akumuliatoriaus piktogramą, kad pasiektumėte baterijos naudojimo informaciją.
 
 <b>Galimi veiksmai:</b>
 
-- Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
-- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
-- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
-- Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
-- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
-- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
-- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
-- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
-- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
+- Atidarykite nurodytą programą: akimirksniu paleiskite bet kurią pasirinktą programą, kad galėtumėte sklandžiai pasiekti savo parankinius.
+- Rodyti programų sąrašą: efektyviai peržiūrėkite ir valdykite įdiegtas programas naudodami išsamų sąrašą.
+- Ekrano užraktas: apsaugokite savo įrenginį ir apsaugokite savo privatumą greitai ir patogiai užrakindami ekraną.
+- Rodyti neseniai atidarytas programas: lengvai pasiekite neseniai naudotas programas, kad galėtumėte greitai atlikti kelias užduotis.
+- Prieiga prie pranešimų stalčiaus: atidarykite pranešimų stalčių vienu bakstelėjimu, kad patikrintumėte naujinimus ir įspėjimus.
+- Spartieji nustatymai: greitai tvarkykite įrenginio nustatymus pasiekdami greituosius nustatymus tiesiai iš pagrindinio ekrano.
+- Maitinimo dialogo langas: lengvai valdykite maitinimo parinktis, pvz., iš naujo paleisti, išjungti ir daugiau, naudodami maitinimo dialogo langą.
+- Padarykite ekrano kopiją: akimirksniu užfiksuokite ekraną, kad išsaugotumėte ir bendrintumėte svarbią informaciją bei akimirkas.
+- Išjungti gestus: laikinai arba visam laikui išjunkite konkrečius gestus, kad tinkintumėte įrenginio sąveikos patirtį.
 
-For more details visit the <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> page.
+Norėdami gauti daugiau informacijos, apsilankykite <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> puslapyje.
