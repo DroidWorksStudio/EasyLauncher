@@ -16,7 +16,6 @@ import android.os.Looper
 import android.view.Menu
 import android.view.MenuItem
 import android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +27,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
-import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
@@ -44,7 +42,7 @@ import javax.inject.Inject
 
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity(), LocationListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var locationManager: LocationManager
 
@@ -66,14 +64,6 @@ class MainActivity : AppCompatActivity(), LocationListener {
     private lateinit var handler: Handler
 
     private var lastKnownLocation: Location? = null
-    private val saveLocationRunnable = object : Runnable {
-        override fun run() {
-            lastKnownLocation?.let { location ->
-                saveLocation(location.latitude.toFloat(), location.longitude.toFloat())
-            }
-            handler.postDelayed(this, 30000) // Run every 30 seconds
-        }
-    }
 
     private fun saveLocation(latitude: Float = 0f, longitude: Float = 0f) {
         with(sharedPreferences.edit()) {
@@ -97,45 +87,98 @@ class MainActivity : AppCompatActivity(), LocationListener {
         initializeDependencies()
         setupNavController()
         setupOrientation()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        if (applicationContext.hasInternetPermission()) {
-            if (ContextCompat.checkSelfPermission(
-                    this,
-                    Manifest.permission.ACCESS_FINE_LOCATION
-                )
-                == PackageManager.PERMISSION_GRANTED
-            ) {
-                locationManager.removeUpdates(this)
-            }
-            handler.removeCallbacks(saveLocationRunnable)
-        }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        if (applicationContext.hasInternetPermission()) {
-            if (ContextCompat.checkSelfPermission(
-                    this,
-                    Manifest.permission.ACCESS_FINE_LOCATION
-                )
-                == PackageManager.PERMISSION_GRANTED
-            ) {
-                locationManager.removeUpdates(this)
-            }
-            handler.removeCallbacks(saveLocationRunnable)
-        }
+        setupLocationManager()
     }
 
     private fun initializeDependencies() {
-
+        setLocationPermissionDenied(false)
         preferenceViewModel.setShowStatusBar(preferenceHelper.showStatusBar)
         preferenceViewModel.setFirstLaunch(preferenceHelper.firstLaunch)
 
         window.addFlags(FLAG_LAYOUT_NO_LIMITS)
+    }
 
+    private fun setupLocationManager() {
+        if (!isLocationPermissionDenied()) {
+            checkLocationPermission()
+        }
+    }
+
+    private fun isLocationEnabled(): Boolean {
+        return locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+    }
+
+    private fun checkLocationPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                Constants.REQUEST_LOCATION_PERMISSION_CODE
+            )
+        }
+    }
+
+    private fun requestLocationUpdates() {
+        if (ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            return
+        }
+        locationManager.requestLocationUpdates(
+            LocationManager.NETWORK_PROVIDER,
+            1000L,
+            1f,
+            object : LocationListener {
+                override fun onLocationChanged(location: Location) {
+                    // Get latitude and longitude
+                    val latitude = location.latitude.toFloat()
+                    val longitude = location.longitude.toFloat()
+
+                    // Save the location data immediately
+                    saveLocation(latitude, longitude)
+                    lastKnownLocation = location
+                }
+
+                override fun onProviderEnabled(provider: String) {
+                    // Handle provider enabled
+                    when (provider) {
+                        LocationManager.GPS_PROVIDER -> applicationContext.showLongToast("GPS Provider Enabled")
+                        LocationManager.NETWORK_PROVIDER -> applicationContext.showLongToast("Network Provider Enabled")
+                    }
+                }
+
+                override fun onProviderDisabled(provider: String) {
+                    // Handle provider disabled
+                    when (provider) {
+                        LocationManager.GPS_PROVIDER -> applicationContext.showLongToast("GPS Provider Disabled")
+                        LocationManager.NETWORK_PROVIDER -> applicationContext.showLongToast("Network Provider Disabled")
+                    }
+                }
+            }
+        )
+    }
+
+    private fun setLocationPermissionDenied(status: Boolean) {
+        preferenceHelper.locationDenied = status
+    }
+
+    private fun isLocationPermissionDenied(): Boolean {
+        return preferenceHelper.locationDenied
+    }
+
+    private fun getLocation() {
+        if (isLocationEnabled()) {
+            requestLocationUpdates()
+        } else {
+            checkLocationPermission()
+        }
     }
 
     @RequiresApi(Build.VERSION_CODES.R)
@@ -171,90 +214,6 @@ class MainActivity : AppCompatActivity(), LocationListener {
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
 
-    private fun checkLocationPermission() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-            != PackageManager.PERMISSION_GRANTED
-        ) {
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                Constants.REQUEST_LOCATION_PERMISSION_CODE
-            )
-        } else {
-            // Permission already granted, proceed with getting location
-            getLocation()
-        }
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == Constants.REQUEST_LOCATION_PERMISSION_CODE) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission granted, proceed with getting location
-                getLocation()
-            } else {
-                // Permission denied, show a message to the user
-                Toast.makeText(this, "Location permission denied", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
-
-    private fun getLocation() {
-        try {
-            // Check if permission is granted
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                == PackageManager.PERMISSION_GRANTED
-            ) {
-                locationManager.requestLocationUpdates(
-                    LocationManager.GPS_PROVIDER,
-                    0,
-                    0f,
-                    this
-                )
-                locationManager.requestLocationUpdates(
-                    LocationManager.NETWORK_PROVIDER,
-                    0,
-                    0f,
-                    this
-                )
-                // Start the handler to save location every 30 seconds
-                handler.post(saveLocationRunnable)
-            }
-        } catch (e: SecurityException) {
-            e.printStackTrace()
-        }
-    }
-
-    override fun onLocationChanged(location: Location) {
-        // Get latitude and longitude
-        val latitude = location.latitude.toFloat()
-        val longitude = location.longitude.toFloat()
-
-        // Save the location data immediately
-        saveLocation(latitude, longitude)
-        lastKnownLocation = location
-    }
-
-    override fun onProviderEnabled(provider: String) {
-        // Handle provider enabled
-        when (provider) {
-            LocationManager.GPS_PROVIDER -> applicationContext.showLongToast("GPS Provider Enabled")
-            LocationManager.NETWORK_PROVIDER -> applicationContext.showLongToast("Network Provider Enabled")
-        }
-    }
-
-    override fun onProviderDisabled(provider: String) {
-        // Handle provider disabled
-        when (provider) {
-            LocationManager.GPS_PROVIDER -> applicationContext.showLongToast("GPS Provider Disabled")
-            LocationManager.NETWORK_PROVIDER -> applicationContext.showLongToast("Network Provider Disabled")
-        }
-    }
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
@@ -277,9 +236,6 @@ class MainActivity : AppCompatActivity(), LocationListener {
     override fun onResume() {
         super.onResume()
         backToHomeScreen()
-        if (applicationContext.hasInternetPermission()) {
-            checkLocationPermission()
-        }
         setupDataBase()
         observeUI()
     }
@@ -306,5 +262,24 @@ class MainActivity : AppCompatActivity(), LocationListener {
         navController = findNavController(R.id.nav_host_fragment_content_main)
         if (navController.currentDestination?.id != R.id.HomeFragment)
             navController.navigate(R.id.HomeFragment)
+    }
+
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == Constants.REQUEST_LOCATION_PERMISSION_CODE) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted, proceed with getting location
+                getLocation()
+            } else {
+                // Permission denied, show a message to the user
+                setLocationPermissionDenied(true)
+                this.showLongToast("Location permission denied")
+            }
+        }
     }
 }

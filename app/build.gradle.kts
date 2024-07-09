@@ -24,6 +24,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
+        manifestPlaceholders["fineLocationPermission"] = "android.permission.ACCESS_FINE_LOCATION"
+        manifestPlaceholders["coarseLocationPermission"] = "android.permission.ACCESS_COARSE_LOCATION"
     }
 
     buildTypes {
@@ -71,6 +73,8 @@ android {
         create("withInternet") {
             dimension = "internet"
             manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
+            manifestPlaceholders["fineLocationPermission"] = "android.permission.ACCESS_FINE_LOCATION"
+            manifestPlaceholders["coarseLocationPermission"] = "android.permission.ACCESS_COARSE_LOCATION"
             val weatherFile = project.rootProject.file("weather.properties")
             val properties = Properties()
             properties.load(weatherFile.inputStream())
@@ -85,6 +89,8 @@ android {
         create("withoutInternet") {
             dimension = "internet"
             manifestPlaceholders["internetPermission"] = "REMOVE"
+            manifestPlaceholders["fineLocationPermission"] = "REMOVE"
+            manifestPlaceholders["coarseLocationPermission"] = "REMOVE"
             buildConfigField(
                 type = "String",
                 name = "API_KEY",

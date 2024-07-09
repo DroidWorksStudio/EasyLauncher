@@ -20,9 +20,8 @@
         android:name="android.permission.BIND_APPWIDGET"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="${fineLocationPermission}" />
+    <uses-permission android:name="${coarseLocationPermission}" />
 
     <queries>
         <intent>

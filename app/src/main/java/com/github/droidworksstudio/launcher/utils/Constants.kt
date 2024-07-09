@@ -82,6 +82,8 @@ object Constants {
     const val REQUEST_INSTALL_PERMISSION = 123
     const val REQUEST_LOCATION_PERMISSION_CODE = 246
 
+    const val LOCATION_DENIED = "LOCATION_DENIED"
+
     const val TRIPLE_TAP_DELAY_MS = 300
     const val LONG_PRESS_DELAY_MS = 500
 

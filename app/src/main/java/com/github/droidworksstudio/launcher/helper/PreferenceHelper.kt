@@ -78,6 +78,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.SHOW_APP_ICON, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_APP_ICON, value).apply()
 
+    var locationDenied: Boolean
+        get() = prefs.getBoolean(Constants.LOCATION_DENIED, false)
+        set(value) = prefs.edit().putBoolean(Constants.LOCATION_DENIED, value).apply()
+
     var automaticKeyboard: Boolean
         get() = prefs.getBoolean(Constants.AUTOMATIC_KEYBOARD, true)
         set(value) = prefs.edit().putBoolean(Constants.AUTOMATIC_KEYBOARD, value).apply()
