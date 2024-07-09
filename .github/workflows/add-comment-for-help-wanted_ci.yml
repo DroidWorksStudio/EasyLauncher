@@ -1,30 +1,21 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# GitHub recommends pinning actions to a commit SHA.
-# To get a newer version, you will need to update the SHA.
-# You can also reference a tag or branch, but the action may change without warning.
-
 name: Create Comment When Help wanted
 
 on:
-    issues:
-        types:
-            - labeled
+  issues:
+    types:
+      - labeled
 
 jobs:
-    add-comment:
-        if: contains(github.event.label.name, 'Help Wanted')
-        runs-on: ubuntu-latest
-        permissions:
-            issues: write
-        steps:
-            - name: Create comment
-              uses: peter-evans/create-or-update-comment@v4.0.0
-              with:
-                  token: ${{ secrets.GIT_BOT_TOKEN }}
-                  issue-number: ${{ github.event.issue.number }}
-                  body: |
-                      This issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: Thank you for your contribution! :sparkles:
+  add-comment:
+    if: contains(github.event.label.name, 'Help Wanted')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v4.0.0
+        with:
+          token: ${{ secrets.GIT_BOT_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            This issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: Thank you for your contribution! :sparkles:
