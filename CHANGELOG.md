@@ -13,6 +13,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Moved Word-of-the-day strings to there own file. - ([c727bfe](https://github.com/DroidWorksStudio/EasyLauncher/commit/c727bfec873b1f755d477e8b86239d2ff2620ee5))
 - Making the issue types a bit better. - ([64593af](https://github.com/DroidWorksStudio/EasyLauncher/commit/64593af2b8fff6d1acd44880fa12336bacf091f7))
 
+### Language Support:
+
+- Updated Language Files. ([#96](https://github.com/DroidWorksStudio/EasyLauncher/issues/96)) - ([5bec848](https://github.com/DroidWorksStudio/EasyLauncher/commit/5bec84825003560ae58c160579301c6f8f356626))
+
 ### Releases:
 
 - Prepare for version 0.2.0 - ([6981953](https://github.com/DroidWorksStudio/EasyLauncher/commit/6981953fbb2b6ce24dcde2ff52bfb47582018ac8))
