@@ -54,3 +54,10 @@ body:
           required: true
         - label: "I accept that if I fail to follow the rules listed above that i will be blocked from interactions with this project."
           required: true
+
+  - type: input
+    id: donation-name
+    attributes:
+      label: Donation Name
+      description: "If you have optionally donated please put your username below?"
+      placeholder: "I Don't Donate"

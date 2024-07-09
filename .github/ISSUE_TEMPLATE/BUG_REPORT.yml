@@ -1,8 +1,8 @@
 name: Bug report
 description: Create a bug report
-labels: ['Type: Bug Report']
+labels: [ 'Type: Bug Report' ]
 title: '[Bug Report] add text here'
-assignees: ['HeCodes2Much']
+assignees: [ 'HeCodes2Much' ]
 body:
   - type: markdown
     attributes:
@@ -29,21 +29,30 @@ body:
           required: false
 
   - type: input
+    id: phone-make-model
+    attributes:
+      label: Phone Make $ model
+      description: "What make and model is your phone?"
+      placeholder: "Google - Pixel 7"
+    validations:
+      required: true
+
+  - type: input
     id: app-version
     attributes:
-     label: App version
-     description: "In which version did you encounter the bug?"
-     placeholder: "xx.xx - Can be seen in the app from the 'Settings' section"
+      label: App version
+      description: "In which version did you encounter the bug?"
+      placeholder: "xx.xx - Can be seen in the app from the 'Settings' section"
     validations:
       required: true
 
   - type: input
     id: device-os-info
     attributes:
-     label: Android version
-     description: |
-      With what operating system (+ version) did you encounter the bug?
-     placeholder: "Example: Android 10"
+      label: Android version
+      description: |
+        With what operating system (+ version) did you encounter the bug?
+      placeholder: "Example: Android 10"
     validations:
       required: true
 
@@ -130,3 +139,10 @@ body:
           required: true
         - label: "I accept that if I fail to follow the rules listed above that i will be blocked from interactions with this project."
           required: true
+
+  - type: input
+    id: donation-name
+    attributes:
+      label: Donation Name
+      description: "If you have optionally donated please put your username below?"
+      placeholder: "I Don't Donate"
