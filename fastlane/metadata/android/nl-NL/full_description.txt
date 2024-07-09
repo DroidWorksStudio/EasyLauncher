@@ -1,38 +1,38 @@
 <b>Kenmerken:</b>
 
-- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
-- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
-- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
-- Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
-- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
-- Crash Reports: Report crashes via email, including log files for effective troubleshooting.
+- Snelle toegang tot favoriete apps: geef uw meest gebruikte apps in tekstformaat weer op het startscherm voor snelle toegang, waardoor uw activiteiten worden gestroomlijnd.
+- Apps verbergen: verberg eenvoudig apps die u niet zichtbaar wilt hebben, zodat uw startscherm schoon blijft en gefocust op essentiële inhoud.
+- Apps hernoemen: personaliseer uw apps met aangepaste namen die naadloos synchroniseren tussen favorieten en alle apps.
+- Vergrendeling: beveilig uw privacy en gegevens met vingerafdrukvergrendeling voor geselecteerde apps en instellingen.
+- Geen internetrechten: geen gebruik van INTERNET-rechten, zodat uw gegevens privé blijven.
+- Crashrapporten: rapporteer crashes via e-mail, inclusief logbestanden voor effectieve probleemoplossing.
 
 <b>Gepersonaliseerde aanpassing:</b>
 
-- Font Colors: Customize font colors using our color picker.
-- Position: Align Date, Time, and Apps to Left, Center, or Right.
-- Padding: Adjust padding between favorite apps and all apps.
-- Font Size: Set font size for each element on the home screen.
-- Toggle Items: Control display preferences on the home screen.
+- Lettertypekleuren: pas de lettertypekleuren aan met onze kleurenkiezer.
+- Positie: lijn datum, tijd en apps uit naar links, midden of rechts.
+- Opvulling: Pas de opvulling aan tussen favoriete apps en alle apps.
+- Lettergrootte: stel de lettergrootte in voor elk element op het startscherm.
+- Items wisselen: beheer weergavevoorkeuren op het startscherm.
 
-<b>Possible Gestures Include:</b>
+<b>Mogelijke gebaren zijn:</b>
 
-- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
-- Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
-- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
-- Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
-- Battery Icon: Tap on the battery icon to access battery usage details.
+- Veegbewegingen: navigeer door in verschillende richtingen te vegen (omhoog, omlaag, links, rechts) om toegang te krijgen tot verschillende functies of om tussen schermen te schakelen.
+- Dubbeltikken: tik tweemaal snel op het scherm om een vooraf gedefinieerde actie uit te voeren of een functie te activeren.
+- Klokinteractie: tik op de klok om aanvullende informatie weer te geven, zoals alarmen of wereldklok.
+- Datuminteractie: tik op de datum om de kalender-app te openen voor planning en planning.
+- Batterijpictogram: tik op het batterijpictogram om toegang te krijgen tot details over het batterijgebruik.
 
 <b>Mogelijke acties zijn:</b>
 
-- Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
-- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
-- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
-- Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
-- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
-- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
-- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
-- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
-- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
+- Open de gespecificeerde app: start onmiddellijk elke gewenste app voor naadloze toegang tot uw favorieten.
+- App-lijst weergeven: bekijk en beheer uw geïnstalleerde apps efficiënt met een uitgebreide lijstweergave.
+- Schermvergrendeling: beveilig uw apparaat en bescherm uw privacy met snelle en gemakkelijke schermvergrendeling.
+- Toon recent geopende apps: Krijg moeiteloos toegang tot recent gebruikte apps voor snelle multitasking.
+- Toegang tot meldingenlade: open de meldingenlade met een enkele tik om updates en waarschuwingen te controleren.
+- Snelle instellingen: beheer apparaatinstellingen snel door rechtstreeks vanuit het startscherm toegang te krijgen tot de snelle instellingen.
+- Energiedialoog: beheer eenvoudig energieopties zoals opnieuw opstarten, uitschakelen en meer met behulp van de energiedialoog.
+- Maak een screenshot: leg uw scherm direct vast om belangrijke informatie en momenten op te slaan en te delen.
+- Gebaren uitschakelen: schakel specifieke gebaren tijdelijk of permanent uit om de interactie-ervaring met uw apparaat aan te passen.
 
-For more details visit the <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> page.
+Bezoek de <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> pagina voor meer details.
