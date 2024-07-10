@@ -17,6 +17,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Updated Language Files. ([#96](https://github.com/DroidWorksStudio/EasyLauncher/issues/96)) - ([5bec848](https://github.com/DroidWorksStudio/EasyLauncher/commit/5bec84825003560ae58c160579301c6f8f356626))
 
+### Refactoring:
+
+- Disable Script Fonts - ([f3946dc](https://github.com/DroidWorksStudio/EasyLauncher/commit/f3946dc236cc670c0050cedf8e2b71aecd3a8eb6))
+
 ### Releases:
 
 - Prepare for version 0.2.0 - ([6981953](https://github.com/DroidWorksStudio/EasyLauncher/commit/6981953fbb2b6ce24dcde2ff52bfb47582018ac8))
