@@ -175,13 +175,16 @@ object Constants {
         Bitter,
         Dotness,
         DroidSans,
-        GreatVibes,
+
+        //        GreatVibes,
         Lato,
-        Lobster,
+
+        //        Lobster,
         Merriweather,
         Montserrat,
         OpenSans,
-        Pacifico,
+
+        //        Pacifico,
         Quicksand,
         Raleway,
         Roboto,
@@ -193,13 +196,13 @@ object Constants {
                 Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
                 Dotness -> ResourcesCompat.getFont(context, R.font.dotness)
                 DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
-                GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
+//                GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
                 Lato -> ResourcesCompat.getFont(context, R.font.lato)
-                Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
+//                Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
                 Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
                 Montserrat -> ResourcesCompat.getFont(context, R.font.montserrat)
                 OpenSans -> ResourcesCompat.getFont(context, R.font.open_sans)
-                Pacifico -> ResourcesCompat.getFont(context, R.font.pacifico)
+//                Pacifico -> ResourcesCompat.getFont(context, R.font.pacifico)
                 Quicksand -> ResourcesCompat.getFont(context, R.font.quicksand)
                 Raleway -> ResourcesCompat.getFont(context, R.font.raleway)
                 Roboto -> ResourcesCompat.getFont(context, R.font.roboto)
@@ -213,13 +216,13 @@ object Constants {
                 Bitter -> context.getString(R.string.settings_font_bitter)
                 Dotness -> context.getString(R.string.settings_font_dotness)
                 DroidSans -> context.getString(R.string.settings_font_droidsans)
-                GreatVibes -> context.getString(R.string.settings_font_greatvibes)
+//                GreatVibes -> context.getString(R.string.settings_font_greatvibes)
                 Lato -> context.getString(R.string.settings_font_lato)
-                Lobster -> context.getString(R.string.settings_font_lobster)
+//                Lobster -> context.getString(R.string.settings_font_lobster)
                 Merriweather -> context.getString(R.string.settings_font_merriweather)
                 Montserrat -> context.getString(R.string.settings_font_montserrat)
                 OpenSans -> context.getString(R.string.settings_font_opensans)
-                Pacifico -> context.getString(R.string.settings_font_pacifico)
+//                Pacifico -> context.getString(R.string.settings_font_pacifico)
                 Quicksand -> context.getString(R.string.settings_font_quicksand)
                 Raleway -> context.getString(R.string.settings_font_raleway)
                 Roboto -> context.getString(R.string.settings_font_roboto)

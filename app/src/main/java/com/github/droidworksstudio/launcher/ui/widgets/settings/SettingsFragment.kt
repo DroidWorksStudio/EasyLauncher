@@ -104,47 +104,50 @@ class SettingsFragment : Fragment(),
 
     private fun observeClickListener() {
         setupSwitchListeners()
+        binding.apply {
+            weatherOrderControl.setOnClickListener {
+                showOrderChangeDialog(binding.weatherOrderControl)
+            }
 
-        binding.weatherOrderControl.setOnClickListener {
-            showOrderChangeDialog(binding.weatherOrderControl)
-        }
+            batteryOrderControl.setOnClickListener {
+                showOrderChangeDialog(binding.batteryOrderControl)
+            }
 
-        binding.batteryOrderControl.setOnClickListener {
-            showOrderChangeDialog(binding.batteryOrderControl)
-        }
+            selectBatteryWidgetColor.setOnClickListener {
+                val bottomSheetFragment = ColorBottomSheetDialogFragment()
+                bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
+            }
 
-        binding.selectBatteryWidgetColor.setOnClickListener {
-            val bottomSheetFragment = ColorBottomSheetDialogFragment()
-            bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
-        }
-
-        binding.selectBatteryWidgetColor.setOnClickListener {
-            val bottomSheetFragment = ColorBottomSheetDialogFragment()
-            bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
+            selectBatteryWidgetColor.setOnClickListener {
+                val bottomSheetFragment = ColorBottomSheetDialogFragment()
+                bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
+            }
         }
     }
 
     private fun setupSwitchListeners() {
-        binding.weatherSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
-            preferenceViewModel.setShowWeatherWidget(isChecked)
-            binding.apply {
-                val weatherVisibility = if (isChecked) View.VISIBLE else View.GONE
-                weatherOrderMenu.visibility = weatherVisibility
-                weatherSunsetSunriseMenu.visibility = weatherVisibility
-                selectWeatherWidgetColor.visibility = View.GONE
+        binding.apply {
+            weatherSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowWeatherWidget(isChecked)
+                binding.apply {
+                    val weatherVisibility = if (isChecked) View.VISIBLE else View.GONE
+                    weatherOrderMenu.visibility = weatherVisibility
+                    weatherSunsetSunriseMenu.visibility = weatherVisibility
+                    selectWeatherWidgetColor.visibility = View.GONE
+                }
             }
-        }
 
-        binding.weatherSunsetSunriseSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
-            preferenceViewModel.setShowWeatherWidgetSunSetRise(isChecked)
-        }
+            weatherSunsetSunriseSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowWeatherWidgetSunSetRise(isChecked)
+            }
 
-        binding.batterySwitchCompat.setOnCheckedChangeListener { _, isChecked ->
-            preferenceViewModel.setShowBatteryWidget(isChecked)
-            binding.apply {
-                val batteryVisibility = if (isChecked) View.VISIBLE else View.GONE
-                batteryOrderMenu.visibility = batteryVisibility
-                selectBatteryWidgetColor.visibility = View.GONE
+            batterySwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowBatteryWidget(isChecked)
+                binding.apply {
+                    val batteryVisibility = if (isChecked) View.VISIBLE else View.GONE
+                    batteryOrderMenu.visibility = batteryVisibility
+                    selectBatteryWidgetColor.visibility = View.GONE
+                }
             }
         }
     }

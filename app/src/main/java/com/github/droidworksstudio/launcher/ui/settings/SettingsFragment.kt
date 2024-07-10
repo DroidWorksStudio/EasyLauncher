@@ -239,34 +239,36 @@ class SettingsFragment : Fragment(),
 
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.apply {
+            touchArea.setOnTouchListener(getSwipeGestureListener(context))
 
-        binding.miscellaneousSearchEngineControl.setOnClickListener {
-            showSearchEngineDialog()
-        }
+            miscellaneousSearchEngineControl.setOnClickListener {
+                showSearchEngineDialog()
+            }
 
-        binding.miscellaneousLauncherFontsControl.setOnClickListener {
-            showLauncherFontDialog()
-        }
+            miscellaneousLauncherFontsControl.setOnClickListener {
+                showLauncherFontDialog()
+            }
 
-        binding.gesturesDoubleTapControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.DoubleTap)
-        }
+            gesturesDoubleTapControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.DoubleTap)
+            }
 
-        binding.gesturesSwipeUpControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.Up)
-        }
+            gesturesSwipeUpControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.Up)
+            }
 
-        binding.gesturesSwipeDownControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.Down)
-        }
+            gesturesSwipeDownControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.Down)
+            }
 
-        binding.gesturesSwipeLeftControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.Left)
-        }
+            gesturesSwipeLeftControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.Left)
+            }
 
-        binding.gesturesSwipeRightControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.Right)
+            gesturesSwipeRightControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.Right)
+            }
         }
     }
 
