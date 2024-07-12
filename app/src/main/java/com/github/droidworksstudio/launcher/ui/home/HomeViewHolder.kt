@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.Gravity
 import android.view.View
 import androidx.appcompat.widget.LinearLayoutCompat
+import androidx.core.view.marginTop
 import androidx.recyclerview.widget.RecyclerView
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemHomeBinding
@@ -22,19 +23,18 @@ class HomeViewHolder @Inject constructor(
     @SuppressLint("ClickableViewAccessibility")
     fun bind(appInfo: AppInfo) {
         binding.apply {
-            val layoutParams = LinearLayoutCompat.LayoutParams(
-                LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
-                LinearLayoutCompat.LayoutParams.WRAP_CONTENT
-            ).apply {
-                gravity = preferenceHelper.homeAppAlignment
-                topMargin = preferenceHelper.homeAppPadding.toInt()
-                bottomMargin = preferenceHelper.homeAppPadding.toInt()
-            }
+            // Get the current LayoutParams of appHomeName
+            val layoutParams = appHomeName.layoutParams as LinearLayoutCompat.LayoutParams
+
+            // Set the margins
+            layoutParams.topMargin = preferenceHelper.homeAppPadding.toInt()
+            layoutParams.bottomMargin = preferenceHelper.homeAppPadding.toInt()
 
             appHomeName.layoutParams = layoutParams
             appHomeName.text = appInfo.appName
             appHomeName.setTextColor(preferenceHelper.appColor)
             appHomeName.textSize = preferenceHelper.appTextSize
+            appHomeName.gravity = preferenceHelper.homeAppAlignment
             Log.d("Tag", "Home Adapter Color: ${preferenceHelper.appColor}")
 
             if (preferenceHelper.showAppIcon) {
