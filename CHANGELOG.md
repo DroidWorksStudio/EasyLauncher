@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Set default colors depending on if nightMode or not. - ([d02f873](https://github.com/DroidWorksStudio/EasyLauncher/commit/d02f873a7039a0762488dc497e371de8957eb13a))
 - Fixed the appSelectionDialog from not closing right. - ([3efe245](https://github.com/DroidWorksStudio/EasyLauncher/commit/3efe24503c40a2902a075707a8c87a25332b45bf))
 
 ### Housekeeping:
