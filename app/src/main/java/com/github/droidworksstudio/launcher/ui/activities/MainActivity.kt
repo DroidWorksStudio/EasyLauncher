@@ -27,6 +27,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
+import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
@@ -99,8 +100,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupLocationManager() {
-        if (!isLocationPermissionDenied()) {
-            checkLocationPermission()
+        if (applicationContext.hasInternetPermission()) {
+            if (!isLocationPermissionDenied()) {
+                checkLocationPermission()
+            }
         }
     }
 
@@ -278,7 +281,6 @@ class MainActivity : AppCompatActivity() {
             } else {
                 // Permission denied, show a message to the user
                 setLocationPermissionDenied(true)
-                this.showLongToast("Location permission denied")
             }
         }
     }

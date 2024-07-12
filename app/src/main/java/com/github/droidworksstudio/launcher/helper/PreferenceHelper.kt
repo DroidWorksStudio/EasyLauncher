@@ -2,6 +2,7 @@ package com.github.droidworksstudio.launcher.helper
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.content.res.Configuration
 import android.view.Gravity
 import com.github.droidworksstudio.launcher.utils.Constants
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -10,6 +11,8 @@ import javax.inject.Inject
 class PreferenceHelper @Inject constructor(@ApplicationContext context: Context) {
 
     private val prefs: SharedPreferences = context.getSharedPreferences(Constants.PREFS_FILENAME, 0)
+
+    private val setColor = getColor(context)
 
     var firstLaunch: Boolean
         get() = prefs.getBoolean(Constants.FIRST_LAUNCH, true)
@@ -47,19 +50,19 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_BATTERY_WIDGET, value).apply()
 
     var dateColor: Int
-        get() = prefs.getInt(Constants.DATE_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.DATE_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.DATE_COLOR, value).apply()
 
     var timeColor: Int
-        get() = prefs.getInt(Constants.TIME_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.TIME_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.TIME_COLOR, value).apply()
 
     var batteryColor: Int
-        get() = prefs.getInt(Constants.BATTERY_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.BATTERY_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.BATTERY_COLOR, value).apply()
 
     var dailyWordColor: Int
-        get() = prefs.getInt(Constants.DAILY_WORD_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.DAILY_WORD_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.DAILY_WORD_COLOR, value).apply()
 
     var widgetBackgroundColor: Int
@@ -67,11 +70,11 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         set(value) = prefs.edit().putInt(Constants.WIDGET_BACKGROUND_COLOR, value).apply()
 
     var widgetTextColor: Int
-        get() = prefs.getInt(Constants.WIDGET_TEXT_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.WIDGET_TEXT_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.WIDGET_TEXT_COLOR, value).apply()
 
     var appColor: Int
-        get() = prefs.getInt(Constants.APP_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.APP_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.APP_COLOR, value).apply()
 
     var showAppIcon: Boolean
@@ -237,5 +240,21 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
 
     private fun storeAction(prefString: String, value: Constants.Action) {
         prefs.edit().putString(prefString, value.name).apply()
+    }
+
+    private fun getColor(context: Context): Long {
+        return when (context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
+            Configuration.UI_MODE_NIGHT_YES -> {
+                0xFFFFFFFF
+            }
+
+            Configuration.UI_MODE_NIGHT_NO -> {
+                0xFF000000
+            }
+
+            else -> {
+                0xFFFFFFFF
+            }
+        }
     }
 }
