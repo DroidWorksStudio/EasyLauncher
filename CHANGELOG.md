@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Housekeeping:
 
+- Cleaned up the Readme File screenshots - ([ae2d841](https://github.com/DroidWorksStudio/EasyLauncher/commit/ae2d84124e5424712cf2f95a0fd07c90963db78f))
 - Moved Word-of-the-day strings to there own file. - ([c727bfe](https://github.com/DroidWorksStudio/EasyLauncher/commit/c727bfec873b1f755d477e8b86239d2ff2620ee5))
 - Making the issue types a bit better. - ([64593af](https://github.com/DroidWorksStudio/EasyLauncher/commit/64593af2b8fff6d1acd44880fa12336bacf091f7))
 
