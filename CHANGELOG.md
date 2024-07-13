@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Language Support:
 
+- Updated Language Files. ([#98](https://github.com/DroidWorksStudio/EasyLauncher/issues/98)) - ([ac044fb](https://github.com/DroidWorksStudio/EasyLauncher/commit/ac044fbd3d6efa9a67f2b56fbdae862460b66eee))
 - Updated Language Files. ([#97](https://github.com/DroidWorksStudio/EasyLauncher/issues/97)) - ([c27564c](https://github.com/DroidWorksStudio/EasyLauncher/commit/c27564ccae221996b6eb3e813072f496cec2e22b))
 - Updated Language Files. ([#96](https://github.com/DroidWorksStudio/EasyLauncher/issues/96)) - ([5bec848](https://github.com/DroidWorksStudio/EasyLauncher/commit/5bec84825003560ae58c160579301c6f8f356626))
 
