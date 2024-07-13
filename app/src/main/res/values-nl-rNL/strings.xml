@@ -80,6 +80,7 @@
     <string name="settings_others_feedback">Feedback</string>
     <string name="settings_others_github">Github</string>
     <string name="settings_backups_backup">Back-upvoorkeuren</string>
+    <string name="settings_backups_clear">Clear Preferences</string>
     <string name="settings_backups_restore">Voorkeuren herstellen</string>
     <string name="settings_reload_app_backup">Er is een back-up gemaakt van voorkeuren.</string>
     <string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
