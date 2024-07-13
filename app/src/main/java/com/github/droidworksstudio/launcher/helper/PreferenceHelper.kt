@@ -3,14 +3,17 @@ package com.github.droidworksstudio.launcher.helper
 import android.content.Context
 import android.content.SharedPreferences
 import android.content.res.Configuration
+import android.util.Log
 import android.view.Gravity
 import com.github.droidworksstudio.launcher.utils.Constants
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 class PreferenceHelper @Inject constructor(@ApplicationContext context: Context) {
 
-    private val prefs: SharedPreferences = context.getSharedPreferences(Constants.PREFS_FILENAME, 0)
+    private val prefs: SharedPreferences = context.getSharedPreferences(Constants.PACKAGE_PREFS, 0)
 
     private val setColor = getColor(context)
 
@@ -256,5 +259,46 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
                 0xFFFFFFFF
             }
         }
+    }
+
+    fun saveToString(): String {
+        val all: HashMap<String, Any?> = HashMap(prefs.all)
+        return Gson().toJson(all)
+    }
+
+    fun loadFromString(json: String) {
+        val editor = prefs.edit()
+        val all: HashMap<String, Any?> =
+            Gson().fromJson(json, object : TypeToken<HashMap<String, Any?>>() {}.type)
+        for ((key, value) in all) {
+            when (value) {
+                is String -> editor.putString(key, value)
+                is Boolean -> editor.putBoolean(key, value)
+                is Int -> editor.putInt(key, value)
+                is Double -> editor.putInt(key, value.toInt()) // we store everything as int
+                is Float -> editor.putInt(key, value.toInt())
+                is MutableSet<*> -> {
+                    val list = value.filterIsInstance<String>().toSet()
+                    editor.putStringSet(key, list)
+                }
+
+                else -> {
+                    Log.d("backup error", "$value")
+                }
+            }
+        }
+        editor.apply()
+    }
+
+    fun clear() {
+        prefs.edit().clear().apply()
+    }
+
+    fun clearAll(context: Context) {
+        val prefsLauncher: SharedPreferences = context.getSharedPreferences(Constants.PACKAGE_PREFS, 0)
+        val prefsWidgets: SharedPreferences = context.getSharedPreferences(Constants.WEATHER_PREFS, 0)
+
+        prefsLauncher.edit().clear().apply()
+        prefsWidgets.edit().clear().apply()
     }
 }

@@ -8,18 +8,18 @@ import com.github.droidworksstudio.launcher.R
 object Constants {
     const val PACKAGE_NAME = "app.easy.launcher"
     const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
+    const val PACKAGE_PREFS = "EasyLauncher.pref"
 
     const val WIDGETS_COUNT = 2
     const val WIDGET_WEATHER = "WIDGET_WEATHER"
     const val WIDGET_BATTERY = "WIDGET_BATTERY"
 
-    const val WEATHER_UNITS = "WEATHER_UNITS"
 
     const val WEATHER_PREFS = "EasyWeather.pref"
+    const val WEATHER_UNITS = "WEATHER_UNITS"
     const val LATITUDE = "LATITUDE"
     const val LONGITUDE = "LONGITUDE"
 
-    const val PREFS_FILENAME = "EasyLauncher.pref"
     const val FIRST_LAUNCH = "FIRST_LAUNCH"
     const val SHOW_DATE = "SHOW_DATE"
     const val SHOW_TIME = "SHOW_TIME"
@@ -80,7 +80,10 @@ object Constants {
     const val LAUNCHER_FONT = "LAUNCHER_FONT"
 
     const val REQUEST_INSTALL_PERMISSION = 123
-    const val REQUEST_LOCATION_PERMISSION_CODE = 246
+    const val REQUEST_LOCATION_PERMISSION_CODE = 234
+
+    const val BACKUP_WRITE = 987
+    const val BACKUP_READ = 876
 
     const val LOCATION_DENIED = "LOCATION_DENIED"
 

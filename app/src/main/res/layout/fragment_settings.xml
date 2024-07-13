@@ -886,6 +886,15 @@
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:id="@+id/clear_view"
+                            android:text="@string/settings_backups_clear"
+                            android:textSize="@dimen/text_large"
+                            android:layout_marginVertical="10dp"
+                            style="@style/TextDefaultStyle" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:id="@+id/restore_view"
                             android:text="@string/settings_backups_restore"
                             android:textSize="@dimen/text_large"

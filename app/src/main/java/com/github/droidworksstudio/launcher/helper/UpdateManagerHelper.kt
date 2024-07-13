@@ -162,15 +162,18 @@ class UpdateManagerHelper(private val fragment: Fragment) {
 
     @Deprecated("Deprecated in Java")
     fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if (requestCode == Constants.REQUEST_INSTALL_PERMISSION) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                val canInstallPackages = context.packageManager.canRequestPackageInstalls()
-                if (canInstallPackages) {
-                    // Permission granted, proceed with installation
-                    installApk()
-                } else {
-                    // Permission still not granted, handle accordingly
-                    context.applicationContext.showLongToast("Please allow install permission to install.")
+
+        when (requestCode) {
+            Constants.REQUEST_INSTALL_PERMISSION -> {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    val canInstallPackages = context.packageManager.canRequestPackageInstalls()
+                    if (canInstallPackages) {
+                        // Permission granted, proceed with installation
+                        installApk()
+                    } else {
+                        // Permission still not granted, handle accordingly
+                        context.applicationContext.showLongToast("Please allow install permission to install.")
+                    }
                 }
             }
         }
