@@ -182,8 +182,10 @@ class FavoriteFragment : Fragment(),
 
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
-        binding.fragmentContainer.setOnTouchListener(getSwipeGestureListener(context))
-        binding.favoriteAdapter.setOnTouchListener(getSwipeGestureListener(context))
+        binding.apply {
+            fragmentContainer.setOnTouchListener(getSwipeGestureListener(context))
+            favoriteAdapter.setOnTouchListener(getSwipeGestureListener(context))
+        }
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {

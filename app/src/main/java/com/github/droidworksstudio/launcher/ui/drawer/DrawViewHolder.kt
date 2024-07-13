@@ -25,19 +25,18 @@ class DrawViewHolder(
 
     fun bind(appInfo: AppInfo) {
         binding.apply {
-            val layoutParams = LinearLayoutCompat.LayoutParams(
-                LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
-                LinearLayoutCompat.LayoutParams.WRAP_CONTENT
-            ).apply {
-                gravity = preferenceHelper.homeAppAlignment
-                topMargin = preferenceHelper.homeAppPadding.toInt()
-                bottomMargin = preferenceHelper.homeAppPadding.toInt()
-            }
+            // Get the current LayoutParams of appHiddenName
+            val layoutParams = appDrawName.layoutParams as LinearLayoutCompat.LayoutParams
+
+            // Set the margins
+            layoutParams.topMargin = preferenceHelper.homeAppPadding.toInt()
+            layoutParams.bottomMargin = preferenceHelper.homeAppPadding.toInt()
 
             appDrawName.layoutParams = layoutParams
             appDrawName.text = appInfo.appName
             appDrawName.setTextColor(preferenceHelper.appColor)
             appDrawName.textSize = preferenceHelper.appTextSize
+            appDrawName.gravity = preferenceHelper.homeAppAlignment
             Log.d("Tag", "Draw Adapter: ${appInfo.appName + appInfo.id} | ${appInfo.work}")
             val icon = AppCompatResources.getDrawable(appDrawName.context, R.drawable.work_profile)
             val px = preferenceHelper.appTextSize.toInt().dpToPx()

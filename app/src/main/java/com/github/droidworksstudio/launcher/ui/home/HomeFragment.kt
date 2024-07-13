@@ -214,17 +214,17 @@ class HomeFragment : Fragment(),
 
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
-        binding.nestScrollView.setOnTouchListener(getSwipeGestureListener(context))
+        binding.apply {
+            touchArea.setOnTouchListener(getSwipeGestureListener(context))
+            nestScrollView.setOnTouchListener(getSwipeGestureListener(context))
 
-        binding.clock.setOnClickListener { context.launchClock() }
-        binding.date.setOnClickListener { context.launchCalendar() }
-        binding.battery.setOnClickListener { context.openBatteryManager() }
+            clock.setOnClickListener { context.launchClock() }
+            date.setOnClickListener { context.launchCalendar() }
+            battery.setOnClickListener { context.openBatteryManager() }
+        }
     }
 
     private fun observeUserInterfaceSettings() {
-        binding.nestScrollView.hideKeyboard()
-
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
         preferenceViewModel.setShowDailyWord(preferenceHelper.showDailyWord)
@@ -269,19 +269,23 @@ class HomeFragment : Fragment(),
                 preferenceHelper.showDailyWord
             )
         }
-        val is24HourFormat = DateFormat.is24HourFormat(requireContext())
-        val localLocale = Locale.getDefault()
-        val best12 = DateFormat.getBestDateTimePattern(localLocale, "hmma")
-        val best24 = DateFormat.getBestDateTimePattern(localLocale, "HHmm")
+        binding.apply {
+            nestScrollView.hideKeyboard()
 
-        val timePattern = if (is24HourFormat) best24 else best12
-        binding.clock.format12Hour = timePattern
-        binding.clock.format24Hour = timePattern
-        val datePattern = DateFormat.getBestDateTimePattern(localLocale, "eeeddMMM")
-        binding.date.format12Hour = datePattern
-        binding.date.format24Hour = datePattern
+            val is24HourFormat = DateFormat.is24HourFormat(requireContext())
+            val localLocale = Locale.getDefault()
+            val best12 = DateFormat.getBestDateTimePattern(localLocale, "hmma")
+            val best24 = DateFormat.getBestDateTimePattern(localLocale, "HHmm")
 
-        binding.word.text = appHelper.wordOfTheDay(resources)
+            val timePattern = if (is24HourFormat) best24 else best12
+            clock.format12Hour = timePattern
+            clock.format24Hour = timePattern
+            val datePattern = DateFormat.getBestDateTimePattern(localLocale, "eeeddMMM")
+            date.format12Hour = datePattern
+            date.format24Hour = datePattern
+
+            word.text = appHelper.wordOfTheDay(resources)
+        }
     }
 
     private fun observeBioAuthCheck(appInfo: AppInfo) {

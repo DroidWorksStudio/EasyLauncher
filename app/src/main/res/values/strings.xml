@@ -96,6 +96,7 @@
     <string name="settings_others_github">Github</string>
 
     <string name="settings_backups_backup">Backup Preferences</string>
+    <string name="settings_backups_clear">Clear Preferences</string>
     <string name="settings_backups_restore">Restore Preferences</string>
 
     <string name="settings_reload_app_backup">Preferences backed up.</string>

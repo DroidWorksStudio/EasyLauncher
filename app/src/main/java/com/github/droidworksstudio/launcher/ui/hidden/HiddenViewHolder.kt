@@ -19,20 +19,18 @@ class HiddenViewHolder(
     RecyclerView.ViewHolder(binding.root) {
     fun bind(appInfo: AppInfo) {
         binding.apply {
-            // Get the current LayoutParams of appFavoriteName
-            val layoutParams = LinearLayoutCompat.LayoutParams(
-                LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
-                LinearLayoutCompat.LayoutParams.WRAP_CONTENT
-            ).apply {
-                gravity = Gravity.START
-                topMargin = preferenceHelper.homeAppPadding.toInt()
-                bottomMargin = preferenceHelper.homeAppPadding.toInt()
-            }
+            // Get the current LayoutParams of appHiddenName
+            val layoutParams = appHiddenName.layoutParams as LinearLayoutCompat.LayoutParams
+
+            // Set the margins
+            layoutParams.topMargin = preferenceHelper.homeAppPadding.toInt()
+            layoutParams.bottomMargin = preferenceHelper.homeAppPadding.toInt()
 
             appHiddenName.layoutParams = layoutParams
             appHiddenName.text = appInfo.appName
             appHiddenName.setTextColor(preferenceHelper.appColor)
             appHiddenName.textSize = preferenceHelper.appTextSize
+            appHiddenName.gravity = Gravity.START
             Log.d("Tag", "Draw Adapter: ${appInfo.appName}")
 
             if (preferenceHelper.showAppIcon) {

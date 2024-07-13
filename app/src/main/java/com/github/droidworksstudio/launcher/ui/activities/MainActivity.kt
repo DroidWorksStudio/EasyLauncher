@@ -2,7 +2,9 @@ package com.github.droidworksstudio.launcher.ui.activities
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
@@ -27,17 +29,22 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
+import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
+import com.github.droidworksstudio.launcher.helper.AppReloader
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import java.io.BufferedReader
+import java.io.FileOutputStream
+import java.io.InputStreamReader
 import javax.inject.Inject
 
 
@@ -99,8 +106,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupLocationManager() {
-        if (!isLocationPermissionDenied()) {
-            checkLocationPermission()
+        if (applicationContext.hasInternetPermission()) {
+            if (!isLocationPermissionDenied()) {
+                checkLocationPermission()
+            }
         }
     }
 
@@ -271,14 +280,62 @@ class MainActivity : AppCompatActivity() {
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == Constants.REQUEST_LOCATION_PERMISSION_CODE) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission granted, proceed with getting location
-                getLocation()
-            } else {
-                // Permission denied, show a message to the user
-                setLocationPermissionDenied(true)
-                this.showLongToast("Location permission denied")
+        when (requestCode) {
+            Constants.REQUEST_LOCATION_PERMISSION_CODE -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Permission granted, proceed with getting location
+                    getLocation()
+                } else {
+                    // Permission denied, show a message to the user
+                    setLocationPermissionDenied(true)
+                }
+            }
+        }
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode != Activity.RESULT_OK) {
+            // showToastLong(applicationContext, "Intent Error")
+            return
+        }
+
+        when (requestCode) {
+            Constants.BACKUP_READ -> {
+                data?.data?.also { uri ->
+                    applicationContext.contentResolver.openInputStream(uri).use { inputStream ->
+                        val stringBuilder = StringBuilder()
+                        BufferedReader(InputStreamReader(inputStream)).use { reader ->
+                            var line: String? = reader.readLine()
+                            while (line != null) {
+                                stringBuilder.append(line)
+                                line = reader.readLine()
+                            }
+                        }
+
+                        val string = stringBuilder.toString()
+                        val prefs = PreferenceHelper(applicationContext)
+                        prefs.clear()
+                        prefs.loadFromString(string)
+                    }
+                }
+                Handler(Looper.getMainLooper()).postDelayed({
+                    AppReloader.restartApp(applicationContext)
+                }, 500)
+            }
+
+            Constants.BACKUP_WRITE -> {
+                data?.data?.also { uri ->
+                    applicationContext.contentResolver.openFileDescriptor(uri, "w")?.use { file ->
+                        FileOutputStream(file.fileDescriptor).use { stream ->
+                            val text = PreferenceHelper(applicationContext).saveToString()
+                            stream.channel.truncate(0)
+                            stream.write(text.toByteArray())
+                        }
+                    }
+                }
             }
         }
     }

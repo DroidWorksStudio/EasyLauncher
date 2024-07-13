@@ -95,11 +95,21 @@ class SettingsFragment : Fragment(),
         binding.miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.getString(context)
         binding.miscellaneousLauncherFontsControl.text = preferenceHelper.launcherFont.getString(context)
 
-        updateGestureControlText(context, preferenceHelper.doubleTapAction, preferenceHelper.doubleTapApp, binding.gesturesDoubleTapControl)
-        updateGestureControlText(context, preferenceHelper.swipeUpAction, preferenceHelper.swipeUpApp, binding.gesturesSwipeUpControl)
-        updateGestureControlText(context, preferenceHelper.swipeDownAction, preferenceHelper.swipeDownApp, binding.gesturesSwipeDownControl)
-        updateGestureControlText(context, preferenceHelper.swipeLeftAction, preferenceHelper.swipeLeftApp, binding.gesturesSwipeLeftControl)
-        updateGestureControlText(context, preferenceHelper.swipeRightAction, preferenceHelper.swipeRightApp, binding.gesturesSwipeRightControl)
+        val actions = listOf(
+            Triple(preferenceHelper.doubleTapAction, preferenceHelper.doubleTapApp, binding.gesturesDoubleTapControl),
+            Triple(preferenceHelper.swipeUpAction, preferenceHelper.swipeUpApp, binding.gesturesSwipeUpControl),
+            Triple(preferenceHelper.swipeDownAction, preferenceHelper.swipeDownApp, binding.gesturesSwipeDownControl),
+            Triple(preferenceHelper.swipeLeftAction, preferenceHelper.swipeLeftApp, binding.gesturesSwipeLeftControl),
+            Triple(preferenceHelper.swipeRightAction, preferenceHelper.swipeRightApp, binding.gesturesSwipeRightControl)
+        )
+
+        actions.forEach { (action, app, control) ->
+            when (action) {
+                Constants.Action.OpenApp -> updateGestureControlText(context, action, app, control)
+                else -> {}
+            }
+        }
+
     }
 
     // Function to update UI text based on action and app name
@@ -189,12 +199,18 @@ class SettingsFragment : Fragment(),
         }
 
         binding.backupView.setOnClickListener {
-            appHelper.backupSharedPreferences(requireContext())
+            appHelper.storeFile(requireActivity())
+        }
+
+        binding.clearView.setOnClickListener {
+            preferenceHelper.clearAll(context)
+            Handler(Looper.getMainLooper()).postDelayed({
+                AppReloader.restartApp(context)
+            }, 500)
         }
 
         binding.restoreView.setOnClickListener {
-            appHelper.restoreSharedPreferences(requireContext())
-            AppReloader.restartApp(context)
+            appHelper.loadFile(requireActivity())
         }
     }
 
@@ -239,34 +255,36 @@ class SettingsFragment : Fragment(),
 
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
+        binding.apply {
+            touchArea.setOnTouchListener(getSwipeGestureListener(context))
 
-        binding.miscellaneousSearchEngineControl.setOnClickListener {
-            showSearchEngineDialog()
-        }
+            miscellaneousSearchEngineControl.setOnClickListener {
+                showSearchEngineDialog()
+            }
 
-        binding.miscellaneousLauncherFontsControl.setOnClickListener {
-            showLauncherFontDialog()
-        }
+            miscellaneousLauncherFontsControl.setOnClickListener {
+                showLauncherFontDialog()
+            }
 
-        binding.gesturesDoubleTapControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.DoubleTap)
-        }
+            gesturesDoubleTapControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.DoubleTap)
+            }
 
-        binding.gesturesSwipeUpControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.Up)
-        }
+            gesturesSwipeUpControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.Up)
+            }
 
-        binding.gesturesSwipeDownControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.Down)
-        }
+            gesturesSwipeDownControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.Down)
+            }
 
-        binding.gesturesSwipeLeftControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.Left)
-        }
+            gesturesSwipeLeftControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.Left)
+            }
 
-        binding.gesturesSwipeRightControl.setOnClickListener {
-            swipeActionClickEvent(Constants.Swipe.Right)
+            gesturesSwipeRightControl.setOnClickListener {
+                swipeActionClickEvent(Constants.Swipe.Right)
+            }
         }
     }
 

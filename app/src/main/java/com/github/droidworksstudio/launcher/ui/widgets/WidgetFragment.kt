@@ -93,7 +93,6 @@ class WidgetFragment : Fragment(),
     private fun initializeInjectedDependencies() {
         context = requireContext()
         binding.nestScrollView.hideKeyboard()
-
         binding.nestScrollView.scrollEventListener = this
     }
 

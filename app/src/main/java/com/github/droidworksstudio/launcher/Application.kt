@@ -81,10 +81,15 @@ class Application : Application() {
 
         // Apply the custom font to different font families
         if (customFont != null) {
-            TypefaceUtil.setDefaultFont("DEFAULT", customFont)
-            TypefaceUtil.setDefaultFont("MONOSPACE", customFont)
-            TypefaceUtil.setDefaultFont("SERIF", customFont)
-            TypefaceUtil.setDefaultFont("SANS_SERIF", customFont)
+            // Ensure the custom font is applied correctly
+            try {
+                TypefaceUtil.setDefaultFont("DEFAULT", customFont)
+                TypefaceUtil.setDefaultFont("MONOSPACE", customFont)
+                TypefaceUtil.setDefaultFont("SERIF", customFont)
+                TypefaceUtil.setDefaultFont("SANS_SERIF", customFont)
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
         }
     }
 }

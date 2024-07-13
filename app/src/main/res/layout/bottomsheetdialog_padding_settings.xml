@@ -23,7 +23,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/TextDefaultStyle"/>
+            style="@style/TextDefaultStyle" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                 android:layout_marginVertical="20dp"
                 android:background="@android:color/transparent"
                 android:gravity="left|center"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:text="@string/appearance_bottom_dialog_desc_app"
                 android:textSize="@dimen/text_large"
                 app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,7 @@
                 android:layout_marginVertical="20dp"
                 android:background="@android:color/transparent"
                 android:gravity="left|center"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:textSize="@dimen/text_large"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

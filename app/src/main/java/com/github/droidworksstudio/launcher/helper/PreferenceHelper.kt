@@ -2,14 +2,20 @@ package com.github.droidworksstudio.launcher.helper
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.content.res.Configuration
+import android.util.Log
 import android.view.Gravity
 import com.github.droidworksstudio.launcher.utils.Constants
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 class PreferenceHelper @Inject constructor(@ApplicationContext context: Context) {
 
-    private val prefs: SharedPreferences = context.getSharedPreferences(Constants.PREFS_FILENAME, 0)
+    private val prefs: SharedPreferences = context.getSharedPreferences(Constants.PACKAGE_PREFS, 0)
+
+    private val setColor = getColor(context)
 
     var firstLaunch: Boolean
         get() = prefs.getBoolean(Constants.FIRST_LAUNCH, true)
@@ -47,19 +53,19 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_BATTERY_WIDGET, value).apply()
 
     var dateColor: Int
-        get() = prefs.getInt(Constants.DATE_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.DATE_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.DATE_COLOR, value).apply()
 
     var timeColor: Int
-        get() = prefs.getInt(Constants.TIME_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.TIME_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.TIME_COLOR, value).apply()
 
     var batteryColor: Int
-        get() = prefs.getInt(Constants.BATTERY_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.BATTERY_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.BATTERY_COLOR, value).apply()
 
     var dailyWordColor: Int
-        get() = prefs.getInt(Constants.DAILY_WORD_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.DAILY_WORD_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.DAILY_WORD_COLOR, value).apply()
 
     var widgetBackgroundColor: Int
@@ -67,11 +73,11 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         set(value) = prefs.edit().putInt(Constants.WIDGET_BACKGROUND_COLOR, value).apply()
 
     var widgetTextColor: Int
-        get() = prefs.getInt(Constants.WIDGET_TEXT_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.WIDGET_TEXT_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.WIDGET_TEXT_COLOR, value).apply()
 
     var appColor: Int
-        get() = prefs.getInt(Constants.APP_COLOR, 0xFFFFFFFF.toInt())
+        get() = prefs.getInt(Constants.APP_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.APP_COLOR, value).apply()
 
     var showAppIcon: Boolean
@@ -237,5 +243,62 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
 
     private fun storeAction(prefString: String, value: Constants.Action) {
         prefs.edit().putString(prefString, value.name).apply()
+    }
+
+    private fun getColor(context: Context): Long {
+        return when (context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
+            Configuration.UI_MODE_NIGHT_YES -> {
+                0xFFFFFFFF
+            }
+
+            Configuration.UI_MODE_NIGHT_NO -> {
+                0xFF000000
+            }
+
+            else -> {
+                0xFFFFFFFF
+            }
+        }
+    }
+
+    fun saveToString(): String {
+        val all: HashMap<String, Any?> = HashMap(prefs.all)
+        return Gson().toJson(all)
+    }
+
+    fun loadFromString(json: String) {
+        val editor = prefs.edit()
+        val all: HashMap<String, Any?> =
+            Gson().fromJson(json, object : TypeToken<HashMap<String, Any?>>() {}.type)
+        for ((key, value) in all) {
+            when (value) {
+                is String -> editor.putString(key, value)
+                is Boolean -> editor.putBoolean(key, value)
+                is Int -> editor.putInt(key, value)
+                is Double -> editor.putInt(key, value.toInt()) // we store everything as int
+                is Float -> editor.putInt(key, value.toInt())
+                is MutableSet<*> -> {
+                    val list = value.filterIsInstance<String>().toSet()
+                    editor.putStringSet(key, list)
+                }
+
+                else -> {
+                    Log.d("backup error", "$value")
+                }
+            }
+        }
+        editor.apply()
+    }
+
+    fun clear() {
+        prefs.edit().clear().apply()
+    }
+
+    fun clearAll(context: Context) {
+        val prefsLauncher: SharedPreferences = context.getSharedPreferences(Constants.PACKAGE_PREFS, 0)
+        val prefsWidgets: SharedPreferences = context.getSharedPreferences(Constants.WEATHER_PREFS, 0)
+
+        prefsLauncher.edit().clear().apply()
+        prefsWidgets.edit().clear().apply()
     }
 }

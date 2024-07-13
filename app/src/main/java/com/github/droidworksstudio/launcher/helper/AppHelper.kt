@@ -1,6 +1,7 @@
 package com.github.droidworksstudio.launcher.helper
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
@@ -16,8 +17,6 @@ import android.view.WindowInsets
 import android.widget.TextView
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.navigation.NavOptions
-import com.github.droidworksstudio.common.backupSharedPreferences
-import com.github.droidworksstudio.common.restoreSharedPreferences
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.BuildConfig
 import com.github.droidworksstudio.launcher.utils.Constants
@@ -29,7 +28,10 @@ import com.google.gson.Gson
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.net.UnknownHostException
+import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.util.Date
+import java.util.Locale
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
@@ -192,14 +194,25 @@ class AppHelper @Inject constructor() {
         context.startActivity(Intent.createChooser(emailIntent, "Choose Mail Application"))
     }
 
-    fun backupSharedPreferences(context: Context) {
-        val backupFileNames = arrayOf(Constants.PREFS_FILENAME, Constants.WEATHER_PREFS)
-        context.backupSharedPreferences(backupFileNames)
+    fun storeFile(activity: Activity) {
+        // Generate a unique filename with a timestamp
+        val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
+        val fileName = "backup_$timeStamp.json"
+
+        val intent = Intent(Intent.ACTION_CREATE_DOCUMENT).apply {
+            addCategory(Intent.CATEGORY_OPENABLE)
+            type = "application/json"
+            putExtra(Intent.EXTRA_TITLE, fileName)
+        }
+        activity.startActivityForResult(intent, Constants.BACKUP_WRITE, null)
     }
 
-    fun restoreSharedPreferences(context: Context) {
-        val backupFileNames = arrayOf(Constants.PREFS_FILENAME, Constants.WEATHER_PREFS)
-        context.restoreSharedPreferences(backupFileNames)
+    fun loadFile(activity: Activity) {
+        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
+            addCategory(Intent.CATEGORY_OPENABLE)
+            type = "application/json"
+        }
+        activity.startActivityForResult(intent, Constants.BACKUP_READ, null)
     }
 
     fun getActionType(actionType: Constants.Swipe): NavOptions {

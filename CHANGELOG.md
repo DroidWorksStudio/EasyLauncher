@@ -6,16 +6,26 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- App name Gravity and Layout Params. - ([7622aa6](https://github.com/DroidWorksStudio/EasyLauncher/commit/7622aa68ca7eb5d8698a090778138f64063eebba))
+- Allow decimal numbers in the settings. - ([78d9be6](https://github.com/DroidWorksStudio/EasyLauncher/commit/78d9be692ab56cace0d777b8b79d3a75dd2251c1))
+- Set default colors depending on if nightMode or not. - ([d02f873](https://github.com/DroidWorksStudio/EasyLauncher/commit/d02f873a7039a0762488dc497e371de8957eb13a))
 - Fixed the appSelectionDialog from not closing right. - ([3efe245](https://github.com/DroidWorksStudio/EasyLauncher/commit/3efe24503c40a2902a075707a8c87a25332b45bf))
 
 ### Housekeeping:
 
+- Cleaned up the Readme File screenshots - ([ae2d841](https://github.com/DroidWorksStudio/EasyLauncher/commit/ae2d84124e5424712cf2f95a0fd07c90963db78f))
 - Moved Word-of-the-day strings to there own file. - ([c727bfe](https://github.com/DroidWorksStudio/EasyLauncher/commit/c727bfec873b1f755d477e8b86239d2ff2620ee5))
 - Making the issue types a bit better. - ([64593af](https://github.com/DroidWorksStudio/EasyLauncher/commit/64593af2b8fff6d1acd44880fa12336bacf091f7))
 
 ### Language Support:
 
 - Updated Language Files. ([#96](https://github.com/DroidWorksStudio/EasyLauncher/issues/96)) - ([5bec848](https://github.com/DroidWorksStudio/EasyLauncher/commit/5bec84825003560ae58c160579301c6f8f356626))
+
+### Refactoring:
+
+- Made the backup system better so users chose the location. - ([623d2ab](https://github.com/DroidWorksStudio/EasyLauncher/commit/623d2ab633319a3b8c481de24cf82430bca821b7))
+- Changed the settings for appDrawName to math the other holder names. - ([f9f49f0](https://github.com/DroidWorksStudio/EasyLauncher/commit/f9f49f0d8279da322cd277055e2b3e4a9036c64e))
+- Disable Script Fonts - ([f3946dc](https://github.com/DroidWorksStudio/EasyLauncher/commit/f3946dc236cc670c0050cedf8e2b71aecd3a8eb6))
 
 ### Releases:
 
