@@ -231,7 +231,7 @@ class WidgetFragment : Fragment(),
         paint.typeface = weatherFont
         paint.style = Paint.Style.FILL
         paint.color = ContextCompat.getColor(context, R.color.white)
-        paint.textSize = 200f
+        paint.textSize = 170f
         paint.textAlign = Paint.Align.CENTER
         canvas.drawText(text, 128f, 200f, paint)
         return bitmap
@@ -257,25 +257,40 @@ class WidgetFragment : Fragment(),
         val icon: String
         val idDivided = id / 100
         val hourOfDay = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
-        if (idDivided * 100 == 800) {
-            icon = if (hourOfDay in 7..19) {
-                context.getString(R.string.weather_sunny)
-            } else {
-                context.getString(R.string.weather_clear_night)
+        val isDayTime = hourOfDay in 7..19
+
+        icon = when {
+            id == 800 -> if (isDayTime) context.getString(R.string.wi_day_sunny) else context.getString(R.string.wi_night_clear)
+            idDivided == 2 -> if (isDayTime) context.getString(R.string.wi_day_thunderstorm) else context.getString(R.string.wi_night_alt_thunderstorm)
+            idDivided == 3 -> if (isDayTime) context.getString(R.string.wi_day_sprinkle) else context.getString(R.string.wi_night_alt_sprinkle)
+            idDivided == 5 -> when (id) {
+                500 -> if (isDayTime) context.getString(R.string.wi_day_showers) else context.getString(R.string.wi_night_showers)
+                501 -> if (isDayTime) context.getString(R.string.wi_day_rain) else context.getString(R.string.wi_night_rain)
+                502 -> if (isDayTime) context.getString(R.string.wi_day_rain_wind) else context.getString(R.string.wi_night_rain_wind)
+                503 -> if (isDayTime) context.getString(R.string.wi_day_rain_mix) else context.getString(R.string.wi_night_rain_mix)
+                504 -> if (isDayTime) context.getString(R.string.wi_day_rain) else context.getString(R.string.wi_night_rain)
+                511 -> if (isDayTime) context.getString(R.string.wi_day_sleet) else context.getString(R.string.wi_night_sleet)
+                520 -> if (isDayTime) context.getString(R.string.wi_day_showers) else context.getString(R.string.wi_night_showers)
+                521 -> if (isDayTime) context.getString(R.string.wi_day_showers) else context.getString(R.string.wi_night_showers)
+                522 -> if (isDayTime) context.getString(R.string.wi_day_storm_showers) else context.getString(R.string.wi_night_storm_showers)
+                else -> if (isDayTime) context.getString(R.string.wi_day_rain) else context.getString(R.string.wi_night_rain)
             }
-        } else {
-            icon = when (idDivided) {
-                2 -> context.getString(R.string.weather_thunder)
-                3 -> context.getString(R.string.weather_drizzle)
-                7 -> context.getString(R.string.weather_foggy)
-                8 -> context.getString(R.string.weather_cloudy)
-                6 -> context.getString(R.string.weather_snowy)
-                5 -> context.getString(R.string.weather_rainy)
-                else -> ""
+
+            idDivided == 6 -> if (isDayTime) context.getString(R.string.wi_day_snow) else context.getString(R.string.wi_night_alt_snow)
+            idDivided == 7 -> if (isDayTime) context.getString(R.string.wi_day_fog) else context.getString(R.string.wi_night_fog)
+            idDivided == 8 -> when (id) {
+                801 -> if (isDayTime) context.getString(R.string.wi_day_cloudy) else context.getString(R.string.wi_night_cloudy)
+                802 -> if (isDayTime) context.getString(R.string.wi_day_cloudy_gusts) else context.getString(R.string.wi_night_alt_cloudy_gusts)
+                803 -> if (isDayTime) context.getString(R.string.wi_day_cloudy_windy) else context.getString(R.string.wi_night_alt_cloudy_windy)
+                804 -> if (isDayTime) context.getString(R.string.wi_day_cloudy) else context.getString(R.string.wi_night_cloudy)
+                else -> if (isDayTime) context.getString(R.string.wi_day_cloudy) else context.getString(R.string.wi_night_cloudy)
             }
+
+            else -> context.getString(R.string.wi_na)
         }
         return icon
     }
+
 
     private fun convertTimestampToReadableDate(timestamp: Long): String {
         // Multiply by 1000 to convert seconds to milliseconds if the timestamp is in seconds
