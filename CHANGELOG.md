@@ -23,6 +23,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Made the backup system better so users chose the location. - ([623d2ab](https://github.com/DroidWorksStudio/EasyLauncher/commit/623d2ab633319a3b8c481de24cf82430bca821b7))
 - Changed the settings for appDrawName to math the other holder names. - ([f9f49f0](https://github.com/DroidWorksStudio/EasyLauncher/commit/f9f49f0d8279da322cd277055e2b3e4a9036c64e))
 - Disable Script Fonts - ([f3946dc](https://github.com/DroidWorksStudio/EasyLauncher/commit/f3946dc236cc670c0050cedf8e2b71aecd3a8eb6))
 
