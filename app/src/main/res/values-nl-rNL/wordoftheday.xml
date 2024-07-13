@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>Stay resilient!</item>
+        <item>You got this!</item>
+        <item>Shine bright!</item>
+        <item>Create destiny.</item>
+        <item>Embrace journey.</item>
+        <item>Strength within.</item>
+        <item>Keep pushing!</item>
+        <item>You\'re amazing!</item>
+        <item>Trust, never give.</item>
+        <item>Limitless potential.</item>
+        <item>Progress over perfection.</item>
+        <item>Challenges = growth.</item>
+        <item>Worthy of success.</item>
+        <item>Chase your dreams.</item>
+        <item>Overcome all!</item>
+        <item>Determination wins.</item>
+        <item>Every step counts.</item>
+        <item>Stay positive!</item>
+        <item>Resilience rocks.</item>
+        <item>Strength in you.</item>
+        <item>Celebrate progress.</item>
+        <item>Hard work pays.</item>
+        <item>Trust, have faith.</item>
+        <item>Unique journey.</item>
+        <item>Eyes on prize.</item>
+        <item>Achieve anything!</item>
+        <item>Take bold steps.</item>
+        <item>Passion fuels you.</item>
+        <item>Focus on goals.</item>
+        <item>Persevere, win.</item>
+        <item>Self-belief key.</item>
+        <item>Deserving of good.</item>
+        <item>Reach for dreams.</item>
+        <item>Brave, strong, smart.</item>
+        <item>Positive attitude.</item>
+        <item>Trust the journey.</item>
+        <item>Unwavering determination.</item>
+        <item>Setbacks = comeback.</item>
+        <item>Turn dreams reality.</item>
+        <item>Commit to goals.</item>
+        <item>Strength, no bounds.</item>
+        <item>Head up, breakthrough.</item>
+        <item>Your potential shines.</item>
+        <item>Dreams within reach.</item>
+        <item>You\'re unstoppable!</item>
+        <item>Believe, achieve.</item>
+        <item>Push past limits.</item>
+        <item>Perseverance pays.</item>
+        <item>Stay fearless!</item>
+        <item>Rise above challenges.</item>
+        <item>Keep dreaming big.</item>
+        <item>Live with purpose.</item>
+        <item>Focus on the good.</item>
+        <item>Strength from within.</item>
+        <item>Believe in magic.</item>
+        <item>Smile, you\'ve got this.</item>
+        <item>Never lose hope.</item>
+        <item>Embrace every moment.</item>
+        <item>Be your own hero.</item>
+        <item>You\'re enough.</item>
+        <item>Conquer your fears.</item>
+        <item>Seize the day!</item>
+        <item>Love yourself first.</item>
+        <item>Stay positive, always.</item>
+        <item>You\'re a warrior.</item>
+        <item>Believe in yourself.</item>
+        <item>Embrace possibilities.</item>
+        <item>Live with passion.</item>
+        <item>Keep moving forward.</item>
+        <item>You\'re unstoppable!</item>
+        <item>Stay true to you.</item>
+        <item>Live boldly.</item>
+        <item>Keep the faith.</item>
+        <item>Strength in adversity.</item>
+        <item>Every day, grow.</item>
+        <item>Perseverance, victory.</item>
+        <item>Chase your passions.</item>
+        <item>Find joy in journey.</item>
+        <item>Take risks, thrive.</item>
+        <item>Stay strong, brave.</item>
+        <item>Trust inner wisdom.</item>
+        <item>Keep shining bright.</item>
+        <item>Dream, believe, achieve.</item>
+        <item>Be unstoppable.</item>
+        <item>Own your greatness.</item>
+        <item>Embrace the unknown.</item>
+        <item>Keep pushing forward.</item>
+        <item>Trust in yourself.</item>
+        <item>Spread kindness always.</item>
+        <item>Believe in your dreams.</item>
+        <item>Stay focused, determined.</item>
+        <item>Embrace your journey.</item>
+        <item>Keep your head up.</item>
+        <item>Never give up hope.</item>
+        <item>Strength from within.</item>
+        <item>Stay resilient, strong.</item>
+        <item>You\'re unstoppable!</item>
+        <item>Embrace the challenge.</item>
+        <item>Keep the fire burning.</item>
+        <item>Focus on what\'s possible.</item>
+        <item>Dream big, work hard.</item>
+        <item>Keep your eyes on prize.</item>
+        <item>Trust the process.</item>
+        <item>Stay true to yourself.</item>
+        <item>Believe, achieve, succeed.</item>
+        <item>Stay inspired always.</item>
+        <item>Be fearless in pursuit.</item>
+        <item>Stay grounded, rise.</item>
+        <item>Find strength in struggle.</item>
+        <item>Embrace every challenge.</item>
+        <item>Stay bold, stay bright.</item>
+        <item>You\'re capable of greatness.</item>
+        <item>Trust your journey.</item>
+        <item>Keep fighting, keep rising.</item>
+        <item>Believe in the impossible.</item>
+        <item>Stay resilient, never give.</item>
+        <item>You\'re stronger than you know.</item>
+        <item>Live with passion and purpose.</item>
+        <item>Find joy in every journey.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay positive, stay strong.</item>
+        <item>Every day is a new chance.</item>
+        <item>Embrace every opportunity.</item>
+        <item>Keep pushing past limits.</item>
+        <item>Trust your inner strength.</item>
+        <item>You\'re destined for greatness.</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>You\'re destined for greatness!</item>
+        <item>Believe in your dreams!</item>
+        <item>Stay determined, succeed.</item>
+        <item>Keep moving towards your goals.</item>
+        <item>Chase your dreams relentlessly.</item>
+        <item>Strength comes from within.</item>
+        <item>Stay focused on your goals.</item>
+        <item>You\'re capable of anything.</item>
+        <item>Stay fearless, stay strong.</item>
+        <item>Believe, achieve, succeed!</item>
+        <item>Trust in your journey.</item>
+        <item>Stay resilient, rise above.</item>
+        <item>You have the power within you.</item>
+        <item>Dream big, work hard, achieve.</item>
+        <item>Stay focused, stay strong.</item>
+        <item>You\'re stronger than you think!</item>
+        <item>Believe in yourself, always.</item>
+        <item>Stay determined, stay strong.</item>
+        <item>Embrace every opportunity.</item>
+        <item>You\'re capable of greatness!</item>
+        <item>Stay true to yourself.</item>
+        <item>Trust in your journey.</item>
+        <item>Keep pushing forward.</item>
+        <item>Dream, believe, achieve!</item>
+    </string-array>
+</resources>
