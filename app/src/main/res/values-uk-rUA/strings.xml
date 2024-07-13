@@ -80,7 +80,7 @@
     <string name="settings_others_feedback">Зворотній зв\'язок</string>
     <string name="settings_others_github">Github</string>
     <string name="settings_backups_backup">Налаштування резервного копіювання</string>
-    <string name="settings_backups_clear">Clear Preferences</string>
+    <string name="settings_backups_clear">Очистити налаштування</string>
     <string name="settings_backups_restore">Відновити налаштування</string>
     <string name="settings_reload_app_backup">Налаштування створено.</string>
     <string name="settings_reload_app_restore">Налаштування відновлено. Перезапуск.</string>
