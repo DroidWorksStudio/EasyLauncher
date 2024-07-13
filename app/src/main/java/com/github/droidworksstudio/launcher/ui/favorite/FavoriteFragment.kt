@@ -113,7 +113,18 @@ class FavoriteFragment : Fragment(),
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.favoriteApps.collect {
                 favoriteAdapter.submitList(it)
+                updateNoAppsTextViewVisibility(it.isEmpty())
             }
+        }
+    }
+
+    private fun updateNoAppsTextViewVisibility(isEmpty: Boolean) {
+        if (isEmpty) {
+            binding.noApps.visibility = View.VISIBLE
+            binding.favoriteAdapter.visibility = View.GONE
+        } else {
+            binding.noApps.visibility = View.GONE
+            binding.favoriteAdapter.visibility = View.VISIBLE
         }
     }
 

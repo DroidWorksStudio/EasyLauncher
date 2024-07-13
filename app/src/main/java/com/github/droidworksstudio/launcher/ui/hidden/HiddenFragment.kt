@@ -93,7 +93,18 @@ class HiddenFragment : Fragment(),
         viewLifecycleOwner.lifecycleScope.launchWhenCreated {
             viewModel.hiddenApps.collect {
                 hiddenAdapter.updateData(it)
+                updateNoAppsTextViewVisibility(it.isEmpty())
             }
+        }
+    }
+
+    private fun updateNoAppsTextViewVisibility(isEmpty: Boolean) {
+        if (isEmpty) {
+            binding.noApps.visibility = View.VISIBLE
+            binding.hiddenAdapter.visibility = View.GONE
+        } else {
+            binding.noApps.visibility = View.GONE
+            binding.hiddenAdapter.visibility = View.VISIBLE
         }
     }
 

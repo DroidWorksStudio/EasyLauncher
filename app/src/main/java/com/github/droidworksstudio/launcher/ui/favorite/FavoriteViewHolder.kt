@@ -31,8 +31,6 @@ class FavoriteViewHolder(
     }
 
     fun bind(appInfo: AppInfo) {
-
-
         binding.apply {
             // Get the current LayoutParams of appFavoriteName
             val layoutParams = appFavoriteName.layoutParams as LinearLayoutCompat.LayoutParams

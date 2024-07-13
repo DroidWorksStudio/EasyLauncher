@@ -14,6 +14,9 @@
     <string name="favorite_fragment_name">Favorite Apps</string>
     <string name="hidden_fragment_name">Hidden Apps</string>
 
+    <string name="favorite_fragment_no_apps">No Favorite Apps</string>
+    <string name="hidden_fragment_no_apps">No Hidden Apps</string>
+
     <string name="search">Search</string>
 
     <string name="bottom_dialog_app_rename">Rename</string>
