@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed weather icons to show correctly. - ([d60a935](https://github.com/DroidWorksStudio/EasyLauncher/commit/d60a935338a2c8a4e24e2ea82c303f927e2a0815))
 - Fixed settings if cleared - ([e5b0197](https://github.com/DroidWorksStudio/EasyLauncher/commit/e5b0197e3dc79536838a93434a784119c6332b38))
 - App name Gravity and Layout Params. - ([7622aa6](https://github.com/DroidWorksStudio/EasyLauncher/commit/7622aa68ca7eb5d8698a090778138f64063eebba))
 - Allow decimal numbers in the settings. - ([78d9be6](https://github.com/DroidWorksStudio/EasyLauncher/commit/78d9be692ab56cace0d777b8b79d3a75dd2251c1))
@@ -29,6 +30,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Added NerdFont to custom fonts - ([48313fb](https://github.com/DroidWorksStudio/EasyLauncher/commit/48313fb3b0c1dbe9af534ac9014e24d865467f60))
 - Made the backup system better so users chose the location. - ([623d2ab](https://github.com/DroidWorksStudio/EasyLauncher/commit/623d2ab633319a3b8c481de24cf82430bca821b7))
 - Changed the settings for appDrawName to math the other holder names. - ([f9f49f0](https://github.com/DroidWorksStudio/EasyLauncher/commit/f9f49f0d8279da322cd277055e2b3e4a9036c64e))
 - Disable Script Fonts - ([f3946dc](https://github.com/DroidWorksStudio/EasyLauncher/commit/f3946dc236cc670c0050cedf8e2b71aecd3a8eb6))
