@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -104,10 +105,7 @@ class SettingsFragment : Fragment(),
         )
 
         actions.forEach { (action, app, control) ->
-            when (action) {
-                Constants.Action.OpenApp -> updateGestureControlText(context, action, app, control)
-                else -> {}
-            }
+            updateGestureControlText(context, action, app, control)
         }
 
     }
@@ -400,6 +398,28 @@ class SettingsFragment : Fragment(),
         appSelectionDialog?.dismiss()
     }
 
+    private fun swipeActionClickEvent(swipe: Constants.Swipe) {
+        // Get the array of Action enum values
+        val actions = Constants.Action.entries.toTypedArray()
+        // Map the enum values to their string representations
+        val actionStrings = actions.map { it.getString(context) }.toTypedArray()
+
+        val dialog = MaterialAlertDialogBuilder(context)
+
+        dialog.setTitle("Select a Action")
+        dialog.setItems(actionStrings) { _, which ->
+            val selectedAction = actions[which]
+            when (swipe) {
+                Constants.Swipe.DoubleTap -> handleSwipeAction(context, Constants.Swipe.DoubleTap, selectedAction, binding)
+                Constants.Swipe.Up -> handleSwipeAction(context, Constants.Swipe.Up, selectedAction, binding)
+                Constants.Swipe.Down -> handleSwipeAction(context, Constants.Swipe.Down, selectedAction, binding)
+                Constants.Swipe.Left -> handleSwipeAction(context, Constants.Swipe.Left, selectedAction, binding)
+                Constants.Swipe.Right -> handleSwipeAction(context, Constants.Swipe.Right, selectedAction, binding)
+            }
+        }
+        dialog.show()
+    }
+
     private fun handleSwipeAction(swipeType: Constants.Swipe, selectedPackageName: String) {
         val selectedApp = context.getAppNameFromPackageName(selectedPackageName)
 
@@ -431,29 +451,6 @@ class SettingsFragment : Fragment(),
         }
     }
 
-
-    private fun swipeActionClickEvent(swipe: Constants.Swipe) {
-        // Get the array of Action enum values
-        val actions = Constants.Action.entries.toTypedArray()
-        // Map the enum values to their string representations
-        val actionStrings = actions.map { it.getString(context) }.toTypedArray()
-
-        val dialog = MaterialAlertDialogBuilder(context)
-
-        dialog.setTitle("Select a Action")
-        dialog.setItems(actionStrings) { _, which ->
-            val selectedAction = actions[which]
-            when (swipe) {
-                Constants.Swipe.DoubleTap -> handleSwipeAction(context, Constants.Swipe.DoubleTap, selectedAction, binding)
-                Constants.Swipe.Up -> handleSwipeAction(context, Constants.Swipe.Up, selectedAction, binding)
-                Constants.Swipe.Down -> handleSwipeAction(context, Constants.Swipe.Down, selectedAction, binding)
-                Constants.Swipe.Left -> handleSwipeAction(context, Constants.Swipe.Left, selectedAction, binding)
-                Constants.Swipe.Right -> handleSwipeAction(context, Constants.Swipe.Right, selectedAction, binding)
-            }
-        }
-        dialog.show()
-    }
-
     // Function to handle setting action and updating UI
     private fun handleSwipeAction(context: Context, swipe: Constants.Swipe, action: Constants.Action, binding: FragmentSettingsBinding) {
         preferenceViewModel.setSwipeAction(swipe, action)
@@ -480,6 +477,7 @@ class SettingsFragment : Fragment(),
             }
 
             else -> {
+                Log.d("doubleTapAction", preferenceHelper.doubleTapAction.getString(context))
                 binding.apply {
                     when (swipe) {
                         Constants.Swipe.DoubleTap -> gesturesDoubleTapControl.text = preferenceHelper.doubleTapAction.getString(context)
