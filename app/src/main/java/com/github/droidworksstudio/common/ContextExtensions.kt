@@ -6,7 +6,6 @@ import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.content.pm.LauncherApps
 import android.content.pm.PackageManager
 import android.content.res.Configuration
@@ -14,7 +13,6 @@ import android.graphics.Bitmap
 import android.graphics.drawable.AdaptiveIconDrawable
 import android.net.Uri
 import android.os.Build
-import android.os.Environment
 import android.os.UserHandle
 import android.os.UserManager
 import android.provider.AlarmClock
@@ -40,11 +38,6 @@ import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
-import org.xmlpull.v1.XmlPullParser
-import org.xmlpull.v1.XmlPullParserFactory
-import java.io.File
-import java.io.FileInputStream
-import java.io.IOException
 import java.util.Calendar
 import java.util.Date
 import kotlin.math.pow
