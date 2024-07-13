@@ -12,6 +12,8 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Lieblings-Apps</string>
     <string name="hidden_fragment_name">Versteckte Apps</string>
+    <string name="favorite_fragment_no_apps">Keine Lieblings-Apps</string>
+    <string name="hidden_fragment_no_apps">Keine versteckten Apps</string>
     <string name="search">Suchen</string>
     <string name="bottom_dialog_app_rename">Umbenennen</string>
     <string name="bottom_dialog_add_to_home">Zum Startbildschirm hinzufügen</string>

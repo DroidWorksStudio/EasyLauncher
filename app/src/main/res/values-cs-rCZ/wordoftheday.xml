@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>Zůstaňte odolní!</item>
+        <item>Máš to!</item>
+        <item>Zářit jasně!</item>
+        <item>Vytvořte osud.</item>
+        <item>Objetí cesty.</item>
+        <item>Síla uvnitř.</item>
+        <item>Dál prosazovat!</item>
+        <item>Jsi úžasná!</item>
+        <item>Důvěřuj, nikdy nedej.</item>
+        <item>Neomezený potenciál.</item>
+        <item>Pokrok nad dokonalostí.</item>
+        <item>Výzvy = růst.</item>
+        <item>Hodný úspěchu.</item>
+        <item>Jdi za svým snem.</item>
+        <item>Překonat všechny!</item>
+        <item>Odhodlání vítězí.</item>
+        <item>Každý krok se počítá.</item>
+        <item>Zůstaň pozitivní!</item>
+        <item>Odolnost skály.</item>
+        <item>Síla v tobě.</item>
+        <item>Oslavte pokrok.</item>
+        <item>Tvrdá práce se vyplácí.</item>
+        <item>Důvěřuj, věř.</item>
+        <item>Jedinečná cesta.</item>
+        <item>Oči na cenu.</item>
+        <item>Dosáhnout čehokoli!</item>
+        <item>Udělejte odvážné kroky.</item>
+        <item>Vášeň vás pohání.</item>
+        <item>Zaměřte se na cíle.</item>
+        <item>Vytrvat, vyhrát.</item>
+        <item>Klíč sebevědomí.</item>
+        <item>Zasluhující dobro.</item>
+        <item>Sáhněte po snech.</item>
+        <item>Odvážný, silný, chytrý.</item>
+        <item>Kladný postoj.</item>
+        <item>Důvěřujte cestě.</item>
+        <item>Neochvějné odhodlání.</item>
+        <item>Neúspěchy = návrat.</item>
+        <item>Proměňte sny ve skutečnost.</item>
+        <item>Zavázat se k cílům.</item>
+        <item>Síla, meze se nekladou.</item>
+        <item>Hlavu vzhůru, průlom.</item>
+        <item>Váš potenciál září.</item>
+        <item>Sny na dosah.</item>
+        <item>Jsi nezastavitelný!</item>
+        <item>Věřit, dosáhnout.</item>
+        <item>Posuňte za hranice.</item>
+        <item>Vytrvalost se vyplácí.</item>
+        <item>Zůstaňte nebojácní!</item>
+        <item>Povznést se nad výzvy.</item>
+        <item>Sni dál ve velkém.</item>
+        <item>Žijte účelově.</item>
+        <item>Zaměřte se na to dobré.</item>
+        <item>Síla zevnitř.</item>
+        <item>Věřte v magii.</item>
+        <item>Usmívej se, máš to.</item>
+        <item>Nikdy neztrácej naději.</item>
+        <item>Objímejte každý okamžik.</item>
+        <item>Buď svým vlastním hrdinou.</item>
+        <item>Ty stačí.</item>
+        <item>Překonejte své strachy.</item>
+        <item>Využijte den!</item>
+        <item>Miluj především sebe.</item>
+        <item>Zůstaňte pozitivní, vždy.</item>
+        <item>Jsi válečník.</item>
+        <item>Věřte v sebe.</item>
+        <item>Využijte možnosti.</item>
+        <item>Žít s vášní.</item>
+        <item>Pokračuj v pohybu vpřed.</item>
+        <item>Jsi nezastavitelný!</item>
+        <item>Zůstaňte vám věrní.</item>
+        <item>Žijte odvážně.</item>
+        <item>Udržovat víru.</item>
+        <item>Síla v neštěstí.</item>
+        <item>Každý den, růst.</item>
+        <item>Vytrvalost, vítězství.</item>
+        <item>Pronásledujte své vášně.</item>
+        <item>Najděte radost na cestách.</item>
+        <item>Riskujte, prosperujte.</item>
+        <item>Zůstaň silný, statečný.</item>
+        <item>Věřte vnitřní moudrosti.</item>
+        <item>Svítit dál.</item>
+        <item>Sni věř Dosáhni.</item>
+        <item>Buďte nezastavitelní.</item>
+        <item>Vlastnit svou velikost.</item>
+        <item>Přijmout neznámé.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Věř v sebe.</item>
+        <item>Vždy rozdávejte laskavost.</item>
+        <item>Věřte ve své sny.</item>
+        <item>Zůstaňte soustředění, odhodlaní.</item>
+        <item>Přijměte svou cestu.</item>
+        <item>Hlavu vzhůru.</item>
+        <item>Nikdy se nevzdávej naděje.</item>
+        <item>Síla zevnitř.</item>
+        <item>Zůstaňte odolní, silní.</item>
+        <item>Jsi nezastavitelný!</item>
+        <item>Přijměte výzvu.</item>
+        <item>Udržujte oheň v plamenech.</item>
+        <item>Soustřeďte se na to, co je možné.</item>
+        <item>Sni ve velkém, tvrdě pracuj.</item>
+        <item>Mějte oči na ceně.</item>
+        <item>Důvěřujte procesu.</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Věřit, dosáhnout, uspět.</item>
+        <item>Zůstaňte vždy inspirováni.</item>
+        <item>Buďte nebojácní při pronásledování.</item>
+        <item>Zůstaňte při zemi, vstaňte.</item>
+        <item>Najděte sílu v boji.</item>
+        <item>Přijměte každou výzvu.</item>
+        <item>Zůstaň odvážný, zůstaň jasný.</item>
+        <item>Jste schopni velikosti.</item>
+        <item>Věřte své cestě.</item>
+        <item>Bojuj dál, zvedni se.</item>
+        <item>Věřit v nemožné.</item>
+        <item>Zůstaňte odolní, nikdy nedávejte.</item>
+        <item>Jsi silnější, než víš.</item>
+        <item>Žijte s vášní a záměrem.</item>
+        <item>Najděte radost na každé cestě.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaňte pozitivní, zůstaňte silní.</item>
+        <item>Každý den je nová šance.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Pokračujte v posouvání za hranice.</item>
+        <item>Věřte své vnitřní síle.</item>
+        <item>Jsi předurčen k velikosti.</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Jste předurčeni k velikosti!</item>
+        <item>Věřte ve své sny!</item>
+        <item>Zůstaňte odhodlaní, uspěte.</item>
+        <item>Pokračujte v cestě ke svým cílům.</item>
+        <item>Neúnavně jděte za svými sny.</item>
+        <item>Síla pochází zevnitř.</item>
+        <item>Soustřeďte se na své cíle.</item>
+        <item>Jsi schopen všeho.</item>
+        <item>Zůstaň nebojácný, zůstaň silný.</item>
+        <item>Věřit, dosáhnout, uspět!</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Zůstaňte odolní, povzneste se výše.</item>
+        <item>Sílu máte v sobě.</item>
+        <item>Snít ve velkém, tvrdě pracovat, dosáhnout.</item>
+        <item>Zůstaňte soustředění, zůstaňte silní.</item>
+        <item>Jsi silnější, než si myslíš!</item>
+        <item>Věř v sebe, vždy.</item>
+        <item>Zůstaňte odhodlaní, zůstaňte silní.</item>
+        <item>Využijte každou příležitost.</item>
+        <item>Jste schopni velikosti!</item>
+        <item>Zůstaňte věrní sami sobě.</item>
+        <item>Důvěřujte své cestě.</item>
+        <item>Pokračujte v tlačení dopředu.</item>
+        <item>Sni věř Dosáhni!</item>
+    </string-array>
+</resources>

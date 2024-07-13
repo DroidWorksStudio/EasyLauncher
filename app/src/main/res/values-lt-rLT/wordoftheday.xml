@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>Išlikite atsparūs!</item>
+        <item>Tu tai supratai!</item>
+        <item>Ryškiai spindėti!</item>
+        <item>Sukurti likimą.</item>
+        <item>Apkabinkite kelionę.</item>
+        <item>Stiprybė viduje.</item>
+        <item>Spausk toliau!</item>
+        <item>Tu nuostabus!</item>
+        <item>Pasitikėk, niekada neduok.</item>
+        <item>Neribotas potencialas.</item>
+        <item>Pažanga prieš tobulumą.</item>
+        <item>Iššūkiai = augimas.</item>
+        <item>Vertas sėkmės.</item>
+        <item>Sek savo svajones.</item>
+        <item>Įveikti viską!</item>
+        <item>Ryžtas laimi.</item>
+        <item>Kiekvienas žingsnis yra svarbus.</item>
+        <item>Išlik pozityvus!</item>
+        <item>Atsparumo akmenys.</item>
+        <item>Stiprybės tavyje.</item>
+        <item>Švęskite progresą.</item>
+        <item>Sunkus darbas atsiperka.</item>
+        <item>Pasitikėk, tikėk.</item>
+        <item>Unikali kelionė.</item>
+        <item>Akys į prizą.</item>
+        <item>Pasiekite bet ką!</item>
+        <item>Ženkite drąsius žingsnius.</item>
+        <item>Aistra tave kursto.</item>
+        <item>Susikoncentruokite į tikslus.</item>
+        <item>Ištverti, laimėti.</item>
+        <item>Tikėjimo savimi raktas.</item>
+        <item>Nusipelnė gero.</item>
+        <item>Siekite svajonių.</item>
+        <item>Drąsus, stiprus, protingas.</item>
+        <item>Teigiamas požiūris.</item>
+        <item>Pasitikėk kelione.</item>
+        <item>Nepajudinamas ryžtas.</item>
+        <item>Nesėkmės = sugrįžimas.</item>
+        <item>Paverskite svajones realybe.</item>
+        <item>Įsipareigokite siekti tikslų.</item>
+        <item>Jėga, be ribų.</item>
+        <item>Galva aukštyn, proveržis.</item>
+        <item>Jūsų potencialas šviečia.</item>
+        <item>Svajonės ranka pasiekiamos.</item>
+        <item>Tu nesustabdomas!</item>
+        <item>Tikėti, pasiekti.</item>
+        <item>Peržengti praeities ribas.</item>
+        <item>Atkaklumas apsimoka.</item>
+        <item>Likite bebaimis!</item>
+        <item>Pakilkite virš iššūkių.</item>
+        <item>Svajokite toliau daug.</item>
+        <item>Gyvenk su tikslu.</item>
+        <item>Susitelk į gerą.</item>
+        <item>Stiprybė iš vidaus.</item>
+        <item>Tikėkite magija.</item>
+        <item>Šypsokis, tu turi tai.</item>
+        <item>Niekada neprarask vilties.</item>
+        <item>Apkabink kiekvieną akimirką.</item>
+        <item>Būk pats sau herojus.</item>
+        <item>Tau užtenka.</item>
+        <item>Nugalėkite savo baimes.</item>
+        <item>Pasinaudokite diena!</item>
+        <item>Pirmiausia mylėk save.</item>
+        <item>Būkite pozityvus, visada.</item>
+        <item>Tu esi karys.</item>
+        <item>Tikėk savimi.</item>
+        <item>Pasinaudokite galimybėmis.</item>
+        <item>Gyvenk su aistra.</item>
+        <item>Toliau judėkite į priekį.</item>
+        <item>Tu nesustabdomas!</item>
+        <item>Likite sau ištikimi.</item>
+        <item>Gyvenk drąsiai.</item>
+        <item>Neprarask vilties.</item>
+        <item>Stiprybė nelaimėje.</item>
+        <item>Kasdien augk.</item>
+        <item>Atkaklumas, pergalė.</item>
+        <item>Vykdykite savo aistras.</item>
+        <item>Raskite džiaugsmą kelionėje.</item>
+        <item>Rizikuoti, klestėti.</item>
+        <item>Išlik stiprus, drąsus.</item>
+        <item>Pasitikėk vidine išmintimi.</item>
+        <item>Ir toliau ryškiai spindi.</item>
+        <item>Svajokite, tikėkite, pasiekite.</item>
+        <item>Būk nesustabdomas.</item>
+        <item>Turėkite savo didybę.</item>
+        <item>Apkabink nežinomybę.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Pasitikėk savimi.</item>
+        <item>Visada skleiskite gerumą.</item>
+        <item>Tikėk savo svajonėmis.</item>
+        <item>Išlikite susikaupę, ryžtingi.</item>
+        <item>Priimk savo kelionę.</item>
+        <item>Laikyk galvą iškėlęs aukštyn.</item>
+        <item>Niekada nepraleiskite vilties.</item>
+        <item>Stiprybė iš vidaus.</item>
+        <item>Išlikite tvirti, tvirti.</item>
+        <item>Tu nesustabdomas!</item>
+        <item>Priimk iššūkį.</item>
+        <item>Laikykite ugnį degant.</item>
+        <item>Sutelkite dėmesį į tai, kas įmanoma.</item>
+        <item>Svajokite daug, sunkiai dirbkite.</item>
+        <item>Stebėkite prizą.</item>
+        <item>Pasitikėk procesu.</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Tikėkite, pasiekite, pasisek.</item>
+        <item>Visada būkite įkvėptas.</item>
+        <item>Būkite bebaimis siekdami.</item>
+        <item>Būkite nusiteikę, pakilkite.</item>
+        <item>Raskite jėgų kovoje.</item>
+        <item>Priimk kiekvieną iššūkį.</item>
+        <item>Būkite drąsūs, būkite ryškūs.</item>
+        <item>Tu sugebi didybę.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Kovok toliau, kilk.</item>
+        <item>Tikėkite neįmanomu.</item>
+        <item>Išlik atsparus, niekada neduok.</item>
+        <item>Tu stipresnis nei žinai.</item>
+        <item>Gyvenk su aistra ir tikslu.</item>
+        <item>Raskite džiaugsmo kiekvienoje kelionėje.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Būkite pozityvūs, stiprūs.</item>
+        <item>Kiekviena diena yra nauja galimybė.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Toliau peržengti ribas.</item>
+        <item>Pasitikėk savo vidine jėga.</item>
+        <item>Tau lemta didybė.</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tau lemta didybė!</item>
+        <item>Tikėk savo svajonėmis!</item>
+        <item>Būkite ryžtingi, pasisek.</item>
+        <item>Toliau judėkite savo tikslų link.</item>
+        <item>Nenumaldomai siek savo svajonių.</item>
+        <item>Jėga ateina iš vidaus.</item>
+        <item>Būkite susitelkę ties savo tikslais.</item>
+        <item>Tu sugebi bet ką.</item>
+        <item>Likite bebaimis, būk stiprus.</item>
+        <item>Tikėkite, pasiekite, pasisek!</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Išlik atsparus, pakilk aukščiau.</item>
+        <item>Jūs turite savyje galią.</item>
+        <item>Svajokite daug, sunkiai dirbkite, pasiekite.</item>
+        <item>Būkite susikaupę, išlikite stiprūs.</item>
+        <item>Jūs esate stipresnis nei manote!</item>
+        <item>Tikėkite savimi, visada.</item>
+        <item>Būkite ryžtingi, stiprūs.</item>
+        <item>Pasinaudokite kiekviena galimybe.</item>
+        <item>Tu sugebi didybę!</item>
+        <item>Likite ištikimi sau.</item>
+        <item>Pasitikėk savo kelione.</item>
+        <item>Toliau stumkite į priekį.</item>
+        <item>Svajokite, tikėkite, pasiekite!</item>
+    </string-array>
+</resources>

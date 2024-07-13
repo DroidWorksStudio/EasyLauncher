@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>Rimani resiliente!</item>
+        <item>L\'hai capito!</item>
+        <item>Brilla luminoso!</item>
+        <item>Crea il destino.</item>
+        <item>Abbraccia il viaggio.</item>
+        <item>Forza interiore.</item>
+        <item>Continua a spingere!</item>
+        <item>Sei incredibile!</item>
+        <item>Abbi fiducia, non dare mai.</item>
+        <item>Potenziale illimitato.</item>
+        <item>Progresso rispetto alla perfezione.</item>
+        <item>Sfide = crescita.</item>
+        <item>Degno di successo.</item>
+        <item>Insegui i tuoi sogni.</item>
+        <item>Supera tutto!</item>
+        <item>La determinazione vince.</item>
+        <item>Ogni passo conta.</item>
+        <item>Sii positivo!</item>
+        <item>La resilienza spacca.</item>
+        <item>Forza in te.</item>
+        <item>Festeggia il progresso.</item>
+        <item>Il duro lavoro paga.</item>
+        <item>Abbi fiducia, abbi fede.</item>
+        <item>Viaggio unico.</item>
+        <item>Occhi puntati sul premio.</item>
+        <item>Ottieni qualsiasi cosa!</item>
+        <item>Fai passi coraggiosi.</item>
+        <item>La passione ti alimenta.</item>
+        <item>Concentrati sugli obiettivi.</item>
+        <item>Perseverare, vincere.</item>
+        <item>Chiave della fiducia in se stessi.</item>
+        <item>Meritare il bene.</item>
+        <item>Raggiungi i sogni.</item>
+        <item>Coraggioso, forte, intelligente.</item>
+        <item>Attitudine positiva.</item>
+        <item>Fidati del viaggio.</item>
+        <item>Determinazione incrollabile.</item>
+        <item>Battute d\'arresto = ritorno.</item>
+        <item>Trasforma i sogni in realtà.</item>
+        <item>Impegnarsi per gli obiettivi.</item>
+        <item>Forza, senza limiti.</item>
+        <item>Testa alta, svolta.</item>
+        <item>Il tuo potenziale brilla.</item>
+        <item>Sogni a portata di mano.</item>
+        <item>Sei inarrestabile!</item>
+        <item>Credi, ottieni.</item>
+        <item>Supera i limiti.</item>
+        <item>La perseveranza paga.</item>
+        <item>Rimani senza paura!</item>
+        <item>Superare le sfide.</item>
+        <item>Continua a sognare in grande.</item>
+        <item>Vivi con uno scopo.</item>
+        <item>Concentrarsi sulle cose positive.</item>
+        <item>Forza dall\'interno.</item>
+        <item>Credi nella magia.</item>
+        <item>Sorridi, ce l\'hai.</item>
+        <item>Mai perdere la speranza.</item>
+        <item>Abbraccia ogni momento.</item>
+        <item>Sii il tuo eroe.</item>
+        <item>Sei abbastanza.</item>
+        <item>Conquista le tue paure.</item>
+        <item>Cogliere l\'attimo!</item>
+        <item>Ama prima te stesso.</item>
+        <item>Rimani positivo, sempre.</item>
+        <item>Sei un guerriero.</item>
+        <item>Credi in te stesso.</item>
+        <item>Abbraccia le possibilità.</item>
+        <item>Vivi con passione.</item>
+        <item>Continuare ad andare avanti.</item>
+        <item>Sei inarrestabile!</item>
+        <item>Rimani fedele a te.</item>
+        <item>Vivi con coraggio.</item>
+        <item>Abbi fede.</item>
+        <item>Forza nelle avversità.</item>
+        <item>Ogni giorno, cresci.</item>
+        <item>Perseveranza, vittoria.</item>
+        <item>Insegui le tue passioni.</item>
+        <item>Trova gioia nel viaggio.</item>
+        <item>Prendi dei rischi, prospera.</item>
+        <item>Sii forte, coraggioso.</item>
+        <item>Abbi fiducia nella saggezza interiore.</item>
+        <item>Continua a brillare.</item>
+        <item>Sogna credi raggiungi.</item>
+        <item>Sii inarrestabile.</item>
+        <item>Possiedi la tua grandezza.</item>
+        <item>Abbraccia l\'ignoto.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Credi in te stesso.</item>
+        <item>Diffondi sempre la gentilezza.</item>
+        <item>Credi nei tuoi sogni.</item>
+        <item>Rimani concentrato, determinato.</item>
+        <item>Abbraccia il tuo viaggio.</item>
+        <item>Tieni la testa alta.</item>
+        <item>Mai perdere la speranza.</item>
+        <item>Forza dall\'interno.</item>
+        <item>Rimani resiliente, forte.</item>
+        <item>Sei inarrestabile!</item>
+        <item>Accetta la sfida.</item>
+        <item>Mantieni il fuoco acceso.</item>
+        <item>Concentrati su ciò che è possibile.</item>
+        <item>Sogna in grande, lavora duro.</item>
+        <item>Tieni gli occhi sul premio.</item>
+        <item>Fidati del processo.</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Credere, ottenere, avere successo.</item>
+        <item>Rimani sempre ispirato.</item>
+        <item>Sii impavido nell\'inseguimento.</item>
+        <item>Rimani con i piedi per terra, rialzati.</item>
+        <item>Trova la forza nella lotta.</item>
+        <item>Accetta ogni sfida.</item>
+        <item>Sii audace, sii brillante.</item>
+        <item>Sei capace di grandezza.</item>
+        <item>Fidati del tuo viaggio.</item>
+        <item>Continua a combattere, continua a rialzarti.</item>
+        <item>Credi nell\'impossibile.</item>
+        <item>Rimani resiliente, non mollare mai.</item>
+        <item>Sei più forte di quanto pensi.</item>
+        <item>Vivi con passione e scopo.</item>
+        <item>Trova gioia in ogni viaggio.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Rimani positivo, rimani forte.</item>
+        <item>Ogni giorno è una nuova possibilità.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Continua a superare i limiti.</item>
+        <item>Abbi fiducia nella tua forza interiore.</item>
+        <item>Sei destinato alla grandezza.</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Sei destinato alla grandezza!</item>
+        <item>Credi nei tuoi sogni!</item>
+        <item>Rimani determinato e avrai successo.</item>
+        <item>Continua a muoverti verso i tuoi obiettivi.</item>
+        <item>Insegui i tuoi sogni senza sosta.</item>
+        <item>La forza viene da dentro.</item>
+        <item>Rimani concentrato sui tuoi obiettivi.</item>
+        <item>Sei capace di tutto.</item>
+        <item>Sii impavido, sii forte.</item>
+        <item>Credere, ottenere, avere successo!</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Rimani resiliente, elevati al di sopra.</item>
+        <item>Hai il potere dentro di te.</item>
+        <item>Sogna in grande, lavora duro, raggiungi i risultati.</item>
+        <item>Rimani concentrato, rimani forte.</item>
+        <item>Sei più forte di quanto pensi!</item>
+        <item>Credi in te stesso, sempre.</item>
+        <item>Sii determinato, sii forte.</item>
+        <item>Cogli ogni opportunità.</item>
+        <item>Sei capace di grandezza!</item>
+        <item>Rimani fedele a te stesso.</item>
+        <item>Abbi fiducia nel tuo viaggio.</item>
+        <item>Continua ad andare avanti.</item>
+        <item>Sogna credi raggiungi!</item>
+    </string-array>
+</resources>

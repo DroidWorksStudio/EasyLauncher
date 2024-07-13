@@ -12,6 +12,8 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Улюблені програми</string>
     <string name="hidden_fragment_name">Приховані програми</string>
+    <string name="favorite_fragment_no_apps">Немає улюблених програм</string>
+    <string name="hidden_fragment_no_apps">Немає прихованих програм</string>
     <string name="search">Пошук</string>
     <string name="bottom_dialog_app_rename">Перейменувати</string>
     <string name="bottom_dialog_add_to_home">Додати на головний екран</string>
