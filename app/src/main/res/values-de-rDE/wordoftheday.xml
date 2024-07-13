@@ -1,454 +1,454 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="settings_appearance_daily_word_default">
-        <item>Stay resilient!</item>
-        <item>You got this!</item>
-        <item>Shine bright!</item>
-        <item>Create destiny.</item>
-        <item>Embrace journey.</item>
-        <item>Strength within.</item>
-        <item>Keep pushing!</item>
-        <item>You\'re amazing!</item>
-        <item>Trust, never give.</item>
-        <item>Limitless potential.</item>
-        <item>Progress over perfection.</item>
-        <item>Challenges = growth.</item>
-        <item>Worthy of success.</item>
-        <item>Chase your dreams.</item>
-        <item>Overcome all!</item>
-        <item>Determination wins.</item>
-        <item>Every step counts.</item>
-        <item>Stay positive!</item>
-        <item>Resilience rocks.</item>
-        <item>Strength in you.</item>
-        <item>Celebrate progress.</item>
-        <item>Hard work pays.</item>
-        <item>Trust, have faith.</item>
-        <item>Unique journey.</item>
-        <item>Eyes on prize.</item>
-        <item>Achieve anything!</item>
-        <item>Take bold steps.</item>
-        <item>Passion fuels you.</item>
-        <item>Focus on goals.</item>
-        <item>Persevere, win.</item>
-        <item>Self-belief key.</item>
-        <item>Deserving of good.</item>
-        <item>Reach for dreams.</item>
-        <item>Brave, strong, smart.</item>
-        <item>Positive attitude.</item>
-        <item>Trust the journey.</item>
-        <item>Unwavering determination.</item>
-        <item>Setbacks = comeback.</item>
-        <item>Turn dreams reality.</item>
-        <item>Commit to goals.</item>
-        <item>Strength, no bounds.</item>
-        <item>Head up, breakthrough.</item>
-        <item>Your potential shines.</item>
-        <item>Dreams within reach.</item>
-        <item>You\'re unstoppable!</item>
-        <item>Believe, achieve.</item>
-        <item>Push past limits.</item>
-        <item>Perseverance pays.</item>
-        <item>Stay fearless!</item>
-        <item>Rise above challenges.</item>
-        <item>Keep dreaming big.</item>
-        <item>Live with purpose.</item>
-        <item>Focus on the good.</item>
-        <item>Strength from within.</item>
-        <item>Believe in magic.</item>
-        <item>Smile, you\'ve got this.</item>
-        <item>Never lose hope.</item>
-        <item>Embrace every moment.</item>
-        <item>Be your own hero.</item>
-        <item>You\'re enough.</item>
-        <item>Conquer your fears.</item>
-        <item>Seize the day!</item>
-        <item>Love yourself first.</item>
-        <item>Stay positive, always.</item>
-        <item>You\'re a warrior.</item>
-        <item>Believe in yourself.</item>
-        <item>Embrace possibilities.</item>
-        <item>Live with passion.</item>
-        <item>Keep moving forward.</item>
-        <item>You\'re unstoppable!</item>
-        <item>Stay true to you.</item>
-        <item>Live boldly.</item>
-        <item>Keep the faith.</item>
-        <item>Strength in adversity.</item>
-        <item>Every day, grow.</item>
-        <item>Perseverance, victory.</item>
-        <item>Chase your passions.</item>
-        <item>Find joy in journey.</item>
-        <item>Take risks, thrive.</item>
-        <item>Stay strong, brave.</item>
-        <item>Trust inner wisdom.</item>
-        <item>Keep shining bright.</item>
-        <item>Dream, believe, achieve.</item>
-        <item>Be unstoppable.</item>
-        <item>Own your greatness.</item>
-        <item>Embrace the unknown.</item>
-        <item>Keep pushing forward.</item>
-        <item>Trust in yourself.</item>
-        <item>Spread kindness always.</item>
-        <item>Believe in your dreams.</item>
-        <item>Stay focused, determined.</item>
-        <item>Embrace your journey.</item>
-        <item>Keep your head up.</item>
-        <item>Never give up hope.</item>
-        <item>Strength from within.</item>
-        <item>Stay resilient, strong.</item>
-        <item>You\'re unstoppable!</item>
-        <item>Embrace the challenge.</item>
-        <item>Keep the fire burning.</item>
-        <item>Focus on what\'s possible.</item>
-        <item>Dream big, work hard.</item>
-        <item>Keep your eyes on prize.</item>
-        <item>Trust the process.</item>
-        <item>Stay true to yourself.</item>
-        <item>Believe, achieve, succeed.</item>
-        <item>Stay inspired always.</item>
-        <item>Be fearless in pursuit.</item>
-        <item>Stay grounded, rise.</item>
-        <item>Find strength in struggle.</item>
-        <item>Embrace every challenge.</item>
-        <item>Stay bold, stay bright.</item>
-        <item>You\'re capable of greatness.</item>
-        <item>Trust your journey.</item>
-        <item>Keep fighting, keep rising.</item>
-        <item>Believe in the impossible.</item>
-        <item>Stay resilient, never give.</item>
-        <item>You\'re stronger than you know.</item>
-        <item>Live with passion and purpose.</item>
-        <item>Find joy in every journey.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay positive, stay strong.</item>
-        <item>Every day is a new chance.</item>
-        <item>Embrace every opportunity.</item>
-        <item>Keep pushing past limits.</item>
-        <item>Trust your inner strength.</item>
-        <item>You\'re destined for greatness.</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>You\'re destined for greatness!</item>
-        <item>Believe in your dreams!</item>
-        <item>Stay determined, succeed.</item>
-        <item>Keep moving towards your goals.</item>
-        <item>Chase your dreams relentlessly.</item>
-        <item>Strength comes from within.</item>
-        <item>Stay focused on your goals.</item>
-        <item>You\'re capable of anything.</item>
-        <item>Stay fearless, stay strong.</item>
-        <item>Believe, achieve, succeed!</item>
-        <item>Trust in your journey.</item>
-        <item>Stay resilient, rise above.</item>
-        <item>You have the power within you.</item>
-        <item>Dream big, work hard, achieve.</item>
-        <item>Stay focused, stay strong.</item>
-        <item>You\'re stronger than you think!</item>
-        <item>Believe in yourself, always.</item>
-        <item>Stay determined, stay strong.</item>
-        <item>Embrace every opportunity.</item>
-        <item>You\'re capable of greatness!</item>
-        <item>Stay true to yourself.</item>
-        <item>Trust in your journey.</item>
-        <item>Keep pushing forward.</item>
-        <item>Dream, believe, achieve!</item>
+        <item>Bleiben Sie widerstandsfähig!</item>
+        <item>Du schaffst das!</item>
+        <item>Hell strahlen!</item>
+        <item>Erschaffe Schicksal.</item>
+        <item>Umarme die Reise.</item>
+        <item>Kraft von innen.</item>
+        <item>Weiter so!</item>
+        <item>Du bist fantastisch!</item>
+        <item>Vertraue, gib niemals auf.</item>
+        <item>Grenzenloses Potenzial.</item>
+        <item>Fortschritt statt Perfektion.</item>
+        <item>Herausforderungen = Wachstum.</item>
+        <item>Erfolgreich.</item>
+        <item>Verfolge deine Träume.</item>
+        <item>Überwinde alles!</item>
+        <item>Entschlossenheit siegt.</item>
+        <item>Jeder Schritt zählt.</item>
+        <item>Bleib positiv!</item>
+        <item>Resilienz ist super.</item>
+        <item>Kraft in dir.</item>
+        <item>Feiern Sie den Fortschritt.</item>
+        <item>Harte Arbeit zahlt sich aus.</item>
+        <item>Vertraue, habe Glauben.</item>
+        <item>Einzigartige Reise.</item>
+        <item>Augen auf den Preis gerichtet.</item>
+        <item>Erreichen Sie alles!</item>
+        <item>Machen Sie mutige Schritte.</item>
+        <item>Leidenschaft treibt Sie an.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Durchhalten, gewinnen.</item>
+        <item>Der Schlüssel zum Glauben an sich selbst.</item>
+        <item>Verdient Gutes.</item>
+        <item>Greifen Sie nach Träumen.</item>
+        <item>Mutig, stark, klug.</item>
+        <item>Positive Einstellung.</item>
+        <item>Vertraue der Reise.</item>
+        <item>Unerschütterliche Entschlossenheit.</item>
+        <item>Rückschläge = Comeback.</item>
+        <item>Machen Sie Träume wahr.</item>
+        <item>Setzen Sie sich Ziele.</item>
+        <item>Stärke, keine Grenzen.</item>
+        <item>Kopf hoch, Durchbruch.</item>
+        <item>Ihr Potenzial erstrahlt.</item>
+        <item>Träume in Reichweite.</item>
+        <item>Du bist nicht aufzuhalten!</item>
+        <item>Glauben, Erreichen.</item>
+        <item>Überschreiten Sie Grenzen.</item>
+        <item>Durchhaltevermögen zahlt sich aus.</item>
+        <item>Bleiben Sie furchtlos!</item>
+        <item>Stellen Sie sich den Herausforderungen.</item>
+        <item>Träumen Sie weiterhin groß.</item>
+        <item>Lebe mit einem Ziel.</item>
+        <item>Auf das Gute fokussieren.</item>
+        <item>Kraft von innen.</item>
+        <item>Glaube an Magie.</item>
+        <item>Lächeln Sie, Sie schaffen das.</item>
+        <item>Gib nie die Hoffnung auf.</item>
+        <item>Umarmen jeden Augenblick.</item>
+        <item>Sein eigener Held sein.</item>
+        <item>Du bist genug.</item>
+        <item>Überwinde deine Ängste.</item>
+        <item>Nutze den Tag!</item>
+        <item>Liebe dich zuerst.</item>
+        <item>Bleiben Sie immer positiv.</item>
+        <item>Du bist ein Krieger.</item>
+        <item>An sich selbst glauben.</item>
+        <item>Nutzen Sie die Möglichkeiten.</item>
+        <item>Leben mit Leidenschaft.</item>
+        <item>Gib niemals auf.</item>
+        <item>Du bist nicht aufzuhalten!</item>
+        <item>Bleibe ehrlich zu dir selber.</item>
+        <item>Lebe mutig.</item>
+        <item>Behalte den Glauben.</item>
+        <item>Stärke in der Not.</item>
+        <item>Wachsen Sie jeden Tag.</item>
+        <item>Ausdauer, Sieg.</item>
+        <item>Verfolge deine Leidenschaften.</item>
+        <item>Finden Sie Freude an der Reise.</item>
+        <item>Gehen Sie Risiken ein und haben Sie Erfolg.</item>
+        <item>Bleib stark und mutig.</item>
+        <item>Vertraue der inneren Weisheit.</item>
+        <item>Leuchte weiterhin hell.</item>
+        <item>Träume, glaube, erreiche.</item>
+        <item>Seien Sie unaufhaltsam.</item>
+        <item>Stehen Sie zu Ihrer Größe.</item>
+        <item>Umarme das Unbekannte.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Vertraue dir selbst.</item>
+        <item>Verbreiten Sie immer Freundlichkeit.</item>
+        <item>Glaube an deine Träume.</item>
+        <item>Bleiben Sie konzentriert und zielstrebig.</item>
+        <item>Umarme deine Reise.</item>
+        <item>Kopf hoch.</item>
+        <item>Die Hoffnung nie aufgeben.</item>
+        <item>Kraft von innen.</item>
+        <item>Bleiben Sie belastbar und stark.</item>
+        <item>Du bist nicht aufzuhalten!</item>
+        <item>Nehmen Sie die Herausforderung an.</item>
+        <item>Lass das Feuer brennen.</item>
+        <item>Konzentrieren Sie sich auf das, was möglich ist.</item>
+        <item>Träume groß und arbeite hart.</item>
+        <item>Behalten Sie das Ziel im Auge.</item>
+        <item>Vertraue dem Prozess.</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Glauben, erreichen, erfolgreich sein.</item>
+        <item>Bleiben Sie immer inspiriert.</item>
+        <item>Seien Sie bei der Verfolgung furchtlos.</item>
+        <item>Bleib auf dem Boden, steh auf.</item>
+        <item>Finde Kraft im Kampf.</item>
+        <item>Nehmen Sie jede Herausforderung an.</item>
+        <item>Bleiben Sie mutig und hellwach.</item>
+        <item>Sie sind zu Großem fähig.</item>
+        <item>Vertraue deiner Reise.</item>
+        <item>Kämpfe weiter und steh weiter auf.</item>
+        <item>Glaube an das Unmögliche.</item>
+        <item>Bleiben Sie widerstandsfähig und geben Sie niemals auf.</item>
+        <item>Du bist stärker als du denkst.</item>
+        <item>Lebe mit Leidenschaft und Zielstrebigkeit.</item>
+        <item>Finden Sie Freude auf jeder Reise.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie positiv, bleiben Sie stark.</item>
+        <item>Jeder Tag ist eine neue Chance.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Überschreiten Sie weiterhin Grenzen.</item>
+        <item>Vertraue deiner inneren Stärke.</item>
+        <item>Sie sind zu Großem bestimmt.</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Sie sind zu Großem bestimmt!</item>
+        <item>Glaube an deine Träume!</item>
+        <item>Bleiben Sie zielstrebig und haben Sie Erfolg.</item>
+        <item>Bewegen Sie sich weiter auf Ihre Ziele zu.</item>
+        <item>Verfolge deine Träume unermüdlich.</item>
+        <item>Kraft kommt von innen.</item>
+        <item>Konzentrieren Sie sich auf Ihre Ziele.</item>
+        <item>Du bist zu allem fähig.</item>
+        <item>Bleiben Sie furchtlos und stark.</item>
+        <item>Glauben, erreichen, erfolgreich sein!</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Bleiben Sie belastbar und übertreffen Sie sich.</item>
+        <item>Du hast die Kraft in dir.</item>
+        <item>Träume groß, arbeite hart, erreiche etwas.</item>
+        <item>Bleiben Sie konzentriert und stark.</item>
+        <item>Du bist stärker als du denkst!</item>
+        <item>Glauben Sie immer an sich selbst.</item>
+        <item>Bleiben Sie entschlossen und stark.</item>
+        <item>Nutzen Sie jede Gelegenheit.</item>
+        <item>Sie sind zu Großem fähig!</item>
+        <item>Bleib dir selbst treu.</item>
+        <item>Vertraue auf deine Reise.</item>
+        <item>Machen Sie weiter so.</item>
+        <item>Träume, glaube, erreiche!</item>
     </string-array>
 </resources>
