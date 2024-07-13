@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added placeholder text when no fave or hidden apps. - ([69742ab](https://github.com/DroidWorksStudio/EasyLauncher/commit/69742ab82fdbbe9b4f80bb913038f76264d4ec46))
+
 ### Bug Fixes:
 
 - Fixed settings if cleared - ([e5b0197](https://github.com/DroidWorksStudio/EasyLauncher/commit/e5b0197e3dc79536838a93434a784119c6332b38))
