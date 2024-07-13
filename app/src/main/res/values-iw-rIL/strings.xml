@@ -80,7 +80,7 @@
     <string name="settings_others_feedback">משוב</string>
     <string name="settings_others_github">Github</string>
     <string name="settings_backups_backup">העדפות גיבוי</string>
-    <string name="settings_backups_clear">Clear Preferences</string>
+    <string name="settings_backups_clear">נקה העדפות</string>
     <string name="settings_backups_restore">שחזר העדפות</string>
     <string name="settings_reload_app_backup">העדפות מגובות.</string>
     <string name="settings_reload_app_restore">ההעדפות שוחזרו. מופעל מחדש.</string>
