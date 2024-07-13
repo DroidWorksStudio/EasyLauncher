@@ -12,8 +12,8 @@
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Obľúbené aplikácie</string>
     <string name="hidden_fragment_name">Skryté aplikácie</string>
-    <string name="favorite_fragment_no_apps">No Favorite Apps</string>
-    <string name="hidden_fragment_no_apps">No Hidden Apps</string>
+    <string name="favorite_fragment_no_apps">Žiadne obľúbené aplikácie</string>
+    <string name="hidden_fragment_no_apps">Žiadne skryté aplikácie</string>
     <string name="search">Vyhľadávanie</string>
     <string name="bottom_dialog_app_rename">Premenovať</string>
     <string name="bottom_dialog_add_to_home">Pridať na domovskú obrazovku</string>
