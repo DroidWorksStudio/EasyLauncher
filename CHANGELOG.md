@@ -17,8 +17,13 @@ All notable changes to this project will be documented in this file. See [conven
 - Set default colors depending on if nightMode or not. - ([d02f873](https://github.com/DroidWorksStudio/EasyLauncher/commit/d02f873a7039a0762488dc497e371de8957eb13a))
 - Fixed the appSelectionDialog from not closing right. - ([3efe245](https://github.com/DroidWorksStudio/EasyLauncher/commit/3efe24503c40a2902a075707a8c87a25332b45bf))
 
+### Dependency Updates:
+
+- Updated version numbers for libraries - ([e384206](https://github.com/DroidWorksStudio/EasyLauncher/commit/e3842066521b0f2d521ffe1514a7635945e1e530))
+
 ### Housekeeping:
 
+- Cleanup dead imports. - ([69c989e](https://github.com/DroidWorksStudio/EasyLauncher/commit/69c989e9a09f685ae7fb5e954de22c6ef7a66aab))
 - Cleaned up the Readme File screenshots - ([ae2d841](https://github.com/DroidWorksStudio/EasyLauncher/commit/ae2d84124e5424712cf2f95a0fd07c90963db78f))
 - Moved Word-of-the-day strings to there own file. - ([c727bfe](https://github.com/DroidWorksStudio/EasyLauncher/commit/c727bfec873b1f755d477e8b86239d2ff2620ee5))
 - Making the issue types a bit better. - ([64593af](https://github.com/DroidWorksStudio/EasyLauncher/commit/64593af2b8fff6d1acd44880fa12336bacf091f7))
