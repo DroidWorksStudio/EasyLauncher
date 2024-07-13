@@ -8,12 +8,77 @@
     <string name="sunrise_icon" translatable="false">&#xf051;</string>
     <string name="sunset_icon" translatable="false">&#xf052;</string>
 
-    <string name="weather_sunny" translatable="false">&#xf00d;</string>
-    <string name="weather_clear_night" translatable="false">&#xf02e;</string>
-    <string name="weather_foggy" translatable="false">&#xf014;</string>
-    <string name="weather_cloudy" translatable="false">&#xf013;</string>
-    <string name="weather_rainy" translatable="false">&#xf019;</string>
-    <string name="weather_snowy" translatable="false">&#xf01b;</string>
-    <string name="weather_thunder" translatable="false">&#xf01e;</string>
-    <string name="weather_drizzle" translatable="false">&#xf01a;</string>
+    <!-- Daytime Icons -->
+    <string name="wi_day_sunny" translatable="false">&#xf00d;</string>
+    <string name="wi_day_cloudy" translatable="false">&#xf002;</string>
+    <string name="wi_day_cloudy_gusts" translatable="false">&#xf000;</string>
+    <string name="wi_day_cloudy_windy" translatable="false">&#xf001;</string>
+    <string name="wi_day_fog" translatable="false">&#xf003;</string>
+    <string name="wi_day_hail" translatable="false">&#xf004;</string>
+    <string name="wi_day_haze" translatable="false">&#xf0b6;</string>
+    <string name="wi_day_lightning" translatable="false">&#xf005;</string>
+    <string name="wi_day_rain" translatable="false">&#xf008;</string>
+    <string name="wi_day_rain_mix" translatable="false">&#xf006;</string>
+    <string name="wi_day_rain_wind" translatable="false">&#xf007;</string>
+    <string name="wi_day_showers" translatable="false">&#xf009;</string>
+    <string name="wi_day_sleet" translatable="false">&#xf0b2;</string>
+    <string name="wi_day_sleet_storm" translatable="false">&#xf068;</string>
+    <string name="wi_day_snow" translatable="false">&#xf00a;</string>
+    <string name="wi_day_snow_thunderstorm" translatable="false">&#xf06b;</string>
+    <string name="wi_day_snow_wind" translatable="false">&#xf065;</string>
+    <string name="wi_day_sprinkle" translatable="false">&#xf00b;</string>
+    <string name="wi_day_storm_showers" translatable="false">&#xf00e;</string>
+    <string name="wi_day_sunny_overcast" translatable="false">&#xf00c;</string>
+    <string name="wi_day_thunderstorm" translatable="false">&#xf010;</string>
+    <string name="wi_day_windy" translatable="false">&#xf085;</string>
+    <string name="wi_solar_eclipse" translatable="false">&#xf06e;</string>
+    <string name="wi_hot" translatable="false">&#xf072;</string>
+    <string name="wi_day_cloudy_high" translatable="false">&#xf07d;</string>
+    <string name="wi_day_light_wind" translatable="false">&#xf0c4;</string>
+
+    <!-- Nighttime Icons -->
+    <string name="wi_night_clear" translatable="false">&#xf02e;</string>
+    <string name="wi_night_alt_cloudy" translatable="false">&#xf086;</string>
+    <string name="wi_night_alt_cloudy_gusts" translatable="false">&#xf022;</string>
+    <string name="wi_night_alt_cloudy_windy" translatable="false">&#xf023;</string>
+    <string name="wi_night_alt_hail" translatable="false">&#xf024;</string>
+    <string name="wi_night_alt_lightning" translatable="false">&#xf025;</string>
+    <string name="wi_night_alt_rain" translatable="false">&#xf028;</string>
+    <string name="wi_night_alt_rain_mix" translatable="false">&#xf026;</string>
+    <string name="wi_night_alt_rain_wind" translatable="false">&#xf027;</string>
+    <string name="wi_night_alt_showers" translatable="false">&#xf029;</string>
+    <string name="wi_night_alt_sleet" translatable="false">&#xf0b4;</string>
+    <string name="wi_night_alt_sleet_storm" translatable="false">&#xf06a;</string>
+    <string name="wi_night_alt_snow" translatable="false">&#xf02a;</string>
+    <string name="wi_night_alt_snow_thunderstorm" translatable="false">&#xf06d;</string>
+    <string name="wi_night_alt_snow_wind" translatable="false">&#xf067;</string>
+    <string name="wi_night_alt_sprinkle" translatable="false">&#xf02b;</string>
+    <string name="wi_night_alt_storm_showers" translatable="false">&#xf02c;</string>
+    <string name="wi_night_alt_thunderstorm" translatable="false">&#xf02d;</string>
+    <string name="wi_night_cloudy" translatable="false">&#xf031;</string>
+    <string name="wi_night_cloudy_gusts" translatable="false">&#xf02f;</string>
+    <string name="wi_night_cloudy_windy" translatable="false">&#xf030;</string>
+    <string name="wi_night_fog" translatable="false">&#xf04a;</string>
+    <string name="wi_night_hail" translatable="false">&#xf032;</string>
+    <string name="wi_night_lightning" translatable="false">&#xf033;</string>
+    <string name="wi_night_partly_cloudy" translatable="false">&#xf083;</string>
+    <string name="wi_night_rain" translatable="false">&#xf036;</string>
+    <string name="wi_night_rain_mix" translatable="false">&#xf034;</string>
+    <string name="wi_night_rain_wind" translatable="false">&#xf035;</string>
+    <string name="wi_night_showers" translatable="false">&#xf037;</string>
+    <string name="wi_night_sleet" translatable="false">&#xf0b3;</string>
+    <string name="wi_night_sleet_storm" translatable="false">&#xf069;</string>
+    <string name="wi_night_snow" translatable="false">&#xf038;</string>
+    <string name="wi_night_snow_thunderstorm" translatable="false">&#xf06c;</string>
+    <string name="wi_night_snow_wind" translatable="false">&#xf066;</string>
+    <string name="wi_night_sprinkle" translatable="false">&#xf039;</string>
+    <string name="wi_night_storm_showers" translatable="false">&#xf03a;</string>
+    <string name="wi_night_thunderstorm" translatable="false">&#xf03b;</string>
+    <string name="wi_lunar_eclipse" translatable="false">&#xf070;</string>
+    <string name="wi_stars" translatable="false">&#xf077;</string>
+
+    <!-- Generic Icons -->
+    <string name="wi_storm_showers" translatable="false">&#xf01d;</string>
+    <string name="wi_thunderstorm" translatable="false">&#xf01e;</string>
+    <string name="wi_na" translatable="false">&#xf07b;</string>
 </resources>
