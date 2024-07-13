@@ -80,6 +80,7 @@
     <string name="settings_others_feedback">Feedback</string>
     <string name="settings_others_github">Github</string>
     <string name="settings_backups_backup">Preferenze di backup</string>
+    <string name="settings_backups_clear">Cancella preferenze</string>
     <string name="settings_backups_restore">Ripristina preferenze</string>
     <string name="settings_reload_app_backup">Backup delle preferenze.</string>
     <string name="settings_reload_app_restore">Preferenze ripristinate. Riavvio.</string>

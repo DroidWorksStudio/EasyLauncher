@@ -80,6 +80,7 @@
     <string name="settings_others_feedback">Rückmeldung</string>
     <string name="settings_others_github">Github</string>
     <string name="settings_backups_backup">Sicherungseinstellungen</string>
+    <string name="settings_backups_clear">Einstellungen löschen</string>
     <string name="settings_backups_restore">Einstellungen wiederherstellen</string>
     <string name="settings_reload_app_backup">Einstellungen gesichert.</string>
     <string name="settings_reload_app_restore">Einstellungen wiederhergestellt. Neustart.</string>

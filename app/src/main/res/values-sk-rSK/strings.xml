@@ -80,6 +80,7 @@
     <string name="settings_others_feedback">Spätná väzba</string>
     <string name="settings_others_github">Github</string>
     <string name="settings_backups_backup">Predvoľby zálohovania</string>
+    <string name="settings_backups_clear">Vymazať predvoľby</string>
     <string name="settings_backups_restore">Obnoviť predvoľby</string>
     <string name="settings_reload_app_backup">Predvoľby sú zálohované.</string>
     <string name="settings_reload_app_restore">Predvoľby boli obnovené. Reštartovanie.</string>
