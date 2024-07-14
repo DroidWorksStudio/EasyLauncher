@@ -27,7 +27,7 @@
 <div align='center'>
     <p>
         <img src='https://img.shields.io/badge/Android-SDK_34-BD93F9?style=flat-square&logo=android&logoColor=white' alt="SDK-34">
-        <a href='https://github.com/DroidWorksStudio/EasyLauncher/blob/main/LICENSE'><img src='https://img.shields.io/badge/DWS_Source_First_License_1.0-BD93F9?style=flat-square' alt="LICENSE"></a>
+        <a href='https://github.com/DroidWorksStudio/EasyLauncher/blob/main/LICENSE'><img src='https://img.shields.io/badge/DWS_Source_First_License_1.0-FF79C6?style=flat-square' alt="LICENSE"></a>
         <br>
         <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img src='https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/total?color=50FA7B&style=flat-square' alt="releases"></a>
         <a href='https://github.com/DroidWorksStudio/EasyLauncher/releases/latest'><img src="https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/latest/total?color=50FA7B&style=flat-square" alt="GitHub Downloads (all assets, latest release)"></a>
