@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed badge color - ([b2e39c2](https://github.com/DroidWorksStudio/EasyLauncher/commit/b2e39c2878db9b04cf47dc0d147d017c4ce0352a))
 - Fixed weather icons to show correctly. - ([d60a935](https://github.com/DroidWorksStudio/EasyLauncher/commit/d60a935338a2c8a4e24e2ea82c303f927e2a0815))
 - Fixed settings if cleared - ([e5b0197](https://github.com/DroidWorksStudio/EasyLauncher/commit/e5b0197e3dc79536838a93434a784119c6332b38))
 - App name Gravity and Layout Params. - ([7622aa6](https://github.com/DroidWorksStudio/EasyLauncher/commit/7622aa68ca7eb5d8698a090778138f64063eebba))
