@@ -49,8 +49,6 @@
 - This application can be found on [F-Droid](https://f-droid.org/packages/app.easy.launcher/) and [Github](https://github.com/HeCodes2Much/EasyLauncher/releases/).
 - The latest stable version is available on the [`main`](https://github.com/HeCodes2Much/EasyLauncher/tree/main) branch, which can be cloned to build the application independently.
 - Additionally, a Github action has been set up to automatically generate an APK for every [release](https://github.com/HeCodes2Much/EasyLauncher/releases).
-- The **original** version of the application is also accessible on
-  the [Play Store](https://play.google.com/store/apps/details?id=com.series.aster.launcher), [F-Droid](https://f-droid.org/fr/packages/com.series.aster.launcher/) & [Github](https://github.com/neophtex/AsterLauncher).
 
 We try to balance customizability and minimalization well still being simple :)</h3>
 
@@ -102,17 +100,33 @@ We try to balance customizability and minimalization well still being simple :)<
 
 ## Credits
 
-- [neophtex/AsterLauncher](https://github.com/neophtex/AsterLauncher)
+- This project is partially based on code from [neophtex/AsterLauncher](https://github.com/neophtex/AsterLauncher), though it has been significantly modified.
+
+
+Sure, here is a revised and improved version of the license description:
+
+---
 
 ## License
 
-**EasyLauncher is proudly licensed under the open source GPL3 license, granting users the freedom to use, study, modify and distribute it at will.**
+**EasyLauncher is proudly licensed under the DWS Source First License 1.0, which provides users with the rights to use, study, modify, and distribute the software under the conditions specified below.**
 
-The Copyleft provision guarantees that these freedoms remain intact, ensuring that EasyLauncher will remain a fully open-source project. With access to the full source code, anyone
-can build, fork, and customize the application to their heart's content, unleashing its full potential.
+- **Non-Commercial Use**: EasyLauncher may be used or modified for non-commercial purposes only, such as personal use, research, experimentation, testing, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance.
 
-- EasyLauncher does not have network access.
-- EasyLauncher does not collect or transmit any data in any way whatsoever.
+- **Distribution**: You may distribute EasyLauncher or provide it to others free of charge, as long as it remains for non-commercial purposes.
+
+- **Integrity of Notices**: You must retain any licensing, copyright, or other notices of the Licensor in the software. Additionally, you cannot remove or obscure any functionality related to payment to the Licensor in distributed copies.
+
+- **Modifications**: If you modify EasyLauncher, you must include a prominent notice in any modified copies stating that you have modified the software. This can be a statement in a readme file or an in-application about section.
+
+- **No Network Access**: EasyLauncher does not have network access.
+
+- **No Data Collection**: EasyLauncher does not collect or transmit any data in any way whatsoever.
+
+The **Copyleft** provision ensures that these freedoms are preserved, guaranteeing that EasyLauncher remains a fully open-source project. With access to the full source code, anyone can build, fork, and customize the application to unlock its full potential.
+
+For further details, refer to the full text of the [DWS Source First License 1.0](LICENSE) included with this software.
+
 
 ## Permissions
 
