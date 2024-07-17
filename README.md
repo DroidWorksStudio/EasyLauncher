@@ -37,7 +37,6 @@
         <br>
         <img src='https://img.shields.io/badge/Maintained-yes-FF5555?style=flat-square' alt="Maintained">
     </p>
-
 </div>
 
 ## About
