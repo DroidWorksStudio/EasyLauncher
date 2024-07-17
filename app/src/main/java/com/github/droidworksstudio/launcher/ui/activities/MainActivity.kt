@@ -305,7 +305,7 @@ class MainActivity : AppCompatActivity() {
         when (requestCode) {
             Constants.BACKUP_READ -> {
                 data?.data?.also { uri ->
-                    applicationContext.contentResolver.openInputStream(uri).use { inputStream ->
+                    applicationContext.contentResolver.openInputStream(uri)?.use { inputStream ->
                         val stringBuilder = StringBuilder()
                         BufferedReader(InputStreamReader(inputStream)).use { reader ->
                             var line: String? = reader.readLine()
