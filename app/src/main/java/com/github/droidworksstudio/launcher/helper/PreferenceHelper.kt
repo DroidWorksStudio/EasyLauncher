@@ -24,6 +24,7 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
     var showStatusBar: Boolean
         get() = prefs.getBoolean(Constants.SHOW_STATUS_BAR, true)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_STATUS_BAR, value).apply()
+
     var showTime: Boolean
         get() = prefs.getBoolean(Constants.SHOW_TIME, true)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_TIME, value).apply()
@@ -268,22 +269,26 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
 
     fun loadFromString(json: String) {
         val editor = prefs.edit()
-        val all: HashMap<String, Any?> =
-            Gson().fromJson(json, object : TypeToken<HashMap<String, Any?>>() {}.type)
+        val all: HashMap<String, Any?> = Gson().fromJson(json, object : TypeToken<HashMap<String, Any?>>() {}.type)
         for ((key, value) in all) {
             when (value) {
                 is String -> editor.putString(key, value)
                 is Boolean -> editor.putBoolean(key, value)
-                is Int -> editor.putInt(key, value)
-                is Double -> editor.putInt(key, value.toInt()) // we store everything as int
-                is Float -> editor.putInt(key, value.toInt())
+                is Number -> {
+                    if (value.toDouble() == value.toInt().toDouble()) {
+                        editor.putInt(key, value.toInt())
+                    } else {
+                        editor.putFloat(key, value.toFloat())
+                    }
+                }
+
                 is MutableSet<*> -> {
                     val list = value.filterIsInstance<String>().toSet()
                     editor.putStringSet(key, list)
                 }
 
                 else -> {
-                    Log.d("backup error", "$value")
+                    Log.d("backup error", "$key | $value")
                 }
             }
         }

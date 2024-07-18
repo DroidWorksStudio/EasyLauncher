@@ -117,8 +117,8 @@ class SettingsFragment : Fragment(),
         appPackageName: String?,
         textView: TextView
     ) {
-        val appName = appPackageName?.let { context.getAppNameFromPackageName(it) }
         val actionText = if (action == Constants.Action.OpenApp) {
+            val appName = appPackageName?.let { context.getAppNameFromPackageName(it) }
             context.getString(R.string.settings_actions_open_app_run, appName)
         } else {
             action.getString(context)

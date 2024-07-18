@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.os.BatteryManager
 import android.os.Build
@@ -112,6 +113,10 @@ class HomeFragment : Fragment(),
         setupRecyclerView()
         observeSwipeTouchListener()
         observeUserInterfaceSettings()
+
+        val prefs: SharedPreferences = context.getSharedPreferences(Constants.PACKAGE_PREFS, 0)
+
+        Log.d("preferenceHelper", prefs.all.toString())
 
         if (context.hasInternetPermission()) {
             updateManager = UpdateManagerHelper(this)
