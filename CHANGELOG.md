@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed issue where backup was not doing numbers currently. - ([f18b4e3](https://github.com/DroidWorksStudio/EasyLauncher/commit/f18b4e394cd8c3113c7cc1774513adcb8a470762))
 - Fixed the porguard rules - ([414101d](https://github.com/DroidWorksStudio/EasyLauncher/commit/414101d18463dce7c55aafca023dd129863f50b7))
 - Fixed badge color - ([b2e39c2](https://github.com/DroidWorksStudio/EasyLauncher/commit/b2e39c2878db9b04cf47dc0d147d017c4ce0352a))
 - Fixed weather icons to show correctly. - ([d60a935](https://github.com/DroidWorksStudio/EasyLauncher/commit/d60a935338a2c8a4e24e2ea82c303f927e2a0815))
