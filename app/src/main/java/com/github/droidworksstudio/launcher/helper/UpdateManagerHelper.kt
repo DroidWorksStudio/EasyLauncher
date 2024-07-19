@@ -30,6 +30,16 @@ class UpdateManagerHelper(private val fragment: Fragment) {
     fun checkForUpdates() {
         val currentVersion = BuildConfig.VERSION_NAME
         val url = "https://api.github.com/repos/DroidWorksStudio/EasyLauncher/releases/latest"
+        Log.d("UpdateManager", "URL: $url | Current version: $currentVersion")
+
+        val sharedPreferences = activity.getSharedPreferences(Constants.TIMERS_PREFS, Context.MODE_PRIVATE)
+        val lastCheckTime = sharedPreferences.getLong(Constants.LAST_CHECK_TIME, 0)
+        val currentTime = System.currentTimeMillis()
+
+        if (currentTime - lastCheckTime < 30 * 60 * 1000) {
+            Log.d("UpdateManager", "Checked for updates recently, skipping")
+            return
+        }
 
         val request = Request.Builder().url(url).build()
         OkHttpClient().newCall(request).enqueue(object : Callback {
@@ -67,6 +77,8 @@ class UpdateManagerHelper(private val fragment: Fragment) {
                     } else {
                         Log.e("UpdateManager", "Assets array is empty")
                     }
+                    // Update the last check time
+                    sharedPreferences.edit().putLong(Constants.LAST_CHECK_TIME, currentTime).apply()
                 }
             }
         })

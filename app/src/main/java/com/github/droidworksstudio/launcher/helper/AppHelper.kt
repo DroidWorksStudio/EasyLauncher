@@ -320,16 +320,16 @@ class AppHelper @Inject constructor() {
         // Save cached data to SharedPreferences
         val sharedPreferences = getSharedPreferences(Constants.WEATHER_PREFS, Context.MODE_PRIVATE)
         sharedPreferences.edit()
-            .putLong("cachedDataTimestamp", cachedData.timestamp)
-            .putString("weatherResponse", Gson().toJson(cachedData.weatherResponse))
+            .putLong(Constants.CACHED_DATA_TIMESTAMP, cachedData.timestamp)
+            .putString(Constants.WEATHER_RESPONSE, Gson().toJson(cachedData.weatherResponse))
             .apply()
     }
 
     // Function to retrieve weather data from cache
     private fun Context.getWeatherDataFromCache(): CachedWeatherData? {
-        val sharedPreferences = getSharedPreferences(Constants.WEATHER_PREFS, Context.MODE_PRIVATE)
-        val timestamp = sharedPreferences.getLong("cachedDataTimestamp", -1)
-        val weatherResponseJson = sharedPreferences.getString("weatherResponse", null)
+        val sharedPreferences = getSharedPreferences(Constants.TIMERS_PREFS, Context.MODE_PRIVATE)
+        val timestamp = sharedPreferences.getLong(Constants.CACHED_DATA_TIMESTAMP, -1)
+        val weatherResponseJson = sharedPreferences.getString(Constants.WEATHER_RESPONSE, null)
         if (timestamp != -1L && weatherResponseJson != null) {
             val weatherResponse = Gson().fromJson(weatherResponseJson, WeatherResponse::class.java)
             return CachedWeatherData(timestamp, weatherResponse)

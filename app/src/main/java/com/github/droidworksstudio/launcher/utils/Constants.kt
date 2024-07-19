@@ -10,12 +10,17 @@ object Constants {
     const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
     const val PACKAGE_PREFS = "EasyLauncher.pref"
 
+    const val TIMERS_PREFS = "Timers.pref"
+    const val LAST_CHECK_TIME = "LAST_CHECK_TIME"
+    const val CACHED_DATA_TIMESTAMP = "CACHED_DATA_TIMESTAMP"
+
     const val WIDGETS_COUNT = 2
     const val WIDGET_WEATHER = "WIDGET_WEATHER"
     const val WIDGET_BATTERY = "WIDGET_BATTERY"
 
 
     const val WEATHER_PREFS = "EasyWeather.pref"
+    const val WEATHER_RESPONSE = "WEATHER_RESPONSE"
     const val WEATHER_UNITS = "WEATHER_UNITS"
     const val LATITUDE = "LATITUDE"
     const val LONGITUDE = "LONGITUDE"
