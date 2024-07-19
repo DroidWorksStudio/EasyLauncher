@@ -97,7 +97,7 @@ class AppHelper @Inject constructor() {
         if (view is TextView) {
             view.setTextColor(selectColor)
             view.textSize = textSize
-            view.visibility = if (isVisible) View.VISIBLE else View.INVISIBLE
+            view.visibility = if (isVisible) View.VISIBLE else View.GONE
             view.isClickable = if (isVisible) view.isClickable else !view.isClickable
         }
     }
