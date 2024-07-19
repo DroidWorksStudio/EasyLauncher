@@ -101,6 +101,7 @@ android {
         create("withInternetNightly") {
             dimension = "internet"
             applicationIdSuffix = ".nightly"
+            versionNameSuffix = "-nightly"
             manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
             val weatherFile = project.rootProject.file("weather.properties")
             val properties = Properties()
@@ -117,6 +118,7 @@ android {
         create("withoutInternetNightly") {
             dimension = "internet"
             applicationIdSuffix = ".nightly"
+            versionNameSuffix = "-nightly"
             manifestPlaceholders["internetPermission"] = "REMOVE"
             buildConfigField(
                 type = "String",
