@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed primitive.isNumber for loadFromString - ([bb5a363](https://github.com/DroidWorksStudio/EasyLauncher/commit/bb5a36310179891186a0340f2311a1abea523c20))
 - Fixed Json Deserializer for loadFromString - ([9f91945](https://github.com/DroidWorksStudio/EasyLauncher/commit/9f91945b1ac40dd08a1380e2dd1b62ac8e6f0c43))
 - Fixed the home screen elements to hide when disabled. - ([6c6db81](https://github.com/DroidWorksStudio/EasyLauncher/commit/6c6db81498b18b76019b1762a0a72529a265bf4b))
 
