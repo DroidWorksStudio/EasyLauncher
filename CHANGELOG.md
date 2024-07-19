@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
+
+### Feature Removal:
+
+- Removed gitguardian.yaml - ([0c1ab69](https://github.com/DroidWorksStudio/EasyLauncher/commit/0c1ab693996cd154df6ac625d5cd4bfbfbb228f6))
+
 ## [0.2.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.0) - (18, July 2024)
 
 ### Implemented Enhancements:
