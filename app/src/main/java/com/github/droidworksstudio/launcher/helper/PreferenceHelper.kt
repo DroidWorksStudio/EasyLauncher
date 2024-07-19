@@ -287,11 +287,11 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
                                 primitive.isBoolean -> map[key] = primitive.asBoolean
                                 primitive.isString -> map[key] = primitive.asString
                                 primitive.isNumber -> {
-                                    val num = primitive.asNumber
-                                    if (num.toDouble() == num.toInt().toDouble()) {
-                                        map[key] = num.toInt()
+                                    val numStr = primitive.toString()
+                                    map[key] = if (numStr.contains(".")) {
+                                        numStr.toFloat()
                                     } else {
-                                        map[key] = num.toDouble()
+                                        numStr.toInt()
                                     }
                                 }
                             }
@@ -324,7 +324,6 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
                 is Boolean -> editor.putBoolean(key, value)
                 is Int -> editor.putInt(key, value)
                 is Float -> editor.putFloat(key, value)
-                is Double -> editor.putFloat(key, value.toFloat())
                 is MutableSet<*> -> {
                     val list = value.filterIsInstance<String>().toSet()
                     editor.putStringSet(key, list)
