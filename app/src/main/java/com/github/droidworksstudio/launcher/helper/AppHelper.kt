@@ -72,7 +72,7 @@ class AppHelper @Inject constructor() {
             Configuration.UI_MODE_NIGHT_YES -> {
                 view.setBackgroundColor(
                     context.resources.getColor(
-                        R.color.blackTrans10,
+                        R.color.blackTrans80,
                         context.theme
                     )
                 )
@@ -81,7 +81,7 @@ class AppHelper @Inject constructor() {
             Configuration.UI_MODE_NIGHT_NO -> {
                 view.setBackgroundColor(
                     context.resources.getColor(
-                        R.color.whiteTrans10,
+                        R.color.whiteTrans80,
                         context.theme
                     )
                 )
