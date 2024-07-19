@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the home screen elements to hide when disabled. - ([6c6db81](https://github.com/DroidWorksStudio/EasyLauncher/commit/6c6db81498b18b76019b1762a0a72529a265bf4b))
+
 ### Feature Removal:
 
 - Removed gitguardian.yaml - ([0c1ab69](https://github.com/DroidWorksStudio/EasyLauncher/commit/0c1ab693996cd154df6ac625d5cd4bfbfbb228f6))
