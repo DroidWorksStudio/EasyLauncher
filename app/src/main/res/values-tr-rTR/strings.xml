@@ -2,54 +2,133 @@
 <resources>
     <string name="action_settings">Ayarlar</string>
     <string name="action_settings_default">Varsayılan başlatıcı olarak ayarla</string>
+    <!-- Gezinme için kullanılan fragment stringleri -->
+    <string name="home_fragment_label">Ana Sayfa Fragmentı</string>
+    <string name="draw_fragment_label">Çizim Fragmentı</string>
+    <string name="favorite_fragment_label">Favori Fragmentı</string>
+    <string name="hidden_fragment_label">Gizli Fragment</string>
+    <string name="settings_fragment_label">Ayarlar Fragmentı</string>
+    <string name="widgets_fragment_label">Widget\'lar Fragmentı</string>
+
+    <!-- Fragment başlık etiketleri için kullanılan stringler -->
     <string name="favorite_fragment_name">Favori Uygulamalar</string>
+    <string name="hidden_fragment_name">Gizli Uygulamalar</string>
+
     <string name="favorite_fragment_no_apps">Favori Uygulama Yok</string>
     <string name="hidden_fragment_no_apps">Gizli Uygulama Yok</string>
+
+    <string name="search">Ara</string>
+
+    <string name="bottom_dialog_app_rename">Yeniden Adlandır</string>
     <string name="bottom_dialog_add_to_home">Ana Ekrana Ekle</string>
+    <string name="bottom_dialog_order_home_apps">Ana Ekran Uygulamalarını Düzenle</string>
     <string name="bottom_dialog_remove_from_home">Ana Ekrandan Kaldır</string>
     <string name="bottom_dialog_add_to_hidden">Gizli Uygulama</string>
     <string name="bottom_dialog_remove_to_hidden">Gizli Uygulamayı Kaldır</string>
     <string name="bottom_dialog_add_to_lock">Uygulamayı Kilitle</string>
     <string name="bottom_dialog_remove_to_unlock">Uygulamanın Kilidini Aç</string>
+    <string name="bottom_dialog_app_info">Uygulama Bilgisi</string>
     <string name="bottom_dialog_app_uninstall">Uygulamayı Kaldır</string>
 
     <string name="settings_name">Başlatıcı Ayarları</string>
     <string name="settings_version">%1$s Versiyon: %2$s</string>
     <string name="settings_widgets_name">Widget Ayarları</string>
+
+    <string name="settings_title_home_display_preferences">Görünüm</string>
     <string name="settings_title_home_behavior_preferences">Davranış</string>
+    <string name="settings_title_home_appearance_preferences">Görünüm</string>
     <string name="settings_title_date_style">Tarih Stili</string>
     <string name="settings_title_time_style">Zaman Stili</string>
+    <string name="settings_title_app_manager">Uygulama Yöneticisi</string>
+    <string name="settings_title_gestures">Hareketler</string>
+    <string name="settings_title_miscellaneous">Diğer</string>
+    <string name="settings_title_backups">Yedekler</string>
     <string name="settings_title_others">Diğerleri</string>
+
+    <string name="settings_display_status_bar">Durum Çubuğunu Göster</string>
     <string name="settings_display_date">Tarihi Göster</string>
+    <string name="settings_display_time">Zamanı Göster</string>
+    <string name="settings_display_battery">Pil Durumunu Göster</string>
+    <string name="settings_display_daily_word">Günlük Sözcüğü Göster</string>
     <string name="settings_display_app_icons">Uygulama Simgelerini Göster</string>
+    <string name="settings_display_automatic_keyboard">Klavye Otomatik Göster</string>
     <string name="settings_display_auto_open_apps">Son Uygulamayı Otomatik Aç</string>
+    <string name="settings_display_lock_settings">Ayarları Kilitle</string>
+
     <string name="settings_appearance_text_size_title">Boyut</string>
     <string name="settings_appearance_color_title">Renk</string>
     <string name="settings_appearance_alignment_title">Hizalama</string>
+    <string name="settings_appearance_padding_title">Dolgu</string>
     <string name="settings_appearance_wallpaper">Özel Duvar Kağıdı</string>
+
+    <string name="settings_appearance_home_date_alignment">Tarih Hizalama</string>
+    <string name="settings_appearance_home_time_alignment">Zaman Hizalama</string>
+    <string name="settings_appearance_home_app_alignment">Ana Ekran Uygulama Hizalama</string>
+
     <string name="appearance_bottom_dialog_text_size_title">Boyut</string>
     <string name="appearance_bottom_dialog_text_color_title">Renk</string>
     <string name="appearance_bottom_dialog_alignment_title">Hizalama</string>
+    <string name="appearance_bottom_dialog_padding_title">Dolgu</string>
     <string name="appearance_bottom_dialog_desc_date">Tarih\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Zaman\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">Uygulama\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Kelime\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Pil\u0020:\u0020 </string>
+
+    <string name="appearance_bottom_dialog_desc_widget_background">Widget Arka Plan\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">Widget Metni\u0020:\u0020</string>
 
     <string name="settings_manager_favorite">Favori Uygulamalar</string>
+    <string name="settings_manager_hidden">Gizli Uygulamalar</string>
+
+    <string name="settings_select_wallpaper">Duvar Kağıdı Seç</string>
+    <string name="settings_double_tap">Çift Tıklama</string>
+    <string name="settings_swipe_up">Yukarı Kaydır</string>
+    <string name="settings_swipe_down">Aşağı Kaydır</string>
+    <string name="settings_swipe_left">Sola Kaydır</string>
+    <string name="settings_swipe_right">Sağa Kaydır</string>
+
+    <string name="settings_select_search_engine">Bir Arama Motoru Seç</string>
+    <string name="settings_search_engine">Arama Motoru</string>
+
+    <string name="settings_select_launcher_font">Bir Yazı Tipi Ailesi Seç</string>
+    <string name="settings_launcher_font">Yazı Tipi Ailesi</string>
+
+    <string name="settings_others_share">Paylaş</string>
+    <string name="settings_others_feedback">Geri Bildirim</string>
     <string name="settings_others_github">Github</string>
+
+    <string name="settings_backups_backup">Tercihleri Yedekle</string>
     <string name="settings_backups_clear">Tercihleri Temizle</string>
     <string name="settings_backups_restore">Tercihleri Geri Yükle</string>
 
     <string name="settings_reload_app_backup">Tercihler yedeklendi.</string>
+    <string name="settings_reload_app_restore">Tercihler geri yüklendi. Yeniden başlatılıyor.</string>
+
+    <string name="settings_actions_open_app">Uygulamayı Aç</string>
+    <string name="settings_actions_open_app_run">%s Aç</string>
+    <string name="settings_actions_lock_screen">Ekranı Kilitle</string>
+    <string name="settings_actions_show_notifications">Bildirimleri Göster</string>
     <string name="settings_actions_show_app_list">Uygulama Listesini Göster</string>
+    <string name="settings_actions_show_favorite_list">Favoriler Listesini Göster</string>
+    <string name="settings_actions_show_hidden_list">Gizli Listesini Göster</string>
     <string name="settings_actions_open_quick_settings">Hızlı Ayarları Aç</string>
     <string name="settings_actions_show_recents">Son Kullanılanları Göster</string>
     <string name="settings_actions_show_widgets">Widget\'ları Göster</string>
+    <string name="settings_actions_open_power_dialog">Güç Diyaloğunu Aç</string>
+    <string name="settings_actions_take_a_screenshot">Ekran Görüntüsü Al</string>
+    <string name="settings_actions_disabled">Devre Dışı</string>
+
     <string name="settings_units_metric">Metrik</string>
+    <string name="settings_units_imperial">İngiliz</string>
+
     <string name="settings_font_system">Sistem</string>
+
+    <string name="authentication_title">Kimlik Doğrulama</string>
+    <string name="authentication_subtitle">Biyometrik kimlik bilgilerinizle giriş yapın.</string>
+    <string name="authentication_cancel">Kimlik Doğrulama İptal</string>
     <string name="authentication_succeeded">Kimlik Doğrulama Başarılı</string>
+    <string name="authentication_failed">Kimlik Doğrulama Başarısız</string>
     <string name="authentication_error">Kimlik Doğrulama Hatası: %1$s(kod %2$d)</string>
 
     <string name="bottom_alignment_star">Yıldız</string>
@@ -57,18 +136,44 @@
     <string name="bottom_alignment_end">Son</string>
 
     <string name="accessibility_settings_title">Erişilebilirlik Ayarları</string>
+    <string name="accessibility_settings_enable">Etkinleştir</string>
+    <string name="accessibility_settings_disable">Devre Dışı Bırak</string>
+
     <string name="accessibility_service_name">Kolay Başlatıcı Eylemleri Hizmeti</string>
+    <string name="accessibility_service_desc">Kolay Başlatıcı\'da ekran kilitleme özelliğini kullanmak için erişilebilirlik hizmetini açın.\n\nBu izin yalnızca ekranınızı kapatmak için kullanılır. Erişilebilirlik hizmetimiz herhangi bir veri toplamaz veya paylaşmaz.</string>
+    <string name="admin_permission_message">Kolay Başlatıcı ekran kilidi iznini sorumlu bir şekilde kullanmayı taahhüt eder. Kolay Başlatıcı herhangi bir veri toplamaz veya paylaşmaz.</string>
+
+    <string name="search_engine">Arama Motoru</string>
     <string name="search_google">Google</string>
+    <string name="search_yahoo">Yahoo</string>
+    <string name="search_duckduckgo">DuckDuckGo</string>
     <string name="search_bing">Bing</string>
+    <string name="search_brave">Brave</string>
+    <string name="search_swisscow">SwissCows</string>
+
     <string name="widgets_battery_level">Pil Seviyesi : %d %%</string>
     <string name="widgets_battery_count">Pil Şarj Sayısı : %1$d</string>
     <string name="widgets_battery_current">Pil Akımı : %1$.2f %2$s</string>
     <string name="widgets_battery_status">Şarj Durumu : %1$s</string>
     <string name="widgets_battery_health">Pil Sağlığı : %1$s</string>
+    <string name="widgets_battery_voltage">Pil Voltajı : %1$.2f %2$s</string>
     <string name="widgets_battery_temperature">Pil Sıcaklığı : %1$.2f %2$s</string>
 
     <string name="widgets_settings_show_weather">Hava Durumu Widget\'ı</string>
+    <string name="widgets_settings_show_weather_sun">Gün Batımı ve Gün Doğumunu Göster</string>
     <string name="widgets_settings_show_battery">Pil Widget\'ı</string>
+    <string name="widgets_settings_display">Görüntüle</string>
+    <string name="widgets_settings_select_order">Sıralamayı Seç</string>
+
+    <string name="acra_crash">Çökme</string>
+    <string name="acra_dialog_text">Üzgünüz, ancak %1$s beklenmeyen bir sorunla karşılaştı ve kapanması gerekiyor. Lütfen bir çökme raporu göndererek bize yardımcı olun.\n\n%1$s gizliliğinize değer verir ve toplanan veriler yalnızca uygulama istikrarını artırmak için kullanılır. Kişisel bilgi toplanmaz. Desteğiniz için teşekkür ederiz!</string>
+    <string name="acra_send_report">Rapor Gönder</string>
     <string name="acra_dont_send">Gönderme</string>
+    <string name="acra_mail_body">Uygulamada bir çökme meydana geldi.\n\nAşağıda cihazın detayları bulunmaktadır. Hata günlüğü referansınız için dosya olarak eklenmiştir. Bu sorunu çözmemize yardımcı olmanız çok memnuniyet verici olacaktır.\n\nCihaz Bilgileri: \n[LÜTFEN aşağıdaki bilgileri doldurun ve köşeli parantezler arasındaki her şeyi kaldırın, aksi takdirde bu yoksayılacaktır.]\n\n- Uygulama Sürümü: [0.0.1]\n- Android Sürümü: [14]\n- Cihaz Adı: [Android Pixel 69]\n- Kurulum Yeri: [github, fdroid, obtanium, kendi]\n\nBu konuya acilen dikkat etmeniz çok memnuniyet verici olacaktır.\n\nTeşekkür ederim.\n</string>
+
     <string-array name="alignment_options">
+        <item>Sola</item>
+        <item>Ortala</item>
+        <item>Sağa</item>
     </string-array>
+<resources/>
