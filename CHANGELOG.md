@@ -20,6 +20,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Changed the time for checking updates and weather. - ([ad2f907](https://github.com/DroidWorksStudio/EasyLauncher/commit/ad2f907b33dae8a1ca7b36fa79ef276725207a08))
 - Setting dayNightMod to be 80% instead of 10% - ([86b2797](https://github.com/DroidWorksStudio/EasyLauncher/commit/86b27976ba3ec8090b6bfd5f41897ea914e6a1ae))
 
 ## [0.2.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.0) - (18, July 2024)
