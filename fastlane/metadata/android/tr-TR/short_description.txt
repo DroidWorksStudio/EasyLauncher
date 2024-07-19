@@ -1,0 +1,1 @@
+EasyLauncher - Minimal ve Karmaşasız Android başlatıcısı
