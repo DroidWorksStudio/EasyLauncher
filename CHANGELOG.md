@@ -18,6 +18,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Updated Language Files. ([#103](https://github.com/DroidWorksStudio/EasyLauncher/issues/103)) - ([dd2b907](https://github.com/DroidWorksStudio/EasyLauncher/commit/dd2b907a0e7010f3c06a1b1806b554beeb79ff6d))
 
+### Refactoring:
+
+- Setting dayNightMod to be 80% instead of 10% - ([86b2797](https://github.com/DroidWorksStudio/EasyLauncher/commit/86b27976ba3ec8090b6bfd5f41897ea914e6a1ae))
+
 ## [0.2.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.0) - (18, July 2024)
 
 ### Implemented Enhancements:
