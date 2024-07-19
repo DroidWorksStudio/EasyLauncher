@@ -1,0 +1,38 @@
+<b>Özellikler:</b>
+
+- Favori Uygulamaya Hızlı Erişim: Hızlı erişim için en çok kullandığınız uygulamaları ana ekranda metin formatında görüntüleyerek operasyonlarınızı kolaylaştırın.
+- Uygulamaları Gizle: Görünmesini istemediğiniz uygulamaları kolayca gizleyerek ana ekranınızı temiz tutun ve temel içeriğe odaklanın.
+- Uygulamaları Yeniden Adlandır: Uygulamalarınızı, favorileriniz ve tüm uygulamalar arasında sorunsuz bir şekilde senkronize edilen özel adlarla kişiselleştirin.
+- Kilitleme: Seçilen uygulamalar ve ayarlar için gizliliğinizi ve verilerinizi parmak izi kilidiyle koruyun.
+- İnternet İzinleri Yok: İNTERNET izinleri kullanılmaz, verilerinizin gizli kalması sağlanır.
+- Kilitlenme Raporları: Etkili sorun giderme için günlük dosyaları da dahil olmak üzere çökmeleri e-posta yoluyla bildirin.
+
+<b>Kişiselleştirilmiş Kişiselleştirme:</b>
+
+- Yazı Tipi Renkleri: Renk seçicimizi kullanarak yazı tipi renklerini özelleştirin.
+- Konum: Tarihi, Saati ve Uygulamaları Sola, Ortaya veya Sağa Hizalayın.
+- Dolgu: Favori uygulamalar ve tüm uygulamalar arasındaki dolguyu ayarlayın.
+- Yazı Tipi Boyutu: Ana ekrandaki her öğe için yazı tipi boyutunu ayarlayın.
+- Öğeleri Değiştir: Ana ekrandaki ekran tercihlerini kontrol edin.
+
+<b>Olası Hareketler şunları içerir:</b>
+
+- Kaydırma Hareketleri: Çeşitli özelliklere erişmek veya ekranlar arasında geçiş yapmak için farklı yönlere (yukarı, aşağı, sola, sağa) kaydırarak gezinin.
+- Çift Dokunma: Önceden tanımlanmış bir eylemi gerçekleştirmek veya bir özelliği etkinleştirmek için ekrana hızlıca iki kez dokunun.
+- Saat Etkileşimi: Alarmlar veya dünya saati gibi ek bilgileri görüntülemek için saate dokunun.
+- Tarih Etkileşimi: Planlama ve planlama amacıyla takvim uygulamasını açmak için tarihe dokunun.
+- Pil Simgesi: Pil kullanım ayrıntılarına erişmek için pil simgesine dokunun.
+
+<b>Olası Eylemler şunları içerir:</b>
+
+- Belirtilen Uygulamayı Aç: Favorilerinize kesintisiz erişim için seçtiğiniz herhangi bir uygulamayı anında başlatın.
+- Uygulama Listesini Görüntüle: Kapsamlı bir liste ekranıyla yüklü uygulamalarınızı verimli bir şekilde görüntüleyin ve yönetin.
+- Ekran Kilitleme: Hızlı ve kullanışlı ekran kilitlemeyle cihazınızı güvence altına alın ve gizliliğinizi koruyun.
+- Son Açılan Uygulamaları Göster: Hızlı çoklu görev için son kullanılan uygulamalara zahmetsizce erişin.
+- Bildirim Çekmecesi Erişimi: Güncellemeleri ve uyarıları kontrol etmek için bildirim çekmecesini tek dokunuşla açın.
+- Hızlı Ayarlar: Hızlı ayarlara doğrudan ana ekrandan erişerek cihaz ayarlarını hızla yönetin.
+- Güç İletişim Kutusu: Güç iletişim kutusunu kullanarak yeniden başlatma, kapatma ve daha fazlası gibi güç seçeneklerini kolaylıkla kontrol edin.
+- Ekran Görüntüsü Alın: Önemli bilgileri ve anları kaydetmek ve paylaşmak için ekranınızı anında yakalayın.
+- Hareketleri Devre Dışı Bırak: Cihazınızın etkileşim deneyiminizi özelleştirmek için belirli hareketleri geçici veya kalıcı olarak devre dışı bırakın.
+
+Daha fazla ayrıntı için <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> sayfasını ziyaret edin.

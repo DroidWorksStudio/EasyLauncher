@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Removed gitguardian.yaml - ([0c1ab69](https://github.com/DroidWorksStudio/EasyLauncher/commit/0c1ab693996cd154df6ac625d5cd4bfbfbb228f6))
 
+### Language Support:
+
+- Updated Language Files. ([#103](https://github.com/DroidWorksStudio/EasyLauncher/issues/103)) - ([dd2b907](https://github.com/DroidWorksStudio/EasyLauncher/commit/dd2b907a0e7010f3c06a1b1806b554beeb79ff6d))
+
 ## [0.2.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.0) - (18, July 2024)
 
 ### Implemented Enhancements:
