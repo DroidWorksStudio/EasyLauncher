@@ -9,7 +9,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GIT_BOT_TOKEN }}
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4.1.7
@@ -82,19 +82,6 @@ jobs:
           keyPassword: ${{ secrets.KEY_PASSWORD }}
           buildToolsVersion: 33.0.0
 
-      - name: Release to GitHub - WithInternet
-        uses: svenstaro/upload-release-action@2.9.0
-        with:
-          release_name: "Nightly"
-          repo_token: ${{ secrets.GIT_BOT_TOKEN }}
-          file: ${{steps.sign_app_withInternet.outputs.signedFile}}
-          asset_name: EasyLauncher-Internet-Nightly-Signed.apk
-          tag: nightly
-          body: "This is a nightly build. [changelogs](https://github.com/DroidWorksStudio/EasyLauncher/blob/main/CHANGELOG.md)"
-          prerelease: true
-          overwrite: true
-          draft: false
-
       - name: Sign APK - WithoutInternet
         uses: ilharp/sign-android-release@v1.0.4
         # ID used to access action output
@@ -107,15 +94,32 @@ jobs:
           keyPassword: ${{ secrets.KEY_PASSWORD }}
           buildToolsVersion: 33.0.0
 
-      - name: Release to GitHub  - WithoutInternet
-        uses: svenstaro/upload-release-action@2.9.0
+      - name: Extract Version
+        id: extract_version
+        run: |
+          version=$(date +"%Y.%m.%d")
+          echo "version=$version" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Rename files
+        run: |
+          mkdir -p ./build/release/
+          mv ${{steps.sign_app_withInternet.outputs.signedFile}} ./build/release/EasyLauncher-Internet-Nightly-Signed.apk
+          mv ${{steps.sign_app_withoutInternet.outputs.signedFile}} ./build/release/EasyLauncher-Nightly-Signed.apk
+        shell: bash
+
+      - name: Create and Upload Release
+        uses: softprops/action-gh-release@v2
         with:
-          release_name: "Nightly"
-          repo_token: ${{ secrets.GIT_BOT_TOKEN }}
-          file: ${{steps.sign_app_withoutInternet.outputs.signedFile}}
-          asset_name: EasyLauncher-Nightly-Signed.apk
-          tag: nightly
-          body: "This is a nightly build. [changelogs](https://github.com/DroidWorksStudio/EasyLauncher/blob/main/CHANGELOG.md)"
+          tag_name: nightly
+          name: Nightly Release ${{ env.version }}
+          body: "![GitHub Downloads (total, specific tag)](https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/nightly/total)"
+          append_body: false
+          files: |
+            ./build/release/EasyLauncher-Internet-Nightly-Signed.apk
+            ./build/release/EasyLauncher-Nightly-Signed.apk
           prerelease: true
-          overwrite: true
-          draft: false
+          generate_release_notes: true
+        env:
+          version: ${{ env.version }}
+          GITHUB_TOKEN: ${{ secrets.GIT_BOT_TOKEN }}
