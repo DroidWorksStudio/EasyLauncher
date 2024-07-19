@@ -7,6 +7,8 @@ import android.util.Log
 import android.view.Gravity
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.google.gson.Gson
+import com.google.gson.GsonBuilder
+import com.google.gson.JsonDeserializer
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
@@ -269,19 +271,60 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
 
     fun loadFromString(json: String) {
         val editor = prefs.edit()
-        val all: HashMap<String, Any?> = Gson().fromJson(json, object : TypeToken<HashMap<String, Any?>>() {}.type)
+        // Custom deserializer to handle numbers properly
+        val gson = GsonBuilder().registerTypeAdapter(
+            object : TypeToken<HashMap<String, Any?>>() {}.type,
+            JsonDeserializer { jsonElement, _, _ ->
+                val map = HashMap<String, Any?>()
+                val jsonObject = jsonElement.asJsonObject
+                for (entry in jsonObject.entrySet()) {
+                    val key = entry.key
+                    val value = entry.value
+                    when {
+                        value.isJsonPrimitive -> {
+                            val primitive = value.asJsonPrimitive
+                            when {
+                                primitive.isBoolean -> map[key] = primitive.asBoolean
+                                primitive.isString -> map[key] = primitive.asString
+                                primitive.isNumber -> {
+                                    val num = primitive.asNumber
+                                    if (num.toDouble() == num.toInt().toDouble()) {
+                                        map[key] = num.toInt()
+                                    } else {
+                                        map[key] = num.toDouble()
+                                    }
+                                }
+                            }
+                        }
+
+                        value.isJsonArray -> {
+                            val jsonArray = value.asJsonArray
+                            val set = mutableSetOf<String>()
+                            for (element in jsonArray) {
+                                if (element.isJsonPrimitive && element.asJsonPrimitive.isString) {
+                                    set.add(element.asString)
+                                }
+                            }
+                            map[key] = set
+                        }
+
+                        else -> {
+                            Log.d("backup error", "$key | $value")
+                        }
+                    }
+                }
+                map
+            }).create()
+
+        val all: HashMap<String, Any?> = gson.fromJson(json, object : TypeToken<HashMap<String, Any?>>() {}.type)
+
         for ((key, value) in all) {
             when (value) {
                 is String -> editor.putString(key, value)
                 is Boolean -> editor.putBoolean(key, value)
-                is Number -> {
-                    if (value.toDouble() == value.toInt().toDouble()) {
-                        editor.putInt(key, value.toInt())
-                    } else {
-                        editor.putFloat(key, value.toFloat())
-                    }
-                }
-
+                is Int -> editor.putInt(key, value)
+                is Float -> editor.putFloat(key, value)
+                is Double -> editor.putFloat(key, value.toFloat())
                 is MutableSet<*> -> {
                     val list = value.filterIsInstance<String>().toSet()
                     editor.putStringSet(key, list)
