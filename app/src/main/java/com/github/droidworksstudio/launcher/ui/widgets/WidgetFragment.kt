@@ -154,6 +154,10 @@ class WidgetFragment : Fragment(),
                             weatherWidgetDrawable.setColor(widgetBackgroundColor)
                         }
 
+                        if (preferenceHelper.showWeatherWidgetSunSetRise) {
+                            binding.weatherSunsetSunrise.visibility = View.VISIBLE
+                        }
+
                         weatherCity.setTextColor(widgetTextColor)
                         weatherTemperature.setTextColor(widgetTextColor)
                         weatherDescription.setTextColor(widgetTextColor)
@@ -307,10 +311,6 @@ class WidgetFragment : Fragment(),
                 val weatherBatteryDrawable = binding.batteryRoot.background
                 if (weatherBatteryDrawable is GradientDrawable) {
                     weatherBatteryDrawable.setColor(preferenceHelper.widgetBackgroundColor)
-                }
-
-                if (preferenceHelper.showWeatherWidgetSunSetRise) {
-                    binding.weatherSunsetSunrise.visibility = View.VISIBLE
                 }
 
                 binding.batteryLevel.setTextColor(preferenceHelper.widgetTextColor)
