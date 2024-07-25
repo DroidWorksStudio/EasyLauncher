@@ -6,6 +6,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Android 15: Fixed the set default launcher. - ([3fd3dc4](https://github.com/DroidWorksStudio/EasyLauncher/commit/3fd3dc49d9a9a28a4eff5597d027b323fb3a11f6))
+
+## [0.2.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.1) - (22, July 2024)
+
+### Bug Fixes:
+
 - Fixed the weather widget showing sunset and sunrise - ([9ca2cfa](https://github.com/DroidWorksStudio/EasyLauncher/commit/9ca2cfa03a9e88b68e48cbd12208fd58971b1ae1))
 - Fixed primitive.isNumber for loadFromString - ([bb5a363](https://github.com/DroidWorksStudio/EasyLauncher/commit/bb5a36310179891186a0340f2311a1abea523c20))
 - Fixed Json Deserializer for loadFromString - ([9f91945](https://github.com/DroidWorksStudio/EasyLauncher/commit/9f91945b1ac40dd08a1380e2dd1b62ac8e6f0c43))
