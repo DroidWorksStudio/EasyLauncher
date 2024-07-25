@@ -13,19 +13,20 @@ plugins {
 
 android {
     namespace = "com.github.droidworksstudio.launcher"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "app.easy.launcher"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 21
         versionName = "0.2.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
         manifestPlaceholders["fineLocationPermission"] = "android.permission.ACCESS_FINE_LOCATION"
-        manifestPlaceholders["coarseLocationPermission"] = "android.permission.ACCESS_COARSE_LOCATION"
+        manifestPlaceholders["coarseLocationPermission"] =
+            "android.permission.ACCESS_COARSE_LOCATION"
     }
 
     buildTypes {
@@ -73,8 +74,10 @@ android {
         create("withInternet") {
             dimension = "internet"
             manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
-            manifestPlaceholders["fineLocationPermission"] = "android.permission.ACCESS_FINE_LOCATION"
-            manifestPlaceholders["coarseLocationPermission"] = "android.permission.ACCESS_COARSE_LOCATION"
+            manifestPlaceholders["fineLocationPermission"] =
+                "android.permission.ACCESS_FINE_LOCATION"
+            manifestPlaceholders["coarseLocationPermission"] =
+                "android.permission.ACCESS_COARSE_LOCATION"
             val weatherFile = project.rootProject.file("weather.properties")
             val properties = Properties()
             properties.load(weatherFile.inputStream())

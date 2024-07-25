@@ -3,7 +3,6 @@ package com.github.droidworksstudio.common
 import android.Manifest
 import android.app.SearchManager
 import android.content.ActivityNotFoundException
-import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.LauncherApps
@@ -37,7 +36,6 @@ import androidx.lifecycle.LifecycleOwner
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.ui.activities.FakeHomeActivity
 import java.util.Calendar
 import java.util.Date
 import kotlin.math.pow
@@ -153,39 +151,6 @@ fun Context.openUrl(url: String) {
 }
 
 fun Context.resetDefaultLauncher() {
-    val manufacturer = Build.MANUFACTURER.lowercase()
-    when (manufacturer) {
-        "google", "essential" -> runningStockAndroid()
-        else -> notRunningStockAndroid()
-    }
-}
-
-fun Context.runningStockAndroid() {
-    try {
-        val packageManager = this.packageManager
-        val componentName = ComponentName(this, FakeHomeActivity::class.java)
-
-        packageManager.setComponentEnabledSetting(
-            componentName,
-            PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
-            PackageManager.DONT_KILL_APP
-        )
-
-        val selector = Intent(Intent.ACTION_MAIN)
-        selector.addCategory(Intent.CATEGORY_HOME)
-        this.startActivity(selector)
-
-        packageManager.setComponentEnabledSetting(
-            componentName,
-            PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-            PackageManager.DONT_KILL_APP
-        )
-    } catch (e: Exception) {
-        e.printStackTrace()
-    }
-}
-
-fun Context.notRunningStockAndroid() {
     try {
         val intent = Intent("android.settings.HOME_SETTINGS")
         this.startActivity(intent)

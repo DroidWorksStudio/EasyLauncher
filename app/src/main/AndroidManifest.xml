@@ -69,20 +69,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.activities.FakeHomeActivity"
-            android:enabled="false"
-            android:launchMode="singleTask"
-            android:windowSoftInputMode="stateHidden"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.HOME" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <receiver
             android:name=".listener.DeviceAdmin"
