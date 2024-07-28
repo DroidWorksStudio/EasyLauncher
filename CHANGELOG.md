@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Android 15: Fixed the set default launcher. - ([3fd3dc4](https://github.com/DroidWorksStudio/EasyLauncher/commit/3fd3dc49d9a9a28a4eff5597d027b323fb3a11f6))
 
+### Releases:
+
+- Prepare for version 0.2.2 - ([0a28ef7](https://github.com/DroidWorksStudio/EasyLauncher/commit/0a28ef74485fb5cd64a7519c4b74dfe8b5f327f2))
+
 ## [0.2.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.1) - (22, July 2024)
 
 ### Bug Fixes:
