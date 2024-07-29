@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Code Cleanup - ([a9e55e2](https://github.com/DroidWorksStudio/EasyLauncher/commit/a9e55e2fbec764fedc5ab51abd85665d40ac5aa5))
 - Updated Patched Fonts - ([8386bb2](https://github.com/DroidWorksStudio/EasyLauncher/commit/8386bb218dbdd35a788a42e5cc789e9edebfe4a6))
 
 ### Releases:
