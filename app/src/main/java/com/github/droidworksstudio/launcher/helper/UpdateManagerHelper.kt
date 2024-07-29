@@ -32,7 +32,8 @@ class UpdateManagerHelper(private val fragment: Fragment) {
         val url = "https://api.github.com/repos/DroidWorksStudio/EasyLauncher/releases/latest"
         Log.d("UpdateManager", "URL: $url | Current version: $currentVersion")
 
-        val sharedPreferences = activity.getSharedPreferences(Constants.TIMERS_PREFS, Context.MODE_PRIVATE)
+        val sharedPreferences =
+            activity.getSharedPreferences(Constants.TIMERS_PREFS, Context.MODE_PRIVATE)
         val lastCheckTime = sharedPreferences.getLong(Constants.LAST_CHECK_TIME, 0)
         val currentTime = System.currentTimeMillis()
 
@@ -59,18 +60,32 @@ class UpdateManagerHelper(private val fragment: Fragment) {
 
                     // Check if assets array has elements
                     if (assets.length() > 0) {
-                        val apkUrl = (assets.get(1) as JSONObject).getString("browser_download_url")
-                        Log.d("UpdateManager", "APK URL: $apkUrl | Latest version: $latestVersion | Current version: $currentVersion")
+                        var apkUrl: String? = null
+                        for (i in 0 until assets.length()) {
+                            val asset = assets.getJSONObject(i)
+                            val assetName = asset.getString("name")
+                            if (assetName == "EasyLauncher-Internet-$latestVersion-Signed.apk") {
+                                apkUrl = asset.getString("browser_download_url")
+                                break
+                            }
+                        }
+                        Log.d(
+                            "UpdateManager",
+                            "APK URL: $apkUrl | Latest version: $latestVersion | Current version: $currentVersion"
+                        )
 
                         if (latestVersion > currentVersion) {
-                            val declinedVersion = sharedPreferences.getString("declined_version", "")
+                            val declinedVersion =
+                                sharedPreferences.getString("declined_version", "")
 
                             Log.d("UpdateManager", "Declined version: $declinedVersion")
 
                             if (latestVersion != declinedVersion) {
                                 // Ask the user if they want to update
-                                activity.runOnUiThread {
-                                    showUpdateDialog(latestVersion, apkUrl)
+                                if (apkUrl != null) {
+                                    activity.runOnUiThread {
+                                        showUpdateDialog(latestVersion, apkUrl)
+                                    }
                                 }
                             }
                         }
@@ -110,7 +125,10 @@ class UpdateManagerHelper(private val fragment: Fragment) {
             setTitle("Downloading update")
             setDescription("Your app is downloading the latest update")
             setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-            setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "${Constants.PACKAGE_NAME}.apk")
+            setDestinationInExternalPublicDir(
+                Environment.DIRECTORY_DOWNLOADS,
+                "${Constants.PACKAGE_NAME}.apk"
+            )
         }
 
         val manager = context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
@@ -138,7 +156,11 @@ class UpdateManagerHelper(private val fragment: Fragment) {
             }
         }
 
-        context.registerReceiver(onComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE), Context.RECEIVER_NOT_EXPORTED)
+        context.registerReceiver(
+            onComplete,
+            IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE),
+            Context.RECEIVER_NOT_EXPORTED
+        )
     }
 
     private fun requestInstallPermission() {
@@ -160,8 +182,15 @@ class UpdateManagerHelper(private val fragment: Fragment) {
     }
 
     private fun installApk() {
-        val apkFile = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "${Constants.PACKAGE_NAME}.apk")
-        val apkUri = FileProvider.getUriForFile(context.applicationContext, "${context.packageName}.provider", apkFile)
+        val apkFile = File(
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
+            "${Constants.PACKAGE_NAME}.apk"
+        )
+        val apkUri = FileProvider.getUriForFile(
+            context.applicationContext,
+            "${context.packageName}.provider",
+            apkFile
+        )
 
         val intent = Intent(Intent.ACTION_VIEW).apply {
             setDataAndType(apkUri, "application/vnd.android.package-archive")
