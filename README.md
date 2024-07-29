@@ -63,7 +63,8 @@ We try to balance customizability and minimalization well still being simple :)<
 - Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and
   all apps.
 - Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
-- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
+- Internet Permissions: One version with INTERNET as it is needed for widgets and one without
+  INTERNET (fdoird build).
 - Crash Reports: Report crashes via email, including log files for effective troubleshooting.
 
 #### Personalized Customization:
@@ -134,7 +135,7 @@ remain a fully open-source project. With access to the full source code, anyone
 can build, fork, and customize the application to their heart's content, unleashing its full
 potential.
 
-- EasyLauncher does not have network access.
+- EasyLauncher does not have network access unless using the Internet apk.
 - EasyLauncher does not collect or transmit any data in any way whatsoever.
 
 ## Permissions
