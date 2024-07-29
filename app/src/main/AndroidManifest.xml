@@ -39,6 +39,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Launcher"
         android:enableOnBackInvokedCallback="true"
+        android:launchMode="singleTop"
+        android:clearTaskOnLaunch="true"
         tools:targetApi="tiramisu">
         <activity
             android:name=".ui.activities.LauncherActivity"
