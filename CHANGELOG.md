@@ -2,10 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
-## [0.2.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.2) - (29, July 2024)
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
 ### Bug Fixes:
 
+- Fixed the App update helper - ([57a680d](https://github.com/DroidWorksStudio/EasyLauncher/commit/57a680d96befddb38fccc8d7e1078e8d9382a08c))
 - Android 15: Fixed the set default launcher. - ([3fd3dc4](https://github.com/DroidWorksStudio/EasyLauncher/commit/3fd3dc49d9a9a28a4eff5597d027b323fb3a11f6))
 
 ### Releases:
