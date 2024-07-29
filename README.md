@@ -106,13 +106,13 @@ We try to balance customizability and minimalization well still being simple :)<
 ## Contribute
 
 - If you are unhappy with any part of the app or feel like missing something, you can open a pull
-  request or an [**issue
-  **](https://github.com/HeCodes2Much/EasyLauncher/issues/new/choose) as you like.
+  request or an **[issue
+  ](https://github.com/HeCodes2Much/EasyLauncher/issues/new/choose)** as you like.
     - Please go through the issues marked as `Bug report`, `Crash report` or `Feature request`.
     - Please can we discuss before sending pull requests.
     - Make pull requests to `main` branch.
-- Any help in translating EasyLauncher into other languages is greatly appreciated. [**Crowdin
-  **](https://crowdin.com/project/easy-launcher).
+- Any help in translating EasyLauncher into other languages is greatly appreciated. **[Crowdin
+  ](https://crowdin.com/project/easy-launcher)**.
 
 ## Credits
 
