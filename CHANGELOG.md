@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.2.3 - ([3931624](https://github.com/DroidWorksStudio/EasyLauncher/commit/3931624f2514f9b0d43b563643c0c1f928c3ec92))
+
+## [0.2.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.2) - (29, July 2024)
+
 ### Bug Fixes:
 
 - Fixed the App update helper - ([57a680d](https://github.com/DroidWorksStudio/EasyLauncher/commit/57a680d96befddb38fccc8d7e1078e8d9382a08c))
