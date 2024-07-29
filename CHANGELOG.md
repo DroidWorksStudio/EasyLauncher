@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Refactoring:
+
+- Updated Patched Fonts - ([8386bb2](https://github.com/DroidWorksStudio/EasyLauncher/commit/8386bb218dbdd35a788a42e5cc789e9edebfe4a6))
+
 ### Releases:
 
 - Prepare for version 0.2.3 - ([3931624](https://github.com/DroidWorksStudio/EasyLauncher/commit/3931624f2514f9b0d43b563643c0c1f928c3ec92))
