@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed home press - ([2860bcc](https://github.com/DroidWorksStudio/EasyLauncher/commit/2860bcc9cd33ac6fa78207f470ece49ea260fb2d))
+
+### Dependency Updates:
+
+- Updated version numbers for libraries - ([1d2d933](https://github.com/DroidWorksStudio/EasyLauncher/commit/1d2d933b12fbf97f669a74f5cb7385639848c4ec))
+
 ### Refactoring:
 
 - Code Cleanup - ([a9e55e2](https://github.com/DroidWorksStudio/EasyLauncher/commit/a9e55e2fbec764fedc5ab51abd85665d40ac5aa5))
