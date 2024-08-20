@@ -261,10 +261,9 @@ class MainActivity : AppCompatActivity() {
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        navController = findNavController(R.id.nav_host_fragment_content_main)
+        backToHomeScreen()
         @Suppress("DEPRECATION")
-        if (navController.currentDestination?.id != R.id.HomeFragment)
-            super.onBackPressed()
+        super.onBackPressed()
     }
 
     private fun backToHomeScreen() {
