@@ -28,4 +28,4 @@ jobs:
           stale-pr-message: "This pull request is stale because it has been open for 30 days with no activity."
           close-pr-message: "This pull request was closed because it has been inactive for 14 days since being marked as stale."
           exempt-pr-labels: "Status: Help wanted, Status: Work In Progress, Status: Waiting For a Response, Status: Todo"
-          repo-token: ${{ secrets.GIT_BOT_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

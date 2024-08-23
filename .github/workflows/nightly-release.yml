@@ -9,12 +9,12 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.GIT_BOT_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Check out the repository
         uses: actions/checkout@v4.1.7
         with:
-          token: ${{ secrets.GIT_BOT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Delete existing nightly release
         env:
@@ -27,7 +27,7 @@ jobs:
               -H "Authorization: Bearer $GITHUB_TOKEN" \
               -X DELETE \
               "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${release_id}"
-
+          
             # Delete the tag
             curl -sSf \
               -H "Authorization: Bearer $GITHUB_TOKEN" \
@@ -43,7 +43,7 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v4.1.7
         with:
-          token: ${{ secrets.GIT_BOT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: set up JDK 17
         uses: actions/setup-java@v4.2.2
@@ -122,4 +122,4 @@ jobs:
           generate_release_notes: true
         env:
           version: ${{ env.version }}
-          GITHUB_TOKEN: ${{ secrets.GIT_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

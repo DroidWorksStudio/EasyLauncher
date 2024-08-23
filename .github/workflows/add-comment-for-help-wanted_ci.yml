@@ -15,7 +15,7 @@ jobs:
       - name: Create comment
         uses: peter-evans/create-or-update-comment@v4.0.0
         with:
-          token: ${{ secrets.GIT_BOT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           body: |
             This issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: Thank you for your contribution! :sparkles:
