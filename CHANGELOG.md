@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed reload app bug. - ([ba5f5ef](https://github.com/DroidWorksStudio/EasyLauncher/commit/ba5f5ef85caf7d5815dba839361f0ca929e147dc))
 - Fixed home press - ([2860bcc](https://github.com/DroidWorksStudio/EasyLauncher/commit/2860bcc9cd33ac6fa78207f470ece49ea260fb2d))
 
 ### Dependency Updates:
