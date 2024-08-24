@@ -241,6 +241,7 @@ class HomeFragment : Fragment(),
         binding.apply {
             touchArea.setOnTouchListener(getSwipeGestureListener(context))
             nestScrollView.setOnTouchListener(getSwipeGestureListener(context))
+            appListTouchArea.setOnTouchListener(getSwipeGestureListener(context))
 
             clock.setOnClickListener { context.launchClock() }
             date.setOnClickListener { context.launchCalendar() }
