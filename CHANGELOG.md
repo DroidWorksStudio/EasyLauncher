@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Set targetSdk to Android 14 - ([3408a5f](https://github.com/DroidWorksStudio/EasyLauncher/commit/3408a5fc661f6ef238e000c9def8a33d3a0e6223))
 - Updated github workflow for changelog - ([b5a8814](https://github.com/DroidWorksStudio/EasyLauncher/commit/b5a8814ef916f01fd6c1f6ede27c6fb8b02e35b0))
 - Updated github workflows - ([f57537a](https://github.com/DroidWorksStudio/EasyLauncher/commit/f57537a70998fafd2bae18af3da19aa63b9005e9))
 - Code Cleanup - ([a9e55e2](https://github.com/DroidWorksStudio/EasyLauncher/commit/a9e55e2fbec764fedc5ab51abd85665d40ac5aa5))
