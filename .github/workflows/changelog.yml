@@ -38,7 +38,7 @@ jobs:
         run: |
           if [[ `git status --porcelain` ]]; then
             COMMIT_AUTHOR=$(git log -1 --pretty=%an)
-            if [[ "$COMMIT_AUTHOR" != "HeCodes2Much-Bot" ]]; then
+            if [[ "$COMMIT_AUTHOR" != "Gitbot-Actions" ]]; then
               git config --global user.name ${{ secrets.GIT_NAME }}
               git config --global user.email ${{ secrets.GIT_EMAIL }}
           
