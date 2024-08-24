@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.2.4 - ([4533b6e](https://github.com/DroidWorksStudio/EasyLauncher/commit/4533b6e807db37a1e73620659bc2475d5a7b27b3))
+
+## [0.2.3](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.3) - (24, August 2024)
+
 ### Bug Fixes:
 
 - Added better support for work profiles. - ([9163334](https://github.com/DroidWorksStudio/EasyLauncher/commit/9163334c9d69a9fb495abe2db06fd141bc6bd802))
