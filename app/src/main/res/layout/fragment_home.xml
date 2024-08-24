@@ -9,12 +9,6 @@
     android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
-    <FrameLayout
-        android:id="@+id/touchArea"
-        android:layout_marginVertical="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
     <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
         android:id="@+id/nestScrollView"
         android:layout_width="match_parent"
@@ -87,11 +81,18 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/appListAdapter"
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/touchArea"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/appListAdapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </com.github.droidworksstudio.launcher.view.GestureNestedScrollView>

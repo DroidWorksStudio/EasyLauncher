@@ -15,6 +15,7 @@ import android.os.Looper
 import android.text.format.DateFormat
 import android.util.Log
 import android.view.*
+import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.biometric.BiometricPrompt
@@ -191,13 +192,31 @@ class HomeFragment : Fragment(),
 
     private fun setupRecyclerView() {
         val marginTopInPixels = 128
-        val params: ViewGroup.MarginLayoutParams =
-            binding.appListAdapter.layoutParams as ViewGroup.MarginLayoutParams
-        params.topMargin = marginTopInPixels
+        val params: ViewGroup.LayoutParams = binding.appListAdapter.layoutParams
+        var layoutParams = if (params is LinearLayout.LayoutParams) {
+            params
+        } else {
+            LinearLayout.LayoutParams(params)
+        }
+        layoutParams.topMargin = marginTopInPixels
+
+        when (preferenceHelper.homeAppAlignment) {
+            Gravity.START -> {
+                layoutParams.gravity = Gravity.START
+            }
+
+            Gravity.CENTER -> {
+                layoutParams.gravity = Gravity.CENTER
+            }
+
+            Gravity.END -> {
+                layoutParams.gravity = Gravity.END
+            }
+        }
 
         binding.appListAdapter.apply {
             adapter = homeAdapter
-            layoutParams = params
+            layoutParams = layoutParams
             setHasFixedSize(false)
             layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
             isNestedScrollingEnabled = false
