@@ -18,6 +18,7 @@ import android.os.Looper
 import android.view.Menu
 import android.view.MenuItem
 import android.view.WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -214,6 +215,12 @@ class MainActivity : AppCompatActivity() {
         // Retrieve the NavController
         val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
+
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                backToHomeScreen()
+            }
+        })
     }
 
     @SuppressLint("SourceLockedOrientationActivity")
@@ -257,13 +264,6 @@ class MainActivity : AppCompatActivity() {
     override fun onUserLeaveHint() {
         backToHomeScreen()
         super.onUserLeaveHint()
-    }
-
-    @Deprecated("Deprecated in Java")
-    override fun onBackPressed() {
-        backToHomeScreen()
-        @Suppress("DEPRECATION")
-        super.onBackPressed()
     }
 
     private fun backToHomeScreen() {
