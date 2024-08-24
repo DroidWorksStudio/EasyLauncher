@@ -12,8 +12,9 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.coroutineScope
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.common.hideKeyboard
@@ -36,6 +37,7 @@ import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 
@@ -84,6 +86,7 @@ class DrawFragment : Fragment(),
 
     }
 
+    @SuppressLint("NewApi")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         appHelper.dayNightMod(requireContext(), binding.drawBackground)
         super.onViewCreated(view, savedInstanceState)
@@ -93,6 +96,9 @@ class DrawFragment : Fragment(),
         setupSearch()
         observeClickListener()
         observeSwipeTouchListener()
+
+        // Initialize observation of drawer apps
+        observeDrawerApps()
     }
 
     private fun setupRecyclerView() {
@@ -106,13 +112,20 @@ class DrawFragment : Fragment(),
 
     @RequiresApi(Build.VERSION_CODES.R)
     private fun observeDrawerApps() {
+        // Start comparing installed app information
         viewModel.compareInstalledAppInfo()
 
-        @Suppress("DEPRECATION")
-        viewLifecycleOwner.lifecycleScope.launchWhenCreated {
-            viewModel.drawApps.collect {
-                drawAdapter.submitList(it)
-                drawAdapter.updateDataWithStateFlow(it)
+        // Launch a coroutine tied to the lifecycle of the view
+        viewLifecycleOwner.lifecycleScope.launch {
+            // Use repeatOnLifecycle to manage the lifecycle state
+            repeatOnLifecycle(Lifecycle.State.CREATED) {
+                // Collect the drawer apps from the ViewModel
+                viewModel.drawApps.collect { apps ->
+                    // Update the adapter with the new list of apps
+                    drawAdapter.submitList(apps)
+                    // Update the adapter's data with the new state flow
+                    drawAdapter.updateDataWithStateFlow(apps)
+                }
             }
         }
     }
@@ -175,45 +188,50 @@ class DrawFragment : Fragment(),
 
     private fun checkAppThenRun(query: String) {
         val searchQuery = "%$query%"
-        @Suppress("DEPRECATION")
-        viewLifecycleOwner.lifecycle.coroutineScope.launchWhenCreated {
-            val trimmedQuery = searchQuery.trim()
-            viewModel.searchAppInfo(trimmedQuery).collect { searchResults ->
-                val numberOfItemsLeft = searchResults.size
-                val appResults = searchResults.firstOrNull()
-                if (numberOfItemsLeft == 0 && !requireContext().searchOnPlayStore(
-                        trimmedQuery
-                    )
-                ) {
-                    requireContext().openSearch(trimmedQuery)
-                } else {
-                    appResults?.let { appInfo ->
-                        observeBioAuthCheck(appInfo)
+
+        // Launch a coroutine tied to the lifecycle of the view
+        viewLifecycleOwner.lifecycleScope.launch {
+            // Use repeatOnLifecycle to manage the lifecycle state
+            repeatOnLifecycle(Lifecycle.State.CREATED) {
+                val trimmedQuery = searchQuery.trim()
+                viewModel.searchAppInfo(trimmedQuery).collect { searchResults ->
+                    val numberOfItemsLeft = searchResults.size
+                    val appResults = searchResults.firstOrNull()
+                    if (numberOfItemsLeft == 0 && !requireContext().searchOnPlayStore(trimmedQuery)) {
+                        requireContext().openSearch(trimmedQuery)
+                    } else {
+                        appResults?.let { appInfo ->
+                            observeBioAuthCheck(appInfo)
+                        }
+                        drawAdapter.submitList(searchResults)
                     }
-                    drawAdapter.submitList(searchResults)
                 }
             }
         }
     }
 
-
     private fun searchApp(query: String) {
         val searchQuery = "%$query%"
-        @Suppress("DEPRECATION")
-        viewLifecycleOwner.lifecycle.coroutineScope.launchWhenCreated {
-            viewModel.searchAppInfo(searchQuery).collect { searchResults ->
-                val numberOfItemsLeft = searchResults.size
-                val appResults = searchResults.firstOrNull()
-                when (numberOfItemsLeft) {
-                    1 -> {
-                        appResults?.let { appInfo ->
-                            if (preferenceHelper.automaticOpenApp) observeBioAuthCheck(appInfo)
-                        }
-                        drawAdapter.submitList(searchResults)
-                    }
 
-                    else -> {
-                        drawAdapter.submitList(searchResults)
+        // Launch a coroutine tied to the lifecycle of the view
+        viewLifecycleOwner.lifecycleScope.launch {
+            // Repeat the block when the lifecycle is at least CREATED
+            repeatOnLifecycle(Lifecycle.State.CREATED) {
+                // Collect search results from the ViewModel
+                viewModel.searchAppInfo(searchQuery).collect { searchResults ->
+                    val numberOfItemsLeft = searchResults.size
+                    val appResults = searchResults.firstOrNull()
+                    when (numberOfItemsLeft) {
+                        1 -> {
+                            appResults?.let { appInfo ->
+                                if (preferenceHelper.automaticOpenApp) observeBioAuthCheck(appInfo)
+                            }
+                            drawAdapter.submitList(searchResults)
+                        }
+
+                        else -> {
+                            drawAdapter.submitList(searchResults)
+                        }
                     }
                 }
             }
@@ -244,14 +262,12 @@ class DrawFragment : Fragment(),
     @RequiresApi(Build.VERSION_CODES.R)
     override fun onResume() {
         super.onResume()
-        observeDrawerApps()
         if (preferenceHelper.automaticKeyboard) binding.searchViewText.showKeyboard()
     }
 
     @RequiresApi(Build.VERSION_CODES.R)
     override fun onStart() {
         super.onStart()
-        observeDrawerApps()
     }
 
     override fun onStop() {

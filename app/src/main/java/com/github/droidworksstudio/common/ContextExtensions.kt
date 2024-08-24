@@ -3,6 +3,7 @@ package com.github.droidworksstudio.common
 import android.Manifest
 import android.app.SearchManager
 import android.content.ActivityNotFoundException
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.LauncherApps
@@ -33,9 +34,10 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.os.ConfigurationCompat
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.ui.activities.LauncherActivity
+import com.github.droidworksstudio.launcher.utils.Constants
 import java.util.Calendar
 import java.util.Date
 import kotlin.math.pow
@@ -184,12 +186,46 @@ fun Context.appInfo(appInfo: AppInfo) {
 }
 
 fun Context.launchApp(appInfo: AppInfo) {
-    val intent = this.packageManager.getLaunchIntentForPackage(appInfo.packageName)
-    if (intent != null) {
-        this.startActivity(intent)
+    val packageName = appInfo.packageName
+    val primaryUserHandle = android.os.Process.myUserHandle()
+    val userHandle = getUserHandleFromId(appInfo.userHandle) ?: primaryUserHandle  // Fallback to current user if not provided
+
+    // Get the LauncherApps service
+    val launcherApps = getSystemService(Context.LAUNCHER_APPS_SERVICE) as LauncherApps
+
+    // Attempt to get the launch intent for the package
+    val activityList = launcherApps.getActivityList(packageName, userHandle)
+
+    Log.d("launchApp", "launchApp: $packageName - $activityList")
+    if (activityList.isNotEmpty()) {
+        val componentName = ComponentName(packageName, activityList[0].name)
+        try {
+            // Start the app's main activity
+            launcherApps.startMainActivity(componentName, userHandle, null, null)
+        } catch (e: SecurityException) {
+            Log.e("launchApp", "SecurityException: ${e.message}")
+            showLongToast("Unable to launch app due to security restrictions")
+        } catch (e: Exception) {
+            Log.e("launchApp", "Exception: ${e.message}")
+            showLongToast("Unable to launch app")
+        }
     } else {
-        showLongToast("Failed to open the application")
+        showLongToast("Failed to find the application activity")
     }
+}
+
+fun Context.getUserHandleFromId(userId: Int): UserHandle? {
+    val userManager = getSystemService(Context.USER_SERVICE) as UserManager
+    // Get all available UserHandles
+    val userProfiles = userManager.userProfiles
+    // Iterate over user profiles
+    for (userProfile in userProfiles) {
+        // Check if the UserHandle matches the provided user ID
+        if (userProfile.hashCode() == userId) {
+            return userProfile
+        }
+    }
+    return null
 }
 
 fun Context.launchClock() {
@@ -212,11 +248,11 @@ fun Context.launchCalendar() {
         this.startActivity(Intent(Intent.ACTION_VIEW, builder.build()))
     } catch (e: Exception) {
         try {
-            val intent = Intent(Intent.ACTION_MAIN)
+            val intent = Intent(this, LauncherActivity::class.java)
             intent.addCategory(Intent.CATEGORY_APP_CALENDAR)
             this.startActivity(intent)
         } catch (e: Exception) {
-            Log.d("openCalendar", e.toString())
+            Log.e("openCalendar", e.toString())
         }
     }
 }

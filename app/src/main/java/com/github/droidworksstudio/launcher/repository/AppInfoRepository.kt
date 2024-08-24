@@ -8,9 +8,10 @@ import android.os.UserHandle
 import android.os.UserManager
 import android.util.Log
 import androidx.annotation.RequiresApi
-import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.data.dao.AppInfoDAO
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
+import com.github.droidworksstudio.launcher.helper.contextProvider.kt.ContextProvider
+import com.github.droidworksstudio.launcher.utils.Constants
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.firstOrNull
@@ -23,6 +24,9 @@ import javax.inject.Inject
 class AppInfoRepository @Inject constructor(
     private val appDao: AppInfoDAO,
 ) {
+
+    private val context: Context
+        get() = ContextProvider.applicationContext
 
     @Inject
     lateinit var packageManager: PackageManager
@@ -93,15 +97,31 @@ class AppInfoRepository @Inject constructor(
         appDao.updateLockApp(appInfo, appLock)
     }
 
+    @RequiresApi(Build.VERSION_CODES.R)
     private suspend fun getInstalledPackages(): Set<String> = withContext(Dispatchers.IO) {
+        val packages = mutableSetOf<String>()
 
-        val packages = HashSet<String>()
-        val apps = packageManager.getInstalledApplications(PackageManager.GET_META_DATA)
-        for (app in apps) {
-            packages.add(app.packageName)
+        // Obtain UserManager and LauncherApps services
+        val userManager = context.getSystemService(Context.USER_SERVICE) as UserManager
+        val launcherApps = context.getSystemService(Context.LAUNCHER_APPS_SERVICE) as LauncherApps
+
+        // Iterate through each user profile
+        for (userHandle in userManager.userProfiles) {
+            try {
+                // Get the package list for the user profile
+                val apps = launcherApps.getActivityList(null, userHandle)
+                for (app in apps) {
+                    packages.add(app.applicationInfo.packageName)
+                }
+            } catch (e: Exception) {
+                // Handle potential exceptions
+                Log.e("AppInfoRepository", "Error retrieving packages for user $userHandle", e)
+            }
         }
+
         packages
     }
+
 
     @RequiresApi(Build.VERSION_CODES.O)
     suspend fun initInstalledAppInfo(context: Context): List<AppInfo> =
@@ -125,9 +145,7 @@ class AppInfoRepository @Inject constructor(
             val newAppList: List<AppInfo> = userManager.userProfiles
                 .flatMap { profile ->
                     // Invoke the getIdentifier method on the UserHandle instance
-                    val userId = getIdentifierMethod.invoke(profile) as Int
-
-                    when (userId) {
+                    when (val userId = getIdentifierMethod.invoke(profile) as Int) {
                         0 -> {
                             // Handle the case when profile is UserHandle{0}
                             launcherApps.getActivityList(null, profile)
@@ -142,7 +160,7 @@ class AppInfoRepository @Inject constructor(
                                             hidden = false,
                                             lock = false,
                                             createTime = currentDateTime.toString(),
-                                            work = false,
+                                            userHandle = userId,
                                         )
                                     } else {
                                         val existingApp = getAppByPackageName(packageName)
@@ -166,7 +184,7 @@ class AppInfoRepository @Inject constructor(
                                             hidden = false,
                                             lock = false,
                                             createTime = currentDateTime.toString(),
-                                            work = true,
+                                            userHandle = userId,
                                         )
                                     } else {
                                         val existingApp = getAppByPackageNameWork(packageName)

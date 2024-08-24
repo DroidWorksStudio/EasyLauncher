@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import android.graphics.Typeface
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.helper.contextProvider.kt.ContextProvider
 import dagger.hilt.android.HiltAndroidApp
 import org.acra.ACRA
 import org.acra.ReportField
@@ -22,6 +23,8 @@ class Application : Application() {
 
     override fun onCreate() {
         super.onCreate()
+
+        ContextProvider.init(this)
 
         setCustomFont(applicationContext)
 

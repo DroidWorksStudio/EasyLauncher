@@ -1,7 +1,13 @@
 package com.github.droidworksstudio.launcher.data.dao
 
 import android.util.Log
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Transaction
+import androidx.room.Update
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import kotlinx.coroutines.flow.Flow
 
@@ -73,10 +79,10 @@ interface AppInfoDAO {
     @Query("SELECT * FROM app WHERE is_favorite = 1")
     fun getFavoriteAppInfo(): List<AppInfo>
 
-    @Query("SELECT * FROM app WHERE package_name = :packageName AND is_work = 0")
+    @Query("SELECT * FROM app WHERE package_name = :packageName AND user_handle = 0")
     suspend fun getAppByPackageName(packageName: String): AppInfo?
 
-    @Query("SELECT * FROM app WHERE package_name = :packageName AND is_work = 1")
+    @Query("SELECT * FROM app WHERE package_name = :packageName AND user_handle != 0")
     suspend fun getAppByPackageNameWork(packageName: String): AppInfo?
 
     private fun logUpdate(message: String, appInfo: AppInfo) {

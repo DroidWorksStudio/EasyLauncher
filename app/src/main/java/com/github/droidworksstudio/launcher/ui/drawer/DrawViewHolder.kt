@@ -37,11 +37,11 @@ class DrawViewHolder(
             appDrawName.setTextColor(preferenceHelper.appColor)
             appDrawName.textSize = preferenceHelper.appTextSize
             appDrawName.gravity = preferenceHelper.homeAppAlignment
-            Log.d("Tag", "Draw Adapter: ${appInfo.appName + appInfo.id} | ${appInfo.work}")
+            Log.d("Tag", "Draw Adapter: ${appInfo.appName + appInfo.id} | ${appInfo.userHandle}")
             val icon = AppCompatResources.getDrawable(appDrawName.context, R.drawable.work_profile)
             val px = preferenceHelper.appTextSize.toInt().dpToPx()
             icon?.setBounds(0, 0, px, px)
-            if (appInfo.work) {
+            if (appInfo.userHandle > 0) {
                 val appLabelGravity = preferenceHelper.homeAppAlignment
 
                 if (appLabelGravity == Gravity.START) {
@@ -77,7 +77,9 @@ class DrawViewHolder(
         }
 
         itemView.setOnLongClickListener {
-            onAppLongClickedListener.onAppLongClicked(appInfo)
+            if (appInfo.userHandle <= 0) {
+                onAppLongClickedListener.onAppLongClicked(appInfo)
+            }
             true
         }
     }
