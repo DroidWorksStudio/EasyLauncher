@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Added better support for work profiles. - ([9163334](https://github.com/DroidWorksStudio/EasyLauncher/commit/9163334c9d69a9fb495abe2db06fd141bc6bd802))
 - Fixed back button from breaking - ([8771956](https://github.com/DroidWorksStudio/EasyLauncher/commit/8771956e4b28c235004baef14ad1db062519ecd1))
 - Added the main touchArea back. - ([9f7c0ef](https://github.com/DroidWorksStudio/EasyLauncher/commit/9f7c0eff62c4eee0db19208e43666971c3e5d8b2))
 - Fixed the touch area for HomeFragment - ([5c77a23](https://github.com/DroidWorksStudio/EasyLauncher/commit/5c77a238d5b6cf06b5607fc1c24a65ab51661f11))
@@ -18,6 +19,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Added better support for work profiles. - ([9163334](https://github.com/DroidWorksStudio/EasyLauncher/commit/9163334c9d69a9fb495abe2db06fd141bc6bd802))
 - Set targetSdk to Android 14 - ([3408a5f](https://github.com/DroidWorksStudio/EasyLauncher/commit/3408a5fc661f6ef238e000c9def8a33d3a0e6223))
 - Updated github workflow for changelog - ([b5a8814](https://github.com/DroidWorksStudio/EasyLauncher/commit/b5a8814ef916f01fd6c1f6ede27c6fb8b02e35b0))
 - Updated github workflows - ([f57537a](https://github.com/DroidWorksStudio/EasyLauncher/commit/f57537a70998fafd2bae18af3da19aa63b9005e9))
