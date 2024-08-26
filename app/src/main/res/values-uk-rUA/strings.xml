@@ -44,6 +44,7 @@
     <string name="settings_display_battery">Показати батарею</string>
     <string name="settings_display_daily_word">Показати Daily Word</string>
     <string name="settings_display_app_icons">Показати значки програм</string>
+    <string name="settings_display_app_icon_dots">Show App Icons As Dots</string>
     <string name="settings_display_automatic_keyboard">Автоматичне відображення клавіатури</string>
     <string name="settings_display_auto_open_apps">Автоматичне відкриття останньої програми</string>
     <string name="settings_display_lock_settings">Налаштування блокування</string>
