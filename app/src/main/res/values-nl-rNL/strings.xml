@@ -44,6 +44,7 @@
     <string name="settings_display_battery">Toon batterij</string>
     <string name="settings_display_daily_word">Toon dagelijks woord</string>
     <string name="settings_display_app_icons">App-pictogrammen weergeven</string>
+    <string name="settings_display_app_icon_dots">Show App Icons As Dots</string>
     <string name="settings_display_automatic_keyboard">Toetsenbord voor automatische weergave</string>
     <string name="settings_display_auto_open_apps">Laatste app automatisch openen</string>
     <string name="settings_display_lock_settings">Instellingen vergrendelen</string>
