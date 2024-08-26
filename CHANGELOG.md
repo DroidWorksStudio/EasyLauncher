@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Updated Language Files. ([#121](https://github.com/DroidWorksStudio/EasyLauncher/issues/121)) - ([796dac1](https://github.com/DroidWorksStudio/EasyLauncher/commit/796dac1d65b2e1d7ba9395212d62309b453cc2a9))
 
+### Refactoring:
+
+- Made dots only work with left align apps on home screen. - ([e9fa768](https://github.com/DroidWorksStudio/EasyLauncher/commit/e9fa7682284957e12b023b8451c68248da8a7257))
+
 ### Releases:
 
 - Prepare for version 0.2.4 - ([4533b6e](https://github.com/DroidWorksStudio/EasyLauncher/commit/4533b6e807db37a1e73620659bc2475d5a7b27b3))
