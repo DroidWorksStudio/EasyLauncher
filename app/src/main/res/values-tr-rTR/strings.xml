@@ -44,7 +44,7 @@
     <string name="settings_display_battery">Pili Göster</string>
     <string name="settings_display_daily_word">Günlük Kelimeyi Göster</string>
     <string name="settings_display_app_icons">Uygulama Simgelerini Göster</string>
-    <string name="settings_display_app_icon_dots">Show App Icons As Dots</string>
+    <string name="settings_display_app_icon_dots">Uygulama Simgelerini Noktalar Olarak Göster</string>
     <string name="settings_display_automatic_keyboard">Klavyeyi Otomatik Göster</string>
     <string name="settings_display_auto_open_apps">Son Uygulamayı Otomatik Aç</string>
     <string name="settings_display_lock_settings">Kilit Ayarları</string>
