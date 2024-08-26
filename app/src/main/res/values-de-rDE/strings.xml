@@ -44,6 +44,7 @@
     <string name="settings_display_battery">Akku anzeigen</string>
     <string name="settings_display_daily_word">Wort des Tages anzeigen</string>
     <string name="settings_display_app_icons">App-Symbole anzeigen</string>
+    <string name="settings_display_app_icon_dots">App-Symbole als Punkte anzeigen</string>
     <string name="settings_display_automatic_keyboard">Tastatur automatisch einblenden</string>
     <string name="settings_display_auto_open_apps">Letzte App automatisch öffnen</string>
     <string name="settings_display_lock_settings">Sperreinstellungen</string>
