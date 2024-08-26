@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Added app dot icons. - ([34f32ff](https://github.com/DroidWorksStudio/EasyLauncher/commit/34f32ffffe1a8c25fef0f7a0bc6847e472f3bc16))
 
+### Language Support:
+
+- Updated Language Files. ([#121](https://github.com/DroidWorksStudio/EasyLauncher/issues/121)) - ([796dac1](https://github.com/DroidWorksStudio/EasyLauncher/commit/796dac1d65b2e1d7ba9395212d62309b453cc2a9))
+
 ### Releases:
 
 - Prepare for version 0.2.4 - ([4533b6e](https://github.com/DroidWorksStudio/EasyLauncher/commit/4533b6e807db37a1e73620659bc2475d5a7b27b3))
