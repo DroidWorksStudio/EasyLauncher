@@ -2,8 +2,8 @@ package com.github.droidworksstudio.launcher.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.utils.Constants
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -22,6 +22,7 @@ class PreferenceViewModel @Inject constructor(
     private val showWeatherWidgetSunSetRiseLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showBatteryWidgetLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showAppIconLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    private val showAppIconAsDotsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val homeAppAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val homeDateAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val homeTimeAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
@@ -86,6 +87,11 @@ class PreferenceViewModel @Inject constructor(
     fun setShowAppIcons(showAppIcons: Boolean) {
         preferenceHelper.showAppIcon = showAppIcons
         showAppIconLiveData.postValue(preferenceHelper.showAppIcon)
+    }
+
+    fun setShowAppIconDots(showAppIconAsDots: Boolean) {
+        preferenceHelper.showAppIconAsDots = showAppIconAsDots
+        showAppIconAsDotsLiveData.postValue(preferenceHelper.showAppIconAsDots)
     }
 
     fun setDailyWordColor(dailyWordColor: Int) {

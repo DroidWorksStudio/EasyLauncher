@@ -19,7 +19,6 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.github.droidworksstudio.common.getAppNameFromPackageName
 import com.github.droidworksstudio.common.resetDefaultLauncher
-import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.adapter.font.FontAdapter
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsBinding
@@ -33,6 +32,7 @@ import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AlignmentBottom
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.PaddingBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.TextBottomSheetDialogFragment
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
@@ -137,6 +137,7 @@ class SettingsFragment : Fragment(),
         binding.batterySwitchCompat.isChecked = preferenceHelper.showBattery
         binding.dailyWordSwitchCompat.isChecked = preferenceHelper.showDailyWord
         binding.appIconsSwitchCompat.isChecked = preferenceHelper.showAppIcon
+        binding.appIconDotsSwitchCompat.isChecked = preferenceHelper.showAppIconAsDots
         binding.automaticKeyboardSwitchCompat.isChecked = preferenceHelper.automaticKeyboard
         binding.automaticOpenAppSwitchCompat.isChecked = preferenceHelper.automaticOpenApp
         binding.lockSettingsSwitchCompat.isChecked = preferenceHelper.settingsLock
@@ -236,6 +237,14 @@ class SettingsFragment : Fragment(),
 
         binding.appIconsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
             preferenceViewModel.setShowAppIcons(isChecked)
+
+            // Disable and gray out the other setting if appIconsSwitchCompat is checked
+            binding.appIconDotsSwitchCompat.isEnabled = isChecked
+            binding.appIconDotsSwitchCompat.isChecked = false
+        }
+
+        binding.appIconDotsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            preferenceViewModel.setShowAppIconDots(isChecked)
         }
 
         binding.automaticKeyboardSwitchCompat.setOnCheckedChangeListener { _, isChecked ->

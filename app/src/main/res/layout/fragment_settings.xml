@@ -8,14 +8,14 @@
 
     <FrameLayout
         android:id="@+id/touchArea"
-        android:layout_marginVertical="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp" />
 
     <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
+        android:id="@+id/nestScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/nestScrollView"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:fadingEdgeLength="48dp"
@@ -33,33 +33,33 @@
             tools:ignore="MissingConstraints">
 
             <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextDefaultStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="48dp"
                 android:text="@string/settings_name"
-                android:textSize="@dimen/text_super_large"
-                style="@style/TextDefaultStyle" />
+                android:textSize="@dimen/text_super_large" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/version_info"
+                style="@style/TextDefaultStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="18dp"
                 android:text="@string/settings_version"
-                android:textSize="@dimen/text_large"
-                style="@style/TextDefaultStyle" />
+                android:textSize="@dimen/text_large" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/set_launcher_selector"
+                style="@style/TextDefaultStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="18dp"
                 android:text="@string/action_settings_default"
-                android:textSize="@dimen/text_large"
-                style="@style/TextDefaultStyle" />
+                android:textSize="@dimen/text_large" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -68,12 +68,12 @@
                 tools:ignore="MissingConstraints">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextDefaultStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
                     android:text="@string/settings_title_app_manager"
-                    android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle" />
+                    android:textSize="@dimen/text_super_large" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -84,6 +84,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/favorite_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -92,8 +93,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -128,12 +128,12 @@
                 tools:ignore="MissingConstraints">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextDefaultStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
                     android:text="@string/settings_title_home_behavior_preferences"
-                    android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle" />
+                    android:textSize="@dimen/text_super_large" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -144,6 +144,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/automaticKeyboard_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -152,8 +153,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/automaticKeyboard_switchCompat"
@@ -176,6 +176,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/automaticOpenApp_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -184,8 +185,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/automaticOpenApp_switchCompat"
@@ -208,6 +208,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/lockSettings_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -216,8 +217,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/lockSettings_switchCompat"
@@ -240,12 +240,12 @@
                 tools:ignore="MissingConstraints">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextDefaultStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
                     android:text="@string/settings_title_home_display_preferences"
-                    android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle" />
+                    android:textSize="@dimen/text_super_large" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -256,6 +256,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/statue_bar_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -264,8 +265,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/statue_bar_switchCompat"
@@ -288,6 +288,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/date_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -296,8 +297,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/date_switchCompat"
@@ -320,6 +320,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/time_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -328,8 +329,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/time_switchCompat"
@@ -352,6 +352,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/battery_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -360,8 +361,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/battery_switchCompat"
@@ -384,6 +384,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/dailyWord_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -392,8 +393,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/dailyWord_switchCompat"
@@ -416,6 +416,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/appIcons_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -424,11 +425,42 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/appIcons_switchCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.7"
+                        android:scaleY="0.8"
+                        android:thumb="@drawable/shape_switch_thumb"
+                        app:track="@drawable/selector_switch"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/appIconDots_text"
+                        style="@style/TextDefaultStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/settings_display_app_icon_dots"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/appIconDots_switchCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:scaleX="0.7"
@@ -448,12 +480,12 @@
                 tools:ignore="MissingConstraints">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextDefaultStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
                     android:text="@string/settings_title_home_appearance_preferences"
-                    android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle" />
+                    android:textSize="@dimen/text_super_large" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/select_appearance_text_size"
@@ -465,6 +497,7 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -473,8 +506,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -488,6 +520,7 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -496,8 +529,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -576,6 +608,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/miscellaneous_launcherFonts_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -584,18 +617,17 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/miscellaneous_launcherFonts_control"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|center"
                         android:text="@string/settings_font_system"
                         android:textSize="@dimen/text_large"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -614,12 +646,12 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:text="@string/settings_title_gestures"
-                        android:textSize="@dimen/text_super_large"
-                        style="@style/TextDefaultStyle" />
+                        android:textSize="@dimen/text_super_large" />
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
@@ -631,6 +663,7 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_double_tap_text"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -639,18 +672,17 @@
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_double_tap_control"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="left|center"
                             android:text="@string/settings_double_tap"
                             android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -664,6 +696,7 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_swipe_up_text"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -672,18 +705,17 @@
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_swipe_up_control"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="left|center"
                             android:text="@string/settings_swipe_up"
                             android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -697,6 +729,7 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_swipe_down_text"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -705,18 +738,17 @@
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_swipe_down_control"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="left|center"
                             android:text="@string/settings_swipe_down"
                             android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -730,6 +762,7 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_swipe_left_text"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -738,18 +771,17 @@
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_swipe_left_control"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="left|center"
                             android:text="@string/settings_swipe_left"
                             android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -763,6 +795,7 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_swipe_right_text"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -771,18 +804,17 @@
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/gestures_swipe_right_control"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="left|center"
                             android:text="@string/settings_swipe_right"
                             android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -803,12 +835,12 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:text="@string/settings_title_miscellaneous"
-                        android:textSize="@dimen/text_super_large"
-                        style="@style/TextDefaultStyle" />
+                        android:textSize="@dimen/text_super_large" />
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
@@ -820,6 +852,7 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/miscellaneous_searchEngine_text"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -828,18 +861,17 @@
                             android:textSize="@dimen/text_large"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/miscellaneous_searchEngine_control"
+                            style="@style/TextDefaultStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="left|center"
                             android:text="@string/search"
                             android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded"
-                            style="@style/TextDefaultStyle" />
+                            tools:ignore="RtlHardcoded" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -860,12 +892,12 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:text="@string/settings_title_backups"
-                        android:textSize="@dimen/text_super_large"
-                        style="@style/TextDefaultStyle" />
+                        android:textSize="@dimen/text_super_large" />
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
@@ -875,31 +907,31 @@
                         tools:ignore="MissingConstraints">
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/backup_view"
+                            style="@style/TextDefaultStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
                             android:text="@string/settings_backups_backup"
-                            android:textSize="@dimen/text_large"
-                            android:layout_marginVertical="10dp"
-                            style="@style/TextDefaultStyle" />
+                            android:textSize="@dimen/text_large" />
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/clear_view"
-                            android:text="@string/settings_backups_clear"
-                            android:textSize="@dimen/text_large"
-                            android:layout_marginVertical="10dp"
-                            style="@style/TextDefaultStyle" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextDefaultStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/restore_view"
-                            android:text="@string/settings_backups_restore"
-                            android:textSize="@dimen/text_large"
                             android:layout_marginVertical="10dp"
-                            style="@style/TextDefaultStyle" />
+                            android:text="@string/settings_backups_clear"
+                            android:textSize="@dimen/text_large" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/restore_view"
+                            style="@style/TextDefaultStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:text="@string/settings_backups_restore"
+                            android:textSize="@dimen/text_large" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -920,50 +952,50 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:text="@string/settings_title_others"
-                        android:textSize="@dimen/text_super_large"
-                        style="@style/TextDefaultStyle" />
+                        android:textSize="@dimen/text_super_large" />
 
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginVertical="10dp"
                         android:layout_weight="4"
                         android:gravity="center"
+                        android:orientation="horizontal"
                         tools:ignore="MissingConstraints">
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/share_view"
+                            style="@style/TextDefaultStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
                             android:text="@string/settings_others_share"
-                            android:textSize="@dimen/text_large"
-                            android:layout_marginHorizontal="10dp"
-                            style="@style/TextDefaultStyle" />
+                            android:textSize="@dimen/text_large" />
 
                         <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/github_view"
-                            android:text="@string/settings_others_github"
-                            android:textSize="@dimen/text_large"
-                            android:layout_marginHorizontal="10dp"
-                            style="@style/TextDefaultStyle" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextDefaultStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/feedback_view"
-                            android:text="@string/settings_others_feedback"
-                            android:textSize="@dimen/text_large"
                             android:layout_marginHorizontal="10dp"
-                            style="@style/TextDefaultStyle" />
+                            android:text="@string/settings_others_github"
+                            android:textSize="@dimen/text_large" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/feedback_view"
+                            style="@style/TextDefaultStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:text="@string/settings_others_feedback"
+                            android:textSize="@dimen/text_large" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 

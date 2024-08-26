@@ -53,6 +53,7 @@ object Constants {
     const val APP_TEXT_PADDING = "APP_TEXT_PADDING"
 
     const val SHOW_APP_ICON = "SHOW_APP_ICON"
+    const val SHOW_APP_ICON_DOTS = "SHOW_APP_ICON_DOTS"
 
     const val AUTOMATIC_KEYBOARD = "AUTOMATIC_KEYBOARD"
     const val AUTOMATIC_OPEN_APP = "AUTOMATIC_OPEN_APP"

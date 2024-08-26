@@ -183,6 +183,7 @@ dependencies {
     implementation(libs.acra.core)
     implementation(libs.acra.dialog)
     implementation(libs.acra.mail)
+    implementation(libs.androidx.palette.ktx)
 
     //noinspection KaptUsageInsteadOfKsp
     kapt(libs.room.compiler)

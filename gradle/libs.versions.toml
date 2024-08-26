@@ -20,6 +20,7 @@ biometric = "1.2.0-alpha05"
 color-chooser = "0.7.3"
 composeAndroid = "1.6.8"
 acra = "5.11.3"
+paletteKtx = "1.0.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -58,6 +59,7 @@ androidx-ui-android = { group = "androidx.compose.ui", name = "ui-android", vers
 acra-core = { group = "ch.acra", name = "acra-core", version.ref = "acra" }
 acra-dialog = { group = "ch.acra", name = "acra-dialog", version.ref = "acra" }
 acra-mail = { group = "ch.acra", name = "acra-mail", version.ref = "acra" }
+androidx-palette-ktx = { group = "androidx.palette", name = "palette-ktx", version.ref = "paletteKtx" }
 
 
 [plugins]

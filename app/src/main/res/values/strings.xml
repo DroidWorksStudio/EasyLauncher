@@ -51,6 +51,7 @@
     <string name="settings_display_battery">Show Battery</string>
     <string name="settings_display_daily_word">Show Daily Word</string>
     <string name="settings_display_app_icons">Show App Icons</string>
+    <string name="settings_display_app_icon_dots">Show App Icons As Dots</string>
     <string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
     <string name="settings_display_auto_open_apps">Auto Open Last App</string>
     <string name="settings_display_lock_settings">Lock Settings</string>
