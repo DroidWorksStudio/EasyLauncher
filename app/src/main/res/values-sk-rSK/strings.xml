@@ -44,6 +44,7 @@
     <string name="settings_display_battery">Zobraziť batériu</string>
     <string name="settings_display_daily_word">Zobraziť Daily Word</string>
     <string name="settings_display_app_icons">Zobraziť ikony aplikácií</string>
+    <string name="settings_display_app_icon_dots">Show App Icons As Dots</string>
     <string name="settings_display_automatic_keyboard">Automaticky zobraziť klávesnicu</string>
     <string name="settings_display_auto_open_apps">Automatické otvorenie poslednej aplikácie</string>
     <string name="settings_display_lock_settings">Nastavenia zámku</string>
