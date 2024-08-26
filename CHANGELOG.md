@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added app dot icons. - ([34f32ff](https://github.com/DroidWorksStudio/EasyLauncher/commit/34f32ffffe1a8c25fef0f7a0bc6847e472f3bc16))
+
 ### Releases:
 
 - Prepare for version 0.2.4 - ([4533b6e](https://github.com/DroidWorksStudio/EasyLauncher/commit/4533b6e807db37a1e73620659bc2475d5a7b27b3))
