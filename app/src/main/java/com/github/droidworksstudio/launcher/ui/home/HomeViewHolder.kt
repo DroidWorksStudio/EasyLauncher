@@ -42,17 +42,26 @@ class HomeViewHolder @Inject constructor(
                 val appIcon = pm.getApplicationIcon(appInfo.packageName)
 
                 if (preferenceHelper.showAppIconAsDots) {
-                    val appNewIcon: Drawable = ContextCompat.getDrawable(itemView.context, R.drawable.app_dot_icon)!!
+                    when (preferenceHelper.homeAppAlignment) {
+                        Gravity.START -> {
+                            val appNewIcon
+                                    : Drawable = ContextCompat.getDrawable(itemView.context, R.drawable.app_dot_icon)!!
 
-                    val bitmap = drawableToBitmap(appIcon)
-                    val dominantColor = getDominantColor(bitmap)
-                    val recoloredDrawable = recolorDrawable(appNewIcon, dominantColor)
+                            val bitmap = drawableToBitmap(appIcon)
+                            val dominantColor = getDominantColor(bitmap)
+                            val recoloredDrawable = recolorDrawable(appNewIcon, dominantColor)
 
-                    val appIconSize = (preferenceHelper.appTextSize * 1.1f).toInt()
-                    appHomeDotsIcon.setImageDrawable(recoloredDrawable)
-                    appHomeDotsIcon.layoutParams.width = appIconSize
-                    appHomeDotsIcon.layoutParams.height = appIconSize
-                    appHomeDotsIcon.visibility = View.VISIBLE
+                            val appIconSize = (preferenceHelper.appTextSize * 1.1f).toInt()
+                            appHomeDotsIcon.setImageDrawable(recoloredDrawable)
+                            appHomeDotsIcon.layoutParams.width = appIconSize
+                            appHomeDotsIcon.layoutParams.height = appIconSize
+                            appHomeDotsIcon.visibility = View.VISIBLE
+                        }
+
+                        else -> {
+                            appHomeDotsIcon.visibility = View.GONE
+                        }
+                    }
                 } else {
                     val appIconSize = (preferenceHelper.appTextSize * 2f).toInt()
                     when (preferenceHelper.homeAppAlignment) {
