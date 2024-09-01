@@ -10,7 +10,7 @@
 <b>Personlig tilpasning:</b>
 
 - Skriftfarver: Tilpas skrifttypefarver ved hjælp af vores farvevælger.
-- Position: Juster dato, tid og apps til venstre, centrer eller højre.
+- Position: Juster Dato, Klokkeslæt og Apps til Venstre, Midten eller Højre.
 - Polstring: Juster polstring mellem yndlingsapps og alle apps.
 - Skriftstørrelse: Indstil skriftstørrelse for hvert element på startskærmen.
 - Skift mellem elementer: Styr visningspræferencer på startskærmen.
