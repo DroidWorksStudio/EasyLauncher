@@ -1,38 +1,38 @@
-<b>Features:</b>
+<b>Funktioner:</b>
 
-- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
-- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
-- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
-- Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
-- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
-- Crash Reports: Report crashes via email, including log files for effective troubleshooting.
+- Hurtig adgang til favoritapp: Vis dine mest brugte apps på startskærmen i tekstformat for hurtig adgang, hvilket strømliner dine operationer.
+- Skjul apps: Skjul nemt apps, du ikke vil have synlige, og hold din startskærm ren og fokuseret på væsentligt indhold.
+- Omdøb apps: Tilpas dine apps med brugerdefinerede navne, der synkroniseres problemfrit mellem favoritter og alle apps.
+- Låsning: Sikre dit privatliv og dine data med fingeraftrykslås for udvalgte apps og indstillinger.
+- Ingen internettilladelser: Ingen brug af INTERNET-tilladelser, hvilket sikrer, at dine data forbliver private.
+- Nedbrudsrapporter: Rapporter nedbrud via e-mail, inklusive logfiler til effektiv fejlfinding.
 
-<b>Personalized Customization:</b>
+<b>Personlig tilpasning:</b>
 
-- Font Colors: Customize font colors using our color picker.
-- Position: Align Date, Time, and Apps to Left, Center, or Right.
-- Padding: Adjust padding between favorite apps and all apps.
-- Font Size: Set font size for each element on the home screen.
-- Toggle Items: Control display preferences on the home screen.
+- Skriftfarver: Tilpas skrifttypefarver ved hjælp af vores farvevælger.
+- Position: Juster dato, tid og apps til venstre, centrer eller højre.
+- Polstring: Juster polstring mellem yndlingsapps og alle apps.
+- Skriftstørrelse: Indstil skriftstørrelse for hvert element på startskærmen.
+- Skift mellem elementer: Styr visningspræferencer på startskærmen.
 
-<b>Possible Gestures Include:</b>
+<b>Mulige bevægelser omfatter:</b>
 
-- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
-- Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
-- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
-- Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
-- Battery Icon: Tap on the battery icon to access battery usage details.
+- Strygebevægelser: Naviger ved at stryge i forskellige retninger (op, ned, venstre, højre) for at få adgang til forskellige funktioner eller flytte mellem skærme.
+- Dobbelttryk: Tryk hurtigt to gange på skærmen for at udføre en foruddefineret handling eller aktivere en funktion.
+- Urinteraktion: Tryk på uret for at få vist yderligere oplysninger såsom alarmer eller verdensur.
+- Datointeraktion: Tryk på datoen for at åbne kalenderappen til planlægning og planlægning.
+- Batteriikon: Tryk på batteriikonet for at få adgang til oplysninger om batteriforbrug.
 
-<b>Possible Actions Include:</b>
+<b>Mulige handlinger omfatter:</b>
 
-- Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
-- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
-- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
-- Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
-- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
-- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
-- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
-- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
-- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
+- Åbn specificeret app: Start øjeblikkeligt enhver app, du vælger, for problemfri adgang til dine favoritter.
+- Vis appliste: Se og administrer dine installerede apps effektivt med en omfattende listevisning.
+- Skærmlåsning: Beskyt din enhed og beskyt dit privatliv med hurtig og praktisk skærmlåsning.
+- Vis nyligt åbnede apps: Få adgang til nyligt brugte apps uden besvær for hurtig multitasking.
+- Adgang til meddelelsesskuffe: Åbn meddelelsesskuffen med et enkelt tryk for at tjekke opdateringer og advarsler.
+- Hurtige indstillinger: Administrer enhedsindstillinger hurtigt ved at få adgang til hurtige indstillinger direkte fra startskærmen.
+- Strømdialog: Styr strømindstillinger som genstart, sluk og mere med lethed ved hjælp af strømdialogen.
+- Tag et skærmbillede: Tag din skærm med det samme for at gemme og dele vigtige oplysninger og øjeblikke.
+- Deaktiver bevægelser: Deaktiver midlertidigt eller permanent specifikke bevægelser for at tilpasse din enheds interaktionsoplevelse.
 
-For more details visit the <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> page.
+Besøg <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> siden for flere detaljer.
