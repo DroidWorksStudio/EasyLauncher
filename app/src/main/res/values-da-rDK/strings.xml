@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="action_settings">Indstillinger</string>
-    <string name="action_settings_default">Indstil som standard launcher</string>
+    <string name="action_settings_default">Indstil som standardstartapp</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Hjem Fragment</string>
     <string name="draw_fragment_label">Tegn Fragment</string>
@@ -11,7 +11,7 @@
     <string name="widgets_fragment_label">Widgets Fragment</string>
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Yndlingsapps</string>
-    <string name="hidden_fragment_name">Skjulte apps</string>
+    <string name="hidden_fragment_name">Skjulte Apps</string>
     <string name="favorite_fragment_no_apps">Ingen favoritapps</string>
     <string name="hidden_fragment_no_apps">Ingen skjulte apps</string>
     <string name="search">Søge</string>
