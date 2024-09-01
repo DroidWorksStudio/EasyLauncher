@@ -1,0 +1,38 @@
+<b>Funktioner:</b>
+
+- Hurtig adgang til favoritapp: Vis dine mest brugte apps på startskærmen i tekstformat for hurtig adgang, hvilket strømliner dine operationer.
+- Skjul apps: Skjul nemt apps, du ikke vil have synlige, og hold din startskærm ren og fokuseret på væsentligt indhold.
+- Omdøb apps: Tilpas dine apps med brugerdefinerede navne, der synkroniseres problemfrit mellem favoritter og alle apps.
+- Låsning: Sikre dit privatliv og dine data med fingeraftrykslås for udvalgte apps og indstillinger.
+- Ingen internettilladelser: Ingen brug af INTERNET-tilladelser, hvilket sikrer, at dine data forbliver private.
+- Nedbrudsrapporter: Rapporter nedbrud via e-mail, inklusive logfiler til effektiv fejlfinding.
+
+<b>Personlig tilpasning:</b>
+
+- Skriftfarver: Tilpas skrifttypefarver ved hjælp af vores farvevælger.
+- Position: Juster dato, tid og apps til venstre, centrer eller højre.
+- Polstring: Juster polstring mellem yndlingsapps og alle apps.
+- Skriftstørrelse: Indstil skriftstørrelse for hvert element på startskærmen.
+- Skift mellem elementer: Styr visningspræferencer på startskærmen.
+
+<b>Mulige bevægelser omfatter:</b>
+
+- Strygebevægelser: Naviger ved at stryge i forskellige retninger (op, ned, venstre, højre) for at få adgang til forskellige funktioner eller flytte mellem skærme.
+- Dobbelttryk: Tryk hurtigt to gange på skærmen for at udføre en foruddefineret handling eller aktivere en funktion.
+- Urinteraktion: Tryk på uret for at få vist yderligere oplysninger såsom alarmer eller verdensur.
+- Datointeraktion: Tryk på datoen for at åbne kalenderappen til planlægning og planlægning.
+- Batteriikon: Tryk på batteriikonet for at få adgang til oplysninger om batteriforbrug.
+
+<b>Mulige handlinger omfatter:</b>
+
+- Åbn specificeret app: Start øjeblikkeligt enhver app, du vælger, for problemfri adgang til dine favoritter.
+- Vis appliste: Se og administrer dine installerede apps effektivt med en omfattende listevisning.
+- Skærmlåsning: Beskyt din enhed og beskyt dit privatliv med hurtig og praktisk skærmlåsning.
+- Vis nyligt åbnede apps: Få adgang til nyligt brugte apps uden besvær for hurtig multitasking.
+- Adgang til meddelelsesskuffe: Åbn meddelelsesskuffen med et enkelt tryk for at tjekke opdateringer og advarsler.
+- Hurtige indstillinger: Administrer enhedsindstillinger hurtigt ved at få adgang til hurtige indstillinger direkte fra startskærmen.
+- Strømdialog: Styr strømindstillinger som genstart, sluk og mere med lethed ved hjælp af strømdialogen.
+- Tag et skærmbillede: Tag din skærm med det samme for at gemme og dele vigtige oplysninger og øjeblikke.
+- Deaktiver bevægelser: Deaktiver midlertidigt eller permanent specifikke bevægelser for at tilpasse din enheds interaktionsoplevelse.
+
+Besøg <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> siden for flere detaljer.

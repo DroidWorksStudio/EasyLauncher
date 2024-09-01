@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>Forbliv robust!</item>
+        <item>Du har det her!</item>
+        <item>Blink lyst!</item>
+        <item>Skab skæbne.</item>
+        <item>Omfavn rejsen.</item>
+        <item>Styrke indeni.</item>
+        <item>Fortsæt med at skubbe!</item>
+        <item>Du er fantastisk!</item>
+        <item>Stol på, giv aldrig.</item>
+        <item>Ubegrænset potentiale.</item>
+        <item>Fremskridt frem for perfektion.</item>
+        <item>Udfordringer = vækst.</item>
+        <item>Værd til succes.</item>
+        <item>Jagt dine drømme.</item>
+        <item>Overvind alt!</item>
+        <item>Beslutsomheden vinder.</item>
+        <item>Hvert skridt tæller.</item>
+        <item>Forbliv positiv!</item>
+        <item>Modstandsdygtighed klipper.</item>
+        <item>Styrke i dig.</item>
+        <item>Fejr fremskridt.</item>
+        <item>Hårdt arbejde betaler sig.</item>
+        <item>Tillid, hav tro.</item>
+        <item>Unik rejse.</item>
+        <item>Øjne på præmien.</item>
+        <item>Opnå hvad som helst!</item>
+        <item>Tag dristige skridt.</item>
+        <item>Passion giver næring til dig.</item>
+        <item>Fokus på mål.</item>
+        <item>Hold ud, vind.</item>
+        <item>Nøgle til selvtillid.</item>
+        <item>Fortjener godt.</item>
+        <item>Ræk ud efter drømme.</item>
+        <item>Modig, stærk, smart.</item>
+        <item>Positiv holdning.</item>
+        <item>Stol på rejsen.</item>
+        <item>Urokkelig beslutsomhed.</item>
+        <item>Tilbageslag = comeback.</item>
+        <item>Gør drømme til virkelighed.</item>
+        <item>Forpligt dig til mål.</item>
+        <item>Styrke, ingen grænser.</item>
+        <item>Head up, gennembrud.</item>
+        <item>Dit potentiale skinner.</item>
+        <item>Drømme inden for rækkevidde.</item>
+        <item>Du er ustoppelig!</item>
+        <item>Tro, opnå.</item>
+        <item>Skub forbi grænserne.</item>
+        <item>Vedholdenhed betaler sig.</item>
+        <item>Forbliv frygtløs!</item>
+        <item>Hæv dig over udfordringer.</item>
+        <item>Bliv ved med at drømme stort.</item>
+        <item>Lev med formål.</item>
+        <item>Fokuser på det gode.</item>
+        <item>Styrke indefra.</item>
+        <item>Tro på magi.</item>
+        <item>Smil, du har det her.</item>
+        <item>Mist aldrig håbet.</item>
+        <item>Omfavn hvert øjeblik.</item>
+        <item>Vær din egen helt.</item>
+        <item>Du er nok.</item>
+        <item>Overvind din frygt.</item>
+        <item>Grib dagen!</item>
+        <item>Elsk dig selv først.</item>
+        <item>Forbliv positiv, altid.</item>
+        <item>Du er en kriger.</item>
+        <item>Tro på dig selv.</item>
+        <item>Omfavn muligheder.</item>
+        <item>Lev med lidenskab.</item>
+        <item>Fortsæt fremad.</item>
+        <item>Du er ustoppelig!</item>
+        <item>Vær tro mod dig.</item>
+        <item>Lev dristigt.</item>
+        <item>Bevar troen.</item>
+        <item>Styrke i modgang.</item>
+        <item>Voks hver dag.</item>
+        <item>Udholdenhed, sejr.</item>
+        <item>Jagt dine lidenskaber.</item>
+        <item>Find glæden ved rejsen.</item>
+        <item>Tag risici, trives.</item>
+        <item>Bliv stærk, modig.</item>
+        <item>Stol på indre visdom.</item>
+        <item>Bliv ved med at skinne klart.</item>
+        <item>Drøm, tro, opnå.</item>
+        <item>Vær ustoppelig.</item>
+        <item>Eje din storhed.</item>
+        <item>Omfavn det ukendte.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Stol på dig selv.</item>
+        <item>Spred altid venlighed.</item>
+        <item>Tro på dine drømme.</item>
+        <item>Forbliv fokuseret, beslutsom.</item>
+        <item>Omfavn din rejse.</item>
+        <item>Hold hovedet oppe.</item>
+        <item>Giv aldrig op håbet.</item>
+        <item>Styrke indefra.</item>
+        <item>Forbliv robust, stærk.</item>
+        <item>Du er ustoppelig!</item>
+        <item>Tag imod udfordringen.</item>
+        <item>Hold ilden brændende.</item>
+        <item>Fokuser på, hvad der er muligt.</item>
+        <item>Drøm stort, arbejd hårdt.</item>
+        <item>Hold øje med præmien.</item>
+        <item>Stol på processen.</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Tro, opnå, lykkes.</item>
+        <item>Bliv altid inspireret.</item>
+        <item>Vær frygtløs i jagten.</item>
+        <item>Forbliv jordet, rejs dig.</item>
+        <item>Find styrke i kampen.</item>
+        <item>Tag imod enhver udfordring.</item>
+        <item>Hold dig modig, vær lys.</item>
+        <item>Du er i stand til storhed.</item>
+        <item>Stol på din rejse.</item>
+        <item>Bliv ved med at kæmpe, bliv ved med at rejse dig.</item>
+        <item>Tro på det umulige.</item>
+        <item>Forbliv robust, giv aldrig.</item>
+        <item>Du er stærkere end du aner.</item>
+        <item>Lev med passion og formål.</item>
+        <item>Find glæden på enhver rejse.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv positiv, bliv stærk.</item>
+        <item>Hver dag er en ny chance.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Bliv ved med at skubbe forbi grænserne.</item>
+        <item>Stol på din indre styrke.</item>
+        <item>Du er bestemt til storhed.</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Vær tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Forbliv tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Forbliv frygtløs, forbliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Vær tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Du er bestemt til storhed!</item>
+        <item>Tro på dine drømme!</item>
+        <item>Forbliv beslutsom, få succes.</item>
+        <item>Fortsæt med at bevæge dig mod dine mål.</item>
+        <item>Jagt dine drømme ubønhørligt.</item>
+        <item>Styrke kommer indefra.</item>
+        <item>Hold fokus på dine mål.</item>
+        <item>Du er i stand til hvad som helst.</item>
+        <item>Bliv frygtløs, bliv stærk.</item>
+        <item>Tro, opnå, lykkes!</item>
+        <item>Stol på din rejse.</item>
+        <item>Forbliv robust, løft dig over.</item>
+        <item>Du har magten i dig.</item>
+        <item>Drøm stort, arbejd hårdt, opnå.</item>
+        <item>Hold fokus, forbliv stærk.</item>
+        <item>Du er stærkere end du tror!</item>
+        <item>Tro på dig selv, altid.</item>
+        <item>Bliv beslutsom, bliv stærk.</item>
+        <item>Omfavn enhver mulighed.</item>
+        <item>Du er i stand til storhed!</item>
+        <item>Vær tro mod dig selv.</item>
+        <item>Stol på din rejse.</item>
+        <item>Fortsæt med at skubbe fremad.</item>
+        <item>Drøm, tro, opnå!</item>
+    </string-array>
+</resources>
