@@ -138,9 +138,9 @@
     <string name="widgets_settings_display">Vise</string>
     <string name="widgets_settings_select_order">Vælg Bestil</string>
     <string name="acra_crash">Krak</string>
-    <string name="acra_dialog_text">Vi beklager, men %1$s er stødt på et uventet problem og skal lukke. Hjælp os med at forbedre os ved at sende en nedbrudsrapport.\n\n%1$s værdsætter dit privatliv, og de indsamlede data bruges udelukkende til at forbedre app-stabiliteten. Der indsamles ingen personlige oplysninger. Tak for din støtte!</string>
-    <string name="acra_send_report">Send rapport</string>
-    <string name="acra_dont_send">Send ikke</string>
+    <string name="acra_dialog_text">Beklager, %1$s stødte på et uventet problem og blev lukket. Hjælp os med at blive bedre ved at sende en nedbrudsrapport.\n\n%1$s værdsætter dit privatliv, og de indsamlede data bruges udelukkende til at forbedre appens stabilitet. Ingen personlige oplysninger indsamles. Tak for din støtte!</string>
+    <string name="acra_send_report">Send Rapport</string>
+    <string name="acra_dont_send">Send Ikke</string>
     <string name="acra_mail_body">Der er sket et nedbrud i applikationen.\n\nNedenfor er detaljerne om enheden. Fejlloggen er vedhæftet som en fil til din reference. Vi vil sætte pris på din hjælp til at løse dette problem.\n\nEnhedsoplysninger: \n[Venligst udfyld oplysningerne nedenfor og fjern også alt mellem de firkantede parenteser, ellers vil dette blive ignoreret.]\n\n- Appversion: [0.0.1]\n- Android-version: [14]\n- Enhedsnavn: [Android Pixel 69]\n- Installationssted: [github, fdroid, obtanium, self]\n\nDin hurtige opmærksomhed på denne sag er meget værdsat.\n\nTak.\n</string>
     <string-array name="alignment_options">
         <item>Venstre</item>
