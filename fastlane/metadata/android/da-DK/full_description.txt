@@ -1,7 +1,7 @@
 <b>Funktioner:</b>
 
 - Hurtig adgang til favoritapp: Vis dine mest brugte apps på startskærmen i tekstformat for hurtig adgang, hvilket strømliner dine operationer.
-- Skjul apps: Skjul nemt apps, du ikke vil have synlige, og hold din startskærm ren og fokuseret på væsentligt indhold.
+- Skjul Apps: Skjul nemt apps, du ikke vil have synlige, og hold din startskærm ren og fokuseret på vigtigt indhold.
 - Omdøb apps: Tilpas dine apps med brugerdefinerede navne, der synkroniseres problemfrit mellem favoritter og alle apps.
 - Låsning: Sikre dit privatliv og dine data med fingeraftrykslås for udvalgte apps og indstillinger.
 - Ingen internettilladelser: Ingen brug af INTERNET-tilladelser, hvilket sikrer, at dine data forbliver private.
