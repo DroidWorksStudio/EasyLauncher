@@ -144,7 +144,7 @@
     <string name="acra_mail_body">Der er sket et nedbrud i applikationen.\n\nNedenfor er detaljerne om enheden. Fejlloggen er vedhæftet som en fil til din reference. Vi vil sætte pris på din hjælp til at løse dette problem.\n\nEnhedsoplysninger: \n[Venligst udfyld oplysningerne nedenfor og fjern også alt mellem de firkantede parenteser, ellers vil dette blive ignoreret.]\n\n- Appversion: [0.0.1]\n- Android-version: [14]\n- Enhedsnavn: [Android Pixel 69]\n- Installationssted: [github, fdroid, obtanium, self]\n\nDin hurtige opmærksomhed på denne sag er meget værdsat.\n\nTak.\n</string>
     <string-array name="alignment_options">
         <item>Venstre</item>
-        <item>Centrum</item>
+        <item>Midten</item>
         <item>Højre</item>
     </string-array>
 </resources>
