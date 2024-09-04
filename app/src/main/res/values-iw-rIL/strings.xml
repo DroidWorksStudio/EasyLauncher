@@ -141,7 +141,7 @@
     <string name="acra_dialog_text">אנו מצטערים, אבל %1$s נתקל בבעיה בלתי צפויה וצריך להיסגר. אנא עזור לנו להשתפר על ידי שליחת דוח קריסה.\n\n%1$s מעריכה את הפרטיות שלך והנתונים שנאספים משמשים אך ורק לשיפור יציבות האפליקציה. לא נאסף מידע אישי. תודה על תמיכתך!</string>
     <string name="acra_send_report">שלח דו\"ח</string>
     <string name="acra_dont_send">אל תשלח</string>
-    <string name="acra_mail_body">התרחשה קריסה באפליקציה.\n\nלהלן הפרטים של המכשיר. יומן השגיאות צורף כקובץ לעיונך. נשמח לעזרתך בפתרון בעיה זו.\n\nמידע על מכשיר: \n[נא למלא את המידע למטה ולהסיר כל דבר בין הסוגריים המרובעים או שזה יתעלם.]\n\n- גרסת אפליקציה: [0.0.1]\n- גרסת אנדרואיד: [14]\n- שם מכשיר: [Android Pixel 69]\n- מיקום התקנה: [github, fdroid, obtanium, עצמי]\n\nתשומת לבך המהירה לעניין זה מוערכת מאוד.\n\nתודה.\n</string>
+    <string name="acra_mail_body">A crash has occurred in the application.\n\nBelow are the details of the device. The error log has been attached as a file for your reference. We would appreciate your assistance in resolving this issue.\n\nDevice Information: \n[PLEASE fill in the information below also removing anything between the square brackets or this will be ignored.]\n\n- App Version: [11.11.11]\n- Android Version: [Apple 1.16]\n- Device Name: [Android Apple Phone 69]\n- Install Location: [Github, Fdroid, Obtanium, Tesla Space Station]\n\nYour prompt attention to this matter is greatly appreciated.\n\nThank you.\n</string>
     <string-array name="alignment_options">
         <item>שמאלה</item>
         <item>מֶרְכָּז</item>
