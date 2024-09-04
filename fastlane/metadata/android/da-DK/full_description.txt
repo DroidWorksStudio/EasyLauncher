@@ -1,7 +1,7 @@
 <b>Funktioner:</b>
 
 - Hurtig adgang til favoritapp: Vis dine mest brugte apps på startskærmen i tekstformat for hurtig adgang, hvilket strømliner dine operationer.
-- Skjul apps: Skjul nemt apps, du ikke vil have synlige, og hold din startskærm ren og fokuseret på væsentligt indhold.
+- Skjul Apps: Skjul nemt apps, du ikke vil have synlige, og hold din startskærm ren og fokuseret på vigtigt indhold.
 - Omdøb apps: Tilpas dine apps med brugerdefinerede navne, der synkroniseres problemfrit mellem favoritter og alle apps.
 - Låsning: Sikre dit privatliv og dine data med fingeraftrykslås for udvalgte apps og indstillinger.
 - Ingen internettilladelser: Ingen brug af INTERNET-tilladelser, hvilket sikrer, at dine data forbliver private.
@@ -10,7 +10,7 @@
 <b>Personlig tilpasning:</b>
 
 - Skriftfarver: Tilpas skrifttypefarver ved hjælp af vores farvevælger.
-- Position: Juster dato, tid og apps til venstre, centrer eller højre.
+- Position: Juster Dato, Klokkeslæt og Apps til Venstre, Midten eller Højre.
 - Polstring: Juster polstring mellem yndlingsapps og alle apps.
 - Skriftstørrelse: Indstil skriftstørrelse for hvert element på startskærmen.
 - Skift mellem elementer: Styr visningspræferencer på startskærmen.
