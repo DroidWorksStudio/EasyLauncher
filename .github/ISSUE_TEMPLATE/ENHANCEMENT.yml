@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for helping to make mLauncher better by suggesting a feature. :hugs:
+        Thank you for helping to make EasyLauncher better by suggesting a feature. :hugs:
         Your ideas are highly welcome!
 
   - type: checkboxes
@@ -17,17 +17,17 @@ body:
       options:
         - label: "I will make sure to have the issue written in English with an English title."
           required: true
-        - label: "I made sure that there are **no existing issues** - [open](https://github.com/DroidWorksStudio/mLauncher/issues) or [closed](https://github.com/DroidWorksStudio/mLauncher/issues?q=is%3Aissue+is%3Aclosed) - which I could contribute my information to."
+        - label: "I made sure that there are **no existing issues** - [open](https://github.com/DroidWorksStudio/EasyLauncher/issues) or [closed](https://github.com/DroidWorksStudio/EasyLauncher/issues?q=is%3Aissue+is%3Aclosed) - which I could contribute my information to."
           required: true
-        - label: "I have already checked the [WIKI](https://github.com/DroidWorksStudio/mLauncher/wiki) pages and made sure that the feature isn't already exist."
+        - label: "I have already checked the [WIKI](https://github.com/DroidWorksStudio/EasyLauncher/wiki) pages and made sure that the feature isn't already exist."
           required: true
-        - label: "I've verified that this issue hasn't been addressed in the [changelogs](https://github.com/DroidWorksStudio/mLauncher/blob/main/CHANGELOG.md)."
+        - label: "I've verified that this issue hasn't been addressed in the [changelogs](https://github.com/DroidWorksStudio/EasyLauncher/blob/main/CHANGELOG.md)."
           required: true
         - label: "I have taken the time to fill in all the required details. I understand that the feature request will be dismissed otherwise."
           required: true
         - label: "This issue contains only one feature request."
           required: true
-        - label: "I optionally [donated](https://www.buymeacoffee.com/HeCodes2Much) to support the mLauncher mission."
+        - label: "I optionally [donated](https://www.buymeacoffee.com/HeCodes2Much) to support the EasyLauncher mission."
           required: false
 
   - type: textarea

@@ -6,7 +6,7 @@
 - [ ] Feature Request (user-facing) <!-- Non-breaking change which adds functionality -->
 - [ ] Codebase Improvement (developer-facing) <!-- Non-breaking change which refines the codebase -->
 - [ ] Breaking Change (developer/user-facing) <!-- Fix or feature that would cause existing functionality to not work as expected -->
-- [ ] Release (user-facing) <!-- New release for mLauncher -->
+- [ ] Release (user-facing) <!-- New release for EasyLauncher -->
 - [ ] This change requires a documentation update
 
 ### All Submissions <!-- Check all applicable options -->
@@ -18,6 +18,7 @@
 - [ ] No new warnings or errors introduced <!-- Required -->
 - [ ] Changes made in a separate branch <!-- Required -->
 - [ ] Branch named with appropriate prefix (e.g., 'bug/', 'feat/', 'clean/', 'release/') <!-- Required -->
+
 <!-- Examples: 'bug/signin-issue', 'feat/issue-templates', 'clean/code-change-to-app-draw'. -->
 
 ### Before Opening Pull Request
@@ -39,7 +40,8 @@ Include a summary of changes, related issues, motivation, context, and dependenc
 3.
 
 ### Test Device: <!-- Required -->
-- mLauncher version:
+
+- EasyLauncher version:
 - Device name:
 - Android version:
 - Other information:
