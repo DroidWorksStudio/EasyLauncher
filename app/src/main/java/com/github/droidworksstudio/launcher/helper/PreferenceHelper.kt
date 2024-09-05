@@ -88,7 +88,7 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_APP_ICON, value).apply()
 
     var showAppIconAsDots: Boolean
-        get() = prefs.getBoolean(Constants.SHOW_APP_ICON_DOTS, true)
+        get() = prefs.getBoolean(Constants.SHOW_APP_ICON_DOTS, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_APP_ICON_DOTS, value).apply()
 
     var locationDenied: Boolean
