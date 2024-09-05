@@ -8,14 +8,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogAlignmentSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -54,6 +54,11 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
         observeClickListener()
     }
 
+    override fun onPause() {
+        super.onPause()
+        dismiss()  // Close the AlignmentBottomSheetDialogFragment when the home button is pressed.
+    }
+
     private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
@@ -74,7 +79,7 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
         }
     }
 
-    private fun observeClickListener(){
+    private fun observeClickListener() {
         binding.bottomAlignmentDateView.setOnClickListener {
             selectedAlignment = REQUEST_KEY_DATE_ALIGNMENT
             showListDialog(selectedAlignment)

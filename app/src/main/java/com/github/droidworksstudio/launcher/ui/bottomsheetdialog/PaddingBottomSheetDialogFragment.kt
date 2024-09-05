@@ -8,13 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogPaddingSettingsBinding
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
+
 @AndroidEntryPoint
 class PaddingBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
@@ -44,13 +45,18 @@ class PaddingBottomSheetDialogFragment : BottomSheetDialogFragment() {
         initView()
     }
 
-    private fun initView(){
+    override fun onPause() {
+        super.onPause()
+        dismiss()  // Close the PaddingBottomSheetDialogFragment when the home button is pressed.
+    }
+
+    private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
         binding.selectAppPaddingSize.setText(preferenceHelper.homeAppPadding.toString())
     }
 
-    private fun observeValueChange(){
+    private fun observeValueChange() {
         val appValue = binding.selectAppPaddingSize.text.toString()
 
         val appFloatValue = parseFloatValue(appValue, preferenceHelper.homeAppPadding)

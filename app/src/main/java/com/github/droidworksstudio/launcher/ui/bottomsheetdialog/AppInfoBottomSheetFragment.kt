@@ -14,15 +14,15 @@ import androidx.fragment.app.viewModels
 import com.github.droidworksstudio.common.appInfo
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.common.unInstallApp
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.BottomsheetDialogBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
-import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.BiometricHelper
+import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -71,6 +71,11 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
 
         initView()
         observeClickListener()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        dismiss()  // Close the AppInfoBottomSheetFragment when the home button is pressed.
     }
 
     private fun initView() {

@@ -8,13 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogTextSettingsBinding
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
+
 @AndroidEntryPoint
 class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
@@ -44,7 +45,12 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
         initView()
     }
 
-    private fun initView(){
+    override fun onPause() {
+        super.onPause()
+        dismiss()  // Close the TextBottomSheetDialogFragment when the home button is pressed.
+    }
+
+    private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
         binding.selectDateTextSize.setText(preferenceHelper.dateTextSize.toString())
@@ -53,7 +59,7 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
         binding.selectBatteryTextSize.setText(preferenceHelper.batteryTextSize.toString())
     }
 
-    private fun observeValueChange(){
+    private fun observeValueChange() {
         val dateValue = binding.selectDateTextSize.text.toString()
         val timeValue = binding.selectTimeTextSize.text.toString()
         val appValue = binding.selectAppTextSize.text.toString()

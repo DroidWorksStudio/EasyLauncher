@@ -11,11 +11,11 @@ import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import com.github.droidworksstudio.common.showLongToast
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogColorSettingsBinding
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 import net.mm2d.color.chooser.ColorChooserDialog
 import javax.inject.Inject
@@ -50,6 +50,11 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
         initView()
         observeClickListener()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        dismiss()  // Close the ColorBottomSheetDialogFragment when the home button is pressed.
     }
 
     private fun initView() {
