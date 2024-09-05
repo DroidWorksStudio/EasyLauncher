@@ -53,7 +53,7 @@ class PaddingBottomSheetDialogFragment : BottomSheetDialogFragment() {
     private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
-        binding.selectAppPaddingSize.setText(preferenceHelper.homeAppPadding.toString())
+        binding.selectAppPaddingSize.setText("${preferenceHelper.homeAppPadding}")
     }
 
     private fun observeValueChange() {

@@ -89,7 +89,7 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
             bottomSheetLock.text =
                 getString(if (!appInfo.lock) R.string.bottom_dialog_add_to_lock else R.string.bottom_dialog_remove_to_unlock)
             bottomSheetRename.setText(appInfo.appName)
-            bottomSheetOrder.text = appInfo.appOrder.toString()
+            bottomSheetOrder.text = "${appInfo.appOrder}"
         }
 
     }

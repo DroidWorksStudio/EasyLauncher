@@ -53,10 +53,10 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
     private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
-        binding.selectDateTextSize.setText(preferenceHelper.dateTextSize.toString())
-        binding.selectTimeTextSize.setText(preferenceHelper.timeTextSize.toString())
-        binding.selectAppTextSize.setText(preferenceHelper.appTextSize.toString())
-        binding.selectBatteryTextSize.setText(preferenceHelper.batteryTextSize.toString())
+        binding.selectDateTextSize.setText("${preferenceHelper.dateTextSize}")
+        binding.selectTimeTextSize.setText("${preferenceHelper.timeTextSize}")
+        binding.selectAppTextSize.setText("${preferenceHelper.appTextSize}")
+        binding.selectBatteryTextSize.setText("${preferenceHelper.batteryTextSize}")
     }
 
     private fun observeValueChange() {
