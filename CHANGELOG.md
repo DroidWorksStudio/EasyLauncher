@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed home app padding from not working. - ([c00c406](https://github.com/DroidWorksStudio/EasyLauncher/commit/c00c40696b2206d70e6426588a05196c934b75fe))
+
 ### Releases:
 
 - Prepare for version 0.2.5 - ([1c00b7c](https://github.com/DroidWorksStudio/EasyLauncher/commit/1c00b7cc8a643771a8be134805d6cd261b08443c))
