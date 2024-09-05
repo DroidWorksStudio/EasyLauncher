@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="24dp"
-                android:text="Advanced Settings"
+                android:text="@string/advanced_settings_title"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -121,7 +121,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/advanced_settings_restart"
+                        android:contentDescription="@string/advanced_settings_restart_title"
                         android:src="@drawable/ic_restart" />
 
                     <LinearLayout
@@ -132,7 +132,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/advanced_settings_restart"
+                            android:text="@string/advanced_settings_restart_title"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
@@ -157,7 +157,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/app_name"
+                        android:contentDescription="@string/advanced_settings_backup_restore_title"
                         android:src="@drawable/ic_backup_restore" />
 
                     <LinearLayout
@@ -168,14 +168,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Backup/Restore Launcher"
+                            android:text="@string/advanced_settings_backup_restore_title"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Please be careful what you wish for?"
+                            android:text="@string/advanced_settings_backup_restore_description"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -189,18 +189,13 @@
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_others_share"
-                            android:textColor="@android:color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_others_share"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -211,18 +206,12 @@
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_others_github"
-                            android:textColor="@android:color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
+                        android:text="@string/settings_others_github"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -233,18 +222,12 @@
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_others_feedback"
-                            android:textColor="@android:color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
+                        android:text="@string/settings_others_feedback"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

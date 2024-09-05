@@ -72,6 +72,10 @@ class SettingsFragment : Fragment(),
             advancedSettings.setOnClickListener {
                 navController.navigate(R.id.action_SettingsFragment_to_AdvancedSettingsFragment)
             }
+
+            communitySupport.setOnClickListener {
+                appHelper.communitySupportButton(requireContext())
+            }
         }
     }
 

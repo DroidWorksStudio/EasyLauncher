@@ -19,10 +19,10 @@ import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.navigation.NavOptions
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.BuildConfig
-import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
 import com.github.droidworksstudio.launcher.helper.weather.WeatherResponse
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.utils.WeatherApiService
 import com.google.gson.Gson
 import retrofit2.Retrofit
@@ -183,6 +183,12 @@ class AppHelper @Inject constructor() {
 
     fun githubButton(context: Context) {
         val uri = Uri.parse("https://github.com/DroidWorksStudio/EasyLauncher")
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        context.startActivity(intent)
+    }
+
+    fun communitySupportButton(context: Context) {
+        val uri = Uri.parse("https://t.me/DroidWorksStudio/")
         val intent = Intent(Intent.ACTION_VIEW, uri)
         context.startActivity(intent)
     }

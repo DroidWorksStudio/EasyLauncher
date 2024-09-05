@@ -2,17 +2,21 @@
 <resources>
     <string name="action_settings">Settings</string>
 
+    <string name="advanced_settings">Advanced</string>
+
     <!-- Strings used for advanced settings -->
+    <string name="advanced_settings_title">Advanced Settings</string>
+
     <string name="advanced_settings_app_info">App Info</string>
     <string name="advanced_settings_app_info_description">%1$s</string>
 
     <string name="advanced_settings_default">Change Default Launcher</string>
 
-    <string name="advanced_settings_restart">Restart Launcher</string>
+    <string name="advanced_settings_restart_title">Restart Launcher</string>
     <string name="advanced_settings_restart_description">Have you tried turning it on and off?</string>
 
-    <string name="advanced_settings_backup_restore">Backup/Restore</string>
-    <string name="advanced_settings_backup_restore_description">Backup or restore your preferences.</string>
+    <string name="advanced_settings_backup_restore_title">Backup/Restore</string>
+    <string name="advanced_settings_backup_restore_description">Please be careful what you wish for?</string>
 
     <string name="advanced_settings_backup_restore_backup">Backup Preferences</string>
     <string name="advanced_settings_backup_restore_restore">Restore Preferences</string>

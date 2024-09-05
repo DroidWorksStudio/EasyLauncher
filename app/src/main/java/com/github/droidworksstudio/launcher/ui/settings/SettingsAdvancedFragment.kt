@@ -106,7 +106,6 @@ class SettingsAdvancedFragment : Fragment(),
 
             githubView.setOnClickListener {
                 appHelper.githubButton(requireContext())
-
             }
 
             feedbackView.setOnClickListener {
@@ -129,7 +128,7 @@ class SettingsAdvancedFragment : Fragment(),
         )
 
         val dialogBuilder = MaterialAlertDialogBuilder(context)
-        dialogBuilder.setTitle(getString(R.string.advanced_settings_backup_restore))
+        dialogBuilder.setTitle(getString(R.string.advanced_settings_backup_restore_title))
         dialogBuilder.setItems(items) { _, which ->
             when (which) {
                 0 -> appHelper.storeFile(requireActivity())
