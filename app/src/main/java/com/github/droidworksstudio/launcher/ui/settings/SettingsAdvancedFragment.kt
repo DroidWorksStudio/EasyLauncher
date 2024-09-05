@@ -21,7 +21,6 @@ import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.AppReloader
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
-import com.github.droidworksstudio.launcher.repository.AppInfoRepository
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -35,9 +34,6 @@ class SettingsAdvancedFragment : Fragment(),
 
     @Inject
     lateinit var preferenceHelper: PreferenceHelper
-
-    @Inject
-    lateinit var appInfoRepository: AppInfoRepository
 
     @Inject
     lateinit var appHelper: AppHelper
