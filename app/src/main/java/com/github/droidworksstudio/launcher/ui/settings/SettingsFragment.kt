@@ -69,12 +69,20 @@ class SettingsFragment : Fragment(),
 
     private fun observeClickListener() {
         binding.apply {
-            advancedSettings.setOnClickListener {
-                navController.navigate(R.id.action_SettingsFragment_to_AdvancedSettingsFragment)
+            favoriteApps.setOnClickListener {
+                navController.navigate(R.id.action_SettingsFragment_to_FavoriteFragment)
+            }
+
+            hiddenApps.setOnClickListener {
+                navController.navigate(R.id.action_SettingsFragment_to_HiddenFragment)
             }
 
             communitySupport.setOnClickListener {
                 appHelper.communitySupportButton(requireContext())
+            }
+
+            advancedSettings.setOnClickListener {
+                navController.navigate(R.id.action_SettingsFragment_to_AdvancedSettingsFragment)
             }
         }
     }

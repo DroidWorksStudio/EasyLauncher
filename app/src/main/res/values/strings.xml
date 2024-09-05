@@ -2,6 +2,8 @@
 <resources>
     <string name="action_settings">Settings</string>
 
+    <string name="favorite_apps">Favorite Apps</string>
+    <string name="hidden_apps">Hidden Apps</string>
     <string name="advanced_settings">Advanced</string>
 
     <!-- Strings used for advanced settings -->
