@@ -82,9 +82,9 @@
     <string name="settings_others_share">Del</string>
     <string name="settings_others_feedback">Feedback</string>
     <string name="settings_others_github">Github</string>
-    <string name="settings_backups_backup">Sikkerhedskopieringsindstillinger</string>
-    <string name="settings_backups_clear">Ryd præferencer</string>
-    <string name="settings_backups_restore">Gendan præferencer</string>
+    <string name="settings_backups_backup">Sikkerhedskopiér Præferencer</string>
+    <string name="settings_backups_clear">Ryd Præferencer</string>
+    <string name="settings_backups_restore">Gendan Præferencer</string>
     <string name="settings_reload_app_backup">Præferencer sikkerhedskopieret.</string>
     <string name="settings_reload_app_restore">Præferencer gendannet. Genstarter.</string>
     <string name="settings_actions_open_app">Åbn App</string>
