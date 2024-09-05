@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed errors within github files. - ([560f797](https://github.com/DroidWorksStudio/EasyLauncher/commit/560f797f555a93fb4aedc276fbc642c1b9049012))
 - Fixed string formatting for numbers in a few places - ([1a66d7e](https://github.com/DroidWorksStudio/EasyLauncher/commit/1a66d7e33a7773067759d4ba9818c7aaf0de7a93))
 - Fixed some settings not closing when going home. - ([ad529e8](https://github.com/DroidWorksStudio/EasyLauncher/commit/ad529e855bbedd3ee3c63a0039bd3e2fc7cc800a))
 - Fixed home app padding from not working. - ([c00c406](https://github.com/DroidWorksStudio/EasyLauncher/commit/c00c40696b2206d70e6426588a05196c934b75fe))
