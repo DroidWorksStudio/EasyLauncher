@@ -11,9 +11,9 @@
 
     <FrameLayout
         android:id="@+id/touchArea"
-        android:layout_marginVertical="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp" />
 
     <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
         android:id="@+id/nestScrollView"
@@ -193,8 +193,8 @@
                             android:id="@+id/sunrise_text"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/sunrise_icon"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:text="@string/sunrise_icon" />
                     </LinearLayout>
 
                     <!-- Right Vertical LinearLayout -->
@@ -218,8 +218,8 @@
                             android:id="@+id/sunset_text"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/sunset_icon"
-                            android:gravity="center_horizontal" />
+                            android:gravity="center_horizontal"
+                            android:text="@string/sunset_icon" />
                     </LinearLayout>
 
                 </LinearLayout>

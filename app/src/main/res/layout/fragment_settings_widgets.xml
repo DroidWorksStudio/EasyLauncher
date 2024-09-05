@@ -8,14 +8,14 @@
 
     <FrameLayout
         android:id="@+id/touchArea"
-        android:layout_marginVertical="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp" />
 
     <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
+        android:id="@+id/nestScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/nestScrollView"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:fadingEdgeLength="48dp"
@@ -33,13 +33,13 @@
             tools:ignore="MissingConstraints">
 
             <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextDefaultStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="48dp"
                 android:text="@string/settings_widgets_name"
-                android:textSize="@dimen/text_super_large"
-                style="@style/TextDefaultStyle" />
+                android:textSize="@dimen/text_super_large" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/weather_settings"
@@ -49,12 +49,12 @@
                 tools:ignore="MissingConstraints">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextDefaultStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
                     android:text="@string/widgets_settings_show_weather"
-                    android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle" />
+                    android:textSize="@dimen/text_super_large" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -65,6 +65,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/weather_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -73,8 +74,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/weather_switchCompat"
@@ -98,6 +98,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/weather_sunset_sunrise_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -106,8 +107,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/weather_sunset_sunrise_switchCompat"
@@ -132,6 +132,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/weather_order_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -140,18 +141,17 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/weather_order_control"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|center"
                         android:text="@string/widgets_settings_select_order"
                         android:textSize="@dimen/text_large"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -165,6 +165,7 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -173,8 +174,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -187,12 +187,12 @@
                 tools:ignore="MissingConstraints">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextDefaultStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
                     android:text="@string/widgets_settings_show_battery"
-                    android:textSize="@dimen/text_super_large"
-                    style="@style/TextDefaultStyle" />
+                    android:textSize="@dimen/text_super_large" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -203,6 +203,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/battery_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -211,8 +212,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/battery_switchCompat"
@@ -237,6 +237,7 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/battery_order_text"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -245,18 +246,17 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/battery_order_control"
+                        style="@style/TextDefaultStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="left|center"
                         android:text="@string/widgets_settings_select_order"
                         android:textSize="@dimen/text_large"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -270,6 +270,7 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextDefaultStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -278,8 +279,7 @@
                         android:textSize="@dimen/text_large"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded"
-                        style="@style/TextDefaultStyle" />
+                        tools:ignore="RtlHardcoded" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 

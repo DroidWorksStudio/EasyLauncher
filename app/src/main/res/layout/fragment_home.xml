@@ -11,24 +11,24 @@
 
     <FrameLayout
         android:id="@+id/touchArea"
-        android:layout_marginVertical="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp" />
 
     <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
         android:id="@+id/nestScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:fadingEdgeLength="48dp"
+        android:fillViewport="true"
         android:overScrollMode="never"
         android:requiresFadingEdge="vertical"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/mainView"
@@ -46,15 +46,16 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/battery"
+                    style="@style/TextDefaultStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:text="@string/battery_level"
-                    android:textSize="16sp"
-                    style="@style/TextDefaultStyle" />
+                    android:textSize="16sp" />
 
                 <TextClock
                     android:id="@+id/clock"
+                    style="@style/TextDefaultStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
@@ -62,11 +63,11 @@
                     android:format12Hour="h:mm"
                     android:format24Hour="hhmm"
                     android:textSize="48sp"
-                    tools:text="02:34"
-                    style="@style/TextDefaultStyle" />
+                    tools:text="02:34" />
 
                 <TextClock
                     android:id="@+id/date"
+                    style="@style/TextDefaultStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
@@ -74,8 +75,7 @@
                     android:format24Hour="EEE, dd MMM"
                     android:gravity="start"
                     android:textSize="32sp"
-                    tools:text="Thu, 30 Dec"
-                    style="@style/TextDefaultStyle" />
+                    tools:text="Thu, 30 Dec" />
 
                 <TextView
                     android:id="@+id/word"
