@@ -21,19 +21,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="142dp"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="24dp">
-
-            <ImageView
-                android:id="@+id/headerIcon"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/app_launcher" />
 
             <TextView
                 android:id="@+id/headerTitle"
@@ -41,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="24dp"
-                android:text="@string/settings_name"
+                android:text="Advanced Settings"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -52,6 +43,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/appInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -62,8 +54,8 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_feature" />
+                        android:contentDescription="@string/advanced_settings_app_info"
+                        android:src="@drawable/ic_app_info" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -71,22 +63,25 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/appInfoTitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Features"
+                            android:text="@string/advanced_settings_app_info"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
                         <TextView
+                            android:id="@+id/appInfoDescription"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Improve your productivity"
+                            android:text="@string/advanced_settings_app_info_description"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/setDefaultLauncher"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -97,8 +92,8 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_look_feel" />
+                        android:contentDescription="@string/advanced_settings_default"
+                        android:src="@drawable/ic_change_default_launcher" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -108,20 +103,50 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Look and Feel"
+                            android:text="@string/advanced_settings_default"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/restartLauncher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/advanced_settings_restart"
+                        android:src="@drawable/ic_restart" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/advanced_settings_restart"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Give your home screen a personal touch."
+                            android:text="@string/advanced_settings_restart_description"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/backupRestore"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -133,7 +158,7 @@
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_help_feedback" />
+                        android:src="@drawable/ic_backup_restore" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -143,25 +168,48 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Help and Feedback"
+                            android:text="Backup/Restore Launcher"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Please be careful what you wish for?"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shareView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_others_share"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/githubView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_community" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -171,26 +219,19 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Community Support"
+                            android:text="@string/settings_others_github"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/advancedSettings"
+                    android:id="@+id/feedbackView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_advanced" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -200,7 +241,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Advanced"
+                            android:text="@string/settings_others_feedback"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
                     </LinearLayout>

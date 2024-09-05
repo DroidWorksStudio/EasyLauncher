@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="action_settings">Settings</string>
-    <string name="action_settings_default">Set as default launcher</string>
+
+    <!-- Strings used for advanced settings -->
+    <string name="advanced_settings_app_info">App Info</string>
+    <string name="advanced_settings_app_info_description">%1$s</string>
+
+    <string name="advanced_settings_default">Change Default Launcher</string>
+
+    <string name="advanced_settings_restart">Restart Launcher</string>
+    <string name="advanced_settings_restart_description">Have you tried turning it on and off?</string>
+
+    <string name="advanced_settings_backup_restore">Backup/Restore</string>
+    <string name="advanced_settings_backup_restore_description">Backup or restore your preferences.</string>
+
+    <string name="advanced_settings_backup_restore_backup">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_clear">Clear Preferences</string>
+
+    <string name="advanced_settings_backup_restore_clear_title">Clear Preferences</string>
+    <string name="advanced_settings_backup_restore_clear_description">Are you sure you want to do this?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">Yes</string>
+    <string name="advanced_settings_backup_restore_clear_no">No</string>
+
+
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Home Fragment</string>
     <string name="draw_fragment_label">Draw Fragment</string>
@@ -31,7 +53,6 @@
     <string name="bottom_dialog_app_uninstall">Uninstall App</string>
 
     <string name="settings_name">Launcher Settings</string>
-    <string name="settings_version">%1$s Version: %2$s</string>
     <string name="settings_widgets_name">Widgets Settings</string>
 
     <string name="settings_title_home_display_preferences">Display</string>
@@ -42,7 +63,6 @@
     <string name="settings_title_app_manager">App Manage</string>
     <string name="settings_title_gestures">Gestures</string>
     <string name="settings_title_miscellaneous">Miscellaneous</string>
-    <string name="settings_title_backups">Backups</string>
     <string name="settings_title_others">Others</string>
 
     <string name="settings_display_status_bar">Show Status Bar</string>
@@ -98,10 +118,6 @@
     <string name="settings_others_share">Share</string>
     <string name="settings_others_feedback">Feedback</string>
     <string name="settings_others_github">Github</string>
-
-    <string name="settings_backups_backup">Backup Preferences</string>
-    <string name="settings_backups_clear">Clear Preferences</string>
-    <string name="settings_backups_restore">Restore Preferences</string>
 
     <string name="settings_reload_app_backup">Preferences backed up.</string>
     <string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
