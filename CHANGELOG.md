@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Cleaned up the way that icons are displayed. - ([afd52c3](https://github.com/DroidWorksStudio/EasyLauncher/commit/afd52c344096ad97a07f5201ee8a52e16d18791c))
 - Cleaned up xml files formatting - ([f881685](https://github.com/DroidWorksStudio/EasyLauncher/commit/f8816853d5269ac8e9277e88e760b81857c87c96))
 
 ### Releases:
