@@ -1,13 +1,14 @@
 package com.github.droidworksstudio.launcher.ui.drawer
 
-import android.util.Log
+import android.content.pm.PackageManager
+import android.graphics.drawable.Drawable
 import android.view.Gravity
 import android.view.View
-import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.LinearLayoutCompat
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.github.droidworksstudio.common.ColorIconsExtensions
 import com.github.droidworksstudio.common.dpToPx
-import com.github.droidworksstudio.common.isWorkProfileEnabled
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemDrawBinding
@@ -26,49 +27,62 @@ class DrawViewHolder(
     fun bind(appInfo: AppInfo) {
         binding.apply {
             // Get the current LayoutParams of appHiddenName
-            val layoutParams = appDrawName.layoutParams as LinearLayoutCompat.LayoutParams
+            val layoutAppNameParams = appDrawName.layoutParams as LinearLayoutCompat.LayoutParams
 
             // Set the margins
-            layoutParams.topMargin = preferenceHelper.homeAppPadding.toInt()
-            layoutParams.bottomMargin = preferenceHelper.homeAppPadding.toInt()
+            layoutAppNameParams.topMargin = preferenceHelper.homeAppPadding.toInt()
+            layoutAppNameParams.bottomMargin = preferenceHelper.homeAppPadding.toInt()
 
-            appDrawName.layoutParams = layoutParams
+            appDrawName.layoutParams = layoutAppNameParams
+
+            // Update appDrawName properties
             appDrawName.text = appInfo.appName
             appDrawName.setTextColor(preferenceHelper.appColor)
             appDrawName.textSize = preferenceHelper.appTextSize
             appDrawName.gravity = preferenceHelper.homeAppAlignment
-            Log.d("Tag", "Draw Adapter: ${appInfo.appName + appInfo.id} | ${appInfo.userHandle}")
-            val icon = AppCompatResources.getDrawable(appDrawName.context, R.drawable.work_profile)
-            val px = preferenceHelper.appTextSize.toInt().dpToPx()
-            icon?.setBounds(0, 0, px, px)
-            if (appInfo.userHandle > 0) {
-                val appLabelGravity = preferenceHelper.homeAppAlignment
-
-                if (appLabelGravity == Gravity.START) {
-                    appDrawName.setCompoundDrawables(icon, null, null, null)
-                } else {
-                    appDrawName.setCompoundDrawables(null, null, icon, null)
-                }
-                appDrawName.compoundDrawablePadding = 20
-                if (!appDrawName.context.isWorkProfileEnabled()) {
-                    appDrawName.visibility = View.GONE
-                }
-            } else {
-
-                // If appInfo.work is false, remove the drawable
-                appDrawName.setCompoundDrawables(null, null, null, null)
-                appDrawName.compoundDrawablePadding = 0
-            }
 
             if (preferenceHelper.showAppIcon) {
-                val appIcon =
-                    binding.root.context.packageManager.getApplicationIcon(appInfo.packageName)
-                appDrawLeftIcon.setImageDrawable(appIcon)
-                appDrawLeftIcon.layoutParams.width =
-                    preferenceHelper.appTextSize.toInt() * 3
-                appDrawLeftIcon.layoutParams.height =
-                    preferenceHelper.appTextSize.toInt() * 3
-                appDrawLeftIcon.visibility = View.VISIBLE
+                val pm: PackageManager = binding.root.context.packageManager
+                val appIcon = pm.getApplicationIcon(appInfo.packageName)
+                val appIconSize = (preferenceHelper.appTextSize * if (preferenceHelper.showAppIconAsDots) 1.1f else 2f).toInt()
+
+                val layoutParams = LinearLayoutCompat.LayoutParams(appIconSize, appIconSize)
+                val appNewIcon: Drawable? = if (preferenceHelper.showAppIconAsDots) {
+                    val newIcon = ContextCompat.getDrawable(itemView.context, R.drawable.app_dot_icon)!!
+                    val bitmap = ColorIconsExtensions.drawableToBitmap(appIcon)
+                    val dominantColor = ColorIconsExtensions.getDominantColor(bitmap)
+                    ColorIconsExtensions.recolorDrawable(newIcon, dominantColor)
+                } else {
+                    null
+                }
+
+                appDrawIcon.layoutParams = layoutParams
+                appDrawIcon.setImageDrawable(appNewIcon ?: appIcon)
+                appDrawIcon.visibility = View.VISIBLE
+
+                val parentLayout = appDrawName.parent as LinearLayoutCompat
+                parentLayout.orientation = LinearLayoutCompat.HORIZONTAL
+                parentLayout.removeAllViews()
+
+                when (preferenceHelper.homeAppAlignment) {
+                    Gravity.START -> {
+                        layoutParams.marginEnd = 10.dpToPx()
+                        parentLayout.addView(appDrawIcon)
+                        parentLayout.addView(appDrawName)
+                    }
+
+                    Gravity.END -> {
+                        layoutParams.marginStart = 10.dpToPx()
+                        parentLayout.addView(appDrawName)
+                        parentLayout.addView(appDrawIcon)
+                    }
+
+                    else -> {
+                        appDrawIcon.visibility = View.GONE
+                    }
+                }
+            } else {
+                appDrawIcon.visibility = View.GONE
             }
         }
 
