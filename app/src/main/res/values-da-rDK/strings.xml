@@ -42,7 +42,7 @@
     <string name="settings_display_date">Vis Dato</string>
     <string name="settings_display_time">Vis Tid</string>
     <string name="settings_display_battery">Vis Batteri</string>
-    <string name="settings_display_daily_word">Vis dagligt ord</string>
+    <string name="settings_display_daily_word">Vis Dagligt Ord</string>
     <string name="settings_display_app_icons">Vis App-ikoner</string>
     <string name="settings_display_app_icon_dots">Vis App-ikoner Som Prikker</string>
     <string name="settings_display_automatic_keyboard">Auto-vis Tastatur</string>
@@ -52,7 +52,7 @@
     <string name="settings_appearance_color_title">Farve</string>
     <string name="settings_appearance_alignment_title">Justering</string>
     <string name="settings_appearance_padding_title">Polstring</string>
-    <string name="settings_appearance_wallpaper">Brugerdefineret tapet</string>
+    <string name="settings_appearance_wallpaper">Brugerdefineret Baggrund</string>
     <string name="settings_appearance_home_date_alignment">Datojustering</string>
     <string name="settings_appearance_home_time_alignment">Tidsjustering</string>
     <string name="settings_appearance_home_app_alignment">Hjem app justering</string>
