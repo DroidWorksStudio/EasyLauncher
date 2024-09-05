@@ -9,6 +9,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.view.Gravity
 import android.view.View
+import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.ColorUtils
 import androidx.core.graphics.drawable.DrawableCompat
@@ -31,6 +32,14 @@ class HomeViewHolder @Inject constructor(
     @SuppressLint("ClickableViewAccessibility")
     fun bind(appInfo: AppInfo) {
         binding.apply {
+            // Get the current LayoutParams of appHiddenName
+            val layoutParams = appHomeName.layoutParams as LinearLayoutCompat.LayoutParams
+
+            // Set the margins
+            layoutParams.topMargin = preferenceHelper.homeAppPadding.toInt()
+            layoutParams.bottomMargin = preferenceHelper.homeAppPadding.toInt()
+
+            appHomeName.layoutParams = layoutParams
             // Update appHomeName properties
             appHomeName.text = appInfo.appName
             appHomeName.setTextColor(preferenceHelper.appColor)
