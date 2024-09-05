@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed the appIconsSwitchCompat working with the appIconDotsSwitchCompat - ([4e61376](https://github.com/DroidWorksStudio/EasyLauncher/commit/4e61376e4106a5a6e96a5a18523a256044791e80))
 - Fixed errors within github files. - ([560f797](https://github.com/DroidWorksStudio/EasyLauncher/commit/560f797f555a93fb4aedc276fbc642c1b9049012))
 - Fixed string formatting for numbers in a few places - ([1a66d7e](https://github.com/DroidWorksStudio/EasyLauncher/commit/1a66d7e33a7773067759d4ba9818c7aaf0de7a93))
 - Fixed some settings not closing when going home. - ([ad529e8](https://github.com/DroidWorksStudio/EasyLauncher/commit/ad529e855bbedd3ee3c63a0039bd3e2fc7cc800a))
