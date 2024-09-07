@@ -62,7 +62,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/app_name"
+                        android:contentDescription="@string/settings_features_title"
                         android:src="@drawable/ic_feature" />
 
                     <LinearLayout
@@ -73,14 +73,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Features"
+                            android:text="@string/settings_features_title"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Improve your productivity"
+                            android:text="@string/settings_features_description"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -97,7 +97,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/app_name"
+                        android:contentDescription="@string/settings_look_feel_title"
                         android:src="@drawable/ic_look_feel" />
 
                     <LinearLayout
@@ -108,14 +108,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Look and Feel"
+                            android:text="@string/settings_look_feel_title"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Give your home screen a personal touch."
+                            android:text="@string/settings_look_feel_description"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -132,7 +132,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/app_name"
+                        android:contentDescription="@string/settings_help_feedback_title"
                         android:src="@drawable/ic_help_feedback" />
 
                     <LinearLayout
@@ -143,7 +143,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Help and Feedback"
+                            android:text="@string/settings_help_feedback_title"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
                     </LinearLayout>
@@ -172,7 +172,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Community Support"
+                            android:text="@string/settings_community_support_title"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
                     </LinearLayout>
@@ -248,7 +248,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/advanced_settings"
+                        android:contentDescription="@string/settings_advanced_title"
                         android:src="@drawable/ic_advanced" />
 
                     <LinearLayout
@@ -259,7 +259,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/advanced_settings"
+                            android:text="@string/settings_advanced_title"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
                     </LinearLayout>

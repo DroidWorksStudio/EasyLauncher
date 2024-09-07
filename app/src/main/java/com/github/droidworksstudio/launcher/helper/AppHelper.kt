@@ -10,6 +10,7 @@ import android.content.res.Configuration
 import android.content.res.Resources
 import android.net.Uri
 import android.os.Build
+import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.Window
@@ -115,6 +116,7 @@ class AppHelper @Inject constructor() {
             // Digital Wellbeing app is not installed or cannot be opened
             // Handle this case as needed
             context.showLongToast("Digital Wellbeing is not available on this device.")
+            Log.e("AppHelper", "Digital Wellbeing app not found or cannot be opened.", e)
         }
     }
 
@@ -313,6 +315,7 @@ class AppHelper @Inject constructor() {
                 return WeatherResult.Failure("Failed to fetch weather data: ${response.errorBody()}")
             }
         } catch (e: UnknownHostException) {
+            Log.e("AppHelper", "Unknown Host.", e)
             return WeatherResult.Failure("Unknown Host : $baseURL")
         } catch (e: Exception) {
             return WeatherResult.Failure("${e.message}")

@@ -30,7 +30,7 @@
     <fragment
         android:id="@+id/SettingsFragment"
         android:name="com.github.droidworksstudio.launcher.ui.settings.SettingsFragment"
-        android:label="@string/home_fragment_label"
+        android:label="@string/settings_fragment_label"
         tools:layout="@layout/fragment_settings">
         <action
             android:id="@+id/action_SettingsFragment_to_FavoriteFragment"
@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_SettingsFragment_to_HiddenFragment"
             app:destination="@id/HiddenFragment" />
+        <action
+            android:id="@+id/action_SettingsFragment_to_WidgetsFragment"
+            app:destination="@id/WidgetsFragment" />
         <action
             android:id="@+id/action_SettingsFragment_to_WidgetsSettingsFragment"
             app:destination="@id/WidgetsSettingsFragment" />

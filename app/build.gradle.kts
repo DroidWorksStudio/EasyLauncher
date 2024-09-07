@@ -79,14 +79,25 @@ android {
             manifestPlaceholders["coarseLocationPermission"] =
                 "android.permission.ACCESS_COARSE_LOCATION"
             val weatherFile = project.rootProject.file("weather.properties")
-            val properties = Properties()
-            properties.load(weatherFile.inputStream())
-            val apiKey = properties.getProperty("WEATHER_API_KEY") ?: ""
-            buildConfigField(
-                type = "String",
-                name = "API_KEY",
-                value = "\"$apiKey\""
-            )
+            if (weatherFile.exists()) {
+                val properties = Properties()
+                weatherFile.inputStream().use { inputStream ->
+                    properties.load(inputStream)
+                }
+                val apiKey = properties.getProperty("WEATHER_API_KEY") ?: ""
+                buildConfigField(
+                    type = "String",
+                    name = "API_KEY",
+                    value = "\"$apiKey\""
+                )
+            } else {
+                buildConfigField(
+                    type = "String",
+                    name = "API_KEY",
+                    value = "\"REMOVE\""
+                )
+                println("weather.properties file not found.")
+            }
         }
 
         create("withoutInternet") {
@@ -106,16 +117,27 @@ android {
             applicationIdSuffix = ".nightly"
             versionNameSuffix = "-nightly"
             manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
-            val weatherFile = project.rootProject.file("weather.properties")
-            val properties = Properties()
-            properties.load(weatherFile.inputStream())
-            val apiKey = properties.getProperty("WEATHER_API_KEY") ?: ""
-            buildConfigField(
-                type = "String",
-                name = "API_KEY",
-                value = "\"$apiKey\""
-            )
             resValue("string", "app_name", "Easy Launcher (Nightly)")
+            val weatherFile = project.rootProject.file("weather.properties")
+            if (weatherFile.exists()) {
+                val properties = Properties()
+                weatherFile.inputStream().use { inputStream ->
+                    properties.load(inputStream)
+                }
+                val apiKey = properties.getProperty("WEATHER_API_KEY") ?: ""
+                buildConfigField(
+                    type = "String",
+                    name = "API_KEY",
+                    value = "\"$apiKey\""
+                )
+            } else {
+                buildConfigField(
+                    type = "String",
+                    name = "API_KEY",
+                    value = "\"REMOVE\""
+                )
+                println("weather.properties file not found.")
+            }
         }
 
         create("withoutInternetNightly") {

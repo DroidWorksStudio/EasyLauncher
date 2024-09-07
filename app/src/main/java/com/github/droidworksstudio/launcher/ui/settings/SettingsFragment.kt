@@ -74,7 +74,7 @@ class SettingsFragment : Fragment(),
             }
 
             hiddenApps.setOnClickListener {
-                navController.navigate(R.id.action_SettingsFragment_to_HiddenFragment)
+                navController.navigate(R.id.action_SettingsFragment_to_WidgetsFragment)
             }
 
             communitySupport.setOnClickListener {

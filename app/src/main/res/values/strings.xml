@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings">Settings</string>
-
+    <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Favorite Apps</string>
     <string name="hidden_apps">Hidden Apps</string>
-    <string name="advanced_settings">Advanced</string>
+
+    <!-- Strings used for actions within the app -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for settings menus -->
+    <string name="settings_name">Launcher Settings</string>
+
+    <string name="settings_features_title">Features</string>
+    <string name="settings_features_description">Improve your productivity.</string>
+
+    <string name="settings_look_feel_title">Look and Feel</string>
+    <string name="settings_look_feel_description">Give your home screen a personal touch.</string>
+
+    <string name="settings_help_feedback_title">Help and Feedback</string>
+
+    <string name="settings_community_support_title">Community Support</string>
+
+    <string name="settings_advanced_title">Advanced</string>
 
     <!-- Strings used for advanced settings -->
     <string name="advanced_settings_title">Advanced Settings</string>
@@ -58,7 +74,6 @@
     <string name="bottom_dialog_app_info">App Info</string>
     <string name="bottom_dialog_app_uninstall">Uninstall App</string>
 
-    <string name="settings_name">Launcher Settings</string>
     <string name="settings_widgets_name">Widgets Settings</string>
 
     <string name="settings_title_home_display_preferences">Display</string>
@@ -104,9 +119,6 @@
 
     <string name="appearance_bottom_dialog_desc_widget_background">Widget Background\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">Widget Text\u0020:\u0020</string>
-
-    <string name="settings_manager_favorite">Favorite Apps</string>
-    <string name="settings_manager_hidden">Hidden Apps</string>
 
     <string name="settings_select_wallpaper">Select Wallpaper</string>
     <string name="settings_double_tap">Double Tap</string>
