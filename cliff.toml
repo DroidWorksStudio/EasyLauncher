@@ -83,13 +83,6 @@ commit_preprocessors = [
 ]
 # regex for parsing and grouping commits
 commit_parsers = [
-    { message = "^chore\\(release\\): prepare for", skip = true },
-    { message = "^chore\\(deps.*\\)", skip = true },
-    { message = "^chore\\(change.*\\)", skip = true },
-    { message = "^chore\\(pr\\)", skip = true },
-    { message = "^chore\\(pull\\)", skip = true },
-    { message = "^chore\\(language\\)", skip = true },
-    { message = "^fixes|^Fixes", skip = true },
     { message = "^feat|^Feat", group = "<!-- 0 -->Implemented Enhancements:" },
     { message = "^fix|^bug|^Fix|^Bug", group = "<!-- 1 -->Bug Fixes:" },
     { message = "^lang|^Lang", group = "<!-- 2 -->Language Support:" },
