@@ -12,14 +12,6 @@ All notable changes to this project will be documented in this file. See [conven
 - Fixed some settings not closing when going home. - ([ad529e8](https://github.com/DroidWorksStudio/EasyLauncher/commit/ad529e855bbedd3ee3c63a0039bd3e2fc7cc800a))
 - Fixed home app padding from not working. - ([c00c406](https://github.com/DroidWorksStudio/EasyLauncher/commit/c00c40696b2206d70e6426588a05196c934b75fe))
 
-### Dependency Updates:
-
-- *(deps)* Bump rexml from 3.2.8 to 3.3.6 ([#132](https://github.com/DroidWorksStudio/EasyLauncher/issues/132)) - ([0b5b679](https://github.com/DroidWorksStudio/EasyLauncher/commit/0b5b6795f8b3b36eda7fc1da8367b9cc4002d8e3))
-
-### Housekeeping:
-
-- *(deps)* Bump rexml from 3.2.8 to 3.3.6 ([#132](https://github.com/DroidWorksStudio/EasyLauncher/issues/132)) - ([0b5b679](https://github.com/DroidWorksStudio/EasyLauncher/commit/0b5b6795f8b3b36eda7fc1da8367b9cc4002d8e3))
-
 ### Refactoring:
 
 - Fixed manifestPlaceholders - ([2a73828](https://github.com/DroidWorksStudio/EasyLauncher/commit/2a73828dc1eddbfe1185a9d416f528db6d664a8b))
@@ -359,12 +351,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Dependency Updates:
 
-- *(deps)* Bump androidx.biometric:biometric-ktx ([#53](https://github.com/DroidWorksStudio/EasyLauncher/issues/53)) - ([6e18116](https://github.com/DroidWorksStudio/EasyLauncher/commit/6e181164782a9d74157fee31aa92e4babbd11f52))
 - Updated Dependencies - ([8e796ca](https://github.com/DroidWorksStudio/EasyLauncher/commit/8e796ca2fe95aa039873c5b47db7ed50dafdbacc))
 
 ### Housekeeping:
 
-- *(deps)* Bump androidx.biometric:biometric-ktx ([#53](https://github.com/DroidWorksStudio/EasyLauncher/issues/53)) - ([6e18116](https://github.com/DroidWorksStudio/EasyLauncher/commit/6e181164782a9d74157fee31aa92e4babbd11f52))
 - Moved around a few files to be cleaner. - ([0677e37](https://github.com/DroidWorksStudio/EasyLauncher/commit/0677e3792cfa662625010d4fa733ae5e87318e54))
 
 ### Language Support:
@@ -419,10 +409,6 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Added work profile support with icon. - ([e61a989](https://github.com/DroidWorksStudio/EasyLauncher/commit/e61a9894b2a0bcde0531b8afb0600f8981fe39ea))
 - Added app font color to headers of the page. - ([b7ff0d8](https://github.com/DroidWorksStudio/EasyLauncher/commit/b7ff0d8b1ab1de914a9336b98cdb6ec737b10c5b))
-
-### Housekeeping:
-
-- *(deps)* Bump org.jetbrains.kotlin.android from 1.9.24 to 2.0.0 - ([bbe9c98](https://github.com/DroidWorksStudio/EasyLauncher/commit/bbe9c98464913f5052a7552a797c3e6b9c5edf34))
 
 ### Refactoring:
 
@@ -506,12 +492,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Dependency Updates:
 
-- *(deps)* Bump androidx.lifecycle:lifecycle-viewmodel-ktx ([#19](https://github.com/DroidWorksStudio/EasyLauncher/issues/19)) - ([9569aaf](https://github.com/DroidWorksStudio/EasyLauncher/commit/9569aaf481e85a6245b4bd9641a071f49198b651))
 - Updated a few of the dependencies - ([871d38f](https://github.com/DroidWorksStudio/EasyLauncher/commit/871d38f4101d587eea8df89c3248db598dc141be))
-
-### Housekeeping:
-
-- *(deps)* Bump androidx.lifecycle:lifecycle-viewmodel-ktx ([#19](https://github.com/DroidWorksStudio/EasyLauncher/issues/19)) - ([9569aaf](https://github.com/DroidWorksStudio/EasyLauncher/commit/9569aaf481e85a6245b4bd9641a071f49198b651))
 
 ### Language Support:
 
@@ -522,16 +503,6 @@ All notable changes to this project will be documented in this file. See [conven
 - Refactor some of the setting to also work other places. - ([72f212e](https://github.com/DroidWorksStudio/EasyLauncher/commit/72f212ec0876a12d98259cd56dd745f9edf03115))
 
 ## [0.0.4](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.0.4) - (19, May 2024)
-
-### Dependency Updates:
-
-- *(deps)* Bump rexml from 3.2.5 to 3.2.8 ([#16](https://github.com/DroidWorksStudio/EasyLauncher/issues/16)) - ([cde69c9](https://github.com/DroidWorksStudio/EasyLauncher/commit/cde69c96294594f4cb8532b86a9f09fb82708f30))
-- *(deps)* Bump org.jetbrains.kotlin.android from 1.8.0 to 1.9.24 ([#14](https://github.com/DroidWorksStudio/EasyLauncher/issues/14)) - ([695d246](https://github.com/DroidWorksStudio/EasyLauncher/commit/695d24650c3b2535e8279ed992f30a87263ca94f))
-
-### Housekeeping:
-
-- *(deps)* Bump rexml from 3.2.5 to 3.2.8 ([#16](https://github.com/DroidWorksStudio/EasyLauncher/issues/16)) - ([cde69c9](https://github.com/DroidWorksStudio/EasyLauncher/commit/cde69c96294594f4cb8532b86a9f09fb82708f30))
-- *(deps)* Bump org.jetbrains.kotlin.android from 1.8.0 to 1.9.24 ([#14](https://github.com/DroidWorksStudio/EasyLauncher/issues/14)) - ([695d246](https://github.com/DroidWorksStudio/EasyLauncher/commit/695d24650c3b2535e8279ed992f30a87263ca94f))
 
 ### Language Support:
 
