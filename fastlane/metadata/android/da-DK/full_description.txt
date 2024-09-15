@@ -5,9 +5,9 @@
 - Omdøb apps: Tilpas dine apps med brugerdefinerede navne, der synkroniseres problemfrit mellem favoritter og alle apps.
 - Låsning: Sikre dit privatliv og dine data med fingeraftrykslås for udvalgte apps og indstillinger.
 - Ingen internettilladelser: Ingen brug af INTERNET-tilladelser, hvilket sikrer, at dine data forbliver private.
-- Nedbrudsrapporter: Rapporter nedbrud via e-mail, inklusive logfiler til effektiv fejlfinding.
+- Nedbrudsrapporter: Rapportér nedbrud via e-mail, inklusive logfiler til effektiv fejlfinding.
 
-<b>Personlig tilpasning:</b>
+<b>Personlig Tilpasning:</b>
 
 - Skriftfarver: Tilpas skrifttypefarver ved hjælp af vores farvevælger.
 - Position: Juster Dato, Klokkeslæt og Apps til Venstre, Midten eller Højre.
@@ -17,7 +17,7 @@
 
 <b>Mulige bevægelser omfatter:</b>
 
-- Strygebevægelser: Naviger ved at stryge i forskellige retninger (op, ned, venstre, højre) for at få adgang til forskellige funktioner eller flytte mellem skærme.
+- Strygebevægelser: Naviger ved at stryge i forskellige retninger (op, ned, venstre, højre) for at tilgå funktioner eller skifte mellem skærme.
 - Dobbelttryk: Tryk hurtigt to gange på skærmen for at udføre en foruddefineret handling eller aktivere en funktion.
 - Urinteraktion: Tryk på uret for at få vist yderligere oplysninger såsom alarmer eller verdensur.
 - Datointeraktion: Tryk på datoen for at åbne kalenderappen til planlægning og planlægning.
