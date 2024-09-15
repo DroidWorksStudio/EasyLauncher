@@ -25,8 +25,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"
         manifestPlaceholders["fineLocationPermission"] = "android.permission.ACCESS_FINE_LOCATION"
-        manifestPlaceholders["coarseLocationPermission"] =
-            "android.permission.ACCESS_COARSE_LOCATION"
+        manifestPlaceholders["coarseLocationPermission"] = "android.permission.ACCESS_COARSE_LOCATION"
     }
 
     buildTypes {

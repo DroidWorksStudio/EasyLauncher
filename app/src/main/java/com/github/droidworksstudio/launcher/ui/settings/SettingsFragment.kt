@@ -141,6 +141,12 @@ class SettingsFragment : Fragment(),
         binding.automaticKeyboardSwitchCompat.isChecked = preferenceHelper.automaticKeyboard
         binding.automaticOpenAppSwitchCompat.isChecked = preferenceHelper.automaticOpenApp
         binding.lockSettingsSwitchCompat.isChecked = preferenceHelper.settingsLock
+
+        if (!binding.appIconsSwitchCompat.isChecked) {
+            // Disable and gray out the other setting if appIconsSwitchCompat is checked
+            binding.appIconDotsSwitchCompat.isEnabled = binding.appIconsSwitchCompat.isChecked
+            binding.appIconDotsSwitchCompat.isChecked = false
+        }
     }
 
     private fun observeClickListener() {
