@@ -1,4 +1,6 @@
 .gradle
+git-cliff*
+/bin/*
 /*.properties
 /.idea/*
 /.kotlin/*
