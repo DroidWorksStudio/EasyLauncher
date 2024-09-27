@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings used for basic parts of the launcher -->
-    <string name="favorite_apps">Favorite Apps</string>
-    <string name="hidden_apps">Hidden Apps</string>
+    <string name="favorite_apps">Mėgstamiausios programos</string>
+    <string name="hidden_apps">Paslėptos programos</string>
     <!-- Strings used for actions within the app -->
     <string name="action_settings">Nustatymai</string>
     <!-- Strings used for settings menus -->
     <string name="settings_name">Paleidimo priemonės nustatymai</string>
-    <string name="settings_features_title">Features</string>
-    <string name="settings_features_description">Improve your productivity.</string>
-    <string name="settings_look_feel_title">Look and Feel</string>
-    <string name="settings_look_feel_description">Give your home screen a personal touch.</string>
-    <string name="settings_advanced_title">Advanced</string>
+    <string name="settings_features_title">Savybės</string>
+    <string name="settings_features_description">Pagerinkite savo produktyvumą.</string>
+    <string name="settings_look_feel_title">Pažiūrėk ir Jausk</string>
+    <string name="settings_look_feel_description">Suteikite savo pagrindiniam ekranui asmeniškumo.</string>
+    <string name="settings_advanced_title">Išplėstinė</string>
     <!-- Strings used for look And feel settings -->
-    <string name="look_feel_settings_title">Look And Feel</string>
+    <string name="look_feel_settings_title">Žiūrėti ir Jausti</string>
     <!-- Strings used for features settings -->
-    <string name="features_settings_title">Features</string>
+    <string name="features_settings_title">Savybės</string>
     <!-- Strings used for advanced settings -->
-    <string name="advanced_settings_title">Advanced Settings</string>
-    <string name="advanced_settings_app_info">App Info</string>
+    <string name="advanced_settings_title">Išplėstiniai nustatymai</string>
+    <string name="advanced_settings_app_info">Programos informacija</string>
     <string name="advanced_settings_app_info_description">%1$s</string>
-    <string name="advanced_settings_default">Change Default Launcher</string>
-    <string name="advanced_settings_restart_title">Restart Launcher</string>
-    <string name="advanced_settings_restart_description">Have you tried turning it on and off?</string>
-    <string name="advanced_settings_backup_restore_title">Backup/Restore</string>
-    <string name="advanced_settings_backup_restore_description">Please be careful what you wish for?</string>
-    <string name="advanced_settings_backup_restore_backup">Backup Preferences</string>
-    <string name="advanced_settings_backup_restore_restore">Restore Preferences</string>
-    <string name="advanced_settings_backup_restore_clear">Clear Preferences</string>
-    <string name="advanced_settings_backup_restore_clear_title">Clear Preferences</string>
-    <string name="advanced_settings_backup_restore_clear_description">Are you sure you want to do this?</string>
-    <string name="advanced_settings_backup_restore_clear_yes">Yes</string>
-    <string name="advanced_settings_backup_restore_clear_no">No</string>
-    <string name="advanced_settings_help_feedback_title">Help and Feedback</string>
-    <string name="advanced_settings_community_support_title">Community Support</string>
-    <string name="advanced_settings_share_application_title">Share Application</string>
-    <string name="advanced_settings_share_application_description">Elevate your experience with %1$s! Get it now on fDroid and see what everyone is talking about!\n</string>
+    <string name="advanced_settings_default">Pakeiskite numatytąją paleidimo priemonę</string>
+    <string name="advanced_settings_restart_title">Iš naujo paleiskite paleidimo priemonę</string>
+    <string name="advanced_settings_restart_description">Ar bandėte jį įjungti ir išjungti?</string>
+    <string name="advanced_settings_backup_restore_title">Atsarginė kopija / atkūrimas</string>
+    <string name="advanced_settings_backup_restore_description">Būkite atsargūs, ko norite?</string>
+    <string name="advanced_settings_backup_restore_backup">Atsarginės kopijos nuostatos</string>
+    <string name="advanced_settings_backup_restore_restore">Atkurti nuostatas</string>
+    <string name="advanced_settings_backup_restore_clear">Išvalyti nuostatas</string>
+    <string name="advanced_settings_backup_restore_clear_title">Išvalyti nuostatas</string>
+    <string name="advanced_settings_backup_restore_clear_description">Ar tikrai norite tai padaryti?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">Taip</string>
+    <string name="advanced_settings_backup_restore_clear_no">Nr</string>
+    <string name="advanced_settings_help_feedback_title">Pagalba ir atsiliepimai</string>
+    <string name="advanced_settings_community_support_title">Bendruomenės parama</string>
+    <string name="advanced_settings_share_application_title">Dalintis programa</string>
+    <string name="advanced_settings_share_application_description">Padidinkite savo patirtį naudodami %1$s! Gaukite jį dabar „fDroid“ ir pažiūrėkite, apie ką visi kalba!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Namo fragmentas</string>
     <string name="draw_fragment_label">Nupieškite fragmentą</string>
@@ -123,16 +123,16 @@
     <string name="authentication_succeeded">Autentifikavimas pavyko</string>
     <string name="authentication_failed">Autentifikavimas nepavyko</string>
     <string name="authentication_error">Autentifikavimo klaida: %1$s(kodas %2$d)</string>
-    <string name="bottom_alignment_start">Star</string>
+    <string name="bottom_alignment_start">Žvaigždė</string>
     <string name="bottom_alignment_center">centras</string>
     <string name="bottom_alignment_end">Galas</string>
     <string name="accessibility_settings_title">Pritaikymo neįgaliesiems nustatymai</string>
     <string name="accessibility_settings_enable">Įgalinti</string>
     <string name="accessibility_settings_disable">Išjungti</string>
     <string name="accessibility_service_name">„Easy Launcher“ veiksmų paslauga</string>
-    <string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen. Our
-        accessibility service does not collect or share any data.</string>
-    <string name="search_default">Default</string>
+    <string name="accessibility_service_desc">Įjunkite pritaikymo neįgaliesiems paslaugą, kad galėtumėte naudoti „Easy Launcher“ funkciją dukart paliesdami užrakinti.\n\nŠis leidimas naudojamas tik ekranui išjungti. Mūsų
+        pasiekiamumo paslauga nerenka ir nebendrina jokių duomenų.</string>
+    <string name="search_default">Numatytoji</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
