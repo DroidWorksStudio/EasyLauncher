@@ -161,11 +161,11 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
                 Constants.SearchEngines.valueOf(
                     prefs.getString(
                         Constants.SEARCH_ENGINE,
-                        Constants.SearchEngines.Google.name
+                        Constants.SearchEngines.Default.name
                     ).toString()
                 )
             } catch (_: Exception) {
-                Constants.SearchEngines.Google
+                Constants.SearchEngines.Default
             }
         }
         set(value) = prefs.edit().putString(Constants.SEARCH_ENGINE, value.name).apply()

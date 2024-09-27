@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: Generate a changelog
-        uses: orhun/git-cliff-action@v3.3.0
+        uses: orhun/git-cliff-action@v4.1.0
         with:
           config: cliff.toml
           args: --verbose
@@ -42,7 +42,7 @@ jobs:
               git config --global user.name ${{ secrets.GIT_NAME }}
               git config --global user.email ${{ secrets.GIT_EMAIL }}
           
-              git add -A
+              git add -u
               git commit -m "chore(changelog): Update CHANGELOG.md"
               git push origin main
             else

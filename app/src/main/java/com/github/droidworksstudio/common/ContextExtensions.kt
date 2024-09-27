@@ -140,10 +140,37 @@ fun Context.showShortToast(message: String) {
 }
 
 fun Context.openSearch(query: String? = null) {
-    val intent = Intent(Intent.ACTION_WEB_SEARCH)
-    intent.putExtra(SearchManager.QUERY, query ?: "")
-    startActivity(intent)
+    val intent = Intent(Intent.ACTION_WEB_SEARCH).apply {
+        putExtra(SearchManager.QUERY, query ?: "")
+    }
+    // Check if there is an app that can handle the web search intent
+    val resolvedActivity = intent.resolveActivity(packageManager)
+
+    if (resolvedActivity != null) {
+        try {
+            // Get the package name of the app that can handle the intent
+            val packageName = resolvedActivity.packageName
+            val appInfo = packageManager.getApplicationInfo(packageName, 0)
+            val appName = packageManager.getApplicationLabel(appInfo).toString()
+
+            // Log the name of the app that will handle the search
+            Log.d("WebSearchApp", "Search will be handled by: $appName ($packageName)")
+
+            startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+            e.printStackTrace()
+        }
+    } else {
+        val fallbackUrl = "${Constants.URL_GOOGLE_SEARCH}${Uri.encode(query ?: "")}"
+        val fallbackIntent = Intent(Intent.ACTION_VIEW, Uri.parse(fallbackUrl))
+        try {
+            startActivity(fallbackIntent)
+        } catch (e: ActivityNotFoundException) {
+            e.printStackTrace()
+        }
+    }
 }
+
 
 fun Context.openUrl(url: String) {
     if (url.isEmpty()) return
@@ -165,12 +192,6 @@ fun Context.resetDefaultLauncher() {
             e.printStackTrace()
         }
     }
-}
-
-fun Context.searchView() {
-    val intent = Intent(Intent.ACTION_WEB_SEARCH)
-    intent.putExtra(SearchManager.QUERY, "")
-    this.startActivity(intent)
 }
 
 fun Context.unInstallApp(appInfo: AppInfo) {
@@ -318,13 +339,20 @@ fun Context.searchCustomSearchEngine(
         Constants.SearchEngines.SwissCow -> {
             Constants.URL_SWISSCOW_SEARCH
         }
-    }
 
-    val encodedQuery = Uri.encode(searchQuery)
-    val fullUrl = "$searchUrl$encodedQuery"
-    Log.d("fullUrl", fullUrl)
-    openUrl(fullUrl)
-    return true
+        else -> {
+            openSearch(searchQuery)
+            null // Returning null because we're launching the intent directly
+        }
+    }
+    if (searchUrl != null) {
+        val encodedQuery = Uri.encode(searchQuery)
+        val fullUrl = "$searchUrl$encodedQuery"
+        Log.d("fullUrl", fullUrl)
+        openUrl(fullUrl)
+        return true
+    }
+    return false
 }
 
 fun Context.isWorkProfileEnabled(): Boolean {

@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Feature Removal:
+
+- Remove trash files. ([#140](https://github.com/DroidWorksStudio/EasyLauncher/issues/140)) - ([d27ccc8](https://github.com/DroidWorksStudio/EasyLauncher/commit/d27ccc8cf6711d962c1b41504b52d77553d8fa4b))
+
+### Language Support:
+
+- Updated Language Files. ([#129](https://github.com/DroidWorksStudio/EasyLauncher/issues/129)) - ([80fddba](https://github.com/DroidWorksStudio/EasyLauncher/commit/80fddba64d5f664662809d163a0b17737bcb64b0))
+
+## [0.2.5](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.5) - (15, September 2024)
+
 ### Bug Fixes:
 
 - Fixed the appIconsSwitchCompat working with the appIconDotsSwitchCompat - ([4e61376](https://github.com/DroidWorksStudio/EasyLauncher/commit/4e61376e4106a5a6e96a5a18523a256044791e80))

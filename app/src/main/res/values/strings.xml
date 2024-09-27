@@ -179,6 +179,7 @@
     <string name="admin_permission_message">Easy launcher promises to use lock screen permission responsibly. Easy launcher does not collect or share any data.</string>
 
     <string name="search_engine">Search Engine</string>
+    <string name="search_default">Default</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
