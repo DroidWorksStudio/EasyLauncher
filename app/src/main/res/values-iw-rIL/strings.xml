@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Strings used for basic parts of the launcher -->
+    <string name="favorite_apps">אפליקציות מועדפות</string>
+    <string name="hidden_apps">אפליקציות נסתרות</string>
+    <!-- Strings used for actions within the app -->
     <string name="action_settings">הגדרות</string>
-    <string name="action_settings_default">הגדר כמשגר ברירת מחדל</string>
+    <!-- Strings used for settings menus -->
+    <string name="settings_name">הגדרות משגר</string>
+    <string name="settings_features_title">תכונות</string>
+    <string name="settings_features_description">שפר את הפרודוקטיביות שלך.</string>
+    <string name="settings_look_feel_title">תראה ותרגיש</string>
+    <string name="settings_look_feel_description">תן למסך הבית שלך מגע אישי.</string>
+    <string name="settings_advanced_title">מִתקַדֵם</string>
+    <!-- Strings used for look And feel settings -->
+    <string name="look_feel_settings_title">תראה ותרגיש</string>
+    <!-- Strings used for features settings -->
+    <string name="features_settings_title">תכונות</string>
+    <!-- Strings used for advanced settings -->
+    <string name="advanced_settings_title">הגדרות מתקדמות</string>
+    <string name="advanced_settings_app_info">מידע על האפליקציה</string>
+    <string name="advanced_settings_app_info_description">%1$s</string>
+    <string name="advanced_settings_default">שנה את מפעיל ברירת המחדל</string>
+    <string name="advanced_settings_restart_title">הפעל מחדש את משגר</string>
+    <string name="advanced_settings_restart_description">ניסית להדליק ולכבות?</string>
+    <string name="advanced_settings_backup_restore_title">גיבוי/שחזור</string>
+    <string name="advanced_settings_backup_restore_description">אנא היזהר במה אתה מייחל?</string>
+    <string name="advanced_settings_backup_restore_backup">העדפות גיבוי</string>
+    <string name="advanced_settings_backup_restore_restore">שחזר העדפות</string>
+    <string name="advanced_settings_backup_restore_clear">נקה העדפות</string>
+    <string name="advanced_settings_backup_restore_clear_title">נקה העדפות</string>
+    <string name="advanced_settings_backup_restore_clear_description">האם אתה בטוח שאתה רוצה לעשות זאת?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">כֵּן</string>
+    <string name="advanced_settings_backup_restore_clear_no">לֹא</string>
+    <string name="advanced_settings_help_feedback_title">עזרה ומשוב</string>
+    <string name="advanced_settings_community_support_title">תמיכה בקהילה</string>
+    <string name="advanced_settings_share_application_title">שתף אפליקציה</string>
+    <string name="advanced_settings_share_application_description">שפר את החוויה שלך עם %1$s! קבל את זה עכשיו ב-fDroid וראה על מה כולם מדברים!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">קטע בית</string>
     <string name="draw_fragment_label">צייר שבר</string>
@@ -25,18 +59,12 @@
     <string name="bottom_dialog_remove_to_unlock">בטל את נעילת האפליקציה</string>
     <string name="bottom_dialog_app_info">מידע על האפליקציה</string>
     <string name="bottom_dialog_app_uninstall">הסר את ההתקנה של האפליקציה</string>
-    <string name="settings_name">הגדרות משגר</string>
-    <string name="settings_version">%1$s גרסה: %2$s</string>
     <string name="settings_widgets_name">הגדרות ווידג\'טים</string>
     <string name="settings_title_home_display_preferences">תצוגה</string>
     <string name="settings_title_home_behavior_preferences">התנהגות</string>
     <string name="settings_title_home_appearance_preferences">מראה חיצוני</string>
-    <string name="settings_title_date_style">סגנון תאריך</string>
-    <string name="settings_title_time_style">סגנון זמן</string>
-    <string name="settings_title_app_manager">ניהול אפליקציות</string>
     <string name="settings_title_gestures">מחוות</string>
     <string name="settings_title_miscellaneous">שונות</string>
-    <string name="settings_title_backups">גיבויים</string>
     <string name="settings_title_others">אחרים</string>
     <string name="settings_display_status_bar">הצג את שורת המצב</string>
     <string name="settings_display_date">הצג תאריך</string>
@@ -53,13 +81,8 @@
     <string name="settings_appearance_alignment_title">יישור</string>
     <string name="settings_appearance_padding_title">ריפוד</string>
     <string name="settings_appearance_wallpaper">טפט מותאם אישית</string>
-    <string name="settings_appearance_home_date_alignment">יישור תאריך</string>
-    <string name="settings_appearance_home_time_alignment">יישור זמן</string>
-    <string name="settings_appearance_home_app_alignment">יישור יישומי דף הבית</string>
-    <string name="appearance_bottom_dialog_text_size_title">גודל</string>
     <string name="appearance_bottom_dialog_text_color_title">צֶבַע</string>
     <string name="appearance_bottom_dialog_alignment_title">יישור</string>
-    <string name="appearance_bottom_dialog_padding_title">ריפוד</string>
     <string name="appearance_bottom_dialog_desc_date">תאריך\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">זמן\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">יישום\u0020:\u0020</string>
@@ -67,9 +90,6 @@
     <string name="appearance_bottom_dialog_desc_battery">סוללה\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">רקע יישומון\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">טקסט יישומון\u0020:\u0020</string>
-    <string name="settings_manager_favorite">יישומים מועדפים</string>
-    <string name="settings_manager_hidden">יישומים מוסתרים</string>
-    <string name="settings_select_wallpaper">בחר תמונת רקע</string>
     <string name="settings_double_tap">הקשה כפולה</string>
     <string name="settings_swipe_up">החלק למעלה</string>
     <string name="settings_swipe_down">החלק למטה</string>
@@ -79,12 +99,6 @@
     <string name="settings_search_engine">מנוע חיפוש</string>
     <string name="settings_select_launcher_font">בחר משפחת גופנים</string>
     <string name="settings_launcher_font">משפחת גופן</string>
-    <string name="settings_others_share">שיתוף</string>
-    <string name="settings_others_feedback">משוב</string>
-    <string name="settings_others_github">Github</string>
-    <string name="settings_backups_backup">העדפות גיבוי</string>
-    <string name="settings_backups_clear">נקה העדפות</string>
-    <string name="settings_backups_restore">שחזר העדפות</string>
     <string name="settings_reload_app_backup">העדפות מגובות.</string>
     <string name="settings_reload_app_restore">ההעדפות שוחזרו. מופעל מחדש.</string>
     <string name="settings_actions_open_app">אפליקציה פתוחה</string>
@@ -109,16 +123,16 @@
     <string name="authentication_succeeded">האימות הצליח</string>
     <string name="authentication_failed">אימות נכשל</string>
     <string name="authentication_error">שגיאת אימות: %1$s(קוד %2$d)</string>
-    <string name="bottom_alignment_star">כוכב</string>
+    <string name="bottom_alignment_start">כּוֹכָב</string>
     <string name="bottom_alignment_center">מרכז</string>
     <string name="bottom_alignment_end">סוֹף</string>
     <string name="accessibility_settings_title">הגדרות נגישות</string>
     <string name="accessibility_settings_enable">אפשר</string>
     <string name="accessibility_settings_disable">השבת</string>
     <string name="accessibility_service_name">שירות פעולות משגר קל</string>
-    <string name="accessibility_service_desc">הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב- Easy Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות שלנו אינו אוסף או משתף נתונים כלשהם.</string>
-    <string name="admin_permission_message">משגר קל מבטיח להשתמש בהרשאת מסך הנעילה באחריות. משגר קל אינו אוסף או משתף נתונים כלשהם.</string>
-    <string name="search_engine">מנוע חיפוש</string>
+    <string name="accessibility_service_desc">הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב- Easy Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות
+        שלנו אינו אוסף או משתף נתונים כלשהם.</string>
+    <string name="search_default">בְּרִירַת מֶחדָל</string>
     <string name="search_google">גוגל</string>
     <string name="search_yahoo">יאהו</string>
     <string name="search_duckduckgo">DuckDuckGo</string>

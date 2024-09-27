@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Strings used for basic parts of the launcher -->
+    <string name="favorite_apps">Favori Uygulamalar</string>
+    <string name="hidden_apps">Gizli Uygulamalar</string>
+    <!-- Strings used for actions within the app -->
     <string name="action_settings">Ayarlar</string>
-    <string name="action_settings_default">Varsayılan başlatıcı olarak ayarla</string>
+    <!-- Strings used for settings menus -->
+    <string name="settings_name">Başlatıcı Ayarları</string>
+    <string name="settings_features_title">Özellikler</string>
+    <string name="settings_features_description">Verimliliğinizi artırın.</string>
+    <string name="settings_look_feel_title">Görünüm ve His</string>
+    <string name="settings_look_feel_description">Ana ekranınıza kişisel bir dokunuş katın.</string>
+    <string name="settings_advanced_title">Gelişmiş</string>
+    <!-- Strings used for look And feel settings -->
+    <string name="look_feel_settings_title">Görünüm ve His</string>
+    <!-- Strings used for features settings -->
+    <string name="features_settings_title">Özellikler</string>
+    <!-- Strings used for advanced settings -->
+    <string name="advanced_settings_title">Gelişmiş Ayarlar</string>
+    <string name="advanced_settings_app_info">Uygulama Bilgileri</string>
+    <string name="advanced_settings_app_info_description">%1$s</string>
+    <string name="advanced_settings_default">Varsayılan Başlatıcıyı Değiştir</string>
+    <string name="advanced_settings_restart_title">Başlatıcıyı yeniden başlat</string>
+    <string name="advanced_settings_restart_description">Açıp kapatmayı denediniz mi?</string>
+    <string name="advanced_settings_backup_restore_title">Yedekleme/Geri Yükleme</string>
+    <string name="advanced_settings_backup_restore_description">Lütfen ne dilediğinize dikkat edin?</string>
+    <string name="advanced_settings_backup_restore_backup">Yedekleme Tercihleri</string>
+    <string name="advanced_settings_backup_restore_restore">Tercihleri Geri Yükle</string>
+    <string name="advanced_settings_backup_restore_clear">Tercihleri Temizle</string>
+    <string name="advanced_settings_backup_restore_clear_title">Tercihleri Temizle</string>
+    <string name="advanced_settings_backup_restore_clear_description">Bunu gerçekten yapmak istiyor musun?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">Evet</string>
+    <string name="advanced_settings_backup_restore_clear_no">HAYIR</string>
+    <string name="advanced_settings_help_feedback_title">Yardım ve Geri Bildirim</string>
+    <string name="advanced_settings_community_support_title">Topluluk Desteği</string>
+    <string name="advanced_settings_share_application_title">Paylaşım Uygulaması</string>
+    <string name="advanced_settings_share_application_description">%1$sile deneyiminizi yükseltin! Hemen fDroid\'den edinin ve herkesin ne hakkında konuştuğunu görün!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Ev Parçası</string>
     <string name="draw_fragment_label">Parça Çiz</string>
@@ -25,18 +59,12 @@
     <string name="bottom_dialog_remove_to_unlock">Uygulamanın Kilidini Aç</string>
     <string name="bottom_dialog_app_info">Uygulama bilgisi</string>
     <string name="bottom_dialog_app_uninstall">Uygulamayı Kaldır</string>
-    <string name="settings_name">Başlatıcı Ayarları</string>
-    <string name="settings_version">%1$s Versiyon: %2$s</string>
     <string name="settings_widgets_name">Widget Ayarları</string>
     <string name="settings_title_home_display_preferences">Görüntülemek</string>
     <string name="settings_title_home_behavior_preferences">Davranış</string>
     <string name="settings_title_home_appearance_preferences">Dış görünüş</string>
-    <string name="settings_title_date_style">Tarih Stili</string>
-    <string name="settings_title_time_style">Zaman Stili</string>
-    <string name="settings_title_app_manager">Uygulama Yönetimi</string>
     <string name="settings_title_gestures">Mimik</string>
     <string name="settings_title_miscellaneous">Çeşitli</string>
-    <string name="settings_title_backups">Yedeklemeler</string>
     <string name="settings_title_others">Diğerleri</string>
     <string name="settings_display_status_bar">Durum çubuğunu göster</string>
     <string name="settings_display_date">Tarihi Göster</string>
@@ -53,13 +81,8 @@
     <string name="settings_appearance_alignment_title">Hizalama</string>
     <string name="settings_appearance_padding_title">Dolgu malzemesi</string>
     <string name="settings_appearance_wallpaper">Özel Duvar Kağıdı</string>
-    <string name="settings_appearance_home_date_alignment">Tarih Hizalaması</string>
-    <string name="settings_appearance_home_time_alignment">Zaman Hizalaması</string>
-    <string name="settings_appearance_home_app_alignment">Ana Sayfa Uygulama Hizalaması</string>
-    <string name="appearance_bottom_dialog_text_size_title">Boyut</string>
     <string name="appearance_bottom_dialog_text_color_title">Renk</string>
     <string name="appearance_bottom_dialog_alignment_title">Hizalama</string>
-    <string name="appearance_bottom_dialog_padding_title">Dolgu malzemesi</string>
     <string name="appearance_bottom_dialog_desc_date">Tarih\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Zaman\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">Uygulama\u0020:\u0020</string>
@@ -67,9 +90,6 @@
     <string name="appearance_bottom_dialog_desc_battery">Pil\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Widget Arka Planı\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">Widget Metni\u0020:\u0020</string>
-    <string name="settings_manager_favorite">Favori Uygulamalar</string>
-    <string name="settings_manager_hidden">Gizli uygulamalar</string>
-    <string name="settings_select_wallpaper">Duvar Kağıdını Seçin</string>
     <string name="settings_double_tap">Çift Dokunma</string>
     <string name="settings_swipe_up">Yukarı kaydırın</string>
     <string name="settings_swipe_down">Aşagı kaydır</string>
@@ -79,12 +99,6 @@
     <string name="settings_search_engine">Arama motoru</string>
     <string name="settings_select_launcher_font">Bir Yazı Tipi Ailesi Seçin</string>
     <string name="settings_launcher_font">Font ailesi</string>
-    <string name="settings_others_share">Paylaşmak</string>
-    <string name="settings_others_feedback">Geri bildirim</string>
-    <string name="settings_others_github">Github</string>
-    <string name="settings_backups_backup">Yedekleme Tercihleri</string>
-    <string name="settings_backups_clear">Tercihleri Temizle</string>
-    <string name="settings_backups_restore">Tercihleri Geri Yükle</string>
     <string name="settings_reload_app_backup">Tercihler yedeklendi.</string>
     <string name="settings_reload_app_restore">Tercihler geri yüklendi. Yeniden başlatma.</string>
     <string name="settings_actions_open_app">Uygulamayı aç</string>
@@ -109,16 +123,16 @@
     <string name="authentication_succeeded">Kimlik Doğrulama Başarılı</string>
     <string name="authentication_failed">Kimlik doğrulama başarısız oldu</string>
     <string name="authentication_error">Kimlik Doğrulama Hatası: %1$s(kod %2$d)</string>
-    <string name="bottom_alignment_star">Yıldız</string>
+    <string name="bottom_alignment_start">Yıldız</string>
     <string name="bottom_alignment_center">Merkez</string>
     <string name="bottom_alignment_end">Son</string>
     <string name="accessibility_settings_title">Erişilebilirlik Ayarları</string>
     <string name="accessibility_settings_enable">Olanak vermek</string>
     <string name="accessibility_settings_disable">Devre dışı bırakmak</string>
     <string name="accessibility_service_name">Kolay Başlatıcı Eylemleri Hizmeti</string>
-    <string name="accessibility_service_desc">Easy Launcher\'da kilitlemek için çift dokunma özelliğini kullanmak için lütfen erişilebilirlik hizmetini açın.\n\nBu izin yalnızca ekranınızı kapatmak için kullanılır. Erişilebilirlik hizmetimiz herhangi bir veri toplamaz veya paylaşmaz.</string>
-    <string name="admin_permission_message">Kolay başlatıcı, kilit ekranı iznini sorumlu bir şekilde kullanmayı vaat ediyor. Kolay başlatıcı hiçbir veri toplamaz veya paylaşmaz.</string>
-    <string name="search_engine">Arama motoru</string>
+    <string name="accessibility_service_desc">Easy Launcher\'da kilitlemek için çift dokunma özelliğini kullanmak için lütfen erişilebilirlik hizmetini açın.\n\nBu izin yalnızca ekranınızı kapatmak için kullanılır.
+        erişilebilirlik hizmetimiz hiçbir veri toplamaz veya paylaşmaz.</string>
+    <string name="search_default">Varsayılan</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">yahoo</string>
     <string name="search_duckduckgo">ÖrdekDuckGo</string>

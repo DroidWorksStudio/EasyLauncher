@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Strings used for basic parts of the launcher -->
+    <string name="favorite_apps">Lieblings-Apps</string>
+    <string name="hidden_apps">Versteckte Apps</string>
+    <!-- Strings used for actions within the app -->
     <string name="action_settings">Einstellungen</string>
-    <string name="action_settings_default">Als Standard-Launcher festlegen</string>
+    <!-- Strings used for settings menus -->
+    <string name="settings_name">Launcher-Einstellungen</string>
+    <string name="settings_features_title">Merkmale</string>
+    <string name="settings_features_description">Verbessern Sie Ihre Produktivität.</string>
+    <string name="settings_look_feel_title">Erscheinungsbild</string>
+    <string name="settings_look_feel_description">Verleihen Sie Ihrem Home-Bildschirm eine persönliche Note.</string>
+    <string name="settings_advanced_title">Fortschrittlich</string>
+    <!-- Strings used for look And feel settings -->
+    <string name="look_feel_settings_title">Aussehen und Gefühl</string>
+    <!-- Strings used for features settings -->
+    <string name="features_settings_title">Merkmale</string>
+    <!-- Strings used for advanced settings -->
+    <string name="advanced_settings_title">Erweiterte Einstellungen</string>
+    <string name="advanced_settings_app_info">App-Informationen</string>
+    <string name="advanced_settings_app_info_description">%1$s</string>
+    <string name="advanced_settings_default">Standard-Launcher ändern</string>
+    <string name="advanced_settings_restart_title">Launcher neu starten</string>
+    <string name="advanced_settings_restart_description">Haben Sie versucht, es ein- und auszuschalten?</string>
+    <string name="advanced_settings_backup_restore_title">Sichern/Wiederherstellen</string>
+    <string name="advanced_settings_backup_restore_description">Bitte seien Sie vorsichtig mit Ihren Wünschen.</string>
+    <string name="advanced_settings_backup_restore_backup">Sicherungseinstellungen</string>
+    <string name="advanced_settings_backup_restore_restore">Einstellungen wiederherstellen</string>
+    <string name="advanced_settings_backup_restore_clear">Einstellungen löschen</string>
+    <string name="advanced_settings_backup_restore_clear_title">Einstellungen löschen</string>
+    <string name="advanced_settings_backup_restore_clear_description">Möchten Sie das wirklich tun?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">Ja</string>
+    <string name="advanced_settings_backup_restore_clear_no">NEIN</string>
+    <string name="advanced_settings_help_feedback_title">Hilfe und Feedback</string>
+    <string name="advanced_settings_community_support_title">Unterstützung der Gemeinschaft</string>
+    <string name="advanced_settings_share_application_title">Anwendung teilen</string>
+    <string name="advanced_settings_share_application_description">Erweitern Sie Ihr Erlebnis mit %1$s! Holen Sie es sich jetzt auf fDroid und sehen Sie, worüber alle reden!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Startseite Fragment</string>
     <string name="draw_fragment_label">Fragment zeichnen</string>
@@ -25,18 +59,12 @@
     <string name="bottom_dialog_remove_to_unlock">App entsperren</string>
     <string name="bottom_dialog_app_info">App-Information</string>
     <string name="bottom_dialog_app_uninstall">App deinstallieren</string>
-    <string name="settings_name">Launcher-Einstellungen</string>
-    <string name="settings_version">%1$s Version: %2$s</string>
     <string name="settings_widgets_name">Widgets-Einstellungen</string>
     <string name="settings_title_home_display_preferences">Anzeige</string>
     <string name="settings_title_home_behavior_preferences">Verhalten</string>
     <string name="settings_title_home_appearance_preferences">Aussehen</string>
-    <string name="settings_title_date_style">Datumsformat</string>
-    <string name="settings_title_time_style">Zeitstil</string>
-    <string name="settings_title_app_manager">App verwalten</string>
     <string name="settings_title_gestures">Gesten</string>
     <string name="settings_title_miscellaneous">Verschiedenes</string>
-    <string name="settings_title_backups">Backups</string>
     <string name="settings_title_others">Andere</string>
     <string name="settings_display_status_bar">Zeige Statusleiste</string>
     <string name="settings_display_date">Datum anzeigen</string>
@@ -53,13 +81,8 @@
     <string name="settings_appearance_alignment_title">Ausrichtung</string>
     <string name="settings_appearance_padding_title">Polsterung</string>
     <string name="settings_appearance_wallpaper">Benutzerdefiniertes Hintergrundbild</string>
-    <string name="settings_appearance_home_date_alignment">Datumsausrichtung</string>
-    <string name="settings_appearance_home_time_alignment">Zeitabgleich</string>
-    <string name="settings_appearance_home_app_alignment">Ausrichtung der Home-App</string>
-    <string name="appearance_bottom_dialog_text_size_title">Größe</string>
     <string name="appearance_bottom_dialog_text_color_title">Farbe</string>
     <string name="appearance_bottom_dialog_alignment_title">Ausrichtung</string>
-    <string name="appearance_bottom_dialog_padding_title">Polsterung</string>
     <string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Zeit\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
@@ -67,9 +90,6 @@
     <string name="appearance_bottom_dialog_desc_battery">Batterie\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Widget-Hintergrund\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">Widget-Text\u0020:\u0020</string>
-    <string name="settings_manager_favorite">Lieblings-Apps</string>
-    <string name="settings_manager_hidden">Versteckte Apps</string>
-    <string name="settings_select_wallpaper">Hintergrundbild auswählen</string>
     <string name="settings_double_tap">Doppeltippen</string>
     <string name="settings_swipe_up">Nach oben wischen</string>
     <string name="settings_swipe_down">Nach unten wischen</string>
@@ -79,12 +99,6 @@
     <string name="settings_search_engine">Suchmaschine</string>
     <string name="settings_select_launcher_font">Wählen Sie eine Schriftfamilie aus</string>
     <string name="settings_launcher_font">Schriftfamilie</string>
-    <string name="settings_others_share">Aktie</string>
-    <string name="settings_others_feedback">Rückmeldung</string>
-    <string name="settings_others_github">Github</string>
-    <string name="settings_backups_backup">Sicherungseinstellungen</string>
-    <string name="settings_backups_clear">Einstellungen löschen</string>
-    <string name="settings_backups_restore">Einstellungen wiederherstellen</string>
     <string name="settings_reload_app_backup">Einstellungen gesichert.</string>
     <string name="settings_reload_app_restore">Einstellungen wiederhergestellt. Neustart.</string>
     <string name="settings_actions_open_app">Öffne App</string>
@@ -109,16 +123,16 @@
     <string name="authentication_succeeded">Authentifizierung erfolgreich</string>
     <string name="authentication_failed">Authentifizierung fehlgeschlagen</string>
     <string name="authentication_error">Authentifizierungsfehler: %1$s(Code %2$d)</string>
-    <string name="bottom_alignment_star">Stern</string>
+    <string name="bottom_alignment_start">Stern</string>
     <string name="bottom_alignment_center">Center</string>
     <string name="bottom_alignment_end">Ende</string>
     <string name="accessibility_settings_title">Eingabehilfen-Einstellungen</string>
     <string name="accessibility_settings_enable">Aktivieren</string>
     <string name="accessibility_settings_disable">Deaktivieren</string>
     <string name="accessibility_service_name">Einfacher Launcher-Aktionsdienst</string>
-    <string name="accessibility_service_desc">Bitte aktivieren Sie den Eingabehilfedienst, um die Funktion „Doppeltippen zum Sperren“ im Easy Launcher zu verwenden.\n\nDiese Berechtigung wird nur verwendet, um Ihren Bildschirm auszuschalten. Unser Eingabehilfedienst sammelt oder gibt keine Daten weiter.</string>
-    <string name="admin_permission_message">Easy Launcher verspricht, die Sperrbildschirmberechtigung verantwortungsvoll zu nutzen. Easy Launcher sammelt oder gibt keine Daten weiter.</string>
-    <string name="search_engine">Suchmaschine</string>
+    <string name="accessibility_service_desc">Bitte aktivieren Sie den Bedienungshilfedienst, um die Funktion „Doppeltippen zum Sperren“ im Easy Launcher zu verwenden.\n\nDiese Berechtigung wird nur verwendet, um Ihren Bildschirm auszuschalten. Unser
+        Bedienungshilfedienst sammelt oder gibt keine Daten weiter.</string>
+    <string name="search_default">Standard</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>

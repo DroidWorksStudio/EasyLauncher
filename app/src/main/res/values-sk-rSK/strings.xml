@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Strings used for basic parts of the launcher -->
+    <string name="favorite_apps">Obľúbené aplikácie</string>
+    <string name="hidden_apps">Skryté aplikácie</string>
+    <!-- Strings used for actions within the app -->
     <string name="action_settings">nastavenie</string>
-    <string name="action_settings_default">Nastaviť ako predvolený spúšťač</string>
+    <!-- Strings used for settings menus -->
+    <string name="settings_name">Nastavenia spúšťača</string>
+    <string name="settings_features_title">Vlastnosti</string>
+    <string name="settings_features_description">Zlepšite svoju produktivitu.</string>
+    <string name="settings_look_feel_title">Pozrite sa a cíťte</string>
+    <string name="settings_look_feel_description">Dodajte svojej domovskej obrazovke osobný nádych.</string>
+    <string name="settings_advanced_title">Pokročilé</string>
+    <!-- Strings used for look And feel settings -->
+    <string name="look_feel_settings_title">Pozrite sa a cíťte</string>
+    <!-- Strings used for features settings -->
+    <string name="features_settings_title">Vlastnosti</string>
+    <!-- Strings used for advanced settings -->
+    <string name="advanced_settings_title">Rozšírené nastavenia</string>
+    <string name="advanced_settings_app_info">Informácie o aplikácii</string>
+    <string name="advanced_settings_app_info_description">%1$s</string>
+    <string name="advanced_settings_default">Zmeniť predvolený spúšťač</string>
+    <string name="advanced_settings_restart_title">Reštartujte spúšťač</string>
+    <string name="advanced_settings_restart_description">Skúšali ste to zapnúť a vypnúť?</string>
+    <string name="advanced_settings_backup_restore_title">Zálohovanie/obnovenie</string>
+    <string name="advanced_settings_backup_restore_description">Dávajte si prosím pozor na to, čo si želáte?</string>
+    <string name="advanced_settings_backup_restore_backup">Predvoľby zálohovania</string>
+    <string name="advanced_settings_backup_restore_restore">Obnoviť predvoľby</string>
+    <string name="advanced_settings_backup_restore_clear">Vymazať predvoľby</string>
+    <string name="advanced_settings_backup_restore_clear_title">Vymazať predvoľby</string>
+    <string name="advanced_settings_backup_restore_clear_description">Naozaj to chcete urobiť?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">áno</string>
+    <string name="advanced_settings_backup_restore_clear_no">Nie</string>
+    <string name="advanced_settings_help_feedback_title">Pomoc a spätná väzba</string>
+    <string name="advanced_settings_community_support_title">Podpora komunity</string>
+    <string name="advanced_settings_share_application_title">Zdieľať aplikáciu</string>
+    <string name="advanced_settings_share_application_description">Zvýšte svoje skúsenosti s %1$s! Získajte to teraz na fDroid a uvidíte, o čom všetci hovoria!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Domáci Fragment</string>
     <string name="draw_fragment_label">Nakreslite fragment</string>
@@ -25,18 +59,12 @@
     <string name="bottom_dialog_remove_to_unlock">Odomknúť aplikáciu</string>
     <string name="bottom_dialog_app_info">Informácie o aplikácii</string>
     <string name="bottom_dialog_app_uninstall">Odinštalovať aplikáciu</string>
-    <string name="settings_name">Nastavenia spúšťača</string>
-    <string name="settings_version">%1$s Verzia: %2$s</string>
     <string name="settings_widgets_name">Nastavenia miniaplikácií</string>
     <string name="settings_title_home_display_preferences">Displej</string>
     <string name="settings_title_home_behavior_preferences">Správanie</string>
     <string name="settings_title_home_appearance_preferences">Vzhľad</string>
-    <string name="settings_title_date_style">Štýl dátumu</string>
-    <string name="settings_title_time_style">Časový štýl</string>
-    <string name="settings_title_app_manager">Správa aplikácií</string>
     <string name="settings_title_gestures">Gestá</string>
     <string name="settings_title_miscellaneous">Zmiešaný</string>
-    <string name="settings_title_backups">Zálohy</string>
     <string name="settings_title_others">Iní</string>
     <string name="settings_display_status_bar">Zobraziť stavový riadok</string>
     <string name="settings_display_date">Zobraziť dátum</string>
@@ -53,13 +81,8 @@
     <string name="settings_appearance_alignment_title">Zarovnanie</string>
     <string name="settings_appearance_padding_title">Vypchávka</string>
     <string name="settings_appearance_wallpaper">Vlastná tapeta</string>
-    <string name="settings_appearance_home_date_alignment">Dátumové zarovnanie</string>
-    <string name="settings_appearance_home_time_alignment">Časové zarovnanie</string>
-    <string name="settings_appearance_home_app_alignment">Home App Zarovnanie</string>
-    <string name="appearance_bottom_dialog_text_size_title">Veľkosť</string>
     <string name="appearance_bottom_dialog_text_color_title">Farba</string>
     <string name="appearance_bottom_dialog_alignment_title">Zarovnanie</string>
-    <string name="appearance_bottom_dialog_padding_title">Vypchávka</string>
     <string name="appearance_bottom_dialog_desc_date">Dátum\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Čas\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">Aplikácia\u0020:\u0020</string>
@@ -67,9 +90,6 @@
     <string name="appearance_bottom_dialog_desc_battery">Batéria\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Pozadie miniaplikácie\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">Text miniaplikácie\u0020:\u0020</string>
-    <string name="settings_manager_favorite">Obľúbené aplikácie</string>
-    <string name="settings_manager_hidden">Skryté aplikácie</string>
-    <string name="settings_select_wallpaper">Vyberte položku Tapeta</string>
     <string name="settings_double_tap">Dvojité poklepanie</string>
     <string name="settings_swipe_up">Potiahnite hore</string>
     <string name="settings_swipe_down">Potiahnite prstom smerom nadol</string>
@@ -79,12 +99,6 @@
     <string name="settings_search_engine">Vyhľadávač</string>
     <string name="settings_select_launcher_font">Vyberte rodinu písiem</string>
     <string name="settings_launcher_font">Rodina písiem</string>
-    <string name="settings_others_share">zdieľam</string>
-    <string name="settings_others_feedback">Spätná väzba</string>
-    <string name="settings_others_github">Github</string>
-    <string name="settings_backups_backup">Predvoľby zálohovania</string>
-    <string name="settings_backups_clear">Vymazať predvoľby</string>
-    <string name="settings_backups_restore">Obnoviť predvoľby</string>
     <string name="settings_reload_app_backup">Predvoľby sú zálohované.</string>
     <string name="settings_reload_app_restore">Predvoľby boli obnovené. Reštartovanie.</string>
     <string name="settings_actions_open_app">Otvorte aplikáciu</string>
@@ -109,16 +123,16 @@
     <string name="authentication_succeeded">Overenie bolo úspešné</string>
     <string name="authentication_failed">Overenie zlyhalo</string>
     <string name="authentication_error">Chyba overenia: %1$s(kód %2$d)</string>
-    <string name="bottom_alignment_star">Hviezda</string>
+    <string name="bottom_alignment_start">Star</string>
     <string name="bottom_alignment_center">centrum</string>
     <string name="bottom_alignment_end">Koniec</string>
     <string name="accessibility_settings_title">Nastavenia dostupnosti</string>
     <string name="accessibility_settings_enable">Povoliť</string>
     <string name="accessibility_settings_disable">Zakázať</string>
     <string name="accessibility_service_name">Služba Easy Launcher Actions Service</string>
-    <string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v aplikácii Easy Launcher, zapnite službu dostupnosti.\n\nToto povolenie sa používa iba na vypnutie obrazovky. Naša služba dostupnosti nezhromažďuje ani nezdieľa žiadne údaje.</string>
-    <string name="admin_permission_message">Easy launcher sľubuje zodpovedné používanie povolenia na uzamknutie obrazovky. Easy launcher nezhromažďuje ani nezdieľa žiadne údaje.</string>
-    <string name="search_engine">Vyhľadávač</string>
+    <string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v aplikácii Easy Launcher, zapnite službu dostupnosti.\n\nToto povolenie sa používa iba na vypnutie obrazovky. Naša služba dostupnosti
+        nezhromažďuje ani nezdieľa žiadne údaje.</string>
+    <string name="search_default">Predvolené</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
