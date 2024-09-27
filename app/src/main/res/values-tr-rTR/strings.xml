@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings used for basic parts of the launcher -->
-    <string name="favorite_apps">Favorite Apps</string>
-    <string name="hidden_apps">Hidden Apps</string>
+    <string name="favorite_apps">Favori Uygulamalar</string>
+    <string name="hidden_apps">Gizli Uygulamalar</string>
     <!-- Strings used for actions within the app -->
     <string name="action_settings">Ayarlar</string>
     <!-- Strings used for settings menus -->
     <string name="settings_name">Başlatıcı Ayarları</string>
-    <string name="settings_features_title">Features</string>
-    <string name="settings_features_description">Improve your productivity.</string>
-    <string name="settings_look_feel_title">Look and Feel</string>
-    <string name="settings_look_feel_description">Give your home screen a personal touch.</string>
-    <string name="settings_advanced_title">Advanced</string>
+    <string name="settings_features_title">Özellikler</string>
+    <string name="settings_features_description">Verimliliğinizi artırın.</string>
+    <string name="settings_look_feel_title">Görünüm ve His</string>
+    <string name="settings_look_feel_description">Ana ekranınıza kişisel bir dokunuş katın.</string>
+    <string name="settings_advanced_title">Gelişmiş</string>
     <!-- Strings used for look And feel settings -->
-    <string name="look_feel_settings_title">Look And Feel</string>
+    <string name="look_feel_settings_title">Görünüm ve His</string>
     <!-- Strings used for features settings -->
-    <string name="features_settings_title">Features</string>
+    <string name="features_settings_title">Özellikler</string>
     <!-- Strings used for advanced settings -->
-    <string name="advanced_settings_title">Advanced Settings</string>
-    <string name="advanced_settings_app_info">App Info</string>
+    <string name="advanced_settings_title">Gelişmiş Ayarlar</string>
+    <string name="advanced_settings_app_info">Uygulama Bilgileri</string>
     <string name="advanced_settings_app_info_description">%1$s</string>
-    <string name="advanced_settings_default">Change Default Launcher</string>
-    <string name="advanced_settings_restart_title">Restart Launcher</string>
-    <string name="advanced_settings_restart_description">Have you tried turning it on and off?</string>
-    <string name="advanced_settings_backup_restore_title">Backup/Restore</string>
-    <string name="advanced_settings_backup_restore_description">Please be careful what you wish for?</string>
-    <string name="advanced_settings_backup_restore_backup">Backup Preferences</string>
-    <string name="advanced_settings_backup_restore_restore">Restore Preferences</string>
-    <string name="advanced_settings_backup_restore_clear">Clear Preferences</string>
-    <string name="advanced_settings_backup_restore_clear_title">Clear Preferences</string>
-    <string name="advanced_settings_backup_restore_clear_description">Are you sure you want to do this?</string>
-    <string name="advanced_settings_backup_restore_clear_yes">Yes</string>
-    <string name="advanced_settings_backup_restore_clear_no">No</string>
-    <string name="advanced_settings_help_feedback_title">Help and Feedback</string>
-    <string name="advanced_settings_community_support_title">Community Support</string>
-    <string name="advanced_settings_share_application_title">Share Application</string>
-    <string name="advanced_settings_share_application_description">Elevate your experience with %1$s! Get it now on fDroid and see what everyone is talking about!\n</string>
+    <string name="advanced_settings_default">Varsayılan Başlatıcıyı Değiştir</string>
+    <string name="advanced_settings_restart_title">Başlatıcıyı yeniden başlat</string>
+    <string name="advanced_settings_restart_description">Açıp kapatmayı denediniz mi?</string>
+    <string name="advanced_settings_backup_restore_title">Yedekleme/Geri Yükleme</string>
+    <string name="advanced_settings_backup_restore_description">Lütfen ne dilediğinize dikkat edin?</string>
+    <string name="advanced_settings_backup_restore_backup">Yedekleme Tercihleri</string>
+    <string name="advanced_settings_backup_restore_restore">Tercihleri Geri Yükle</string>
+    <string name="advanced_settings_backup_restore_clear">Tercihleri Temizle</string>
+    <string name="advanced_settings_backup_restore_clear_title">Tercihleri Temizle</string>
+    <string name="advanced_settings_backup_restore_clear_description">Bunu gerçekten yapmak istiyor musun?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">Evet</string>
+    <string name="advanced_settings_backup_restore_clear_no">HAYIR</string>
+    <string name="advanced_settings_help_feedback_title">Yardım ve Geri Bildirim</string>
+    <string name="advanced_settings_community_support_title">Topluluk Desteği</string>
+    <string name="advanced_settings_share_application_title">Paylaşım Uygulaması</string>
+    <string name="advanced_settings_share_application_description">%1$sile deneyiminizi yükseltin! Hemen fDroid\'den edinin ve herkesin ne hakkında konuştuğunu görün!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Ev Parçası</string>
     <string name="draw_fragment_label">Parça Çiz</string>
@@ -123,16 +123,16 @@
     <string name="authentication_succeeded">Kimlik Doğrulama Başarılı</string>
     <string name="authentication_failed">Kimlik doğrulama başarısız oldu</string>
     <string name="authentication_error">Kimlik Doğrulama Hatası: %1$s(kod %2$d)</string>
-    <string name="bottom_alignment_start">Star</string>
+    <string name="bottom_alignment_start">Yıldız</string>
     <string name="bottom_alignment_center">Merkez</string>
     <string name="bottom_alignment_end">Son</string>
     <string name="accessibility_settings_title">Erişilebilirlik Ayarları</string>
     <string name="accessibility_settings_enable">Olanak vermek</string>
     <string name="accessibility_settings_disable">Devre dışı bırakmak</string>
     <string name="accessibility_service_name">Kolay Başlatıcı Eylemleri Hizmeti</string>
-    <string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen. Our
-        accessibility service does not collect or share any data.</string>
-    <string name="search_default">Default</string>
+    <string name="accessibility_service_desc">Easy Launcher\'da kilitlemek için çift dokunma özelliğini kullanmak için lütfen erişilebilirlik hizmetini açın.\n\nBu izin yalnızca ekranınızı kapatmak için kullanılır.
+        erişilebilirlik hizmetimiz hiçbir veri toplamaz veya paylaşmaz.</string>
+    <string name="search_default">Varsayılan</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">yahoo</string>
     <string name="search_duckduckgo">ÖrdekDuckGo</string>
