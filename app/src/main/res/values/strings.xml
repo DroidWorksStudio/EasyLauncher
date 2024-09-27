@@ -161,6 +161,10 @@
     <string name="authentication_failed">Authentication Failed</string>
     <string name="authentication_error">Authentication Error: %1$s(code %2$d)</string>
 
+    <string name="bottom_alignment_start">Star</string>
+    <string name="bottom_alignment_center">Center</string>
+    <string name="bottom_alignment_end">End</string>
+
     <string name="accessibility_settings_title">Accessibility Settings</string>
     <string name="accessibility_settings_enable">Enable</string>
     <string name="accessibility_settings_disable">Disable</string>
