@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-
     <color name="search_view_hint">#FFFFFFFF</color>
     <color name="search_button_background">#56A1E6</color>
 
@@ -27,4 +24,7 @@
     <color name="green">#4CAF50</color>
     <color name="orange">#AF684C</color>
     <color name="red">#AF4C4C</color>
+
+    <color name="icon_200">#33FFFFFF</color>
+    <color name="icon_700">#B3FFFFFF</color>
 </resources>

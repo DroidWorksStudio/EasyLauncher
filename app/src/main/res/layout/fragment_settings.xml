@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.settings.SettingsFragment">
 
-    <FrameLayout
-        android:id="@+id/touchArea"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginVertical="20dp" />
-
     <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
         android:id="@+id/nestScrollView"
         android:layout_width="match_parent"
@@ -19,991 +13,201 @@
         android:clipChildren="false"
         android:clipToPadding="false"
         android:fadingEdgeLength="48dp"
+        android:fillViewport="true"
         android:overScrollMode="never"
         android:requiresFadingEdge="vertical"
         android:scrollbars="none"
         tools:ignore="TooManyViews">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="32dp"
+            android:layout_marginTop="42dp"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
-            tools:ignore="MissingConstraints">
+            android:padding="24dp">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                style="@style/TextDefaultStyle"
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/headerIcon"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/app_launcher" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
                 android:text="@string/settings_name"
-                android:textSize="@dimen/text_super_large" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/version_info"
-                style="@style/TextDefaultStyle"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="18dp"
-                android:text="@string/settings_version"
-                android:textSize="@dimen/text_large" />
+                android:orientation="vertical">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/set_launcher_selector"
-                style="@style/TextDefaultStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="18dp"
-                android:text="@string/action_settings_default"
-                android:textSize="@dimen/text_large" />
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextDefaultStyle"
+                <LinearLayout
+                    android:id="@+id/featuresSettings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="@string/settings_title_app_manager"
-                    android:textSize="@dimen/text_super_large" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/favorite_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_manager_favorite"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="28dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="20dp"
-                    tools:ignore="MissingConstraints,TextSizeCheck">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/hidden_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_manager_hidden"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextDefaultStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="@string/settings_title_home_behavior_preferences"
-                    android:textSize="@dimen/text_super_large" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/automaticKeyboard_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_automatic_keyboard"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/automaticKeyboard_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/automaticOpenApp_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_auto_open_apps"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/automaticOpenApp_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/lockSettings_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_lock_settings"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/lockSettings_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextDefaultStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="@string/settings_title_home_display_preferences"
-                    android:textSize="@dimen/text_super_large" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/statue_bar_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_status_bar"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/statue_bar_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/date_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_date"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/date_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/time_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_time"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/time_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/battery_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_battery"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/battery_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/dailyWord_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_daily_word"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/dailyWord_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/appIcons_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_app_icons"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/appIcons_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/appIconDots_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_display_app_icon_dots"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/appIconDots_switchCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:scaleX="0.7"
-                        android:scaleY="0.8"
-                        android:thumb="@drawable/shape_switch_thumb"
-                        app:track="@drawable/selector_switch"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/TextDefaultStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="@string/settings_title_home_appearance_preferences"
-                    android:textSize="@dimen/text_super_large" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:id="@+id/select_appearance_text_size"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_appearance_text_size_title"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:id="@+id/select_appearance_color"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_appearance_color_title"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:id="@+id/select_appearance_alignment"
-                    android:layout_width="match_parent"
-                    android:layout_height="28dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    tools:ignore="MissingConstraints,TextSizeCheck">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_appearance_alignment_title"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:id="@+id/select_appearance_padding"
-                    android:layout_width="match_parent"
-                    android:layout_height="28dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    tools:ignore="MissingConstraints,TextSizeCheck">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_appearance_padding_title"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:id="@+id/set_app_wallpaper"
-                    android:layout_width="match_parent"
-                    android:layout_height="28dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    tools:ignore="MissingConstraints,TextSizeCheck">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_appearance_wallpaper"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:orientation="horizontal"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/miscellaneous_launcherFonts_text"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="left|center"
-                        android:text="@string/settings_launcher_font"
-                        android:textSize="@dimen/text_large"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="RtlHardcoded" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/miscellaneous_launcherFonts_control"
-                        style="@style/TextDefaultStyle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="left|center"
-                        android:text="@string/settings_font_system"
-                        android:textSize="@dimen/text_large"
-                        tools:ignore="RtlHardcoded" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    tools:ignore="MissingConstraints">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
+                    android:paddingVertical="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/settings_features_title"
+                        android:src="@drawable/ic_feature"
+                        app:tint="?attr/colorPrimary" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:text="@string/settings_title_gestures"
-                        android:textSize="@dimen/text_super_large" />
+                        android:orientation="vertical">
 
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginVertical="10dp"
-                        android:orientation="horizontal"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_double_tap_text"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left|center"
-                            android:text="@string/settings_double_tap"
-                            android:textSize="@dimen/text_large"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_double_tap_control"
-                            style="@style/TextDefaultStyle"
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left|center"
-                            android:text="@string/settings_double_tap"
-                            android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded" />
+                            android:text="@string/settings_features_title"
+                            android:textSize="18sp" />
 
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginVertical="10dp"
-                        android:orientation="horizontal"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_swipe_up_text"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left|center"
-                            android:text="@string/settings_swipe_up"
-                            android:textSize="@dimen/text_large"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_swipe_up_control"
-                            style="@style/TextDefaultStyle"
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left|center"
-                            android:text="@string/settings_swipe_up"
-                            android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded" />
+                            android:text="@string/settings_features_description"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginVertical="10dp"
-                        android:orientation="horizontal"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_swipe_down_text"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left|center"
-                            android:text="@string/settings_swipe_down"
-                            android:textSize="@dimen/text_large"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_swipe_down_control"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left|center"
-                            android:text="@string/settings_swipe_down"
-                            android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded" />
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginVertical="10dp"
-                        android:orientation="horizontal"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_swipe_left_text"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left|center"
-                            android:text="@string/settings_swipe_left"
-                            android:textSize="@dimen/text_large"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_swipe_left_control"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left|center"
-                            android:text="@string/settings_swipe_left"
-                            android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded" />
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginVertical="10dp"
-                        android:orientation="horizontal"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_swipe_right_text"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left|center"
-                            android:text="@string/settings_swipe_right"
-                            android:textSize="@dimen/text_large"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/gestures_swipe_right_control"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="left|center"
-                            android:text="@string/settings_swipe_right"
-                            android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded" />
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <LinearLayout
+                    android:id="@+id/lookFeelSettings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    tools:ignore="MissingConstraints">
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/settings_look_feel_title"
+                        android:src="@drawable/ic_look_feel"
+                        app:tint="?attr/colorPrimary" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:text="@string/settings_title_miscellaneous"
-                        android:textSize="@dimen/text_super_large" />
+                        android:orientation="vertical">
 
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginVertical="10dp"
-                        android:orientation="horizontal"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/miscellaneous_searchEngine_text"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="left|center"
-                            android:text="@string/settings_search_engine"
-                            android:textSize="@dimen/text_large"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="RtlHardcoded" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/miscellaneous_searchEngine_control"
-                            style="@style/TextDefaultStyle"
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="left|center"
-                            android:text="@string/search"
-                            android:textSize="@dimen/text_large"
-                            tools:ignore="RtlHardcoded" />
+                            android:text="@string/settings_look_feel_title"
+                            android:textSize="18sp" />
 
-                    </androidx.appcompat.widget.LinearLayoutCompat>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_look_feel_description"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <LinearLayout
+                    android:id="@+id/favoriteApps"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    tools:ignore="MissingConstraints">
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/favorite_apps"
+                        android:src="@drawable/ic_favorite"
+                        app:tint="?attr/colorPrimary" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:text="@string/settings_title_backups"
-                        android:textSize="@dimen/text_super_large" />
+                        android:orientation="vertical">
 
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:orientation="vertical"
-                        tools:ignore="MissingConstraints">
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/backup_view"
-                            style="@style/TextDefaultStyle"
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
-                            android:text="@string/settings_backups_backup"
-                            android:textSize="@dimen/text_large" />
+                            android:text="@string/favorite_apps"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/clear_view"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
-                            android:text="@string/settings_backups_clear"
-                            android:textSize="@dimen/text_large" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/restore_view"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
-                            android:text="@string/settings_backups_restore"
-                            android:textSize="@dimen/text_large" />
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <LinearLayout
+                    android:id="@+id/hiddenApps"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    tools:ignore="MissingConstraints">
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/TextDefaultStyle"
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/hidden_apps"
+                        android:src="@drawable/ic_hidden"
+                        app:tint="?attr/colorPrimary" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:text="@string/settings_title_others"
-                        android:textSize="@dimen/text_super_large" />
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hidden_apps"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
-                    <androidx.appcompat.widget.LinearLayoutCompat
+                <LinearLayout
+                    android:id="@+id/advancedSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/settings_advanced_title"
+                        android:src="@drawable/ic_advanced"
+                        app:tint="?attr/colorPrimary" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginVertical="10dp"
-                        android:layout_weight="4"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        tools:ignore="MissingConstraints">
+                        android:orientation="vertical">
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/share_view"
-                            style="@style/TextDefaultStyle"
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:text="@string/settings_others_share"
-                            android:textSize="@dimen/text_large" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/github_view"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:text="@string/settings_others_github"
-                            android:textSize="@dimen/text_large" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/feedback_view"
-                            style="@style/TextDefaultStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:text="@string/settings_others_feedback"
-                            android:textSize="@dimen/text_large" />
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
+                            android:text="@string/settings_advanced_title"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </com.github.droidworksstudio.launcher.view.GestureNestedScrollView>
-
 </FrameLayout>

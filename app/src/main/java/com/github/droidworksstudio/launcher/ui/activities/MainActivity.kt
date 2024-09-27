@@ -2,8 +2,6 @@ package com.github.droidworksstudio.launcher.ui.activities
 
 import android.Manifest
 import android.annotation.SuppressLint
-import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
@@ -24,6 +22,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -33,6 +32,7 @@ import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.common.showLongToast
+import com.github.droidworksstudio.common.showShortToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
-        sharedPreferences = getSharedPreferences(Constants.WEATHER_PREFS, Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences(Constants.WEATHER_PREFS, MODE_PRIVATE)
         handler = Handler(Looper.getMainLooper())
 
         initializeDependencies()
@@ -218,7 +218,7 @@ class MainActivity : AppCompatActivity() {
 
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                backToHomeScreen()
+                goBackToSettings()
             }
         })
     }
@@ -268,8 +268,29 @@ class MainActivity : AppCompatActivity() {
 
     private fun backToHomeScreen() {
         navController = findNavController(R.id.nav_host_fragment_content_main)
-        if (navController.currentDestination?.id != R.id.HomeFragment)
-            navController.navigate(R.id.HomeFragment)
+        when (navController.currentDestination?.id) {
+            R.id.HomeFragment -> return
+            else -> navController.navigate(R.id.HomeFragment)
+        }
+    }
+
+    private fun goBackToSettings() {
+        navController = findNavController(R.id.nav_host_fragment_content_main)
+        val fragmentManager: FragmentManager = supportFragmentManager
+        when (navController.currentDestination?.id) {
+            R.id.SettingsFragment,
+            R.id.SettingsFeaturesFragment,
+            R.id.SettingsLookFeelFragment,
+            R.id.FavoriteFragment,
+            R.id.HiddenFragment,
+            R.id.SettingsAdvancedFragment -> {
+                fragmentManager.popBackStack()
+            }
+
+            else -> {
+                navController.navigate(R.id.HomeFragment)
+            }
+        }
     }
 
 
@@ -296,7 +317,7 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (resultCode != Activity.RESULT_OK) {
+        if (resultCode != RESULT_OK) {
             applicationContext.showLongToast("Intent Error")
             return
         }
@@ -320,6 +341,7 @@ class MainActivity : AppCompatActivity() {
                         prefs.loadFromString(string)
                     }
                 }
+                applicationContext.showShortToast(getString(R.string.settings_reload_app_restore))
                 Handler(Looper.getMainLooper()).postDelayed({
                     AppReloader.restartApp(applicationContext)
                 }, 500)
@@ -335,6 +357,7 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
+                applicationContext.showShortToast(getString(R.string.settings_reload_app_backup))
             }
         }
     }
