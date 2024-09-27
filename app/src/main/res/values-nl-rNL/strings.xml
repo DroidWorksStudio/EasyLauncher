@@ -119,6 +119,7 @@
     <string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie Dubbeltikken om te vergrendelen in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze toegankelijkheidsdienst verzamelt of deelt geen gegevens.</string>
     <string name="admin_permission_message">Easy Launcher belooft de toestemming op het vergrendelscherm op verantwoorde wijze te gebruiken. Easy Launcher verzamelt of deelt geen gegevens.</string>
     <string name="search_engine">Zoekmachine</string>
+    <string name="search_default">Default</string>
     <string name="search_google">Googlen</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
