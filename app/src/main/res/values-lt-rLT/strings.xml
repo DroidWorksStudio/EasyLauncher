@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Strings used for basic parts of the launcher -->
+    <string name="favorite_apps">Favorite Apps</string>
+    <string name="hidden_apps">Hidden Apps</string>
+    <!-- Strings used for actions within the app -->
     <string name="action_settings">Nustatymai</string>
-    <string name="action_settings_default">Nustatyti kaip numatytąją paleidimo priemonę</string>
+    <!-- Strings used for settings menus -->
+    <string name="settings_name">Paleidimo priemonės nustatymai</string>
+    <string name="settings_features_title">Features</string>
+    <string name="settings_features_description">Improve your productivity.</string>
+    <string name="settings_look_feel_title">Look and Feel</string>
+    <string name="settings_look_feel_description">Give your home screen a personal touch.</string>
+    <string name="settings_advanced_title">Advanced</string>
+    <!-- Strings used for look And feel settings -->
+    <string name="look_feel_settings_title">Look And Feel</string>
+    <!-- Strings used for features settings -->
+    <string name="features_settings_title">Features</string>
+    <!-- Strings used for advanced settings -->
+    <string name="advanced_settings_title">Advanced Settings</string>
+    <string name="advanced_settings_app_info">App Info</string>
+    <string name="advanced_settings_app_info_description">%1$s</string>
+    <string name="advanced_settings_default">Change Default Launcher</string>
+    <string name="advanced_settings_restart_title">Restart Launcher</string>
+    <string name="advanced_settings_restart_description">Have you tried turning it on and off?</string>
+    <string name="advanced_settings_backup_restore_title">Backup/Restore</string>
+    <string name="advanced_settings_backup_restore_description">Please be careful what you wish for?</string>
+    <string name="advanced_settings_backup_restore_backup">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_clear">Clear Preferences</string>
+    <string name="advanced_settings_backup_restore_clear_title">Clear Preferences</string>
+    <string name="advanced_settings_backup_restore_clear_description">Are you sure you want to do this?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">Yes</string>
+    <string name="advanced_settings_backup_restore_clear_no">No</string>
+    <string name="advanced_settings_help_feedback_title">Help and Feedback</string>
+    <string name="advanced_settings_community_support_title">Community Support</string>
+    <string name="advanced_settings_share_application_title">Share Application</string>
+    <string name="advanced_settings_share_application_description">Elevate your experience with %1$s! Get it now on fDroid and see what everyone is talking about!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Namo fragmentas</string>
     <string name="draw_fragment_label">Nupieškite fragmentą</string>
@@ -25,18 +59,12 @@
     <string name="bottom_dialog_remove_to_unlock">Atrakinti programą</string>
     <string name="bottom_dialog_app_info">Programos informacija</string>
     <string name="bottom_dialog_app_uninstall">Pašalinkite programą</string>
-    <string name="settings_name">Paleidimo priemonės nustatymai</string>
-    <string name="settings_version">%1$s Versija: %2$s</string>
     <string name="settings_widgets_name">Valdiklių nustatymai</string>
     <string name="settings_title_home_display_preferences">Ekranas</string>
     <string name="settings_title_home_behavior_preferences">Elgesys</string>
     <string name="settings_title_home_appearance_preferences">Išvaizda</string>
-    <string name="settings_title_date_style">Pasimatymo stilius</string>
-    <string name="settings_title_time_style">Laiko stilius</string>
-    <string name="settings_title_app_manager">Programų tvarkymas</string>
     <string name="settings_title_gestures">Gestai</string>
     <string name="settings_title_miscellaneous">Įvairūs</string>
-    <string name="settings_title_backups">Atsarginės kopijos</string>
     <string name="settings_title_others">Kiti</string>
     <string name="settings_display_status_bar">Rodyti būsenos juostą</string>
     <string name="settings_display_date">Rodyti datą</string>
@@ -53,13 +81,8 @@
     <string name="settings_appearance_alignment_title">Lygiavimas</string>
     <string name="settings_appearance_padding_title">Paminkštinimas</string>
     <string name="settings_appearance_wallpaper">Pasirinktinis ekrano užsklanda</string>
-    <string name="settings_appearance_home_date_alignment">Datos suderinimas</string>
-    <string name="settings_appearance_home_time_alignment">Laiko derinimas</string>
-    <string name="settings_appearance_home_app_alignment">Home App Alignment</string>
-    <string name="appearance_bottom_dialog_text_size_title">Dydis</string>
     <string name="appearance_bottom_dialog_text_color_title">Spalva</string>
     <string name="appearance_bottom_dialog_alignment_title">Lygiavimas</string>
-    <string name="appearance_bottom_dialog_padding_title">Paminkštinimas</string>
     <string name="appearance_bottom_dialog_desc_date">Data\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Laikas\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">Programa\u0020:\u0020</string>
@@ -67,9 +90,6 @@
     <string name="appearance_bottom_dialog_desc_battery">Baterija\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Valdiklio fonas\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">Valdiklio tekstas\u0020:\u0020</string>
-    <string name="settings_manager_favorite">Mėgstamiausios programos</string>
-    <string name="settings_manager_hidden">Paslėptos programos</string>
-    <string name="settings_select_wallpaper">Pasirinkite Fono paveikslėlis</string>
     <string name="settings_double_tap">Dukart paspausti</string>
     <string name="settings_swipe_up">Braukite aukštyn</string>
     <string name="settings_swipe_down">Braukite žemyn</string>
@@ -79,12 +99,6 @@
     <string name="settings_search_engine">Paieškos variklis</string>
     <string name="settings_select_launcher_font">Pasirinkite šriftų šeimą</string>
     <string name="settings_launcher_font">Šrifto šeima</string>
-    <string name="settings_others_share">Dalintis</string>
-    <string name="settings_others_feedback">Atsiliepimas</string>
-    <string name="settings_others_github">Github</string>
-    <string name="settings_backups_backup">Atsarginės kopijos nuostatos</string>
-    <string name="settings_backups_clear">Išvalyti nuostatas</string>
-    <string name="settings_backups_restore">Atkurti nuostatas</string>
     <string name="settings_reload_app_backup">Nuostatų atsarginė kopija sukurta.</string>
     <string name="settings_reload_app_restore">Parinktys atkurtos. Paleidimas iš naujo.</string>
     <string name="settings_actions_open_app">Atidarykite programą</string>
@@ -109,16 +123,15 @@
     <string name="authentication_succeeded">Autentifikavimas pavyko</string>
     <string name="authentication_failed">Autentifikavimas nepavyko</string>
     <string name="authentication_error">Autentifikavimo klaida: %1$s(kodas %2$d)</string>
-    <string name="bottom_alignment_star">Žvaigždė</string>
+    <string name="bottom_alignment_start">Star</string>
     <string name="bottom_alignment_center">centras</string>
     <string name="bottom_alignment_end">Galas</string>
     <string name="accessibility_settings_title">Pritaikymo neįgaliesiems nustatymai</string>
     <string name="accessibility_settings_enable">Įgalinti</string>
     <string name="accessibility_settings_disable">Išjungti</string>
     <string name="accessibility_service_name">„Easy Launcher“ veiksmų paslauga</string>
-    <string name="accessibility_service_desc">Įjunkite pritaikymo neįgaliesiems paslaugą, kad galėtumėte naudoti „Easy Launcher“ funkciją dukart paliesdami užrakinti.\n\nŠis leidimas naudojamas tik ekranui išjungti. Mūsų pritaikymo neįgaliesiems paslauga nerenka ir nebendrina jokių duomenų.</string>
-    <string name="admin_permission_message">Lengva paleidimo priemonė žada atsakingai naudoti užrakinimo ekrano leidimą. Lengva paleidimo priemonė nerenka ir nebendrina jokių duomenų.</string>
-    <string name="search_engine">Paieškos variklis</string>
+    <string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen. Our
+        accessibility service does not collect or share any data.</string>
     <string name="search_default">Default</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
