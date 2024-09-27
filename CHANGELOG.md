@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added a default search engine so can use other apps other then ones selected - ([630e5c6](https://github.com/DroidWorksStudio/EasyLauncher/commit/630e5c6b2c765fc6abc481e066c9807ff57036f2))
+
 ### Feature Removal:
 
 - Remove trash files. ([#140](https://github.com/DroidWorksStudio/EasyLauncher/issues/140)) - ([d27ccc8](https://github.com/DroidWorksStudio/EasyLauncher/commit/d27ccc8cf6711d962c1b41504b52d77553d8fa4b))
@@ -11,6 +15,10 @@ All notable changes to this project will be documented in this file. See [conven
 ### Language Support:
 
 - Updated Language Files. ([#129](https://github.com/DroidWorksStudio/EasyLauncher/issues/129)) - ([80fddba](https://github.com/DroidWorksStudio/EasyLauncher/commit/80fddba64d5f664662809d163a0b17737bcb64b0))
+
+### Releases:
+
+- Prepare for version 0.2.6 - ([b88ccdc](https://github.com/DroidWorksStudio/EasyLauncher/commit/b88ccdc44b05e9d5af662a745560ae1eec58a1e3))
 
 ## [0.2.5](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.5) - (15, September 2024)
 
