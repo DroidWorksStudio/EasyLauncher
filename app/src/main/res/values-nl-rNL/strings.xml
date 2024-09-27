@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Strings used for basic parts of the launcher -->
+    <string name="favorite_apps">Favorite Apps</string>
+    <string name="hidden_apps">Hidden Apps</string>
+    <!-- Strings used for actions within the app -->
     <string name="action_settings">Instellingen</string>
-    <string name="action_settings_default">Instellen als standaard opstartprogramma</string>
+    <!-- Strings used for settings menus -->
+    <string name="settings_name">Launcher-instellingen</string>
+    <string name="settings_features_title">Features</string>
+    <string name="settings_features_description">Improve your productivity.</string>
+    <string name="settings_look_feel_title">Look and Feel</string>
+    <string name="settings_look_feel_description">Give your home screen a personal touch.</string>
+    <string name="settings_advanced_title">Advanced</string>
+    <!-- Strings used for look And feel settings -->
+    <string name="look_feel_settings_title">Look And Feel</string>
+    <!-- Strings used for features settings -->
+    <string name="features_settings_title">Features</string>
+    <!-- Strings used for advanced settings -->
+    <string name="advanced_settings_title">Advanced Settings</string>
+    <string name="advanced_settings_app_info">App Info</string>
+    <string name="advanced_settings_app_info_description">%1$s</string>
+    <string name="advanced_settings_default">Change Default Launcher</string>
+    <string name="advanced_settings_restart_title">Restart Launcher</string>
+    <string name="advanced_settings_restart_description">Have you tried turning it on and off?</string>
+    <string name="advanced_settings_backup_restore_title">Backup/Restore</string>
+    <string name="advanced_settings_backup_restore_description">Please be careful what you wish for?</string>
+    <string name="advanced_settings_backup_restore_backup">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_clear">Clear Preferences</string>
+    <string name="advanced_settings_backup_restore_clear_title">Clear Preferences</string>
+    <string name="advanced_settings_backup_restore_clear_description">Are you sure you want to do this?</string>
+    <string name="advanced_settings_backup_restore_clear_yes">Yes</string>
+    <string name="advanced_settings_backup_restore_clear_no">No</string>
+    <string name="advanced_settings_help_feedback_title">Help and Feedback</string>
+    <string name="advanced_settings_community_support_title">Community Support</string>
+    <string name="advanced_settings_share_application_title">Share Application</string>
+    <string name="advanced_settings_share_application_description">Elevate your experience with %1$s! Get it now on fDroid and see what everyone is talking about!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Thuisfragment</string>
     <string name="draw_fragment_label">Fragment tekenen</string>
@@ -25,18 +59,12 @@
     <string name="bottom_dialog_remove_to_unlock">Ontgrendel app</string>
     <string name="bottom_dialog_app_info">App informatie</string>
     <string name="bottom_dialog_app_uninstall">App verwijderen</string>
-    <string name="settings_name">Launcher-instellingen</string>
-    <string name="settings_version">%1$s Versie: %2$s</string>
     <string name="settings_widgets_name">Widgets-instellingen</string>
     <string name="settings_title_home_display_preferences">Weergave</string>
     <string name="settings_title_home_behavior_preferences">Gedrag</string>
     <string name="settings_title_home_appearance_preferences">Verschijning</string>
-    <string name="settings_title_date_style">Datumstijl</string>
-    <string name="settings_title_time_style">Tijdstijl</string>
-    <string name="settings_title_app_manager">App-beheer</string>
     <string name="settings_title_gestures">Gebaren</string>
     <string name="settings_title_miscellaneous">Gemengd</string>
-    <string name="settings_title_backups">Back-ups</string>
     <string name="settings_title_others">Anderen</string>
     <string name="settings_display_status_bar">Statusbalk weergeven</string>
     <string name="settings_display_date">Datum weergeven</string>
@@ -53,13 +81,8 @@
     <string name="settings_appearance_alignment_title">Uitlijning</string>
     <string name="settings_appearance_padding_title">Opvulling</string>
     <string name="settings_appearance_wallpaper">Aangepaste achtergrond</string>
-    <string name="settings_appearance_home_date_alignment">Datumuitlijning</string>
-    <string name="settings_appearance_home_time_alignment">Tijduitlijning</string>
-    <string name="settings_appearance_home_app_alignment">Uitlijning van de thuisapp</string>
-    <string name="appearance_bottom_dialog_text_size_title">Maat</string>
     <string name="appearance_bottom_dialog_text_color_title">Kleur</string>
     <string name="appearance_bottom_dialog_alignment_title">Uitlijning</string>
-    <string name="appearance_bottom_dialog_padding_title">Opvulling</string>
     <string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Tijd\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
@@ -67,9 +90,6 @@
     <string name="appearance_bottom_dialog_desc_battery">Batterij\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Widgetachtergrond\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">Widgettekst\u0020:\u0020</string>
-    <string name="settings_manager_favorite">Favoriete apps</string>
-    <string name="settings_manager_hidden">Verborgen apps</string>
-    <string name="settings_select_wallpaper">Selecteer Achtergrond</string>
     <string name="settings_double_tap">Dubbeltik</string>
     <string name="settings_swipe_up">Omhoog scrollen</string>
     <string name="settings_swipe_down">Naar beneden swipen</string>
@@ -79,12 +99,6 @@
     <string name="settings_search_engine">Zoekmachine</string>
     <string name="settings_select_launcher_font">Selecteer een lettertypefamilie</string>
     <string name="settings_launcher_font">Lettertypefamilie</string>
-    <string name="settings_others_share">Deel</string>
-    <string name="settings_others_feedback">Feedback</string>
-    <string name="settings_others_github">Github</string>
-    <string name="settings_backups_backup">Back-upvoorkeuren</string>
-    <string name="settings_backups_clear">Duidelijke voorkeuren</string>
-    <string name="settings_backups_restore">Voorkeuren herstellen</string>
     <string name="settings_reload_app_backup">Er is een back-up gemaakt van voorkeuren.</string>
     <string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
     <string name="settings_actions_open_app">Open app</string>
@@ -109,16 +123,15 @@
     <string name="authentication_succeeded">Authenticatie geslaagd</string>
     <string name="authentication_failed">Authenticatie mislukt</string>
     <string name="authentication_error">Authenticatiefout: %1$s(code %2$d)</string>
-    <string name="bottom_alignment_star">Ster</string>
+    <string name="bottom_alignment_start">Star</string>
     <string name="bottom_alignment_center">Centrum</string>
     <string name="bottom_alignment_end">Einde</string>
     <string name="accessibility_settings_title">Toegankelijkheidsinstellingen</string>
     <string name="accessibility_settings_enable">Inschakelen</string>
     <string name="accessibility_settings_disable">Uitzetten</string>
     <string name="accessibility_service_name">Easy Launcher-actiesservice</string>
-    <string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie Dubbeltikken om te vergrendelen in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze toegankelijkheidsdienst verzamelt of deelt geen gegevens.</string>
-    <string name="admin_permission_message">Easy Launcher belooft de toestemming op het vergrendelscherm op verantwoorde wijze te gebruiken. Easy Launcher verzamelt of deelt geen gegevens.</string>
-    <string name="search_engine">Zoekmachine</string>
+    <string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen. Our
+        accessibility service does not collect or share any data.</string>
     <string name="search_default">Default</string>
     <string name="search_google">Googlen</string>
     <string name="search_yahoo">Yahoo</string>
