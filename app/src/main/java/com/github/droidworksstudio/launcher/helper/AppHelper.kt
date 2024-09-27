@@ -10,6 +10,7 @@ import android.content.res.Configuration
 import android.content.res.Resources
 import android.net.Uri
 import android.os.Build
+import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.Window
@@ -19,10 +20,10 @@ import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.navigation.NavOptions
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.BuildConfig
-import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
 import com.github.droidworksstudio.launcher.helper.weather.WeatherResponse
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.utils.WeatherApiService
 import com.google.gson.Gson
 import retrofit2.Retrofit
@@ -115,6 +116,7 @@ class AppHelper @Inject constructor() {
             // Digital Wellbeing app is not installed or cannot be opened
             // Handle this case as needed
             context.showLongToast("Digital Wellbeing is not available on this device.")
+            Log.e("AppHelper", "Digital Wellbeing app not found or cannot be opened.", e)
         }
     }
 
@@ -170,27 +172,34 @@ class AppHelper @Inject constructor() {
         return dailyWordsArray[wordIndex]
     }
 
-    fun shareAppButton(context: Context) {
+    fun shareApplicationButton(context: Context) {
         val shareIntent = Intent(Intent.ACTION_SEND)
+        val description = context.getString(R.string.advanced_settings_share_application_description, context.getString(R.string.app_name))
         shareIntent.type = "text/plain"
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Share Application")
         shareIntent.putExtra(
             Intent.EXTRA_TEXT,
-            "https://f-droid.org/packages/" + context.packageName
+            "$description https://f-droid.org/packages/${context.packageName}"
         )
         context.startActivity(Intent.createChooser(shareIntent, "Share Application"))
     }
 
-    fun githubButton(context: Context) {
+    fun helpFeedbackButton(context: Context) {
         val uri = Uri.parse("https://github.com/DroidWorksStudio/EasyLauncher")
         val intent = Intent(Intent.ACTION_VIEW, uri)
         context.startActivity(intent)
     }
 
-    fun feedbackButton(context: Context) {
+    fun communitySupportButton(context: Context) {
+        val uri = Uri.parse("https://t.me/DroidWorksStudio/")
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        context.startActivity(intent)
+    }
+
+    fun emailButton(context: Context) {
         val emailIntent = Intent(Intent.ACTION_SENDTO)
         emailIntent.data = Uri.parse("mailto:droidworksstuido@063240.xyz")
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Easy Launcher")
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, R.string.app_name)
         context.startActivity(Intent.createChooser(emailIntent, "Choose Mail Application"))
     }
 
@@ -307,6 +316,7 @@ class AppHelper @Inject constructor() {
                 return WeatherResult.Failure("Failed to fetch weather data: ${response.errorBody()}")
             }
         } catch (e: UnknownHostException) {
+            Log.e("AppHelper", "Unknown Host.", e)
             return WeatherResult.Failure("Unknown Host : $baseURL")
         } catch (e: Exception) {
             return WeatherResult.Failure("${e.message}")

@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="12dp"
-            android:text="@string/bottom_alignment_star"
+            android:text="@string/bottom_alignment_start"
             android:textSize="@dimen/text_large">
 
         </androidx.appcompat.widget.AppCompatTextView>
