@@ -36,11 +36,17 @@
             android:id="@+id/action_SettingsFragment_to_FavoriteFragment"
             app:destination="@id/FavoriteFragment" />
         <action
-            android:id="@+id/action_SettingsFragment_to_AdvancedSettingsFragment"
-            app:destination="@id/AdvancedSettingsFragment" />
-        <action
             android:id="@+id/action_SettingsFragment_to_HiddenFragment"
             app:destination="@id/HiddenFragment" />
+        <action
+            android:id="@+id/action_SettingsFragment_to_SettingsAdvancedFragment"
+            app:destination="@id/SettingsAdvancedFragment" />
+        <action
+            android:id="@+id/action_SettingsFragment_to_SettingsFeaturesFragment"
+            app:destination="@id/SettingsFeaturesFragment" />
+        <action
+            android:id="@+id/action_SettingsFragment_to_SettingsLookFeelFragment"
+            app:destination="@id/SettingsLookFeelFragment" />
         <action
             android:id="@+id/action_SettingsFragment_to_WidgetsFragment"
             app:destination="@id/WidgetsFragment" />
@@ -61,10 +67,16 @@
     </fragment>
 
     <fragment
-        android:id="@+id/WidgetsSettingsFragment"
-        android:name="com.github.droidworksstudio.launcher.ui.widgets.settings.SettingsFragment"
-        android:label="@string/widgets_fragment_label"
-        tools:layout="@layout/fragment_settings_widgets" />
+        android:id="@+id/SettingsFeaturesFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.settings.SettingsFeaturesFragment"
+        android:label="@string/settings_fragment_label"
+        tools:layout="@layout/fragment_settings_features" />
+
+    <fragment
+        android:id="@+id/SettingsLookFeelFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.settings.SettingsLookFeelFragment"
+        android:label="@string/settings_fragment_label"
+        tools:layout="@layout/fragment_settings_look_feel" />
 
     <fragment
         android:id="@+id/DrawFragment"
@@ -79,9 +91,9 @@
         tools:layout="@layout/fragment_favorite" />
 
     <fragment
-        android:id="@+id/AdvancedSettingsFragment"
+        android:id="@+id/SettingsAdvancedFragment"
         android:name="com.github.droidworksstudio.launcher.ui.settings.SettingsAdvancedFragment"
-        android:label="@string/favorite_fragment_label"
+        android:label="@string/settings_fragment_label"
         tools:layout="@layout/fragment_settings_advanced" />
 
     <fragment
@@ -89,5 +101,11 @@
         android:name="com.github.droidworksstudio.launcher.ui.hidden.HiddenFragment"
         android:label="@string/hidden_fragment_label"
         tools:layout="@layout/fragment_hidden" />
+
+    <fragment
+        android:id="@+id/WidgetsSettingsFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.widgets.settings.SettingsFragment"
+        android:label="@string/widgets_fragment_label"
+        tools:layout="@layout/fragment_settings_widgets" />
 
 </navigation>

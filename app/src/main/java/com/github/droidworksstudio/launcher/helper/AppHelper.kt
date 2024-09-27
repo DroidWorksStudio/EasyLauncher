@@ -172,18 +172,19 @@ class AppHelper @Inject constructor() {
         return dailyWordsArray[wordIndex]
     }
 
-    fun shareAppButton(context: Context) {
+    fun shareApplicationButton(context: Context) {
         val shareIntent = Intent(Intent.ACTION_SEND)
+        val description = context.getString(R.string.advanced_settings_share_application_description, context.getString(R.string.app_name))
         shareIntent.type = "text/plain"
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Share Application")
         shareIntent.putExtra(
             Intent.EXTRA_TEXT,
-            "https://f-droid.org/packages/" + context.packageName
+            "$description https://f-droid.org/packages/${context.packageName}"
         )
         context.startActivity(Intent.createChooser(shareIntent, "Share Application"))
     }
 
-    fun githubButton(context: Context) {
+    fun helpFeedbackButton(context: Context) {
         val uri = Uri.parse("https://github.com/DroidWorksStudio/EasyLauncher")
         val intent = Intent(Intent.ACTION_VIEW, uri)
         context.startActivity(intent)
@@ -195,10 +196,10 @@ class AppHelper @Inject constructor() {
         context.startActivity(intent)
     }
 
-    fun feedbackButton(context: Context) {
+    fun emailButton(context: Context) {
         val emailIntent = Intent(Intent.ACTION_SENDTO)
         emailIntent.data = Uri.parse("mailto:droidworksstuido@063240.xyz")
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Easy Launcher")
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, R.string.app_name)
         context.startActivity(Intent.createChooser(emailIntent, "Choose Mail Application"))
     }
 

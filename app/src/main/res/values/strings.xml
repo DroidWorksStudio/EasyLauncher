@@ -16,10 +16,6 @@
     <string name="settings_look_feel_title">Look and Feel</string>
     <string name="settings_look_feel_description">Give your home screen a personal touch.</string>
 
-    <string name="settings_help_feedback_title">Help and Feedback</string>
-
-    <string name="settings_community_support_title">Community Support</string>
-
     <string name="settings_advanced_title">Advanced</string>
 
     <!-- Strings used for advanced settings -->
@@ -45,6 +41,15 @@
     <string name="advanced_settings_backup_restore_clear_yes">Yes</string>
     <string name="advanced_settings_backup_restore_clear_no">No</string>
 
+    <string name="advanced_settings_help_feedback_title">Help and Feedback</string>
+
+    <string name="advanced_settings_community_support_title">Community Support</string>
+
+    <string name="advanced_settings_share_application_title">Share Application</string>
+    <string name="advanced_settings_share_application_description">Elevate your experience with %1$s! Get it now on fDroid and see what everyone is talking about!\n</string>
+
+    <!-- Strings used for advanced settings -->
+    <string name="look_feel_settings_title">Look And Feel</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Home Fragment</string>

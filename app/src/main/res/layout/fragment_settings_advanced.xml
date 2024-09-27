@@ -37,12 +37,12 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/appInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                         android:contentDescription="@string/advanced_settings_app_info"
                         android:src="@drawable/ic_app_info" />
 
-                    <LinearLayout
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -77,10 +77,10 @@
                             android:text="@string/advanced_settings_app_info_description"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="14sp" />
-                    </LinearLayout>
-                </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
-                <LinearLayout
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/setDefaultLauncher"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                         android:contentDescription="@string/advanced_settings_default"
                         android:src="@drawable/ic_change_default_launcher" />
 
-                    <LinearLayout
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -106,10 +106,10 @@
                             android:text="@string/advanced_settings_default"
                             android:textColor="@android:color/white"
                             android:textSize="18sp" />
-                    </LinearLayout>
-                </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
-                <LinearLayout
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/restartLauncher"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
                         android:contentDescription="@string/advanced_settings_restart_title"
                         android:src="@drawable/ic_restart" />
 
-                    <LinearLayout
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -142,10 +142,10 @@
                             android:text="@string/advanced_settings_restart_description"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="14sp" />
-                    </LinearLayout>
-                </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
-                <LinearLayout
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:id="@+id/backupRestore"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                         android:contentDescription="@string/advanced_settings_backup_restore_title"
                         android:src="@drawable/ic_backup_restore" />
 
-                    <LinearLayout
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -178,58 +178,96 @@
                             android:text="@string/advanced_settings_backup_restore_description"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="14sp" />
-                    </LinearLayout>
-                </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
-                <LinearLayout
-                    android:id="@+id/shareView"
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/helpFeedback"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
 
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/advanced_settings_help_feedback_title"
+                        android:src="@drawable/ic_help_feedback" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/settings_others_share"
-                        android:textColor="@android:color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
+                        android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/githubView"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/advanced_settings_help_feedback_title"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/communitySupport"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/settings_others_github"
-                        android:textColor="@android:color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/advanced_settings_community_support_title"
+                        android:src="@drawable/ic_community" />
 
-                <LinearLayout
-                    android:id="@+id/feedbackView"
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/advanced_settings_community_support_title"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/shareApplication"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/advanced_settings_share_application_title"
+                        android:src="@drawable/ic_share_app" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/settings_others_feedback"
-                        android:textColor="@android:color/white"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </LinearLayout>
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/advanced_settings_share_application_title"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
         </LinearLayout>
     </com.github.droidworksstudio.launcher.view.GestureNestedScrollView>
 </FrameLayout>

@@ -277,7 +277,12 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.nav_host_fragment_content_main)
         val fragmentManager: FragmentManager = supportFragmentManager
         when (navController.currentDestination?.id) {
-            R.id.SettingsFragment, R.id.FavoriteFragment, R.id.HiddenFragment, R.id.AdvancedSettingsFragment -> {
+            R.id.SettingsFragment,
+            R.id.SettingsFeaturesFragment,
+            R.id.SettingsLookFeelFragment,
+            R.id.FavoriteFragment,
+            R.id.HiddenFragment,
+            R.id.SettingsAdvancedFragment -> {
                 fragmentManager.popBackStack()
             }
 

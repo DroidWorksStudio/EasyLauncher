@@ -66,6 +66,11 @@ class SettingsAdvancedFragment : Fragment(),
         observeClickListener()
     }
 
+    override fun onStop() {
+        super.onStop()
+        dismissDialogs()
+    }
+
     private fun initializeInjectedDependencies() {
         binding.nestScrollView.scrollEventListener = this
 
@@ -100,16 +105,16 @@ class SettingsAdvancedFragment : Fragment(),
                 showBackupRestoreDialog()
             }
 
-            shareView.setOnClickListener {
-                appHelper.shareAppButton(requireContext())
+            helpFeedback.setOnClickListener {
+                appHelper.helpFeedbackButton(requireContext())
             }
 
-            githubView.setOnClickListener {
-                appHelper.githubButton(requireContext())
+            communitySupport.setOnClickListener {
+                appHelper.communitySupportButton(requireContext())
             }
 
-            feedbackView.setOnClickListener {
-                appHelper.feedbackButton(requireContext())
+            shareApplication.setOnClickListener {
+                appHelper.shareApplicationButton(requireContext())
             }
         }
     }
@@ -159,6 +164,10 @@ class SettingsAdvancedFragment : Fragment(),
         Handler(Looper.getMainLooper()).postDelayed({
             AppReloader.restartApp(context)
         }, 500)
+    }
+
+    private fun dismissDialogs() {
+        backupRestoreDialog?.dismiss()
     }
 
 }
