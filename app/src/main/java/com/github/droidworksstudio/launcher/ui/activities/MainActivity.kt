@@ -32,6 +32,7 @@ import androidx.navigation.ui.navigateUp
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.common.showLongToast
+import com.github.droidworksstudio.common.showShortToast
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
@@ -340,6 +341,7 @@ class MainActivity : AppCompatActivity() {
                         prefs.loadFromString(string)
                     }
                 }
+                applicationContext.showShortToast(getString(R.string.settings_reload_app_restore))
                 Handler(Looper.getMainLooper()).postDelayed({
                     AppReloader.restartApp(applicationContext)
                 }, 500)
@@ -355,6 +357,7 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
+                applicationContext.showShortToast(getString(R.string.settings_reload_app_backup))
             }
         }
     }
