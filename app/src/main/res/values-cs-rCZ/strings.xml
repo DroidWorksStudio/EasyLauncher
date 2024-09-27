@@ -119,6 +119,7 @@
     <string name="accessibility_service_desc">Chcete-li v Easy Launcher používat funkci uzamčení dvojitým klepnutím, zapněte prosím službu usnadnění.\n\nToto oprávnění se používá pouze k vypnutí obrazovky. Naše služba usnadnění neshromažďuje ani nesdílí žádná data.</string>
     <string name="admin_permission_message">Easy launcher slibuje zodpovědné používání oprávnění k uzamčení obrazovky. Easy launcher neshromažďuje ani nesdílí žádná data.</string>
     <string name="search_engine">Vyhledávač</string>
+    <string name="search_default">Default</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
