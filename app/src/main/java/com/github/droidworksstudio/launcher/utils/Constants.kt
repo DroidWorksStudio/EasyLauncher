@@ -97,6 +97,7 @@ object Constants {
     const val LONG_PRESS_DELAY_MS = 500
 
     enum class SearchEngines {
+        Default,
         Google,
         Yahoo,
         DuckDuckGo,
@@ -106,6 +107,7 @@ object Constants {
 
         fun getString(context: Context): String {
             return when (this) {
+                Default -> context.getString(R.string.search_default)
                 Google -> context.getString(R.string.search_google)
                 Yahoo -> context.getString(R.string.search_yahoo)
                 DuckDuckGo -> context.getString(R.string.search_duckduckgo)
