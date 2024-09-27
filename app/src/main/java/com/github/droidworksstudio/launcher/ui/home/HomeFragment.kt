@@ -14,7 +14,10 @@ import android.os.Handler
 import android.os.Looper
 import android.text.format.DateFormat
 import android.util.Log
-import android.view.*
+import android.view.Gravity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.AppCompatTextView
@@ -193,30 +196,30 @@ class HomeFragment : Fragment(),
     private fun setupRecyclerView() {
         val marginTopInPixels = 128
         val params: ViewGroup.LayoutParams = binding.appListAdapter.layoutParams
-        var layoutParams = if (params is LinearLayout.LayoutParams) {
+        val layoutParam = if (params is LinearLayout.LayoutParams) {
             params
         } else {
             LinearLayout.LayoutParams(params)
         }
-        layoutParams.topMargin = marginTopInPixels
+        layoutParam.topMargin = marginTopInPixels
 
         when (preferenceHelper.homeAppAlignment) {
             Gravity.START -> {
-                layoutParams.gravity = Gravity.START
+                layoutParam.gravity = Gravity.START
             }
 
             Gravity.CENTER -> {
-                layoutParams.gravity = Gravity.CENTER
+                layoutParam.gravity = Gravity.CENTER
             }
 
             Gravity.END -> {
-                layoutParams.gravity = Gravity.END
+                layoutParam.gravity = Gravity.END
             }
         }
 
         binding.appListAdapter.apply {
             adapter = homeAdapter
-            layoutParams = layoutParams
+            layoutParams = layoutParam
             setHasFixedSize(false)
             layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
             isNestedScrollingEnabled = false
