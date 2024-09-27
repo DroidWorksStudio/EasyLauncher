@@ -106,6 +106,8 @@ class SettingsLookFeelFragment : Fragment(),
     }
 
     private fun observeClickListener() {
+        setupSwitchListeners()
+
         binding.apply {
             selectAppearanceTextSize.setOnClickListener {
                 val bottomSheetFragment = TextBottomSheetDialogFragment()
@@ -136,6 +138,43 @@ class SettingsLookFeelFragment : Fragment(),
                 showLauncherFontDialog()
             }
         }
+    }
+
+    private fun setupSwitchListeners() {
+        binding.apply {
+            statueBarSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowStatusBar(isChecked)
+            }
+
+            dateSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowDate(isChecked)
+            }
+
+            timeSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowTime(isChecked)
+            }
+
+            batterySwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowBattery(isChecked)
+            }
+
+            dailyWordSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowDailyWord(isChecked)
+            }
+
+            appIconsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowAppIcons(isChecked)
+
+                // Disable and gray out the other setting if appIconsSwitchCompat is checked
+                binding.appIconDotsSwitchCompat.isEnabled = isChecked
+                binding.appIconDotsSwitchCompat.isChecked = false
+            }
+
+            appIconDotsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowAppIconDots(isChecked)
+            }
+        }
+
     }
 
     private var launcherFontDialog: AlertDialog? = null

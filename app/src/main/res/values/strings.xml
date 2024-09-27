@@ -18,6 +18,12 @@
 
     <string name="settings_advanced_title">Advanced</string>
 
+    <!-- Strings used for look And feel settings -->
+    <string name="look_feel_settings_title">Look And Feel</string>
+
+    <!-- Strings used for features settings -->
+    <string name="features_settings_title">Features</string>
+
     <!-- Strings used for advanced settings -->
     <string name="advanced_settings_title">Advanced Settings</string>
 
@@ -47,9 +53,6 @@
 
     <string name="advanced_settings_share_application_title">Share Application</string>
     <string name="advanced_settings_share_application_description">Elevate your experience with %1$s! Get it now on fDroid and see what everyone is talking about!\n</string>
-
-    <!-- Strings used for advanced settings -->
-    <string name="look_feel_settings_title">Look And Feel</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Home Fragment</string>
