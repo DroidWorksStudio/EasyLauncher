@@ -119,6 +119,7 @@
     <string name="accessibility_service_desc">Slå tilgængelighedstjenesten til for at bruge dobbelttryk for at låse-funktionen i Easy Launcher.\n\nDenne tilladelse bruges kun til at slukke din skærm. Vores tilgængelighedstjeneste indsamler eller deler ingen data.</string>
     <string name="admin_permission_message">Easy launcher lover at bruge låseskærmens tilladelse ansvarligt. Easy launcher indsamler eller deler ingen data.</string>
     <string name="search_engine">Søgemaskine</string>
+    <string name="search_default">Default</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
