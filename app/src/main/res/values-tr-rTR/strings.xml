@@ -119,6 +119,7 @@
     <string name="accessibility_service_desc">Easy Launcher\'da kilitlemek için çift dokunma özelliğini kullanmak için lütfen erişilebilirlik hizmetini açın.\n\nBu izin yalnızca ekranınızı kapatmak için kullanılır. Erişilebilirlik hizmetimiz herhangi bir veri toplamaz veya paylaşmaz.</string>
     <string name="admin_permission_message">Kolay başlatıcı, kilit ekranı iznini sorumlu bir şekilde kullanmayı vaat ediyor. Kolay başlatıcı hiçbir veri toplamaz veya paylaşmaz.</string>
     <string name="search_engine">Arama motoru</string>
+    <string name="search_default">Default</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">yahoo</string>
     <string name="search_duckduckgo">ÖrdekDuckGo</string>
