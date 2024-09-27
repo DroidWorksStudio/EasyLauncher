@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Added the base for the new settings screen ([#130](https://github.com/DroidWorksStudio/EasyLauncher/issues/130)) - ([6b72000](https://github.com/DroidWorksStudio/EasyLauncher/commit/6b72000c6033f68499ae76a0865b7109c7a464c0))
 - Added a default search engine so can use other apps other then ones selected - ([630e5c6](https://github.com/DroidWorksStudio/EasyLauncher/commit/630e5c6b2c765fc6abc481e066c9807ff57036f2))
 
+### Bug Fixes:
+
+- Fixed issue with layoutParams - ([a16b664](https://github.com/DroidWorksStudio/EasyLauncher/commit/a16b664b4d41884e1813a70fb438363679f7b2fa))
+
 ### Feature Removal:
 
 - Remove trash files. ([#140](https://github.com/DroidWorksStudio/EasyLauncher/issues/140)) - ([d27ccc8](https://github.com/DroidWorksStudio/EasyLauncher/commit/d27ccc8cf6711d962c1b41504b52d77553d8fa4b))
