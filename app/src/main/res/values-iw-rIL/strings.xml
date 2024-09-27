@@ -119,6 +119,7 @@
     <string name="accessibility_service_desc">הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב- Easy Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות שלנו אינו אוסף או משתף נתונים כלשהם.</string>
     <string name="admin_permission_message">משגר קל מבטיח להשתמש בהרשאת מסך הנעילה באחריות. משגר קל אינו אוסף או משתף נתונים כלשהם.</string>
     <string name="search_engine">מנוע חיפוש</string>
+    <string name="search_default">Default</string>
     <string name="search_google">גוגל</string>
     <string name="search_yahoo">יאהו</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
