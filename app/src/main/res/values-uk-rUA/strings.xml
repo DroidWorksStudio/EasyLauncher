@@ -119,6 +119,7 @@
     <string name="accessibility_service_desc">Будь ласка, увімкніть службу доступності, щоб використовувати подвійне торкання для блокування функції в Easy Launcher.\n\nЦей дозвіл використовується лише для вимкнення вашого екрана. Наша служба доступності не збирає та не надає жодних даних.</string>
     <string name="admin_permission_message">Easy launcher обіцяє відповідально використовувати дозвіл блокування екрана. Easy launcher не збирає та не передає жодних даних.</string>
     <string name="search_engine">Пошукова система</string>
+    <string name="search_default">Default</string>
     <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
