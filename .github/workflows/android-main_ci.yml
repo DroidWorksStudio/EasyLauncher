@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4.2.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -23,7 +23,7 @@ jobs:
           distribution: "temurin"
           cache: gradle
 
-      - uses: actions/cache@v4.1.0
+      - uses: actions/cache@v4.1.1
         with:
           path: |
             ~/.gradle/caches
@@ -42,14 +42,14 @@ jobs:
         run: ./gradlew clean && ./gradlew assembleWithInternetDebug && ./gradlew assembleWithoutInternetDebug
 
       - name: Upload Artifact - WithInternet
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Signed app bundle - WithInternet
           path: app/build/outputs/apk/withInternet/debug/*.apk
           retention-days: 3
 
       - name: Upload Artifact - WithoutInternet
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Signed app bundle - WithoutInternet
           path: app/build/outputs/apk/withoutInternet/debug/*.apk

@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
-        uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4.2.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -23,7 +23,7 @@ jobs:
           distribution: "temurin"
           cache: gradle
 
-      - uses: actions/cache@v4.1.0
+      - uses: actions/cache@v4.1.1
         with:
           path: |
             ~/.gradle/caches
