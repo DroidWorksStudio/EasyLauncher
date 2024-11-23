@@ -75,6 +75,7 @@
     <string name="settings_display_app_icon_dots">Показувати піктограми додатків у вигляді крапок</string>
     <string name="settings_display_automatic_keyboard">Автоматичне відображення клавіатури</string>
     <string name="settings_display_auto_open_apps">Автоматичне відкриття останньої програми</string>
+    <string name="settings_search_from_start">Пошук із початку</string>
     <string name="settings_display_lock_settings">Налаштування блокування</string>
     <string name="settings_appearance_text_size_title">Розмір</string>
     <string name="settings_appearance_color_title">Колір</string>
@@ -97,6 +98,8 @@
     <string name="settings_swipe_right">Проведіть праворуч</string>
     <string name="settings_select_search_engine">Виберіть пошукову систему</string>
     <string name="settings_search_engine">Пошукова система</string>
+    <string name="settings_select_filter_strength">Виберіть інтенсивність фільтра</string>
+    <string name="settings_filter_strength">Міцність фільтра</string>
     <string name="settings_select_launcher_font">Виберіть сімейство шрифтів</string>
     <string name="settings_launcher_font">Сімейство шрифтів</string>
     <string name="settings_reload_app_backup">Налаштування створено.</string>

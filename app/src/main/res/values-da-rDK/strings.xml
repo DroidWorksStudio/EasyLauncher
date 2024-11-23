@@ -75,6 +75,7 @@
     <string name="settings_display_app_icon_dots">Vis App-ikoner Som Prikker</string>
     <string name="settings_display_automatic_keyboard">Auto-vis Tastatur</string>
     <string name="settings_display_auto_open_apps">Auto-åbn Sidste App</string>
+    <string name="settings_search_from_start">Søg fra start</string>
     <string name="settings_display_lock_settings">Lås Indstillinger</string>
     <string name="settings_appearance_text_size_title">Størrelse</string>
     <string name="settings_appearance_color_title">Farve</string>
@@ -97,6 +98,8 @@
     <string name="settings_swipe_right">Stryg til Højre</string>
     <string name="settings_select_search_engine">Vælg en Søgemaskine</string>
     <string name="settings_search_engine">Søgemaskine</string>
+    <string name="settings_select_filter_strength">Vælg en filterstyrke</string>
+    <string name="settings_filter_strength">Filterstyrke</string>
     <string name="settings_select_launcher_font">Vælg en Skrifttypefamilie</string>
     <string name="settings_launcher_font">Skrifttype</string>
     <string name="settings_reload_app_backup">Præferencer sikkerhedskopieret.</string>
