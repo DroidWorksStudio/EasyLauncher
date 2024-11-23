@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
+
+### Releases:
+
+- Prepare for version 0.2.7 - ([cbfd5c8](https://github.com/DroidWorksStudio/EasyLauncher/commit/cbfd5c8946a648278b6e6796e2d9a94d01a2ee43))
+
 ## [0.2.6](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.6) - (27, September 2024)
 
 ### Implemented Enhancements:
