@@ -75,6 +75,7 @@
     <string name="settings_display_app_icon_dots">Rodyti programų piktogramas kaip taškus</string>
     <string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
     <string name="settings_display_auto_open_apps">Automatiškai atidaryti paskutinę programą</string>
+    <string name="settings_search_from_start">Search From Start</string>
     <string name="settings_display_lock_settings">Užrakinimo nustatymai</string>
     <string name="settings_appearance_text_size_title">Dydis</string>
     <string name="settings_appearance_color_title">Spalva</string>
@@ -97,6 +98,8 @@
     <string name="settings_swipe_right">Braukite dešinėn</string>
     <string name="settings_select_search_engine">Pasirinkite paieškos variklį</string>
     <string name="settings_search_engine">Paieškos variklis</string>
+    <string name="settings_select_filter_strength">Select a Filter Strength</string>
+    <string name="settings_filter_strength">Filter Strength</string>
     <string name="settings_select_launcher_font">Pasirinkite šriftų šeimą</string>
     <string name="settings_launcher_font">Šrifto šeima</string>
     <string name="settings_reload_app_backup">Nuostatų atsarginė kopija sukurta.</string>
