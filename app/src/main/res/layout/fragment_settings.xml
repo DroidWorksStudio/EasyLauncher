@@ -9,7 +9,7 @@
     <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
         android:id="@+id/nestScrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:fadingEdgeLength="48dp"
