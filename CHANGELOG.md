@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added Fuzzy Finding - ([29d2954](https://github.com/DroidWorksStudio/EasyLauncher/commit/29d29543144fde25c72877de0d09dbb73e1cb898))
+
 ### Bug Fixes:
 
 - Fixed the settings from not displaying the background correctly. - ([709fac1](https://github.com/DroidWorksStudio/EasyLauncher/commit/709fac138cc8f16bd6754b09e61dafe8600f91b9))
