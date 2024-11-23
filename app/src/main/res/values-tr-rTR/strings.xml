@@ -75,7 +75,7 @@
     <string name="settings_display_app_icon_dots">Uygulama Simgelerini Noktalar Olarak Göster</string>
     <string name="settings_display_automatic_keyboard">Klavyeyi Otomatik Göster</string>
     <string name="settings_display_auto_open_apps">Son Uygulamayı Otomatik Aç</string>
-    <string name="settings_search_from_start">Search From Start</string>
+    <string name="settings_search_from_start">Baştan Arama</string>
     <string name="settings_display_lock_settings">Kilit Ayarları</string>
     <string name="settings_appearance_text_size_title">Boyut</string>
     <string name="settings_appearance_color_title">Renk</string>
@@ -98,8 +98,8 @@
     <string name="settings_swipe_right">Sağa kaydır</string>
     <string name="settings_select_search_engine">Bir Arama Motoru Seçin</string>
     <string name="settings_search_engine">Arama motoru</string>
-    <string name="settings_select_filter_strength">Select a Filter Strength</string>
-    <string name="settings_filter_strength">Filter Strength</string>
+    <string name="settings_select_filter_strength">Bir Filtre Gücü Seçin</string>
+    <string name="settings_filter_strength">Filtre Gücü</string>
     <string name="settings_select_launcher_font">Bir Yazı Tipi Ailesi Seçin</string>
     <string name="settings_launcher_font">Font ailesi</string>
     <string name="settings_reload_app_backup">Tercihler yedeklendi.</string>
