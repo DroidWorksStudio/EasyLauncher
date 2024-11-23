@@ -75,7 +75,7 @@
     <string name="settings_display_app_icon_dots">Zobraziť ikony aplikácií ako bodky</string>
     <string name="settings_display_automatic_keyboard">Automaticky zobraziť klávesnicu</string>
     <string name="settings_display_auto_open_apps">Automatické otvorenie poslednej aplikácie</string>
-    <string name="settings_search_from_start">Search From Start</string>
+    <string name="settings_search_from_start">Hľadať od začiatku</string>
     <string name="settings_display_lock_settings">Nastavenia zámku</string>
     <string name="settings_appearance_text_size_title">Veľkosť</string>
     <string name="settings_appearance_color_title">Farba</string>
@@ -98,8 +98,8 @@
     <string name="settings_swipe_right">Prejdite prstom doprava</string>
     <string name="settings_select_search_engine">Vyberte vyhľadávací nástroj</string>
     <string name="settings_search_engine">Vyhľadávač</string>
-    <string name="settings_select_filter_strength">Select a Filter Strength</string>
-    <string name="settings_filter_strength">Filter Strength</string>
+    <string name="settings_select_filter_strength">Vyberte silu filtra</string>
+    <string name="settings_filter_strength">Sila filtra</string>
     <string name="settings_select_launcher_font">Vyberte rodinu písiem</string>
     <string name="settings_launcher_font">Rodina písiem</string>
     <string name="settings_reload_app_backup">Predvoľby sú zálohované.</string>
