@@ -53,8 +53,8 @@ class AppInfoRepository @Inject constructor(
         }
     }
 
-    fun searchNote(query: String?): Flow<List<AppInfo>> {
-        return appDao.searchApps(query)
+    fun searchNote(): Flow<List<AppInfo>> {
+        return appDao.searchApps()
     }
 
     suspend fun updateFavoriteAppInfo(appInfo: AppInfo) = withContext(Dispatchers.IO) {

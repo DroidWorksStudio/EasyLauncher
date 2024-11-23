@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Launcher" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Launcher" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
         <item name="android:fontFamily">@android:fontFamily/system_font</item>
 

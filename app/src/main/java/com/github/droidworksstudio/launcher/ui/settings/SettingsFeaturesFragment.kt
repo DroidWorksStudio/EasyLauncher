@@ -1,12 +1,17 @@
 package com.github.droidworksstudio.launcher.ui.settings
 
 import android.content.Context
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.SeekBar
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -62,6 +67,7 @@ class SettingsFeaturesFragment : Fragment(),
     }
 
     // Called after the fragment view is created
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navController = findNavController()
         // Set according to the system theme mode
@@ -75,6 +81,7 @@ class SettingsFeaturesFragment : Fragment(),
 
         binding.apply {
             miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.getString(context)
+            miscellaneousFilterStrengthControl.text = "${preferenceHelper.filterStrength}"
         }
 
         val actions = listOf(
@@ -118,10 +125,12 @@ class SettingsFeaturesFragment : Fragment(),
         binding.apply {
             automaticKeyboardSwitchCompat.isChecked = preferenceHelper.automaticKeyboard
             automaticOpenAppSwitchCompat.isChecked = preferenceHelper.automaticOpenApp
+            searchFromStartSwitchCompat.isChecked = preferenceHelper.searchFromStart
             lockSettingsSwitchCompat.isChecked = preferenceHelper.settingsLock
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     private fun observeClickListener() {
         setupSwitchListeners()
 
@@ -149,6 +158,10 @@ class SettingsFeaturesFragment : Fragment(),
             miscellaneousSearchEngineControl.setOnClickListener {
                 showSearchEngineDialog()
             }
+
+            miscellaneousFilterStrengthControl.setOnClickListener {
+                showFilterStrengthDialog()
+            }
         }
     }
 
@@ -163,17 +176,81 @@ class SettingsFeaturesFragment : Fragment(),
         // Map the enum values to their string representations
         val itemStrings = items.map { it.getString(context) }.toTypedArray()
 
-        val dialogBuilder = MaterialAlertDialogBuilder(context)
-
-        dialogBuilder.setTitle(getString(R.string.settings_select_search_engine))
-        dialogBuilder.setItems(itemStrings) { _, which ->
-            val selectedItem = items[which]
-            preferenceViewModel.setSearchEngine(selectedItem)
-            binding.miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.name
+        val dialogBuilder = MaterialAlertDialogBuilder(context).apply {
+            setTitle(getString(R.string.settings_select_search_engine))
+            setItems(itemStrings) { _, which ->
+                val selectedItem = items[which]
+                preferenceViewModel.setSearchEngine(selectedItem)
+                binding.miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.name
+            }
         }
         // Assign the created dialog to launcherFontDialog
         searchEngineDialog = dialogBuilder.create()
         searchEngineDialog?.show()
+    }
+
+    private var filterStrengthDialog: AlertDialog? = null
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun showFilterStrengthDialog() {
+        // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
+        filterStrengthDialog?.dismiss()
+
+        var currentValue = preferenceHelper.filterStrength
+
+        // Create a layout to hold the SeekBar and the value display
+        val seekBarLayout = LinearLayout(context).apply {
+            orientation = LinearLayout.VERTICAL
+            gravity = Gravity.CENTER
+            setPadding(16, 16, 16, 16)
+
+            // TextView to display the current value
+            val valueText = TextView(context).apply {
+                text = "$currentValue"
+                textSize = 16f
+                gravity = Gravity.CENTER
+            }
+
+            // SeekBar for horizontal number selection
+            val seekBar = SeekBar(context).apply {
+                min = Constants.FILTER_STRENGTH_MIN // Maximum value
+                max = Constants.FILTER_STRENGTH_MAX // Maximum value
+                progress = currentValue // Default value
+                setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+                    override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
+                        currentValue = progress
+                        valueText.text = "$currentValue"
+                    }
+
+                    override fun onStartTrackingTouch(seekBar: SeekBar) {
+                        // Not used
+                    }
+
+                    override fun onStopTrackingTouch(seekBar: SeekBar) {
+                        // Not used
+                    }
+                })
+            }
+
+            // Add TextView and SeekBar to the layout
+            addView(valueText)
+            addView(seekBar)
+        }
+
+        // Create the dialog
+        val dialogBuilder = MaterialAlertDialogBuilder(context).apply {
+            setTitle(getString(R.string.settings_select_filter_strength))
+            setView(seekBarLayout) // Add the slider directly to the dialog
+            setPositiveButton("ok") { _, _ ->
+                // Save the slider value when OK is pressed
+                preferenceViewModel.setFilterStrength(currentValue)
+                binding.miscellaneousFilterStrengthControl.text = "$currentValue"
+            }
+            setNegativeButton("cancel", null)
+        }
+        // Assign the created dialog to launcherFontDialog
+        filterStrengthDialog = dialogBuilder.create()
+        filterStrengthDialog?.show()
     }
 
     private var appSelectionDialog: AlertDialog? = null
@@ -191,18 +268,18 @@ class SettingsFeaturesFragment : Fragment(),
                 val packageNames = installedApps.map { it.packageName }
 
                 // Build and display the dialog
-                val dialogBuilder = MaterialAlertDialogBuilder(context)
-                dialogBuilder.setTitle("Select an App")
-                dialogBuilder.setItems(appNames) { _, which ->
-                    val selectedPackageName = packageNames[which]
-                    when (swipeType) {
-                        Constants.Swipe.DoubleTap,
-                        Constants.Swipe.Up,
-                        Constants.Swipe.Down,
-                        Constants.Swipe.Left,
-                        Constants.Swipe.Right -> handleSwipeAction(swipeType, selectedPackageName)
+                val dialogBuilder = MaterialAlertDialogBuilder(context).apply {
+                    setTitle("Select an App")
+                    setItems(appNames) { _, which ->
+                        val selectedPackageName = packageNames[which]
+                        when (swipeType) {
+                            Constants.Swipe.DoubleTap,
+                            Constants.Swipe.Up,
+                            Constants.Swipe.Down,
+                            Constants.Swipe.Left,
+                            Constants.Swipe.Right -> handleSwipeAction(swipeType, selectedPackageName)
+                        }
                     }
-
                 }
 
                 // Assign the created dialog to launcherFontDialog
@@ -220,6 +297,10 @@ class SettingsFeaturesFragment : Fragment(),
 
             automaticOpenAppSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setAutoOpenApp(isChecked)
+            }
+
+            searchFromStartSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setSearchFromStart(isChecked)
             }
 
             lockSettingsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
@@ -335,6 +416,7 @@ class SettingsFeaturesFragment : Fragment(),
 
     private fun dismissDialogs() {
         searchEngineDialog?.dismiss()
+        filterStrengthDialog?.dismiss()
         appSelectionDialog?.dismiss()
     }
 }

@@ -103,6 +103,14 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.AUTOMATIC_OPEN_APP, false)
         set(value) = prefs.edit().putBoolean(Constants.AUTOMATIC_OPEN_APP, value).apply()
 
+    var searchFromStart: Boolean
+        get() = prefs.getBoolean(Constants.SEARCH_FROM_START, true)
+        set(value) = prefs.edit().putBoolean(Constants.SEARCH_FROM_START, value).apply()
+
+    var filterStrength: Int
+        get() = prefs.getInt(Constants.FILTER_STRENGTH, 25)
+        set(value) = prefs.edit().putInt(Constants.FILTER_STRENGTH, value).apply()
+
     var homeAppAlignment: Int
         get() = prefs.getInt(Constants.HOME_APP_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(Constants.HOME_APP_ALIGNMENT, value).apply()

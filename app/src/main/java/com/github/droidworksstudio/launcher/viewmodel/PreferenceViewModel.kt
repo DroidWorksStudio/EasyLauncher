@@ -39,12 +39,14 @@ class PreferenceViewModel @Inject constructor(
     private val appTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val batteryTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val autoOpenAppsLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    private val searchFromStartLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val lockSettingsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
 
     private val weatherOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
     private val batteryOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
+    private val filterStrengthLiveData: MutableLiveData<Int> = MutableLiveData()
 
     private val searchEngineLiveData: MutableLiveData<Constants.SearchEngines> = MutableLiveData()
     private val launcherFontLiveData: MutableLiveData<Constants.Fonts> = MutableLiveData()
@@ -234,6 +236,11 @@ class PreferenceViewModel @Inject constructor(
         autoOpenAppsLiveData.postValue((preferenceHelper.automaticOpenApp))
     }
 
+    fun setSearchFromStart(searchFromStart: Boolean) {
+        preferenceHelper.searchFromStart = searchFromStart
+        searchFromStartLiveData.postValue((preferenceHelper.searchFromStart))
+    }
+
     fun setLockSettings(lockSettings: Boolean) {
         preferenceHelper.settingsLock = lockSettings
         lockSettingsLiveData.postValue((preferenceHelper.settingsLock))
@@ -242,6 +249,11 @@ class PreferenceViewModel @Inject constructor(
     fun setSearchEngine(searchEngine: Constants.SearchEngines) {
         preferenceHelper.searchEngines = searchEngine
         searchEngineLiveData.postValue((preferenceHelper.searchEngines))
+    }
+
+    fun setFilterStrength(filterStrength: Int) {
+        preferenceHelper.filterStrength = filterStrength
+        filterStrengthLiveData.postValue((preferenceHelper.filterStrength))
     }
 
     fun setLauncherFont(launcherFont: Constants.Fonts) {

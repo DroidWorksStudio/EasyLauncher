@@ -24,6 +24,7 @@ import com.github.droidworksstudio.common.searchCustomSearchEngine
 import com.github.droidworksstudio.common.searchOnPlayStore
 import com.github.droidworksstudio.common.showKeyboard
 import com.github.droidworksstudio.common.showLongToast
+import com.github.droidworksstudio.fuzzywuzzy.FuzzyFinder
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.adapter.drawer.DrawAdapter
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -35,6 +36,7 @@ import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
+import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -194,7 +196,7 @@ class DrawFragment : Fragment(),
             // Use repeatOnLifecycle to manage the lifecycle state
             repeatOnLifecycle(Lifecycle.State.CREATED) {
                 val trimmedQuery = searchQuery.trim()
-                viewModel.searchAppInfo(trimmedQuery).collect { searchResults ->
+                viewModel.searchAppInfo().collect { searchResults ->
                     val numberOfItemsLeft = searchResults.size
                     val appResults = searchResults.firstOrNull()
                     if (numberOfItemsLeft == 0 && !requireContext().searchOnPlayStore(trimmedQuery)) {
@@ -211,33 +213,69 @@ class DrawFragment : Fragment(),
     }
 
     private fun searchApp(query: String) {
-        val searchQuery = "%$query%"
-
         // Launch a coroutine tied to the lifecycle of the view
         viewLifecycleOwner.lifecycleScope.launch {
             // Repeat the block when the lifecycle is at least CREATED
             repeatOnLifecycle(Lifecycle.State.CREATED) {
+                val trimmedQuery = query.trim()
+
                 // Collect search results from the ViewModel
-                viewModel.searchAppInfo(searchQuery).collect { searchResults ->
-                    val numberOfItemsLeft = searchResults.size
-                    val appResults = searchResults.firstOrNull()
+                viewModel.searchAppInfo().collect { searchResults ->
+                    // Filter and score results using FuzzyFinder
+                    val filteredResults = searchResults
+                        .map { appInfo ->
+                            val score = FuzzyFinder.scoreApp(appInfo, trimmedQuery, Constants.FILTER_STRENGTH_MAX)
+                            appInfo to score // Pairing app info with its score
+                        }
+                        .filter { it.second > 25 } // Only keep results with a positive score
+                        .sortedByDescending { it.second } // Sort results by score, descending
+
+                    // Applying additional filtering based on preferences
+                    val scoredApps = filteredResults.toMap()
+
+                    val finalResults = if (preferenceHelper.filterStrength >= 1) {
+                        // Filtering based on score strength
+                        if (preferenceHelper.searchFromStart) {
+                            // Filter apps that start with the search query and score higher than the filter strength
+                            scoredApps.filter { (app, _) ->
+                                app.appName.startsWith(trimmedQuery, ignoreCase = true)
+                            }
+                                .filter { (_, score) -> score > preferenceHelper.filterStrength }
+                                .map { it.key }
+                                .toMutableList()
+                        } else {
+                            // Filter based on score strength alone
+                            scoredApps.filterValues { it > preferenceHelper.filterStrength }
+                                .keys
+                                .toMutableList()
+                        }
+                    } else {
+                        // If filter strength is less than 1, normalize app names for both cases
+                        searchResults.filter { app ->
+                            FuzzyFinder.normalizeString(app.appName, trimmedQuery)
+                        }.toMutableList()
+                    }
+
+
+                    val numberOfItemsLeft = finalResults.size
+                    val appResults = finalResults.firstOrNull()
+
                     when (numberOfItemsLeft) {
                         1 -> {
                             appResults?.let { appInfo ->
                                 if (preferenceHelper.automaticOpenApp) observeBioAuthCheck(appInfo)
                             }
-                            drawAdapter.submitList(searchResults)
+                            drawAdapter.submitList(finalResults)
                         }
 
                         else -> {
-                            drawAdapter.submitList(searchResults)
+                            drawAdapter.submitList(finalResults)
                         }
                     }
                 }
             }
         }
     }
-
 
     private fun showSelectedApp(appInfo: AppInfo) {
         binding.searchViewText.setQuery("", false)

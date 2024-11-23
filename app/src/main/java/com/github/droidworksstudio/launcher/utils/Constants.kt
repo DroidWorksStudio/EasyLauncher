@@ -57,6 +57,9 @@ object Constants {
 
     const val AUTOMATIC_KEYBOARD = "AUTOMATIC_KEYBOARD"
     const val AUTOMATIC_OPEN_APP = "AUTOMATIC_OPEN_APP"
+    const val SEARCH_FROM_START = "SEARCH_FROM_START"
+    const val FILTER_STRENGTH = "FILTER_STRENGTH"
+    const val TOGGLE_SETTING_LOCK = "TOGGLE_SETTING_LOCK"
 
     const val HOME_DATE_ALIGNMENT = "HOME_DATE_ALIGNMENT"
     const val HOME_TIME_ALIGNMENT = "HOME_TIME_ALIGNMENT"
@@ -70,8 +73,6 @@ object Constants {
     const val QUICKSETTINGS_SERVICE = "statusbar"
     const val QUICKSETTINGS_MANAGER = "android.app.StatusBarManager"
     const val QUICKSETTINGS_METHOD = "expandSettingsPanel"
-
-    const val TOGGLE_SETTING_LOCK = "TOGGLE_SETTING_LOCK"
 
     const val SEARCH_ENGINE = "SEARCH_ENGINE"
     const val URL_DUCK_SEARCH = "https://duckduckgo.com/?q="
@@ -87,6 +88,9 @@ object Constants {
 
     const val REQUEST_INSTALL_PERMISSION = 123
     const val REQUEST_LOCATION_PERMISSION_CODE = 234
+
+    const val FILTER_STRENGTH_MIN = 0
+    const val FILTER_STRENGTH_MAX = 100
 
     const val BACKUP_WRITE = 987
     const val BACKUP_READ = 876

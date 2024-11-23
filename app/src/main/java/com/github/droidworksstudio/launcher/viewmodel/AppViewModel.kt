@@ -77,5 +77,5 @@ class AppViewModel @Inject constructor(
         }
     }
 
-    fun searchAppInfo(query: String?) = appInfoRepository.searchNote(query)
+    fun searchAppInfo() = appInfoRepository.searchNote()
 }
