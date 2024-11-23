@@ -75,6 +75,7 @@
     <string name="settings_display_app_icon_dots">App-Symbole als Punkte anzeigen</string>
     <string name="settings_display_automatic_keyboard">Tastatur automatisch einblenden</string>
     <string name="settings_display_auto_open_apps">Letzte App automatisch öffnen</string>
+    <string name="settings_search_from_start">Search From Start</string>
     <string name="settings_display_lock_settings">Sperreinstellungen</string>
     <string name="settings_appearance_text_size_title">Größe</string>
     <string name="settings_appearance_color_title">Farbe</string>
@@ -97,6 +98,8 @@
     <string name="settings_swipe_right">Wische nach rechts</string>
     <string name="settings_select_search_engine">Wählen Sie eine Suchmaschine</string>
     <string name="settings_search_engine">Suchmaschine</string>
+    <string name="settings_select_filter_strength">Select a Filter Strength</string>
+    <string name="settings_filter_strength">Filter Strength</string>
     <string name="settings_select_launcher_font">Wählen Sie eine Schriftfamilie aus</string>
     <string name="settings_launcher_font">Schriftfamilie</string>
     <string name="settings_reload_app_backup">Einstellungen gesichert.</string>
