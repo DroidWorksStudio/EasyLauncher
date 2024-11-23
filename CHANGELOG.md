@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed the settings from not displaying the background correctly. - ([709fac1](https://github.com/DroidWorksStudio/EasyLauncher/commit/709fac138cc8f16bd6754b09e61dafe8600f91b9))
 
+### Language Support:
+
+- Updated Language Files. ([#158](https://github.com/DroidWorksStudio/EasyLauncher/issues/158)) - ([4fff27c](https://github.com/DroidWorksStudio/EasyLauncher/commit/4fff27c78b0bedd75dde031d9955b7e781dc06d9))
+
 ### Releases:
 
 - Prepare for version 0.2.7 - ([cbfd5c8](https://github.com/DroidWorksStudio/EasyLauncher/commit/cbfd5c8946a648278b6e6796e2d9a94d01a2ee43))
