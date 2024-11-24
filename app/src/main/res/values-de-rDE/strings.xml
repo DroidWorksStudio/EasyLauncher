@@ -70,6 +70,7 @@
     <string name="settings_display_date">Datum anzeigen</string>
     <string name="settings_display_time">Zeit anzeigen</string>
     <string name="settings_display_battery">Akku anzeigen</string>
+    <string name="settings_display_alarm_clock">Wecker anzeigen</string>
     <string name="settings_display_daily_word">Wort des Tages anzeigen</string>
     <string name="settings_display_app_icons">App-Symbole anzeigen</string>
     <string name="settings_display_app_icon_dots">App-Symbole als Punkte anzeigen</string>
@@ -87,6 +88,7 @@
     <string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Zeit\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Wort\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batterie\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Widget-Hintergrund\u0020:\u0020</string>
