@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed App Searching. - ([1f0d4c8](https://github.com/DroidWorksStudio/EasyLauncher/commit/1f0d4c8301d9f6ab088e115942f2f177f36882d9))
 
+### Releases:
+
+- Prepare for version 0.2.8 - ([b098564](https://github.com/DroidWorksStudio/EasyLauncher/commit/b098564570efceca1ae223737e01f67200a587bf))
+
 ## [0.2.7](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.7) - (23, November 2024)
 
 ### Implemented Enhancements:
