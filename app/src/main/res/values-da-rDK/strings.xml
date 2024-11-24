@@ -70,7 +70,7 @@
     <string name="settings_display_date">Vis Dato</string>
     <string name="settings_display_time">Vis Tid</string>
     <string name="settings_display_battery">Vis Batteri</string>
-    <string name="settings_display_alarm_clock">Show Alarm Clock</string>
+    <string name="settings_display_alarm_clock">Vis vækkeur</string>
     <string name="settings_display_daily_word">Vis Dagligt Ord</string>
     <string name="settings_display_app_icons">Vis App-ikoner</string>
     <string name="settings_display_app_icon_dots">Vis App-ikoner Som Prikker</string>
