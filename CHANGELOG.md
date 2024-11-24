@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added the ability to close app draw by scrolling down from the top. - ([b2141eb](https://github.com/DroidWorksStudio/EasyLauncher/commit/b2141eb66623485042267a9c93ab8fcfbae35699))
 - Added Alarm Clock to HomeScreen. - ([d6050f3](https://github.com/DroidWorksStudio/EasyLauncher/commit/d6050f399f1428c2a71429578c076b40ba194d14))
 
 ### Bug Fixes:
@@ -15,6 +16,10 @@ All notable changes to this project will be documented in this file. See [conven
 ### Language Support:
 
 - Updated Language Files. ([#163](https://github.com/DroidWorksStudio/EasyLauncher/issues/163)) - ([99d9501](https://github.com/DroidWorksStudio/EasyLauncher/commit/99d9501c0089fc8deb7da38e3925b7cbd3395c36))
+
+### Refactoring:
+
+- Cleaned up unneeded logs - ([8981ed1](https://github.com/DroidWorksStudio/EasyLauncher/commit/8981ed108f1ce74315cd9b41c7e55829a8558fd6))
 
 ### Releases:
 

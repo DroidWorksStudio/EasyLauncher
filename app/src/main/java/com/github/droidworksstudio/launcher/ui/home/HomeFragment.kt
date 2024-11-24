@@ -5,7 +5,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.os.BatteryManager
 import android.os.Build
@@ -118,10 +117,6 @@ class HomeFragment : Fragment(),
         observeSwipeTouchListener()
         observeUserInterfaceSettings()
 
-        val prefs: SharedPreferences = context.getSharedPreferences(Constants.PACKAGE_PREFS, 0)
-
-        Log.d("preferenceHelper", prefs.all.toString())
-
         if (context.hasInternetPermission()) {
             updateManager = UpdateManagerHelper(this)
             updateManager.checkForUpdates()
@@ -195,32 +190,31 @@ class HomeFragment : Fragment(),
     }
 
     private fun setupRecyclerView() {
-        val marginTopInPixels = 128
-        val params: ViewGroup.LayoutParams = binding.appListAdapter.layoutParams
-        val layoutParam = if (params is LinearLayout.LayoutParams) {
-            params
-        } else {
-            LinearLayout.LayoutParams(params)
-        }
-        layoutParam.topMargin = marginTopInPixels
+        val marginInPixels = 128
 
-        when (preferenceHelper.homeAppAlignment) {
-            Gravity.START -> {
-                layoutParam.gravity = Gravity.START
-            }
+        // Ensure correct type for layout params
+        val layoutParams = (binding.appListAdapter.layoutParams as? LinearLayout.LayoutParams)
+            ?: LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
 
-            Gravity.CENTER -> {
-                layoutParam.gravity = Gravity.CENTER
-            }
+        // Set the bottom margin instead of top
+        layoutParams.bottomMargin = marginInPixels
+        layoutParams.topMargin = marginInPixels
 
-            Gravity.END -> {
-                layoutParam.gravity = Gravity.END
-            }
+        // Set gravity to align RecyclerView to the bottom
+        layoutParams.gravity = when (preferenceHelper.homeAppAlignment) {
+            Gravity.START -> Gravity.START or Gravity.BOTTOM
+            Gravity.CENTER -> Gravity.CENTER or Gravity.BOTTOM
+            Gravity.END -> Gravity.END or Gravity.BOTTOM
+            else -> Gravity.BOTTOM
         }
 
+        // Apply configurations to RecyclerView
         binding.appListAdapter.apply {
             adapter = homeAdapter
-            layoutParams = layoutParam
+            this.layoutParams = layoutParams
             setHasFixedSize(false)
             layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
             isNestedScrollingEnabled = false
@@ -262,7 +256,6 @@ class HomeFragment : Fragment(),
         preferenceViewModel.setShowBattery(preferenceHelper.showBattery)
 
         preferenceViewModel.showTimeLiveData.observe(viewLifecycleOwner) {
-            Log.d("Tag", "ShowTime Home: $it")
             appHelper.updateUI(
                 binding.clock,
                 preferenceHelper.homeTimeAlignment,
@@ -587,12 +580,10 @@ class HomeFragment : Fragment(),
 
     override fun onAppLongClicked(appInfo: AppInfo) {
         showSelectedApp(appInfo)
-        Log.d("Tag", "Home LiveData Favorite : ${appInfo.favorite}")
     }
 
     override fun onAppStateClicked(appInfo: AppInfo) {
         viewModel.update(appInfo)
-        Log.d("Tag", "${appInfo.appName} : Home Favorite: ${appInfo.favorite}")
     }
 
     override fun onAuthenticationSucceeded(appInfo: AppInfo) {
