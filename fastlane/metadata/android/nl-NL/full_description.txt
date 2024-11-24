@@ -31,7 +31,7 @@
 - Toon recent geopende apps: Krijg moeiteloos toegang tot recent gebruikte apps voor snelle multitasking.
 - Toegang tot meldingenlade: open de meldingenlade met een enkele tik om updates en waarschuwingen te controleren.
 - Snelle instellingen: beheer apparaatinstellingen snel door rechtstreeks vanuit het startscherm toegang te krijgen tot de snelle instellingen.
-- Energiedialoog: beheer eenvoudig energieopties zoals opnieuw opstarten, uitschakelen en meer met behulp van de energiedialoog.
+- Uitschakelopties: beheer eenvoudig energieopties zoals opnieuw opstarten, uitschakelen en meer met behulp van de energiedialoog.
 - Maak een screenshot: leg uw scherm direct vast om belangrijke informatie en momenten op te slaan en te delen.
 - Gebaren uitschakelen: schakel specifieke gebaren tijdelijk of permanent uit om de interactie-ervaring met uw apparaat aan te passen.
 
