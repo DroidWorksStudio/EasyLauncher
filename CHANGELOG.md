@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added Alarm Clock to HomeScreen. - ([d6050f3](https://github.com/DroidWorksStudio/EasyLauncher/commit/d6050f399f1428c2a71429578c076b40ba194d14))
+
 ### Bug Fixes:
 
 - Fixed App Searching. - ([1f0d4c8](https://github.com/DroidWorksStudio/EasyLauncher/commit/1f0d4c8301d9f6ab088e115942f2f177f36882d9))
