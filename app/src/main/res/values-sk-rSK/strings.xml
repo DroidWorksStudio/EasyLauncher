@@ -70,7 +70,7 @@
     <string name="settings_display_date">Zobraziť dátum</string>
     <string name="settings_display_time">Zobraziť čas</string>
     <string name="settings_display_battery">Zobraziť batériu</string>
-    <string name="settings_display_alarm_clock">Show Alarm Clock</string>
+    <string name="settings_display_alarm_clock">Zobraziť budík</string>
     <string name="settings_display_daily_word">Zobraziť Daily Word</string>
     <string name="settings_display_app_icons">Zobraziť ikony aplikácií</string>
     <string name="settings_display_app_icon_dots">Zobraziť ikony aplikácií ako bodky</string>
@@ -88,7 +88,7 @@
     <string name="appearance_bottom_dialog_desc_date">Dátum\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Čas\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">Aplikácia\u0020:\u0020</string>
-    <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_alarm">Budík\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batéria\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Pozadie miniaplikácie\u0020:\u0020</string>
