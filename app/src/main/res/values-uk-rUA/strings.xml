@@ -70,6 +70,7 @@
     <string name="settings_display_date">Показати дату</string>
     <string name="settings_display_time">Показати час</string>
     <string name="settings_display_battery">Показати батарею</string>
+    <string name="settings_display_alarm_clock">Show Alarm Clock</string>
     <string name="settings_display_daily_word">Показати Daily Word</string>
     <string name="settings_display_app_icons">Показати значки програм</string>
     <string name="settings_display_app_icon_dots">Показувати піктограми додатків у вигляді крапок</string>
@@ -87,6 +88,7 @@
     <string name="appearance_bottom_dialog_desc_date">Дата\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Час\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">Додаток\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Слово\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Акумулятор\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Фон віджета\u0020:\u0020</string>
