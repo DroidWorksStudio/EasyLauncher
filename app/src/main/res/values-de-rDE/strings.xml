@@ -70,7 +70,7 @@
     <string name="settings_display_date">Datum anzeigen</string>
     <string name="settings_display_time">Zeit anzeigen</string>
     <string name="settings_display_battery">Akku anzeigen</string>
-    <string name="settings_display_alarm_clock">Show Alarm Clock</string>
+    <string name="settings_display_alarm_clock">Wecker anzeigen</string>
     <string name="settings_display_daily_word">Wort des Tages anzeigen</string>
     <string name="settings_display_app_icons">App-Symbole anzeigen</string>
     <string name="settings_display_app_icon_dots">App-Symbole als Punkte anzeigen</string>
