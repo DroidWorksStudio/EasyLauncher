@@ -70,7 +70,7 @@
     <string name="settings_display_date">Zobrazit datum</string>
     <string name="settings_display_time">Zobrazit čas</string>
     <string name="settings_display_battery">Zobrazit baterii</string>
-    <string name="settings_display_alarm_clock">Show Alarm Clock</string>
+    <string name="settings_display_alarm_clock">Zobrazit budík</string>
     <string name="settings_display_daily_word">Zobrazit Daily Word</string>
     <string name="settings_display_app_icons">Zobrazit ikony aplikací</string>
     <string name="settings_display_app_icon_dots">Zobrazit ikony aplikací jako tečky</string>
