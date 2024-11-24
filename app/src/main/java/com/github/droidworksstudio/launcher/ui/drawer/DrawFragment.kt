@@ -16,6 +16,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.github.droidworksstudio.common.hideKeyboard
 import com.github.droidworksstudio.common.launchApp
@@ -98,6 +99,7 @@ class DrawFragment : Fragment(),
         setupSearch()
         observeClickListener()
         observeSwipeTouchListener()
+        observeScrollTouchListener()
 
         // Initialize observation of drawer apps
         observeDrawerApps()
@@ -173,6 +175,41 @@ class DrawFragment : Fragment(),
             drawAdapter.setOnTouchListener(getSwipeGestureListener(context))
         }
     }
+
+    @SuppressLint("ClickableViewAccessibility")
+    private fun observeScrollTouchListener() {
+        binding.apply {
+            drawAdapter.addOnScrollListener(getRecyclerViewOnScrollListener())
+        }
+    }
+
+    private fun getRecyclerViewOnScrollListener(): RecyclerView.OnScrollListener {
+        return object : RecyclerView.OnScrollListener() {
+            var onTop = false
+
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                super.onScrollStateChanged(recyclerView, newState)
+                when (newState) {
+                    RecyclerView.SCROLL_STATE_DRAGGING -> {
+                        onTop = !recyclerView.canScrollVertically(-1)
+                        if (onTop) binding.searchViewText.hideKeyboard()
+                        if (onTop && !recyclerView.canScrollVertically(1))
+                            findNavController().popBackStack()
+                    }
+
+                    RecyclerView.SCROLL_STATE_IDLE -> {
+                        if (!recyclerView.canScrollVertically(1)) {
+                            binding.searchViewText.hideKeyboard()
+                        } else if (!recyclerView.canScrollVertically(-1)) {
+                            if (onTop) findNavController().popBackStack()
+                            else binding.searchViewText.showKeyboard()
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
         return object : OnSwipeTouchListener(context) {

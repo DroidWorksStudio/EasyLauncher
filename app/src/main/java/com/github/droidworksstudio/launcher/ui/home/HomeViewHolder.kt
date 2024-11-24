@@ -78,11 +78,9 @@ class HomeViewHolder @Inject constructor(
                     }
 
                     else -> {
-                        appHomeIcon.visibility = View.GONE
+                        parentLayout.addView(appHomeName)
                     }
                 }
-            } else {
-                appHomeIcon.visibility = View.GONE
             }
         }
 

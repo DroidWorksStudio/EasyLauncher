@@ -195,32 +195,31 @@ class HomeFragment : Fragment(),
     }
 
     private fun setupRecyclerView() {
-        val marginTopInPixels = 128
-        val params: ViewGroup.LayoutParams = binding.appListAdapter.layoutParams
-        val layoutParam = if (params is LinearLayout.LayoutParams) {
-            params
-        } else {
-            LinearLayout.LayoutParams(params)
-        }
-        layoutParam.topMargin = marginTopInPixels
+        val marginInPixels = 128
 
-        when (preferenceHelper.homeAppAlignment) {
-            Gravity.START -> {
-                layoutParam.gravity = Gravity.START
-            }
+        // Ensure correct type for layout params
+        val layoutParams = (binding.appListAdapter.layoutParams as? LinearLayout.LayoutParams)
+            ?: LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
 
-            Gravity.CENTER -> {
-                layoutParam.gravity = Gravity.CENTER
-            }
+        // Set the bottom margin instead of top
+        layoutParams.bottomMargin = marginInPixels
+        layoutParams.topMargin = marginInPixels
 
-            Gravity.END -> {
-                layoutParam.gravity = Gravity.END
-            }
+        // Set gravity to align RecyclerView to the bottom
+        layoutParams.gravity = when (preferenceHelper.homeAppAlignment) {
+            Gravity.START -> Gravity.START or Gravity.BOTTOM
+            Gravity.CENTER -> Gravity.CENTER or Gravity.BOTTOM
+            Gravity.END -> Gravity.END or Gravity.BOTTOM
+            else -> Gravity.BOTTOM
         }
 
+        // Apply configurations to RecyclerView
         binding.appListAdapter.apply {
             adapter = homeAdapter
-            layoutParams = layoutParam
+            this.layoutParams = layoutParams
             setHasFixedSize(false)
             layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
             isNestedScrollingEnabled = false
