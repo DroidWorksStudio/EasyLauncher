@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -350,7 +349,6 @@ class DrawFragment : Fragment(),
 
     override fun onAppStateClicked(appInfo: AppInfo) {
         viewModel.update(appInfo)
-        Log.d("Tag", "${appInfo.appName} : Draw Favorite: ${appInfo.favorite}")
     }
 
     private fun observeBioAuthCheck(appInfo: AppInfo) {
