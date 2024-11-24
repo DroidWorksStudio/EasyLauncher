@@ -70,7 +70,7 @@
     <string name="settings_display_date">Datum weergeven</string>
     <string name="settings_display_time">Show Time</string>
     <string name="settings_display_battery">Toon batterij</string>
-    <string name="settings_display_alarm_clock">Show Alarm Clock</string>
+    <string name="settings_display_alarm_clock">Wekker weergeven</string>
     <string name="settings_display_daily_word">Toon dagelijks woord</string>
     <string name="settings_display_app_icons">App-pictogrammen weergeven</string>
     <string name="settings_display_app_icon_dots">App-pictogrammen weergeven als stippen</string>
