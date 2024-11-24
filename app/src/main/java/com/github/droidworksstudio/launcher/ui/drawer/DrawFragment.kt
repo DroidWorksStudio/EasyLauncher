@@ -143,7 +143,7 @@ class DrawFragment : Fragment(),
                             val searchQuery = trimmedQuery.substringAfter("!")
                             requireContext().searchCustomSearchEngine(preferenceHelper, searchQuery)
                         } else {
-                            checkAppThenRun(trimmedQuery)
+                            searchApp(trimmedQuery, false)
                             return true // Exit the function
                         }
                     }
@@ -152,7 +152,7 @@ class DrawFragment : Fragment(),
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                searchApp(newText.toString())
+                searchApp(newText.toString(), true)
                 return true
             }
         })
@@ -188,31 +188,7 @@ class DrawFragment : Fragment(),
         }
     }
 
-    private fun checkAppThenRun(query: String) {
-        val searchQuery = "%$query%"
-
-        // Launch a coroutine tied to the lifecycle of the view
-        viewLifecycleOwner.lifecycleScope.launch {
-            // Use repeatOnLifecycle to manage the lifecycle state
-            repeatOnLifecycle(Lifecycle.State.CREATED) {
-                val trimmedQuery = searchQuery.trim()
-                viewModel.searchAppInfo().collect { searchResults ->
-                    val numberOfItemsLeft = searchResults.size
-                    val appResults = searchResults.firstOrNull()
-                    if (numberOfItemsLeft == 0 && !requireContext().searchOnPlayStore(trimmedQuery)) {
-                        requireContext().openSearch(trimmedQuery)
-                    } else {
-                        appResults?.let { appInfo ->
-                            observeBioAuthCheck(appInfo)
-                        }
-                        drawAdapter.submitList(searchResults)
-                    }
-                }
-            }
-        }
-    }
-
-    private fun searchApp(query: String) {
+    private fun searchApp(query: String, isSearching: Boolean) {
         // Launch a coroutine tied to the lifecycle of the view
         viewLifecycleOwner.lifecycleScope.launch {
             // Repeat the block when the lifecycle is at least CREATED
@@ -260,16 +236,30 @@ class DrawFragment : Fragment(),
                     val numberOfItemsLeft = finalResults.size
                     val appResults = finalResults.firstOrNull()
 
-                    when (numberOfItemsLeft) {
-                        1 -> {
-                            appResults?.let { appInfo ->
-                                if (preferenceHelper.automaticOpenApp) observeBioAuthCheck(appInfo)
+                    if (isSearching) {
+                        when (numberOfItemsLeft) {
+                            1 -> {
+                                appResults?.let { appInfo ->
+                                    if (preferenceHelper.automaticOpenApp) observeBioAuthCheck(appInfo)
+                                }
+                                drawAdapter.submitList(finalResults)
                             }
-                            drawAdapter.submitList(finalResults)
-                        }
 
-                        else -> {
-                            drawAdapter.submitList(finalResults)
+                            else -> {
+                                drawAdapter.submitList(finalResults)
+                            }
+                        }
+                        if (trimmedQuery.isEmpty()) {
+                            drawAdapter.submitList(searchResults)
+                        }
+                    } else {
+                        if (numberOfItemsLeft == 0 && !requireContext().searchOnPlayStore(trimmedQuery)) {
+                            requireContext().openSearch(trimmedQuery)
+                        } else {
+                            appResults?.let { appInfo ->
+                                observeBioAuthCheck(appInfo)
+                            }
+                            drawAdapter.submitList(searchResults)
                         }
                     }
                 }
