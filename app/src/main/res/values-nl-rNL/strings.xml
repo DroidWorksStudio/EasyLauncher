@@ -9,11 +9,11 @@
     <string name="settings_name">Launcher-instellingen</string>
     <string name="settings_features_title">Functies</string>
     <string name="settings_features_description">Verbeter uw productiviteit.</string>
-    <string name="settings_look_feel_title">Kijk en voel</string>
+    <string name="settings_look_feel_title">Weergave en stijl</string>
     <string name="settings_look_feel_description">Geef uw startscherm een persoonlijk tintje.</string>
     <string name="settings_advanced_title">Geavanceerd</string>
     <!-- Strings used for look And feel settings -->
-    <string name="look_feel_settings_title">Kijk en voel</string>
+    <string name="look_feel_settings_title">Weergave en stijl</string>
     <!-- Strings used for features settings -->
     <string name="features_settings_title">Functies</string>
     <!-- Strings used for advanced settings -->
@@ -21,7 +21,7 @@
     <string name="advanced_settings_app_info">App-info</string>
     <string name="advanced_settings_app_info_description">%1$s</string>
     <string name="advanced_settings_default">Standaard Launcher wijzigen</string>
-    <string name="advanced_settings_restart_title">Start Launcher opnieuw</string>
+    <string name="advanced_settings_restart_title">Herstart launcher</string>
     <string name="advanced_settings_restart_description">Heb je geprobeerd het aan en uit te zetten?</string>
     <string name="advanced_settings_backup_restore_title">Back-up/Herstellen</string>
     <string name="advanced_settings_backup_restore_description">Wees voorzichtig met wat je wenst.</string>
@@ -35,23 +35,23 @@
     <string name="advanced_settings_help_feedback_title">Hulp en feedback</string>
     <string name="advanced_settings_community_support_title">Ondersteuning van de gemeenschap</string>
     <string name="advanced_settings_share_application_title">Deel applicatie</string>
-    <string name="advanced_settings_share_application_description">Verbeter je ervaring met %1$s! Haal het nu op fDroid en zie waar iedereen het over heeft!\n</string>
+    <string name="advanced_settings_share_application_description">Verbeter je ervaring met %1$s! Download nu op fDroid en zie waar iedereen het over heeft!\n</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">Thuisfragment</string>
-    <string name="draw_fragment_label">Fragment tekenen</string>
-    <string name="favorite_fragment_label">Favoriete fragment</string>
-    <string name="hidden_fragment_label">Verborgen Fragment</string>
-    <string name="settings_fragment_label">Instellingenfragment</string>
+    <string name="draw_fragment_label">Tekenfragment</string>
+    <string name="favorite_fragment_label">Favoriete appfragment</string>
+    <string name="hidden_fragment_label">Verborgen appfragment</string>
+    <string name="settings_fragment_label">Instellingsfragment</string>
     <string name="widgets_fragment_label">Widgetsfragment</string>
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">Favoriete apps</string>
     <string name="hidden_fragment_name">Verborgen apps</string>
     <string name="favorite_fragment_no_apps">Geen favoriete apps</string>
     <string name="hidden_fragment_no_apps">Geen verborgen apps</string>
-    <string name="search">Zoekopdracht</string>
+    <string name="search">Zoek</string>
     <string name="bottom_dialog_app_rename">Hernoemen</string>
     <string name="bottom_dialog_add_to_home">Toevoegen aan startscherm</string>
-    <string name="bottom_dialog_order_home_apps">Home-apps bestellen</string>
+    <string name="bottom_dialog_order_home_apps">Home-apps rangschikken</string>
     <string name="bottom_dialog_remove_from_home">Verwijderen van startscherm</string>
     <string name="bottom_dialog_add_to_hidden">Verborgen app</string>
     <string name="bottom_dialog_remove_to_hidden">Verwijder verborgen app</string>
@@ -62,23 +62,23 @@
     <string name="settings_widgets_name">Widgets-instellingen</string>
     <string name="settings_title_home_display_preferences">Weergave</string>
     <string name="settings_title_home_behavior_preferences">Gedrag</string>
-    <string name="settings_title_home_appearance_preferences">Verschijning</string>
+    <string name="settings_title_home_appearance_preferences">Uiterlijk</string>
     <string name="settings_title_gestures">Gebaren</string>
     <string name="settings_title_miscellaneous">Gemengd</string>
-    <string name="settings_title_others">Anderen</string>
+    <string name="settings_title_others">Overige</string>
     <string name="settings_display_status_bar">Statusbalk weergeven</string>
     <string name="settings_display_date">Datum weergeven</string>
-    <string name="settings_display_time">Show Time</string>
-    <string name="settings_display_battery">Toon batterij</string>
+    <string name="settings_display_time">Tijd weergeven</string>
+    <string name="settings_display_battery">Batterij weergeven</string>
     <string name="settings_display_alarm_clock">Wekker weergeven</string>
-    <string name="settings_display_daily_word">Toon dagelijks woord</string>
+    <string name="settings_display_daily_word">Dagelijks woord weergeven</string>
     <string name="settings_display_app_icons">App-pictogrammen weergeven</string>
     <string name="settings_display_app_icon_dots">App-pictogrammen weergeven als stippen</string>
-    <string name="settings_display_automatic_keyboard">Toetsenbord voor automatische weergave</string>
+    <string name="settings_display_automatic_keyboard">Toetsenbord automatisch tonen</string>
     <string name="settings_display_auto_open_apps">Laatste app automatisch openen</string>
     <string name="settings_search_from_start">Zoeken vanaf start</string>
     <string name="settings_display_lock_settings">Instellingen vergrendelen</string>
-    <string name="settings_appearance_text_size_title">Maat</string>
+    <string name="settings_appearance_text_size_title">Grootte</string>
     <string name="settings_appearance_color_title">Kleur</string>
     <string name="settings_appearance_alignment_title">Uitlijning</string>
     <string name="settings_appearance_padding_title">Opvulling</string>
@@ -94,32 +94,32 @@
     <string name="appearance_bottom_dialog_desc_widget_background">Widgetachtergrond\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_widget_text">Widgettekst\u0020:\u0020</string>
     <string name="settings_double_tap">Dubbeltik</string>
-    <string name="settings_swipe_up">Omhoog scrollen</string>
-    <string name="settings_swipe_down">Naar beneden swipen</string>
-    <string name="settings_swipe_left">Veeg naar links</string>
-    <string name="settings_swipe_right">Veeg naar rechts</string>
+    <string name="settings_swipe_up">Omhoog vegen</string>
+    <string name="settings_swipe_down">Omlaag vegen</string>
+    <string name="settings_swipe_left">Naar links vegen</string>
+    <string name="settings_swipe_right">Naar rechts vegen</string>
     <string name="settings_select_search_engine">Selecteer een zoekmachine</string>
     <string name="settings_search_engine">Zoekmachine</string>
     <string name="settings_select_filter_strength">Selecteer een filtersterkte</string>
     <string name="settings_filter_strength">Filtersterkte</string>
     <string name="settings_select_launcher_font">Selecteer een lettertypefamilie</string>
     <string name="settings_launcher_font">Lettertypefamilie</string>
-    <string name="settings_reload_app_backup">Er is een back-up gemaakt van voorkeuren.</string>
+    <string name="settings_reload_app_backup">Er is een back-up gemaakt van uw voorkeuren.</string>
     <string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
     <string name="settings_actions_open_app">Open app</string>
     <string name="settings_actions_open_app_run">%sopenen</string>
     <string name="settings_actions_lock_screen">Vergrendel scherm</string>
     <string name="settings_actions_show_notifications">Toon meldingen</string>
-    <string name="settings_actions_show_app_list">Toon appslijst</string>
+    <string name="settings_actions_show_app_list">Toon App Lijst</string>
     <string name="settings_actions_show_favorite_list">Favorietenlijst weergeven</string>
-    <string name="settings_actions_show_hidden_list">Toon verborgen lijst</string>
-    <string name="settings_actions_open_quick_settings">Open Snelle instellingen</string>
+    <string name="settings_actions_show_hidden_list">Verborgen lijst weergeven</string>
+    <string name="settings_actions_open_quick_settings">Open Snelle Instellingen</string>
     <string name="settings_actions_show_recents">Toon recent</string>
     <string name="settings_actions_show_widgets">Widgets weergeven</string>
-    <string name="settings_actions_open_power_dialog">Open het energiedialoogvenster</string>
+    <string name="settings_actions_open_power_dialog">Toon uitschakel-opties</string>
     <string name="settings_actions_take_a_screenshot">Maak een screenshot</string>
-    <string name="settings_actions_disabled">Gehandicapt</string>
-    <string name="settings_units_metric">Metriek</string>
+    <string name="settings_actions_disabled">Uitgeschakeld</string>
+    <string name="settings_units_metric">Metrisch</string>
     <string name="settings_units_imperial">Imperiaal</string>
     <string name="settings_font_system">Systeem</string>
     <string name="authentication_title">Authenticatie</string>
@@ -128,22 +128,22 @@
     <string name="authentication_succeeded">Authenticatie geslaagd</string>
     <string name="authentication_failed">Authenticatie mislukt</string>
     <string name="authentication_error">Authenticatiefout: %1$s(code %2$d)</string>
-    <string name="bottom_alignment_start">Ster</string>
-    <string name="bottom_alignment_center">Centrum</string>
+    <string name="bottom_alignment_start">Start</string>
+    <string name="bottom_alignment_center">Midden</string>
     <string name="bottom_alignment_end">Einde</string>
     <string name="accessibility_settings_title">Toegankelijkheidsinstellingen</string>
     <string name="accessibility_settings_enable">Inschakelen</string>
-    <string name="accessibility_settings_disable">Uitzetten</string>
-    <string name="accessibility_service_name">Easy Launcher-actiesservice</string>
-    <string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie dubbeltikken om te vergrendelen in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze
+    <string name="accessibility_settings_disable">Uitschakelen</string>
+    <string name="accessibility_service_name">Easy Launcher Acties Service</string>
+    <string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie \'dubbeltikken om te vergrendelen\' in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze
         toegankelijkheidsservice verzamelt of deelt geen gegevens.</string>
     <string name="search_default">Standaard</string>
-    <string name="search_google">Googlen</string>
+    <string name="search_google">Google</string>
     <string name="search_yahoo">Yahoo</string>
     <string name="search_duckduckgo">DuckDuckGo</string>
     <string name="search_bing">Bing</string>
-    <string name="search_brave">Moedig</string>
-    <string name="search_swisscow">Zwitserse koeien</string>
+    <string name="search_brave">Brave</string>
+    <string name="search_swisscow">SwissCows</string>
     <string name="widgets_battery_level">Batterijniveau: %d%%</string>
     <string name="widgets_battery_count">Aantal batterijladingen: %1$d</string>
     <string name="widgets_battery_current">Batterijstroom: %1$.2f %2$s</string>
@@ -155,7 +155,7 @@
     <string name="widgets_settings_show_weather_sun">Toon zonsondergang &amp; Zonsopgang</string>
     <string name="widgets_settings_show_battery">Batterijwidget</string>
     <string name="widgets_settings_display">Weergave</string>
-    <string name="widgets_settings_select_order">Selecteer bestelling</string>
+    <string name="widgets_settings_select_order">Selecteer volgorde</string>
     <string name="acra_crash">Botsing</string>
     <string name="acra_dialog_text">Het spijt ons, maar %1$s heeft een onverwacht probleem ondervonden en moet worden afgesloten. Help ons alstublieft verbeteren door een crashrapport te sturen.\n\n%1$s waardeert uw privacy en de verzamelde gegevens worden uitsluitend gebruikt voor het verbeteren van de app-stabiliteit. Er worden geen persoonlijke gegevens verzameld. Bedankt voor je ondersteuning!</string>
     <string name="acra_send_report">Verzend rapport</string>
@@ -163,7 +163,7 @@
     <string name="acra_mail_body">Er is een crash opgetreden in de applicatie.\n\nHieronder staan de details van het apparaat. Het foutenlogboek is als bestand bijgevoegd ter referentie. Wij stellen uw hulp bij het oplossen van dit probleem op prijs.\n\nApparaatinformatie: \n[VUL de onderstaande informatie in en verwijder alles tussen de vierkante haken, anders wordt dit genegeerd.]\n\n- App-versie: [11.11.11]\n- Android-versie: [Apple 1.16]\n- Apparaatnaam: [Android Apple Phone 69]\n- Installatielocatie: [Github, Fdroid, Obtanium, Tesla Space Station]\n\nUw snelle aandacht voor deze kwestie wordt zeer op prijs gesteld.\n\nDank u wel.\n</string>
     <string-array name="alignment_options">
         <item>Links</item>
-        <item>Centrum</item>
+        <item>Midden</item>
         <item>Rechts</item>
     </string-array>
 </resources>
