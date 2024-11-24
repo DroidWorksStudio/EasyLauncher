@@ -17,6 +17,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Updated Language Files. ([#163](https://github.com/DroidWorksStudio/EasyLauncher/issues/163)) - ([99d9501](https://github.com/DroidWorksStudio/EasyLauncher/commit/99d9501c0089fc8deb7da38e3925b7cbd3395c36))
 
+### Refactoring:
+
+- Cleaned up unneeded logs - ([8981ed1](https://github.com/DroidWorksStudio/EasyLauncher/commit/8981ed108f1ce74315cd9b41c7e55829a8558fd6))
+
 ### Releases:
 
 - Prepare for version 0.2.8 - ([b098564](https://github.com/DroidWorksStudio/EasyLauncher/commit/b098564570efceca1ae223737e01f67200a587bf))
