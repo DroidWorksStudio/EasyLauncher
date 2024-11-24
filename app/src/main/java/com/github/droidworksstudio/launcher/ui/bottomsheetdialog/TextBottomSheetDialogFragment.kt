@@ -57,6 +57,8 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
         binding.selectTimeTextSize.setText("${preferenceHelper.timeTextSize}")
         binding.selectAppTextSize.setText("${preferenceHelper.appTextSize}")
         binding.selectBatteryTextSize.setText("${preferenceHelper.batteryTextSize}")
+        binding.selectAlarmClockTextSize.setText("${preferenceHelper.alarmClockTextSize}")
+        binding.selectDailyWordTextSize.setText("${preferenceHelper.dailyWordTextSize}")
     }
 
     private fun observeValueChange() {
@@ -64,17 +66,23 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
         val timeValue = binding.selectTimeTextSize.text.toString()
         val appValue = binding.selectAppTextSize.text.toString()
         val batteryValue = binding.selectBatteryTextSize.text.toString()
+        val alarmValue = binding.selectAlarmClockTextSize.text.toString()
+        val wordValue = binding.selectDailyWordTextSize.text.toString()
 
         val dateFloatValue = parseFloatValue(dateValue, preferenceHelper.dateTextSize)
         val timeFloatValue = parseFloatValue(timeValue, preferenceHelper.timeTextSize)
         val appFloatValue = parseFloatValue(appValue, preferenceHelper.appTextSize)
         val batteryFloatValue = parseFloatValue(batteryValue, preferenceHelper.batteryTextSize)
+        val alarmFloatValue = parseFloatValue(alarmValue, preferenceHelper.alarmClockTextSize)
+        val wordFloatValue = parseFloatValue(wordValue, preferenceHelper.dailyWordTextSize)
         dismiss()
 
         preferenceViewModel.setDateTextSize(dateFloatValue)
         preferenceViewModel.setTimeTextSize(timeFloatValue)
         preferenceViewModel.setAppTextSize(appFloatValue)
         preferenceViewModel.setBatteryTextSize(batteryFloatValue)
+        preferenceViewModel.setAlarmClockTextSize(alarmFloatValue)
+        preferenceViewModel.setDailyWordTextSize(wordFloatValue)
     }
 
     private fun parseFloatValue(text: String, defaultValue: Float): Float {

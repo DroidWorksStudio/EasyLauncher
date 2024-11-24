@@ -2,6 +2,7 @@ package com.github.droidworksstudio.launcher.helper
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.app.AlarmManager
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
@@ -10,12 +11,17 @@ import android.content.res.Configuration
 import android.content.res.Resources
 import android.net.Uri
 import android.os.Build
+import android.text.SpannableStringBuilder
+import android.text.style.ImageSpan
 import android.util.Log
+import android.util.TypedValue
 import android.view.Gravity
 import android.view.View
 import android.view.Window
 import android.view.WindowInsets
 import android.widget.TextView
+import androidx.annotation.RequiresApi
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.navigation.NavOptions
 import com.github.droidworksstudio.common.showLongToast
@@ -171,6 +177,38 @@ class AppHelper @Inject constructor() {
             (dayOfYear - 1) % dailyWordsArray.size // Subtracting 1 to align with array indexing
         return dailyWordsArray[wordIndex]
     }
+
+    @RequiresApi(Build.VERSION_CODES.Q)
+    fun getNextAlarm(context: Context, preferenceHelper: PreferenceHelper): CharSequence {
+        val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val nextAlarmClock = alarmManager.nextAlarmClock
+
+        if (nextAlarmClock == null) return "No alarm is set."
+
+        val alarmTime = nextAlarmClock.triggerTime
+        val formattedTime = SimpleDateFormat("EEE, MMM d hh:mm a", Locale.getDefault()).format(alarmTime)
+
+        val drawable = AppCompatResources.getDrawable(context, R.drawable.ic_alarm_clock)
+        val fontSize = TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_SP,
+            (preferenceHelper.alarmClockTextSize / 1.5).toFloat(),
+            context.resources.displayMetrics
+        ).toInt()
+
+        drawable?.setBounds(0, 0, fontSize, fontSize)
+
+        return SpannableStringBuilder(" ").apply {
+            drawable?.let {
+                setSpan(
+                    ImageSpan(it, ImageSpan.ALIGN_CENTER),
+                    0, 1,
+                    SpannableStringBuilder.SPAN_EXCLUSIVE_EXCLUSIVE
+                )
+            }
+            append(" $formattedTime")
+        }
+    }
+
 
     fun shareApplicationButton(context: Context) {
         val shareIntent = Intent(Intent.ACTION_SEND)

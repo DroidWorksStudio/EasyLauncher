@@ -43,6 +43,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.SHOW_DAILY_WORD, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_DAILY_WORD, value).apply()
 
+    var showAlarmClock: Boolean
+        get() = prefs.getBoolean(Constants.SHOW_ALARM_CLOCK, false)
+        set(value) = prefs.edit().putBoolean(Constants.SHOW_ALARM_CLOCK, value).apply()
+
     var showWeatherWidget: Boolean
         get() = prefs.getBoolean(Constants.SHOW_WEATHER_WIDGET, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_WEATHER_WIDGET, value).apply()
@@ -58,6 +62,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
     var dateColor: Int
         get() = prefs.getInt(Constants.DATE_COLOR, setColor.toInt())
         set(value) = prefs.edit().putInt(Constants.DATE_COLOR, value).apply()
+
+    var alarmClockColor: Int
+        get() = prefs.getInt(Constants.ALARM_CLOCK_COLOR, setColor.toInt())
+        set(value) = prefs.edit().putInt(Constants.ALARM_CLOCK_COLOR, value).apply()
 
     var timeColor: Int
         get() = prefs.getInt(Constants.TIME_COLOR, setColor.toInt())
@@ -127,6 +135,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getInt(Constants.HOME_TIME_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(Constants.HOME_TIME_ALIGNMENT, value).apply()
 
+    var homeAlarmClockAlignment: Int
+        get() = prefs.getInt(Constants.HOME_ALARM_CLOCK_ALIGNMENT, Gravity.START)
+        set(value) = prefs.edit().putInt(Constants.HOME_ALARM_CLOCK_ALIGNMENT, value).apply()
+
     var homeDailyWordAlignment: Int
         get() = prefs.getInt(Constants.HOME_DAILY_WORD_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(Constants.HOME_DAILY_WORD_ALIGNMENT, value).apply()
@@ -146,6 +158,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
     var appTextSize: Float
         get() = prefs.getFloat(Constants.APP_TEXT_SIZE, 24f)
         set(value) = prefs.edit().putFloat(Constants.APP_TEXT_SIZE, value).apply()
+
+    var alarmClockTextSize: Float
+        get() = prefs.getFloat(Constants.ALARM_CLOCK_TEXT_SIZE, 22f)
+        set(value) = prefs.edit().putFloat(Constants.ALARM_CLOCK_TEXT_SIZE, value).apply()
 
     var dailyWordTextSize: Float
         get() = prefs.getFloat(Constants.DAILY_WORD_TEXT_SIZE, 18f)

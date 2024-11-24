@@ -17,6 +17,7 @@ class PreferenceViewModel @Inject constructor(
     val showTimeLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showDateLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showDailyWordLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    val showAlarmClockLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showBatteryLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showWeatherWidgetLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showWeatherWidgetSunSetRiseLiveData: MutableLiveData<Boolean> = MutableLiveData()
@@ -26,11 +27,13 @@ class PreferenceViewModel @Inject constructor(
     private val homeAppAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val homeDateAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val homeTimeAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
+    private val homeAlarmClockAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val homeDailyWordAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val dateColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val timeColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val batteryColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val dailyWordColorLiveData: MutableLiveData<Int> = MutableLiveData()
+    private val alarmClockColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val widgetBackgroundColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val widgetTextColorLiveData: MutableLiveData<Int> = MutableLiveData()
     private val appColorLiveData: MutableLiveData<Int> = MutableLiveData()
@@ -38,6 +41,8 @@ class PreferenceViewModel @Inject constructor(
     private val timeTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val appTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val batteryTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
+    private val alarmClockTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
+    private val dailyWordTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val autoOpenAppsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val searchFromStartLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
@@ -86,6 +91,11 @@ class PreferenceViewModel @Inject constructor(
         showDailyWordLiveData.postValue(preferenceHelper.showDailyWord)
     }
 
+    fun setShowAlarmClock(showAlarmClock: Boolean) {
+        preferenceHelper.showAlarmClock = showAlarmClock
+        showAlarmClockLiveData.postValue(preferenceHelper.showAlarmClock)
+    }
+
     fun setShowAppIcons(showAppIcons: Boolean) {
         preferenceHelper.showAppIcon = showAppIcons
         showAppIconLiveData.postValue(preferenceHelper.showAppIcon)
@@ -94,6 +104,11 @@ class PreferenceViewModel @Inject constructor(
     fun setShowAppIconDots(showAppIconAsDots: Boolean) {
         preferenceHelper.showAppIconAsDots = showAppIconAsDots
         showAppIconAsDotsLiveData.postValue(preferenceHelper.showAppIconAsDots)
+    }
+
+    fun setAlarmClockColor(alarmClockColor: Int) {
+        preferenceHelper.alarmClockColor = alarmClockColor
+        alarmClockColorLiveData.postValue(preferenceHelper.alarmClockColor)
     }
 
     fun setDailyWordColor(dailyWordColor: Int) {
@@ -176,6 +191,11 @@ class PreferenceViewModel @Inject constructor(
         homeDailyWordAlignmentLiveData.postValue(preferenceHelper.homeDailyWordAlignment)
     }
 
+    fun setHomeAlarmClockAppAlignment(homeAlarmClockAlignment: Int) {
+        preferenceHelper.homeAlarmClockAlignment = homeAlarmClockAlignment
+        homeAlarmClockAlignmentLiveData.postValue(preferenceHelper.homeAlarmClockAlignment)
+    }
+
     fun setDateTextSize(dateTextSize: Float) {
         preferenceHelper.dateTextSize = dateTextSize
         dateTextSizeLiveData.postValue(preferenceHelper.dateTextSize)
@@ -194,6 +214,16 @@ class PreferenceViewModel @Inject constructor(
     fun setBatteryTextSize(batteryTextSize: Float) {
         preferenceHelper.batteryTextSize = batteryTextSize
         batteryTextSizeLiveData.postValue(preferenceHelper.batteryTextSize)
+    }
+
+    fun setAlarmClockTextSize(alarmTextSize: Float) {
+        preferenceHelper.alarmClockTextSize = alarmTextSize
+        alarmClockTextSizeLiveData.postValue(preferenceHelper.alarmClockTextSize)
+    }
+
+    fun setDailyWordTextSize(dailyWordTextSize: Float) {
+        preferenceHelper.dailyWordTextSize = dailyWordTextSize
+        dailyWordTextSizeLiveData.postValue(preferenceHelper.dailyWordTextSize)
     }
 
     fun setAppPaddingSize(appPaddingSize: Float) {

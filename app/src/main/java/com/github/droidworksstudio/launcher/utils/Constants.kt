@@ -29,6 +29,7 @@ object Constants {
     const val SHOW_DATE = "SHOW_DATE"
     const val SHOW_TIME = "SHOW_TIME"
     const val SHOW_DAILY_WORD = "SHOW_DAILY_WORD"
+    const val SHOW_ALARM_CLOCK = "SHOW_ALARM_CLOCK"
     const val SHOW_BATTERY = "SHOW_BATTERY"
     const val SHOW_STATUS_BAR = "SHOW_STATUS_BAR"
 
@@ -39,6 +40,7 @@ object Constants {
     const val DATE_COLOR = "DATE_COLOR"
     const val TIME_COLOR = "TIME_COLOR"
     const val BATTERY_COLOR = "BATTERY_COLOR"
+    const val ALARM_CLOCK_COLOR = "ALARM_CLOCK_COLOR"
     const val DAILY_WORD_COLOR = "DAILY_WORD_COLOR"
     const val WIDGET_BACKGROUND_COLOR = "WIDGET_BACKGROUND_COLOR"
     const val WIDGET_TEXT_COLOR = "WIDGET_TEXT_COLOR"
@@ -48,6 +50,7 @@ object Constants {
     const val DATE_TEXT_SIZE = "DATE_TEXT_SIZE"
     const val TIME_TEXT_SIZE = "TIME_TEXT_SIZE"
     const val APP_TEXT_SIZE = "APP_TEXT_SIZE"
+    const val ALARM_CLOCK_TEXT_SIZE = "ALARM_CLOCK_TEXT_SIZE"
     const val DAILY_WORD_TEXT_SIZE = "DAILY_WORD_TEXT_SIZE"
 
     const val APP_TEXT_PADDING = "APP_TEXT_PADDING"
@@ -64,6 +67,7 @@ object Constants {
     const val HOME_DATE_ALIGNMENT = "HOME_DATE_ALIGNMENT"
     const val HOME_TIME_ALIGNMENT = "HOME_TIME_ALIGNMENT"
     const val HOME_APP_ALIGNMENT = "HOME_APP_ALIGNMENT"
+    const val HOME_ALARM_CLOCK_ALIGNMENT = "HOME_ALARM_CLOCK_ALIGNMENT"
     const val HOME_DAILY_WORD_ALIGNMENT = "HOME_DAILY_WORD_ALIGNMENT"
 
     const val NOTIFICATION_SERVICE = "statusbar"

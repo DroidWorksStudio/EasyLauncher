@@ -91,6 +91,7 @@ class SettingsLookFeelFragment : Fragment(),
             timeSwitchCompat.isChecked = preferenceHelper.showTime
             dateSwitchCompat.isChecked = preferenceHelper.showDate
             batterySwitchCompat.isChecked = preferenceHelper.showBattery
+            alarmClockSwitchCompat.isChecked = preferenceHelper.showAlarmClock
             dailyWordSwitchCompat.isChecked = preferenceHelper.showDailyWord
             appIconsSwitchCompat.isChecked = preferenceHelper.showAppIcon
             appIconDotsSwitchCompat.isChecked = preferenceHelper.showAppIconAsDots
@@ -156,6 +157,10 @@ class SettingsLookFeelFragment : Fragment(),
 
             batterySwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowBattery(isChecked)
+            }
+
+            alarmClockSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowAlarmClock(isChecked)
             }
 
             dailyWordSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
