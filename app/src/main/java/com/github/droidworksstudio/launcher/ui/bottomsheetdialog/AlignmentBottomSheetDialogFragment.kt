@@ -77,6 +77,10 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
         binding.selectWordTextSize.apply {
             text = appHelper.gravityToString(preferenceHelper.homeDailyWordAlignment)
         }
+
+        binding.selectAlarmClockTextSize.apply {
+            text = appHelper.gravityToString(preferenceHelper.homeAlarmClockAlignment)
+        }
     }
 
     private fun observeClickListener() {
@@ -97,6 +101,11 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
         binding.bottomAlignmentWordView.setOnClickListener {
             selectedAlignment = REQUEST_KEY_WORD_ALIGNMENT
+            showListDialog(selectedAlignment)
+        }
+
+        binding.bottomAlignmentAlarmClockView.setOnClickListener {
+            selectedAlignment = REQUEST_KEY_ALARM_CLOCK_ALIGNMENT
             showListDialog(selectedAlignment)
         }
     }
@@ -144,6 +153,14 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
                         binding.selectWordTextSize
                     )
                 }
+
+                REQUEST_KEY_ALARM_CLOCK_ALIGNMENT -> {
+                    setAlignment(
+                        selectedAlignment,
+                        gravity,
+                        binding.selectAlarmClockTextSize
+                    )
+                }
             }
         }
         dialog.show()
@@ -178,6 +195,11 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
                 alignmentGetter = { preferenceHelper.homeDailyWordAlignment }
             }
 
+            REQUEST_KEY_ALARM_CLOCK_ALIGNMENT -> {
+                alignmentPreference = { preferenceViewModel.setHomeAlarmClockAppAlignment(it) }
+                alignmentGetter = { preferenceHelper.homeAlarmClockAlignment }
+            }
+
             else -> return
         }
 
@@ -190,6 +212,7 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
         private const val REQUEST_KEY_DATE_ALIGNMENT = "REQUEST_KEY_DATE_ALIGNMENT"
         private const val REQUEST_KEY_TIME_ALIGNMENT = "REQUEST_KEY_TIME_ALIGNMENT"
         private const val REQUEST_KEY_APP_ALIGNMENT = "REQUEST_KEY_APP_ALIGNMENT"
+        private const val REQUEST_KEY_ALARM_CLOCK_ALIGNMENT = "REQUEST_KEY_ALARM_CLOCK_ALIGNMENT"
         private const val REQUEST_KEY_WORD_ALIGNMENT = "REQUEST_KEY_WORD_ALIGNMENT"
     }
 }

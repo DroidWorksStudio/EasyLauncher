@@ -78,6 +78,14 @@
                     tools:text="Thu, 30 Dec" />
 
                 <TextView
+                    android:id="@+id/alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="32sp"
+                    android:visibility="gone" />
+
+                <TextView
                     android:id="@+id/word"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

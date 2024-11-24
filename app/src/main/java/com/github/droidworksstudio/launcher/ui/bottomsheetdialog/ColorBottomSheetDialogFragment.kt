@@ -80,6 +80,11 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
             setTextColor(preferenceHelper.batteryColor)
         }
 
+        binding.selectAlarmClockTextColor.apply {
+            text = bottomDialogHelper.getColorText(preferenceHelper.alarmClockColor)
+            setTextColor(preferenceHelper.alarmClockColor)
+        }
+
         binding.selectWordTextColor.apply {
             text = bottomDialogHelper.getColorText(preferenceHelper.dailyWordColor)
             setTextColor(preferenceHelper.dailyWordColor)
@@ -138,6 +143,14 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
             )
         }
 
+        binding.bottomColorAlarmClockView.setOnClickListener {
+            showColorPickerDialog(
+                binding.selectAlarmClockTextColor,
+                REQUEST_KEY_DAILY_ALARM_CLOCK_COLOR,
+                preferenceHelper.alarmClockColor
+            )
+        }
+
         binding.bottomColorWidgetBackgroundView.setOnClickListener {
             showColorPickerDialog(
                 binding.selectWidgetBackgroundColor,
@@ -170,11 +183,6 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
                 setTextColor(pickedColor)
             }
             when (requestCode) {
-                REQUEST_KEY_DAILY_WORD_COLOR -> {
-                    preferenceViewModel.setDailyWordColor(pickedColor)
-                    Log.d("Tag", "Settings Daily Color: ${Integer.toHexString(pickedColor)}")
-                }
-
                 REQUEST_KEY_BATTERY_COLOR -> {
                     preferenceViewModel.setBatteryColor(pickedColor)
                     Log.d("Tag", "Settings Battery Color: ${Integer.toHexString(pickedColor)}")
@@ -195,6 +203,16 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
                     Log.d("Tag", "Settings Time Color: ${Integer.toHexString(color)}")
                 }
 
+                REQUEST_KEY_DAILY_ALARM_CLOCK_COLOR -> {
+                    preferenceViewModel.setAlarmClockColor(pickedColor)
+                    Log.d("Tag", "Settings Alarm Clock Color: ${Integer.toHexString(pickedColor)}")
+                }
+
+                REQUEST_KEY_DAILY_WORD_COLOR -> {
+                    preferenceViewModel.setDailyWordColor(pickedColor)
+                    Log.d("Tag", "Settings Daily Word Color: ${Integer.toHexString(pickedColor)}")
+                }
+
                 REQUEST_KEY_WIDGET_BACKGROUND_COLOR -> {
                     preferenceViewModel.setWidgetBackgroundColor(pickedColor)
                     Log.d("Tag", "Settings Widget Background Color: ${Integer.toHexString(color)}")
@@ -213,6 +231,7 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
     companion object {
         private const val REQUEST_KEY_DATE_COLOR = "REQUEST_DATE_COLOR"
         private const val REQUEST_KEY_TIME_COLOR = "REQUEST_TIME_COLOR"
+        private const val REQUEST_KEY_DAILY_ALARM_CLOCK_COLOR = "REQUEST_KEY_DAILY_ALARM_CLOCK_COLOR"
         private const val REQUEST_KEY_DAILY_WORD_COLOR = "REQUEST_DAILY_WORD_COLOR"
         private const val REQUEST_KEY_APP_COLOR = "REQUEST_APP_COLOR"
         private const val REQUEST_KEY_BATTERY_COLOR = "REQUEST_BATTERY_COLOR"

@@ -139,6 +139,7 @@ class HomeFragment : Fragment(),
 
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
+        preferenceViewModel.setShowAlarmClock(preferenceHelper.showAlarmClock)
         preferenceViewModel.setShowDailyWord(preferenceHelper.showDailyWord)
     }
 
@@ -252,9 +253,11 @@ class HomeFragment : Fragment(),
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeUserInterfaceSettings() {
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
+        preferenceViewModel.setShowAlarmClock(preferenceHelper.showAlarmClock)
         preferenceViewModel.setShowDailyWord(preferenceHelper.showDailyWord)
         preferenceViewModel.setShowBattery(preferenceHelper.showBattery)
 
@@ -297,6 +300,17 @@ class HomeFragment : Fragment(),
                 preferenceHelper.showDailyWord
             )
         }
+
+        preferenceViewModel.showDailyWordLiveData.observe(viewLifecycleOwner) {
+            appHelper.updateUI(
+                binding.alarm,
+                preferenceHelper.homeAlarmClockAlignment,
+                preferenceHelper.alarmClockColor,
+                preferenceHelper.alarmClockTextSize,
+                preferenceHelper.showAlarmClock
+            )
+        }
+
         binding.apply {
             nestScrollView.hideKeyboard()
 
@@ -312,6 +326,7 @@ class HomeFragment : Fragment(),
             date.format12Hour = datePattern
             date.format24Hour = datePattern
 
+            alarm.text = appHelper.getNextAlarm(context, preferenceHelper)
             word.text = appHelper.wordOfTheDay(resources)
         }
     }
