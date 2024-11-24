@@ -70,6 +70,7 @@
     <string name="settings_display_date">Tarihi Göster</string>
     <string name="settings_display_time">Gösteri zamanı</string>
     <string name="settings_display_battery">Pili Göster</string>
+    <string name="settings_display_alarm_clock">Show Alarm Clock</string>
     <string name="settings_display_daily_word">Günlük Kelimeyi Göster</string>
     <string name="settings_display_app_icons">Uygulama Simgelerini Göster</string>
     <string name="settings_display_app_icon_dots">Uygulama Simgelerini Noktalar Olarak Göster</string>
@@ -87,6 +88,7 @@
     <string name="appearance_bottom_dialog_desc_date">Tarih\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Zaman\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">Uygulama\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Kelime\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Pil\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_widget_background">Widget Arka Planı\u0020:\u0020</string>
