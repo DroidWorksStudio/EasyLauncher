@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.2.9 - ([8a919b0](https://github.com/DroidWorksStudio/EasyLauncher/commit/8a919b0709318376778cea26f541aaa8f14c3478))
+
+## [0.2.8](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.8) - (25, November 2024)
+
 ### Implemented Enhancements:
 
 - Added app language selection. - ([b4e5687](https://github.com/DroidWorksStudio/EasyLauncher/commit/b4e56876d1b0112e2d7865ffba96508fd81260ed))
