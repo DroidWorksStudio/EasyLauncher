@@ -137,11 +137,11 @@ class AppHelper @Inject constructor() {
         }
     }
 
-    fun getGravityFromSelectedItem(selectedItem: String): Int {
+    fun getGravityFromSelectedItem(selectedItem: Int): Int {
         return when (selectedItem) {
-            "Left" -> Gravity.START
-            "Center" -> Gravity.CENTER
-            "Right" -> Gravity.END
+            0 -> Gravity.START
+            1 -> Gravity.CENTER
+            2 -> Gravity.END
             else -> Gravity.START
         }
     }
