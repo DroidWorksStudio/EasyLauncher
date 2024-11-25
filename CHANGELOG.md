@@ -31,6 +31,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Cleaned up README.md - ([ae57958](https://github.com/DroidWorksStudio/EasyLauncher/commit/ae57958bef8298afe33939e0d3f791471a196882))
 - Cleaned up unneeded logs - ([8981ed1](https://github.com/DroidWorksStudio/EasyLauncher/commit/8981ed108f1ce74315cd9b41c7e55829a8558fd6))
 
 ### Releases:
