@@ -2,12 +2,14 @@ package com.github.droidworksstudio.launcher.ui.settings
 
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -61,6 +63,7 @@ class SettingsLookFeelFragment : Fragment(),
     }
 
     // Called after the fragment view is created
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navController = findNavController()
         // Set according to the system theme mode
@@ -106,6 +109,7 @@ class SettingsLookFeelFragment : Fragment(),
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeClickListener() {
         setupSwitchListeners()
 
@@ -141,34 +145,49 @@ class SettingsLookFeelFragment : Fragment(),
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun setupSwitchListeners() {
         binding.apply {
             statueBarSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowStatusBar(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             dateSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowDate(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             timeSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowTime(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             batterySwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowBattery(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             alarmClockSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowAlarmClock(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             dailyWordSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowDailyWord(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             appIconsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowAppIcons(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
 
                 // Disable and gray out the other setting if appIconsSwitchCompat is checked
                 binding.appIconDotsSwitchCompat.isEnabled = isChecked
@@ -177,6 +196,8 @@ class SettingsLookFeelFragment : Fragment(),
 
             appIconDotsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowAppIconDots(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
         }
 
@@ -184,6 +205,7 @@ class SettingsLookFeelFragment : Fragment(),
 
     private var launcherFontDialog: AlertDialog? = null
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun showLauncherFontDialog() {
         // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
         launcherFontDialog?.dismiss()
@@ -200,6 +222,9 @@ class SettingsLookFeelFragment : Fragment(),
             val selectedItem = items[which]
             preferenceViewModel.setLauncherFont(selectedItem)
             binding.miscellaneousLauncherFontsControl.text = preferenceHelper.launcherFont.name
+
+            val feedbackType = "select"
+            appHelper.triggerHapticFeedback(context, feedbackType)
 
             // Delay the restart slightly to ensure preferences are saved
             Handler(Looper.getMainLooper()).postDelayed({

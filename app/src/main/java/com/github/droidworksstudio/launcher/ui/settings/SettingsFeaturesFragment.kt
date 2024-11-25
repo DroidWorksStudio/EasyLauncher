@@ -66,7 +66,7 @@ class SettingsFeaturesFragment : Fragment(),
     }
 
     // Called after the fragment view is created
-    @RequiresApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navController = findNavController()
         // Set according to the system theme mode
@@ -129,7 +129,7 @@ class SettingsFeaturesFragment : Fragment(),
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeClickListener() {
         setupSwitchListeners()
 
@@ -166,6 +166,7 @@ class SettingsFeaturesFragment : Fragment(),
 
     private var searchEngineDialog: AlertDialog? = null
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun showSearchEngineDialog() {
         // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
         searchEngineDialog?.dismiss()
@@ -181,8 +182,11 @@ class SettingsFeaturesFragment : Fragment(),
                 val selectedItem = items[which]
                 preferenceViewModel.setSearchEngine(selectedItem)
                 binding.miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.name
+                val feedbackType = "select"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
         }
+
         // Assign the created dialog to launcherFontDialog
         searchEngineDialog = dialogBuilder.create()
         searchEngineDialog?.show()
@@ -190,7 +194,7 @@ class SettingsFeaturesFragment : Fragment(),
 
     private var filterStrengthDialog: AlertDialog? = null
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun showFilterStrengthDialog() {
         // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
         filterStrengthDialog?.dismiss()
@@ -244,9 +248,13 @@ class SettingsFeaturesFragment : Fragment(),
                 // Save the slider value when OK is pressed
                 preferenceViewModel.setFilterStrength(currentValue)
                 binding.miscellaneousFilterStrengthControl.text = "$currentValue"
+
+                val feedbackType = "select"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
             setNegativeButton("cancel", null)
         }
+
         // Assign the created dialog to launcherFontDialog
         filterStrengthDialog = dialogBuilder.create()
         filterStrengthDialog?.show()
@@ -254,6 +262,7 @@ class SettingsFeaturesFragment : Fragment(),
 
     private var appSelectionDialog: AlertDialog? = null
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun showAppSelectionDialog(swipeType: Constants.Swipe) {
         // Make sure this method is called within a lifecycle owner scope
         lifecycleScope.launch(Dispatchers.Main) {
@@ -278,6 +287,8 @@ class SettingsFeaturesFragment : Fragment(),
                             Constants.Swipe.Left,
                             Constants.Swipe.Right -> handleSwipeAction(swipeType, selectedPackageName)
                         }
+                        val feedbackType = "select"
+                        appHelper.triggerHapticFeedback(context, feedbackType)
                     }
                 }
 
@@ -288,47 +299,66 @@ class SettingsFeaturesFragment : Fragment(),
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun setupSwitchListeners() {
         binding.apply {
             automaticKeyboardSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setAutoKeyboard(isChecked)
+                val feedbackType = if (isChecked) "short" else "long"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             automaticOpenAppSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setAutoOpenApp(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             searchFromStartSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setSearchFromStart(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
             lockSettingsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setLockSettings(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
         }
 
     }
 
+    private var swipeActionDialog: AlertDialog? = null
+
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun swipeActionClickEvent(swipe: Constants.Swipe) {
+        // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
+        swipeActionDialog?.dismiss()
         // Get the array of Action enum values
         val actions = Constants.Action.entries.toTypedArray()
         // Map the enum values to their string representations
         val actionStrings = actions.map { it.getString(context) }.toTypedArray()
 
-        val dialog = MaterialAlertDialogBuilder(context)
-
-        dialog.setTitle("Select a Action")
-        dialog.setItems(actionStrings) { _, which ->
-            val selectedAction = actions[which]
-            when (swipe) {
-                Constants.Swipe.DoubleTap -> handleSwipeAction(context, Constants.Swipe.DoubleTap, selectedAction, binding)
-                Constants.Swipe.Up -> handleSwipeAction(context, Constants.Swipe.Up, selectedAction, binding)
-                Constants.Swipe.Down -> handleSwipeAction(context, Constants.Swipe.Down, selectedAction, binding)
-                Constants.Swipe.Left -> handleSwipeAction(context, Constants.Swipe.Left, selectedAction, binding)
-                Constants.Swipe.Right -> handleSwipeAction(context, Constants.Swipe.Right, selectedAction, binding)
+        val dialogBuilder = MaterialAlertDialogBuilder(context).apply {
+            setTitle("Select a Action")
+            setItems(actionStrings) { _, which ->
+                val selectedAction = actions[which]
+                when (swipe) {
+                    Constants.Swipe.DoubleTap -> handleSwipeAction(context, Constants.Swipe.DoubleTap, selectedAction, binding)
+                    Constants.Swipe.Up -> handleSwipeAction(context, Constants.Swipe.Up, selectedAction, binding)
+                    Constants.Swipe.Down -> handleSwipeAction(context, Constants.Swipe.Down, selectedAction, binding)
+                    Constants.Swipe.Left -> handleSwipeAction(context, Constants.Swipe.Left, selectedAction, binding)
+                    Constants.Swipe.Right -> handleSwipeAction(context, Constants.Swipe.Right, selectedAction, binding)
+                }
+                val feedbackType = "select"
+                appHelper.triggerHapticFeedback(context, feedbackType)
             }
         }
-        dialog.show()
+
+        // Assign the created dialog to launcherFontDialog
+        swipeActionDialog = dialogBuilder.create()
+        swipeActionDialog?.show()
     }
 
     private fun handleSwipeAction(swipeType: Constants.Swipe, selectedPackageName: String) {
@@ -363,6 +393,7 @@ class SettingsFeaturesFragment : Fragment(),
     }
 
     // Function to handle setting action and updating UI
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun handleSwipeAction(context: Context, swipe: Constants.Swipe, action: Constants.Action, binding: FragmentSettingsFeaturesBinding) {
         preferenceViewModel.setSwipeAction(swipe, action)
 
@@ -413,6 +444,7 @@ class SettingsFeaturesFragment : Fragment(),
     }
 
     private fun dismissDialogs() {
+        swipeActionDialog?.dismiss()
         searchEngineDialog?.dismiss()
         filterStrengthDialog?.dismiss()
         appSelectionDialog?.dismiss()

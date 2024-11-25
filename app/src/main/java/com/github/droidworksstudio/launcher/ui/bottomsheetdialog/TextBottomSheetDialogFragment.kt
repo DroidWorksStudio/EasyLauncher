@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogTextSettingsBinding
+import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
@@ -26,6 +27,9 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
     lateinit var preferenceHelper: PreferenceHelper
 
     @Inject
+    lateinit var appHelper: AppHelper
+
+    @Inject
     lateinit var bottomDialogHelper: BottomDialogHelper
 
     private val preferenceViewModel: PreferenceViewModel by viewModels()
@@ -38,7 +42,7 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
         return binding.root
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -61,6 +65,7 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
         binding.selectDailyWordTextSize.setText("${preferenceHelper.dailyWordTextSize}")
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeValueChange() {
         val dateValue = binding.selectDateTextSize.text.toString()
         val timeValue = binding.selectTimeTextSize.text.toString()
@@ -83,6 +88,9 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
         preferenceViewModel.setBatteryTextSize(batteryFloatValue)
         preferenceViewModel.setAlarmClockTextSize(alarmFloatValue)
         preferenceViewModel.setDailyWordTextSize(wordFloatValue)
+
+        val feedbackType = "save"
+        appHelper.triggerHapticFeedback(context, feedbackType)
     }
 
     private fun parseFloatValue(text: String, defaultValue: Float): Float {
@@ -92,6 +100,7 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
         return text.toFloat()
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onDismiss(dialog: DialogInterface) {
         super.onDismiss(dialog)
 

@@ -46,7 +46,7 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
         return binding.root
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -83,6 +83,7 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeClickListener() {
         binding.bottomAlignmentDateView.setOnClickListener {
             selectedAlignment = REQUEST_KEY_DATE_ALIGNMENT
@@ -111,6 +112,7 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
     }
 
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun showListDialog(selectedAlignment: String) {
         val items = resources.getStringArray(R.array.alignment_options)
 
@@ -166,6 +168,7 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
         dialog.show()
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun setAlignment(
         alignmentType: String,
         gravity: Int,
@@ -205,6 +208,8 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
         alignmentPreference(gravity)
         textView.text = appHelper.gravityToString(alignmentGetter())
+        val feedbackType = "select"
+        appHelper.triggerHapticFeedback(context, feedbackType)
     }
 
     companion object {

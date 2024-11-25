@@ -12,6 +12,7 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.databinding.BottomsheetdialogColorSettingsBinding
+import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.BottomDialogHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
@@ -30,6 +31,9 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
     lateinit var preferenceHelper: PreferenceHelper
 
     @Inject
+    lateinit var appHelper: AppHelper
+
+    @Inject
     lateinit var bottomDialogHelper: BottomDialogHelper
 
     private val preferenceViewModel: PreferenceViewModel by viewModels()
@@ -44,7 +48,7 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
         return binding.root
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -102,6 +106,7 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
     }
 
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeClickListener() {
         binding.bottomColorDateView.setOnClickListener {
             showColorPickerDialog(
@@ -168,6 +173,7 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun showColorPickerDialog(view: View, requestCode: String, color: Int) {
         ColorChooserDialog.show(
             this, requestCode, color, true, tabs = intArrayOf(
@@ -223,6 +229,9 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
                     Log.d("Tag", "Settings Widget Text Color: ${Integer.toHexString(color)}")
                 }
             }
+
+            val feedbackType = "select"
+            appHelper.triggerHapticFeedback(context, feedbackType)
         }) {
             context?.showLongToast("onCancel")
         }
