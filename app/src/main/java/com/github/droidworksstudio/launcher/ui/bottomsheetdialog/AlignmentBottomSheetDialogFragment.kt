@@ -117,8 +117,8 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
         val dialog = MaterialAlertDialogBuilder(requireContext())
 
         dialog.setTitle(DIALOG_TITLE)
-        dialog.setItems(items) { _, which ->
-            val selectedItem = items[which]
+        dialog.setItems(items) { _, index ->
+            val selectedItem = index
             val gravity = appHelper.getGravityFromSelectedItem(selectedItem)
 
             when (selectedAlignment) {
