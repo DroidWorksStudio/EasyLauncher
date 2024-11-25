@@ -193,10 +193,10 @@
     <string name="widgets_settings_display">Display</string>
     <string name="widgets_settings_select_order">Select Order</string>
 
-    <string name="widget_weather_feels_like" translatable="false">Feels Like : %s%</string>
-    <string name="widget_weather_wind" translatable="false">Wind : %1$.2f %2$s</string>
-    <string name="widget_weather_humidity" translatable="false">Humidity : %d %%</string>
-    <string name="widget_weather_pressure" translatable="false">Pressure : %d hPa</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
 
     <string name="acra_crash">Crash</string>
     <string name="acra_dialog_text">We\'re sorry, but %1$s has encountered an unexpected issue and needs to close. Please help us improve by sending a crash report.\n\n%1$s values your privacy and the data collected is solely used for improving app stability. No personal information is collected. Thank you for your support!</string>
