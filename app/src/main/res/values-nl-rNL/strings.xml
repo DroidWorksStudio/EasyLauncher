@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_system_language">System</string>
+    <string name="app_system_language">Systeem</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Favoriete apps</string>
     <string name="hidden_apps">Verborgen apps</string>
@@ -101,8 +101,8 @@
     <string name="settings_swipe_right">Naar rechts vegen</string>
     <string name="settings_select_search_engine">Selecteer een zoekmachine</string>
     <string name="settings_search_engine">Zoekmachine</string>
-    <string name="settings_select_app_language">Select a App Language</string>
-    <string name="settings_app_language">App Language</string>
+    <string name="settings_select_app_language">Selecteer een app-taal</string>
+    <string name="settings_app_language">App-taal</string>
     <string name="settings_select_filter_strength">Selecteer een filtersterkte</string>
     <string name="settings_filter_strength">Filtersterkte</string>
     <string name="settings_select_launcher_font">Selecteer een lettertypefamilie</string>
