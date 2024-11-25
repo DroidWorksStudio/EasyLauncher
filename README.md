@@ -44,27 +44,19 @@
 #### Easy Launcher - the minimalist productivity launcher for focus, productivity, keep your focus on what really counts.
 
 - Chat with us at [EasyLauncher](https://t.me/DroidWorksStudio) on telegram.
-- This application can be found on [F-Droid](https://f-droid.org/packages/app.easy.launcher/)
-  and [Github](https://github.com/HeCodes2Much/EasyLauncher/releases/).
-- The latest stable version is available on
-  the [`main`](https://github.com/HeCodes2Much/EasyLauncher/tree/main) branch, which can be cloned
-  to build the application independently.
-- Additionally, a Github action has been set up to automatically generate an APK for
-  every [release](https://github.com/HeCodes2Much/EasyLauncher/releases).
+- This application can be found on [F-Droid](https://f-droid.org/packages/app.easy.launcher/) and [Github](https://github.com/HeCodes2Much/EasyLauncher/releases/).
+- The latest stable version is available on the [`main`](https://github.com/HeCodes2Much/EasyLauncher/tree/main) branch, which can be cloned to build the application independently.
+- Additionally, a Github action has been set up to automatically generate an APK for every [release](https://github.com/HeCodes2Much/EasyLauncher/releases).
 
 We try to balance customizability and minimalization well still being simple :)</h3>
 
 ## Features:
 
-- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift
-  access, streamlining your operations.
-- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused
-  on essential content.
-- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and
-  all apps.
+- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
+- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
+- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
 - Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
-- Internet Permissions: One version with INTERNET as it is needed for widgets and one without
-  INTERNET (fdoird build).
+- Internet Permissions: One version with INTERNET as it is needed for widgets and one without INTERNET (fdoird build).
 - Crash Reports: Report crashes via email, including log files for effective troubleshooting.
 
 #### Personalized Customization:
@@ -77,43 +69,31 @@ We try to balance customizability and minimalization well still being simple :)<
 
 #### Possible Gestures Include:
 
-- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access
-  various features or move between screens.
+- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
 - Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
-- Clock Interaction: Tap on the clock to display additional information such as alarms or world
-  clock.
+- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
 - Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
 - Battery Icon: Tap on the battery icon to access battery usage details.
 
 #### Possible Actions Include:
 
 - Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
-- Display App List: View and manage your installed apps efficiently with a comprehensive list
-  display.
-- Screen Locking: Secure your device and protect your privacy with quick and convenient screen
-  locking.
+- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
+- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
 - Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
-- Notification Drawer Access: Open the notification drawer with a single tap to check updates and
-  alerts.
-- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home
-  screen.
-- Power Dialog: Control power options such as restart, power off, and more with ease using the power
-  dialog.
-- Take a Screenshot: Capture your screen instantly to save and share important information and
-  moments.
-- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device
-  interaction experience.
+- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
+- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
+- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
+- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
+- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
 
 ## Contribute
 
-- If you are unhappy with any part of the app or feel like missing something, you can open a pull
-  request or an **[issue
-  ](https://github.com/HeCodes2Much/EasyLauncher/issues/new/choose)** as you like.
+- If you are unhappy with any part of the app or feel like missing something, you can open a pull request or an **[issue](https://github.com/HeCodes2Much/EasyLauncher/issues/new/choose)** as you like.
     - Please go through the issues marked as `Bug report`, `Crash report` or `Feature request`.
     - Please can we discuss before sending pull requests.
     - Make pull requests to `main` branch.
-- Any help in translating EasyLauncher into other languages is greatly appreciated. **[Crowdin
-  ](https://crowdin.com/project/easy-launcher)**.
+- Any help in translating EasyLauncher into other languages is greatly appreciated. **[Crowdin](https://crowdin.com/project/easy-launcher)**.
 
 ## Credits
 
@@ -127,13 +107,10 @@ Sure, here is a revised and improved version of the license description:
 
 ## License
 
-**EasyLauncher is proudly licensed under the open source GPL3 license, granting users the freedom to
-use, study, modify and distribute it at will.**
+**EasyLauncher is proudly licensed under the open source GPL3 license, granting users the freedom to use, study, modify and distribute it at will.**
 
-The Copyleft provision guarantees that these freedoms remain intact, ensuring that EasyLauncher will
-remain a fully open-source project. With access to the full source code, anyone
-can build, fork, and customize the application to their heart's content, unleashing its full
-potential.
+The Copyleft provision guarantees that these freedoms remain intact, ensuring that EasyLauncher will remain a fully open-source project. With access to the full source code, anyone can build, fork,
+and customize the application to their heart's content, unleashing its full potential.
 
 - EasyLauncher does not have network access unless using the Internet apk.
 - EasyLauncher does not collect or transmit any data in any way whatsoever.
@@ -142,29 +119,29 @@ potential.
 
 EasyLauncher uses the following permissions:
 
+Here are the typical reasons why each of the listed permissions might be needed by an Android app:
+
+- `android.permission.SET_WALLPAPER`
+    - This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
 - `android.permission.EXPAND_STATUS_BAR`
-    - Allows an application to expand or collapse the status bar.
+    - This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
+- `android.permission.USE_BIOMETRIC`
+    - This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
+- `android.permission.VIBRATE`
+    - This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
 - `android.permission.QUERY_ALL_PACKAGES`
-    - Allows query of any normal app on the device, regardless of manifest declarations. Used to
-      show the apps list.
-- `android.alarm.permission.SET_ALARM`
-    - Allows an application to broadcast an Intent to set an alarm for the user. Used to open the
-      default alarm app if no other clock app is set in the settings.
+    - This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate
+      use.
 - `android.permission.REQUEST_DELETE_PACKAGES`
-    - Required for issuing the request to remove packages. This does not allow the app to remove
-      apps directly; this only gives the permission to issue the request.
-- `android.permission.PACKAGE_USAGE_STATS`
-    - Allows EasyLauncher to see usage of other apps to list last used apps first in the app list.
+    - This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
+- `com.android.alarm.permission.SET_ALARM`
+    - This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
 
 ## Donation
 
-We kindly request that you consider supporting the ongoing development of EasyLauncher by making a
-donation if you find it to be a useful application. As a free and open-source
-product, EasyLauncher depends entirely on the support and generosity of its users to maintain its
-continued growth and accessibility to all. Please note that while purchasing is
-not obligatory, even a small donation would go a long way in helping us to keep EasyLauncher alive
-and thriving. We appreciate your continued support, and thank you for your
-contribution towards the betterment of our product. 😊
+We kindly request that you consider supporting the ongoing development of EasyLauncher by making a donation if you find it to be a useful application. As a free and open-source product, EasyLauncher
+depends entirely on the support and generosity of its users to maintain its continued growth and accessibility to all. Please note that while purchasing is not obligatory, even a small donation would
+go a long way in helping us to keep EasyLauncher alive and thriving. We appreciate your continued support, and thank you for your contribution towards the betterment of our product. 😊
 
 <div align='center'>
 <a href="https://www.buymeacoffee.com/HeCodes2Much"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=HeCodes2Much&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
