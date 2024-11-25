@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_system_language">System</string>
+    <string name="app_system_language">Systém</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Obľúbené aplikácie</string>
     <string name="hidden_apps">Skryté aplikácie</string>
@@ -101,8 +101,8 @@
     <string name="settings_swipe_right">Prejdite prstom doprava</string>
     <string name="settings_select_search_engine">Vyberte vyhľadávací nástroj</string>
     <string name="settings_search_engine">Vyhľadávač</string>
-    <string name="settings_select_app_language">Select a App Language</string>
-    <string name="settings_app_language">App Language</string>
+    <string name="settings_select_app_language">Vyberte jazyk aplikácie</string>
+    <string name="settings_app_language">Jazyk aplikácie</string>
     <string name="settings_select_filter_strength">Vyberte silu filtra</string>
     <string name="settings_filter_strength">Sila filtra</string>
     <string name="settings_select_launcher_font">Vyberte rodinu písiem</string>
