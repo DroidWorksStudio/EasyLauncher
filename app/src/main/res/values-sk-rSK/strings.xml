@@ -137,13 +137,6 @@
     <string name="accessibility_service_name">Služba Easy Launcher Actions Service</string>
     <string name="accessibility_service_desc">Ak chcete použiť funkciu uzamknutia dvojitým klepnutím v aplikácii Easy Launcher, zapnite službu dostupnosti.\n\nToto povolenie sa používa iba na vypnutie obrazovky. Naša služba dostupnosti
         nezhromažďuje ani nezdieľa žiadne údaje.</string>
-    <string name="search_default">Predvolené</string>
-    <string name="search_google">Google</string>
-    <string name="search_yahoo">Yahoo</string>
-    <string name="search_duckduckgo">DuckDuckGo</string>
-    <string name="search_bing">Bing</string>
-    <string name="search_brave">Statočný</string>
-    <string name="search_swisscow">SwissCows</string>
     <string name="widgets_battery_level">Úroveň nabitia batérie: %d%%</string>
     <string name="widgets_battery_count">Počet nabití batérie: %1$d</string>
     <string name="widgets_battery_current">Prúd batérie: %1$.2f %2$s</string>
