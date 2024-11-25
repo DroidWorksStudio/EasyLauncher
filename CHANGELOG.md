@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Fixed alignment for other languages ([#169](https://github.com/DroidWorksStudio/EasyLauncher/issues/169)) - ([2412585](https://github.com/DroidWorksStudio/EasyLauncher/commit/24125859207ed71a3311d2aafce894bcb6d7e4be))
 - Fixed App Searching. - ([1f0d4c8](https://github.com/DroidWorksStudio/EasyLauncher/commit/1f0d4c8301d9f6ab088e115942f2f177f36882d9))
 
+### Feature Removal:
+
+- Removed the UpdateManager as i no longer use auto updates via github. - ([3774615](https://github.com/DroidWorksStudio/EasyLauncher/commit/3774615716794de442f12d12c2d523ae2b9868d3))
+
 ### Language Support:
 
 - Updated Language Files. ([#168](https://github.com/DroidWorksStudio/EasyLauncher/issues/168)) - ([f085188](https://github.com/DroidWorksStudio/EasyLauncher/commit/f0851888f526b0eb57d793d1c0e87588ed066ccf))
