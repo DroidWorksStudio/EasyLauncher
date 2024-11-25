@@ -101,8 +101,8 @@
     <string name="settings_swipe_right">Stryg til Højre</string>
     <string name="settings_select_search_engine">Vælg en Søgemaskine</string>
     <string name="settings_search_engine">Søgemaskine</string>
-    <string name="settings_select_app_language">Select a App Language</string>
-    <string name="settings_app_language">App Language</string>
+    <string name="settings_select_app_language">Vælg et app-sprog</string>
+    <string name="settings_app_language">App sprog</string>
     <string name="settings_select_filter_strength">Vælg en filterstyrke</string>
     <string name="settings_filter_strength">Filterstyrke</string>
     <string name="settings_select_launcher_font">Vælg en Skrifttypefamilie</string>
