@@ -28,7 +28,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.common.hideKeyboard
 import com.github.droidworksstudio.common.isPackageInstalled
 import com.github.droidworksstudio.common.launchApp
@@ -44,7 +43,6 @@ import com.github.droidworksstudio.launcher.databinding.FragmentHomeBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.BiometricHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.helper.UpdateManagerHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
@@ -92,7 +90,6 @@ class HomeFragment : Fragment(),
 
     private lateinit var batteryReceiver: BroadcastReceiver
     private lateinit var biometricPrompt: BiometricPrompt
-    private lateinit var updateManager: UpdateManagerHelper
 
     private lateinit var context: Context
 
@@ -116,11 +113,6 @@ class HomeFragment : Fragment(),
         setupRecyclerView()
         observeSwipeTouchListener()
         observeUserInterfaceSettings()
-
-        if (context.hasInternetPermission()) {
-            updateManager = UpdateManagerHelper(this)
-            updateManager.checkForUpdates()
-        }
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -568,10 +560,6 @@ class HomeFragment : Fragment(),
         binding.nestScrollView.hideKeyboard()
         observeUserInterfaceSettings()
         observeFavoriteAppList()
-
-        if (context.hasInternetPermission()) {
-            updateManager.checkForUpdates()
-        }
     }
 
     override fun onAppClicked(appInfo: AppInfo) {
