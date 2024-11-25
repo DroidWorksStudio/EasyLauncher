@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed issues with translations missing strings - ([d6b223f](https://github.com/DroidWorksStudio/EasyLauncher/commit/d6b223f26149dd9c5e12cb8fcef03beb2fa6ca15))
 - Fixed issues with translations - ([153a4d9](https://github.com/DroidWorksStudio/EasyLauncher/commit/153a4d9d41887ee57f797dd1c71c77a2e8cf874a))
 - Fixed alignment for other languages ([#169](https://github.com/DroidWorksStudio/EasyLauncher/issues/169)) - ([2412585](https://github.com/DroidWorksStudio/EasyLauncher/commit/24125859207ed71a3311d2aafce894bcb6d7e4be))
 - Fixed App Searching. - ([1f0d4c8](https://github.com/DroidWorksStudio/EasyLauncher/commit/1f0d4c8301d9f6ab088e115942f2f177f36882d9))
