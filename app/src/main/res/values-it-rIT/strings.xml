@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_system_language">System</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">App preferite</string>
     <string name="hidden_apps">App nascoste</string>
@@ -100,6 +101,8 @@
     <string name="settings_swipe_right">Scorri verso destra</string>
     <string name="settings_select_search_engine">Seleziona un motore di ricerca</string>
     <string name="settings_search_engine">Motore di ricerca</string>
+    <string name="settings_select_app_language">Select a App Language</string>
+    <string name="settings_app_language">App Language</string>
     <string name="settings_select_filter_strength">Seleziona un\'intensità di filtro</string>
     <string name="settings_filter_strength">Forza del filtro</string>
     <string name="settings_select_launcher_font">Seleziona una famiglia di caratteri</string>
