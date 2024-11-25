@@ -2,36 +2,36 @@
 <resources>
     <string-array name="settings_appearance_daily_word_default">
         <item>Blijf veerkrachtig!</item>
-        <item>Je hebt dit!</item>
-        <item>Schijn helder!</item>
-        <item>Creëer het lot.</item>
+        <item>Je kunt het!</item>
+        <item>Straal!</item>
+        <item>Maak het lot.</item>
         <item>Omarm de reis.</item>
-        <item>Kracht van binnen.</item>
-        <item>Blijf duwen!</item>
+        <item>Innerlijke kracht.</item>
+        <item>Blijf doorgaan!</item>
         <item>Je bent geweldig!</item>
-        <item>Vertrouw, geef nooit.</item>
+        <item>Vertrouw in jezelf, geef nooit op.</item>
         <item>Onbegrensd potentieel.</item>
         <item>Vooruitgang boven perfectie.</item>
         <item>Uitdagingen = groei.</item>
-        <item>Succes waard.</item>
+        <item>Waardig van succes.</item>
         <item>Volg je dromen.</item>
         <item>Overwin alles!</item>
         <item>Vastberadenheid wint.</item>
         <item>Elke stap telt.</item>
         <item>Blijf positief!</item>
-        <item>Veerkracht rockt.</item>
+        <item>Veerkracht is geweldig.</item>
         <item>Kracht in jou.</item>
         <item>Vier de vooruitgang.</item>
         <item>Hard werken loont.</item>
-        <item>Vertrouw, heb vertrouwen.</item>
+        <item>Vertrouw en geloof in jezelf.</item>
         <item>Unieke reis.</item>
-        <item>Ogen op prijs.</item>
+        <item>Ogen op de prijs.</item>
         <item>Bereik alles!</item>
         <item>Neem gedurfde stappen.</item>
         <item>Passie voedt je.</item>
-        <item>Focus op doelen.</item>
-        <item>Volharden, winnen.</item>
-        <item>Zelfvertrouwen sleutel.</item>
+        <item>Focus op je doelen.</item>
+        <item>Volhardt, win.</item>
+        <item>Zelfvertrouwen is de sleutel.</item>
         <item>Het goede verdienen.</item>
         <item>Reik naar dromen.</item>
         <item>Dapper, sterk, slim.</item>
@@ -40,7 +40,7 @@
         <item>Onwrikbare vastberadenheid.</item>
         <item>Tegenslagen = comeback.</item>
         <item>Maak dromen werkelijkheid.</item>
-        <item>Zet je in voor doelen.</item>
+        <item>Zet je in voor je doelen.</item>
         <item>Kracht, geen grenzen.</item>
         <item>Kop omhoog, doorbraak.</item>
         <item>Jouw potentieel straalt.</item>
@@ -116,11 +116,11 @@
         <item>Vertrouw op je reis.</item>
         <item>Blijf vechten, blijf stijgen.</item>
         <item>Geloof in het onmogelijke.</item>
-        <item>Blijf veerkrachtig, geef nooit.</item>
+        <item>Blijf veerkrachtig, geef nooit op.</item>
         <item>Je bent sterker dan je weet.</item>
-        <item>Leef met passie en doel.</item>
+        <item>Leef met passie en een doel.</item>
         <item>Vind vreugde in elke reis.</item>
-        <item>Droom geloof bereik!</item>
+        <item>Droom, geloof, bereik!</item>
         <item>Blijf positief, blijf sterk.</item>
         <item>Elke dag is een nieuwe kans.</item>
         <item>Omarm elke kans.</item>
@@ -128,18 +128,18 @@
         <item>Vertrouw op je innerlijke kracht.</item>
         <item>Je bent voorbestemd voor grootsheid.</item>
         <item>Geloof in je dromen!</item>
-        <item>Blijf vastberaden, succes.</item>
+        <item>Blijf vastberaden, slaag.</item>
         <item>Blijf in beweging richting je doelen.</item>
         <item>Jaag je dromen meedogenloos na.</item>
         <item>Kracht komt van binnenuit.</item>
-        <item>Blijf gefocust op uw doelen.</item>
+        <item>Blijf gefocust op je doelen.</item>
         <item>Je bent tot alles in staat.</item>
         <item>Blijf onbevreesd, blijf sterk.</item>
-        <item>Geloof, bereik, succes!</item>
+        <item>Geloof, bereik, slaag!</item>
         <item>Vertrouw op je reis.</item>
         <item>Blijf veerkrachtig, sta erboven.</item>
         <item>Jij hebt de kracht in jezelf.</item>
-        <item>Droom groot, werk hard, bereik.</item>
+        <item>Droom groot, werk hard, bereik alles.</item>
         <item>Blijf gefocust, blijf sterk.</item>
         <item>Je bent sterker dan je denkt!</item>
         <item>Geloof in jezelf, altijd.</item>
@@ -149,6 +149,6 @@
         <item>Blijf jezelf.</item>
         <item>Vertrouw op je reis.</item>
         <item>Blijf vooruit duwen.</item>
-        <item>Droom geloof bereik!</item>
-        </string-array>
+        <item>Droom, geloof, bereik!</item>
+    </string-array>
 </resources>
