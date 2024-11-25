@@ -25,7 +25,7 @@
     <string name="advanced_settings_restart_description">Heb je geprobeerd het aan en uit te zetten?</string>
     <string name="advanced_settings_backup_restore_title">Back-up/Herstellen</string>
     <string name="advanced_settings_backup_restore_description">Wees voorzichtig met wat je wenst.</string>
-    <string name="advanced_settings_backup_restore_backup">Back-upvoorkeuren</string>
+    <string name="advanced_settings_backup_restore_backup">Back-up voorkeuren</string>
     <string name="advanced_settings_backup_restore_restore">Voorkeuren herstellen</string>
     <string name="advanced_settings_backup_restore_clear">Voorkeuren wissen</string>
     <string name="advanced_settings_backup_restore_clear_title">Voorkeuren wissen</string>
