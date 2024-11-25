@@ -54,7 +54,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch
-import java.util.Locale
 import javax.inject.Inject
 
 
@@ -299,7 +298,7 @@ class HomeFragment : Fragment(),
             nestScrollView.hideKeyboard()
 
             val is24HourFormat = DateFormat.is24HourFormat(requireContext())
-            val localLocale = Locale.getDefault()
+            val localLocale = preferenceHelper.appLanguage.timezone()
             val best12 = DateFormat.getBestDateTimePattern(localLocale, "hmma")
             val best24 = DateFormat.getBestDateTimePattern(localLocale, "HHmm")
 

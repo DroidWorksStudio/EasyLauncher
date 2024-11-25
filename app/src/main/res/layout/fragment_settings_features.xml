@@ -418,6 +418,38 @@
                     tools:ignore="MissingConstraints">
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/miscellaneous_appLanguage_text"
+                        style="@style/TextDefaultStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="@string/settings_app_language"
+                        android:textSize="@dimen/text_large"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlHardcoded" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/miscellaneous_appLanguage_control"
+                        style="@style/TextDefaultStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:text="@string/settings_app_language"
+                        android:textSize="@dimen/text_large"
+                        tools:ignore="RtlHardcoded" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/miscellaneous_filterStrength_text"
                         style="@style/TextDefaultStyle"
                         android:layout_width="0dp"

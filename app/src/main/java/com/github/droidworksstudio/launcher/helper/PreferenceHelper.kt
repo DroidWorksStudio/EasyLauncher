@@ -249,6 +249,22 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getString(Constants.DOUBLE_TAP_APP, "").toString()
         set(value) = prefs.edit().putString(Constants.DOUBLE_TAP_APP, value).apply()
 
+    var appLanguage: Constants.Language
+        get() {
+            return try {
+                Constants.Language.valueOf(
+                    prefs.getString(
+                        Constants.PACKAGE_LANGUAGE,
+                        Constants.Language.System.name
+                    ).toString()
+                )
+            } catch (_: Exception) {
+                Constants.Language.System
+            }
+        }
+        set(value) = prefs.edit().putString(Constants.PACKAGE_LANGUAGE, value.name).apply()
+
+
     var weatherUnits: Constants.Units
         get() {
             return try {

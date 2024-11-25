@@ -80,6 +80,7 @@ class SettingsFeaturesFragment : Fragment(),
 
         binding.apply {
             miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.getString(context)
+            miscellaneousAppLanguageControl.text = preferenceHelper.appLanguage.name
             miscellaneousFilterStrengthControl.text = "${preferenceHelper.filterStrength}"
         }
 
@@ -161,6 +162,10 @@ class SettingsFeaturesFragment : Fragment(),
             miscellaneousFilterStrengthControl.setOnClickListener {
                 showFilterStrengthDialog()
             }
+
+            miscellaneousAppLanguageControl.setOnClickListener {
+                showAppLanguageDialog()
+            }
         }
     }
 
@@ -191,6 +196,37 @@ class SettingsFeaturesFragment : Fragment(),
         searchEngineDialog = dialogBuilder.create()
         searchEngineDialog?.show()
     }
+
+    private var appLanguageDialog: AlertDialog? = null
+
+    @RequiresApi(Build.VERSION_CODES.Q)
+    private fun showAppLanguageDialog() {
+        // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
+        appLanguageDialog?.dismiss()
+
+        // Get the array of Language enum values
+        val items = Constants.Language.entries.toTypedArray()
+
+        // Map the enum values to their string representations using the `string()` method defined in Language enum
+        val itemStrings = items.map { it.string(context) }.toTypedArray()
+
+        val dialogBuilder = MaterialAlertDialogBuilder(context).apply {
+            setTitle(getString(R.string.settings_select_app_language))
+            setItems(itemStrings) { _, which ->
+                val selectedItem = items[which]
+                preferenceViewModel.setAppLanguage(selectedItem)
+                binding.miscellaneousAppLanguageControl.text = preferenceHelper.appLanguage.name
+
+                val feedbackType = "select"
+                appHelper.triggerHapticFeedback(context, feedbackType)
+            }
+        }
+
+        // Assign the created dialog to appLanguageDialog
+        appLanguageDialog = dialogBuilder.create()
+        appLanguageDialog?.show()
+    }
+
 
     private var filterStrengthDialog: AlertDialog? = null
 

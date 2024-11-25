@@ -4,20 +4,20 @@ import android.content.Context
 import android.graphics.Typeface
 import androidx.core.content.res.ResourcesCompat
 import com.github.droidworksstudio.launcher.R
+import java.util.Locale
 
 object Constants {
     const val PACKAGE_NAME = "app.easy.launcher"
     const val PACKAGE_NAME_DEBUG = "$PACKAGE_NAME.debug"
     const val PACKAGE_PREFS = "EasyLauncher.pref"
+    const val PACKAGE_LANGUAGE = "PACKAGE_LANGUAGE"
 
     const val TIMERS_PREFS = "Timers.pref"
-    const val LAST_CHECK_TIME = "LAST_CHECK_TIME"
     const val CACHED_DATA_TIMESTAMP = "CACHED_DATA_TIMESTAMP"
 
     const val WIDGETS_COUNT = 2
     const val WIDGET_WEATHER = "WIDGET_WEATHER"
     const val WIDGET_BATTERY = "WIDGET_BATTERY"
-
 
     const val WEATHER_PREFS = "EasyWeather.pref"
     const val WEATHER_RESPONSE = "WEATHER_RESPONSE"
@@ -194,16 +194,10 @@ object Constants {
         Bitter,
         Dotness,
         DroidSans,
-
-        //        GreatVibes,
         Lato,
-
-        //        Lobster,
         Merriweather,
         Montserrat,
         OpenSans,
-
-        //        Pacifico,
         Quicksand,
         Raleway,
         Roboto,
@@ -215,13 +209,10 @@ object Constants {
                 Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
                 Dotness -> ResourcesCompat.getFont(context, R.font.dotness)
                 DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
-//                GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
                 Lato -> ResourcesCompat.getFont(context, R.font.lato)
-//                Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
                 Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
                 Montserrat -> ResourcesCompat.getFont(context, R.font.montserrat)
                 OpenSans -> ResourcesCompat.getFont(context, R.font.open_sans)
-//                Pacifico -> ResourcesCompat.getFont(context, R.font.pacifico)
                 Quicksand -> ResourcesCompat.getFont(context, R.font.quicksand)
                 Raleway -> ResourcesCompat.getFont(context, R.font.raleway)
                 Roboto -> ResourcesCompat.getFont(context, R.font.roboto)
@@ -235,17 +226,89 @@ object Constants {
                 Bitter -> context.getString(R.string.settings_font_bitter)
                 Dotness -> context.getString(R.string.settings_font_dotness)
                 DroidSans -> context.getString(R.string.settings_font_droidsans)
-//                GreatVibes -> context.getString(R.string.settings_font_greatvibes)
                 Lato -> context.getString(R.string.settings_font_lato)
-//                Lobster -> context.getString(R.string.settings_font_lobster)
                 Merriweather -> context.getString(R.string.settings_font_merriweather)
                 Montserrat -> context.getString(R.string.settings_font_montserrat)
                 OpenSans -> context.getString(R.string.settings_font_opensans)
-//                Pacifico -> context.getString(R.string.settings_font_pacifico)
                 Quicksand -> context.getString(R.string.settings_font_quicksand)
                 Raleway -> context.getString(R.string.settings_font_raleway)
                 Roboto -> context.getString(R.string.settings_font_roboto)
                 SourceCodePro -> context.getString(R.string.settings_font_sourcecodepro)
+            }
+        }
+    }
+
+    enum class Language {
+        System,
+        Czech,
+        Danish,
+        Dutch,
+        English,
+        German,
+        Hebrew,
+        Italian,
+        Lithuanian,
+        Slovak,
+        Turkish,
+        Ukrainian;
+
+        fun string(context: Context): String {
+            return when (this) {
+                System -> context.getString(R.string.app_system_language)
+                Czech -> "Czech"
+                Danish -> "Danish"
+                Dutch -> "Dutch"
+                English -> "English"
+                German -> "German"
+                Hebrew -> "Hebrew"
+                Italian -> "Italian"
+                Lithuanian -> "Lithuanian"
+                Slovak -> "Slovak"
+                Turkish -> "Turkish"
+                Ukrainian -> "Ukrainian"
+            }
+        }
+
+
+        fun locale(): Locale {
+            return Locale(value())
+        }
+
+        private fun value(): String {
+            return when (this) {
+                System -> Locale.getDefault().language
+                Czech -> "cs"
+                Danish -> "da"
+                Dutch -> "nl"
+                English -> "en"
+                German -> "de"
+                Hebrew -> "iw"
+                Italian -> "it"
+                Lithuanian -> "lt"
+                Slovak -> "sk"
+                Turkish -> "tr"
+                Ukrainian -> "uk"
+            }
+        }
+
+        fun timezone(): Locale {
+            return Locale(zone())
+        }
+
+        private fun zone(): String {
+            return when (this) {
+                System -> Locale.getDefault().toLanguageTag()
+                Czech -> "cs-CZ"
+                Danish -> "da-DK"
+                Dutch -> "nl-NL"
+                English -> "en-US"
+                German -> "de-DE"
+                Hebrew -> "he-IL"
+                Italian -> "it-IT"
+                Lithuanian -> "lt-LT"
+                Slovak -> "sk-SK"
+                Turkish -> "tr-TR"
+                Ukrainian -> "uk-UA"
             }
         }
     }

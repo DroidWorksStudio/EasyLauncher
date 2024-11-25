@@ -96,6 +96,15 @@ class MainActivity : AppCompatActivity() {
         setupNavController()
         setupOrientation()
         setupLocationManager()
+        setLanguage()
+    }
+
+    @Suppress("DEPRECATION")
+    private fun setLanguage() {
+        val locale = preferenceHelper.appLanguage.locale()
+        val config = resources.configuration
+        config.locale = locale
+        resources.updateConfiguration(config, resources.displayMetrics)
     }
 
     private fun initializeDependencies() {

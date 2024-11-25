@@ -53,6 +53,7 @@ class PreferenceViewModel @Inject constructor(
     private val batteryOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
     private val filterStrengthLiveData: MutableLiveData<Int> = MutableLiveData()
 
+    private val appLanguageLiveData: MutableLiveData<Constants.Language> = MutableLiveData()
     private val searchEngineLiveData: MutableLiveData<Constants.SearchEngines> = MutableLiveData()
     private val launcherFontLiveData: MutableLiveData<Constants.Fonts> = MutableLiveData()
     private val doubleTapActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
@@ -274,6 +275,11 @@ class PreferenceViewModel @Inject constructor(
     fun setLockSettings(lockSettings: Boolean) {
         preferenceHelper.settingsLock = lockSettings
         lockSettingsLiveData.postValue((preferenceHelper.settingsLock))
+    }
+
+    fun setAppLanguage(appLanguage: Constants.Language) {
+        preferenceHelper.appLanguage = appLanguage
+        appLanguageLiveData.postValue((preferenceHelper.appLanguage))
     }
 
     fun setSearchEngine(searchEngine: Constants.SearchEngines) {
