@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_system_language">System</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Favori Uygulamalar</string>
     <string name="hidden_apps">Gizli Uygulamalar</string>
@@ -100,6 +101,8 @@
     <string name="settings_swipe_right">Sağa kaydır</string>
     <string name="settings_select_search_engine">Bir Arama Motoru Seçin</string>
     <string name="settings_search_engine">Arama motoru</string>
+    <string name="settings_select_app_language">Select a App Language</string>
+    <string name="settings_app_language">App Language</string>
     <string name="settings_select_filter_strength">Bir Filtre Gücü Seçin</string>
     <string name="settings_filter_strength">Filtre Gücü</string>
     <string name="settings_select_launcher_font">Bir Yazı Tipi Ailesi Seçin</string>
