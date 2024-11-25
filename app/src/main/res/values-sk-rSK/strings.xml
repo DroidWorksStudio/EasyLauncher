@@ -149,6 +149,10 @@
     <string name="widgets_settings_show_battery">Widget batérie</string>
     <string name="widgets_settings_display">Displej</string>
     <string name="widgets_settings_select_order">Vyberte položku Objednávka</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
     <string name="acra_crash">Zrútiť sa</string>
     <string name="acra_dialog_text">Ľutujeme, ale %1$s sa vyskytol neočakávaný problém a je potrebné ho zavrieť. Pomôžte nám zlepšiť sa odoslaním správy o zlyhaní.\n\n%1$s si váži vaše súkromie a zhromaždené údaje sa používajú výlučne na zlepšenie stability aplikácie. Nezhromažďujú sa žiadne osobné údaje. Ďakujem za tvoju podporu!</string>
     <string name="acra_send_report">Odoslať správu</string>
