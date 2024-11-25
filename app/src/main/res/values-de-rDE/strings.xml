@@ -101,8 +101,8 @@
     <string name="settings_swipe_right">Wische nach rechts</string>
     <string name="settings_select_search_engine">Wählen Sie eine Suchmaschine</string>
     <string name="settings_search_engine">Suchmaschine</string>
-    <string name="settings_select_app_language">Select a App Language</string>
-    <string name="settings_app_language">App Language</string>
+    <string name="settings_select_app_language">Wählen Sie eine App-Sprache</string>
+    <string name="settings_app_language">App-Sprache</string>
     <string name="settings_select_filter_strength">Wählen Sie eine Filterstärke</string>
     <string name="settings_filter_strength">Filterstärke</string>
     <string name="settings_select_launcher_font">Wählen Sie eine Schriftfamilie aus</string>
