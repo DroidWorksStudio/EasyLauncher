@@ -179,14 +179,6 @@
     <string name="accessibility_service_desc">Please turn on accessibility service to use double tap to lock feature in Easy Launcher.\n\nThis permission is used only to turn off your screen. Our
         accessibility service does not collect or share any data.</string>
 
-    <string name="search_default">Default</string>
-    <string name="search_google">Google</string>
-    <string name="search_yahoo">Yahoo</string>
-    <string name="search_duckduckgo">DuckDuckGo</string>
-    <string name="search_bing">Bing</string>
-    <string name="search_brave">Brave</string>
-    <string name="search_swisscow">SwissCows</string>
-
     <string name="widgets_battery_level">Battery Level : %d %%</string>
     <string name="widgets_battery_count">Battery Charge Count : %1$d</string>
     <string name="widgets_battery_current">Battery Current : %1$.2f %2$s</string>
@@ -200,6 +192,11 @@
     <string name="widgets_settings_show_battery">Battery Widget</string>
     <string name="widgets_settings_display">Display</string>
     <string name="widgets_settings_select_order">Select Order</string>
+
+    <string name="widget_weather_feels_like" translatable="false">Feels Like : %s%</string>
+    <string name="widget_weather_wind" translatable="false">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity" translatable="false">Humidity : %d %%</string>
+    <string name="widget_weather_pressure" translatable="false">Pressure : %d hPa</string>
 
     <string name="acra_crash">Crash</string>
     <string name="acra_dialog_text">We\'re sorry, but %1$s has encountered an unexpected issue and needs to close. Please help us improve by sending a crash report.\n\n%1$s values your privacy and the data collected is solely used for improving app stability. No personal information is collected. Thank you for your support!</string>

@@ -6,11 +6,13 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Adding haptic feedback if enabled in android base settings. - ([507a713](https://github.com/DroidWorksStudio/EasyLauncher/commit/507a7139a1ec8695bbb94a342003811e27eaca78))
 - Added the ability to close app draw by scrolling down from the top. - ([b2141eb](https://github.com/DroidWorksStudio/EasyLauncher/commit/b2141eb66623485042267a9c93ab8fcfbae35699))
 - Added Alarm Clock to HomeScreen. - ([d6050f3](https://github.com/DroidWorksStudio/EasyLauncher/commit/d6050f399f1428c2a71429578c076b40ba194d14))
 
 ### Bug Fixes:
 
+- Fixed issues with translations - ([153a4d9](https://github.com/DroidWorksStudio/EasyLauncher/commit/153a4d9d41887ee57f797dd1c71c77a2e8cf874a))
 - Fixed alignment for other languages ([#169](https://github.com/DroidWorksStudio/EasyLauncher/issues/169)) - ([2412585](https://github.com/DroidWorksStudio/EasyLauncher/commit/24125859207ed71a3311d2aafce894bcb6d7e4be))
 - Fixed App Searching. - ([1f0d4c8](https://github.com/DroidWorksStudio/EasyLauncher/commit/1f0d4c8301d9f6ab088e115942f2f177f36882d9))
 

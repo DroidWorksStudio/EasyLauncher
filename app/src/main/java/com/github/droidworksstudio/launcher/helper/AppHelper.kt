@@ -11,6 +11,9 @@ import android.content.res.Configuration
 import android.content.res.Resources
 import android.net.Uri
 import android.os.Build
+import android.os.VibrationEffect
+import android.os.Vibrator
+import android.os.VibratorManager
 import android.text.SpannableStringBuilder
 import android.text.style.ImageSpan
 import android.util.Log
@@ -71,6 +74,48 @@ class AppHelper @Inject constructor() {
                 ActionService.instance()?.openQuickSettings()
             }
             exception.printStackTrace()
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.Q)
+    fun triggerHapticFeedback(context: Context?, effectType: String) {
+        val vibrator: Vibrator? = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            // Use VibratorManager for API 31 and above
+            val vibratorManager = context?.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as VibratorManager
+            vibratorManager.defaultVibrator
+        } else {
+            // Use Vibrator directly for older versions
+            @Suppress("DEPRECATION")
+            context?.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+        }
+
+        if (vibrator != null && vibrator.hasVibrator()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                // Define vibration effects based on the effectType
+                val vibrationEffect = when (effectType.lowercase()) {
+                    "on" -> VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE) // 100ms vibration
+                    "off" -> VibrationEffect.createOneShot(200, VibrationEffect.DEFAULT_AMPLITUDE) // 200ms vibration
+                    "save" -> VibrationEffect.createWaveform(longArrayOf(0, 100, 50, 100), -1) // Two quick vibrations
+                    "select" -> VibrationEffect.createWaveform(longArrayOf(0, 100, 100, 300, 200, 100), -1) // Patterned vibration
+                    "click" -> VibrationEffect.createPredefined(VibrationEffect.EFFECT_CLICK) // Predefined click effect
+                    else -> VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE) // Default effect
+                }
+                vibrator.vibrate(vibrationEffect)
+            } else {
+                @Suppress("DEPRECATION")
+                // For older APIs, approximate effects
+                when (effectType.lowercase()) {
+                    "on" -> vibrator.vibrate(100)
+                    "off" -> vibrator.vibrate(200)
+                    "save" -> vibrator.vibrate(longArrayOf(0, 100, 50, 100), -1)
+                    "select" -> vibrator.vibrate(longArrayOf(0, 100, 100, 300, 200, 100), -1)
+                    "click" -> vibrator.vibrate(50) // Approximation for click
+                    else -> vibrator.vibrate(50) // Default effect
+                }
+            }
+        } else {
+            // Handle cases where the device does not support vibration
+            Log.w("HapticFeedback", "Device does not support vibration")
         }
     }
 

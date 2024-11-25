@@ -18,12 +18,15 @@
     <string name="widget_weather_mps" translatable="false">m/s</string>
     <string name="widget_weather_mph" translatable="false">mil/h</string>
 
-    <string name="widget_weather_feels_like" translatable="false">Feels Like : %s%</string>
-    <string name="widget_weather_wind" translatable="false">Wind : %1$.2f %2$s</string>
-    <string name="widget_weather_humidity" translatable="false">Humidity : %d %%</string>
-    <string name="widget_weather_pressure" translatable="false">Pressure : %d hPa</string>
-
     <string name="acra_email" translatable="false">droidworksstudio@063240.xyz</string>
+
+    <string name="search_default" translatable="false">Default</string>
+    <string name="search_google" translatable="false">Google</string>
+    <string name="search_yahoo" translatable="false">Yahoo</string>
+    <string name="search_duckduckgo" translatable="false">DuckDuckGo</string>
+    <string name="search_bing" translatable="false">Bing</string>
+    <string name="search_brave" translatable="false">Brave</string>
+    <string name="search_swisscow" translatable="false">SwissCows</string>
 
     <string name="settings_font_bitter" translatable="false">Bitter</string>
     <string name="settings_font_dotness" translatable="false">Dotness</string>

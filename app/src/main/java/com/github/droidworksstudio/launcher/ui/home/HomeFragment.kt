@@ -79,7 +79,6 @@ class HomeFragment : Fragment(),
     @Inject
     lateinit var appHelper: AppHelper
 
-
     @Inject
     lateinit var fingerHelper: BiometricHelper
 
