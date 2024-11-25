@@ -137,13 +137,6 @@
     <string name="accessibility_service_name">Kolay Başlatıcı Eylemleri Hizmeti</string>
     <string name="accessibility_service_desc">Easy Launcher\'da kilitlemek için çift dokunma özelliğini kullanmak için lütfen erişilebilirlik hizmetini açın.\n\nBu izin yalnızca ekranınızı kapatmak için kullanılır.
         erişilebilirlik hizmetimiz hiçbir veri toplamaz veya paylaşmaz.</string>
-    <string name="search_default">Varsayılan</string>
-    <string name="search_google">Google</string>
-    <string name="search_yahoo">yahoo</string>
-    <string name="search_duckduckgo">ÖrdekDuckGo</string>
-    <string name="search_bing">Bing</string>
-    <string name="search_brave">Cesur</string>
-    <string name="search_swisscow">İsviçreİnekleri</string>
     <string name="widgets_battery_level">Pil Seviyesi : %d%%</string>
     <string name="widgets_battery_count">Pil Şarj Sayısı : %1$d</string>
     <string name="widgets_battery_current">Pil Akımı : %1$.2f %2$s</string>
@@ -156,6 +149,10 @@
     <string name="widgets_settings_show_battery">Pil Widget\'ı</string>
     <string name="widgets_settings_display">Görüntülemek</string>
     <string name="widgets_settings_select_order">Sipariş seç</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
     <string name="acra_crash">Kaza</string>
     <string name="acra_dialog_text">Üzgünüz ama %1$s beklenmedik bir sorunla karşılaştı ve kapatılması gerekiyor. Lütfen bir kilitlenme raporu göndererek iyileştirmemize yardımcı olun.\n\n%1$s gizliliğinize değer verir ve toplanan veriler yalnızca uygulama kararlılığını iyileştirmek için kullanılır. Hiçbir kişisel bilgi toplanmaz. Desteğin için teşekkürler!</string>
     <string name="acra_send_report">Rapor gönder</string>

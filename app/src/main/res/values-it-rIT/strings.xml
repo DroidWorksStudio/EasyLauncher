@@ -137,13 +137,6 @@
     <string name="accessibility_service_name">Servizio azioni Easy Launcher</string>
     <string name="accessibility_service_desc">Attiva il servizio di accessibilità per usare la funzione \"doppio tocco per bloccare\" in Easy Launcher.\n\nQuesta autorizzazione viene utilizzata solo per spegnere lo schermo. Il nostro servizio di accessibilità
         non raccoglie o condivide alcun dato.</string>
-    <string name="search_default">Predefinito</string>
-    <string name="search_google">Google</string>
-    <string name="search_yahoo">Yahoo</string>
-    <string name="search_duckduckgo">DuckDuckGo</string>
-    <string name="search_bing">Bing</string>
-    <string name="search_brave">Coraggioso</string>
-    <string name="search_swisscow">Mucche svizzere</string>
     <string name="widgets_battery_level">Livello della batteria: %d%%</string>
     <string name="widgets_battery_count">Conteggio carica batteria: %1$d</string>
     <string name="widgets_battery_current">Corrente della batteria: %1$.2f %2$s</string>
@@ -156,6 +149,10 @@
     <string name="widgets_settings_show_battery">Widget batteria</string>
     <string name="widgets_settings_display">Schermo</string>
     <string name="widgets_settings_select_order">Seleziona l\'ordine</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
     <string name="acra_crash">Incidente</string>
     <string name="acra_dialog_text">Siamo spiacenti, ma %1$s ha riscontrato un problema imprevisto e deve essere chiuso. Aiutaci a migliorare inviando un rapporto sugli arresti anomali.\n\n%1$s valorizza la tua privacy e i dati raccolti vengono utilizzati esclusivamente per migliorare la stabilità dell\'app. Non viene raccolta alcuna informazione personale. Grazie per il vostro sostegno!</string>
     <string name="acra_send_report">Spedisci il rapporto</string>

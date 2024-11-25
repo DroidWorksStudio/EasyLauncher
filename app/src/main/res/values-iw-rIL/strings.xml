@@ -137,13 +137,6 @@
     <string name="accessibility_service_name">שירות פעולות משגר קל</string>
     <string name="accessibility_service_desc">הפעל את שירות הנגישות כדי להשתמש בתכונת הקשה כפולה כדי לנעול ב- Easy Launcher.\n\nהרשאה זו משמשת רק כדי לכבות את המסך שלך. שירות הנגישות
         שלנו אינו אוסף או משתף נתונים כלשהם.</string>
-    <string name="search_default">בְּרִירַת מֶחדָל</string>
-    <string name="search_google">גוגל</string>
-    <string name="search_yahoo">יאהו</string>
-    <string name="search_duckduckgo">DuckDuckGo</string>
-    <string name="search_bing">בינג</string>
-    <string name="search_brave">אַמִיץ</string>
-    <string name="search_swisscow">SwissCows</string>
     <string name="widgets_battery_level">רמת סוללה: %d%%</string>
     <string name="widgets_battery_count">ספירת טעינת סוללה: %1$d</string>
     <string name="widgets_battery_current">זרם סוללה: %1$.2f %2$s</string>
@@ -156,6 +149,10 @@
     <string name="widgets_settings_show_battery">יישומון סוללה</string>
     <string name="widgets_settings_display">לְהַצִיג</string>
     <string name="widgets_settings_select_order">בחר הזמנה</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
     <string name="acra_crash">לְהִתְרַסֵק</string>
     <string name="acra_dialog_text">אנו מצטערים, אבל %1$s נתקל בבעיה בלתי צפויה וצריך להיסגר. אנא עזור לנו להשתפר על ידי שליחת דוח קריסה.\n\n%1$s מעריכה את הפרטיות שלך והנתונים שנאספים משמשים אך ורק לשיפור יציבות האפליקציה. לא נאסף מידע אישי. תודה על תמיכתך!</string>
     <string name="acra_send_report">שלח דו\"ח</string>

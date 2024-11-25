@@ -137,13 +137,6 @@
     <string name="accessibility_service_name">Служба дій Easy Launcher</string>
     <string name="accessibility_service_desc">Увімкніть службу доступності, щоб використовувати подвійне торкання для блокування функції в Easy Launcher.\n\nЦей дозвіл використовується лише для вимкнення екрана. Наша
         служба доступності не збирає та не передає жодних даних.</string>
-    <string name="search_default">За замовчуванням</string>
-    <string name="search_google">Google</string>
-    <string name="search_yahoo">Yahoo</string>
-    <string name="search_duckduckgo">DuckDuckGo</string>
-    <string name="search_bing">Bing</string>
-    <string name="search_brave">Хоробрий</string>
-    <string name="search_swisscow">SwissCows</string>
     <string name="widgets_battery_level">Рівень заряду батареї: %d%%</string>
     <string name="widgets_battery_count">Кількість зарядів батареї: %1$d</string>
     <string name="widgets_battery_current">Струм батареї: %1$.2f %2$s</string>
@@ -156,6 +149,10 @@
     <string name="widgets_settings_show_battery">Віджет батареї</string>
     <string name="widgets_settings_display">Дисплей</string>
     <string name="widgets_settings_select_order">Виберіть Замовлення</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
     <string name="acra_crash">Збій</string>
     <string name="acra_dialog_text">Нам дуже шкода, але %1$s зіткнувся з неочікуваною проблемою та має закритися. Будь ласка, допоможіть нам покращити, надіславши звіт про збій.\n\n%1$s цінує вашу конфіденційність, а зібрані дані використовуються виключно для покращення стабільності програми. Особиста інформація не збирається. Спасибі вам за вашу підтримку!</string>
     <string name="acra_send_report">Надіслати звіт</string>

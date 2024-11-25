@@ -25,7 +25,7 @@
     <string name="advanced_settings_restart_description">Heb je geprobeerd het aan en uit te zetten?</string>
     <string name="advanced_settings_backup_restore_title">Back-up/Herstellen</string>
     <string name="advanced_settings_backup_restore_description">Wees voorzichtig met wat je wenst.</string>
-    <string name="advanced_settings_backup_restore_backup">Back-upvoorkeuren</string>
+    <string name="advanced_settings_backup_restore_backup">Back-up voorkeuren</string>
     <string name="advanced_settings_backup_restore_restore">Voorkeuren herstellen</string>
     <string name="advanced_settings_backup_restore_clear">Voorkeuren wissen</string>
     <string name="advanced_settings_backup_restore_clear_title">Voorkeuren wissen</string>
@@ -137,13 +137,6 @@
     <string name="accessibility_service_name">Easy Launcher Acties Service</string>
     <string name="accessibility_service_desc">Schakel de toegankelijkheidsservice in om de functie \'dubbeltikken om te vergrendelen\' in Easy Launcher te gebruiken.\n\nDeze toestemming wordt alleen gebruikt om uw scherm uit te schakelen. Onze
         toegankelijkheidsservice verzamelt of deelt geen gegevens.</string>
-    <string name="search_default">Standaard</string>
-    <string name="search_google">Google</string>
-    <string name="search_yahoo">Yahoo</string>
-    <string name="search_duckduckgo">DuckDuckGo</string>
-    <string name="search_bing">Bing</string>
-    <string name="search_brave">Brave</string>
-    <string name="search_swisscow">SwissCows</string>
     <string name="widgets_battery_level">Batterijniveau: %d%%</string>
     <string name="widgets_battery_count">Aantal batterijladingen: %1$d</string>
     <string name="widgets_battery_current">Batterijstroom: %1$.2f %2$s</string>
@@ -156,6 +149,10 @@
     <string name="widgets_settings_show_battery">Batterijwidget</string>
     <string name="widgets_settings_display">Weergave</string>
     <string name="widgets_settings_select_order">Selecteer volgorde</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
     <string name="acra_crash">Botsing</string>
     <string name="acra_dialog_text">Het spijt ons, maar %1$s heeft een onverwacht probleem ondervonden en moet worden afgesloten. Help ons alstublieft verbeteren door een crashrapport te sturen.\n\n%1$s waardeert uw privacy en de verzamelde gegevens worden uitsluitend gebruikt voor het verbeteren van de app-stabiliteit. Er worden geen persoonlijke gegevens verzameld. Bedankt voor je ondersteuning!</string>
     <string name="acra_send_report">Verzend rapport</string>
