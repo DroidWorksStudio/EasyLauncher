@@ -149,6 +149,10 @@
     <string name="widgets_settings_show_battery">Batterie-Widget</string>
     <string name="widgets_settings_display">Anzeige</string>
     <string name="widgets_settings_select_order">Bestellung auswählen</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
     <string name="acra_crash">Absturz</string>
     <string name="acra_dialog_text">Es tut uns leid, aber bei %1$s ist ein unerwartetes Problem aufgetreten und es muss geschlossen werden. Bitte helfen Sie uns, uns zu verbessern, indem Sie einen Absturzbericht senden.\n\n%1$s schätzt Ihre Privatsphäre und die gesammelten Daten werden ausschließlich zur Verbesserung der App-Stabilität verwendet. Es werden keine persönlichen Daten gesammelt. Vielen Dank für Ihre Unterstützung!</string>
     <string name="acra_send_report">Bericht senden</string>
