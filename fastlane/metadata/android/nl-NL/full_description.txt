@@ -35,14 +35,14 @@
 - Maak een screenshot: leg uw scherm direct vast om belangrijke informatie en momenten op te slaan en te delen.
 - Gebaren uitschakelen: schakel specifieke gebaren tijdelijk of permanent uit om de interactie-ervaring met uw apparaat aan te passen.
 
-<b>Permissions:</b>
+<b>Rechten:</b>
 
-- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
-- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
-- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
-- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
-- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
-- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
-- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+- android.permission.SET_WALLPAPER: Deze toestemming is nodig zodat de app de achtergrond van het apparaat kan wijzigen of instellen. Hiermee kan de app de achtergrond op het startscherm of vergrendelscherm programmatisch aanpassen.
+- android.permission.EXPAND_STATUS_BAR: Met deze machtiging kan de app de statusbalk uitvouwen of samenvouwen, zodat u met de snelle instellingen of meldingen kunt communiceren.
+- android.permission.USE_BIOMETRIC: Deze toestemming is nodig zodat de app biometrische authenticatiemethoden kan gebruiken (zoals vingerafdruk, gezichtsherkenning of irisscans).
+- android.permission.VIBRATE: Met deze toestemming kan de app de trilfunctie van het apparaat bedienen om haptische feedback te geven. Deze feedback kan worden gebruikt voor waarschuwingen, meldingen of aangepaste gebruikersinteracties binnen de app.
+- android.permission.QUERY_ALL_PACKAGES: Met deze machtiging kan de app de lijst met alle geïnstalleerde apps op het apparaat opvragen en bekijken. Deze toestemming kan zorgen over de privacy opleveren en wordt door Google Play vaak gecontroleerd op gepast gebruik.
+- android.permission.REQUEST_DELETE_PACKAGES: Met deze machtiging kan de app verzoeken om pakketten (apps) van het apparaat te verwijderen. Deze machtiging is zeer beperkt en wordt doorgaans alleen verleend aan apps op systeemniveau of voor bedrijfsapps.
+- com.android.alarm.permission.SET_ALARM: Deze machtiging is nodig zodat een app alarmen op het apparaat kan instellen. Hiermee kan de app alarmen plannen die op specifieke tijdstippen worden geactiveerd. Deze worden vaak gebruikt door klok-, herinnerings- of taken-apps.
 
 Bezoek de <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> pagina voor meer details.
