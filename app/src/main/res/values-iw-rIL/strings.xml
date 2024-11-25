@@ -149,6 +149,10 @@
     <string name="widgets_settings_show_battery">יישומון סוללה</string>
     <string name="widgets_settings_display">לְהַצִיג</string>
     <string name="widgets_settings_select_order">בחר הזמנה</string>
+    <string name="widget_weather_feels_like">Feels Like : %s%</string>
+    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">Humidity : %d %%</string>
+    <string name="widget_weather_pressure">Pressure : %d hPa</string>
     <string name="acra_crash">לְהִתְרַסֵק</string>
     <string name="acra_dialog_text">אנו מצטערים, אבל %1$s נתקל בבעיה בלתי צפויה וצריך להיסגר. אנא עזור לנו להשתפר על ידי שליחת דוח קריסה.\n\n%1$s מעריכה את הפרטיות שלך והנתונים שנאספים משמשים אך ורק לשיפור יציבות האפליקציה. לא נאסף מידע אישי. תודה על תמיכתך!</string>
     <string name="acra_send_report">שלח דו\"ח</string>
