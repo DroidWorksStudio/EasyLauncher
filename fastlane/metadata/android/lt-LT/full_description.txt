@@ -35,4 +35,14 @@
 - Padarykite ekrano kopiją: akimirksniu užfiksuokite ekraną, kad išsaugotumėte ir bendrintumėte svarbią informaciją bei akimirkas.
 - Išjungti gestus: laikinai arba visam laikui išjunkite konkrečius gestus, kad tinkintumėte įrenginio sąveikos patirtį.
 
+<b>Permissions:</b>
+
+- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
+- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
+- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
+- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
+- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
+- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
+- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+
 Norėdami gauti daugiau informacijos, apsilankykite <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> puslapyje.

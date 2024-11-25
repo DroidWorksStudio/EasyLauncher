@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_system_language">Sistema</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Mėgstamiausios programos</string>
     <string name="hidden_apps">Paslėptos programos</string>
@@ -100,6 +101,8 @@
     <string name="settings_swipe_right">Braukite dešinėn</string>
     <string name="settings_select_search_engine">Pasirinkite paieškos variklį</string>
     <string name="settings_search_engine">Paieškos variklis</string>
+    <string name="settings_select_app_language">Pasirinkite programos kalbą</string>
+    <string name="settings_app_language">Programos kalba</string>
     <string name="settings_select_filter_strength">Pasirinkite filtro stiprumą</string>
     <string name="settings_filter_strength">Filtro stiprumas</string>
     <string name="settings_select_launcher_font">Pasirinkite šriftų šeimą</string>

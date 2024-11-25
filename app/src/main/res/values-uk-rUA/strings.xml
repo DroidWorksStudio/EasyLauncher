@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_system_language">система</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Улюблені програми</string>
     <string name="hidden_apps">Приховані програми</string>
@@ -100,6 +101,8 @@
     <string name="settings_swipe_right">Проведіть праворуч</string>
     <string name="settings_select_search_engine">Виберіть пошукову систему</string>
     <string name="settings_search_engine">Пошукова система</string>
+    <string name="settings_select_app_language">Виберіть мову програми</string>
+    <string name="settings_app_language">Мова програми</string>
     <string name="settings_select_filter_strength">Виберіть інтенсивність фільтра</string>
     <string name="settings_filter_strength">Міцність фільтра</string>
     <string name="settings_select_launcher_font">Виберіть сімейство шрифтів</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_system_language">מַעֲרֶכֶת</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">אפליקציות מועדפות</string>
     <string name="hidden_apps">אפליקציות נסתרות</string>
@@ -100,6 +101,8 @@
     <string name="settings_swipe_right">החלק ימינה</string>
     <string name="settings_select_search_engine">בחר מנוע חיפוש</string>
     <string name="settings_search_engine">מנוע חיפוש</string>
+    <string name="settings_select_app_language">בחר שפת אפליקציה</string>
+    <string name="settings_app_language">שפת האפליקציה</string>
     <string name="settings_select_filter_strength">בחר חוזק מסנן</string>
     <string name="settings_filter_strength">חוזק מסנן</string>
     <string name="settings_select_launcher_font">בחר משפחת גופנים</string>
