@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added a new App Group Padding setting - ([a5397af](https://github.com/DroidWorksStudio/EasyLauncher/commit/a5397afbc67d78e14a45f2a9f4ce500ae046c9f9))
+
 ### Bug Fixes:
 
 - Fixed the ContextProvider - ([527825a](https://github.com/DroidWorksStudio/EasyLauncher/commit/527825a886e0014d14b4fa5783fa2f67d81db81c))
