@@ -106,10 +106,10 @@
     <string name="settings_filter_strength">Filtre Gücü</string>
     <string name="settings_select_launcher_font">Bir Yazı Tipi Ailesi Seçin</string>
     <string name="settings_launcher_font">Font ailesi</string>
-    <string name="settings_select_icons">Select a Icon Type</string>
-    <string name="settings_icons">Icon Type</string>
-    <string name="settings_icons_easy_dots">Easy Dots</string>
-    <string name="settings_icons_niagara_dots">Niagara Dots</string>
+    <string name="settings_select_icons">Bir Simge Türü Seçin</string>
+    <string name="settings_icons">Simge Türü</string>
+    <string name="settings_icons_easy_dots">Kolay Noktalar</string>
+    <string name="settings_icons_niagara_dots">Niagara Noktaları</string>
     <string name="settings_reload_app_backup">Tercihler yedeklendi.</string>
     <string name="settings_reload_app_restore">Tercihler geri yüklendi. Yeniden başlatma.</string>
     <string name="settings_actions_open_app">Uygulamayı aç</string>
@@ -127,7 +127,7 @@
     <string name="settings_actions_disabled">Engelli</string>
     <string name="settings_units_metric">Metrik</string>
     <string name="settings_units_imperial">İmparatorluk</string>
-    <string name="settings_system">System</string>
+    <string name="settings_system">Sistem</string>
     <string name="authentication_title">Kimlik doğrulama</string>
     <string name="authentication_subtitle">Biyometrik kimlik bilgilerinizi kullanarak giriş yapın.</string>
     <string name="authentication_cancel">Kimlik Doğrulaması İptal</string>
