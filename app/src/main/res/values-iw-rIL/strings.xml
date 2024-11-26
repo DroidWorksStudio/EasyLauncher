@@ -106,10 +106,10 @@
     <string name="settings_filter_strength">חוזק מסנן</string>
     <string name="settings_select_launcher_font">בחר משפחת גופנים</string>
     <string name="settings_launcher_font">משפחת גופן</string>
-    <string name="settings_select_icons">Select a Icon Type</string>
-    <string name="settings_icons">Icon Type</string>
+    <string name="settings_select_icons">בחר סוג סמל</string>
+    <string name="settings_icons">סוג סמל</string>
     <string name="settings_icons_easy_dots">Easy Dots</string>
-    <string name="settings_icons_niagara_dots">Niagara Dots</string>
+    <string name="settings_icons_niagara_dots">ניאגרה נקודות</string>
     <string name="settings_reload_app_backup">העדפות מגובות.</string>
     <string name="settings_reload_app_restore">ההעדפות שוחזרו. מופעל מחדש.</string>
     <string name="settings_actions_open_app">אפליקציה פתוחה</string>
@@ -127,7 +127,7 @@
     <string name="settings_actions_disabled">נָכֶה</string>
     <string name="settings_units_metric">מֶטרִי</string>
     <string name="settings_units_imperial">קֵיסָרִי</string>
-    <string name="settings_system">System</string>
+    <string name="settings_system">מַעֲרֶכֶת</string>
     <string name="authentication_title">אימות</string>
     <string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
     <string name="authentication_cancel">ביטול האימות</string>
