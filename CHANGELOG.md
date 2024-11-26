@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Language Support:
+
+- Updated Language Files. ([#174](https://github.com/DroidWorksStudio/EasyLauncher/issues/174)) - ([3908ce6](https://github.com/DroidWorksStudio/EasyLauncher/commit/3908ce6abb14b83c835af9f97865cf2867556748))
+
 ### Releases:
 
 - Prepare for version 0.2.9 - ([8a919b0](https://github.com/DroidWorksStudio/EasyLauncher/commit/8a919b0709318376778cea26f541aaa8f14c3478))
