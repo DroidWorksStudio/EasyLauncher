@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed the ContextProvider - ([527825a](https://github.com/DroidWorksStudio/EasyLauncher/commit/527825a886e0014d14b4fa5783fa2f67d81db81c))
 - Fixed the home screen gestures not working in blank spaces. - ([0513351](https://github.com/DroidWorksStudio/EasyLauncher/commit/051335107deb4f8db599ab74847d3d27b1f7e8ea))
 
 ### Language Support:
