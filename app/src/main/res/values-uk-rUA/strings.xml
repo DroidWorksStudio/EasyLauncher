@@ -106,6 +106,10 @@
     <string name="settings_filter_strength">Міцність фільтра</string>
     <string name="settings_select_launcher_font">Виберіть сімейство шрифтів</string>
     <string name="settings_launcher_font">Сімейство шрифтів</string>
+    <string name="settings_select_icons">Select a Icon Type</string>
+    <string name="settings_icons">Icon Type</string>
+    <string name="settings_icons_easy_dots">Easy Dots</string>
+    <string name="settings_icons_niagara_dots">Niagara Dots</string>
     <string name="settings_reload_app_backup">Налаштування створено.</string>
     <string name="settings_reload_app_restore">Налаштування відновлено. Перезапуск.</string>
     <string name="settings_actions_open_app">Відкрийте додаток</string>
@@ -123,6 +127,7 @@
     <string name="settings_actions_disabled">Вимкнено</string>
     <string name="settings_units_metric">Метрика</string>
     <string name="settings_units_imperial">Імператорський</string>
+    <string name="settings_system">System</string>
     <string name="authentication_title">Аутентифікація</string>
     <string name="authentication_subtitle">Увійдіть, використовуючи свої біометричні облікові дані.</string>
     <string name="authentication_cancel">Автентифікація Скасувати</string>
