@@ -89,6 +89,7 @@ object Constants {
     const val URL_GOOGLE_PLAY_STORE = "https://play.google.com/store/search?c=apps&q"
     const val APP_GOOGLE_PLAY_STORE = "market://search?c=apps&q"
 
+    const val ICONS_PACK = "ICONS_PACK"
     const val LAUNCHER_FONT = "LAUNCHER_FONT"
 
     const val REQUEST_INSTALL_PERMISSION = 123
@@ -196,6 +197,20 @@ object Constants {
         }
     }
 
+    enum class IconPacks {
+        System,
+        EasyDots,
+        NiagaraDots;
+
+        fun getString(context: Context): String {
+            return when (this) {
+                System -> context.getString(R.string.settings_system)
+                EasyDots -> context.getString(R.string.settings_icons_easy_dots)
+                NiagaraDots -> context.getString(R.string.settings_icons_niagara_dots)
+            }
+        }
+    }
+
     enum class Fonts {
         System,
         Bitter,
@@ -229,7 +244,7 @@ object Constants {
 
         fun getString(context: Context): String {
             return when (this) {
-                System -> context.getString(R.string.settings_font_system)
+                System -> context.getString(R.string.settings_system)
                 Bitter -> context.getString(R.string.settings_font_bitter)
                 Dotness -> context.getString(R.string.settings_font_dotness)
                 DroidSans -> context.getString(R.string.settings_font_droidsans)
@@ -261,7 +276,7 @@ object Constants {
 
         fun string(context: Context): String {
             return when (this) {
-                System -> context.getString(R.string.app_system_language)
+                System -> context.getString(R.string.settings_system)
                 Czech -> "Czech"
                 Danish -> "Danish"
                 Dutch -> "Dutch"

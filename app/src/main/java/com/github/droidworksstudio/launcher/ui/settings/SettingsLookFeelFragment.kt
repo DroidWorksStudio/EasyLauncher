@@ -77,6 +77,7 @@ class SettingsLookFeelFragment : Fragment(),
 
         binding.apply {
             miscellaneousLauncherFontsControl.text = preferenceHelper.launcherFont.getString(context)
+            miscellaneousIconsControl.text = preferenceHelper.iconPack.name
         }
     }
 
@@ -97,15 +98,6 @@ class SettingsLookFeelFragment : Fragment(),
             alarmClockSwitchCompat.isChecked = preferenceHelper.showAlarmClock
             dailyWordSwitchCompat.isChecked = preferenceHelper.showDailyWord
             appIconsSwitchCompat.isChecked = preferenceHelper.showAppIcon
-            appIconDotsSwitchCompat.isChecked = preferenceHelper.showAppIconAsDots
-        }
-
-        if (!binding.appIconsSwitchCompat.isChecked) {
-            // Disable and gray out the other setting if appIconsSwitchCompat is checked
-            binding.appIconDotsSwitchCompat.apply {
-                isEnabled = binding.appIconsSwitchCompat.isChecked
-                isChecked = false
-            }
         }
     }
 
@@ -137,6 +129,10 @@ class SettingsLookFeelFragment : Fragment(),
             setAppWallpaper.setOnClickListener {
                 val intent = Intent(Intent.ACTION_SET_WALLPAPER)
                 startActivity(Intent.createChooser(intent, "Select Wallpaper"))
+            }
+
+            miscellaneousIconsControl.setOnClickListener {
+                showIconsDialog()
             }
 
             miscellaneousLauncherFontsControl.setOnClickListener {
@@ -188,19 +184,38 @@ class SettingsLookFeelFragment : Fragment(),
                 preferenceViewModel.setShowAppIcons(isChecked)
                 val feedbackType = if (isChecked) "on" else "off"
                 appHelper.triggerHapticFeedback(context, feedbackType)
-
-                // Disable and gray out the other setting if appIconsSwitchCompat is checked
-                binding.appIconDotsSwitchCompat.isEnabled = isChecked
-                binding.appIconDotsSwitchCompat.isChecked = false
             }
+        }
 
-            appIconDotsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
-                preferenceViewModel.setShowAppIconDots(isChecked)
-                val feedbackType = if (isChecked) "on" else "off"
+    }
+
+    private var iconsDialog: AlertDialog? = null
+
+    @RequiresApi(Build.VERSION_CODES.Q)
+    private fun showIconsDialog() {
+        // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
+        iconsDialog?.dismiss()
+        // Get the array of SearchEngines enum values
+        val items = Constants.IconPacks.entries.toTypedArray()
+
+        // Map the enum values to their string representations
+        val itemStrings = items.map { it.getString(context) }.toTypedArray()
+
+        val dialogBuilder = MaterialAlertDialogBuilder(context).apply {
+            setTitle(getString(R.string.settings_select_icons))
+            setItems(itemStrings) { _, which ->
+                val selectedItem = items[which]
+                preferenceViewModel.setIconsPack(selectedItem)
+                binding.miscellaneousIconsControl.text = preferenceHelper.iconPack.name
+
+                val feedbackType = "select"
                 appHelper.triggerHapticFeedback(context, feedbackType)
             }
         }
 
+        // Assign the created dialog to launcherFontDialog
+        iconsDialog = dialogBuilder.create()
+        iconsDialog?.show()
     }
 
     private var launcherFontDialog: AlertDialog? = null
@@ -238,6 +253,7 @@ class SettingsLookFeelFragment : Fragment(),
     }
 
     private fun dismissDialogs() {
+        iconsDialog?.dismiss()
         launcherFontDialog?.dismiss()
     }
 }
