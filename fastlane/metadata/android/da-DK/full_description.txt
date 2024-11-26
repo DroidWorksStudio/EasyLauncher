@@ -35,14 +35,14 @@
 - Tag et skærmbillede: Tag din skærm med det samme for at gemme og dele vigtige oplysninger og øjeblikke.
 - Deaktiver bevægelser: Deaktiver midlertidigt eller permanent specifikke bevægelser for at tilpasse din enheds interaktionsoplevelse.
 
-<b>Permissions:</b>
+<b>Tilladelser:</b>
 
-- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
-- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
-- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
-- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
-- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
-- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
-- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+- android.permission.SET_WALLPAPER: Denne tilladelse er nødvendig for, at appen kan ændre eller indstille enhedens tapet. Det giver appen mulighed for programmæssigt at ændre tapetet, der vises på hjemme- eller låseskærmen.
+- android.permission.EXPAND_STATUS_BAR: Denne tilladelse giver appen mulighed for at udvide eller skjule statuslinjen, hvilket giver funktionalitet til at interagere med de hurtige indstillinger eller meddelelser.
+- android.permission.USE_BIOMETRIC: Denne tilladelse er nødvendig for, at appen kan bruge biometriske godkendelsesmetoder (såsom fingeraftryk, ansigtsgenkendelse eller irisscanning).
+- android.permission.VIBRATE: Denne tilladelse giver appen mulighed for at styre enhedens vibrator for at give haptisk feedback, som kan bruges til advarsler, meddelelser eller brugerdefinerede brugerinteraktioner i appen.
+- android.permission.QUERY_ALL_PACKAGES: Denne tilladelse giver appen mulighed for at forespørge og se listen over alle installerede apps på enheden. Denne tilladelse kan give anledning til bekymringer om privatlivets fred og bliver ofte gennemgået af Google Play til passende brug.
+- android.permission.REQUEST_DELETE_PACKAGES: Denne tilladelse giver appen mulighed for at anmode om afinstallation af pakker (apps) fra enheden. Denne tilladelse er stærkt begrænset og gives normalt kun til apps på systemniveau eller virksomhedsniveau.
+- com.android.alarm.permission.SET_ALARM: Denne tilladelse er nødvendig for, at en app kan indstille alarmer på enheden. Det giver appen mulighed for at planlægge alarmer, der vil udløse på bestemte tidspunkter, almindeligvis brugt af ur-, påmindelses- eller opgaveapps.
 
 Besøg <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> siden for flere detaljer.
