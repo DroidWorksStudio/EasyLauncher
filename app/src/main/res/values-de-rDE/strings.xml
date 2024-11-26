@@ -106,10 +106,10 @@
     <string name="settings_filter_strength">Filterstärke</string>
     <string name="settings_select_launcher_font">Wählen Sie eine Schriftfamilie aus</string>
     <string name="settings_launcher_font">Schriftfamilie</string>
-    <string name="settings_select_icons">Select a Icon Type</string>
-    <string name="settings_icons">Icon Type</string>
-    <string name="settings_icons_easy_dots">Easy Dots</string>
-    <string name="settings_icons_niagara_dots">Niagara Dots</string>
+    <string name="settings_select_icons">Wählen Sie einen Symboltyp</string>
+    <string name="settings_icons">Symboltyp</string>
+    <string name="settings_icons_easy_dots">Einfache Punkte</string>
+    <string name="settings_icons_niagara_dots">Niagara-Punkte</string>
     <string name="settings_reload_app_backup">Einstellungen gesichert.</string>
     <string name="settings_reload_app_restore">Einstellungen wiederhergestellt. Neustart.</string>
     <string name="settings_actions_open_app">Öffne App</string>
