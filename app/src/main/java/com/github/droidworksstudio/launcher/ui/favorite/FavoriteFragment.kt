@@ -38,7 +38,6 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class FavoriteFragment : Fragment(),
     OnItemClickedListener.OnAppsClickedListener,
-    OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
     OnItemMoveListener.OnItemActionListener,
     BiometricHelper.Callback {

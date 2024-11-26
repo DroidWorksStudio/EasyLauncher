@@ -33,7 +33,6 @@ import javax.inject.Inject
 class HiddenFragment : Fragment(),
     OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.OnAppLongClickedListener,
-    OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
     BiometricHelper.Callback {
     private var _binding: FragmentHiddenBinding? = null
@@ -140,7 +139,6 @@ class HiddenFragment : Fragment(),
 
     private fun showSelectedApp(appInfo: AppInfo) {
         val bottomSheetFragment = AppInfoBottomSheetFragment(appInfo)
-        bottomSheetFragment.setOnBottomSheetDismissedListener(this)
         bottomSheetFragment.setOnAppStateClickListener(this)
         bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
 

@@ -4,19 +4,15 @@ import com.github.droidworksstudio.launcher.data.entities.AppInfo
 
 class OnItemClickedListener {
 
-    interface OnAppsClickedListener{
+    interface OnAppsClickedListener {
         fun onAppClicked(appInfo: AppInfo) {}
     }
 
-    interface OnAppLongClickedListener{
+    interface OnAppLongClickedListener {
         fun onAppLongClicked(appInfo: AppInfo) {}
     }
 
-    interface BottomSheetDismissListener {
-        fun onBottomSheetDismissed() {}
-    }
-
-    interface OnAppStateClickListener{
+    interface OnAppStateClickListener {
         fun onAppStateClicked(appInfo: AppInfo) {}
     }
 }
