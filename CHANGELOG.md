@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the home screen gestures not working in blank spaces. - ([0513351](https://github.com/DroidWorksStudio/EasyLauncher/commit/051335107deb4f8db599ab74847d3d27b1f7e8ea))
+
 ### Language Support:
 
 - Updated Language Files. ([#174](https://github.com/DroidWorksStudio/EasyLauncher/issues/174)) - ([3908ce6](https://github.com/DroidWorksStudio/EasyLauncher/commit/3908ce6abb14b83c835af9f97865cf2867556748))
