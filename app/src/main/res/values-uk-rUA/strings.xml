@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_system_language">система</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Улюблені програми</string>
     <string name="hidden_apps">Приховані програми</string>
@@ -74,7 +73,6 @@
     <string name="settings_display_alarm_clock">Показати будильник</string>
     <string name="settings_display_daily_word">Показати Daily Word</string>
     <string name="settings_display_app_icons">Показати значки програм</string>
-    <string name="settings_display_app_icon_dots">Показувати піктограми додатків у вигляді крапок</string>
     <string name="settings_display_automatic_keyboard">Автоматичне відображення клавіатури</string>
     <string name="settings_display_auto_open_apps">Автоматичне відкриття останньої програми</string>
     <string name="settings_search_from_start">Пошук із початку</string>
@@ -125,7 +123,6 @@
     <string name="settings_actions_disabled">Вимкнено</string>
     <string name="settings_units_metric">Метрика</string>
     <string name="settings_units_imperial">Імператорський</string>
-    <string name="settings_font_system">система</string>
     <string name="authentication_title">Аутентифікація</string>
     <string name="authentication_subtitle">Увійдіть, використовуючи свої біометричні облікові дані.</string>
     <string name="authentication_cancel">Автентифікація Скасувати</string>

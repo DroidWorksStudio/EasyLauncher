@@ -6,12 +6,17 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added setting for icon packs. - ([0d8425d](https://github.com/DroidWorksStudio/EasyLauncher/commit/0d8425d746d7b076b81e456890e6b634d55e8f20))
 - Added a new App Group Padding setting - ([a5397af](https://github.com/DroidWorksStudio/EasyLauncher/commit/a5397afbc67d78e14a45f2a9f4ce500ae046c9f9))
 
 ### Bug Fixes:
 
 - Fixed the ContextProvider - ([527825a](https://github.com/DroidWorksStudio/EasyLauncher/commit/527825a886e0014d14b4fa5783fa2f67d81db81c))
 - Fixed the home screen gestures not working in blank spaces. - ([0513351](https://github.com/DroidWorksStudio/EasyLauncher/commit/051335107deb4f8db599ab74847d3d27b1f7e8ea))
+
+### Feature Removal:
+
+- Removed setting for dots. - ([27a2ad9](https://github.com/DroidWorksStudio/EasyLauncher/commit/27a2ad99bb9f24c25c523c6d4fb629b03c650a7c))
 
 ### Language Support:
 

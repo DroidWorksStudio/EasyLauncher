@@ -95,10 +95,6 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.SHOW_APP_ICON, false)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_APP_ICON, value).apply()
 
-    var showAppIconAsDots: Boolean
-        get() = prefs.getBoolean(Constants.SHOW_APP_ICON_DOTS, false)
-        set(value) = prefs.edit().putBoolean(Constants.SHOW_APP_ICON_DOTS, value).apply()
-
     var locationDenied: Boolean
         get() = prefs.getBoolean(Constants.LOCATION_DENIED, false)
         set(value) = prefs.edit().putBoolean(Constants.LOCATION_DENIED, value).apply()
@@ -197,6 +193,21 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
             }
         }
         set(value) = prefs.edit().putString(Constants.SEARCH_ENGINE, value.name).apply()
+
+    var iconPack: Constants.IconPacks
+        get() {
+            return try {
+                Constants.IconPacks.valueOf(
+                    prefs.getString(
+                        Constants.ICONS_PACK,
+                        Constants.IconPacks.System.name
+                    ).toString()
+                )
+            } catch (_: Exception) {
+                Constants.IconPacks.System
+            }
+        }
+        set(value) = prefs.edit().putString(Constants.ICONS_PACK, value.name).apply()
 
     var launcherFont: Constants.Fonts
         get() {

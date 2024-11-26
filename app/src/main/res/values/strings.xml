@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_system_language">System</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Favorite Apps</string>
     <string name="hidden_apps">Hidden Apps</string>
@@ -99,7 +98,6 @@
     <string name="settings_display_alarm_clock">Show Alarm Clock</string>
     <string name="settings_display_daily_word">Show Daily Word</string>
     <string name="settings_display_app_icons">Show App Icons</string>
-    <string name="settings_display_app_icon_dots">Show App Icons As Dots</string>
     <string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
     <string name="settings_display_auto_open_apps">Auto Open Last App</string>
     <string name="settings_search_from_start">Search From Start</string>
@@ -143,6 +141,12 @@
     <string name="settings_select_launcher_font">Select a Font Family</string>
     <string name="settings_launcher_font">Font Family</string>
 
+    <string name="settings_select_icons">Select a Icon Type</string>
+    <string name="settings_icons">Icon Type</string>
+
+    <string name="settings_icons_easy_dots">Easy Dots</string>
+    <string name="settings_icons_niagara_dots">Niagara Dots</string>
+
     <string name="settings_reload_app_backup">Preferences backed up.</string>
     <string name="settings_reload_app_restore">Preferences restored. Restarting.</string>
 
@@ -163,7 +167,7 @@
     <string name="settings_units_metric">Metric</string>
     <string name="settings_units_imperial">Imperial</string>
 
-    <string name="settings_font_system">System</string>
+    <string name="settings_system">System</string>
 
     <string name="authentication_title">Authentication</string>
     <string name="authentication_subtitle">Log in using your biometric credentials.</string>

@@ -15,6 +15,7 @@ import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.databinding.ItemHomeBinding
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
+import com.github.droidworksstudio.launcher.utils.Constants
 import javax.inject.Inject
 
 class HomeViewHolder @Inject constructor(
@@ -44,11 +45,16 @@ class HomeViewHolder @Inject constructor(
             if (preferenceHelper.showAppIcon) {
                 val pm: PackageManager = binding.root.context.packageManager
                 val appIcon = pm.getApplicationIcon(appInfo.packageName)
-                val appIconSize = (preferenceHelper.appTextSize * if (preferenceHelper.showAppIconAsDots) 1.1f else 2f).toInt()
+                val appIconSize = (preferenceHelper.appTextSize * if (preferenceHelper.iconPack == Constants.IconPacks.System) 2f else 1.1f).toInt()
 
                 val layoutParams = LinearLayoutCompat.LayoutParams(appIconSize, appIconSize)
-                val appNewIcon: Drawable? = if (preferenceHelper.showAppIconAsDots) {
-                    val newIcon = ContextCompat.getDrawable(itemView.context, R.drawable.app_dot_icon)!!
+                val appNewIcon: Drawable? = if (preferenceHelper.iconPack == Constants.IconPacks.EasyDots) {
+                    val newIcon = ContextCompat.getDrawable(itemView.context, R.drawable.app_easy_dot_icon)!!
+                    val bitmap = ColorIconsExtensions.drawableToBitmap(appIcon)
+                    val dominantColor = ColorIconsExtensions.getDominantColor(bitmap)
+                    ColorIconsExtensions.recolorDrawable(newIcon, dominantColor)
+                } else if (preferenceHelper.iconPack == Constants.IconPacks.NiagaraDots) {
+                    val newIcon = ContextCompat.getDrawable(itemView.context, R.drawable.app_niagara_dot_icon)!!
                     val bitmap = ColorIconsExtensions.drawableToBitmap(appIcon)
                     val dominantColor = ColorIconsExtensions.getDominantColor(bitmap)
                     ColorIconsExtensions.recolorDrawable(newIcon, dominantColor)

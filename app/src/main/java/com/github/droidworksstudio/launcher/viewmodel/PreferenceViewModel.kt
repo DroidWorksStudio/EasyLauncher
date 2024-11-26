@@ -23,7 +23,6 @@ class PreferenceViewModel @Inject constructor(
     private val showWeatherWidgetSunSetRiseLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showBatteryWidgetLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val showAppIconLiveData: MutableLiveData<Boolean> = MutableLiveData()
-    private val showAppIconAsDotsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val homeAppAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val homeDateAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
     private val homeTimeAlignmentLiveData: MutableLiveData<Int> = MutableLiveData()
@@ -56,6 +55,7 @@ class PreferenceViewModel @Inject constructor(
 
     private val appLanguageLiveData: MutableLiveData<Constants.Language> = MutableLiveData()
     private val searchEngineLiveData: MutableLiveData<Constants.SearchEngines> = MutableLiveData()
+    private val iconPackLiveData: MutableLiveData<Constants.IconPacks> = MutableLiveData()
     private val launcherFontLiveData: MutableLiveData<Constants.Fonts> = MutableLiveData()
     private val doubleTapActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
     private val swipeUpActionLiveData: MutableLiveData<Constants.Action> = MutableLiveData()
@@ -101,11 +101,6 @@ class PreferenceViewModel @Inject constructor(
     fun setShowAppIcons(showAppIcons: Boolean) {
         preferenceHelper.showAppIcon = showAppIcons
         showAppIconLiveData.postValue(preferenceHelper.showAppIcon)
-    }
-
-    fun setShowAppIconDots(showAppIconAsDots: Boolean) {
-        preferenceHelper.showAppIconAsDots = showAppIconAsDots
-        showAppIconAsDotsLiveData.postValue(preferenceHelper.showAppIconAsDots)
     }
 
     fun setAlarmClockColor(alarmClockColor: Int) {
@@ -291,6 +286,11 @@ class PreferenceViewModel @Inject constructor(
     fun setSearchEngine(searchEngine: Constants.SearchEngines) {
         preferenceHelper.searchEngines = searchEngine
         searchEngineLiveData.postValue((preferenceHelper.searchEngines))
+    }
+
+    fun setIconsPack(iconPack: Constants.IconPacks) {
+        preferenceHelper.iconPack = iconPack
+        iconPackLiveData.postValue((preferenceHelper.iconPack))
     }
 
     fun setFilterStrength(filterStrength: Int) {
