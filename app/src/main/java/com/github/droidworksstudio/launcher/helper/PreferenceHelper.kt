@@ -123,6 +123,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getInt(Constants.HOME_APP_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(Constants.HOME_APP_ALIGNMENT, value).apply()
 
+    var homeAppsPadding: Float
+        get() = prefs.getFloat(Constants.APPS_PADDING, 128f)
+        set(value) = prefs.edit().putFloat(Constants.APPS_PADDING, value).apply()
+
     var homeAppPadding: Float
         get() = prefs.getFloat(Constants.APP_TEXT_PADDING, 10f)
         set(value) = prefs.edit().putFloat(Constants.APP_TEXT_PADDING, value).apply()

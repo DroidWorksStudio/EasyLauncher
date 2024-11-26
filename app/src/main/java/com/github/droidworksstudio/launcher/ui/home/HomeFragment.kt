@@ -182,7 +182,7 @@ class HomeFragment : Fragment(),
     }
 
     private fun setupRecyclerView() {
-        val marginInPixels = 128
+        val marginInPixels = preferenceHelper.homeAppsPadding
 
         // Ensure correct type for layout params
         val layoutParams = (binding.appListAdapter.layoutParams as? LinearLayout.LayoutParams)
@@ -192,8 +192,7 @@ class HomeFragment : Fragment(),
             )
 
         // Set the bottom margin instead of top
-        layoutParams.bottomMargin = marginInPixels
-        layoutParams.topMargin = marginInPixels
+        layoutParams.topMargin = marginInPixels.toInt()
 
         // Set gravity to align RecyclerView to the bottom
         layoutParams.gravity = when (preferenceHelper.homeAppAlignment) {

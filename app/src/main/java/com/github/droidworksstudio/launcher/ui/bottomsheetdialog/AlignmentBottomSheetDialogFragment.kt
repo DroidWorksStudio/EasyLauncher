@@ -62,52 +62,57 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
     private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
-        binding.selectDateTextSize.apply {
-            text = appHelper.gravityToString(preferenceHelper.homeDateAlignment)
+        binding.apply {
+            selectDateTextSize.apply {
+                text = appHelper.gravityToString(preferenceHelper.homeDateAlignment)
+            }
+
+            selectTimeTextSize.apply {
+                text = appHelper.gravityToString(preferenceHelper.homeTimeAlignment)
+            }
+
+            selectAppTextSize.apply {
+                text = appHelper.gravityToString(preferenceHelper.homeAppAlignment)
+            }
+
+            selectWordTextSize.apply {
+                text = appHelper.gravityToString(preferenceHelper.homeDailyWordAlignment)
+            }
+
+            selectAlarmClockTextSize.apply {
+                text = appHelper.gravityToString(preferenceHelper.homeAlarmClockAlignment)
+            }
         }
 
-        binding.selectTimeTextSize.apply {
-            text = appHelper.gravityToString(preferenceHelper.homeTimeAlignment)
-        }
-
-        binding.selectAppTextSize.apply {
-            text = appHelper.gravityToString(preferenceHelper.homeAppAlignment)
-        }
-
-        binding.selectWordTextSize.apply {
-            text = appHelper.gravityToString(preferenceHelper.homeDailyWordAlignment)
-        }
-
-        binding.selectAlarmClockTextSize.apply {
-            text = appHelper.gravityToString(preferenceHelper.homeAlarmClockAlignment)
-        }
     }
 
     @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeClickListener() {
-        binding.bottomAlignmentDateView.setOnClickListener {
-            selectedAlignment = REQUEST_KEY_DATE_ALIGNMENT
-            showListDialog(selectedAlignment)
-        }
+        binding.apply {
+            bottomAlignmentDateView.setOnClickListener {
+                selectedAlignment = REQUEST_KEY_DATE_ALIGNMENT
+                showListDialog(selectedAlignment)
+            }
 
-        binding.bottomAlignmentTimeView.setOnClickListener {
-            selectedAlignment = REQUEST_KEY_TIME_ALIGNMENT
-            showListDialog(selectedAlignment)
-        }
+            bottomAlignmentTimeView.setOnClickListener {
+                selectedAlignment = REQUEST_KEY_TIME_ALIGNMENT
+                showListDialog(selectedAlignment)
+            }
 
-        binding.bottomAlignmentAppView.setOnClickListener {
-            selectedAlignment = REQUEST_KEY_APP_ALIGNMENT
-            showListDialog(selectedAlignment)
-        }
+            bottomAlignmentAppView.setOnClickListener {
+                selectedAlignment = REQUEST_KEY_APP_ALIGNMENT
+                showListDialog(selectedAlignment)
+            }
 
-        binding.bottomAlignmentWordView.setOnClickListener {
-            selectedAlignment = REQUEST_KEY_WORD_ALIGNMENT
-            showListDialog(selectedAlignment)
-        }
+            bottomAlignmentWordView.setOnClickListener {
+                selectedAlignment = REQUEST_KEY_WORD_ALIGNMENT
+                showListDialog(selectedAlignment)
+            }
 
-        binding.bottomAlignmentAlarmClockView.setOnClickListener {
-            selectedAlignment = REQUEST_KEY_ALARM_CLOCK_ALIGNMENT
-            showListDialog(selectedAlignment)
+            bottomAlignmentAlarmClockView.setOnClickListener {
+                selectedAlignment = REQUEST_KEY_ALARM_CLOCK_ALIGNMENT
+                showListDialog(selectedAlignment)
+            }
         }
     }
 
@@ -123,45 +128,47 @@ class AlignmentBottomSheetDialogFragment : BottomSheetDialogFragment() {
             val selectedItem = index
             val gravity = appHelper.getGravityFromSelectedItem(selectedItem)
 
-            when (selectedAlignment) {
-                REQUEST_KEY_APP_ALIGNMENT -> {
-                    setAlignment(
-                        selectedAlignment,
-                        gravity,
-                        binding.selectAppTextSize
-                    )
-                }
+            binding.apply {
+                when (selectedAlignment) {
+                    REQUEST_KEY_APP_ALIGNMENT -> {
+                        setAlignment(
+                            selectedAlignment,
+                            gravity,
+                            selectAppTextSize
+                        )
+                    }
 
-                REQUEST_KEY_TIME_ALIGNMENT -> {
-                    setAlignment(
-                        selectedAlignment,
-                        gravity,
-                        binding.selectTimeTextSize
-                    )
-                }
+                    REQUEST_KEY_TIME_ALIGNMENT -> {
+                        setAlignment(
+                            selectedAlignment,
+                            gravity,
+                            selectTimeTextSize
+                        )
+                    }
 
-                REQUEST_KEY_DATE_ALIGNMENT -> {
-                    setAlignment(
-                        selectedAlignment,
-                        gravity,
-                        binding.selectDateTextSize
-                    )
-                }
+                    REQUEST_KEY_DATE_ALIGNMENT -> {
+                        setAlignment(
+                            selectedAlignment,
+                            gravity,
+                            selectDateTextSize
+                        )
+                    }
 
-                REQUEST_KEY_WORD_ALIGNMENT -> {
-                    setAlignment(
-                        selectedAlignment,
-                        gravity,
-                        binding.selectWordTextSize
-                    )
-                }
+                    REQUEST_KEY_WORD_ALIGNMENT -> {
+                        setAlignment(
+                            selectedAlignment,
+                            gravity,
+                            selectWordTextSize
+                        )
+                    }
 
-                REQUEST_KEY_ALARM_CLOCK_ALIGNMENT -> {
-                    setAlignment(
-                        selectedAlignment,
-                        gravity,
-                        binding.selectAlarmClockTextSize
-                    )
+                    REQUEST_KEY_ALARM_CLOCK_ALIGNMENT -> {
+                        setAlignment(
+                            selectedAlignment,
+                            gravity,
+                            selectAlarmClockTextSize
+                        )
+                    }
                 }
             }
         }

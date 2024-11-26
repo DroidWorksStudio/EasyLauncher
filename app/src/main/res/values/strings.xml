@@ -116,7 +116,8 @@
     <string name="appearance_bottom_dialog_alignment_title">Alignment</string>
     <string name="appearance_bottom_dialog_desc_date">Date\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Time\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">Apps\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">Apps Group\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Word\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Battery\u0020:\u0020 </string>

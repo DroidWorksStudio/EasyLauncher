@@ -47,6 +47,7 @@ class PreferenceViewModel @Inject constructor(
     private val searchFromStartLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val lockSettingsLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    private val appGroupPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
 
     private val weatherOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
@@ -230,6 +231,11 @@ class PreferenceViewModel @Inject constructor(
     fun setAppPaddingSize(appPaddingSize: Float) {
         preferenceHelper.homeAppPadding = appPaddingSize
         appPaddingSizeLiveData.postValue(preferenceHelper.homeAppPadding)
+    }
+
+    fun setAppGroupPaddingSize(appPaddingSize: Float) {
+        preferenceHelper.homeAppsPadding = appPaddingSize
+        appGroupPaddingSizeLiveData.postValue(preferenceHelper.homeAppsPadding)
     }
 
     fun setDoubleTap(action: Constants.Action) {

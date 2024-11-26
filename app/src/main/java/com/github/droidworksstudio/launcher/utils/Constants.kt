@@ -53,6 +53,7 @@ object Constants {
     const val ALARM_CLOCK_TEXT_SIZE = "ALARM_CLOCK_TEXT_SIZE"
     const val DAILY_WORD_TEXT_SIZE = "DAILY_WORD_TEXT_SIZE"
 
+    const val APPS_PADDING = "APPS_PADDING"
     const val APP_TEXT_PADDING = "APP_TEXT_PADDING"
 
     const val SHOW_APP_ICON = "SHOW_APP_ICON"
@@ -95,6 +96,12 @@ object Constants {
 
     const val FILTER_STRENGTH_MIN = 0
     const val FILTER_STRENGTH_MAX = 100
+
+    const val APP_GROUP_PADDING_MIN = 0.0
+    const val APP_GROUP_PADDING_MAX = 1000.0
+
+    const val APP_PADDING_MIN = 0.0
+    const val APP_PADDING_MAX = 100.0
 
     const val BACKUP_WRITE = 987
     const val BACKUP_READ = 876

@@ -97,64 +97,77 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
         val applicationInfo = packageManager?.getApplicationInfo(packageName, 0)
         val appName = applicationInfo?.let { packageManager.getApplicationLabel(it).toString() }
 
-        binding.bottomSheetFavHidden.setOnClickListener {
-            appStateClickListener?.onAppStateClicked(appInfo)
+        binding.apply {
+            bottomSheetFavHidden.setOnClickListener {
+                appStateClickListener?.onAppStateClicked(appInfo)
 
-            appInfo.favorite = !appInfo.favorite
+                appInfo.favorite = !appInfo.favorite
 
-            viewModel.updateAppInfoFavorite(appInfo)
+                viewModel.updateAppInfoFavorite(appInfo)
 
-            Log.d("Tag", "${appInfo.appName} : Bottom Favorite: ${appInfo.favorite}")
-            Log.d("Tag", "${appInfo.appName} : Bottom Order: ${appInfo.appOrder}")
+                Log.d("Tag", "${appInfo.appName} : Bottom Favorite: ${appInfo.favorite}")
+                Log.d("Tag", "${appInfo.appName} : Bottom Order: ${appInfo.appOrder}")
 
-            dismiss()
-        }
-
-        binding.bottomSheetRename.addTextChangedListener(object : TextWatcher {
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                dismiss()
             }
 
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                appInfo.appName = s.toString()
+            bottomSheetRename.addTextChangedListener(object : TextWatcher {
 
-                if (s.isNullOrEmpty()) {
-                    viewModel.updateAppInfoAppName(appInfo, appName.toString())
-                } else {
-                    viewModel.updateAppInfoAppName(appInfo, s.toString())
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 }
-            }
 
-            override fun afterTextChanged(s: Editable?) {
-                if (s.isNullOrEmpty()) {
-                    binding.bottomSheetRename.setHintTextColor(
-                        ContextCompat.getColor(
-                            requireContext(),
-                            R.color.white
-                        )
-                    )
-                    binding.bottomSheetRename.hint = appName
-                    appInfo.appName = appName ?: ""
-                } else {
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                     appInfo.appName = s.toString()
+
+                    if (s.isNullOrEmpty()) {
+                        viewModel.updateAppInfoAppName(appInfo, appName.toString())
+                    } else {
+                        viewModel.updateAppInfoAppName(appInfo, s.toString())
+                    }
                 }
 
+                override fun afterTextChanged(s: Editable?) {
+                    if (s.isNullOrEmpty()) {
+                        bottomSheetRename.setHintTextColor(
+                            ContextCompat.getColor(
+                                requireContext(),
+                                R.color.white
+                            )
+                        )
+                        binding.bottomSheetRename.hint = appName
+                        appInfo.appName = appName ?: ""
+                    } else {
+                        appInfo.appName = s.toString()
+                    }
+
+                }
+            })
+
+            bottomSheetRenameDone.setOnClickListener {
+                appStateClickListener?.onAppStateClicked(appInfo)
+                viewModel.updateAppInfoAppName(appInfo, appInfo.appName)
+                dismiss()
+                Log.d("Tag", "${appInfo.appName} Bottom State: ${appInfo.appName}")
             }
-        })
 
-        binding.bottomSheetRenameDone.setOnClickListener {
-            appStateClickListener?.onAppStateClicked(appInfo)
-            viewModel.updateAppInfoAppName(appInfo, appInfo.appName)
-            dismiss()
-            Log.d("Tag", "${appInfo.appName} Bottom State: ${appInfo.appName}")
-        }
+            bottomSheetHidden.setOnClickListener {
+                appStateClickListener?.onAppStateClicked(appInfo)
+                appInfo.hidden = !appInfo.hidden
 
-        binding.bottomSheetHidden.setOnClickListener {
-            appStateClickListener?.onAppStateClicked(appInfo)
-            appInfo.hidden = !appInfo.hidden
+                viewModel.updateAppHidden(appInfo, appInfo.hidden)
+                dismiss()
+            }
 
-            viewModel.updateAppHidden(appInfo, appInfo.hidden)
-            dismiss()
+            bottomSheetUninstall.setOnClickListener {
+                appStateClickListener?.onAppStateClicked(appInfo)
+                requireContext().unInstallApp(appInfo)
+                dismiss()
+            }
+
+            bottomSheetInfo.setOnClickListener {
+                requireContext().appInfo(appInfo)
+                dismiss()
+            }
         }
 
         binding.bottomSheetLock.setOnClickListener {
@@ -165,17 +178,6 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
                 viewModel.updateAppLock(appInfo, appInfo.lock)
                 dismiss()
             }
-        }
-
-        binding.bottomSheetUninstall.setOnClickListener {
-            appStateClickListener?.onAppStateClicked(appInfo)
-            requireContext().unInstallApp(appInfo)
-            dismiss()
-        }
-
-        binding.bottomSheetInfo.setOnClickListener {
-            requireContext().appInfo(appInfo)
-            dismiss()
         }
     }
 

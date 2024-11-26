@@ -57,37 +57,41 @@ class TextBottomSheetDialogFragment : BottomSheetDialogFragment() {
     private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
-        binding.selectDateTextSize.setText("${preferenceHelper.dateTextSize}")
-        binding.selectTimeTextSize.setText("${preferenceHelper.timeTextSize}")
-        binding.selectAppTextSize.setText("${preferenceHelper.appTextSize}")
-        binding.selectBatteryTextSize.setText("${preferenceHelper.batteryTextSize}")
-        binding.selectAlarmClockTextSize.setText("${preferenceHelper.alarmClockTextSize}")
-        binding.selectDailyWordTextSize.setText("${preferenceHelper.dailyWordTextSize}")
+        binding.apply {
+            selectDateTextSize.setText("${preferenceHelper.dateTextSize}")
+            selectTimeTextSize.setText("${preferenceHelper.timeTextSize}")
+            selectAppTextSize.setText("${preferenceHelper.appTextSize}")
+            selectBatteryTextSize.setText("${preferenceHelper.batteryTextSize}")
+            selectAlarmClockTextSize.setText("${preferenceHelper.alarmClockTextSize}")
+            selectDailyWordTextSize.setText("${preferenceHelper.dailyWordTextSize}")
+        }
     }
 
     @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeValueChange() {
-        val dateValue = binding.selectDateTextSize.text.toString()
-        val timeValue = binding.selectTimeTextSize.text.toString()
-        val appValue = binding.selectAppTextSize.text.toString()
-        val batteryValue = binding.selectBatteryTextSize.text.toString()
-        val alarmValue = binding.selectAlarmClockTextSize.text.toString()
-        val wordValue = binding.selectDailyWordTextSize.text.toString()
+        binding.apply {
+            val dateValue = selectDateTextSize.text.toString()
+            val timeValue = selectTimeTextSize.text.toString()
+            val appValue = selectAppTextSize.text.toString()
+            val batteryValue = selectBatteryTextSize.text.toString()
+            val alarmValue = selectAlarmClockTextSize.text.toString()
+            val wordValue = selectDailyWordTextSize.text.toString()
 
-        val dateFloatValue = parseFloatValue(dateValue, preferenceHelper.dateTextSize)
-        val timeFloatValue = parseFloatValue(timeValue, preferenceHelper.timeTextSize)
-        val appFloatValue = parseFloatValue(appValue, preferenceHelper.appTextSize)
-        val batteryFloatValue = parseFloatValue(batteryValue, preferenceHelper.batteryTextSize)
-        val alarmFloatValue = parseFloatValue(alarmValue, preferenceHelper.alarmClockTextSize)
-        val wordFloatValue = parseFloatValue(wordValue, preferenceHelper.dailyWordTextSize)
-        dismiss()
+            val dateFloatValue = parseFloatValue(dateValue, preferenceHelper.dateTextSize)
+            val timeFloatValue = parseFloatValue(timeValue, preferenceHelper.timeTextSize)
+            val appFloatValue = parseFloatValue(appValue, preferenceHelper.appTextSize)
+            val batteryFloatValue = parseFloatValue(batteryValue, preferenceHelper.batteryTextSize)
+            val alarmFloatValue = parseFloatValue(alarmValue, preferenceHelper.alarmClockTextSize)
+            val wordFloatValue = parseFloatValue(wordValue, preferenceHelper.dailyWordTextSize)
+            dismiss()
 
-        preferenceViewModel.setDateTextSize(dateFloatValue)
-        preferenceViewModel.setTimeTextSize(timeFloatValue)
-        preferenceViewModel.setAppTextSize(appFloatValue)
-        preferenceViewModel.setBatteryTextSize(batteryFloatValue)
-        preferenceViewModel.setAlarmClockTextSize(alarmFloatValue)
-        preferenceViewModel.setDailyWordTextSize(wordFloatValue)
+            preferenceViewModel.setDateTextSize(dateFloatValue)
+            preferenceViewModel.setTimeTextSize(timeFloatValue)
+            preferenceViewModel.setAppTextSize(appFloatValue)
+            preferenceViewModel.setBatteryTextSize(batteryFloatValue)
+            preferenceViewModel.setAlarmClockTextSize(alarmFloatValue)
+            preferenceViewModel.setDailyWordTextSize(wordFloatValue)
+        }
 
         val feedbackType = "save"
         appHelper.triggerHapticFeedback(context, feedbackType)

@@ -64,112 +64,116 @@ class ColorBottomSheetDialogFragment : BottomSheetDialogFragment() {
     private fun initView() {
         bottomDialogHelper.setupDialogStyle(dialog)
 
-        binding.selectDateTextColor.apply {
-            text = bottomDialogHelper.getColorText(preferenceHelper.dateColor)
-            setTextColor(preferenceHelper.dateColor)
-        }
+        binding.apply {
+            selectDateTextColor.apply {
+                text = bottomDialogHelper.getColorText(preferenceHelper.dateColor)
+                setTextColor(preferenceHelper.dateColor)
+            }
 
-        binding.selectTimeTextColor.apply {
-            text = bottomDialogHelper.getColorText(preferenceHelper.timeColor)
-            setTextColor(preferenceHelper.timeColor)
-        }
+            selectTimeTextColor.apply {
+                text = bottomDialogHelper.getColorText(preferenceHelper.timeColor)
+                setTextColor(preferenceHelper.timeColor)
+            }
 
-        binding.selectAppTextColor.apply {
-            text = bottomDialogHelper.getColorText(preferenceHelper.appColor)
-            setTextColor(preferenceHelper.appColor)
-        }
+            selectAppTextColor.apply {
+                text = bottomDialogHelper.getColorText(preferenceHelper.appColor)
+                setTextColor(preferenceHelper.appColor)
+            }
 
-        binding.selectBatteryTextColor.apply {
-            text = bottomDialogHelper.getColorText(preferenceHelper.batteryColor)
-            setTextColor(preferenceHelper.batteryColor)
-        }
+            selectBatteryTextColor.apply {
+                text = bottomDialogHelper.getColorText(preferenceHelper.batteryColor)
+                setTextColor(preferenceHelper.batteryColor)
+            }
 
-        binding.selectAlarmClockTextColor.apply {
-            text = bottomDialogHelper.getColorText(preferenceHelper.alarmClockColor)
-            setTextColor(preferenceHelper.alarmClockColor)
-        }
+            selectAlarmClockTextColor.apply {
+                text = bottomDialogHelper.getColorText(preferenceHelper.alarmClockColor)
+                setTextColor(preferenceHelper.alarmClockColor)
+            }
 
-        binding.selectWordTextColor.apply {
-            text = bottomDialogHelper.getColorText(preferenceHelper.dailyWordColor)
-            setTextColor(preferenceHelper.dailyWordColor)
-        }
+            selectWordTextColor.apply {
+                text = bottomDialogHelper.getColorText(preferenceHelper.dailyWordColor)
+                setTextColor(preferenceHelper.dailyWordColor)
+            }
 
-        binding.selectWidgetBackgroundColor.apply {
-            text = bottomDialogHelper.getColorText(preferenceHelper.widgetBackgroundColor)
-            setTextColor(preferenceHelper.widgetBackgroundColor)
-        }
+            selectWidgetBackgroundColor.apply {
+                text = bottomDialogHelper.getColorText(preferenceHelper.widgetBackgroundColor)
+                setTextColor(preferenceHelper.widgetBackgroundColor)
+            }
 
-        binding.selectWidgetTextColor.apply {
-            text = bottomDialogHelper.getColorText(preferenceHelper.widgetTextColor)
-            setTextColor(preferenceHelper.widgetTextColor)
+            selectWidgetTextColor.apply {
+                text = bottomDialogHelper.getColorText(preferenceHelper.widgetTextColor)
+                setTextColor(preferenceHelper.widgetTextColor)
+            }
         }
     }
 
 
     @RequiresApi(Build.VERSION_CODES.Q)
     private fun observeClickListener() {
-        binding.bottomColorDateView.setOnClickListener {
-            showColorPickerDialog(
-                binding.selectDateTextColor,
-                REQUEST_KEY_DATE_COLOR,
-                preferenceHelper.dateColor
-            )
-        }
+        binding.apply {
+            bottomColorDateView.setOnClickListener {
+                showColorPickerDialog(
+                    binding.selectDateTextColor,
+                    REQUEST_KEY_DATE_COLOR,
+                    preferenceHelper.dateColor
+                )
+            }
 
-        binding.bottomColorTimeView.setOnClickListener {
-            showColorPickerDialog(
-                binding.selectTimeTextColor,
-                REQUEST_KEY_TIME_COLOR,
-                preferenceHelper.timeColor
-            )
-        }
+            bottomColorTimeView.setOnClickListener {
+                showColorPickerDialog(
+                    binding.selectTimeTextColor,
+                    REQUEST_KEY_TIME_COLOR,
+                    preferenceHelper.timeColor
+                )
+            }
 
-        binding.bottomColorAppView.setOnClickListener {
-            showColorPickerDialog(
-                binding.selectAppTextColor,
-                REQUEST_KEY_APP_COLOR,
-                preferenceHelper.appColor
-            )
-        }
+            bottomColorAppView.setOnClickListener {
+                showColorPickerDialog(
+                    binding.selectAppTextColor,
+                    REQUEST_KEY_APP_COLOR,
+                    preferenceHelper.appColor
+                )
+            }
 
-        binding.bottomColorBatteryView.setOnClickListener {
-            showColorPickerDialog(
-                binding.selectBatteryTextColor,
-                REQUEST_KEY_BATTERY_COLOR,
-                preferenceHelper.batteryColor
-            )
-        }
+            bottomColorBatteryView.setOnClickListener {
+                showColorPickerDialog(
+                    binding.selectBatteryTextColor,
+                    REQUEST_KEY_BATTERY_COLOR,
+                    preferenceHelper.batteryColor
+                )
+            }
 
-        binding.bottomColorWordView.setOnClickListener {
-            showColorPickerDialog(
-                binding.selectWordTextColor,
-                REQUEST_KEY_DAILY_WORD_COLOR,
-                preferenceHelper.dailyWordColor
-            )
-        }
+            bottomColorWordView.setOnClickListener {
+                showColorPickerDialog(
+                    binding.selectWordTextColor,
+                    REQUEST_KEY_DAILY_WORD_COLOR,
+                    preferenceHelper.dailyWordColor
+                )
+            }
 
-        binding.bottomColorAlarmClockView.setOnClickListener {
-            showColorPickerDialog(
-                binding.selectAlarmClockTextColor,
-                REQUEST_KEY_DAILY_ALARM_CLOCK_COLOR,
-                preferenceHelper.alarmClockColor
-            )
-        }
+            bottomColorAlarmClockView.setOnClickListener {
+                showColorPickerDialog(
+                    binding.selectAlarmClockTextColor,
+                    REQUEST_KEY_DAILY_ALARM_CLOCK_COLOR,
+                    preferenceHelper.alarmClockColor
+                )
+            }
 
-        binding.bottomColorWidgetBackgroundView.setOnClickListener {
-            showColorPickerDialog(
-                binding.selectWidgetBackgroundColor,
-                REQUEST_KEY_WIDGET_BACKGROUND_COLOR,
-                preferenceHelper.widgetBackgroundColor
-            )
-        }
+            bottomColorWidgetBackgroundView.setOnClickListener {
+                showColorPickerDialog(
+                    binding.selectWidgetBackgroundColor,
+                    REQUEST_KEY_WIDGET_BACKGROUND_COLOR,
+                    preferenceHelper.widgetBackgroundColor
+                )
+            }
 
-        binding.bottomColorWidgetTextView.setOnClickListener {
-            showColorPickerDialog(
-                binding.selectWidgetTextColor,
-                REQUEST_KEY_WIDGET_TEXT_COLOR,
-                preferenceHelper.widgetTextColor
-            )
+            bottomColorWidgetTextView.setOnClickListener {
+                showColorPickerDialog(
+                    binding.selectWidgetTextColor,
+                    REQUEST_KEY_WIDGET_TEXT_COLOR,
+                    preferenceHelper.widgetTextColor
+                )
+            }
         }
     }
 
