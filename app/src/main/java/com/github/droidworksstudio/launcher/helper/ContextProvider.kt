@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.launcher.helper.contextProvider.kt
+package com.github.droidworksstudio.launcher.helper
 
 import android.content.Context
 

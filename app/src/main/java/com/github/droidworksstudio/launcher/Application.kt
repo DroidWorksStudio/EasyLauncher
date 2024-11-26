@@ -3,8 +3,8 @@ package com.github.droidworksstudio.launcher
 import android.app.Application
 import android.content.Context
 import android.graphics.Typeface
+import com.github.droidworksstudio.launcher.helper.ContextProvider
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.helper.contextProvider.kt.ContextProvider
 import dagger.hilt.android.HiltAndroidApp
 import org.acra.ACRA
 import org.acra.ReportField

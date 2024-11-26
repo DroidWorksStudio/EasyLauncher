@@ -10,7 +10,7 @@ import android.util.Log
 import androidx.annotation.RequiresApi
 import com.github.droidworksstudio.launcher.data.dao.AppInfoDAO
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
-import com.github.droidworksstudio.launcher.helper.contextProvider.kt.ContextProvider
+import com.github.droidworksstudio.launcher.helper.ContextProvider
 import com.github.droidworksstudio.launcher.utils.Constants
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
