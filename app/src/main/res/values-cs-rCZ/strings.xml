@@ -106,6 +106,10 @@
     <string name="settings_filter_strength">Síla filtru</string>
     <string name="settings_select_launcher_font">Vyberte rodinu písem</string>
     <string name="settings_launcher_font">Rodina písem</string>
+    <string name="settings_select_icons">Vyberte typ ikony</string>
+    <string name="settings_icons">Typ ikony</string>
+    <string name="settings_icons_easy_dots">Snadné tečky</string>
+    <string name="settings_icons_niagara_dots">Niagarské tečky</string>
     <string name="settings_reload_app_backup">Předvolby zálohovány.</string>
     <string name="settings_reload_app_restore">Předvolby byly obnoveny. Restartování.</string>
     <string name="settings_actions_open_app">Otevřete aplikaci</string>
@@ -123,6 +127,7 @@
     <string name="settings_actions_disabled">Zakázáno</string>
     <string name="settings_units_metric">Metrický</string>
     <string name="settings_units_imperial">Císařský</string>
+    <string name="settings_system">Systém</string>
     <string name="authentication_title">Autentizace</string>
     <string name="authentication_subtitle">Přihlaste se pomocí svých biometrických údajů.</string>
     <string name="authentication_cancel">Zrušení ověřování</string>

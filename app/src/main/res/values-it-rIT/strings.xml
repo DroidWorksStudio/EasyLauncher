@@ -106,6 +106,10 @@
     <string name="settings_filter_strength">Forza del filtro</string>
     <string name="settings_select_launcher_font">Seleziona una famiglia di caratteri</string>
     <string name="settings_launcher_font">Famiglia di font</string>
+    <string name="settings_select_icons">Seleziona un tipo di icona</string>
+    <string name="settings_icons">Tipo di icona</string>
+    <string name="settings_icons_easy_dots">Punti facili</string>
+    <string name="settings_icons_niagara_dots">Puntini del Niagara</string>
     <string name="settings_reload_app_backup">Backup delle preferenze.</string>
     <string name="settings_reload_app_restore">Preferenze ripristinate. Riavvio.</string>
     <string name="settings_actions_open_app">Apri l\'app</string>
@@ -123,6 +127,7 @@
     <string name="settings_actions_disabled">Disabilitato</string>
     <string name="settings_units_metric">Metrico</string>
     <string name="settings_units_imperial">Imperiale</string>
+    <string name="settings_system">Sistema</string>
     <string name="authentication_title">Autenticazione</string>
     <string name="authentication_subtitle">Accedi utilizzando le tue credenziali biometriche.</string>
     <string name="authentication_cancel">Autenticazione Annulla</string>

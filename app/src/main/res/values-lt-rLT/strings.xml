@@ -106,6 +106,10 @@
     <string name="settings_filter_strength">Filtro stiprumas</string>
     <string name="settings_select_launcher_font">Pasirinkite šriftų šeimą</string>
     <string name="settings_launcher_font">Šrifto šeima</string>
+    <string name="settings_select_icons">Pasirinkite piktogramos tipą</string>
+    <string name="settings_icons">Piktogramos tipas</string>
+    <string name="settings_icons_easy_dots">Lengvi taškai</string>
+    <string name="settings_icons_niagara_dots">Niagaros taškai</string>
     <string name="settings_reload_app_backup">Nuostatų atsarginė kopija sukurta.</string>
     <string name="settings_reload_app_restore">Parinktys atkurtos. Paleidimas iš naujo.</string>
     <string name="settings_actions_open_app">Atidarykite programą</string>
@@ -123,6 +127,7 @@
     <string name="settings_actions_disabled">Išjungta</string>
     <string name="settings_units_metric">Metrika</string>
     <string name="settings_units_imperial">Imperatoriškasis</string>
+    <string name="settings_system">Sistema</string>
     <string name="authentication_title">Autentifikavimas</string>
     <string name="authentication_subtitle">Prisijunkite naudodami biometrinius kredencialus.</string>
     <string name="authentication_cancel">Autentifikavimo atšaukimas</string>

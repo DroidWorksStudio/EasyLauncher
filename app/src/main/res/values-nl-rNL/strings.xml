@@ -86,8 +86,8 @@
     <string name="appearance_bottom_dialog_alignment_title">Uitlijning</string>
     <string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Tijd\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">Toepassingen\u0020:\u0020</string>
-    <string name="appearance_bottom_dialog_desc_app_group">Apps-groep\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">Apps\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">App-groep\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Woord\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batterij\u0020:\u0020 </string>
@@ -106,6 +106,10 @@
     <string name="settings_filter_strength">Filtersterkte</string>
     <string name="settings_select_launcher_font">Selecteer een lettertypefamilie</string>
     <string name="settings_launcher_font">Lettertypefamilie</string>
+    <string name="settings_select_icons">Selecteer een pictogramtype</string>
+    <string name="settings_icons">Icoontype</string>
+    <string name="settings_icons_easy_dots">Makkelijke stippen</string>
+    <string name="settings_icons_niagara_dots">Niagara-stippen</string>
     <string name="settings_reload_app_backup">Er is een back-up gemaakt van uw voorkeuren.</string>
     <string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
     <string name="settings_actions_open_app">Open app</string>
@@ -123,6 +127,7 @@
     <string name="settings_actions_disabled">Uitgeschakeld</string>
     <string name="settings_units_metric">Metrisch</string>
     <string name="settings_units_imperial">Imperiaal</string>
+    <string name="settings_system">Systeem</string>
     <string name="authentication_title">Authenticatie</string>
     <string name="authentication_subtitle">Log in met uw biometrische gegevens.</string>
     <string name="authentication_cancel">Authenticatie annuleren</string>

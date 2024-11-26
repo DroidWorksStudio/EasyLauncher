@@ -106,6 +106,10 @@
     <string name="settings_filter_strength">Filterstärke</string>
     <string name="settings_select_launcher_font">Wählen Sie eine Schriftfamilie aus</string>
     <string name="settings_launcher_font">Schriftfamilie</string>
+    <string name="settings_select_icons">Wählen Sie einen Symboltyp</string>
+    <string name="settings_icons">Symboltyp</string>
+    <string name="settings_icons_easy_dots">Einfache Punkte</string>
+    <string name="settings_icons_niagara_dots">Niagara-Punkte</string>
     <string name="settings_reload_app_backup">Einstellungen gesichert.</string>
     <string name="settings_reload_app_restore">Einstellungen wiederhergestellt. Neustart.</string>
     <string name="settings_actions_open_app">Öffne App</string>
@@ -123,6 +127,7 @@
     <string name="settings_actions_disabled">Deaktiviert</string>
     <string name="settings_units_metric">Metrisch</string>
     <string name="settings_units_imperial">Kaiserliche</string>
+    <string name="settings_system">System</string>
     <string name="authentication_title">Authentifizierung</string>
     <string name="authentication_subtitle">Melden Sie sich mit Ihren biometrischen Anmeldeinformationen an.</string>
     <string name="authentication_cancel">Authentifizierung Abbrechen</string>
