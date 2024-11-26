@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_system_language">Systém</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Obľúbené aplikácie</string>
     <string name="hidden_apps">Skryté aplikácie</string>
@@ -74,7 +73,6 @@
     <string name="settings_display_alarm_clock">Zobraziť budík</string>
     <string name="settings_display_daily_word">Zobraziť Daily Word</string>
     <string name="settings_display_app_icons">Zobraziť ikony aplikácií</string>
-    <string name="settings_display_app_icon_dots">Zobraziť ikony aplikácií ako bodky</string>
     <string name="settings_display_automatic_keyboard">Automaticky zobraziť klávesnicu</string>
     <string name="settings_display_auto_open_apps">Automatické otvorenie poslednej aplikácie</string>
     <string name="settings_search_from_start">Hľadať od začiatku</string>
@@ -125,7 +123,6 @@
     <string name="settings_actions_disabled">Zakázané</string>
     <string name="settings_units_metric">Metrické</string>
     <string name="settings_units_imperial">cisársky</string>
-    <string name="settings_font_system">Systém</string>
     <string name="authentication_title">Overenie</string>
     <string name="authentication_subtitle">Prihláste sa pomocou svojich biometrických údajov.</string>
     <string name="authentication_cancel">Zrušenie overenia</string>

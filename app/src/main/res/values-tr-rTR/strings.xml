@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_system_language">Sistem</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">Favori Uygulamalar</string>
     <string name="hidden_apps">Gizli Uygulamalar</string>
@@ -74,7 +73,6 @@
     <string name="settings_display_alarm_clock">Çalar Saati Göster</string>
     <string name="settings_display_daily_word">Günlük Kelimeyi Göster</string>
     <string name="settings_display_app_icons">Uygulama Simgelerini Göster</string>
-    <string name="settings_display_app_icon_dots">Uygulama Simgelerini Noktalar Olarak Göster</string>
     <string name="settings_display_automatic_keyboard">Klavyeyi Otomatik Göster</string>
     <string name="settings_display_auto_open_apps">Son Uygulamayı Otomatik Aç</string>
     <string name="settings_search_from_start">Baştan Arama</string>
@@ -125,7 +123,6 @@
     <string name="settings_actions_disabled">Engelli</string>
     <string name="settings_units_metric">Metrik</string>
     <string name="settings_units_imperial">İmparatorluk</string>
-    <string name="settings_font_system">Sistem</string>
     <string name="authentication_title">Kimlik doğrulama</string>
     <string name="authentication_subtitle">Biyometrik kimlik bilgilerinizi kullanarak giriş yapın.</string>
     <string name="authentication_cancel">Kimlik Doğrulaması İptal</string>

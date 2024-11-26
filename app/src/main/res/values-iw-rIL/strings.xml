@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_system_language">מַעֲרֶכֶת</string>
     <!-- Strings used for basic parts of the launcher -->
     <string name="favorite_apps">אפליקציות מועדפות</string>
     <string name="hidden_apps">אפליקציות נסתרות</string>
@@ -74,7 +73,6 @@
     <string name="settings_display_alarm_clock">הצג שעון מעורר</string>
     <string name="settings_display_daily_word">הצג מילה יומית</string>
     <string name="settings_display_app_icons">הצג סמלי אפליקציה</string>
-    <string name="settings_display_app_icon_dots">הצג סמלי אפליקציה כנקודות</string>
     <string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
     <string name="settings_display_auto_open_apps">פתח אוטומטית את האפליקציה האחרונה</string>
     <string name="settings_search_from_start">חפש מההתחלה</string>
@@ -125,7 +123,6 @@
     <string name="settings_actions_disabled">נָכֶה</string>
     <string name="settings_units_metric">מֶטרִי</string>
     <string name="settings_units_imperial">קֵיסָרִי</string>
-    <string name="settings_font_system">מערכת</string>
     <string name="authentication_title">אימות</string>
     <string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
     <string name="authentication_cancel">ביטול האימות</string>
