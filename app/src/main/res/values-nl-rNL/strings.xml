@@ -76,7 +76,7 @@
     <string name="settings_display_app_icons">App-pictogrammen weergeven</string>
     <string name="settings_display_app_icon_dots">App-pictogrammen weergeven als stippen</string>
     <string name="settings_display_automatic_keyboard">Toetsenbord automatisch tonen</string>
-    <string name="settings_display_auto_open_apps">Laatste app automatisch openen</string>
+    <string name="settings_display_auto_open_apps">Gezochte app automatisch openen</string>
     <string name="settings_search_from_start">Zoeken vanaf start</string>
     <string name="settings_display_lock_settings">Instellingen vergrendelen</string>
     <string name="settings_appearance_text_size_title">Grootte</string>
@@ -110,7 +110,7 @@
     <string name="settings_reload_app_backup">Er is een back-up gemaakt van uw voorkeuren.</string>
     <string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
     <string name="settings_actions_open_app">Open app</string>
-    <string name="settings_actions_open_app_run">%sopenen</string>
+    <string name="settings_actions_open_app_run">%s openen</string>
     <string name="settings_actions_lock_screen">Vergrendel scherm</string>
     <string name="settings_actions_show_notifications">Toon meldingen</string>
     <string name="settings_actions_show_app_list">Toon App Lijst</string>
