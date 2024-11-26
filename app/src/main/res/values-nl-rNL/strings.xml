@@ -106,10 +106,10 @@
     <string name="settings_filter_strength">Filtersterkte</string>
     <string name="settings_select_launcher_font">Selecteer een lettertypefamilie</string>
     <string name="settings_launcher_font">Lettertypefamilie</string>
-    <string name="settings_select_icons">Select a Icon Type</string>
-    <string name="settings_icons">Icon Type</string>
-    <string name="settings_icons_easy_dots">Easy Dots</string>
-    <string name="settings_icons_niagara_dots">Niagara Dots</string>
+    <string name="settings_select_icons">Selecteer een pictogramtype</string>
+    <string name="settings_icons">Icoontype</string>
+    <string name="settings_icons_easy_dots">Makkelijke stippen</string>
+    <string name="settings_icons_niagara_dots">Niagara-stippen</string>
     <string name="settings_reload_app_backup">Er is een back-up gemaakt van uw voorkeuren.</string>
     <string name="settings_reload_app_restore">Voorkeuren hersteld. Opnieuw opstarten.</string>
     <string name="settings_actions_open_app">Open app</string>
@@ -127,7 +127,7 @@
     <string name="settings_actions_disabled">Uitgeschakeld</string>
     <string name="settings_units_metric">Metrisch</string>
     <string name="settings_units_imperial">Imperiaal</string>
-    <string name="settings_system">System</string>
+    <string name="settings_system">Systeem</string>
     <string name="authentication_title">Authenticatie</string>
     <string name="authentication_subtitle">Log in met uw biometrische gegevens.</string>
     <string name="authentication_cancel">Authenticatie annuleren</string>
