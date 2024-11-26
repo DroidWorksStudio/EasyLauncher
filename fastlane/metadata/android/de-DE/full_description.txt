@@ -35,14 +35,14 @@ Schnellzugriff auf Lieblings-Apps: Zeigen Sie Ihre am häufigsten verwendeten Ap
 - Machen Sie einen Screenshot: Erfassen Sie Ihren Bildschirm sofort, um wichtige Informationen und Momente zu speichern und zu teilen.
 - Gesten deaktivieren: Deaktivieren Sie vorübergehend oder dauerhaft bestimmte Gesten, um die Interaktion mit Ihrem Gerät individuell anzupassen.
 
-<b>Permissions:</b>
+<b>Berechtigungen:</b>
 
-- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
-- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
-- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
-- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
-- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
-- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
-- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+- android.permission.SET_WALLPAPER: Diese Berechtigung wird benötigt, damit die App das Hintergrundbild des Geräts ändern oder festlegen kann. Es ermöglicht der App, das auf dem Start- oder Sperrbildschirm angezeigte Hintergrundbild programmgesteuert zu ändern.
+- android.permission.EXPAND_STATUS_BAR: Diese Berechtigung ermöglicht es der App, die Statusleiste zu erweitern oder zu reduzieren und bietet so Funktionen zur Interaktion mit den Schnelleinstellungen oder Benachrichtigungen.
+- android.permission.USE_BIOMETRIC: Diese Berechtigung wird benötigt, damit die App biometrische Authentifizierungsmethoden (wie Fingerabdruck, Gesichtserkennung oder Iris-Scan) verwenden kann.
+- android.permission.VIBRATE: Diese Berechtigung ermöglicht es der App, den Vibrator des Geräts zu steuern, um haptisches Feedback zu geben, das für Warnungen, Benachrichtigungen oder benutzerdefinierte Benutzerinteraktionen innerhalb der App verwendet werden kann.
+- android.permission.QUERY_ALL_PACKAGES: Diese Berechtigung erlaubt der App, die Liste aller auf dem Gerät installierten Apps abzufragen und anzuzeigen. Diese Berechtigung kann Datenschutzbedenken aufwerfen und wird von Google Play häufig auf angemessene Verwendung überprüft.
+- android.permission.REQUEST_DELETE_PACKAGES: Mit dieser Berechtigung kann die App die Deinstallation von Paketen (Apps) vom Gerät anfordern. Diese Berechtigung ist stark eingeschränkt und wird normalerweise nur Apps auf Systemebene oder Unternehmens-Apps gewährt.
+- com.android.alarm.permission.SET_ALARM: Diese Berechtigung ist erforderlich, damit eine App Alarme auf dem Gerät einstellen kann. Damit kann die App Alarme planen, die zu bestimmten Zeiten ausgelöst werden. Diese werden häufig von Uhr-, Erinnerungs- oder Aufgaben-Apps verwendet.
 
 Weitere Einzelheiten finden Sie auf der <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github-Seite</a> .

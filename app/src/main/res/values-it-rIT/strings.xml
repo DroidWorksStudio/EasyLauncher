@@ -88,7 +88,8 @@
     <string name="appearance_bottom_dialog_alignment_title">Allineamento</string>
     <string name="appearance_bottom_dialog_desc_date">Data\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Orario\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">Applicazione\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">Applicazioni\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">Gruppo App\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">Allarme\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Parola\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batteria\u0020:\u0020 </string>

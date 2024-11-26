@@ -88,7 +88,8 @@
     <string name="appearance_bottom_dialog_alignment_title">Hizalama</string>
     <string name="appearance_bottom_dialog_desc_date">Tarih\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Zaman\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">Uygulama\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">Uygulamalar\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">Uygulamalar Grubu\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Kelime\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Pil\u0020:\u0020 </string>

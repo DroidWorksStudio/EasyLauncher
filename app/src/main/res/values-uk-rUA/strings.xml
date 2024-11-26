@@ -88,7 +88,8 @@
     <string name="appearance_bottom_dialog_alignment_title">Вирівнювання</string>
     <string name="appearance_bottom_dialog_desc_date">Дата\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Час\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">Додаток\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">Програми\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">Група програм\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">Будильник\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Слово\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Акумулятор\u0020:\u0020 </string>

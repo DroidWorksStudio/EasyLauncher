@@ -35,14 +35,14 @@
 - צלם צילום מסך: צלם את המסך שלך באופן מיידי כדי לשמור ולשתף מידע ורגעים חשובים.
 - השבת מחוות: השבת באופן זמני או לצמיתות מחוות ספציפיות כדי להתאים אישית את חוויית האינטראקציה במכשיר שלך.
 
-<b>Permissions:</b>
+<b>הרשאות:</b>
 
-- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
-- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
-- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
-- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
-- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
-- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
-- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+- android.permission.SET_WALLPAPER: הרשאה זו דרושה כדי שהאפליקציה תשנה או תגדיר את הטפט של המכשיר. זה מאפשר לאפליקציה לשנות באופן תכנותי את הטפט המוצג במסך הבית או הנעילה.
+- android.permission.EXPAND_STATUS_BAR: הרשאה זו מאפשרת לאפליקציה להרחיב או לכווץ את שורת המצב, ולספק פונקציונליות לאינטראקציה עם ההגדרות המהירות או ההתראות.
+- android.permission.USE_BIOMETRIC: הרשאה זו דרושה כדי שהאפליקציה תשתמש בשיטות אימות ביומטריות (כגון טביעת אצבע, זיהוי פנים או סריקת קשתית).
+- android.permission.VIBRATE: הרשאה זו מאפשרת לאפליקציה לשלוט בוויברטור של המכשיר כדי לספק משוב הפטי, אשר יכול לשמש להתראות, התראות או אינטראקציות משתמש מותאמות אישית בתוך האפליקציה.
+- android.permission.QUERY_ALL_PACKAGES: הרשאה זו מאפשרת לאפליקציה לבצע שאילתות ולהציג את רשימת כל האפליקציות המותקנות במכשיר. הרשאה זו עלולה לעורר חששות בנושא פרטיות ולעתים קרובות נבדקת על ידי Google Play לצורך שימוש מתאים.
+- android.permission.REQUEST_DELETE_PACKAGES: הרשאה זו מאפשרת לאפליקציה לבקש הסרה של חבילות (אפליקציות) מהמכשיר. הרשאה זו מוגבלת מאוד ובדרך כלל ניתנת רק לאפליקציות ברמת המערכת או לארגונים.
+- com.android.alarm.permission.SET_ALARM: הרשאה זו נחוצה לאפליקציה כדי להגדיר אזעקות במכשיר. זה מאפשר לאפליקציה לתזמן אזעקות שיופעלו בזמנים ספציפיים, בשימוש נפוץ על ידי אפליקציות שעון, תזכורות או משימות.
 
 לפרטים נוספים בקר בדף <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> .

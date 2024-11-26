@@ -88,7 +88,8 @@
     <string name="appearance_bottom_dialog_alignment_title">Lygiavimas</string>
     <string name="appearance_bottom_dialog_desc_date">Data\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Laikas\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">Programa\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">Programos\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">Programų grupė\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">Signalizacija\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Žodis\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Baterija\u0020:\u0020 </string>

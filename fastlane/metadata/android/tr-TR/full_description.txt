@@ -35,14 +35,14 @@
 - Ekran Görüntüsü Alın: Önemli bilgileri ve anları kaydetmek ve paylaşmak için ekranınızı anında yakalayın.
 - Hareketleri Devre Dışı Bırak: Cihazınızın etkileşim deneyiminizi özelleştirmek için belirli hareketleri geçici veya kalıcı olarak devre dışı bırakın.
 
-<b>Permissions:</b>
+<b>İzinler:</b>
 
-- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
-- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
-- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
-- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
-- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
-- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
-- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+- android.permission.SET_WALLPAPER: Bu izin, uygulamanın cihazın duvar kağıdını değiştirmesi veya ayarlaması için gereklidir. Uygulamanın ana ekranda veya kilit ekranında görüntülenen duvar kağıdını programlı olarak değiştirmesine olanak tanır.
+- android.permission.EXPAND_STATUS_BAR: Bu izin, uygulamanın durum çubuğunu genişletmesine veya daraltmasına olanak tanır ve hızlı ayarlar veya bildirimlerle etkileşim kurma işlevselliği sağlar.
+- android.permission.USE_BIOMETRIC: Bu izin, uygulamanın biyometrik kimlik doğrulama yöntemlerini (parmak izi, yüz tanıma veya iris taraması gibi) kullanabilmesi için gereklidir.
+- android.permission.VIBRATE: Bu izin, uygulamanın, uygulama içinde uyarılar, bildirimler veya özel kullanıcı etkileşimleri için kullanılabilen dokunsal geri bildirim sağlamak üzere cihazın titreşimini kontrol etmesine olanak tanır.
+- android.permission.QUERY_ALL_PACKAGES: Bu izin, uygulamanın cihazda yüklü tüm uygulamaların listesini sorgulamasına ve görüntülemesine olanak tanır. Bu izin gizlilik endişelerine yol açabilir ve uygun kullanım için Google Play tarafından sıklıkla incelenir.
+- android.permission.REQUEST_DELETE_PACKAGES: Bu izin, uygulamanın cihazdan paketlerin (uygulamaların) kaldırılmasını istemesine olanak tanır. Bu izin oldukça kısıtlıdır ve genellikle yalnızca sistem düzeyindeki veya kurumsal uygulamalara verilir.
+- com.android.alarm.permission.SET_ALARM: Bu izin, bir uygulamanın cihazda alarm ayarlayabilmesi için gereklidir. Uygulamanın belirli zamanlarda tetiklenecek alarmları zamanlamasına olanak tanır; bu genellikle saat, hatırlatıcı veya görev uygulamaları tarafından kullanılır.
 
 Daha fazla ayrıntı için <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> sayfasını ziyaret edin.

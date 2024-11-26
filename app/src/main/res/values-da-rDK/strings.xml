@@ -88,7 +88,8 @@
     <string name="appearance_bottom_dialog_alignment_title">Justering</string>
     <string name="appearance_bottom_dialog_desc_date">Dato\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Tid\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">App\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">Apps\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">Apps-gruppe\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Ord\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Batteri\u0020:\u0020 </string>

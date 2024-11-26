@@ -89,6 +89,7 @@
     <string name="appearance_bottom_dialog_desc_date">Datum\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">Čas\u0020:\u0020 </string>
     <string name="appearance_bottom_dialog_desc_app">Aplikace\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">Skupina aplikací\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">Alarm\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">Slovo\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">Baterie\u0020:\u0020 </string>

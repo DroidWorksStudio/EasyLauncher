@@ -88,7 +88,8 @@
     <string name="appearance_bottom_dialog_alignment_title">יישור</string>
     <string name="appearance_bottom_dialog_desc_date">תאריך\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">זמן\u0020:\u0020 </string>
-    <string name="appearance_bottom_dialog_desc_app">יישום\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app">אפליקציות\u0020:\u0020</string>
+    <string name="appearance_bottom_dialog_desc_app_group">קבוצת אפליקציות\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_alarm">אזעקה\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_word">מילה\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_battery">סוללה\u0020:\u0020 </string>

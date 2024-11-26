@@ -35,14 +35,14 @@
 - Urobte snímku obrazovky: Okamžite zachyťte svoju obrazovku a uložte a zdieľajte dôležité informácie a momenty.
 - Zakázať gestá: Dočasne alebo natrvalo zakážte konkrétne gestá, aby ste si prispôsobili zážitok z interakcie so zariadením.
 
-<b>Permissions:</b>
+<b>Povolenia:</b>
 
-- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
-- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
-- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
-- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
-- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
-- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
-- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+- android.permission.SET_WALLPAPER: Toto povolenie je potrebné na to, aby aplikácia mohla zmeniť alebo nastaviť tapetu zariadenia. Umožňuje aplikácii programovo upravovať tapetu zobrazenú na domovskej alebo uzamknutej obrazovke.
+- android.permission.EXPAND_STATUS_BAR: Toto povolenie umožňuje aplikácii rozbaliť alebo zbaliť stavový riadok a poskytuje funkcie na interakciu s rýchlymi nastaveniami alebo upozorneniami.
+- android.permission.USE_BIOMETRIC: Toto povolenie je potrebné na to, aby aplikácia mohla používať biometrické metódy overovania (ako je odtlačok prsta, rozpoznávanie tváre alebo skenovanie dúhovky).
+- android.permission.VIBRATE: Toto povolenie umožňuje aplikácii ovládať vibrátor zariadenia a poskytovať hmatovú spätnú väzbu, ktorú možno použiť na upozornenia, upozornenia alebo vlastné interakcie používateľa v rámci aplikácie.
+- android.permission.QUERY_ALL_PACKAGES: Toto povolenie umožňuje aplikácii vyhľadávať a zobrazovať zoznam všetkých nainštalovaných aplikácií v zariadení. Toto povolenie môže vzbudzovať obavy týkajúce sa ochrany osobných údajov a služba Google Play ho často kontroluje, či je vhodné použiť.
+- android.permission.REQUEST_DELETE_PACKAGES: Toto povolenie umožňuje aplikácii požiadať o odinštalovanie balíkov (aplikácií) zo zariadenia. Toto povolenie je prísne obmedzené a zvyčajne sa udeľuje iba aplikáciám na úrovni systému alebo podnikovým aplikáciám.
+- com.android.alarm.permission.SET_ALARM: Toto povolenie je potrebné na to, aby aplikácia mohla na zariadení nastavovať budíky. Umožňuje aplikácii naplánovať budíky, ktoré sa spustia v konkrétnych časoch, ktoré bežne používajú aplikácie hodín, pripomienok alebo úloh.
 
 Ďalšie podrobnosti nájdete na stránke <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> .
