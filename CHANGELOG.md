@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.3.0 - ([f5b708f](https://github.com/DroidWorksStudio/EasyLauncher/commit/f5b708f1a9b67a06f03ee355647679545b334126))
+
+## [0.2.9](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.2.9) - (26, November 2024)
+
 ### Implemented Enhancements:
 
 - Added setting for icon packs. - ([0d8425d](https://github.com/DroidWorksStudio/EasyLauncher/commit/0d8425d746d7b076b81e456890e6b634d55e8f20))
