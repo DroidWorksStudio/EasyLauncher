@@ -120,10 +120,12 @@
     <string name="settings_actions_show_favorite_list">Zobrazit seznam oblíbených</string>
     <string name="settings_actions_show_hidden_list">Zobrazit skrytý seznam</string>
     <string name="settings_actions_open_quick_settings">Otevřete Rychlé nastavení</string>
+    <string name="settings_actions_open_launcher_settings">Otevřete Nastavení spouštěče</string>
     <string name="settings_actions_show_recents">Zobrazit poslední</string>
     <string name="settings_actions_show_widgets">Zobrazit widgety</string>
     <string name="settings_actions_open_power_dialog">Otevřete dialogové okno napájení</string>
     <string name="settings_actions_take_a_screenshot">Pořiďte snímek obrazovky</string>
+    <string name="settings_actions_open_digital_wellbeing">Otevřete digitální pohodu</string>
     <string name="settings_actions_disabled">Zakázáno</string>
     <string name="settings_units_metric">Metrický</string>
     <string name="settings_units_imperial">Císařský</string>

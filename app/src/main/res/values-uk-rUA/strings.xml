@@ -120,10 +120,12 @@
     <string name="settings_actions_show_favorite_list">Показати список уподобань</string>
     <string name="settings_actions_show_hidden_list">Показати прихований список</string>
     <string name="settings_actions_open_quick_settings">Відкрийте швидкі налаштування</string>
+    <string name="settings_actions_open_launcher_settings">Відкрийте налаштування панелі запуску</string>
     <string name="settings_actions_show_recents">Показати останні</string>
     <string name="settings_actions_show_widgets">Показати віджети</string>
     <string name="settings_actions_open_power_dialog">Відкрити діалог живлення</string>
     <string name="settings_actions_take_a_screenshot">Зробіть знімок екрана</string>
+    <string name="settings_actions_open_digital_wellbeing">Open Digital Wellbeing</string>
     <string name="settings_actions_disabled">Вимкнено</string>
     <string name="settings_units_metric">Метрика</string>
     <string name="settings_units_imperial">Імператорський</string>
