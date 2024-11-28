@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Fixed the swiping gestures. - ([83841be](https://github.com/DroidWorksStudio/EasyLauncher/commit/83841bef183d3fc1fe2700d82efb534967d03feb))
 
+### Language Support:
+
+- Updated Language Files. ([#184](https://github.com/DroidWorksStudio/EasyLauncher/issues/184)) - ([5ee2bf4](https://github.com/DroidWorksStudio/EasyLauncher/commit/5ee2bf4b8b3a223075346a29ffd255a11f2d4b92))
+
 ### Releases:
 
 - Prepare for version 0.3.0 - ([f5b708f](https://github.com/DroidWorksStudio/EasyLauncher/commit/f5b708f1a9b67a06f03ee355647679545b334126))
