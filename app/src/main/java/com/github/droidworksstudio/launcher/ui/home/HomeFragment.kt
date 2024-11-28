@@ -20,9 +20,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.AppCompatTextView
-import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.biometric.BiometricPrompt
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -48,7 +46,6 @@ import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnItemClickedListener
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
-import com.github.droidworksstudio.launcher.listener.ViewSwipeTouchListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.AppInfoBottomSheetFragment
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
@@ -234,16 +231,6 @@ class HomeFragment : Fragment(),
             clock.setOnClickListener { context.launchClock() }
             date.setOnClickListener { context.launchCalendar() }
             battery.setOnClickListener { context.openBatteryManager() }
-
-            val appListViews =
-                layoutInflater.inflate(R.layout.item_home, null) as ConstraintLayout
-            appListViews.apply {
-                // Find the TextView by its ID
-                val appLayout = findViewById<LinearLayoutCompat>(R.id.linear_layout)
-
-                // Set the OnTouchListener on the TextView
-                appLayout.setOnTouchListener(getHomeAppsGestureListener(context, this))
-            }
         }
     }
 
@@ -342,46 +329,6 @@ class HomeFragment : Fragment(),
         return object : OnSwipeTouchListener(context) {
             override fun onLongClick() {
                 super.onLongClick()
-                trySettings()
-                return
-            }
-
-            @RequiresApi(Build.VERSION_CODES.P)
-            override fun onDoubleClick() {
-                super.onDoubleClick()
-                handleOtherAction(preferenceHelper.doubleTapAction, Constants.Swipe.DoubleTap)
-            }
-
-            @RequiresApi(Build.VERSION_CODES.P)
-            override fun onSwipeUp() {
-                super.onSwipeUp()
-                handleOtherAction(preferenceHelper.swipeUpAction, Constants.Swipe.Up)
-            }
-
-            @RequiresApi(Build.VERSION_CODES.P)
-            override fun onSwipeDown() {
-                super.onSwipeDown()
-                handleOtherAction(preferenceHelper.swipeDownAction, Constants.Swipe.Down)
-            }
-
-            @RequiresApi(Build.VERSION_CODES.P)
-            override fun onSwipeLeft() {
-                super.onSwipeLeft()
-                handleOtherAction(preferenceHelper.swipeLeftAction, Constants.Swipe.Left)
-            }
-
-            @RequiresApi(Build.VERSION_CODES.P)
-            override fun onSwipeRight() {
-                super.onSwipeRight()
-                handleOtherAction(preferenceHelper.swipeRightAction, Constants.Swipe.Right)
-            }
-        }
-    }
-
-    private fun getHomeAppsGestureListener(context: Context, view: View): View.OnTouchListener {
-        return object : ViewSwipeTouchListener(context, view) {
-            override fun onLongClick(view: View) {
-                super.onLongClick(view)
                 trySettings()
                 return
             }

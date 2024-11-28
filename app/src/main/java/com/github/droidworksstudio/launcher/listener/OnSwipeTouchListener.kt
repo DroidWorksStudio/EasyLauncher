@@ -67,6 +67,37 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
             super.onLongPress(e)
         }
 
+        // Detecting swipe or drag movement
+        override fun onScroll(
+            event1: MotionEvent?,
+            event2: MotionEvent,
+            distanceX: Float,
+            distanceY: Float
+        ): Boolean {
+            try {
+                if (event1 == null) return false
+
+                val diffX = event2.x - event1.x
+                val diffY = event2.y - event1.y
+
+                // Horizontal swipe
+                if (abs(diffX) > abs(diffY)) {
+                    if (abs(diffX) > swipeThreshold && abs(distanceX) > swipeVelocityThreshold) {
+                        if (diffX > 0) onSwipeRight() else onSwipeLeft()
+                    }
+                }
+                // Vertical swipe
+                else {
+                    if (abs(diffY) > swipeThreshold && abs(distanceY) > swipeVelocityThreshold) {
+                        if (diffY > 0) onSwipeDown() else onSwipeUp()
+                    }
+                }
+            } catch (_: NullPointerException) {
+                return false
+            }
+            return false
+        }
+
         override fun onFling(
             event1: MotionEvent?,
             event2: MotionEvent,
