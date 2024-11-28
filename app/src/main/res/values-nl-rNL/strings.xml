@@ -120,10 +120,12 @@
     <string name="settings_actions_show_favorite_list">Favorietenlijst weergeven</string>
     <string name="settings_actions_show_hidden_list">Verborgen lijst weergeven</string>
     <string name="settings_actions_open_quick_settings">Open Snelle Instellingen</string>
+    <string name="settings_actions_open_launcher_settings">Open Launcher Settings</string>
     <string name="settings_actions_show_recents">Toon recent</string>
     <string name="settings_actions_show_widgets">Widgets weergeven</string>
     <string name="settings_actions_open_power_dialog">Toon uitschakelopties</string>
     <string name="settings_actions_take_a_screenshot">Maak een screenshot</string>
+    <string name="settings_actions_open_digital_wellbeing">Open Digital Wellbeing</string>
     <string name="settings_actions_disabled">Uitgeschakeld</string>
     <string name="settings_units_metric">Metrisch</string>
     <string name="settings_units_imperial">Imperiaal</string>
