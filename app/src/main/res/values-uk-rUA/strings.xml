@@ -120,7 +120,7 @@
     <string name="settings_actions_show_favorite_list">Показати список уподобань</string>
     <string name="settings_actions_show_hidden_list">Показати прихований список</string>
     <string name="settings_actions_open_quick_settings">Відкрийте швидкі налаштування</string>
-    <string name="settings_actions_open_launcher_settings">Open Launcher Settings</string>
+    <string name="settings_actions_open_launcher_settings">Відкрийте налаштування панелі запуску</string>
     <string name="settings_actions_show_recents">Показати останні</string>
     <string name="settings_actions_show_widgets">Показати віджети</string>
     <string name="settings_actions_open_power_dialog">Відкрити діалог живлення</string>
