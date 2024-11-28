@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added the ability to set a gesture to open Launcher Settings and Digital Wellbeing. - ([b17d661](https://github.com/DroidWorksStudio/EasyLauncher/commit/b17d66192e5a5c080d859c96ceb3cc85098bc1b5))
+
+### Bug Fixes:
+
+- Fixed the swiping gestures. - ([83841be](https://github.com/DroidWorksStudio/EasyLauncher/commit/83841bef183d3fc1fe2700d82efb534967d03feb))
+
 ### Releases:
 
 - Prepare for version 0.3.0 - ([f5b708f](https://github.com/DroidWorksStudio/EasyLauncher/commit/f5b708f1a9b67a06f03ee355647679545b334126))

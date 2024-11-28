@@ -153,10 +153,12 @@ object Constants {
         ShowFavoriteList,
         ShowHiddenList,
         OpenQuickSettings,
+        OpenAppSettings,
         ShowRecents,
         ShowWidgets,
         OpenPowerDialog,
         TakeScreenShot,
+        OpenDigitalWellbing,
         Disabled;
 
         fun getString(context: Context): String {
@@ -168,10 +170,12 @@ object Constants {
                 ShowFavoriteList -> context.getString(R.string.settings_actions_show_favorite_list)
                 ShowHiddenList -> context.getString(R.string.settings_actions_show_hidden_list)
                 OpenQuickSettings -> context.getString(R.string.settings_actions_open_quick_settings)
+                OpenAppSettings -> context.getString(R.string.settings_actions_open_launcher_settings)
                 ShowRecents -> context.getString(R.string.settings_actions_show_recents)
                 ShowWidgets -> context.getString(R.string.settings_actions_show_widgets)
                 OpenPowerDialog -> context.getString(R.string.settings_actions_open_power_dialog)
                 TakeScreenShot -> context.getString(R.string.settings_actions_take_a_screenshot)
+                OpenDigitalWellbing -> context.getString(R.string.settings_actions_open_digital_wellbeing)
                 Disabled -> context.getString(R.string.settings_actions_disabled)
             }
         }
