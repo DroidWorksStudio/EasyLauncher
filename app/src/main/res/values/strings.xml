@@ -158,10 +158,12 @@
     <string name="settings_actions_show_favorite_list">Show Favorites List</string>
     <string name="settings_actions_show_hidden_list">Show Hidden List</string>
     <string name="settings_actions_open_quick_settings">Open Quick Settings</string>
+    <string name="settings_actions_open_launcher_settings">Open Launcher Settings</string>
     <string name="settings_actions_show_recents">Show Recents</string>
     <string name="settings_actions_show_widgets">Show Widgets</string>
     <string name="settings_actions_open_power_dialog">Open Power Dialog</string>
     <string name="settings_actions_take_a_screenshot">Take a ScreenShot</string>
+    <string name="settings_actions_open_digital_wellbeing">Open Digital Wellbeing</string>
     <string name="settings_actions_disabled">Disabled</string>
 
     <string name="settings_units_metric">Metric</string>

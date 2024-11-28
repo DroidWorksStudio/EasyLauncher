@@ -451,6 +451,10 @@ class HomeFragment : Fragment(),
                 }
             }
 
+            Constants.Action.OpenAppSettings -> {
+                trySettings()
+            }
+
             Constants.Action.OpenQuickSettings -> {
                 appHelper.expandQuickSettings(context)
             }
@@ -479,6 +483,10 @@ class HomeFragment : Fragment(),
             Constants.Action.TakeScreenShot -> {
                 ActionService.runAccessibilityMode(context)
                 ActionService.instance()?.takeScreenShot()
+            }
+
+            Constants.Action.OpenDigitalWellbing -> {
+                appHelper.openDigitalWellbeing(context)
             }
 
             Constants.Action.Disabled -> {}
