@@ -134,7 +134,7 @@
     <string name="settings_units_metric">Metrisk</string>
     <string name="settings_units_imperial">Kejserlig</string>
     <string name="settings_system">System</string>
-    <string name="settings_ok">Okay</string>
+    <string name="settings_ok">OK</string>
     <string name="settings_cancel">Ophæve</string>
     <string name="authentication_title">Godkendelse</string>
     <string name="authentication_subtitle">Log ind med dine biometriske legitimationsoplysninger.</string>
