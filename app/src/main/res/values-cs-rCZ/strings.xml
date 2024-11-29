@@ -106,6 +106,8 @@
     <string name="settings_app_language">Jazyk aplikace</string>
     <string name="settings_select_filter_strength">Vyberte sílu filtru</string>
     <string name="settings_filter_strength">Síla filtru</string>
+    <string name="settings_select_swipe_threshold">Select a Swipe Threshold</string>
+    <string name="settings_swipe_threshold">Swipe Threshold</string>
     <string name="settings_select_launcher_font">Vyberte rodinu písem</string>
     <string name="settings_launcher_font">Rodina písem</string>
     <string name="settings_select_icons">Vyberte typ ikony</string>
@@ -132,6 +134,8 @@
     <string name="settings_units_metric">Metrický</string>
     <string name="settings_units_imperial">Císařský</string>
     <string name="settings_system">Systém</string>
+    <string name="settings_ok">Ok</string>
+    <string name="settings_cancel">Cancel</string>
     <string name="authentication_title">Autentizace</string>
     <string name="authentication_subtitle">Přihlaste se pomocí svých biometrických údajů.</string>
     <string name="authentication_cancel">Zrušení ověřování</string>
