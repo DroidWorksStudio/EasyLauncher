@@ -106,6 +106,8 @@
     <string name="settings_app_language">App sprog</string>
     <string name="settings_select_filter_strength">Vælg en filterstyrke</string>
     <string name="settings_filter_strength">Filterstyrke</string>
+    <string name="settings_select_swipe_threshold">Select a Swipe Threshold</string>
+    <string name="settings_swipe_threshold">Swipe Threshold</string>
     <string name="settings_select_launcher_font">Vælg en Skrifttypefamilie</string>
     <string name="settings_launcher_font">Skrifttype</string>
     <string name="settings_select_icons">Vælg en ikontype</string>
@@ -132,6 +134,8 @@
     <string name="settings_units_metric">Metrisk</string>
     <string name="settings_units_imperial">Kejserlig</string>
     <string name="settings_system">System</string>
+    <string name="settings_ok">Ok</string>
+    <string name="settings_cancel">Cancel</string>
     <string name="authentication_title">Godkendelse</string>
     <string name="authentication_subtitle">Log ind med dine biometriske legitimationsoplysninger.</string>
     <string name="authentication_cancel">Godkendelse Annuller</string>
