@@ -75,6 +75,7 @@
     <string name="settings_display_app_icons">Uygulama Simgelerini Göster</string>
     <string name="settings_display_automatic_keyboard">Klavyeyi Otomatik Göster</string>
     <string name="settings_display_auto_open_apps">Son Uygulamayı Otomatik Aç</string>
+    <string name="settings_home_alignment_bottom">Ana Hizalama Alt</string>
     <string name="settings_search_from_start">Baştan Arama</string>
     <string name="settings_display_lock_settings">Kilit Ayarları</string>
     <string name="settings_display_disable_animations">Animasyonları devre dışı bırak</string>
