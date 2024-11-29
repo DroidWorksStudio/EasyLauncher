@@ -106,6 +106,8 @@
     <string name="settings_app_language">Programos kalba</string>
     <string name="settings_select_filter_strength">Pasirinkite filtro stiprumą</string>
     <string name="settings_filter_strength">Filtro stiprumas</string>
+    <string name="settings_select_swipe_threshold">Select a Swipe Threshold</string>
+    <string name="settings_swipe_threshold">Swipe Threshold</string>
     <string name="settings_select_launcher_font">Pasirinkite šriftų šeimą</string>
     <string name="settings_launcher_font">Šrifto šeima</string>
     <string name="settings_select_icons">Pasirinkite piktogramos tipą</string>
@@ -132,6 +134,8 @@
     <string name="settings_units_metric">Metrika</string>
     <string name="settings_units_imperial">Imperatoriškasis</string>
     <string name="settings_system">Sistema</string>
+    <string name="settings_ok">Ok</string>
+    <string name="settings_cancel">Cancel</string>
     <string name="authentication_title">Autentifikavimas</string>
     <string name="authentication_subtitle">Prisijunkite naudodami biometrinius kredencialus.</string>
     <string name="authentication_cancel">Autentifikavimo atšaukimas</string>
