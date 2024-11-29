@@ -134,7 +134,7 @@
     <string name="settings_units_metric">מֶטרִי</string>
     <string name="settings_units_imperial">קֵיסָרִי</string>
     <string name="settings_system">מַעֲרֶכֶת</string>
-    <string name="settings_ok">בְּסֵדֶר</string>
+    <string name="settings_ok">OK</string>
     <string name="settings_cancel">לְבַטֵל</string>
     <string name="authentication_title">אימות</string>
     <string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
