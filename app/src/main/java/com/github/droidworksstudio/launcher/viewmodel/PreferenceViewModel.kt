@@ -44,6 +44,7 @@ class PreferenceViewModel @Inject constructor(
     private val dailyWordTextSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val autoOpenAppsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val searchFromStartLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    private val homeAlignmentBottomLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val lockSettingsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val disableAnimationsLiveData: MutableLiveData<Boolean> = MutableLiveData()
@@ -267,6 +268,11 @@ class PreferenceViewModel @Inject constructor(
     fun setAutoOpenApp(autoOpenApp: Boolean) {
         preferenceHelper.automaticOpenApp = autoOpenApp
         autoOpenAppsLiveData.postValue((preferenceHelper.automaticOpenApp))
+    }
+
+    fun setHomeAlignmentBottom(homeAlignmentBottom: Boolean) {
+        preferenceHelper.homeAlignmentBottom = homeAlignmentBottom
+        homeAlignmentBottomLiveData.postValue((preferenceHelper.homeAlignmentBottom))
     }
 
     fun setSearchFromStart(searchFromStart: Boolean) {

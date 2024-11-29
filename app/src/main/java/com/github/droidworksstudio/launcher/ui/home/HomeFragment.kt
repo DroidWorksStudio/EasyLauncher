@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.os.BatteryManager
 import android.os.Build
 import android.os.Bundle
@@ -188,8 +189,26 @@ class HomeFragment : Fragment(),
                 ViewGroup.LayoutParams.WRAP_CONTENT
             )
 
-        // Set the bottom margin instead of top
-        layoutParams.topMargin = marginInPixels.toInt()
+        // Determine the gravity and margin based on the alignment preference
+        val gravity = if (preferenceHelper.homeAlignmentBottom)
+            Gravity.BOTTOM
+        else
+            Gravity.TOP
+
+        // Apply the margin and gravity
+        val parentLayout = binding.appListTouchArea
+        val params = parentLayout.layoutParams.apply {
+            height = ViewGroup.LayoutParams.MATCH_PARENT
+        }
+        parentLayout.layoutParams = params
+        parentLayout.gravity = gravity
+
+        // Set the appropriate margin based on the alignment
+        if (preferenceHelper.homeAlignmentBottom)
+            layoutParams.bottomMargin = marginInPixels.toInt()
+        else
+            layoutParams.topMargin = marginInPixels.toInt()
+
 
         // Set gravity to align RecyclerView to the bottom
         layoutParams.gravity = when (preferenceHelper.homeAppAlignment) {
@@ -231,6 +250,9 @@ class HomeFragment : Fragment(),
             clock.setOnClickListener { context.launchClock() }
             date.setOnClickListener { context.launchCalendar() }
             battery.setOnClickListener { context.openBatteryManager() }
+
+            touchArea.setBackgroundColor(Color.parseColor("#00FFFF"))
+            appListTouchArea.setBackgroundColor(Color.parseColor("#FF00FF"))
         }
     }
 

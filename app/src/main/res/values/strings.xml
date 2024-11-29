@@ -100,6 +100,7 @@
     <string name="settings_display_app_icons">Show App Icons</string>
     <string name="settings_display_automatic_keyboard">Auto Show Keyboard</string>
     <string name="settings_display_auto_open_apps">Auto Open Last App</string>
+    <string name="settings_home_alignment_bottom">Home Alignment Bottom</string>
     <string name="settings_search_from_start">Search From Start</string>
     <string name="settings_display_lock_settings">Lock Settings</string>
     <string name="settings_display_disable_animations">Disable Animations</string>

@@ -363,6 +363,12 @@ class SettingsFeaturesFragment : Fragment(),
                 appHelper.triggerHapticFeedback(context, feedbackType)
             }
 
+            homeAlignmentBottomSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setHomeAlignmentBottom(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
+            }
+
             disableAnimationsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setDisableAnimations(isChecked)
                 val feedbackType = if (isChecked) "on" else "off"

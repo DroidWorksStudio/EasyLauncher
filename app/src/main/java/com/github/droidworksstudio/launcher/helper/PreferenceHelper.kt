@@ -175,6 +175,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getInt(Constants.WIDGET_BATTERY, 2)
         set(value) = prefs.edit().putInt(Constants.WIDGET_BATTERY, value).apply()
 
+    var homeAlignmentBottom: Boolean
+        get() = prefs.getBoolean(Constants.HOME_ALLIGNMENT_BOTTOM, false)
+        set(value) = prefs.edit().putBoolean(Constants.HOME_ALLIGNMENT_BOTTOM, value).apply()
+
     var settingsLock: Boolean
         get() = prefs.getBoolean(Constants.TOGGLE_SETTING_LOCK, false)
         set(value) = prefs.edit().putBoolean(Constants.TOGGLE_SETTING_LOCK, value).apply()
