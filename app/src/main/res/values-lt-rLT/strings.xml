@@ -134,7 +134,7 @@
     <string name="settings_units_metric">Metrika</string>
     <string name="settings_units_imperial">Imperatoriškasis</string>
     <string name="settings_system">Sistema</string>
-    <string name="settings_ok">OK</string>
+    <string name="settings_ok">Gerai</string>
     <string name="settings_cancel">Atšaukti</string>
     <string name="authentication_title">Autentifikavimas</string>
     <string name="authentication_subtitle">Prisijunkite naudodami biometrinius kredencialus.</string>
