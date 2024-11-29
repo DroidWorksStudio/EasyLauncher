@@ -75,6 +75,7 @@
     <string name="settings_display_app_icons">Zobrazit ikony aplikací</string>
     <string name="settings_display_automatic_keyboard">Automatické zobrazení klávesnice</string>
     <string name="settings_display_auto_open_apps">Automatické otevření poslední aplikace</string>
+    <string name="settings_home_alignment_bottom">Home Alignment Bottom</string>
     <string name="settings_search_from_start">Hledat od začátku</string>
     <string name="settings_display_lock_settings">Nastavení zámku</string>
     <string name="settings_display_disable_animations">Zakázat animace</string>
