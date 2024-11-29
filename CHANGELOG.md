@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added a toggle to disable animations. - ([4138c02](https://github.com/DroidWorksStudio/EasyLauncher/commit/4138c02da30cd81076c98063dcd8d558b642698c))
 - Added the ability to set a gesture to open Launcher Settings and Digital Wellbeing. - ([b17d661](https://github.com/DroidWorksStudio/EasyLauncher/commit/b17d66192e5a5c080d859c96ceb3cc85098bc1b5))
 
 ### Bug Fixes:
