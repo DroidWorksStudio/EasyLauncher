@@ -264,18 +264,21 @@ class AppHelper @Inject constructor() {
             Intent.EXTRA_TEXT,
             "$description https://f-droid.org/packages/${context.packageName}"
         )
+        shareIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(Intent.createChooser(shareIntent, "Share Application"))
     }
 
     fun helpFeedbackButton(context: Context) {
         val uri = Uri.parse("https://github.com/DroidWorksStudio/EasyLauncher")
         val intent = Intent(Intent.ACTION_VIEW, uri)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(intent)
     }
 
     fun communitySupportButton(context: Context) {
         val uri = Uri.parse("https://t.me/DroidWorksStudio/")
         val intent = Intent(Intent.ACTION_VIEW, uri)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(intent)
     }
 
@@ -283,6 +286,7 @@ class AppHelper @Inject constructor() {
         val emailIntent = Intent(Intent.ACTION_SENDTO)
         emailIntent.data = Uri.parse("mailto:droidworksstuido@063240.xyz")
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, R.string.app_name)
+        emailIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(Intent.createChooser(emailIntent, "Choose Mail Application"))
     }
 
@@ -296,6 +300,7 @@ class AppHelper @Inject constructor() {
             type = "application/json"
             putExtra(Intent.EXTRA_TITLE, fileName)
         }
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         activity.startActivityForResult(intent, Constants.BACKUP_WRITE, null)
     }
 
@@ -304,6 +309,7 @@ class AppHelper @Inject constructor() {
             addCategory(Intent.CATEGORY_OPENABLE)
             type = "application/json"
         }
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         activity.startActivityForResult(intent, Constants.BACKUP_READ, null)
     }
 
