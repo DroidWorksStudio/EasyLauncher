@@ -106,6 +106,8 @@
     <string name="settings_app_language">Мова програми</string>
     <string name="settings_select_filter_strength">Виберіть інтенсивність фільтра</string>
     <string name="settings_filter_strength">Міцність фільтра</string>
+    <string name="settings_select_swipe_threshold">Select a Swipe Threshold</string>
+    <string name="settings_swipe_threshold">Swipe Threshold</string>
     <string name="settings_select_launcher_font">Виберіть сімейство шрифтів</string>
     <string name="settings_launcher_font">Сімейство шрифтів</string>
     <string name="settings_select_icons">Виберіть тип значка</string>
@@ -132,6 +134,8 @@
     <string name="settings_units_metric">Метрика</string>
     <string name="settings_units_imperial">Імператорський</string>
     <string name="settings_system">система</string>
+    <string name="settings_ok">Ok</string>
+    <string name="settings_cancel">Cancel</string>
     <string name="authentication_title">Аутентифікація</string>
     <string name="authentication_subtitle">Увійдіть, використовуючи свої біометричні облікові дані.</string>
     <string name="authentication_cancel">Автентифікація Скасувати</string>
