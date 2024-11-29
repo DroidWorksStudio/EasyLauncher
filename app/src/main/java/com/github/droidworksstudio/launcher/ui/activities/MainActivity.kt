@@ -22,9 +22,9 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
+import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -285,19 +285,51 @@ class MainActivity : AppCompatActivity() {
 
     private fun goBackToSettings() {
         navController = findNavController(R.id.nav_host_fragment_content_main)
-        val fragmentManager: FragmentManager = supportFragmentManager
         when (navController.currentDestination?.id) {
-            R.id.SettingsFragment,
             R.id.SettingsFeaturesFragment,
             R.id.SettingsLookFeelFragment,
+            R.id.SettingsAdvancedFragment,
             R.id.FavoriteFragment,
-            R.id.HiddenFragment,
-            R.id.SettingsAdvancedFragment -> {
-                fragmentManager.popBackStack()
+            R.id.HiddenFragment -> {
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Up)
+
+                Handler(Looper.getMainLooper()).post {
+                    navController.navigate(
+                        R.id.SettingsFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
+            }
+
+            R.id.SettingsFragment -> {
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Up)
+
+                Handler(Looper.getMainLooper()).post {
+                    navController.navigate(
+                        R.id.HomeFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
             }
 
             else -> {
-                navController.navigate(R.id.HomeFragment)
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Up)
+
+                Handler(Looper.getMainLooper()).post {
+                    navController.navigate(
+                        R.id.HomeFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
             }
         }
     }
