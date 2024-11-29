@@ -23,6 +23,10 @@ All notable changes to this project will be documented in this file. See [conven
 - Updated Language Files. ([#185](https://github.com/DroidWorksStudio/EasyLauncher/issues/185)) - ([08ee589](https://github.com/DroidWorksStudio/EasyLauncher/commit/08ee5892b08e61642ca66c4904482f2c9a0f2773))
 - Updated Language Files. ([#184](https://github.com/DroidWorksStudio/EasyLauncher/issues/184)) - ([5ee2bf4](https://github.com/DroidWorksStudio/EasyLauncher/commit/5ee2bf4b8b3a223075346a29ffd255a11f2d4b92))
 
+### Refactoring:
+
+- Cleaned up debug colors. - ([43a66c4](https://github.com/DroidWorksStudio/EasyLauncher/commit/43a66c40ca9f7ec12f63cc717b23f3fcec28d412))
+
 ### Releases:
 
 - Prepare for version 0.3.0 - ([f5b708f](https://github.com/DroidWorksStudio/EasyLauncher/commit/f5b708f1a9b67a06f03ee355647679545b334126))
