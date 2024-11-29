@@ -528,7 +528,7 @@ class HomeFragment : Fragment(),
                         val actionTypeNavOptions: NavOptions =
                             appHelper.getActionType(Constants.Swipe.DoubleTap)
                         findNavController().navigate(
-                            R.id.action_HomeFragment_to_SettingsFragment,
+                            R.id.SettingsFragment,
                             null,
                             actionTypeNavOptions
                         )
@@ -540,12 +540,12 @@ class HomeFragment : Fragment(),
                 })
 
             if (preferenceHelper.settingsLock) {
-                fingerHelper.startBiometricSettingsAuth(R.id.action_HomeFragment_to_SettingsFragment)
+                fingerHelper.startBiometricSettingsAuth(R.id.SettingsFragment)
             } else {
                 val actionTypeNavOptions: NavOptions =
                     appHelper.getActionType(Constants.Swipe.DoubleTap)
                 findNavController().navigate(
-                    R.id.action_HomeFragment_to_SettingsFragment,
+                    R.id.SettingsFragment,
                     null,
                     actionTypeNavOptions
                 )
