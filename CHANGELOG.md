@@ -4,12 +4,6 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
-### Releases:
-
-- Prepare for version 0.3.1 - ([9a39408](https://github.com/DroidWorksStudio/EasyLauncher/commit/9a39408b77ad9f0b0943943f5154b32240a1cde6))
-
-## [0.3.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.3.0) - (29, November 2024)
-
 ### Implemented Enhancements:
 
 - Added a toggle to disable animations. - ([4138c02](https://github.com/DroidWorksStudio/EasyLauncher/commit/4138c02da30cd81076c98063dcd8d558b642698c))
@@ -17,6 +11,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed the swipes to not use actions. - ([98413aa](https://github.com/DroidWorksStudio/EasyLauncher/commit/98413aa5aed7bff17c81a35d4f112088e732b517))
 - Fixed the goBackToSettings function. - ([59e0ded](https://github.com/DroidWorksStudio/EasyLauncher/commit/59e0ded1be2241ca04bb7dd4b3d9084269a9d3a2))
 - Fixed the swiping gestures. - ([83841be](https://github.com/DroidWorksStudio/EasyLauncher/commit/83841bef183d3fc1fe2700d82efb534967d03feb))
 
