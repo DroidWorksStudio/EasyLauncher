@@ -106,8 +106,8 @@
     <string name="settings_app_language">Jazyk aplikácie</string>
     <string name="settings_select_filter_strength">Vyberte silu filtra</string>
     <string name="settings_filter_strength">Sila filtra</string>
-    <string name="settings_select_swipe_threshold">Select a Swipe Threshold</string>
-    <string name="settings_swipe_threshold">Swipe Threshold</string>
+    <string name="settings_select_swipe_threshold">Vyberte Prah potiahnutia</string>
+    <string name="settings_swipe_threshold">Prahová hodnota potiahnutia</string>
     <string name="settings_select_launcher_font">Vyberte rodinu písiem</string>
     <string name="settings_launcher_font">Rodina písiem</string>
     <string name="settings_select_icons">Vyberte typ ikony</string>
@@ -134,8 +134,8 @@
     <string name="settings_units_metric">Metrické</string>
     <string name="settings_units_imperial">cisársky</string>
     <string name="settings_system">systém</string>
-    <string name="settings_ok">Ok</string>
-    <string name="settings_cancel">Cancel</string>
+    <string name="settings_ok">Dobre</string>
+    <string name="settings_cancel">Zrušiť</string>
     <string name="authentication_title">Overenie</string>
     <string name="authentication_subtitle">Prihláste sa pomocou svojich biometrických údajov.</string>
     <string name="authentication_cancel">Zrušenie overenia</string>
