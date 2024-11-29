@@ -75,7 +75,7 @@
     <string name="settings_display_app_icons">App-Symbole anzeigen</string>
     <string name="settings_display_automatic_keyboard">Tastatur automatisch einblenden</string>
     <string name="settings_display_auto_open_apps">Letzte App automatisch öffnen</string>
-    <string name="settings_home_alignment_bottom">Home Alignment Bottom</string>
+    <string name="settings_home_alignment_bottom">Startseite Ausrichtung Unten</string>
     <string name="settings_search_from_start">Von Anfang an suchen</string>
     <string name="settings_display_lock_settings">Sperreinstellungen</string>
     <string name="settings_display_disable_animations">Animationen deaktivieren</string>
