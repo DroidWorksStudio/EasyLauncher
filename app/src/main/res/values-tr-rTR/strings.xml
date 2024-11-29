@@ -134,7 +134,7 @@
     <string name="settings_units_metric">Metrik</string>
     <string name="settings_units_imperial">İmparatorluk</string>
     <string name="settings_system">Sistem</string>
-    <string name="settings_ok">OK</string>
+    <string name="settings_ok">TAMAM</string>
     <string name="settings_cancel">İptal etmek</string>
     <string name="authentication_title">Kimlik doğrulama</string>
     <string name="authentication_subtitle">Biyometrik kimlik bilgilerinizi kullanarak giriş yapın.</string>
