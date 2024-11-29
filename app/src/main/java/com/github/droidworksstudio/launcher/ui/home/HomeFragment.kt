@@ -418,7 +418,9 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.ShowAppList -> {
-                val actionTypeNavOptions: NavOptions = appHelper.getActionType(actionType)
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
                         R.id.action_HomeFragment_to_DrawFragment,
@@ -430,7 +432,9 @@ class HomeFragment : Fragment(),
 
 
             Constants.Action.ShowFavoriteList -> {
-                val actionTypeNavOptions: NavOptions = appHelper.getActionType(actionType)
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
                         R.id.action_HomeFragment_to_FavoriteFragment,
@@ -441,7 +445,9 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.ShowHiddenList -> {
-                val actionTypeNavOptions: NavOptions = appHelper.getActionType(actionType)
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
                         R.id.action_HomeFragment_to_HiddenFragment,
@@ -465,7 +471,9 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.ShowWidgets -> {
-                val actionTypeNavOptions: NavOptions = appHelper.getActionType(actionType)
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
                         R.id.action_HomeFragment_to_WidgetsFragment,

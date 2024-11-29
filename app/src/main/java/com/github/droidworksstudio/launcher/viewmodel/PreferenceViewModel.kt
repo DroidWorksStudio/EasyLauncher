@@ -46,6 +46,7 @@ class PreferenceViewModel @Inject constructor(
     private val searchFromStartLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val autoKeyboardLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val lockSettingsLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    private val disableAnimationsLiveData: MutableLiveData<Boolean> = MutableLiveData()
     private val appGroupPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
     private val appPaddingSizeLiveData: MutableLiveData<Float> = MutableLiveData()
 
@@ -276,6 +277,11 @@ class PreferenceViewModel @Inject constructor(
     fun setLockSettings(lockSettings: Boolean) {
         preferenceHelper.settingsLock = lockSettings
         lockSettingsLiveData.postValue((preferenceHelper.settingsLock))
+    }
+
+    fun setDisableAnimations(disableAnimations: Boolean) {
+        preferenceHelper.disableAnimations = disableAnimations
+        disableAnimationsLiveData.postValue((preferenceHelper.disableAnimations))
     }
 
     fun setAppLanguage(appLanguage: Constants.Language) {

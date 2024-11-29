@@ -102,6 +102,7 @@
     <string name="settings_display_auto_open_apps">Auto Open Last App</string>
     <string name="settings_search_from_start">Search From Start</string>
     <string name="settings_display_lock_settings">Lock Settings</string>
+    <string name="settings_display_disable_animations">Disable Animations</string>
 
     <string name="settings_appearance_text_size_title">Size</string>
     <string name="settings_appearance_color_title">Color</string>

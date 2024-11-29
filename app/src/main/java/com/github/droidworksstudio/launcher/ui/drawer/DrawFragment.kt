@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +16,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -191,16 +194,38 @@ class DrawFragment : Fragment(),
                     RecyclerView.SCROLL_STATE_DRAGGING -> {
                         onTop = !recyclerView.canScrollVertically(-1)
                         if (onTop) binding.searchViewText.hideKeyboard()
-                        if (onTop && !recyclerView.canScrollVertically(1))
-                            findNavController().popBackStack()
+                        if (onTop && !recyclerView.canScrollVertically(1)) {
+                            val actionTypeNavOptions: NavOptions? =
+                                if (preferenceHelper.disableAnimations) null
+                                else appHelper.getActionType(Constants.Swipe.Up)
+
+                            Handler(Looper.getMainLooper()).post {
+                                findNavController().navigate(
+                                    R.id.action_DrawFragment_to_HomeFragment,
+                                    null,
+                                    actionTypeNavOptions
+                                )
+                            }
+                        }
                     }
 
                     RecyclerView.SCROLL_STATE_IDLE -> {
                         if (!recyclerView.canScrollVertically(1)) {
                             binding.searchViewText.hideKeyboard()
                         } else if (!recyclerView.canScrollVertically(-1)) {
-                            if (onTop) findNavController().popBackStack()
-                            else binding.searchViewText.showKeyboard()
+                            if (onTop) {
+                                val actionTypeNavOptions: NavOptions? =
+                                    if (preferenceHelper.disableAnimations) null
+                                    else appHelper.getActionType(Constants.Swipe.Up)
+
+                                Handler(Looper.getMainLooper()).post {
+                                    findNavController().navigate(
+                                        R.id.action_DrawFragment_to_HomeFragment,
+                                        null,
+                                        actionTypeNavOptions
+                                    )
+                                }
+                            } else binding.searchViewText.showKeyboard()
                         }
                     }
                 }
@@ -213,12 +238,32 @@ class DrawFragment : Fragment(),
         return object : OnSwipeTouchListener(context) {
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                findNavController().navigateUp()
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Left)
+
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(
+                        R.id.action_DrawFragment_to_HomeFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
             }
 
             override fun onSwipeRight() {
                 super.onSwipeRight()
-                findNavController().navigateUp()
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Right)
+
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(
+                        R.id.action_DrawFragment_to_HomeFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
             }
         }
     }

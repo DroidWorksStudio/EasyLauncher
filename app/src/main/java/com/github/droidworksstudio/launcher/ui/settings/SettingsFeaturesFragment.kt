@@ -127,6 +127,7 @@ class SettingsFeaturesFragment : Fragment(),
             automaticOpenAppSwitchCompat.isChecked = preferenceHelper.automaticOpenApp
             searchFromStartSwitchCompat.isChecked = preferenceHelper.searchFromStart
             lockSettingsSwitchCompat.isChecked = preferenceHelper.settingsLock
+            disableAnimationsSwitchCompat.isChecked = preferenceHelper.disableAnimations
         }
     }
 
@@ -358,6 +359,12 @@ class SettingsFeaturesFragment : Fragment(),
 
             lockSettingsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setLockSettings(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
+            }
+
+            disableAnimationsSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setDisableAnimations(isChecked)
                 val feedbackType = if (isChecked) "on" else "off"
                 appHelper.triggerHapticFeedback(context, feedbackType)
             }

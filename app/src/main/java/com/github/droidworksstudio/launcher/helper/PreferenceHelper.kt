@@ -179,6 +179,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.TOGGLE_SETTING_LOCK, false)
         set(value) = prefs.edit().putBoolean(Constants.TOGGLE_SETTING_LOCK, value).apply()
 
+    var disableAnimations: Boolean
+        get() = prefs.getBoolean(Constants.DISABLE_ANIMATIONS, false)
+        set(value) = prefs.edit().putBoolean(Constants.DISABLE_ANIMATIONS, value).apply()
+
     var searchEngines: Constants.SearchEngines
         get() {
             return try {

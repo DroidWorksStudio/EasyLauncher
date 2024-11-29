@@ -389,8 +389,10 @@ class WidgetFragment : Fragment(),
         return object : OnSwipeTouchListener(context) {
             override fun onLongClick() {
                 super.onLongClick()
-                val actionTypeNavOptions: NavOptions =
-                    appHelper.getActionType(Constants.Swipe.DoubleTap)
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.DoubleTap)
+
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
                         R.id.action_WidgetsFragment_to_WidgetsSettingsFragment,
@@ -398,17 +400,36 @@ class WidgetFragment : Fragment(),
                         actionTypeNavOptions
                     )
                 }
-                return
             }
 
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                findNavController().navigateUp()
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Left)
+
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(
+                        R.id.action_WidgetsFragment_to_HomeFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
             }
 
             override fun onSwipeRight() {
                 super.onSwipeRight()
-                findNavController().navigateUp()
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Right)
+
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(
+                        R.id.action_WidgetsFragment_to_HomeFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
             }
         }
     }

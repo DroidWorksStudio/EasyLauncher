@@ -64,6 +64,10 @@
         <action
             android:id="@+id/action_WidgetsFragment_to_WidgetsSettingsFragment"
             app:destination="@id/WidgetsSettingsFragment" />
+
+        <action
+            android:id="@+id/action_WidgetsFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
     </fragment>
 
     <fragment
@@ -82,7 +86,13 @@
         android:id="@+id/DrawFragment"
         android:name="com.github.droidworksstudio.launcher.ui.drawer.DrawFragment"
         android:label="@string/draw_fragment_label"
-        tools:layout="@layout/fragment_draw" />
+        tools:layout="@layout/fragment_draw">
+
+        <action
+            android:id="@+id/action_DrawFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+
 
     <fragment
         android:id="@+id/FavoriteFragment"
