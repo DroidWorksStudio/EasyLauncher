@@ -75,7 +75,7 @@
     <string name="settings_display_app_icons">Mostra le icone delle app</string>
     <string name="settings_display_automatic_keyboard">Mostra automaticamente la tastiera</string>
     <string name="settings_display_auto_open_apps">Apertura automatica dell\'ultima app</string>
-    <string name="settings_home_alignment_bottom">Home Alignment Bottom</string>
+    <string name="settings_home_alignment_bottom">Home Allineamento Fondo</string>
     <string name="settings_search_from_start">Cerca dall\'inizio</string>
     <string name="settings_display_lock_settings">Blocca impostazioni</string>
     <string name="settings_display_disable_animations">Disabilitare le animazioni</string>
