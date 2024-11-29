@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.3.1 - ([90975e4](https://github.com/DroidWorksStudio/EasyLauncher/commit/90975e4f674a00e6ea083bd362d9ff808cf268c0))
+
+## [0.3.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.3.0) - (29, November 2024)
+
 ### Implemented Enhancements:
 
 - Added the ability to change swipeThreshold. - ([8bcec48](https://github.com/DroidWorksStudio/EasyLauncher/commit/8bcec489e9c2dfce52f6c6069d8f9aeaf9c54559))
