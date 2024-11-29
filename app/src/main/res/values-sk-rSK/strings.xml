@@ -134,7 +134,7 @@
     <string name="settings_units_metric">Metrické</string>
     <string name="settings_units_imperial">cisársky</string>
     <string name="settings_system">systém</string>
-    <string name="settings_ok">Dobre</string>
+    <string name="settings_ok">OK</string>
     <string name="settings_cancel">Zrušiť</string>
     <string name="authentication_title">Overenie</string>
     <string name="authentication_subtitle">Prihláste sa pomocou svojich biometrických údajov.</string>
