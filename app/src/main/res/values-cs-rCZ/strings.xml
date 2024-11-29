@@ -77,6 +77,7 @@
     <string name="settings_display_auto_open_apps">Automatické otevření poslední aplikace</string>
     <string name="settings_search_from_start">Hledat od začátku</string>
     <string name="settings_display_lock_settings">Nastavení zámku</string>
+    <string name="settings_display_disable_animations">Disable Animations</string>
     <string name="settings_appearance_text_size_title">Velikost</string>
     <string name="settings_appearance_color_title">Barva</string>
     <string name="settings_appearance_alignment_title">Zarovnání</string>
