@@ -35,6 +35,7 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
     private inner class GestureListener : SimpleOnGestureListener() {
         private val swipeThreshold: Int = 100
         private val swipeVelocityThreshold: Int = 100
+        private val swipeScrollThreshold: Int = 100
 
         override fun onDown(e: MotionEvent): Boolean {
             return true
@@ -82,13 +83,13 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
 
                 // Horizontal swipe
                 if (abs(diffX) > abs(diffY)) {
-                    if (abs(diffX) > swipeThreshold && abs(distanceX) > swipeVelocityThreshold) {
+                    if (abs(diffX) > swipeThreshold && abs(distanceX) > swipeScrollThreshold) {
                         if (diffX > 0) onSwipeRight() else onSwipeLeft()
                     }
                 }
                 // Vertical swipe
                 else {
-                    if (abs(diffY) > swipeThreshold && abs(distanceY) > swipeVelocityThreshold) {
+                    if (abs(diffY) > swipeThreshold && abs(distanceY) > swipeScrollThreshold) {
                         if (diffY > 0) onSwipeDown() else onSwipeUp()
                     }
                 }

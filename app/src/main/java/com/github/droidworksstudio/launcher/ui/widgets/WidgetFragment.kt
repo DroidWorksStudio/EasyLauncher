@@ -395,7 +395,7 @@ class WidgetFragment : Fragment(),
 
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_WidgetsFragment_to_WidgetsSettingsFragment,
+                        R.id.WidgetsSettingsFragment,
                         null,
                         actionTypeNavOptions
                     )
@@ -410,7 +410,7 @@ class WidgetFragment : Fragment(),
 
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_WidgetsFragment_to_HomeFragment,
+                        R.id.HomeFragment,
                         null,
                         actionTypeNavOptions
                     )
@@ -425,7 +425,7 @@ class WidgetFragment : Fragment(),
 
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_WidgetsFragment_to_HomeFragment,
+                        R.id.HomeFragment,
                         null,
                         actionTypeNavOptions
                     )

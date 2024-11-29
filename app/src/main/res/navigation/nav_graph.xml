@@ -8,67 +8,19 @@
         android:id="@+id/HomeFragment"
         android:name="com.github.droidworksstudio.launcher.ui.home.HomeFragment"
         android:label="@string/home_fragment_label"
-        tools:layout="@layout/fragment_home">
-
-        <action
-            android:id="@+id/action_HomeFragment_to_DrawFragment"
-            app:destination="@id/DrawFragment" />
-        <action
-            android:id="@+id/action_HomeFragment_to_SettingsFragment"
-            app:destination="@id/SettingsFragment" />
-        <action
-            android:id="@+id/action_HomeFragment_to_FavoriteFragment"
-            app:destination="@id/FavoriteFragment" />
-        <action
-            android:id="@+id/action_HomeFragment_to_HiddenFragment"
-            app:destination="@id/HiddenFragment" />
-        <action
-            android:id="@+id/action_HomeFragment_to_WidgetsFragment"
-            app:destination="@id/WidgetsFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/SettingsFragment"
         android:name="com.github.droidworksstudio.launcher.ui.settings.SettingsFragment"
         android:label="@string/settings_fragment_label"
-        tools:layout="@layout/fragment_settings">
-        <action
-            android:id="@+id/action_SettingsFragment_to_FavoriteFragment"
-            app:destination="@id/FavoriteFragment" />
-        <action
-            android:id="@+id/action_SettingsFragment_to_HiddenFragment"
-            app:destination="@id/HiddenFragment" />
-        <action
-            android:id="@+id/action_SettingsFragment_to_SettingsAdvancedFragment"
-            app:destination="@id/SettingsAdvancedFragment" />
-        <action
-            android:id="@+id/action_SettingsFragment_to_SettingsFeaturesFragment"
-            app:destination="@id/SettingsFeaturesFragment" />
-        <action
-            android:id="@+id/action_SettingsFragment_to_SettingsLookFeelFragment"
-            app:destination="@id/SettingsLookFeelFragment" />
-        <action
-            android:id="@+id/action_SettingsFragment_to_WidgetsFragment"
-            app:destination="@id/WidgetsFragment" />
-        <action
-            android:id="@+id/action_SettingsFragment_to_WidgetsSettingsFragment"
-            app:destination="@id/WidgetsSettingsFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_settings" />
 
     <fragment
         android:id="@+id/WidgetsFragment"
         android:name="com.github.droidworksstudio.launcher.ui.widgets.WidgetFragment"
         android:label="@string/widgets_fragment_label"
-        tools:layout="@layout/fragment_widgets">
-
-        <action
-            android:id="@+id/action_WidgetsFragment_to_WidgetsSettingsFragment"
-            app:destination="@id/WidgetsSettingsFragment" />
-
-        <action
-            android:id="@+id/action_WidgetsFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_widgets" />
 
     <fragment
         android:id="@+id/SettingsFeaturesFragment"
@@ -86,13 +38,7 @@
         android:id="@+id/DrawFragment"
         android:name="com.github.droidworksstudio.launcher.ui.drawer.DrawFragment"
         android:label="@string/draw_fragment_label"
-        tools:layout="@layout/fragment_draw">
-
-        <action
-            android:id="@+id/action_DrawFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
-    </fragment>
-
+        tools:layout="@layout/fragment_draw" />
 
     <fragment
         android:id="@+id/FavoriteFragment"

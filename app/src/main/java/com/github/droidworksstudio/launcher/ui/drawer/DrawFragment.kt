@@ -201,7 +201,7 @@ class DrawFragment : Fragment(),
 
                             Handler(Looper.getMainLooper()).post {
                                 findNavController().navigate(
-                                    R.id.action_DrawFragment_to_HomeFragment,
+                                    R.id.HomeFragment,
                                     null,
                                     actionTypeNavOptions
                                 )
@@ -220,7 +220,7 @@ class DrawFragment : Fragment(),
 
                                 Handler(Looper.getMainLooper()).post {
                                     findNavController().navigate(
-                                        R.id.action_DrawFragment_to_HomeFragment,
+                                        R.id.HomeFragment,
                                         null,
                                         actionTypeNavOptions
                                     )
@@ -244,7 +244,7 @@ class DrawFragment : Fragment(),
 
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_DrawFragment_to_HomeFragment,
+                        R.id.HomeFragment,
                         null,
                         actionTypeNavOptions
                     )
@@ -259,7 +259,7 @@ class DrawFragment : Fragment(),
 
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_DrawFragment_to_HomeFragment,
+                        R.id.HomeFragment,
                         null,
                         actionTypeNavOptions
                     )

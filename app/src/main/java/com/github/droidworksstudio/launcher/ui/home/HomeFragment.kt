@@ -423,7 +423,7 @@ class HomeFragment : Fragment(),
                     else appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_HomeFragment_to_DrawFragment,
+                        R.id.DrawFragment,
                         null,
                         actionTypeNavOptions
                     )
@@ -437,7 +437,7 @@ class HomeFragment : Fragment(),
                     else appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_HomeFragment_to_FavoriteFragment,
+                        R.id.FavoriteFragment,
                         null,
                         actionTypeNavOptions
                     )
@@ -450,7 +450,7 @@ class HomeFragment : Fragment(),
                     else appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_HomeFragment_to_HiddenFragment,
+                        R.id.HiddenFragment,
                         null,
                         actionTypeNavOptions
                     )
@@ -476,7 +476,7 @@ class HomeFragment : Fragment(),
                     else appHelper.getActionType(actionType)
                 Handler(Looper.getMainLooper()).post {
                     findNavController().navigate(
-                        R.id.action_HomeFragment_to_WidgetsFragment,
+                        R.id.WidgetsFragment,
                         null,
                         actionTypeNavOptions
                     )

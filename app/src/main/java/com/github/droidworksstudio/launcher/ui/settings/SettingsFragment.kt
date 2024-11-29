@@ -70,23 +70,23 @@ class SettingsFragment : Fragment(),
     private fun observeClickListener() {
         binding.apply {
             featuresSettings.setOnClickListener {
-                navController.navigate(R.id.action_SettingsFragment_to_SettingsFeaturesFragment)
+                navController.navigate(R.id.SettingsFeaturesFragment)
             }
 
             lookFeelSettings.setOnClickListener {
-                navController.navigate(R.id.action_SettingsFragment_to_SettingsLookFeelFragment)
+                navController.navigate(R.id.SettingsLookFeelFragment)
             }
 
             favoriteApps.setOnClickListener {
-                navController.navigate(R.id.action_SettingsFragment_to_FavoriteFragment)
+                navController.navigate(R.id.FavoriteFragment)
             }
 
             hiddenApps.setOnClickListener {
-                navController.navigate(R.id.action_SettingsFragment_to_HiddenFragment)
+                navController.navigate(R.id.HiddenFragment)
             }
 
             advancedSettings.setOnClickListener {
-                navController.navigate(R.id.action_SettingsFragment_to_SettingsAdvancedFragment)
+                navController.navigate(R.id.SettingsAdvancedFragment)
             }
         }
     }
