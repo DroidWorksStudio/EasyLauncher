@@ -106,6 +106,8 @@
     <string name="settings_app_language">Uygulama Dili</string>
     <string name="settings_select_filter_strength">Bir Filtre Gücü Seçin</string>
     <string name="settings_filter_strength">Filtre Gücü</string>
+    <string name="settings_select_swipe_threshold">Bir Kaydırma Eşiği Seçin</string>
+    <string name="settings_swipe_threshold">Kaydırma Eşiği</string>
     <string name="settings_select_launcher_font">Bir Yazı Tipi Ailesi Seçin</string>
     <string name="settings_launcher_font">Font ailesi</string>
     <string name="settings_select_icons">Bir Simge Türü Seçin</string>
@@ -132,6 +134,8 @@
     <string name="settings_units_metric">Metrik</string>
     <string name="settings_units_imperial">İmparatorluk</string>
     <string name="settings_system">Sistem</string>
+    <string name="settings_ok">TAMAM</string>
+    <string name="settings_cancel">İptal etmek</string>
     <string name="authentication_title">Kimlik doğrulama</string>
     <string name="authentication_subtitle">Biyometrik kimlik bilgilerinizi kullanarak giriş yapın.</string>
     <string name="authentication_cancel">Kimlik Doğrulaması İptal</string>

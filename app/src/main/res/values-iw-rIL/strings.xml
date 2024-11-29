@@ -106,6 +106,8 @@
     <string name="settings_app_language">שפת האפליקציה</string>
     <string name="settings_select_filter_strength">בחר חוזק מסנן</string>
     <string name="settings_filter_strength">חוזק מסנן</string>
+    <string name="settings_select_swipe_threshold">בחר סף החלקה</string>
+    <string name="settings_swipe_threshold">סף החלקה</string>
     <string name="settings_select_launcher_font">בחר משפחת גופנים</string>
     <string name="settings_launcher_font">משפחת גופן</string>
     <string name="settings_select_icons">בחר סוג סמל</string>
@@ -132,6 +134,8 @@
     <string name="settings_units_metric">מֶטרִי</string>
     <string name="settings_units_imperial">קֵיסָרִי</string>
     <string name="settings_system">מַעֲרֶכֶת</string>
+    <string name="settings_ok">בְּסֵדֶר</string>
+    <string name="settings_cancel">לְבַטֵל</string>
     <string name="authentication_title">אימות</string>
     <string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
     <string name="authentication_cancel">ביטול האימות</string>

@@ -106,6 +106,8 @@
     <string name="settings_app_language">Lingua dell\'app</string>
     <string name="settings_select_filter_strength">Seleziona un\'intensità di filtro</string>
     <string name="settings_filter_strength">Forza del filtro</string>
+    <string name="settings_select_swipe_threshold">Seleziona una soglia di scorrimento</string>
+    <string name="settings_swipe_threshold">Soglia di scorrimento</string>
     <string name="settings_select_launcher_font">Seleziona una famiglia di caratteri</string>
     <string name="settings_launcher_font">Famiglia di font</string>
     <string name="settings_select_icons">Seleziona un tipo di icona</string>
@@ -132,6 +134,8 @@
     <string name="settings_units_metric">Metrico</string>
     <string name="settings_units_imperial">Imperiale</string>
     <string name="settings_system">Sistema</string>
+    <string name="settings_ok">OK</string>
+    <string name="settings_cancel">Cancellare</string>
     <string name="authentication_title">Autenticazione</string>
     <string name="authentication_subtitle">Accedi utilizzando le tue credenziali biometriche.</string>
     <string name="authentication_cancel">Autenticazione Annulla</string>
