@@ -92,7 +92,7 @@ class HomeFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
@@ -344,7 +344,7 @@ class HomeFragment : Fragment(),
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context) {
+        return object : OnSwipeTouchListener(context, preferenceHelper) {
             override fun onLongClick() {
                 super.onLongClick()
                 trySettings()
@@ -403,7 +403,8 @@ class HomeFragment : Fragment(),
                     Constants.Swipe.Up,
                     Constants.Swipe.Down,
                     Constants.Swipe.Left,
-                    Constants.Swipe.Right -> {
+                    Constants.Swipe.Right,
+                        -> {
                         val packageName = when (actionType) {
                             Constants.Swipe.DoubleTap -> preferenceHelper.doubleTapApp
                             Constants.Swipe.Up -> preferenceHelper.swipeUpApp
@@ -526,7 +527,7 @@ class HomeFragment : Fragment(),
                 object : BiometricPrompt.AuthenticationCallback() {
                     override fun onAuthenticationError(
                         errorCode: Int,
-                        errString: CharSequence
+                        errString: CharSequence,
                     ) {
                         when (errorCode) {
                             BiometricPrompt.ERROR_USER_CANCELED -> requireContext().showLongToast(

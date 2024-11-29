@@ -7,6 +7,7 @@ import android.view.GestureDetector.SimpleOnGestureListener
 import android.view.MotionEvent
 import android.view.View
 import android.view.View.OnTouchListener
+import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.utils.Constants
 import java.util.*
 import kotlin.concurrent.schedule
@@ -20,7 +21,7 @@ import kotlin.math.abs
  * The original code has been modified to fit the specific requirements of this project.
  */
 
-internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
+internal open class OnSwipeTouchListener(context: Context?, private val preferenceHelper: PreferenceHelper) : OnTouchListener {
     private var longPressOn = false
     private var doubleTapOn = false
     private val gestureDetector: GestureDetector
@@ -33,23 +34,23 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
     }
 
     private inner class GestureListener : SimpleOnGestureListener() {
-        private val swipeThreshold: Int = 100
-        private val swipeVelocityThreshold: Int = 100
-        private val swipeScrollThreshold: Int = 100
+        private val swipeThreshold: Int = preferenceHelper.swipeThreshold
+        private val swipeVelocityThreshold: Int = (preferenceHelper.swipeThreshold / 2)
+        private val swipeScrollThreshold: Int = (preferenceHelper.swipeThreshold / 2)
 
-        override fun onDown(e: MotionEvent): Boolean {
+        override fun onDown(event: MotionEvent): Boolean {
             return true
         }
 
-        override fun onSingleTapUp(e: MotionEvent): Boolean {
+        override fun onSingleTapUp(event: MotionEvent): Boolean {
             if (doubleTapOn) {
                 doubleTapOn = false
                 onTripleClick()
             }
-            return super.onSingleTapUp(e)
+            return super.onSingleTapUp(event)
         }
 
-        override fun onDoubleTap(e: MotionEvent): Boolean {
+        override fun onDoubleTap(event: MotionEvent): Boolean {
             doubleTapOn = true
             Timer().schedule(Constants.TRIPLE_TAP_DELAY_MS.toLong()) {
                 if (doubleTapOn) {
@@ -57,15 +58,15 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
                     onDoubleClick()
                 }
             }
-            return super.onDoubleTap(e)
+            return super.onDoubleTap(event)
         }
 
-        override fun onLongPress(e: MotionEvent) {
+        override fun onLongPress(event: MotionEvent) {
             longPressOn = true
             Timer().schedule(Constants.LONG_PRESS_DELAY_MS.toLong()) {
                 if (longPressOn) onLongClick()
             }
-            super.onLongPress(e)
+            super.onLongPress(event)
         }
 
         // Detecting swipe or drag movement
@@ -73,7 +74,7 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
             event1: MotionEvent?,
             event2: MotionEvent,
             distanceX: Float,
-            distanceY: Float
+            distanceY: Float,
         ): Boolean {
             try {
                 if (event1 == null) return false
@@ -103,7 +104,7 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
             event1: MotionEvent?,
             event2: MotionEvent,
             velocityX: Float,
-            velocityY: Float
+            velocityY: Float,
         ): Boolean {
             try {
                 val diffY = event2.y - event1!!.y
@@ -133,6 +134,6 @@ internal open class OnSwipeTouchListener(c: Context?) : OnTouchListener {
     open fun onTripleClick() {}
 
     init {
-        gestureDetector = GestureDetector(c, GestureListener())
+        gestureDetector = GestureDetector(context, GestureListener())
     }
 }

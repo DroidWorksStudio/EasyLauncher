@@ -56,7 +56,7 @@ class HiddenFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
 
         _binding = FragmentHiddenBinding.inflate(inflater, container, false)
@@ -116,7 +116,7 @@ class HiddenFragment : Fragment(),
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context) {
+        return object : OnSwipeTouchListener(context, preferenceHelper) {
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
                 findNavController().navigateUp()

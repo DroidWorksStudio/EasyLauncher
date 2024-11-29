@@ -115,6 +115,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getInt(Constants.FILTER_STRENGTH, 25)
         set(value) = prefs.edit().putInt(Constants.FILTER_STRENGTH, value).apply()
 
+    var swipeThreshold: Int
+        get() = prefs.getInt(Constants.SWIPE_THRESHOLD, 100)
+        set(value) = prefs.edit().putInt(Constants.SWIPE_THRESHOLD, value).apply()
+
     var homeAppAlignment: Int
         get() = prefs.getInt(Constants.HOME_APP_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(Constants.HOME_APP_ALIGNMENT, value).apply()

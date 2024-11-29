@@ -16,13 +16,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.droidworksstudio.common.hasInternetPermission
 import com.github.droidworksstudio.launcher.R
+import com.github.droidworksstudio.launcher.adapter.numberpicker.NumberPickerAdapter
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsWidgetsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomSheetDialogFragment
-import com.github.droidworksstudio.launcher.adapter.numberpicker.NumberPickerAdapter
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -50,7 +50,7 @@ class SettingsFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSettingsWidgetsBinding.inflate(inflater, container, false)
@@ -80,7 +80,7 @@ class SettingsFragment : Fragment(),
             weatherSwitchCompat.isChecked = preferenceHelper.showWeatherWidget
             weatherSunsetSunriseSwitchCompat.isChecked = preferenceHelper.showWeatherWidgetSunSetRise
 
-            weatherOrderControl.text = preferenceHelper.weatherOrderNumber.toString()
+            weatherOrderControl.text = "${preferenceHelper.weatherOrderNumber}"
 
             if (!context.hasInternetPermission()) {
                 weatherSettings.visibility = View.GONE
@@ -94,7 +94,7 @@ class SettingsFragment : Fragment(),
             // Battery stuff here
             batterySwitchCompat.isChecked = preferenceHelper.showBatteryWidget
 
-            batteryOrderControl.text = preferenceHelper.batteryOrderNumber.toString()
+            batteryOrderControl.text = "${preferenceHelper.batteryOrderNumber}"
 
             val batteryVisibility = if (batterySwitchCompat.isChecked) View.VISIBLE else View.GONE
             batteryOrderMenu.visibility = batteryVisibility
@@ -158,7 +158,7 @@ class SettingsFragment : Fragment(),
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context) {
+        return object : OnSwipeTouchListener(context, preferenceHelper) {
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
                 findNavController().navigateUp()
@@ -187,7 +187,7 @@ class SettingsFragment : Fragment(),
                 val adapter = NumberPickerAdapter(numbers) { selectedNumber ->
                     // Save the order number to SharedPreferences or ViewModel
                     preferenceViewModel.setWeatherOrderNumber(selectedNumber)
-                    binding.weatherOrderControl.text = preferenceHelper.weatherOrderNumber.toString()
+                    binding.weatherOrderControl.text = "${preferenceHelper.weatherOrderNumber}"
                     numberPickerDialog.dismiss()
                 }
 
@@ -198,7 +198,7 @@ class SettingsFragment : Fragment(),
                 val adapter = NumberPickerAdapter(numbers) { selectedNumber ->
                     // Save the order number to SharedPreferences or ViewModel
                     preferenceViewModel.setBatteryOrderNumber(selectedNumber)
-                    binding.batteryOrderControl.text = preferenceHelper.batteryOrderNumber.toString()
+                    binding.batteryOrderControl.text = "${preferenceHelper.batteryOrderNumber}"
                     numberPickerDialog.dismiss()
                 }
 

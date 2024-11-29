@@ -62,7 +62,7 @@ class FavoriteFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
 
         _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
@@ -136,7 +136,7 @@ class FavoriteFragment : Fragment(),
             override fun onChildDraw(
                 canvas: Canvas, recyclerView: RecyclerView,
                 viewHolder: RecyclerView.ViewHolder, dX: Float,
-                dY: Float, actionState: Int, isCurrentlyActive: Boolean
+                dY: Float, actionState: Int, isCurrentlyActive: Boolean,
             ) {
                 if (isCurrentlyActive) {
                     viewHolder.itemView.alpha = 0.5f
@@ -152,7 +152,7 @@ class FavoriteFragment : Fragment(),
 
             override fun getMovementFlags(
                 recyclerView: RecyclerView,
-                viewHolder: RecyclerView.ViewHolder
+                viewHolder: RecyclerView.ViewHolder,
             ): Int {
                 val dragFlags = ItemTouchHelper.UP or ItemTouchHelper.DOWN
                 val swipeFlags = 0
@@ -161,7 +161,7 @@ class FavoriteFragment : Fragment(),
 
             override fun onMove(
                 recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder,
-                target: RecyclerView.ViewHolder
+                target: RecyclerView.ViewHolder,
             ): Boolean {
 
                 val oldPosition = viewHolder.bindingAdapterPosition
@@ -199,7 +199,7 @@ class FavoriteFragment : Fragment(),
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context) {
+        return object : OnSwipeTouchListener(context, preferenceHelper) {
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
                 findNavController().navigateUp()

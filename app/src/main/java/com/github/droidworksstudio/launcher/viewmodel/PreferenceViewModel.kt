@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class PreferenceViewModel @Inject constructor(
-    private val preferenceHelper: PreferenceHelper
+    private val preferenceHelper: PreferenceHelper,
 ) : ViewModel() {
 
     private val firstLaunchLiveData: MutableLiveData<Boolean> = MutableLiveData()
@@ -54,6 +54,7 @@ class PreferenceViewModel @Inject constructor(
     private val weatherOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
     private val batteryOrderNumberLiveData: MutableLiveData<Int> = MutableLiveData()
     private val filterStrengthLiveData: MutableLiveData<Int> = MutableLiveData()
+    private val swipeThresholdLiveData: MutableLiveData<Int> = MutableLiveData()
 
     private val appLanguageLiveData: MutableLiveData<Constants.Language> = MutableLiveData()
     private val searchEngineLiveData: MutableLiveData<Constants.SearchEngines> = MutableLiveData()
@@ -308,6 +309,11 @@ class PreferenceViewModel @Inject constructor(
     fun setFilterStrength(filterStrength: Int) {
         preferenceHelper.filterStrength = filterStrength
         filterStrengthLiveData.postValue((preferenceHelper.filterStrength))
+    }
+
+    fun setSwipeThreshold(swipeThreshold: Int) {
+        preferenceHelper.swipeThreshold = swipeThreshold
+        swipeThresholdLiveData.postValue((preferenceHelper.swipeThreshold))
     }
 
     fun setLauncherFont(launcherFont: Constants.Fonts) {

@@ -81,7 +81,7 @@ class DrawFragment : Fragment(),
     private lateinit var context: Context
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
 
         _binding = FragmentDrawBinding.inflate(inflater, container, false)
@@ -235,7 +235,7 @@ class DrawFragment : Fragment(),
 
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context) {
+        return object : OnSwipeTouchListener(context, preferenceHelper) {
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
                 val actionTypeNavOptions: NavOptions? =

@@ -68,7 +68,7 @@ class WidgetFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentWidgetsBinding.inflate(inflater, container, false)
@@ -386,7 +386,7 @@ class WidgetFragment : Fragment(),
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context) {
+        return object : OnSwipeTouchListener(context, preferenceHelper) {
             override fun onLongClick() {
                 super.onLongClick()
                 val actionTypeNavOptions: NavOptions? =

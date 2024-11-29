@@ -56,7 +56,7 @@ class SettingsFeaturesFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSettingsFeaturesBinding.inflate(inflater, container, false)
@@ -82,6 +82,7 @@ class SettingsFeaturesFragment : Fragment(),
             miscellaneousSearchEngineControl.text = preferenceHelper.searchEngines.getString(context)
             miscellaneousAppLanguageControl.text = preferenceHelper.appLanguage.name
             miscellaneousFilterStrengthControl.text = "${preferenceHelper.filterStrength}"
+            miscellaneousSwipeThresholdControl.text = "${preferenceHelper.swipeThreshold}"
         }
 
         val actions = listOf(
@@ -102,7 +103,7 @@ class SettingsFeaturesFragment : Fragment(),
         context: Context,
         action: Constants.Action,
         appPackageName: String?,
-        textView: TextView
+        textView: TextView,
     ) {
         val actionText = if (action == Constants.Action.OpenApp) {
             val appName = appPackageName?.let { context.getAppNameFromPackageName(it) }
@@ -161,12 +162,16 @@ class SettingsFeaturesFragment : Fragment(),
                 showSearchEngineDialog()
             }
 
+            miscellaneousAppLanguageControl.setOnClickListener {
+                showAppLanguageDialog()
+            }
+
             miscellaneousFilterStrengthControl.setOnClickListener {
                 showFilterStrengthDialog()
             }
 
-            miscellaneousAppLanguageControl.setOnClickListener {
-                showAppLanguageDialog()
+            miscellaneousSwipeThresholdControl.setOnClickListener {
+                showSwipeThresholdDialog()
             }
         }
     }
@@ -282,7 +287,7 @@ class SettingsFeaturesFragment : Fragment(),
         val dialogBuilder = MaterialAlertDialogBuilder(context).apply {
             setTitle(getString(R.string.settings_select_filter_strength))
             setView(seekBarLayout) // Add the slider directly to the dialog
-            setPositiveButton("ok") { _, _ ->
+            setPositiveButton(getString(R.string.settings_ok)) { _, _ ->
                 // Save the slider value when OK is pressed
                 preferenceViewModel.setFilterStrength(currentValue)
                 binding.miscellaneousFilterStrengthControl.text = "$currentValue"
@@ -290,12 +295,80 @@ class SettingsFeaturesFragment : Fragment(),
                 val feedbackType = "select"
                 appHelper.triggerHapticFeedback(context, feedbackType)
             }
-            setNegativeButton("cancel", null)
+            setNegativeButton(getString(R.string.settings_cancel), null)
         }
 
         // Assign the created dialog to launcherFontDialog
         filterStrengthDialog = dialogBuilder.create()
         filterStrengthDialog?.show()
+    }
+
+    private var swipeThresholdDialog: AlertDialog? = null
+
+    @RequiresApi(Build.VERSION_CODES.Q)
+    private fun showSwipeThresholdDialog() {
+        // Dismiss any existing dialog to prevent multiple dialogs open simultaneously
+        swipeThresholdDialog?.dismiss()
+
+        var currentValue = preferenceHelper.swipeThreshold
+
+        // Create a layout to hold the SeekBar and the value display
+        val seekBarLayout = LinearLayout(context).apply {
+            orientation = LinearLayout.VERTICAL
+            gravity = Gravity.CENTER
+            setPadding(16, 16, 16, 16)
+
+            // TextView to display the current value
+            val valueText = TextView(context).apply {
+                text = "$currentValue"
+                textSize = 16f
+                gravity = Gravity.CENTER
+            }
+
+            // SeekBar for horizontal number selection
+            val seekBar = SeekBar(context).apply {
+                min = Constants.SWIPE_THRESHOLD_MIN // Maximum value
+                max = Constants.SWIPE_THRESHOLD_MAX // Maximum value
+                progress = currentValue // Default value
+                setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+                    override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
+                        currentValue = progress
+                        valueText.text = "$currentValue"
+                    }
+
+                    override fun onStartTrackingTouch(seekBar: SeekBar) {
+                        // Not used
+                    }
+
+                    override fun onStopTrackingTouch(seekBar: SeekBar) {
+                        // Not used
+                    }
+                })
+            }
+
+            // Add TextView and SeekBar to the layout
+            addView(valueText)
+            addView(seekBar)
+        }
+
+        // Create the dialog
+        val dialogBuilder = MaterialAlertDialogBuilder(context).apply {
+            setTitle(getString(R.string.settings_select_swipe_threshold))
+            setView(seekBarLayout) // Add the slider directly to the dialog
+            setPositiveButton(getString(R.string.settings_ok)) { _, _ ->
+                // Save the slider value when OK is pressed
+                preferenceViewModel.setSwipeThreshold(currentValue)
+                binding.miscellaneousSwipeThresholdControl.text = "$currentValue"
+
+                val feedbackType = "select"
+                appHelper.triggerHapticFeedback(context, feedbackType)
+            }
+            setNegativeButton(getString(R.string.settings_cancel), null)
+        }
+
+        // Assign the created dialog to launcherFontDialog
+        swipeThresholdDialog = dialogBuilder.create()
+        swipeThresholdDialog?.show()
     }
 
     private var appSelectionDialog: AlertDialog? = null
@@ -323,7 +396,8 @@ class SettingsFeaturesFragment : Fragment(),
                             Constants.Swipe.Up,
                             Constants.Swipe.Down,
                             Constants.Swipe.Left,
-                            Constants.Swipe.Right -> handleSwipeAction(swipeType, selectedPackageName)
+                            Constants.Swipe.Right,
+                                -> handleSwipeAction(swipeType, selectedPackageName)
                         }
                         val feedbackType = "select"
                         appHelper.triggerHapticFeedback(context, feedbackType)
@@ -497,6 +571,7 @@ class SettingsFeaturesFragment : Fragment(),
         swipeActionDialog?.dismiss()
         searchEngineDialog?.dismiss()
         filterStrengthDialog?.dismiss()
+        swipeThresholdDialog?.dismiss()
         appSelectionDialog?.dismiss()
     }
 }
