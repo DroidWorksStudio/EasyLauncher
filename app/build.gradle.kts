@@ -19,8 +19,8 @@ android {
         applicationId = "app.easy.launcher"
         minSdk = 24
         targetSdk = 35
-        versionCode = 31
-        versionName = "0.3.1"
+        versionCode = 30
+        versionName = "0.3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders["internetPermission"] = "android.permission.INTERNET"

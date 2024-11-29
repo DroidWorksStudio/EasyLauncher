@@ -2,7 +2,6 @@ package com.github.droidworksstudio.launcher.ui.home
 
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
-import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.view.Gravity
 import android.view.View
@@ -28,7 +27,6 @@ class HomeViewHolder @Inject constructor(
     @SuppressLint("ClickableViewAccessibility")
     fun bind(appInfo: AppInfo) {
         binding.apply {
-            itemView.setBackgroundColor(Color.parseColor("#0000FF"))
             // Get the current LayoutParams of appHiddenName
             val layoutAppNameParams = appHomeName.layoutParams as LinearLayoutCompat.LayoutParams
 

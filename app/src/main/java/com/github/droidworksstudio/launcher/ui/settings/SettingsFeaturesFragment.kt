@@ -126,6 +126,7 @@ class SettingsFeaturesFragment : Fragment(),
             automaticKeyboardSwitchCompat.isChecked = preferenceHelper.automaticKeyboard
             automaticOpenAppSwitchCompat.isChecked = preferenceHelper.automaticOpenApp
             searchFromStartSwitchCompat.isChecked = preferenceHelper.searchFromStart
+            homeAlignmentBottomSwitchCompat.isChecked = preferenceHelper.homeAlignmentBottom
             lockSettingsSwitchCompat.isChecked = preferenceHelper.settingsLock
             disableAnimationsSwitchCompat.isChecked = preferenceHelper.disableAnimations
         }

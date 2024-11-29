@@ -6,7 +6,6 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
-import android.graphics.Color
 import android.os.BatteryManager
 import android.os.Build
 import android.os.Bundle
@@ -250,9 +249,6 @@ class HomeFragment : Fragment(),
             clock.setOnClickListener { context.launchClock() }
             date.setOnClickListener { context.launchCalendar() }
             battery.setOnClickListener { context.openBatteryManager() }
-
-            touchArea.setBackgroundColor(Color.parseColor("#00FFFF"))
-            appListTouchArea.setBackgroundColor(Color.parseColor("#FF00FF"))
         }
     }
 
