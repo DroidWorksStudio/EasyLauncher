@@ -4,12 +4,6 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
-### Releases:
-
-- Prepare for version 0.3.1 - ([9a39408](https://github.com/DroidWorksStudio/EasyLauncher/commit/9a39408b77ad9f0b0943943f5154b32240a1cde6))
-
-## [0.3.0](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.3.0) - (29, November 2024)
-
 ### Implemented Enhancements:
 
 - Added the ability for home app to be at bottom. - ([e049de0](https://github.com/DroidWorksStudio/EasyLauncher/commit/e049de06d80615fdb97c8a719be336f2b91250c6))
@@ -25,6 +19,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Language Support:
 
+- Updated Language Files. ([#187](https://github.com/DroidWorksStudio/EasyLauncher/issues/187)) - ([2c217c4](https://github.com/DroidWorksStudio/EasyLauncher/commit/2c217c4972d08ff0ff26186bff1f42c38486c0ea))
 - Updated Language Files. ([#185](https://github.com/DroidWorksStudio/EasyLauncher/issues/185)) - ([08ee589](https://github.com/DroidWorksStudio/EasyLauncher/commit/08ee5892b08e61642ca66c4904482f2c9a0f2773))
 - Updated Language Files. ([#184](https://github.com/DroidWorksStudio/EasyLauncher/issues/184)) - ([5ee2bf4](https://github.com/DroidWorksStudio/EasyLauncher/commit/5ee2bf4b8b3a223075346a29ffd255a11f2d4b92))
 
