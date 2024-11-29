@@ -106,6 +106,8 @@
     <string name="settings_app_language">App-taal</string>
     <string name="settings_select_filter_strength">Selecteer een filtersterkte</string>
     <string name="settings_filter_strength">Filtersterkte</string>
+    <string name="settings_select_swipe_threshold">Select a Swipe Threshold</string>
+    <string name="settings_swipe_threshold">Swipe Threshold</string>
     <string name="settings_select_launcher_font">Selecteer een lettertypefamilie</string>
     <string name="settings_launcher_font">Lettertypefamilie</string>
     <string name="settings_select_icons">Selecteer een pictogramtype</string>
@@ -132,6 +134,8 @@
     <string name="settings_units_metric">Metrisch</string>
     <string name="settings_units_imperial">Imperiaal</string>
     <string name="settings_system">Systeem</string>
+    <string name="settings_ok">Ok</string>
+    <string name="settings_cancel">Cancel</string>
     <string name="authentication_title">Authenticatie</string>
     <string name="authentication_subtitle">Log in met uw biometrische gegevens.</string>
     <string name="authentication_cancel">Authenticatie annuleren</string>
