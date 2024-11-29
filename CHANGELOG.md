@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed the goBackToSettings function. - ([59e0ded](https://github.com/DroidWorksStudio/EasyLauncher/commit/59e0ded1be2241ca04bb7dd4b3d9084269a9d3a2))
 - Fixed the swiping gestures. - ([83841be](https://github.com/DroidWorksStudio/EasyLauncher/commit/83841bef183d3fc1fe2700d82efb534967d03feb))
 
 ### Language Support:
