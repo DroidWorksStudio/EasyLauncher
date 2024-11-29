@@ -106,8 +106,8 @@
     <string name="settings_app_language">App-Sprache</string>
     <string name="settings_select_filter_strength">Wählen Sie eine Filterstärke</string>
     <string name="settings_filter_strength">Filterstärke</string>
-    <string name="settings_select_swipe_threshold">Select a Swipe Threshold</string>
-    <string name="settings_swipe_threshold">Swipe Threshold</string>
+    <string name="settings_select_swipe_threshold">Wählen Sie einen Swipe-Schwellenwert</string>
+    <string name="settings_swipe_threshold">Swipe-Schwellenwert</string>
     <string name="settings_select_launcher_font">Wählen Sie eine Schriftfamilie aus</string>
     <string name="settings_launcher_font">Schriftfamilie</string>
     <string name="settings_select_icons">Wählen Sie einen Symboltyp</string>
@@ -134,8 +134,8 @@
     <string name="settings_units_metric">Metrisch</string>
     <string name="settings_units_imperial">Kaiserliche</string>
     <string name="settings_system">System</string>
-    <string name="settings_ok">Ok</string>
-    <string name="settings_cancel">Cancel</string>
+    <string name="settings_ok">OK</string>
+    <string name="settings_cancel">Stornieren</string>
     <string name="authentication_title">Authentifizierung</string>
     <string name="authentication_subtitle">Melden Sie sich mit Ihren biometrischen Anmeldeinformationen an.</string>
     <string name="authentication_cancel">Authentifizierung Abbrechen</string>
