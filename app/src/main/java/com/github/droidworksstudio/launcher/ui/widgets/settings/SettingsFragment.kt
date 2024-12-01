@@ -62,7 +62,7 @@ class SettingsFragment : Fragment(),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navController = findNavController()
         // Set according to the system theme mode
-        appHelper.dayNightMod(requireContext(), binding.nestScrollView)
+        appHelper.dayNightMod(requireContext(), binding.mainLayout)
         super.onViewCreated(view, savedInstanceState)
 
         context = requireContext()
@@ -73,8 +73,6 @@ class SettingsFragment : Fragment(),
     }
 
     private fun initializeInjectedDependencies() {
-        binding.nestScrollView.scrollEventListener = this
-
         binding.apply {
             // Weather stuff here
             weatherSwitchCompat.isChecked = preferenceHelper.showWeatherWidget

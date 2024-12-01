@@ -1,6 +1,5 @@
 package com.github.droidworksstudio.launcher.ui.settings
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -40,7 +39,7 @@ class SettingsFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
@@ -53,18 +52,12 @@ class SettingsFragment : Fragment(),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navController = findNavController()
         // Set according to the system theme mode
-        appHelper.dayNightMod(requireContext(), binding.nestScrollView)
+        appHelper.dayNightMod(requireContext(), binding.mainLayout)
         super.onViewCreated(view, savedInstanceState)
 
         context = requireContext()
 
-        initializeInjectedDependencies()
         observeClickListener()
-    }
-
-    @SuppressLint("SetTextI18n")
-    private fun initializeInjectedDependencies() {
-        binding.nestScrollView.scrollEventListener = this
     }
 
     private fun observeClickListener() {

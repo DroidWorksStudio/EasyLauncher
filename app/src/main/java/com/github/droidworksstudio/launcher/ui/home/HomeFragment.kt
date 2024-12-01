@@ -115,11 +115,7 @@ class HomeFragment : Fragment(),
     @SuppressLint("ClickableViewAccessibility")
     private fun initializeInjectedDependencies() {
         context = requireContext()
-        binding.nestScrollView.hideKeyboard()
-
-        binding.nestScrollView.scrollEventListener = this
-
-        binding.nestScrollView.registerRecyclerView(binding.appListAdapter, this)
+        binding.mainView.hideKeyboard()
 
         preferenceViewModel.setShowTime(preferenceHelper.showTime)
         preferenceViewModel.setShowDate(preferenceHelper.showDate)
@@ -195,12 +191,7 @@ class HomeFragment : Fragment(),
             Gravity.TOP
 
         // Apply the margin and gravity
-        val parentLayout = binding.appListTouchArea
-        val params = parentLayout.layoutParams.apply {
-            height = ViewGroup.LayoutParams.MATCH_PARENT
-        }
-        parentLayout.layoutParams = params
-        parentLayout.gravity = gravity
+        binding.appListTouchArea.gravity = gravity
 
         // Set the appropriate margin based on the alignment
         if (preferenceHelper.homeAlignmentBottom)
@@ -310,7 +301,7 @@ class HomeFragment : Fragment(),
         }
 
         binding.apply {
-            nestScrollView.hideKeyboard()
+            mainView.hideKeyboard()
 
             val is24HourFormat = DateFormat.is24HourFormat(requireContext())
             val localLocale = preferenceHelper.appLanguage.timezone()
@@ -580,13 +571,13 @@ class HomeFragment : Fragment(),
 
     override fun onPause() {
         super.onPause()
-        binding.nestScrollView.hideKeyboard()
+        binding.mainView.hideKeyboard()
     }
 
     @RequiresApi(Build.VERSION_CODES.R)
     override fun onResume() {
         super.onResume()
-        binding.nestScrollView.hideKeyboard()
+        binding.mainView.hideKeyboard()
         observeUserInterfaceSettings()
         observeFavoriteAppList()
     }

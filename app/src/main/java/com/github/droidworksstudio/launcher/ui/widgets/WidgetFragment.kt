@@ -92,8 +92,7 @@ class WidgetFragment : Fragment(),
 
     private fun initializeInjectedDependencies() {
         context = requireContext()
-        binding.nestScrollView.hideKeyboard()
-        binding.nestScrollView.scrollEventListener = this
+        binding.touchArea.hideKeyboard()
     }
 
     private fun orderWidgetsBySettings() {
@@ -382,7 +381,6 @@ class WidgetFragment : Fragment(),
     @SuppressLint("ClickableViewAccessibility")
     private fun observeSwipeTouchListener() {
         binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
-        binding.nestScrollView.setOnTouchListener(getSwipeGestureListener(context))
     }
 
     private fun getSwipeGestureListener(context: Context): View.OnTouchListener {

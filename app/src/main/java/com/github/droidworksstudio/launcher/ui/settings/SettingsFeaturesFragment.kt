@@ -70,7 +70,7 @@ class SettingsFeaturesFragment : Fragment(),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navController = findNavController()
         // Set according to the system theme mode
-        appHelper.dayNightMod(requireContext(), binding.nestScrollView)
+        appHelper.dayNightMod(requireContext(), binding.mainLayout)
         super.onViewCreated(view, savedInstanceState)
 
         context = requireContext()
@@ -120,8 +120,6 @@ class SettingsFeaturesFragment : Fragment(),
     }
 
     private fun initializeInjectedDependencies() {
-        binding.nestScrollView.scrollEventListener = this
-
         // Set initial values and listeners for switches
         binding.apply {
             automaticKeyboardSwitchCompat.isChecked = preferenceHelper.automaticKeyboard

@@ -53,7 +53,7 @@ class SettingsLookFeelFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSettingsLookFeelBinding.inflate(inflater, container, false)
@@ -67,7 +67,7 @@ class SettingsLookFeelFragment : Fragment(),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navController = findNavController()
         // Set according to the system theme mode
-        appHelper.dayNightMod(requireContext(), binding.nestScrollView)
+        appHelper.dayNightMod(requireContext(), binding.mainLayout)
         super.onViewCreated(view, savedInstanceState)
 
         context = requireContext()
@@ -87,8 +87,6 @@ class SettingsLookFeelFragment : Fragment(),
     }
 
     private fun initializeInjectedDependencies() {
-        binding.nestScrollView.scrollEventListener = this
-
         // Set initial values and listeners for switches
         binding.apply {
             statueBarSwitchCompat.isChecked = preferenceHelper.showStatusBar

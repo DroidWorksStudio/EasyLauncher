@@ -44,7 +44,7 @@ class SettingsAdvancedFragment : Fragment(),
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSettingsAdvancedBinding.inflate(inflater, container, false)
@@ -57,7 +57,7 @@ class SettingsAdvancedFragment : Fragment(),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         navController = findNavController()
         // Set according to the system theme mode
-        appHelper.dayNightMod(requireContext(), binding.nestScrollView)
+        appHelper.dayNightMod(requireContext(), binding.mainLayout)
         super.onViewCreated(view, savedInstanceState)
 
         context = requireContext()
@@ -72,8 +72,6 @@ class SettingsAdvancedFragment : Fragment(),
     }
 
     private fun initializeInjectedDependencies() {
-        binding.nestScrollView.scrollEventListener = this
-
         val packageInfo =
             requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
 

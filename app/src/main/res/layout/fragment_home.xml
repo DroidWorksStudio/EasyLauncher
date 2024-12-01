@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
@@ -15,102 +14,84 @@
         android:layout_height="match_parent"
         android:layout_marginVertical="20dp" />
 
-    <com.github.droidworksstudio.launcher.view.GestureNestedScrollView
-        android:id="@+id/nestScrollView"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mainView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:fadingEdgeLength="48dp"
-        android:fillViewport="true"
-        android:overScrollMode="never"
-        android:requiresFadingEdge="vertical"
-        android:scrollbars="none"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginVertical="32dp"
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/mainView"
+            android:id="@+id/blockView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
             android:orientation="vertical">
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/blockView"
-                android:layout_width="match_parent"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/battery"
+                style="@style/TextDefaultStyle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="16dp"
-                android:orientation="vertical">
+                android:layout_gravity="end"
+                android:text="@string/battery_level"
+                android:textSize="16sp" />
 
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/battery"
-                    style="@style/TextDefaultStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:text="@string/battery_level"
-                    android:textSize="16sp" />
-
-                <TextClock
-                    android:id="@+id/clock"
-                    style="@style/TextDefaultStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginVertical="2dp"
-                    android:format12Hour="h:mm"
-                    android:format24Hour="hhmm"
-                    android:textSize="48sp"
-                    tools:text="02:34" />
-
-                <TextClock
-                    android:id="@+id/date"
-                    style="@style/TextDefaultStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:format12Hour="EEE, dd MMM"
-                    android:format24Hour="EEE, dd MMM"
-                    android:gravity="start"
-                    android:textSize="32sp"
-                    tools:text="Thu, 30 Dec" />
-
-                <TextView
-                    android:id="@+id/alarm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="32sp"
-                    android:visibility="gone" />
-
-                <TextView
-                    android:id="@+id/word"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="32sp"
-                    android:visibility="gone" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/appListTouchArea"
-                android:layout_width="match_parent"
+            <TextClock
+                android:id="@+id/clock"
+                style="@style/TextDefaultStyle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_gravity="start"
+                android:layout_marginVertical="2dp"
+                android:format12Hour="h:mm"
+                android:format24Hour="hhmm"
+                android:textSize="48sp"
+                tools:text="02:34" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/appListAdapter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp" />
+            <TextClock
+                android:id="@+id/date"
+                style="@style/TextDefaultStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:format12Hour="EEE, dd MMM"
+                android:format24Hour="EEE, dd MMM"
+                android:gravity="start"
+                android:textSize="32sp"
+                tools:text="Thu, 30 Dec" />
 
-            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView
+                android:id="@+id/alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="32sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="32sp"
+                android:visibility="gone" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-    </com.github.droidworksstudio.launcher.view.GestureNestedScrollView>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/appListTouchArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/appListAdapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </FrameLayout>
