@@ -69,7 +69,7 @@
     <string name="settings_title_miscellaneous">Verschiedenes</string>
     <string name="settings_title_others">Andere</string>
     <string name="settings_display_status_bar">Zeige Statusleiste</string>
-    <string name="settings_display_nav_bar">Show Navigation Bar</string>
+    <string name="settings_display_nav_bar">Navigationsleiste anzeigen</string>
     <string name="settings_display_date">Datum anzeigen</string>
     <string name="settings_display_time">Zeit anzeigen</string>
     <string name="settings_display_battery">Akku anzeigen</string>
