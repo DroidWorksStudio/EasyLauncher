@@ -12,7 +12,7 @@
     <string name="settings_look_feel_title">Weergave en stijl</string>
     <string name="settings_look_feel_description">Geef uw startscherm een persoonlijk tintje.</string>
     <string name="settings_widgets_title">Widgets</string>
-    <string name="settings_widgets_description">Give your home screen some widgets.</string>
+    <string name="settings_widgets_description">Voeg widgets toe aan je startscherm.</string>
     <string name="settings_advanced_title">Geavanceerd</string>
     <!-- Strings used for look And feel settings -->
     <string name="look_feel_settings_title">Weergave en stijl</string>
@@ -174,7 +174,7 @@
     <string name="acra_send_report">Verzend rapport</string>
     <string name="acra_dont_send">Niet verzenden</string>
     <string name="acra_mail_body">Er is een crash opgetreden in de applicatie.\n\nHieronder staan de details van het apparaat. Het foutenlogboek is als bestand bijgevoegd ter referentie. Wij stellen uw hulp bij het oplossen van dit probleem op prijs.\n\nApparaatinformatie: \n[VUL de onderstaande informatie in en verwijder alles tussen de vierkante haken, anders wordt dit genegeerd.]\n\n- App-versie: [11.11.11]\n- Android-versie: [Apple 1.16]\n- Apparaatnaam: [Android Apple Phone 69]\n- Installatielocatie: [Github, Fdroid, Obtanium, Tesla Space Station]\n\nUw snelle aandacht voor deze kwestie wordt zeer op prijs gesteld.\n\nDank u wel.\n</string>
-    <string name="admin_permission_message">mLauncher promises to use lock screen permission responsibly. mLauncher does not collect or share any data.</string>
+    <string name="admin_permission_message">mLauncher belooft verantwoord om te gaan met de machtigingen voor het vergrendelscherm. mLauncher verzamelt of deelt geen gegevens.</string>
     <string-array name="alignment_options">
         <item>Links</item>
         <item>Midden</item>
