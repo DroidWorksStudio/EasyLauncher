@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed the gestures for the settings. - ([7041293](https://github.com/DroidWorksStudio/EasyLauncher/commit/7041293152b817b85ead72565100eaf089e903ab))
 - Fixed a quick bug in the Widget page. - ([f4a944d](https://github.com/DroidWorksStudio/EasyLauncher/commit/f4a944d4430e42afe0c44694f026378e4d01119c))
 - Fixed the backup system. - ([4832fec](https://github.com/DroidWorksStudio/EasyLauncher/commit/4832fecfbb282a4e7bd78ffc3396d4795224489f))
 
