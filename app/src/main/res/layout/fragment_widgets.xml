@@ -8,12 +8,6 @@
     android:orientation="vertical"
     tools:context=".ui.widgets.WidgetFragment">
 
-    <FrameLayout
-        android:id="@+id/touchArea"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginVertical="20dp" />
-
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"

@@ -213,6 +213,34 @@ class AppHelper @Inject constructor() {
         }
     }
 
+    fun showNavigationBar(window: Window) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            // For Android 11 (API 30) and above, use WindowInsetsController to show the navigation bar
+            window.insetsController?.show(WindowInsets.Type.navigationBars())
+        } else {
+            @Suppress("DEPRECATION", "InlinedApi")
+            // For older versions, show the navigation bar using systemUiVisibility
+            window.decorView.apply {
+                systemUiVisibility =
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+            }
+        }
+    }
+
+    fun hideNavigationBar(window: Window) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            // For Android 11 (API 30) and above, use WindowInsetsController to hide the navigation bar
+            window.insetsController?.hide(WindowInsets.Type.navigationBars())
+        } else {
+            @Suppress("DEPRECATION")
+            // For older versions, hide the navigation bar using systemUiVisibility
+            window.decorView.apply {
+                systemUiVisibility =
+                    View.SYSTEM_UI_FLAG_IMMERSIVE or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
+            }
+        }
+    }
+
     fun wordOfTheDay(resources: Resources): String {
         val dailyWordsArray =
             resources.getStringArray(R.array.settings_appearance_daily_word_default)

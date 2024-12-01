@@ -537,8 +537,9 @@ class HomeFragment : Fragment(),
                     }
 
                     override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
-                        val actionTypeNavOptions: NavOptions =
-                            appHelper.getActionType(Constants.Swipe.DoubleTap)
+                        val actionTypeNavOptions: NavOptions? =
+                            if (preferenceHelper.disableAnimations) null
+                            else appHelper.getActionType(Constants.Swipe.DoubleTap)
                         findNavController().navigate(
                             R.id.SettingsFragment,
                             null,
@@ -554,8 +555,9 @@ class HomeFragment : Fragment(),
             if (preferenceHelper.settingsLock) {
                 fingerHelper.startBiometricSettingsAuth(R.id.SettingsFragment)
             } else {
-                val actionTypeNavOptions: NavOptions =
-                    appHelper.getActionType(Constants.Swipe.DoubleTap)
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.DoubleTap)
                 findNavController().navigate(
                     R.id.SettingsFragment,
                     null,

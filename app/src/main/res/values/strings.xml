@@ -95,6 +95,7 @@
     <string name="settings_title_others">Others</string>
 
     <string name="settings_display_status_bar">Show Status Bar</string>
+    <string name="settings_display_nav_bar">Show Navigation Bar</string>
     <string name="settings_display_date">Show Date</string>
     <string name="settings_display_time">Show Time</string>
     <string name="settings_display_battery">Show Battery</string>
