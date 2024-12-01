@@ -69,6 +69,7 @@
     <string name="settings_title_miscellaneous">Gemengd</string>
     <string name="settings_title_others">Overige</string>
     <string name="settings_display_status_bar">Statusbalk weergeven</string>
+    <string name="settings_display_nav_bar">Show Navigation Bar</string>
     <string name="settings_display_date">Datum weergeven</string>
     <string name="settings_display_time">Tijd weergeven</string>
     <string name="settings_display_battery">Batterij weergeven</string>
