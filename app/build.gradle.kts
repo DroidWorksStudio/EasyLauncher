@@ -34,11 +34,11 @@ android {
             isShrinkResources = false
             isDebuggable = true
             applicationIdSuffix = ".debug"
+            versionNameSuffix = "-debug"
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("string", "app_name", "Easy Launcher (Debug)")
         }
 
         getByName("release") {
@@ -48,7 +48,6 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("string", "app_name", "Easy Launcher")
         }
     }
 
@@ -77,6 +76,7 @@ android {
                 "android.permission.ACCESS_FINE_LOCATION"
             manifestPlaceholders["coarseLocationPermission"] =
                 "android.permission.ACCESS_COARSE_LOCATION"
+            resValue("string", "app_name", "Easy Launcher")
             val weatherFile = project.rootProject.file("weather.properties")
             if (weatherFile.exists()) {
                 val properties = Properties()
@@ -104,6 +104,7 @@ android {
             manifestPlaceholders["internetPermission"] = "REMOVE"
             manifestPlaceholders["fineLocationPermission"] = "REMOVE"
             manifestPlaceholders["coarseLocationPermission"] = "REMOVE"
+            resValue("string", "app_name", "Easy Launcher")
             buildConfigField(
                 type = "String",
                 name = "API_KEY",
@@ -144,12 +145,12 @@ android {
             applicationIdSuffix = ".nightly"
             versionNameSuffix = "-nightly"
             manifestPlaceholders["internetPermission"] = "REMOVE"
+            resValue("string", "app_name", "Easy Launcher (Nightly)")
             buildConfigField(
                 type = "String",
                 name = "API_KEY",
                 value = "\"REMOVE\""
             )
-            resValue("string", "app_name", "Easy Launcher (Nightly)")
         }
     }
 
