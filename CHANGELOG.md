@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Worked on a better looking widget settings. - ([b510511](https://github.com/DroidWorksStudio/EasyLauncher/commit/b510511bad271a61a65850af676e4a87b8cd9ad6))
 - No longer using custom View so therefor fixes gestures. - ([2f028f3](https://github.com/DroidWorksStudio/EasyLauncher/commit/2f028f395621999817dc877d7a3d43fc481cea76))
 
 ### Releases:
