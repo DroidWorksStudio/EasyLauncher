@@ -94,7 +94,7 @@ const val SMALLEST_WIDTH_600: Int = 600
 fun Context.createIconWithResourceCompat(
     @DrawableRes vectorIconId: Int,
     @DrawableRes adaptiveIconForegroundId: Int,
-    @DrawableRes adaptiveIconBackgroundId: Int
+    @DrawableRes adaptiveIconBackgroundId: Int,
 ): IconCompat {
     return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
         val adaptiveIconDrawable = AdaptiveIconDrawable(
@@ -116,7 +116,6 @@ fun Context.currentLanguage() = ConfigurationCompat.getLocales(resources.configu
 
 fun Context.openBrowser(url: String, clearFromRecent: Boolean = true) {
     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-    browserIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
     if (clearFromRecent) browserIntent.flags =
         browserIntent.flags or Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
     startActivity(browserIntent)
@@ -281,7 +280,6 @@ fun Context.launchCalendar() {
 fun Context.openBatteryManager() {
     try {
         val intent = Intent(Intent.ACTION_POWER_USAGE_SUMMARY)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         this.startActivity(intent)
     } catch (e: ActivityNotFoundException) {
         // Battery manager settings cannot be opened
@@ -312,7 +310,7 @@ fun Context.searchOnPlayStore(query: String? = null): Boolean {
 
 fun Context.searchCustomSearchEngine(
     preferenceHelper: PreferenceHelper,
-    searchQuery: String? = null
+    searchQuery: String? = null,
 ): Boolean {
 
     val searchUrl = when (preferenceHelper.searchEngines) {
@@ -373,7 +371,7 @@ fun Context.hasInternetPermission(): Boolean {
 
 fun Context.isPackageInstalled(
     packageName: String,
-    userHandle: UserHandle = android.os.Process.myUserHandle()
+    userHandle: UserHandle = android.os.Process.myUserHandle(),
 ): Boolean {
     val launcher = getSystemService(Context.LAUNCHER_APPS_SERVICE) as LauncherApps
     val activityInfo = launcher.getActivityList(packageName, userHandle)
