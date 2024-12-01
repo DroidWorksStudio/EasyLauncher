@@ -70,6 +70,11 @@ class SettingsFragment : Fragment(),
                 navController.navigate(R.id.SettingsLookFeelFragment)
             }
 
+            widgetsSettings
+                .setOnClickListener {
+                    navController.navigate(R.id.SettingsWidgetFragment)
+                }
+
             favoriteApps.setOnClickListener {
                 navController.navigate(R.id.FavoriteFragment)
             }

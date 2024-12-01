@@ -2,6 +2,8 @@ package com.github.droidworksstudio.launcher.accessibility
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
+import android.app.admin.DevicePolicyManager
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.os.Build
@@ -9,8 +11,8 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
 import android.view.accessibility.AccessibilityEvent
-import androidx.annotation.RequiresApi
 import com.github.droidworksstudio.launcher.R
+import com.github.droidworksstudio.launcher.listener.DeviceAdmin
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.lang.ref.WeakReference
 
@@ -43,37 +45,57 @@ class ActionService : AccessibilityService() {
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {}
 
-    @RequiresApi(Build.VERSION_CODES.P)
     fun lockScreen(): Boolean {
-        return performGlobalAction(GLOBAL_ACTION_LOCK_SCREEN)
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            performGlobalAction(GLOBAL_ACTION_LOCK_SCREEN)
+        } else {
+            val devicePolicyManager =
+                this.getSystemService(DEVICE_POLICY_SERVICE) as DevicePolicyManager
+            val componentName = ComponentName(this, DeviceAdmin::class.java)
+
+            if (devicePolicyManager.isAdminActive(componentName)) {
+                devicePolicyManager.lockNow()
+                true
+            } else {
+                requestDeviceAdmin()
+                false
+            }
+        }
     }
 
-    @RequiresApi(Build.VERSION_CODES.P)
+    fun requestDeviceAdmin() {
+        val componentName = ComponentName(this, DeviceAdmin::class.java)
+        val intent = Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN)
+        intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, componentName)
+        intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, getString(R.string.admin_permission_message))
+        this.startActivity(intent)
+    }
+
+
     fun showRecents(): Boolean {
         return performGlobalAction(GLOBAL_ACTION_RECENTS)
     }
 
-    @RequiresApi(Build.VERSION_CODES.P)
     fun openNotifications(): Boolean {
         return performGlobalAction(GLOBAL_ACTION_NOTIFICATIONS)
     }
 
-    @RequiresApi(Build.VERSION_CODES.P)
     fun openQuickSettings(): Boolean {
         return performGlobalAction(GLOBAL_ACTION_QUICK_SETTINGS)
     }
 
-    @RequiresApi(Build.VERSION_CODES.P)
     fun openPowerDialog(): Boolean {
         return performGlobalAction(GLOBAL_ACTION_POWER_DIALOG)
     }
 
-    @RequiresApi(Build.VERSION_CODES.P)
     fun takeScreenShot(): Boolean {
-        return performGlobalAction(GLOBAL_ACTION_TAKE_SCREENSHOT)
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            performGlobalAction(GLOBAL_ACTION_TAKE_SCREENSHOT)
+        } else {
+            false
+        }
     }
 
-    @RequiresApi(Build.VERSION_CODES.P)
     fun toggleSplitScreen(): Boolean {
         return performGlobalAction(GLOBAL_ACTION_TOGGLE_SPLIT_SCREEN)
     }

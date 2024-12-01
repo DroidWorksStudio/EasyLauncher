@@ -35,6 +35,12 @@
         tools:layout="@layout/fragment_settings_look_feel" />
 
     <fragment
+        android:id="@+id/SettingsWidgetFragment"
+        android:name="com.github.droidworksstudio.launcher.ui.settings.SettingsWidgetFragment"
+        android:label="@string/widgets_fragment_label"
+        tools:layout="@layout/fragment_settings_widgets" />
+
+    <fragment
         android:id="@+id/DrawFragment"
         android:name="com.github.droidworksstudio.launcher.ui.drawer.DrawFragment"
         android:label="@string/draw_fragment_label"
@@ -57,11 +63,5 @@
         android:name="com.github.droidworksstudio.launcher.ui.hidden.HiddenFragment"
         android:label="@string/hidden_fragment_label"
         tools:layout="@layout/fragment_hidden" />
-
-    <fragment
-        android:id="@+id/WidgetsSettingsFragment"
-        android:name="com.github.droidworksstudio.launcher.ui.widgets.settings.SettingsFragment"
-        android:label="@string/widgets_fragment_label"
-        tools:layout="@layout/fragment_settings_widgets" />
 
 </navigation>

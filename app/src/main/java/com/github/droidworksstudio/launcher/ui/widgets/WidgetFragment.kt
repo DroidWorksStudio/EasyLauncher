@@ -1,6 +1,5 @@
 package com.github.droidworksstudio.launcher.ui.widgets
 
-import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -12,8 +11,6 @@ import android.graphics.drawable.GradientDrawable
 import android.os.BatteryManager
 import android.os.Build
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -23,7 +20,6 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
-import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.github.droidworksstudio.common.capitalizeEachWord
 import com.github.droidworksstudio.common.hasInternetPermission
@@ -33,7 +29,6 @@ import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentWidgetsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.utils.Constants
 import dagger.hilt.android.AndroidEntryPoint
@@ -86,7 +81,6 @@ class WidgetFragment : Fragment(),
         orderWidgetsBySettings()
         setupWeatherWidget()
         setupBatteryWidget()
-        observeSwipeTouchListener()
         observeClickListener()
     }
 
@@ -373,61 +367,6 @@ class WidgetFragment : Fragment(),
                 binding.batteryVoltage.text = getString(R.string.widgets_battery_voltage, voltageVolts, voltageScale)
                 binding.batteryCurrent.text = getString(R.string.widgets_battery_current, current, currentScale)
                 binding.batteryTemperature.text = getString(R.string.widgets_battery_temperature, temperatureCelsius, temperatureScale)
-            }
-        }
-    }
-
-
-    @SuppressLint("ClickableViewAccessibility")
-    private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
-    }
-
-    private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context, preferenceHelper) {
-            override fun onLongClick() {
-                super.onLongClick()
-                val actionTypeNavOptions: NavOptions? =
-                    if (preferenceHelper.disableAnimations) null
-                    else appHelper.getActionType(Constants.Swipe.DoubleTap)
-
-                Handler(Looper.getMainLooper()).post {
-                    findNavController().navigate(
-                        R.id.WidgetsSettingsFragment,
-                        null,
-                        actionTypeNavOptions
-                    )
-                }
-            }
-
-            override fun onSwipeLeft() {
-                super.onSwipeLeft()
-                val actionTypeNavOptions: NavOptions? =
-                    if (preferenceHelper.disableAnimations) null
-                    else appHelper.getActionType(Constants.Swipe.Left)
-
-                Handler(Looper.getMainLooper()).post {
-                    findNavController().navigate(
-                        R.id.HomeFragment,
-                        null,
-                        actionTypeNavOptions
-                    )
-                }
-            }
-
-            override fun onSwipeRight() {
-                super.onSwipeRight()
-                val actionTypeNavOptions: NavOptions? =
-                    if (preferenceHelper.disableAnimations) null
-                    else appHelper.getActionType(Constants.Swipe.Right)
-
-                Handler(Looper.getMainLooper()).post {
-                    findNavController().navigate(
-                        R.id.HomeFragment,
-                        null,
-                        actionTypeNavOptions
-                    )
-                }
             }
         }
     }

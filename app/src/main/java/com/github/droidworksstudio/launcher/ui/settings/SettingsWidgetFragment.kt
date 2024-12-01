@@ -1,4 +1,4 @@
-package com.github.droidworksstudio.launcher.ui.widgets.settings
+package com.github.droidworksstudio.launcher.ui.settings
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -30,7 +30,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class SettingsFragment : Fragment(),
+class SettingsWidgetFragment : Fragment(),
     ScrollEventListener {
 
     private var _binding: FragmentSettingsWidgetsBinding? = null
