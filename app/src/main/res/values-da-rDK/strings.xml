@@ -11,6 +11,8 @@
     <string name="settings_features_description">Forbedre din produktivitet.</string>
     <string name="settings_look_feel_title">Se og føl</string>
     <string name="settings_look_feel_description">Giv din startskærm et personligt præg.</string>
+    <string name="settings_widgets_title">Widgets</string>
+    <string name="settings_widgets_description">Give your home screen some widgets.</string>
     <string name="settings_advanced_title">Fremskreden</string>
     <!-- Strings used for look And feel settings -->
     <string name="look_feel_settings_title">Se og føl</string>
@@ -172,6 +174,7 @@
     <string name="acra_send_report">Send Rapport</string>
     <string name="acra_dont_send">Send Ikke</string>
     <string name="acra_mail_body">Der er sket et nedbrud i applikationen.\n\nNedenfor er detaljerne om enheden. Fejlloggen er vedhæftet som en fil til din reference. Vi vil sætte pris på din hjælp til at løse dette problem.\n\nEnhedsoplysninger: \n[Venligst udfyld oplysningerne nedenfor og fjern også alt mellem de firkantede parenteser, ellers vil dette blive ignoreret.]\n\n- Appversion: [11.11.11]\n- Android-version: [Apple 1.16]\n- Enhedsnavn: [Android Apple Phone 69]\n- Installationssted: [Github, Fdroid, Obtanium, Tesla Space Station]\n\nDin hurtige opmærksomhed på denne sag er meget værdsat.\n\nTak.\n</string>
+    <string name="admin_permission_message">mLauncher promises to use lock screen permission responsibly. mLauncher does not collect or share any data.</string>
     <string-array name="alignment_options">
         <item>Venstre</item>
         <item>Midten</item>
