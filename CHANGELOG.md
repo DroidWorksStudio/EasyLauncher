@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed the backup system. - ([4832fec](https://github.com/DroidWorksStudio/EasyLauncher/commit/4832fecfbb282a4e7bd78ffc3396d4795224489f))
+
 ### Releases:
 
 - Prepare for version 0.3.1 - ([90975e4](https://github.com/DroidWorksStudio/EasyLauncher/commit/90975e4f674a00e6ea083bd362d9ff808cf268c0))
