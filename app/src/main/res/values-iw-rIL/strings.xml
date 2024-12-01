@@ -69,6 +69,7 @@
     <string name="settings_title_miscellaneous">שונות</string>
     <string name="settings_title_others">אחרים</string>
     <string name="settings_display_status_bar">הצג את שורת המצב</string>
+    <string name="settings_display_nav_bar">הצג את סרגל הניווט</string>
     <string name="settings_display_date">הצג תאריך</string>
     <string name="settings_display_time">הצג זמן</string>
     <string name="settings_display_battery">הצג סוללה</string>

@@ -69,6 +69,7 @@
     <string name="settings_title_miscellaneous">Çeşitli</string>
     <string name="settings_title_others">Diğerleri</string>
     <string name="settings_display_status_bar">Durum çubuğunu göster</string>
+    <string name="settings_display_nav_bar">Gezinme Çubuğunu Göster</string>
     <string name="settings_display_date">Tarihi Göster</string>
     <string name="settings_display_time">Gösteri zamanı</string>
     <string name="settings_display_battery">Pili Göster</string>

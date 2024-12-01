@@ -69,6 +69,7 @@
     <string name="settings_title_miscellaneous">Smíšený</string>
     <string name="settings_title_others">Ostatní</string>
     <string name="settings_display_status_bar">Zobrazit stavový řádek</string>
+    <string name="settings_display_nav_bar">Zobrazit navigační panel</string>
     <string name="settings_display_date">Zobrazit datum</string>
     <string name="settings_display_time">Zobrazit čas</string>
     <string name="settings_display_battery">Zobrazit baterii</string>
