@@ -20,7 +20,6 @@ import com.github.droidworksstudio.launcher.adapter.numberpicker.NumberPickerAda
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsWidgetsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
-import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.ui.bottomsheetdialog.ColorBottomSheetDialogFragment
 import com.github.droidworksstudio.launcher.utils.Constants
@@ -69,7 +68,7 @@ class SettingsWidgetFragment : Fragment(),
 
         initializeInjectedDependencies()
         observeClickListener()
-        observeSwipeTouchListener()
+//        observeSwipeTouchListener()
     }
 
     private fun initializeInjectedDependencies() {
@@ -147,26 +146,6 @@ class SettingsWidgetFragment : Fragment(),
                     selectBatteryWidgetColor.visibility = View.GONE
                 }
             }
-        }
-    }
-
-    @SuppressLint("ClickableViewAccessibility")
-    private fun observeSwipeTouchListener() {
-        binding.touchArea.setOnTouchListener(getSwipeGestureListener(context))
-    }
-
-    private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
-        return object : OnSwipeTouchListener(context, preferenceHelper) {
-            override fun onSwipeLeft() {
-                super.onSwipeLeft()
-                findNavController().navigateUp()
-            }
-
-            override fun onSwipeRight() {
-                super.onSwipeRight()
-                findNavController().navigateUp()
-            }
-
         }
     }
 
