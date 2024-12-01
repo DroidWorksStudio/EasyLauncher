@@ -424,7 +424,6 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.ShowNotification -> {
-                ActionService.runAccessibilityMode(context)
                 appHelper.expandNotificationDrawer(context)
             }
 
@@ -473,7 +472,6 @@ class HomeFragment : Fragment(),
             }
 
             Constants.Action.OpenQuickSettings -> {
-                ActionService.runAccessibilityMode(context)
                 appHelper.expandQuickSettings(context)
             }
 
