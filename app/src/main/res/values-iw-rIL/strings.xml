@@ -11,8 +11,8 @@
     <string name="settings_features_description">שפר את הפרודוקטיביות שלך.</string>
     <string name="settings_look_feel_title">תראה ותרגיש</string>
     <string name="settings_look_feel_description">תן למסך הבית שלך מגע אישי.</string>
-    <string name="settings_widgets_title">Widgets</string>
-    <string name="settings_widgets_description">Give your home screen some widgets.</string>
+    <string name="settings_widgets_title">ווידג\'טים</string>
+    <string name="settings_widgets_description">תן למסך הבית שלך כמה ווידג\'טים.</string>
     <string name="settings_advanced_title">מִתקַדֵם</string>
     <!-- Strings used for look And feel settings -->
     <string name="look_feel_settings_title">תראה ותרגיש</string>
@@ -174,7 +174,7 @@
     <string name="acra_send_report">שלח דו\"ח</string>
     <string name="acra_dont_send">אל תשלח</string>
     <string name="acra_mail_body">התרחשה קריסה באפליקציה.\n\nלהלן הפרטים של המכשיר. יומן השגיאות צורף כקובץ לעיונך. נשמח לעזרתך בפתרון בעיה זו.\n\nמידע על מכשיר: \n[נא למלא את המידע למטה ולהסיר כל דבר בין הסוגריים המרובעים או שזה יתעלם.]\n\n- גרסת אפליקציה: [11.11.11]\n- גרסת אנדרואיד: [Apple 1.16]\n- שם מכשיר: [Android Apple Phone 69]\n- מיקום התקנה: [Github, Fdroid, אובטניום, תחנת החלל טסלה]\n\nתשומת לבך המהירה לעניין זה מוערכת מאוד.\n\nתודה.\n</string>
-    <string name="admin_permission_message">mLauncher promises to use lock screen permission responsibly. mLauncher does not collect or share any data.</string>
+    <string name="admin_permission_message">mLauncher מבטיח להשתמש בהרשאת מסך הנעילה באחריות. mLauncher אינו אוסף או משתף נתונים כלשהם.</string>
     <string-array name="alignment_options">
         <item>שמאלה</item>
         <item>מֶרְכָּז</item>
