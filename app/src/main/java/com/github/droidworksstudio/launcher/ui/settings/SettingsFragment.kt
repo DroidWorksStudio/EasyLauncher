@@ -1,19 +1,25 @@
 package com.github.droidworksstudio.launcher.ui.settings
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.listener.OnSwipeTouchListener
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.repository.AppInfoRepository
+import com.github.droidworksstudio.launcher.utils.Constants
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -58,6 +64,7 @@ class SettingsFragment : Fragment(),
         context = requireContext()
 
         observeClickListener()
+        observeSwipeTouchListener()
     }
 
     private fun observeClickListener() {
@@ -70,10 +77,9 @@ class SettingsFragment : Fragment(),
                 navController.navigate(R.id.SettingsLookFeelFragment)
             }
 
-            widgetsSettings
-                .setOnClickListener {
-                    navController.navigate(R.id.SettingsWidgetFragment)
-                }
+            widgetsSettings.setOnClickListener {
+                navController.navigate(R.id.SettingsWidgetFragment)
+            }
 
             favoriteApps.setOnClickListener {
                 navController.navigate(R.id.FavoriteFragment)
@@ -89,4 +95,44 @@ class SettingsFragment : Fragment(),
         }
     }
 
+    @SuppressLint("ClickableViewAccessibility")
+    private fun observeSwipeTouchListener() {
+        binding.apply {
+            nestedScrollView.setOnTouchListener(getSwipeGestureListener(context))
+        }
+    }
+
+    private fun getSwipeGestureListener(context: Context): View.OnTouchListener {
+        return object : OnSwipeTouchListener(context, preferenceHelper) {
+            override fun onSwipeLeft() {
+                super.onSwipeLeft()
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Left)
+
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(
+                        R.id.HomeFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
+            }
+
+            override fun onSwipeRight() {
+                super.onSwipeRight()
+                val actionTypeNavOptions: NavOptions? =
+                    if (preferenceHelper.disableAnimations) null
+                    else appHelper.getActionType(Constants.Swipe.Right)
+
+                Handler(Looper.getMainLooper()).post {
+                    findNavController().navigate(
+                        R.id.HomeFragment,
+                        null,
+                        actionTypeNavOptions
+                    )
+                }
+            }
+        }
+    }
 }
