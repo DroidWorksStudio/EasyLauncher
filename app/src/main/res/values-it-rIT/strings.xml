@@ -69,7 +69,7 @@
     <string name="settings_title_miscellaneous">Varie</string>
     <string name="settings_title_others">Altri</string>
     <string name="settings_display_status_bar">Mostra barra di stato</string>
-    <string name="settings_display_nav_bar">Show Navigation Bar</string>
+    <string name="settings_display_nav_bar">Mostra barra di navigazione</string>
     <string name="settings_display_date">Mostra data</string>
     <string name="settings_display_time">Orario dello spettacolo</string>
     <string name="settings_display_battery">Mostra batteria</string>
