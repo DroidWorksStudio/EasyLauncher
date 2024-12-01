@@ -11,6 +11,8 @@
     <string name="settings_features_description">Zlepšete svou produktivitu.</string>
     <string name="settings_look_feel_title">Dívejte se a cítíte</string>
     <string name="settings_look_feel_description">Dodejte své domovské obrazovce osobní vzhled.</string>
+    <string name="settings_widgets_title">Widgety</string>
+    <string name="settings_widgets_description">Dejte své domovské obrazovce nějaké widgety.</string>
     <string name="settings_advanced_title">Moderní</string>
     <!-- Strings used for look And feel settings -->
     <string name="look_feel_settings_title">Dívejte se a cítíte</string>
@@ -172,6 +174,7 @@
     <string name="acra_send_report">Poslat zprávu</string>
     <string name="acra_dont_send">Neposílejte</string>
     <string name="acra_mail_body">V aplikaci došlo k selhání.\n\nNíže jsou uvedeny podrobnosti o zařízení. Protokol chyb byl připojen jako soubor pro vaši referenci. Ocenili bychom vaši pomoc při řešení tohoto problému.\n\nInformace o zařízení: \n[VYPLNĚTE PROSÍM níže uvedené informace a odstraňte cokoli mezi hranatými závorkami, jinak to bude ignorováno.]\n\n- Verze aplikace: [11.11.11]\n- Verze pro Android: [Apple 1.16]\n- Název zařízení: [Android Apple Phone 69]\n- Umístění instalace: [Github, Fdroid, Obtanium, vesmírná stanice Tesla]\n\nVelmi si vážíme vaší okamžité pozornosti k této záležitosti.\n\nDěkuji.\n</string>
+    <string name="admin_permission_message">mLauncher slibuje, že bude zodpovědně používat oprávnění k uzamčení obrazovky. mLauncher neshromažďuje ani nesdílí žádná data.</string>
     <string-array name="alignment_options">
         <item>Vlevo, odjet</item>
         <item>Centrum</item>

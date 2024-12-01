@@ -11,6 +11,8 @@
     <string name="settings_features_description">Migliora la tua produttività.</string>
     <string name="settings_look_feel_title">Aspetto e sensazione</string>
     <string name="settings_look_feel_description">Dai un tocco personale alla tua schermata iniziale.</string>
+    <string name="settings_widgets_title">I widget</string>
+    <string name="settings_widgets_description">Aggiungi alcuni widget alla schermata iniziale.</string>
     <string name="settings_advanced_title">Avanzato</string>
     <!-- Strings used for look And feel settings -->
     <string name="look_feel_settings_title">Aspetto e sensazione</string>
@@ -172,6 +174,7 @@
     <string name="acra_send_report">Spedisci il rapporto</string>
     <string name="acra_dont_send">Non inviare</string>
     <string name="acra_mail_body">Si è verificato un crash nell\'applicazione.\n\nDi seguito sono riportati i dettagli del dispositivo. Il registro degli errori è stato allegato come file per riferimento. Apprezzeremmo il tuo aiuto nella risoluzione di questo problema.\n\nInformazioni sul dispositivo: \n[SI PREGA di compilare le informazioni sottostanti rimuovendo anche tutto ciò che è tra parentesi quadre o verranno ignorate.]\n\n- Versione app: [11.11.11]\n- Versione Android: [Apple 1.16]\n- Nome dispositivo: [Android Apple Phone 69]\n- Posizione di installazione: [Github, Fdroid, Obtanium, Tesla Space Station]\n\nLa tua tempestiva attenzione a questa questione è molto apprezzata.\n\nGrazie.\n</string>
+    <string name="admin_permission_message">mLauncher promette di utilizzare l\'autorizzazione della schermata di blocco in modo responsabile. mLauncher non raccoglie né condivide alcun dato.</string>
     <string-array name="alignment_options">
         <item>Sinistra</item>
         <item>Centro</item>
