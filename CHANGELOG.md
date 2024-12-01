@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added Navigation hiding. - ([db56cb0](https://github.com/DroidWorksStudio/EasyLauncher/commit/db56cb0df7cfc6d291f1dd7e603aae464436ce06))
+
 ### Bug Fixes:
 
 - Fixed the backup system. - ([4832fec](https://github.com/DroidWorksStudio/EasyLauncher/commit/4832fecfbb282a4e7bd78ffc3396d4795224489f))
