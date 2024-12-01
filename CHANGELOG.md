@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Removed custom view that is not needed. - ([f91ab64](https://github.com/DroidWorksStudio/EasyLauncher/commit/f91ab64697fd8afb27d8e09bf0cdd214257d2b15))
 
+### Refactoring:
+
+- No longer using custom View so therefor fixes gestures. - ([2f028f3](https://github.com/DroidWorksStudio/EasyLauncher/commit/2f028f395621999817dc877d7a3d43fc481cea76))
+
 ### Releases:
 
 - Prepare for version 0.3.1 - ([90975e4](https://github.com/DroidWorksStudio/EasyLauncher/commit/90975e4f674a00e6ea083bd362d9ff808cf268c0))
