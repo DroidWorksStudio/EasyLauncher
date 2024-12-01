@@ -69,6 +69,7 @@
     <string name="settings_title_miscellaneous">Різне</string>
     <string name="settings_title_others">інші</string>
     <string name="settings_display_status_bar">Показати рядок стану</string>
+    <string name="settings_display_nav_bar">Show Navigation Bar</string>
     <string name="settings_display_date">Показати дату</string>
     <string name="settings_display_time">Показати час</string>
     <string name="settings_display_battery">Показати батарею</string>
