@@ -89,7 +89,8 @@ class SettingsLookFeelFragment : Fragment(),
     private fun initializeInjectedDependencies() {
         // Set initial values and listeners for switches
         binding.apply {
-            statueBarSwitchCompat.isChecked = preferenceHelper.showStatusBar
+            statusBarSwitchCompat.isChecked = preferenceHelper.showStatusBar
+            navBarSwitchCompat.isChecked = preferenceHelper.showNavigationBar
             timeSwitchCompat.isChecked = preferenceHelper.showTime
             dateSwitchCompat.isChecked = preferenceHelper.showDate
             batterySwitchCompat.isChecked = preferenceHelper.showBattery
@@ -142,8 +143,14 @@ class SettingsLookFeelFragment : Fragment(),
     @RequiresApi(Build.VERSION_CODES.Q)
     private fun setupSwitchListeners() {
         binding.apply {
-            statueBarSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+            statusBarSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
                 preferenceViewModel.setShowStatusBar(isChecked)
+                val feedbackType = if (isChecked) "on" else "off"
+                appHelper.triggerHapticFeedback(context, feedbackType)
+            }
+
+            navBarSwitchCompat.setOnCheckedChangeListener { _, isChecked ->
+                preferenceViewModel.setShowNavigationBar(isChecked)
                 val feedbackType = if (isChecked) "on" else "off"
                 appHelper.triggerHapticFeedback(context, feedbackType)
             }

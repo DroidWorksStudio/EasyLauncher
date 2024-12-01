@@ -96,7 +96,6 @@ class MainActivity : AppCompatActivity() {
         setupNavController()
         setupOrientation()
         setupLocationManager()
-        setLanguage()
     }
 
     @Suppress("DEPRECATION")
@@ -110,6 +109,7 @@ class MainActivity : AppCompatActivity() {
     private fun initializeDependencies() {
         setLocationPermissionDenied(false)
         preferenceViewModel.setShowStatusBar(preferenceHelper.showStatusBar)
+        preferenceViewModel.setShowNavigationBar(preferenceHelper.showNavigationBar)
         preferenceViewModel.setFirstLaunch(preferenceHelper.firstLaunch)
 
         window.addFlags(FLAG_LAYOUT_NO_LIMITS)
@@ -214,6 +214,12 @@ class MainActivity : AppCompatActivity() {
             if (it) appHelper.showStatusBar(this.window)
             else appHelper.hideStatusBar(this.window)
         }
+
+        preferenceViewModel.setShowNavigationBar(preferenceHelper.showNavigationBar)
+        preferenceViewModel.showNavigationBarLiveData.observe(this) {
+            if (it) appHelper.showNavigationBar(this.window)
+            else appHelper.hideNavigationBar(this.window)
+        }
     }
 
     private fun setupNavController() {
@@ -288,9 +294,11 @@ class MainActivity : AppCompatActivity() {
         when (navController.currentDestination?.id) {
             R.id.SettingsFeaturesFragment,
             R.id.SettingsLookFeelFragment,
+            R.id.SettingsWidgetFragment,
             R.id.SettingsAdvancedFragment,
             R.id.FavoriteFragment,
-            R.id.HiddenFragment -> {
+            R.id.HiddenFragment,
+                -> {
                 val actionTypeNavOptions: NavOptions? =
                     if (preferenceHelper.disableAnimations) null
                     else appHelper.getActionType(Constants.Swipe.Up)
@@ -338,7 +346,7 @@ class MainActivity : AppCompatActivity() {
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
-        grantResults: IntArray
+        grantResults: IntArray,
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {

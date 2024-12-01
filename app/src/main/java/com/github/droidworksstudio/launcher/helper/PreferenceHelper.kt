@@ -27,6 +27,10 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         get() = prefs.getBoolean(Constants.SHOW_STATUS_BAR, true)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_STATUS_BAR, value).apply()
 
+    var showNavigationBar: Boolean
+        get() = prefs.getBoolean(Constants.SHOW_NAVIGATION_BAR, true)
+        set(value) = prefs.edit().putBoolean(Constants.SHOW_NAVIGATION_BAR, value).apply()
+
     var showTime: Boolean
         get() = prefs.getBoolean(Constants.SHOW_TIME, true)
         set(value) = prefs.edit().putBoolean(Constants.SHOW_TIME, value).apply()

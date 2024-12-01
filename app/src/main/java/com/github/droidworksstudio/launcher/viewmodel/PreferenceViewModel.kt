@@ -14,6 +14,7 @@ class PreferenceViewModel @Inject constructor(
 
     private val firstLaunchLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showStatusBarLiveData: MutableLiveData<Boolean> = MutableLiveData()
+    val showNavigationBarLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showTimeLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showDateLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val showDailyWordLiveData: MutableLiveData<Boolean> = MutableLiveData()
@@ -74,6 +75,11 @@ class PreferenceViewModel @Inject constructor(
     fun setShowStatusBar(showStatusBar: Boolean) {
         preferenceHelper.showStatusBar = showStatusBar
         showStatusBarLiveData.postValue(preferenceHelper.showStatusBar)
+    }
+
+    fun setShowNavigationBar(showNavigationBar: Boolean) {
+        preferenceHelper.showNavigationBar = showNavigationBar
+        showNavigationBarLiveData.postValue(preferenceHelper.showNavigationBar)
     }
 
     fun setShowTime(showTime: Boolean) {
