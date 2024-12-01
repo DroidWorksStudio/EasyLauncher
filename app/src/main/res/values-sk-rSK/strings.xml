@@ -11,8 +11,8 @@
     <string name="settings_features_description">Zlepšite svoju produktivitu.</string>
     <string name="settings_look_feel_title">Pozrite sa a cíťte</string>
     <string name="settings_look_feel_description">Dodajte svojej domovskej obrazovke osobný nádych.</string>
-    <string name="settings_widgets_title">Widgets</string>
-    <string name="settings_widgets_description">Give your home screen some widgets.</string>
+    <string name="settings_widgets_title">Widgety</string>
+    <string name="settings_widgets_description">Dajte svojej domovskej obrazovke nejaké miniaplikácie.</string>
     <string name="settings_advanced_title">Pokročilé</string>
     <!-- Strings used for look And feel settings -->
     <string name="look_feel_settings_title">Pozrite sa a cíťte</string>
@@ -174,7 +174,7 @@
     <string name="acra_send_report">Odoslať správu</string>
     <string name="acra_dont_send">Neposielajte</string>
     <string name="acra_mail_body">V aplikácii došlo k zlyhaniu.\n\nNižšie sú uvedené podrobnosti o zariadení. Protokol chýb bol priložený ako súbor pre vašu referenciu. Ocenili by sme vašu pomoc pri riešení tohto problému.\n\nInformácie o zariadení: \n[VYPLŇTE, PROSÍM, nižšie uvedené informácie a odstráňte aj čokoľvek medzi hranatými zátvorkami, inak to bude ignorované.]\n\n- Verzia aplikácie: [11.11.11]\n- Verzia systému Android: [Apple 1.16]\n- Názov zariadenia: [Android Apple Phone 69]\n- Umiestnenie inštalácie: [Github, Fdroid, Obtanium, vesmírna stanica Tesla]\n\nVeľmi si vážime vašu okamžitú pozornosť k tejto záležitosti.\n\nĎakujem.\n</string>
-    <string name="admin_permission_message">mLauncher promises to use lock screen permission responsibly. mLauncher does not collect or share any data.</string>
+    <string name="admin_permission_message">mLauncher sľubuje, že bude zodpovedne používať povolenie na uzamknutie obrazovky. mLauncher nezhromažďuje ani nezdieľa žiadne údaje.</string>
     <string-array name="alignment_options">
         <item>Vľavo</item>
         <item>centrum</item>
