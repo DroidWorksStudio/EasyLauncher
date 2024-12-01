@@ -69,6 +69,7 @@
     <string name="settings_title_miscellaneous">Įvairūs</string>
     <string name="settings_title_others">Kiti</string>
     <string name="settings_display_status_bar">Rodyti būsenos juostą</string>
+    <string name="settings_display_nav_bar">Show Navigation Bar</string>
     <string name="settings_display_date">Rodyti datą</string>
     <string name="settings_display_time">Pasirodymas</string>
     <string name="settings_display_battery">Rodyti akumuliatorių</string>
