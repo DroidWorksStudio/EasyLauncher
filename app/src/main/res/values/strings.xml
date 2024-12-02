@@ -41,9 +41,11 @@
     <string name="advanced_settings_backup_restore_title">Backup/Restore</string>
     <string name="advanced_settings_backup_restore_description">Please be careful what you wish for?</string>
 
-    <string name="advanced_settings_backup_restore_backup">Backup Preferences</string>
-    <string name="advanced_settings_backup_restore_restore">Restore Preferences</string>
-    <string name="advanced_settings_backup_restore_clear">Clear Preferences</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Backup Apps</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Restore Apps</string>
+    <string name="advanced_settings_backup_restore_clear">Clear All Data</string>
 
     <string name="advanced_settings_backup_restore_clear_title">Clear Preferences</string>
     <string name="advanced_settings_backup_restore_clear_description">Are you sure you want to do this?</string>

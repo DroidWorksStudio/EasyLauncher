@@ -31,10 +31,14 @@ import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.launcher.BuildConfig
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.accessibility.ActionService
+import com.github.droidworksstudio.launcher.data.dao.AppInfoDAO
+import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.helper.weather.WeatherResponse
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.utils.WeatherApiService
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import kotlinx.coroutines.flow.first
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.net.UnknownHostException
@@ -316,7 +320,7 @@ class AppHelper @Inject constructor() {
     fun storeFile(activity: Activity) {
         // Generate a unique filename with a timestamp
         val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
-        val fileName = "backup_$timeStamp.json"
+        val fileName = "Settings_backup_$timeStamp.json"
 
         val intent = Intent(Intent.ACTION_CREATE_DOCUMENT).apply {
             addCategory(Intent.CATEGORY_OPENABLE)
@@ -333,6 +337,67 @@ class AppHelper @Inject constructor() {
         }
         activity.startActivityForResult(intent, Constants.BACKUP_READ, null)
     }
+
+    fun storeFileApps(activity: Activity) {
+        // Generate a unique filename with a timestamp
+        val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
+        val fileName = "Apps_backup_$timeStamp.json"
+
+        val intent = Intent(Intent.ACTION_CREATE_DOCUMENT).apply {
+            addCategory(Intent.CATEGORY_OPENABLE)
+            type = "application/json"
+            putExtra(Intent.EXTRA_TITLE, fileName)
+        }
+        activity.startActivityForResult(intent, Constants.BACKUP_WRITE_APPS, null)
+    }
+
+    fun loadFileApps(activity: Activity) {
+        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
+            addCategory(Intent.CATEGORY_OPENABLE)
+            type = "application/json"
+        }
+        activity.startActivityForResult(intent, Constants.BACKUP_READ_APPS, null)
+    }
+
+    suspend fun backupAppInfo(context: Context, dao: AppInfoDAO, uri: Uri) {
+        try {
+            dao.getAllAppsFlow()
+                .first() // Get the first emission from the Flow
+                .let { allApps ->
+                    val gson = Gson()
+                    val jsonString = gson.toJson(allApps)
+
+                    // Write JSON to the selected URI
+                    context.contentResolver.openOutputStream(uri)?.use { outputStream ->
+                        outputStream.write(jsonString.toByteArray())
+                    } ?: throw Exception("Failed to open output stream")
+                }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    suspend fun restoreAppInfo(context: Context, dao: AppInfoDAO, uri: Uri) {
+        try {
+            // Open an InputStream from the selected Uri
+            context.contentResolver.openInputStream(uri)?.use { inputStream ->
+                // Read the content from the InputStream
+                val jsonString = inputStream.bufferedReader().use { it.readText() }
+
+                // Convert JSON to List<AppInfo>
+                val gson = Gson()
+                val type = object : TypeToken<List<AppInfo>>() {}.type
+                val appInfoList: List<AppInfo> = gson.fromJson(jsonString, type)
+
+                // Reinsert data into the database
+                dao.restoreAll(appInfoList)
+            } ?: throw Exception("Failed to open input stream from URI")
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
 
     fun getActionType(actionType: Constants.Swipe): NavOptions {
         return when (actionType) {

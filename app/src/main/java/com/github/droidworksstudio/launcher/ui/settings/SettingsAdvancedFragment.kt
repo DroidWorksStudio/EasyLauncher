@@ -12,10 +12,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.github.droidworksstudio.common.resetDefaultLauncher
 import com.github.droidworksstudio.launcher.R
+import com.github.droidworksstudio.launcher.data.dao.AppInfoDAO
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsAdvancedBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.AppReloader
@@ -23,6 +25,7 @@ import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -37,6 +40,9 @@ class SettingsAdvancedFragment : Fragment(),
 
     @Inject
     lateinit var appHelper: AppHelper
+
+    @Inject
+    lateinit var appDAO: AppInfoDAO
 
     private lateinit var navController: NavController
 
@@ -125,8 +131,10 @@ class SettingsAdvancedFragment : Fragment(),
 
         // Define the items for the dialog (Backup, Restore, Clear Data)
         val items = arrayOf(
-            getString(R.string.advanced_settings_backup_restore_backup),
-            getString(R.string.advanced_settings_backup_restore_restore),
+            getString(R.string.advanced_settings_backup_restore_backup_prefs),
+            getString(R.string.advanced_settings_backup_restore_restore_prefs),
+            getString(R.string.advanced_settings_backup_restore_backup_apps),
+            getString(R.string.advanced_settings_backup_restore_restore_apps),
             getString(R.string.advanced_settings_backup_restore_clear)
         )
 
@@ -136,6 +144,8 @@ class SettingsAdvancedFragment : Fragment(),
             when (which) {
                 0 -> appHelper.storeFile(requireActivity())
                 1 -> appHelper.loadFile(requireActivity())
+                2 -> appHelper.storeFileApps(requireActivity())
+                3 -> appHelper.loadFileApps(requireActivity())
                 else -> confirmClearData()
             }
         }
@@ -159,6 +169,9 @@ class SettingsAdvancedFragment : Fragment(),
 
     private fun clearData() {
         preferenceHelper.clearAll(context)
+        lifecycleScope.launch {
+            appDAO.clearAll()
+        }
         Handler(Looper.getMainLooper()).postDelayed({
             AppReloader.restartApp(context)
         }, 500)

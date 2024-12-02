@@ -25,6 +25,8 @@ object Constants {
     const val LATITUDE = "LATITUDE"
     const val LONGITUDE = "LONGITUDE"
 
+    const val LOCATION_DENIED = "LOCATION_DENIED"
+
     const val FIRST_LAUNCH = "FIRST_LAUNCH"
     const val SHOW_DATE = "SHOW_DATE"
     const val SHOW_TIME = "SHOW_TIME"
@@ -33,7 +35,6 @@ object Constants {
     const val SHOW_BATTERY = "SHOW_BATTERY"
     const val SHOW_STATUS_BAR = "SHOW_STATUS_BAR"
     const val SHOW_NAVIGATION_BAR = "SHOW_NAVIGATION_BAR"
-
 
     const val SHOW_WEATHER_WIDGET = "SHOW_WEATHER_WIDGET"
     const val SHOW_WEATHER_WIDGET_SUN_SET_RISE = "SHOW_WEATHER_WIDGET_SUN_SET_RISE"
@@ -114,7 +115,8 @@ object Constants {
     const val BACKUP_WRITE = 987
     const val BACKUP_READ = 876
 
-    const val LOCATION_DENIED = "LOCATION_DENIED"
+    const val BACKUP_WRITE_APPS = 456
+    const val BACKUP_READ_APPS = 654
 
     const val TRIPLE_TAP_DELAY_MS = 300
     const val LONG_PRESS_DELAY_MS = 500

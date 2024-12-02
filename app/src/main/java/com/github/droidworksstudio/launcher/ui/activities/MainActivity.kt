@@ -34,10 +34,12 @@ import com.github.droidworksstudio.common.isTablet
 import com.github.droidworksstudio.common.showLongToast
 import com.github.droidworksstudio.common.showShortToast
 import com.github.droidworksstudio.launcher.R
+import com.github.droidworksstudio.launcher.data.dao.AppInfoDAO
 import com.github.droidworksstudio.launcher.databinding.ActivityMainBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
 import com.github.droidworksstudio.launcher.helper.AppReloader
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
+import com.github.droidworksstudio.launcher.repository.AppInfoRepository
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.viewmodel.AppViewModel
 import com.github.droidworksstudio.launcher.viewmodel.PreferenceViewModel
@@ -66,7 +68,13 @@ class MainActivity : AppCompatActivity() {
     lateinit var preferenceHelper: PreferenceHelper
 
     @Inject
+    lateinit var appInfoRepository: AppInfoRepository
+
+    @Inject
     lateinit var appHelper: AppHelper
+
+    @Inject
+    lateinit var appDao: AppInfoDAO
 
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var handler: Handler
@@ -96,6 +104,7 @@ class MainActivity : AppCompatActivity() {
         setupNavController()
         setupOrientation()
         setupLocationManager()
+        setLanguage()
     }
 
     @Suppress("DEPRECATION")
@@ -405,6 +414,23 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 applicationContext.showShortToast(getString(R.string.settings_reload_app_backup))
+            }
+
+            Constants.BACKUP_WRITE_APPS -> {
+                data?.data?.also { uri ->
+                    lifecycleScope.launch {
+                        appHelper.backupAppInfo(applicationContext, appDao, uri)
+                    }
+                }
+            }
+
+            Constants.BACKUP_READ_APPS -> {
+                data?.data?.also { uri ->
+                    lifecycleScope.launch {
+                        appHelper.restoreAppInfo(applicationContext, appDao, uri)
+                    }
+                }
+                AppReloader.restartApp(applicationContext)
             }
         }
     }

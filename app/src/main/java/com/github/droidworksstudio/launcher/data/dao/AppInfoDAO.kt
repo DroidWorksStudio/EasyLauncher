@@ -19,6 +19,12 @@ interface AppInfoDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertAll(apps: List<AppInfo>)
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun restoreAll(apps: List<AppInfo>)
+
+    @Query("DELETE FROM app")
+    suspend fun clearAll()
+
     @Update
     suspend fun update(app: AppInfo)
 
