@@ -22,15 +22,11 @@ interface AppInfoDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun restoreAll(apps: List<AppInfo>)
 
-
     @Query("DELETE FROM app")
     suspend fun clearAll()
 
     @Query("DELETE FROM sqlite_sequence WHERE name = 'app'")
     suspend fun resetAutoIncrement()
-
-    @Update
-    suspend fun update(app: AppInfo)
 
     @Delete
     fun delete(app: AppInfo)
@@ -65,21 +61,21 @@ interface AppInfoDAO {
     @Transaction
     suspend fun updateAppName(appInfo: AppInfo, newAppName: String) {
         appInfo.appName = newAppName
-        update(appInfo)
+        updateAppInfo(appInfo)
         logUpdate("App name updated", appInfo)
     }
 
     @Transaction
     suspend fun updateAppHidden(appInfo: AppInfo, appHidden: Boolean) {
         appInfo.hidden = appHidden
-        update(appInfo)
+        updateAppInfo(appInfo)
         logUpdate("App hidden status updated", appInfo)
     }
 
     @Transaction
     suspend fun updateLockApp(appInfo: AppInfo, appLock: Boolean) {
         appInfo.lock = appLock
-        update(appInfo)
+        updateAppInfo(appInfo)
         logUpdate("App lock status updated", appInfo)
     }
 

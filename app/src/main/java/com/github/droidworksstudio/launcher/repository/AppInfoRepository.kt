@@ -44,7 +44,7 @@ class AppInfoRepository @Inject constructor(
     }
 
     suspend fun updateInfo(appInfo: AppInfo) {
-        appDao.update(appInfo)
+        appDao.updateAppInfo(appInfo)
     }
 
     suspend fun updateAppOrder(appInfoList: List<AppInfo>) {
@@ -175,22 +175,8 @@ class AppInfoRepository @Inject constructor(
                             launcherApps.getActivityList(null, profile)
                                 .mapNotNull { app ->
                                     val packageName = app.applicationInfo.packageName
-                                    val currentDateTime = LocalDateTime.now()
-                                    if (packageName !in existingPackageNames && packageName !in excludedPackageNames) {
-                                        AppInfo(
-                                            appName = app.label.toString(),
-                                            packageName = packageName,
-                                            favorite = false,
-                                            hidden = false,
-                                            lock = false,
-                                            createTime = currentDateTime.toString(),
-                                            userHandle = userId,
-                                        )
-                                    } else {
-                                        val existingApp = getAppByPackageNameWork(packageName)
-                                        existingApp?.let { appList.add(it) }
-                                        existingApp
-                                    }
+                                    val existingApp = getAppByPackageNameWork(packageName)
+                                    existingApp
                                 }
                         }
                     }

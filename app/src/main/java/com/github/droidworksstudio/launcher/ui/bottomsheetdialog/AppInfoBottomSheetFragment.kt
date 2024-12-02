@@ -47,20 +47,19 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
 
     private var appStateClickListener: OnItemClickedListener.OnAppStateClickListener? = null
 
-
     fun setOnAppStateClickListener(listener: OnItemClickedListener.OnAppStateClickListener) {
         appStateClickListener = listener
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         _binding = BottomsheetDialogBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.R)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -89,13 +88,21 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
 
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
+
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun observeClickListener() {
         val packageName = appInfo.packageName
+        var appName = appInfo.packageName
 
-        val packageManager = context?.packageManager
-        val applicationInfo = packageManager?.getApplicationInfo(packageName, 0)
-        val appName = applicationInfo?.let { packageManager.getApplicationLabel(it).toString() }
+        try {
+            // Get the context's PackageManager
+            val packageManager = context?.packageManager
+
+            val applicationInfo = packageManager?.getApplicationInfo(packageName, 0)
+            appName = applicationInfo?.let { packageManager.getApplicationLabel(it).toString() }.toString()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
 
         binding.apply {
             bottomSheetFavHidden.setOnClickListener {
@@ -135,7 +142,7 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
                             )
                         )
                         binding.bottomSheetRename.hint = appName
-                        appInfo.appName = appName ?: ""
+                        appInfo.appName = appName
                     } else {
                         appInfo.appName = s.toString()
                     }

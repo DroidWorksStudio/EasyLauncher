@@ -348,8 +348,6 @@ class DrawFragment : Fragment(),
     }
 
     private fun showSelectedApp(appInfo: AppInfo) {
-        binding.searchViewText.setQuery("", false)
-
         val bottomSheetFragment = AppInfoBottomSheetFragment(appInfo)
         bottomSheetFragment.setOnAppStateClickListener(this)
         bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")

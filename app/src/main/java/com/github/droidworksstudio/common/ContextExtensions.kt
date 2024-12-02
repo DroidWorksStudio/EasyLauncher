@@ -31,7 +31,6 @@ import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.IconCompat
 import androidx.core.graphics.drawable.toBitmap
-import androidx.core.os.ConfigurationCompat
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
@@ -112,8 +111,6 @@ fun Context.createIconWithResourceCompat(
     }
 }
 
-fun Context.currentLanguage() = ConfigurationCompat.getLocales(resources.configuration)[0]?.language
-
 fun Context.openBrowser(url: String, clearFromRecent: Boolean = true) {
     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
     if (clearFromRecent) browserIntent.flags =
@@ -182,7 +179,7 @@ fun Context.resetDefaultLauncher() {
     try {
         val intent = Intent("android.settings.HOME_SETTINGS")
         this.startActivity(intent)
-    } catch (e: ActivityNotFoundException) {
+    } catch (_: ActivityNotFoundException) {
         // Fallback to general settings if specific launcher settings are not found
         try {
             val intent = Intent(Settings.ACTION_SETTINGS)
@@ -266,7 +263,7 @@ fun Context.launchCalendar() {
         builder.appendPath("time")
         builder.appendPath(time.toString())
         this.startActivity(Intent(Intent.ACTION_VIEW, builder.build()))
-    } catch (e: Exception) {
+    } catch (_: Exception) {
         try {
             val intent = Intent(this, LauncherActivity::class.java)
             intent.addCategory(Intent.CATEGORY_APP_CALENDAR)
@@ -281,7 +278,7 @@ fun Context.openBatteryManager() {
     try {
         val intent = Intent(Intent.ACTION_POWER_USAGE_SUMMARY)
         this.startActivity(intent)
-    } catch (e: ActivityNotFoundException) {
+    } catch (_: ActivityNotFoundException) {
         // Battery manager settings cannot be opened
         // Handle this case as needed
         showLongToast("Battery manager settings are not available on this device.")
@@ -375,7 +372,7 @@ fun Context.isPackageInstalled(
 ): Boolean {
     val launcher = getSystemService(Context.LAUNCHER_APPS_SERVICE) as LauncherApps
     val activityInfo = launcher.getActivityList(packageName, userHandle)
-    return activityInfo.size > 0
+    return activityInfo.isNotEmpty()
 }
 
 fun Context.getAppNameFromPackageName(packageName: String): String? {

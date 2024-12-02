@@ -16,6 +16,7 @@ import android.os.Vibrator
 import android.os.VibratorManager
 import android.text.SpannableStringBuilder
 import android.text.style.ImageSpan
+import android.util.JsonReader
 import android.util.Log
 import android.util.TypedValue
 import android.view.Gravity
@@ -41,6 +42,7 @@ import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.flow.first
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.io.StringReader
 import java.net.UnknownHostException
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -383,6 +385,10 @@ class AppHelper @Inject constructor() {
             context.contentResolver.openInputStream(uri)?.use { inputStream ->
                 // Read the content from the InputStream
                 val jsonString = inputStream.bufferedReader().use { it.readText() }
+
+                // Create a JsonReader with lenient parsing
+                val jsonReader = JsonReader(StringReader(jsonString))
+                jsonReader.isLenient = true // Enable lenient mode
 
                 // Convert JSON to List<AppInfo>
                 val gson = Gson()
