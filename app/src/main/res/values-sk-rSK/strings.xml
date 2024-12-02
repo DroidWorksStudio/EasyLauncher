@@ -27,9 +27,11 @@
     <string name="advanced_settings_restart_description">Skúšali ste to zapnúť a vypnúť?</string>
     <string name="advanced_settings_backup_restore_title">Zálohovanie/obnovenie</string>
     <string name="advanced_settings_backup_restore_description">Dávajte si prosím pozor na to, čo si želáte?</string>
-    <string name="advanced_settings_backup_restore_backup">Predvoľby zálohovania</string>
-    <string name="advanced_settings_backup_restore_restore">Obnoviť predvoľby</string>
-    <string name="advanced_settings_backup_restore_clear">Vymazať predvoľby</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Backup Apps</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Restore Apps</string>
+    <string name="advanced_settings_backup_restore_clear">Clear All Data</string>
     <string name="advanced_settings_backup_restore_clear_title">Vymazať predvoľby</string>
     <string name="advanced_settings_backup_restore_clear_description">Naozaj to chcete urobiť?</string>
     <string name="advanced_settings_backup_restore_clear_yes">áno</string>
