@@ -27,9 +27,11 @@
     <string name="advanced_settings_restart_description">Har du prøvet at tænde og slukke for den?</string>
     <string name="advanced_settings_backup_restore_title">Sikkerhedskopiering/gendannelse</string>
     <string name="advanced_settings_backup_restore_description">Vær venligst forsigtig med hvad du ønsker dig?</string>
-    <string name="advanced_settings_backup_restore_backup">Sikkerhedskopieringsindstillinger</string>
-    <string name="advanced_settings_backup_restore_restore">Gendan præferencer</string>
-    <string name="advanced_settings_backup_restore_clear">Ryd præferencer</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Backup Apps</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Restore Apps</string>
+    <string name="advanced_settings_backup_restore_clear">Clear All Data</string>
     <string name="advanced_settings_backup_restore_clear_title">Ryd præferencer</string>
     <string name="advanced_settings_backup_restore_clear_description">Er du sikker på, at du vil gøre dette?</string>
     <string name="advanced_settings_backup_restore_clear_yes">Ja</string>
