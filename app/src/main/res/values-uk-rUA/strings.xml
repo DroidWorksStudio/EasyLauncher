@@ -27,11 +27,11 @@
     <string name="advanced_settings_restart_description">Ви пробували його вмикати та вимикати?</string>
     <string name="advanced_settings_backup_restore_title">Резервне копіювання/відновлення</string>
     <string name="advanced_settings_backup_restore_description">Будь ласка, будьте обережні, чого ви бажаєте?</string>
-    <string name="advanced_settings_backup_restore_backup_prefs">Backup Preferences</string>
-    <string name="advanced_settings_backup_restore_restore_prefs">Restore Preferences</string>
-    <string name="advanced_settings_backup_restore_backup_apps">Backup Apps</string>
-    <string name="advanced_settings_backup_restore_restore_apps">Restore Apps</string>
-    <string name="advanced_settings_backup_restore_clear">Clear All Data</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Налаштування резервного копіювання</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Відновити налаштування</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Програми резервного копіювання</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Відновити програми</string>
+    <string name="advanced_settings_backup_restore_clear">Очистити всі дані</string>
     <string name="advanced_settings_backup_restore_clear_title">Очистити налаштування</string>
     <string name="advanced_settings_backup_restore_clear_description">Ви впевнені, що хочете це зробити?</string>
     <string name="advanced_settings_backup_restore_clear_yes">так</string>
