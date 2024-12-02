@@ -27,9 +27,11 @@
     <string name="advanced_settings_restart_description">Açıp kapatmayı denediniz mi?</string>
     <string name="advanced_settings_backup_restore_title">Yedekleme/Geri Yükleme</string>
     <string name="advanced_settings_backup_restore_description">Lütfen ne dilediğinize dikkat edin?</string>
-    <string name="advanced_settings_backup_restore_backup">Yedekleme Tercihleri</string>
-    <string name="advanced_settings_backup_restore_restore">Tercihleri Geri Yükle</string>
-    <string name="advanced_settings_backup_restore_clear">Tercihleri Temizle</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Yedekleme Tercihleri</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Tercihleri Geri Yükle</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Yedekleme Uygulamaları</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Uygulamaları Geri Yükle</string>
+    <string name="advanced_settings_backup_restore_clear">Tüm Verileri Temizle</string>
     <string name="advanced_settings_backup_restore_clear_title">Tercihleri Temizle</string>
     <string name="advanced_settings_backup_restore_clear_description">Bunu gerçekten yapmak istiyor musun?</string>
     <string name="advanced_settings_backup_restore_clear_yes">Evet</string>
