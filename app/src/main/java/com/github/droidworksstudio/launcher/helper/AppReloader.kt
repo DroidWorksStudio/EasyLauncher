@@ -12,11 +12,12 @@ object AppReloader {
         val componentName = intent?.component
         val mainIntent = Intent.makeRestartActivityTask(componentName)
         mainIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+        mainIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
 
         // Delay the restart slightly to ensure all current activities are finished
-        Handler(Looper.getMainLooper()).post {
+        Handler(Looper.getMainLooper()).postDelayed({
             context.startActivity(mainIntent)
             Runtime.getRuntime().exit(0)
-        }
+        }, 250)
     }
 }

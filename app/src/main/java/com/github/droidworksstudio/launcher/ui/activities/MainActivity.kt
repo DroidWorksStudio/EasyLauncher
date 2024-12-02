@@ -391,9 +391,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 applicationContext.showShortToast(getString(R.string.settings_reload_app_restore))
-                Handler(Looper.getMainLooper()).postDelayed({
-                    AppReloader.restartApp(applicationContext)
-                }, 500)
+                AppReloader.restartApp(applicationContext)
             }
 
             Constants.BACKUP_WRITE -> {
