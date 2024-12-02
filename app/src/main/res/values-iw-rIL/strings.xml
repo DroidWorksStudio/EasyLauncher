@@ -27,9 +27,11 @@
     <string name="advanced_settings_restart_description">ניסית להדליק ולכבות?</string>
     <string name="advanced_settings_backup_restore_title">גיבוי/שחזור</string>
     <string name="advanced_settings_backup_restore_description">אנא היזהר במה אתה מייחל?</string>
-    <string name="advanced_settings_backup_restore_backup">העדפות גיבוי</string>
-    <string name="advanced_settings_backup_restore_restore">שחזר העדפות</string>
-    <string name="advanced_settings_backup_restore_clear">נקה העדפות</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Backup Apps</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Restore Apps</string>
+    <string name="advanced_settings_backup_restore_clear">Clear All Data</string>
     <string name="advanced_settings_backup_restore_clear_title">נקה העדפות</string>
     <string name="advanced_settings_backup_restore_clear_description">האם אתה בטוח שאתה רוצה לעשות זאת?</string>
     <string name="advanced_settings_backup_restore_clear_yes">כֵּן</string>
