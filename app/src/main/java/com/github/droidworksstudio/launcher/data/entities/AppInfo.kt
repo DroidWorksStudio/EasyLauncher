@@ -33,5 +33,5 @@ data class AppInfo(
     var createTime: String,
 
     @ColumnInfo(name = "app_order")
-    var appOrder: Int = -1
+    var appOrder: Int = -1,
 )

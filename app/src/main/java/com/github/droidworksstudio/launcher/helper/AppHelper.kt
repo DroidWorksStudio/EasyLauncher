@@ -16,7 +16,6 @@ import android.os.Vibrator
 import android.os.VibratorManager
 import android.text.SpannableStringBuilder
 import android.text.style.ImageSpan
-import android.util.JsonReader
 import android.util.Log
 import android.util.TypedValue
 import android.view.Gravity
@@ -38,11 +37,12 @@ import com.github.droidworksstudio.launcher.helper.weather.WeatherResponse
 import com.github.droidworksstudio.launcher.utils.Constants
 import com.github.droidworksstudio.launcher.utils.WeatherApiService
 import com.google.gson.Gson
+import com.google.gson.JsonSyntaxException
 import com.google.gson.reflect.TypeToken
+import com.google.gson.stream.JsonReader
 import kotlinx.coroutines.flow.first
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.StringReader
 import java.net.UnknownHostException
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -383,27 +383,35 @@ class AppHelper @Inject constructor() {
         try {
             // Open an InputStream from the selected Uri
             context.contentResolver.openInputStream(uri)?.use { inputStream ->
-                // Read the content from the InputStream
-                val jsonString = inputStream.bufferedReader().use { it.readText() }
 
-                // Create a JsonReader with lenient parsing
-                val jsonReader = JsonReader(StringReader(jsonString))
-                jsonReader.isLenient = true // Enable lenient mode
+                // Create a JsonReader for lenient parsing
+                val jsonReader = JsonReader(inputStream.bufferedReader())
+                jsonReader.isLenient = true // Enable lenient mode for parsing
 
-                // Convert JSON to List<AppInfo>
+                // Create Gson instance
                 val gson = Gson()
+
+                // Define the type for the List<AppInfo>
                 val type = object : TypeToken<List<AppInfo>>() {}.type
-                val appInfoList: List<AppInfo> = gson.fromJson(jsonString, type)
+
+                // Deserialize the JSON into a List<AppInfo>
+                val appInfoList: List<AppInfo> = gson.fromJson(jsonReader, type)
 
                 // Clear all apps first
                 resetDatabase(dao)
+
                 // Reinsert data into the database
-                dao.restoreAll(appInfoList)
+                dao.restoreAll(appInfoList) // Execute the method
             } ?: throw Exception("Failed to open input stream from URI")
 
+        } catch (e: JsonSyntaxException) {
+            // Handle Gson parsing issues (e.g., malformed JSON)
+            e.printStackTrace()
         } catch (e: Exception) {
+            // Catch other exceptions such as InputStream opening issues
             e.printStackTrace()
         }
+
     }
 
     suspend fun resetDatabase(dao: AppInfoDAO) {

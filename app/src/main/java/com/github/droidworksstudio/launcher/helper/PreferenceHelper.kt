@@ -1,5 +1,6 @@
 package com.github.droidworksstudio.launcher.helper
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import android.content.res.Configuration
@@ -10,7 +11,9 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonDeserializer
 import com.google.gson.reflect.TypeToken
+import com.google.gson.stream.JsonReader
 import dagger.hilt.android.qualifiers.ApplicationContext
+import java.io.StringReader
 import javax.inject.Inject
 
 class PreferenceHelper @Inject constructor(@ApplicationContext context: Context) {
@@ -344,6 +347,7 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
         return Gson().toJson(all)
     }
 
+    @SuppressLint("CommitPrefEdits")
     fun loadFromString(json: String) {
         val editor = prefs.edit()
         // Custom deserializer to handle numbers properly
@@ -391,25 +395,34 @@ class PreferenceHelper @Inject constructor(@ApplicationContext context: Context)
                 map
             }).create()
 
-        val all: HashMap<String, Any?> = gson.fromJson(json, object : TypeToken<HashMap<String, Any?>>() {}.type)
+        try {
+            // Read JSON string with lenient mode enabled
+            val jsonReader = JsonReader(StringReader(json))
+            jsonReader.isLenient = true // Enable lenient parsing for malformed JSON
 
-        for ((key, value) in all) {
-            when (value) {
-                is String -> editor.putString(key, value)
-                is Boolean -> editor.putBoolean(key, value)
-                is Int -> editor.putInt(key, value)
-                is Float -> editor.putFloat(key, value)
-                is MutableSet<*> -> {
-                    val list = value.filterIsInstance<String>().toSet()
-                    editor.putStringSet(key, list)
-                }
+            // Deserialize the JSON to HashMap
+            val all: HashMap<String, Any?> = gson.fromJson(jsonReader, object : TypeToken<HashMap<String, Any?>>() {}.type)
 
-                else -> {
-                    Log.d("backup error", "$key | $value")
+            for ((key, value) in all) {
+                when (value) {
+                    is String -> editor.putString(key, value)
+                    is Boolean -> editor.putBoolean(key, value)
+                    is Int -> editor.putInt(key, value)
+                    is Float -> editor.putFloat(key, value)
+                    is MutableSet<*> -> {
+                        val list = value.filterIsInstance<String>().toSet()
+                        editor.putStringSet(key, list)
+                    }
+
+                    else -> {
+                        Log.d("backup error", "$key | $value")
+                    }
                 }
             }
+            editor.apply()
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
-        editor.apply()
     }
 
     fun clear() {

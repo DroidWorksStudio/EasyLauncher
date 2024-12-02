@@ -4,8 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
@@ -100,9 +98,7 @@ class SettingsAdvancedFragment : Fragment(),
             }
 
             restartLauncher.setOnClickListener {
-                Handler(Looper.getMainLooper()).postDelayed({
-                    AppReloader.restartApp(context)
-                }, 500)
+                AppReloader.restartApp(context)
             }
 
             backupRestore.setOnClickListener {
@@ -171,10 +167,8 @@ class SettingsAdvancedFragment : Fragment(),
         preferenceHelper.clearAll(context)
         lifecycleScope.launch {
             appHelper.resetDatabase(appDAO)
-        }
-        Handler(Looper.getMainLooper()).postDelayed({
             AppReloader.restartApp(context)
-        }, 500)
+        }
     }
 
     private fun dismissDialogs() {
