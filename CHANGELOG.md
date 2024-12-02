@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.3.2 - ([8aebf00](https://github.com/DroidWorksStudio/EasyLauncher/commit/8aebf00cdf14026abc25793ba9f303fce09fe1c2))
+
+## [0.3.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.3.1) - (01, December 2024)
+
 ### Implemented Enhancements:
 
 - Added Navigation hiding. - ([db56cb0](https://github.com/DroidWorksStudio/EasyLauncher/commit/db56cb0df7cfc6d291f1dd7e603aae464436ce06))
