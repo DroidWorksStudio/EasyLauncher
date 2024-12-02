@@ -27,9 +27,11 @@
     <string name="advanced_settings_restart_description">Heb je geprobeerd het aan en uit te zetten?</string>
     <string name="advanced_settings_backup_restore_title">Back-up/Herstellen</string>
     <string name="advanced_settings_backup_restore_description">Wees voorzichtig met wat je wenst.</string>
-    <string name="advanced_settings_backup_restore_backup">Back-up voorkeuren</string>
-    <string name="advanced_settings_backup_restore_restore">Voorkeuren herstellen</string>
-    <string name="advanced_settings_backup_restore_clear">Voorkeuren wissen</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Backup Apps</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Restore Apps</string>
+    <string name="advanced_settings_backup_restore_clear">Clear All Data</string>
     <string name="advanced_settings_backup_restore_clear_title">Voorkeuren wissen</string>
     <string name="advanced_settings_backup_restore_clear_description">Weet u zeker dat u dit wilt doen?</string>
     <string name="advanced_settings_backup_restore_clear_yes">Ja</string>
