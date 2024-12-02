@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Implemented Enhancements:
 
+- Added the ability for restore to also run a clear list before restoring. - ([ac4456d](https://github.com/DroidWorksStudio/EasyLauncher/commit/ac4456dac42445d7cee3c51b549a7c4542268367))
 - Added the ability to backup and restore apps. - ([b874d55](https://github.com/DroidWorksStudio/EasyLauncher/commit/b874d5556965d6772ddd1428dfd79a2859001c99))
 
 ### Bug Fixes:

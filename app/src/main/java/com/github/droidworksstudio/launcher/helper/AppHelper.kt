@@ -389,6 +389,8 @@ class AppHelper @Inject constructor() {
                 val type = object : TypeToken<List<AppInfo>>() {}.type
                 val appInfoList: List<AppInfo> = gson.fromJson(jsonString, type)
 
+                // Clear all apps first
+                resetDatabase(dao)
                 // Reinsert data into the database
                 dao.restoreAll(appInfoList)
             } ?: throw Exception("Failed to open input stream from URI")
@@ -396,6 +398,11 @@ class AppHelper @Inject constructor() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
+    }
+
+    suspend fun resetDatabase(dao: AppInfoDAO) {
+        dao.clearAll()                // Clears all rows in the table
+        dao.resetAutoIncrement()      // Resets the ID counter
     }
 
 
