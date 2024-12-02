@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Bug Fixes:
+
+- Fixed restart app issue when restoring backup. - ([011bd02](https://github.com/DroidWorksStudio/EasyLauncher/commit/011bd02dd539e8299e3b9418e9c0ffdc193bb4f4))
+
 ### Releases:
 
 - Prepare for version 0.3.2 - ([8aebf00](https://github.com/DroidWorksStudio/EasyLauncher/commit/8aebf00cdf14026abc25793ba9f303fce09fe1c2))
