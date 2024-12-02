@@ -22,8 +22,12 @@ interface AppInfoDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun restoreAll(apps: List<AppInfo>)
 
+
     @Query("DELETE FROM app")
     suspend fun clearAll()
+
+    @Query("DELETE FROM sqlite_sequence WHERE name = 'app'")
+    suspend fun resetAutoIncrement()
 
     @Update
     suspend fun update(app: AppInfo)

@@ -170,7 +170,7 @@ class SettingsAdvancedFragment : Fragment(),
     private fun clearData() {
         preferenceHelper.clearAll(context)
         lifecycleScope.launch {
-            appDAO.clearAll()
+            appHelper.resetDatabase(appDAO)
         }
         Handler(Looper.getMainLooper()).postDelayed({
             AppReloader.restartApp(context)
