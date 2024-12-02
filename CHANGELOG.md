@@ -4,8 +4,13 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Implemented Enhancements:
+
+- Added the ability to backup and restore apps. - ([b874d55](https://github.com/DroidWorksStudio/EasyLauncher/commit/b874d5556965d6772ddd1428dfd79a2859001c99))
+
 ### Bug Fixes:
 
+- Fixed restart app after changing language. - ([198b230](https://github.com/DroidWorksStudio/EasyLauncher/commit/198b2308a5e5024d3c5295c234d867d3945bae85))
 - Fixed restart app issue when restoring backup. - ([011bd02](https://github.com/DroidWorksStudio/EasyLauncher/commit/011bd02dd539e8299e3b9418e9c0ffdc193bb4f4))
 
 ### Releases:
