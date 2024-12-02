@@ -27,11 +27,11 @@
     <string name="advanced_settings_restart_description">Ar bandėte jį įjungti ir išjungti?</string>
     <string name="advanced_settings_backup_restore_title">Atsarginė kopija / atkūrimas</string>
     <string name="advanced_settings_backup_restore_description">Būkite atsargūs, ko norite?</string>
-    <string name="advanced_settings_backup_restore_backup_prefs">Backup Preferences</string>
-    <string name="advanced_settings_backup_restore_restore_prefs">Restore Preferences</string>
-    <string name="advanced_settings_backup_restore_backup_apps">Backup Apps</string>
-    <string name="advanced_settings_backup_restore_restore_apps">Restore Apps</string>
-    <string name="advanced_settings_backup_restore_clear">Clear All Data</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Atsarginės kopijos nuostatos</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Atkurti nuostatas</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Atsarginės programos</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Atkurti programas</string>
+    <string name="advanced_settings_backup_restore_clear">Išvalyti visus duomenis</string>
     <string name="advanced_settings_backup_restore_clear_title">Išvalyti nuostatas</string>
     <string name="advanced_settings_backup_restore_clear_description">Ar tikrai norite tai padaryti?</string>
     <string name="advanced_settings_backup_restore_clear_yes">Taip</string>
