@@ -21,6 +21,7 @@ import com.github.droidworksstudio.common.getAppNameFromPackageName
 import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.databinding.FragmentSettingsFeaturesBinding
 import com.github.droidworksstudio.launcher.helper.AppHelper
+import com.github.droidworksstudio.launcher.helper.AppReloader
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.listener.ScrollEventListener
 import com.github.droidworksstudio.launcher.repository.AppInfoRepository
@@ -224,6 +225,8 @@ class SettingsFeaturesFragment : Fragment(),
 
                 val feedbackType = "select"
                 appHelper.triggerHapticFeedback(context, feedbackType)
+
+                AppReloader.restartApp(context)
             }
         }
 
