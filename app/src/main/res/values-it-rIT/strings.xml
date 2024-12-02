@@ -27,9 +27,11 @@
     <string name="advanced_settings_restart_description">Hai provato ad accenderlo e spegnerlo?</string>
     <string name="advanced_settings_backup_restore_title">Backup/Ripristino</string>
     <string name="advanced_settings_backup_restore_description">Per favore, fai attenzione a ciò che desideri.</string>
-    <string name="advanced_settings_backup_restore_backup">Preferenze di backup</string>
-    <string name="advanced_settings_backup_restore_restore">Ripristina preferenze</string>
-    <string name="advanced_settings_backup_restore_clear">Cancella preferenze</string>
+    <string name="advanced_settings_backup_restore_backup_prefs">Backup Preferences</string>
+    <string name="advanced_settings_backup_restore_restore_prefs">Restore Preferences</string>
+    <string name="advanced_settings_backup_restore_backup_apps">Backup Apps</string>
+    <string name="advanced_settings_backup_restore_restore_apps">Restore Apps</string>
+    <string name="advanced_settings_backup_restore_clear">Clear All Data</string>
     <string name="advanced_settings_backup_restore_clear_title">Cancella preferenze</string>
     <string name="advanced_settings_backup_restore_clear_description">Sei sicuro di volerlo fare?</string>
     <string name="advanced_settings_backup_restore_clear_yes">SÌ</string>
