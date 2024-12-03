@@ -49,7 +49,7 @@ interface AppInfoDAO {
     @Query("SELECT * FROM app WHERE is_lock = 1 ORDER BY app_order ASC")
     fun getLockAppsFlow(): Flow<List<AppInfo>>
 
-    @Query("SELECT * FROM app ORDER BY app_name COLLATE NOCASE ASC")
+    @Query("SELECT * FROM app WHERE is_hidden = 0 ORDER BY app_name COLLATE NOCASE ASC")
     fun searchApps(): Flow<List<AppInfo>>
 
     @Update
