@@ -3,7 +3,6 @@ name: Thank New Reporters
 on:
   issues:
     types:
-      - reopened
       - opened
 
 jobs:
