@@ -23,6 +23,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Refactoring:
 
+- Changed the screenshots. - ([7a4f91e](https://github.com/DroidWorksStudio/EasyLauncher/commit/7a4f91ebe1eec08d13007d755e6d4ae44627b1f9))
 - Cleaned up some unneeded code. - ([5bdd010](https://github.com/DroidWorksStudio/EasyLauncher/commit/5bdd01076e143e1675ec2a971bf3f2e5e7f9c032))
 
 ### Releases:
