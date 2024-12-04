@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.3.3 - ([3911b14](https://github.com/DroidWorksStudio/EasyLauncher/commit/3911b1418dacada9539667b67ae3c3cfc60b9322))
+
+## [0.3.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.3.2) - (04, December 2024)
+
 ### Implemented Enhancements:
 
 - Added the ability for restore to also run a clear list before restoring. - ([ac4456d](https://github.com/DroidWorksStudio/EasyLauncher/commit/ac4456dac42445d7cee3c51b549a7c4542268367))
