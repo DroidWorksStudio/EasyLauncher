@@ -178,7 +178,7 @@
     <string name="acra_dont_send">Neposielajte</string>
     <string name="acra_mail_body">V aplikácii došlo k zlyhaniu.\n\nNižšie sú uvedené podrobnosti o zariadení. Protokol chýb bol priložený ako súbor pre vašu referenciu. Ocenili by sme vašu pomoc pri riešení tohto problému.\n\nInformácie o zariadení: \n[VYPLŇTE, PROSÍM, nižšie uvedené informácie a odstráňte aj čokoľvek medzi hranatými zátvorkami, inak to bude ignorované.]\n\n- Verzia aplikácie: [11.11.11]\n- Verzia systému Android: [Apple 1.16]\n- Názov zariadenia: [Android Apple Phone 69]\n- Umiestnenie inštalácie: [Github, Fdroid, Obtanium, vesmírna stanica Tesla]\n\nVeľmi si vážime vašu okamžitú pozornosť k tejto záležitosti.\n\nĎakujem.\n</string>
     <string name="admin_permission_message">mLauncher sľubuje, že bude zodpovedne používať povolenie na uzamknutie obrazovky. mLauncher nezhromažďuje ani nezdieľa žiadne údaje.</string>
-    <string name="work_permission_message">You must use the Work Profile Manager to perform this action.</string>
+    <string name="work_permission_message">Na vykonanie tejto akcie musíte použiť manažéra pracovného profilu.</string>
     <string-array name="alignment_options">
         <item>Vľavo</item>
         <item>centrum</item>
