@@ -419,7 +419,6 @@ class AppHelper @Inject constructor() {
         dao.resetAutoIncrement()      // Resets the ID counter
     }
 
-
     fun getActionType(actionType: Constants.Swipe): NavOptions {
         return when (actionType) {
             Constants.Swipe.DoubleTap -> {

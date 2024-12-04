@@ -85,7 +85,6 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
             bottomSheetRename.setText(appInfo.appName)
             bottomSheetOrder.text = "${appInfo.appOrder}"
         }
-
     }
 
 

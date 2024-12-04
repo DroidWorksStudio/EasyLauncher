@@ -175,8 +175,22 @@ class AppInfoRepository @Inject constructor(
                             launcherApps.getActivityList(null, profile)
                                 .mapNotNull { app ->
                                     val packageName = app.applicationInfo.packageName
-                                    val existingApp = getAppByPackageNameWork(packageName)
-                                    existingApp
+                                    val currentDateTime = LocalDateTime.now()
+                                    if (packageName !in existingPackageNames && packageName !in excludedPackageNames) {
+                                        AppInfo(
+                                            appName = app.label.toString(),
+                                            packageName = packageName,
+                                            favorite = false,
+                                            hidden = false,
+                                            lock = false,
+                                            createTime = currentDateTime.toString(),
+                                            userHandle = userId,
+                                        )
+                                    } else {
+                                        val existingApp = getAppByPackageNameWork(packageName)
+                                        existingApp?.let { appList.add(it) }
+                                        existingApp
+                                    }
                                 }
                         }
                     }

@@ -229,6 +229,7 @@
     <string name="acra_mail_body">A crash has occurred in the application.\n\nBelow are the details of the device. The error log has been attached as a file for your reference. We would appreciate your assistance in resolving this issue.\n\nDevice Information: \n[PLEASE fill in the information below also removing anything between the square brackets or this will be ignored.]\n\n- App Version: [11.11.11]\n- Android Version: [Apple 1.16]\n- Device Name: [Android Apple Phone 69]\n- Install Location: [Github, Fdroid, Obtanium, Tesla Space Station]\n\nYour prompt attention to this matter is greatly appreciated.\n\nThank you.\n</string>
 
     <string name="admin_permission_message">mLauncher promises to use lock screen permission responsibly. mLauncher does not collect or share any data.</string>
+    <string name="work_permission_message">You must use the Work Profile Manager to perform this action.</string>
 
     <string-array name="alignment_options">
         <item>Left</item>

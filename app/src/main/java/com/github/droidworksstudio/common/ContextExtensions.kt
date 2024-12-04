@@ -11,6 +11,7 @@ import android.content.pm.PackageManager
 import android.content.res.Configuration
 import android.graphics.Bitmap
 import android.graphics.drawable.AdaptiveIconDrawable
+import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Build
 import android.os.UserHandle
@@ -33,6 +34,7 @@ import androidx.core.graphics.drawable.IconCompat
 import androidx.core.graphics.drawable.toBitmap
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
+import com.github.droidworksstudio.launcher.R
 import com.github.droidworksstudio.launcher.data.entities.AppInfo
 import com.github.droidworksstudio.launcher.helper.PreferenceHelper
 import com.github.droidworksstudio.launcher.ui.activities.LauncherActivity
@@ -193,14 +195,60 @@ fun Context.resetDefaultLauncher() {
 fun Context.unInstallApp(appInfo: AppInfo) {
     val intent = Intent(Intent.ACTION_DELETE)
     intent.data = Uri.parse("package:${appInfo.packageName}")
-    this.startActivity(intent)
+    if (appInfo.userHandle > 0) this.showShortToast(getString(R.string.work_permission_message))
+    else this.startActivity(intent)
 }
 
 fun Context.appInfo(appInfo: AppInfo) {
     val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
     intent.data = Uri.fromParts("package", appInfo.packageName, null)
-    this.startActivity(intent)
+//    this.test()
+    if (appInfo.userHandle > 0) this.showShortToast(getString(R.string.work_permission_message))
+    else this.startActivity(intent)
 }
+
+//fun Context.test() {
+//    // Get the UserManager system service
+//    val userManager = getSystemService(Context.USER_SERVICE) as? UserManager
+//    val packageManager = packageManager
+//
+//    // Check if the UserManager is available
+//    if (userManager == null) {
+//        Log.e("Error", "UserManager is not available on this device")
+//        return
+//    }
+//
+//    // Log available user profiles
+//    val users = userManager.userProfiles
+//    Log.d("UserManager", "User profiles: $users")
+//    // Iterate through users to check for work profiles
+//    for (userHandle in users) {
+//        try {
+//            // Get the UserInfo object for each user
+//            val userInfo = userManager.getUserInfo(userHandle)
+//            Log.d("UserManager", "User info for handle $userHandle: ${userInfo.name}")
+//
+//            // Check if this user is a managed (work) profile
+//            if (userInfo.isManagedProfile) {
+//                Log.d("WorkProfile", "Work profile found for user: ${userInfo.name}")
+//
+//                // Get installed apps for this work profile
+//                val appsInWorkProfile = packageManager.getInstalledPackages(PackageManager.GET_META_DATA)
+//
+//                // Log installed apps in the work profile
+//                for (appInfo in appsInWorkProfile) {
+//                    appInfo.applicationInfo?.let {
+//                        if (it.flags and ApplicationInfo.FLAG_SYSTEM == 0) {
+//                            Log.d("App", "Possible app managing work profile: ${appInfo.packageName}")
+//                        }
+//                    }
+//                }
+//            }
+//        } catch (e: Exception) {
+//            Log.e("Error", "Failed to get user info for handle $userHandle: ${e.message}")
+//        }
+//    }
+//}
 
 fun Context.launchApp(appInfo: AppInfo) {
     val packageName = appInfo.packageName
@@ -359,6 +407,36 @@ fun Context.isWorkProfileEnabled(): Boolean {
         false
     }
 }
+
+fun Context.getAllProfileAppIcons(): Map<Pair<Int?, String?>, Drawable?> {
+    val launcherApps = this.getSystemService(Context.LAUNCHER_APPS_SERVICE) as LauncherApps
+    val userManager = this.getSystemService(Context.USER_SERVICE) as UserManager
+    val userHandles = userManager.userProfiles
+    val appInfoMap = mutableMapOf<Pair<Int?, String?>, Drawable?>()
+
+    try {
+        for (userHandle in userHandles) {
+            val apps = launcherApps.getActivityList(null, userHandle)
+            apps.forEach { activityInfo ->
+                val packageName = activityInfo.applicationInfo.packageName // App's package name
+                val icon = activityInfo.getBadgedIcon(0) // Drawable for the app's icon
+                val userHandle = activityInfo.user // UserHandle for the profile the app belongs to
+                val userId = userHandle.hashCode() // Get the unique integer ID of the UserHandle
+
+                // Construct the key as Pair(UserHandle, String)
+                val key = Pair(userId, packageName)
+
+                // Store the pair of UserHandle and label as the key, with the icon as the value
+                appInfoMap[key] = icon
+            }
+        }
+    } catch (e: Exception) {
+        e.printStackTrace()
+    }
+
+    return appInfoMap
+}
+
 
 fun Context.hasInternetPermission(): Boolean {
     val permission = Manifest.permission.INTERNET

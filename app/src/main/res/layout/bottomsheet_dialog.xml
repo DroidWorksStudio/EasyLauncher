@@ -29,7 +29,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:text="@string/bottom_dialog_app_rename"
-                android:textSize="@dimen/bottom_dialog_text_large"></androidx.appcompat.widget.AppCompatEditText>
+                android:textSize="@dimen/bottom_dialog_text_large" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/bottom_sheet_rename_done"
@@ -45,6 +45,7 @@
 
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/bottom_sheet1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -66,6 +67,7 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/bottom_sheet2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -88,6 +90,7 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/bottom_sheet3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -109,6 +112,7 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/bottom_sheet4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -130,6 +134,7 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/bottom_sheet5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -150,7 +155,7 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/bottom_sheet4"
+            android:id="@+id/bottom_sheet6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"

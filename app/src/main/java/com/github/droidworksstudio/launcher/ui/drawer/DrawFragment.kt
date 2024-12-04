@@ -6,9 +6,11 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
@@ -108,10 +110,28 @@ class DrawFragment : Fragment(),
 
     private fun setupRecyclerView() {
 
+        // Ensure correct type for layout params
+        val layoutParams = (binding.drawAdapter.layoutParams as? LinearLayout.LayoutParams)
+            ?: LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
+
+        // Set gravity to align RecyclerView to the bottom
+        layoutParams.gravity = when (preferenceHelper.homeAppAlignment) {
+            Gravity.START -> Gravity.START or Gravity.BOTTOM
+            Gravity.CENTER -> Gravity.CENTER or Gravity.BOTTOM
+            Gravity.END -> Gravity.END or Gravity.BOTTOM
+            else -> Gravity.BOTTOM
+        }
+
+        // Apply configurations to RecyclerView
         binding.drawAdapter.apply {
             adapter = drawAdapter
-            layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
+            this.layoutParams = layoutParams
             setHasFixedSize(false)
+            layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
+            isNestedScrollingEnabled = false
         }
     }
 
@@ -173,7 +193,8 @@ class DrawFragment : Fragment(),
     private fun observeSwipeTouchListener() {
         binding.apply {
             mainView.setOnTouchListener(getSwipeGestureListener(context))
-            drawAdapter.setOnTouchListener(getSwipeGestureListener(context))
+            touchArea.setOnTouchListener(getSwipeGestureListener(context))
+            appListTouchArea.setOnTouchListener(getSwipeGestureListener(context))
         }
     }
 
