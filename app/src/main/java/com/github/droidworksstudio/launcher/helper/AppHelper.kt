@@ -397,11 +397,17 @@ class AppHelper @Inject constructor() {
                 // Deserialize the JSON into a List<AppInfo>
                 val appInfoList: List<AppInfo> = gson.fromJson(jsonReader, type)
 
+                // Modify the list to reset IDs (ignore the original ID)
+                val resetAppInfoList = appInfoList.mapIndexed { index, appInfo ->
+                    appInfo.copy(id = index) // Assign a new sequential ID starting from 0
+                }
+
                 // Clear all apps first
                 resetDatabase(dao)
 
                 // Reinsert data into the database
-                dao.restoreAll(appInfoList) // Execute the method
+                Thread.sleep(500)
+                dao.restoreAll(resetAppInfoList) // Execute the method
             } ?: throw Exception("Failed to open input stream from URI")
 
         } catch (e: JsonSyntaxException) {
