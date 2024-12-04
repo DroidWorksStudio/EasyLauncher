@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- Fixed the build number. - ([e064e62](https://github.com/DroidWorksStudio/EasyLauncher/commit/e064e62f2c5fac7d47b83545ea6c5ff57acd6757))
 - Fixed the backup System. - ([9fd1aea](https://github.com/DroidWorksStudio/EasyLauncher/commit/9fd1aea9e233840430ffbff35158644d37f0fb60))
 - Fixed a few issues with app draw including icons as well as work profile stuff. - ([66065b7](https://github.com/DroidWorksStudio/EasyLauncher/commit/66065b76f8b5dc3673af349570287816ed057fb1))
 - First start with filter when filterStrength is set to 0 - ([ff7ecb1](https://github.com/DroidWorksStudio/EasyLauncher/commit/ff7ecb149186645d1990da863afee80b596428f0))
