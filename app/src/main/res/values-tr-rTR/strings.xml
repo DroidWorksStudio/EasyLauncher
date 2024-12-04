@@ -178,7 +178,7 @@
     <string name="acra_dont_send">Gönderme</string>
     <string name="acra_mail_body">Uygulamada bir çökme meydana geldi.\n\nAşağıda cihazın ayrıntıları bulunmaktadır. Hata günlüğü referansınız için bir dosya olarak eklenmiştir. Bu sorunu çözmede yardımınızı rica ederiz.\n\nCihaz Bilgileri: \n[LÜTFEN aşağıdaki bilgileri doldurun ve köşeli parantez içindekileri kaldırın, aksi takdirde bu bilgiler yok sayılır.]\n\n- Uygulama Sürümü: [11.11.11]\n- Android Sürümü: [Apple 1.16]\n- Cihaz Adı: [Android Apple Phone 69]\n- Kurulum Konumu: [Github, Fdroid, Obtanium, Tesla Uzay İstasyonu]\n\nBu konuya gösterdiğiniz hızlı ilgi için çok teşekkür ederiz.\n\nTeşekkür ederim.\n</string>
     <string name="admin_permission_message">mLauncher kilit ekranı iznini sorumlu bir şekilde kullanacağına söz verir. mLauncher herhangi bir veri toplamaz veya paylaşmaz.</string>
-    <string name="work_permission_message">You must use the Work Profile Manager to perform this action.</string>
+    <string name="work_permission_message">Bu işlemi gerçekleştirmek için İş Profili Yöneticisi\'ni kullanmanız gerekir.</string>
     <string-array name="alignment_options">
         <item>Sol</item>
         <item>Merkez</item>
