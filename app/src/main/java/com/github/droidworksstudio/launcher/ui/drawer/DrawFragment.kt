@@ -306,10 +306,18 @@ class DrawFragment : Fragment(),
                                 .toMutableList()
                         }
                     } else {
-                        // If filter strength is less than 1, normalize app names for both cases
-                        searchResults.filter { app ->
-                            FuzzyFinder.normalizeString(app.appName, trimmedQuery)
-                        }.toMutableList()
+                        if (preferenceHelper.searchFromStart) {
+                            // Filter apps that start with the search query and score higher than the filter strength
+                            searchResults.filter { app ->
+                                FuzzyFinder.normalizeString(app.appName, trimmedQuery) ||
+                                        app.appName.startsWith(trimmedQuery, ignoreCase = true)
+                            }.toMutableList()
+                        } else {
+                            // If filter strength is less than 1, normalize app names for both cases
+                            searchResults.filter { app ->
+                                FuzzyFinder.normalizeString(app.appName, trimmedQuery)
+                            }.toMutableList()
+                        }
                     }
 
 
