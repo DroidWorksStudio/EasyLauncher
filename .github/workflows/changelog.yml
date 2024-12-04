@@ -2,8 +2,6 @@ name: Update CHANGELOG.md
 
 on:
   push:
-    tags:
-      - "*"
     branches:
       - "main"
   workflow_dispatch:
