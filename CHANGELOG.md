@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## [Coming Soon](https://github.com/DroidWorksStudio/EasyLauncher/tree/HEAD)
 
+### Releases:
+
+- Prepare for version 0.3.3 - ([c82c05e](https://github.com/DroidWorksStudio/EasyLauncher/commit/c82c05e1c6b33f5936a442f0764482d4cd2d9221))
+
+## [0.3.2](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.3.2) - (04, December 2024)
+
 ### Implemented Enhancements:
 
 - Added the ability for restore to also run a clear list before restoring. - ([ac4456d](https://github.com/DroidWorksStudio/EasyLauncher/commit/ac4456dac42445d7cee3c51b549a7c4542268367))
@@ -20,6 +26,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Language Support:
 
+- Updated Language Files. ([#200](https://github.com/DroidWorksStudio/EasyLauncher/issues/200)) - ([f11822c](https://github.com/DroidWorksStudio/EasyLauncher/commit/f11822c11799e2dce98534fbf459a8f50bde4e5a))
 - Updated Language Files. ([#198](https://github.com/DroidWorksStudio/EasyLauncher/issues/198)) - ([a55fa68](https://github.com/DroidWorksStudio/EasyLauncher/commit/a55fa685cd57118bb1f5fe9f14e07cf7d26b6404))
 - Updated Language Files. ([#197](https://github.com/DroidWorksStudio/EasyLauncher/issues/197)) - ([fe7def6](https://github.com/DroidWorksStudio/EasyLauncher/commit/fe7def69fe195389cd50a3f2236334f7f57201e7))
 
