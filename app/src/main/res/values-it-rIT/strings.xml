@@ -178,6 +178,7 @@
     <string name="acra_dont_send">Non inviare</string>
     <string name="acra_mail_body">Si è verificato un crash nell\'applicazione.\n\nDi seguito sono riportati i dettagli del dispositivo. Il registro degli errori è stato allegato come file per riferimento. Apprezzeremmo il tuo aiuto nella risoluzione di questo problema.\n\nInformazioni sul dispositivo: \n[SI PREGA di compilare le informazioni sottostanti rimuovendo anche tutto ciò che è tra parentesi quadre o verranno ignorate.]\n\n- Versione app: [11.11.11]\n- Versione Android: [Apple 1.16]\n- Nome dispositivo: [Android Apple Phone 69]\n- Posizione di installazione: [Github, Fdroid, Obtanium, Tesla Space Station]\n\nLa tua tempestiva attenzione a questa questione è molto apprezzata.\n\nGrazie.\n</string>
     <string name="admin_permission_message">mLauncher promette di utilizzare l\'autorizzazione della schermata di blocco in modo responsabile. mLauncher non raccoglie né condivide alcun dato.</string>
+    <string name="work_permission_message">You must use the Work Profile Manager to perform this action.</string>
     <string-array name="alignment_options">
         <item>Sinistra</item>
         <item>Centro</item>
