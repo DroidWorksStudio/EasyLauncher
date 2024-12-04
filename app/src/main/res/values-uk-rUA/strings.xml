@@ -178,6 +178,7 @@
     <string name="acra_dont_send">Не надсилайте</string>
     <string name="acra_mail_body">У програмі стався збій.\n\nНижче наведено деталі пристрою. Журнал помилок долучено як файл для ознайомлення. Ми будемо вдячні за вашу допомогу у вирішенні цієї проблеми.\n\nІнформація про пристрій: \n[БУДЬ ЛАСКА, заповніть інформацію нижче, видаливши все, що знаходиться в квадратних дужках, інакше це буде проігноровано.]\n\n- Версія програми: [11.11.11]\n- Версія Android: [Apple 1.16]\n- Назва пристрою: [Android Apple Phone 69]\n- Місце встановлення: [Github, Fdroid, Obtanium, космічна станція Tesla]\n\nМи дуже вдячні за вашу швидку увагу до цього питання.\n\nДякую.\n</string>
     <string name="admin_permission_message">mLauncher обіцяє відповідально використовувати дозвіл блокування екрана. mLauncher не збирає та не передає жодних даних.</string>
+    <string name="work_permission_message">You must use the Work Profile Manager to perform this action.</string>
     <string-array name="alignment_options">
         <item>Ліворуч</item>
         <item>центр</item>
