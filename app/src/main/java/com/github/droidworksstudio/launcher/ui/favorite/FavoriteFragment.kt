@@ -39,6 +39,7 @@ import javax.inject.Inject
 class FavoriteFragment : Fragment(),
     OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.OnAppStateClickListener,
+    OnItemClickedListener.BottomSheetDismissListener,
     OnItemMoveListener.OnItemActionListener,
     BiometricHelper.Callback {
     private var _binding: FragmentFavoriteBinding? = null

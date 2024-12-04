@@ -47,8 +47,14 @@ class AppInfoBottomSheetFragment(private val appInfo: AppInfo) : BottomSheetDial
 
     private var appStateClickListener: OnItemClickedListener.OnAppStateClickListener? = null
 
+    private var dismissListener: OnItemClickedListener.BottomSheetDismissListener? = null
+
     fun setOnAppStateClickListener(listener: OnItemClickedListener.OnAppStateClickListener) {
         appStateClickListener = listener
+    }
+
+    fun setOnBottomSheetDismissedListener(listener: OnItemClickedListener.BottomSheetDismissListener) {
+        dismissListener = listener
     }
 
     override fun onCreateView(

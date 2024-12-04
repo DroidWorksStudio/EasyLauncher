@@ -12,6 +12,10 @@ class OnItemClickedListener {
         fun onAppLongClicked(appInfo: AppInfo) {}
     }
 
+    interface BottomSheetDismissListener {
+        fun onBottomSheetDismissed() {}
+    }
+
     interface OnAppStateClickListener {
         fun onAppStateClicked(appInfo: AppInfo) {}
     }

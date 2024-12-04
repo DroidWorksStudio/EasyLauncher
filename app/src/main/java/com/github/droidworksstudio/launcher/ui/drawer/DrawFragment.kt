@@ -55,6 +55,7 @@ import javax.inject.Inject
 class DrawFragment : Fragment(),
     OnItemClickedListener.OnAppsClickedListener,
     OnItemClickedListener.OnAppLongClickedListener,
+    OnItemClickedListener.BottomSheetDismissListener,
     OnItemClickedListener.OnAppStateClickListener,
     BiometricHelper.Callback, ScrollEventListener {
     private var _binding: FragmentDrawBinding? = null
@@ -377,7 +378,10 @@ class DrawFragment : Fragment(),
     }
 
     private fun showSelectedApp(appInfo: AppInfo) {
+        binding.searchViewText.setQuery("", false)
+
         val bottomSheetFragment = AppInfoBottomSheetFragment(appInfo)
+        bottomSheetFragment.setOnBottomSheetDismissedListener(this)
         bottomSheetFragment.setOnAppStateClickListener(this)
         bottomSheetFragment.show(parentFragmentManager, "BottomSheetDialog")
     }
