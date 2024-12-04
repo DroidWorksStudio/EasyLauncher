@@ -14,7 +14,7 @@ import com.github.droidworksstudio.launcher.utils.Constants
 class FontAdapter(
     context: Context,
     private val items: Array<Constants.Fonts>,
-    private val itemStrings: Array<String>
+    private val itemStrings: Array<String>,
 ) : ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, itemStrings) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
@@ -35,13 +35,13 @@ class FontAdapter(
             Constants.Fonts.Bitter -> ResourcesCompat.getFont(context, R.font.bitter)
             Constants.Fonts.Dotness -> ResourcesCompat.getFont(context, R.font.dotness)
             Constants.Fonts.DroidSans -> ResourcesCompat.getFont(context, R.font.open_sans)
-//            Constants.Fonts.GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
+            Constants.Fonts.GreatVibes -> ResourcesCompat.getFont(context, R.font.great_vibes)
             Constants.Fonts.Lato -> ResourcesCompat.getFont(context, R.font.lato)
-//            Constants.Fonts.Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
+            Constants.Fonts.Lobster -> ResourcesCompat.getFont(context, R.font.lobster)
             Constants.Fonts.Merriweather -> ResourcesCompat.getFont(context, R.font.merriweather)
             Constants.Fonts.Montserrat -> ResourcesCompat.getFont(context, R.font.montserrat)
             Constants.Fonts.OpenSans -> ResourcesCompat.getFont(context, R.font.open_sans)
-//            Constants.Fonts.Pacifico -> ResourcesCompat.getFont(context, R.font.pacifico)
+            Constants.Fonts.Pacifico -> ResourcesCompat.getFont(context, R.font.pacifico)
             Constants.Fonts.Quicksand -> ResourcesCompat.getFont(context, R.font.quicksand)
             Constants.Fonts.Raleway -> ResourcesCompat.getFont(context, R.font.raleway)
             Constants.Fonts.Roboto -> ResourcesCompat.getFont(context, R.font.roboto)

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Handler
 import android.os.Looper
+import kotlin.system.exitProcess
 
 object AppReloader {
     fun restartApp(context: Context) {
@@ -11,12 +12,13 @@ object AppReloader {
         val intent = packageManager.getLaunchIntentForPackage(context.packageName)
         val componentName = intent?.component
         val mainIntent = Intent.makeRestartActivityTask(componentName)
-        mainIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-        mainIntent.flags += Intent.FLAG_ACTIVITY_NEW_TASK
-        
-        // Delay the restart slightly to ensure all current activities are finished
+
+        // Schedule the restart
         Handler(Looper.getMainLooper()).postDelayed({
             context.startActivity(mainIntent)
+            // Kill the app process
+            android.os.Process.killProcess(android.os.Process.myPid())
+            exitProcess(0)
         }, 250)
     }
 }

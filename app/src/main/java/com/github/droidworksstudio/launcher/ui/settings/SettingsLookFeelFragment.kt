@@ -4,8 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -247,9 +245,7 @@ class SettingsLookFeelFragment : Fragment(),
             appHelper.triggerHapticFeedback(context, feedbackType)
 
             // Delay the restart slightly to ensure preferences are saved
-            Handler(Looper.getMainLooper()).postDelayed({
-                AppReloader.restartApp(context)
-            }, 500) // Delay in milliseconds (e.g., 500ms)
+            AppReloader.restartApp(context)
         }
 
         // Assign the created dialog to launcherFontDialog
