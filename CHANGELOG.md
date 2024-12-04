@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
+- First start with filter when filterStrength is set to 0 - ([ff7ecb1](https://github.com/DroidWorksStudio/EasyLauncher/commit/ff7ecb149186645d1990da863afee80b596428f0))
 - Fixed the search feature to only show items not hidden. - ([846ba48](https://github.com/DroidWorksStudio/EasyLauncher/commit/846ba486374b988c7f7f6cfd636f3aede8f24701))
 - Fixed a few errors with the backup system. - ([f6d6797](https://github.com/DroidWorksStudio/EasyLauncher/commit/f6d6797964e0dfcec261d8c611fed913bf63d0f4))
 - Fixed restart app after changing language. - ([198b230](https://github.com/DroidWorksStudio/EasyLauncher/commit/198b2308a5e5024d3c5295c234d867d3945bae85))
