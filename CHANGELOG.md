@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes:
 
-- Fixed the backup System. - ([d023d03](https://github.com/DroidWorksStudio/EasyLauncher/commit/d023d03428ba2ccb5b3ba637e7c8a794a7641f2c))
+- Fixed the backup System. - ([9fd1aea](https://github.com/DroidWorksStudio/EasyLauncher/commit/9fd1aea9e233840430ffbff35158644d37f0fb60))
 - Fixed a few issues with app draw including icons as well as work profile stuff. - ([66065b7](https://github.com/DroidWorksStudio/EasyLauncher/commit/66065b76f8b5dc3673af349570287816ed057fb1))
 - First start with filter when filterStrength is set to 0 - ([ff7ecb1](https://github.com/DroidWorksStudio/EasyLauncher/commit/ff7ecb149186645d1990da863afee80b596428f0))
 - Fixed the search feature to only show items not hidden. - ([846ba48](https://github.com/DroidWorksStudio/EasyLauncher/commit/846ba486374b988c7f7f6cfd636f3aede8f24701))
@@ -33,7 +33,6 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Releases:
 
-- Prepare for version 0.3.3 - ([c82c05e](https://github.com/DroidWorksStudio/EasyLauncher/commit/c82c05e1c6b33f5936a442f0764482d4cd2d9221))
 - Prepare for version 0.3.2 - ([8aebf00](https://github.com/DroidWorksStudio/EasyLauncher/commit/8aebf00cdf14026abc25793ba9f303fce09fe1c2))
 
 ## [0.3.1](https://github.com/DroidWorksStudio/EasyLauncher/tree/0.3.1) - (01, December 2024)
