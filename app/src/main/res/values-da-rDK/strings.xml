@@ -178,7 +178,7 @@
     <string name="acra_dont_send">Send Ikke</string>
     <string name="acra_mail_body">Der er sket et nedbrud i applikationen.\n\nNedenfor er detaljerne om enheden. Fejlloggen er vedhæftet som en fil til din reference. Vi vil sætte pris på din hjælp til at løse dette problem.\n\nEnhedsoplysninger: \n[Venligst udfyld oplysningerne nedenfor og fjern også alt mellem de firkantede parenteser, ellers vil dette blive ignoreret.]\n\n- Appversion: [11.11.11]\n- Android-version: [Apple 1.16]\n- Enhedsnavn: [Android Apple Phone 69]\n- Installationssted: [Github, Fdroid, Obtanium, Tesla Space Station]\n\nDin hurtige opmærksomhed på denne sag er meget værdsat.\n\nTak.\n</string>
     <string name="admin_permission_message">mLauncher lover at bruge låseskærmens tilladelse ansvarligt. mLauncher indsamler eller deler ingen data.</string>
-    <string name="work_permission_message">You must use the Work Profile Manager to perform this action.</string>
+    <string name="work_permission_message">Du skal bruge Work Profile Manager til at udføre denne handling.</string>
     <string-array name="alignment_options">
         <item>Venstre</item>
         <item>Midten</item>
