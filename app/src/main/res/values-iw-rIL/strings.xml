@@ -178,7 +178,7 @@
     <string name="acra_dont_send">אל תשלח</string>
     <string name="acra_mail_body">התרחשה קריסה באפליקציה.\n\nלהלן הפרטים של המכשיר. יומן השגיאות צורף כקובץ לעיונך. נשמח לעזרתך בפתרון בעיה זו.\n\nמידע על מכשיר: \n[נא למלא את המידע למטה ולהסיר כל דבר בין הסוגריים המרובעים או שזה יתעלם.]\n\n- גרסת אפליקציה: [11.11.11]\n- גרסת אנדרואיד: [Apple 1.16]\n- שם מכשיר: [Android Apple Phone 69]\n- מיקום התקנה: [Github, Fdroid, אובטניום, תחנת החלל טסלה]\n\nתשומת לבך המהירה לעניין זה מוערכת מאוד.\n\nתודה.\n</string>
     <string name="admin_permission_message">mLauncher מבטיח להשתמש בהרשאת מסך הנעילה באחריות. mLauncher אינו אוסף או משתף נתונים כלשהם.</string>
-    <string name="work_permission_message">You must use the Work Profile Manager to perform this action.</string>
+    <string name="work_permission_message">עליך להשתמש במנהל פרופילי העבודה כדי לבצע פעולה זו.</string>
     <string-array name="alignment_options">
         <item>שמאלה</item>
         <item>מֶרְכָּז</item>
