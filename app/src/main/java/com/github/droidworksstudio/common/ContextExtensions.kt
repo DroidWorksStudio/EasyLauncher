@@ -304,22 +304,16 @@ fun Context.launchClock() {
 
 fun Context.launchCalendar() {
     try {
-        val cal: Calendar = Calendar.getInstance()
-        cal.time = Date()
-        val time = cal.time.time
-        val builder: Uri.Builder = CalendarContract.CONTENT_URI.buildUpon()
-        builder.appendPath("time")
-        builder.appendPath(time.toString())
-        this.startActivity(Intent(Intent.ACTION_VIEW, builder.build()))
-    } catch (_: Exception) {
-        try {
-            val intent = Intent(this, LauncherActivity::class.java)
-            intent.addCategory(Intent.CATEGORY_APP_CALENDAR)
-            this.startActivity(intent)
+            // Fallback: Open the Calendar app using category
+            val fallbackIntent = Intent(Intent.ACTION_MAIN).apply {
+                addCategory(Intent.CATEGORY_APP_CALENDAR)
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            }
+            this.startActivity(fallbackIntent)
         } catch (e: Exception) {
-            Log.e("openCalendar", e.toString())
+            // Log any error if both methods fail
+            Log.e("openCalendar", "Failed to open Calendar: ${e.message}")
         }
-    }
 }
 
 fun Context.openBatteryManager() {
