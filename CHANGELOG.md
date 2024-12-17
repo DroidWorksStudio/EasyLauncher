@@ -12,6 +12,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Updated Language Files. ([#204](https://github.com/DroidWorksStudio/EasyLauncher/issues/204)) - ([da04643](https://github.com/DroidWorksStudio/EasyLauncher/commit/da04643837fba8c3fb70ec353fa2b26cec7e7411))
 
+### Reverts:
+
+- Revert "Update GitHub Action Versions" ([#211](https://github.com/DroidWorksStudio/EasyLauncher/issues/211)) - ([2caae93](https://github.com/DroidWorksStudio/EasyLauncher/commit/2caae930a96c15c0e9a682b14c7fb31760652246))
+
 ### Releases:
 
 - Prepare for version 0.3.3 - ([3911b14](https://github.com/DroidWorksStudio/EasyLauncher/commit/3911b1418dacada9539667b67ae3c3cfc60b9322))
