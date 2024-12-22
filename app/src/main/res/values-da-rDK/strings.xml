@@ -8,21 +8,21 @@
     <!-- Strings used for settings menus -->
     <string name="settings_name">Indstillinger for Launcher</string>
     <string name="settings_features_title">Funktioner</string>
-    <string name="settings_features_description">Forbedre din produktivitet.</string>
-    <string name="settings_look_feel_title">Se og føl</string>
+    <string name="settings_features_description">Forbedr din produktivitet.</string>
+    <string name="settings_look_feel_title">Udseende</string>
     <string name="settings_look_feel_description">Giv din startskærm et personligt præg.</string>
     <string name="settings_widgets_title">Widgets</string>
     <string name="settings_widgets_description">Giv din startskærm nogle widgets.</string>
-    <string name="settings_advanced_title">Fremskreden</string>
+    <string name="settings_advanced_title">Avanceret</string>
     <!-- Strings used for look And feel settings -->
-    <string name="look_feel_settings_title">Se og føl</string>
+    <string name="look_feel_settings_title">Udseende</string>
     <!-- Strings used for features settings -->
     <string name="features_settings_title">Funktioner</string>
     <!-- Strings used for advanced settings -->
-    <string name="advanced_settings_title">Avancerede indstillinger</string>
-    <string name="advanced_settings_app_info">App info</string>
+    <string name="advanced_settings_title">Avancerede Indstillinger</string>
+    <string name="advanced_settings_app_info">App-info</string>
     <string name="advanced_settings_app_info_description">%1$s</string>
-    <string name="advanced_settings_default">Skift standardstarter</string>
+    <string name="advanced_settings_default">Skift standardstartapp</string>
     <string name="advanced_settings_restart_title">Genstart Launcher</string>
     <string name="advanced_settings_restart_description">Har du prøvet at tænde og slukke for den?</string>
     <string name="advanced_settings_backup_restore_title">Sikkerhedskopiering/gendannelse</string>
