@@ -17,7 +17,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: set up JDK 17
-        uses: actions/setup-java@v4.5.0
+        uses: actions/setup-java@v4.6.0
         with:
           java-version: "17"
           distribution: "temurin"
@@ -42,14 +42,14 @@ jobs:
         run: ./gradlew clean && ./gradlew assembleWithInternetDebug && ./gradlew assembleWithoutInternetDebug
 
       - name: Upload Artifact - WithInternet
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: Signed app bundle - WithInternet
           path: app/build/outputs/apk/withInternet/debug/*.apk
           retention-days: 3
 
       - name: Upload Artifact - WithoutInternet
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: Signed app bundle - WithoutInternet
           path: app/build/outputs/apk/withoutInternet/debug/*.apk
