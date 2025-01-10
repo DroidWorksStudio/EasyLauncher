@@ -48,7 +48,7 @@ jobs:
           keyAlias: ${{ secrets.KEY_ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
-          buildToolsVersion: 33.0.0
+          buildToolsVersion: 35.0.0
 
       - name: Upload Artifact - WithInternet
         uses: actions/upload-artifact@v4.5.0
@@ -67,7 +67,7 @@ jobs:
           keyAlias: ${{ secrets.KEY_ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
-          buildToolsVersion: 33.0.0
+          buildToolsVersion: 35.0.0
 
       - name: Upload Artifact - WithoutInternet
         uses: actions/upload-artifact@v4.5.0
