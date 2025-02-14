@@ -9,13 +9,13 @@
     <string name="settings_name">הגדרות משגר</string>
     <string name="settings_features_title">תכונות</string>
     <string name="settings_features_description">שפר את הפרודוקטיביות שלך.</string>
-    <string name="settings_look_feel_title">נראות ותחושה</string>
+    <string name="settings_look_feel_title">מראה ותחושה</string>
     <string name="settings_look_feel_description">תן למסך הבית שלך מגע אישי.</string>
     <string name="settings_widgets_title">ווידג\'טים</string>
     <string name="settings_widgets_description">תן למסך הבית שלך כמה ווידג\'טים.</string>
     <string name="settings_advanced_title">מתקדם</string>
     <!-- Strings used for look And feel settings -->
-    <string name="look_feel_settings_title">נראות ותחושה</string>
+    <string name="look_feel_settings_title">מראה ותחושה</string>
     <!-- Strings used for features settings -->
     <string name="features_settings_title">תכונות</string>
     <!-- Strings used for advanced settings -->
@@ -26,7 +26,7 @@
     <string name="advanced_settings_restart_title">הפעל מחדש את משגר</string>
     <string name="advanced_settings_restart_description">האם ניסית להדליק ולכבות?</string>
     <string name="advanced_settings_backup_restore_title">גיבוי/שחזור</string>
-    <string name="advanced_settings_backup_restore_description">אנא היזהר במה אתה מייחל?</string>
+    <string name="advanced_settings_backup_restore_description">שמרת גיבוי לשחזור במקרה הצורך?</string>
     <string name="advanced_settings_backup_restore_backup_prefs">העדפות גיבוי</string>
     <string name="advanced_settings_backup_restore_restore_prefs">שחזר העדפות</string>
     <string name="advanced_settings_backup_restore_backup_apps">אפליקציות גיבוי</string>
