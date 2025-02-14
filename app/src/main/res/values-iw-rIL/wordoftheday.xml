@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="settings_appearance_daily_word_default">
-        <item>הישאר עמיד!</item>
+        <item>הישאר חזק!</item>
         <item>יש לך את זה!</item>
         <item>לזרוח בבהירות!</item>
         <item>צור גורל.</item>
-        <item>מסע חיבוק.</item>
+        <item>אמץ את המסע.</item>
         <item>כוח בפנים.</item>
         <item>תמשיך לדחוף!</item>
         <item>אתה מדהים!</item>
