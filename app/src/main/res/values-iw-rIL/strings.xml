@@ -9,13 +9,13 @@
     <string name="settings_name">הגדרות משגר</string>
     <string name="settings_features_title">תכונות</string>
     <string name="settings_features_description">שפר את הפרודוקטיביות שלך.</string>
-    <string name="settings_look_feel_title">תראה ותרגיש</string>
+    <string name="settings_look_feel_title">מראה ותחושה</string>
     <string name="settings_look_feel_description">תן למסך הבית שלך מגע אישי.</string>
     <string name="settings_widgets_title">ווידג\'טים</string>
     <string name="settings_widgets_description">תן למסך הבית שלך כמה ווידג\'טים.</string>
-    <string name="settings_advanced_title">מִתקַדֵם</string>
+    <string name="settings_advanced_title">מתקדם</string>
     <!-- Strings used for look And feel settings -->
-    <string name="look_feel_settings_title">תראה ותרגיש</string>
+    <string name="look_feel_settings_title">מראה ותחושה</string>
     <!-- Strings used for features settings -->
     <string name="features_settings_title">תכונות</string>
     <!-- Strings used for advanced settings -->
@@ -24,9 +24,9 @@
     <string name="advanced_settings_app_info_description">%1$s</string>
     <string name="advanced_settings_default">שנה את מפעיל ברירת המחדל</string>
     <string name="advanced_settings_restart_title">הפעל מחדש את משגר</string>
-    <string name="advanced_settings_restart_description">ניסית להדליק ולכבות?</string>
+    <string name="advanced_settings_restart_description">האם ניסית להדליק ולכבות?</string>
     <string name="advanced_settings_backup_restore_title">גיבוי/שחזור</string>
-    <string name="advanced_settings_backup_restore_description">אנא היזהר במה אתה מייחל?</string>
+    <string name="advanced_settings_backup_restore_description">שמרת גיבוי לשחזור במקרה הצורך?</string>
     <string name="advanced_settings_backup_restore_backup_prefs">העדפות גיבוי</string>
     <string name="advanced_settings_backup_restore_restore_prefs">שחזר העדפות</string>
     <string name="advanced_settings_backup_restore_backup_apps">אפליקציות גיבוי</string>
@@ -34,19 +34,19 @@
     <string name="advanced_settings_backup_restore_clear">נקה את כל הנתונים</string>
     <string name="advanced_settings_backup_restore_clear_title">נקה העדפות</string>
     <string name="advanced_settings_backup_restore_clear_description">האם אתה בטוח שאתה רוצה לעשות זאת?</string>
-    <string name="advanced_settings_backup_restore_clear_yes">כֵּן</string>
+    <string name="advanced_settings_backup_restore_clear_yes">כן</string>
     <string name="advanced_settings_backup_restore_clear_no">לֹא</string>
     <string name="advanced_settings_help_feedback_title">עזרה ומשוב</string>
-    <string name="advanced_settings_community_support_title">תמיכה בקהילה</string>
+    <string name="advanced_settings_community_support_title">תמיכה ע\"י הקהילה</string>
     <string name="advanced_settings_share_application_title">שתף אפליקציה</string>
     <string name="advanced_settings_share_application_description">שפר את החוויה שלך עם %1$s! קבל את זה עכשיו ב-fDroid וראה על מה כולם מדברים!\n</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="home_fragment_label">קטע בית</string>
+    <string name="home_fragment_label">מקטע בית</string>
     <string name="draw_fragment_label">צייר שבר</string>
-    <string name="favorite_fragment_label">קטע אהוב</string>
-    <string name="hidden_fragment_label">שבר מוסתר</string>
-    <string name="settings_fragment_label">קטע הגדרות</string>
-    <string name="widgets_fragment_label">קטע ווידג\'טים</string>
+    <string name="favorite_fragment_label">מקטע אהוב</string>
+    <string name="hidden_fragment_label">מקטע מוסתר</string>
+    <string name="settings_fragment_label">מקטע הגדרות</string>
+    <string name="widgets_fragment_label">מקטע ווידג\'טים</string>
     <!-- Strings used for fragments header labels -->
     <string name="favorite_fragment_name">אפליקציות מועדפות</string>
     <string name="hidden_fragment_name">אפליקציות נסתרות</string>
@@ -60,7 +60,7 @@
     <string name="bottom_dialog_add_to_hidden">אפליקציה מוסתרת</string>
     <string name="bottom_dialog_remove_to_hidden">הסר את האפליקציה הנסתרת</string>
     <string name="bottom_dialog_add_to_lock">נעילת יישומים</string>
-    <string name="bottom_dialog_remove_to_unlock">בטל את נעילת האפליקציה</string>
+    <string name="bottom_dialog_remove_to_unlock">ביטול נעילת האפליקציה</string>
     <string name="bottom_dialog_app_info">מידע על האפליקציה</string>
     <string name="bottom_dialog_app_uninstall">הסר את ההתקנה של האפליקציה</string>
     <string name="settings_widgets_name">הגדרות ווידג\'טים</string>
@@ -89,7 +89,7 @@
     <string name="settings_appearance_alignment_title">יישור</string>
     <string name="settings_appearance_padding_title">ריפוד</string>
     <string name="settings_appearance_wallpaper">טפט מותאם אישית</string>
-    <string name="appearance_bottom_dialog_text_color_title">צֶבַע</string>
+    <string name="appearance_bottom_dialog_text_color_title">צבע</string>
     <string name="appearance_bottom_dialog_alignment_title">יישור</string>
     <string name="appearance_bottom_dialog_desc_date">תאריך\u0020:\u0020</string>
     <string name="appearance_bottom_dialog_desc_time">זמן\u0020:\u0020 </string>
@@ -118,13 +118,13 @@
     <string name="settings_select_icons">בחר סוג סמל</string>
     <string name="settings_icons">סוג סמל</string>
     <string name="settings_icons_easy_dots">Easy Dots</string>
-    <string name="settings_icons_niagara_dots">ניאגרה נקודות</string>
+    <string name="settings_icons_niagara_dots">נקודות ניאגרה</string>
     <string name="settings_reload_app_backup">העדפות מגובות.</string>
     <string name="settings_reload_app_restore">ההעדפות שוחזרו. מופעל מחדש.</string>
-    <string name="settings_actions_open_app">אפליקציה פתוחה</string>
+    <string name="settings_actions_open_app">פתח אפליקציה</string>
     <string name="settings_actions_open_app_run">פתח את %s</string>
     <string name="settings_actions_lock_screen">מסך נעילה</string>
-    <string name="settings_actions_show_notifications">תראה התראות</string>
+    <string name="settings_actions_show_notifications">הצגת התראות</string>
     <string name="settings_actions_show_app_list">הצג רשימת אפליקציות</string>
     <string name="settings_actions_show_favorite_list">הצג רשימת מועדפים</string>
     <string name="settings_actions_show_hidden_list">הצג רשימה נסתרת</string>
@@ -135,19 +135,19 @@
     <string name="settings_actions_open_power_dialog">פתח את תיבת הכוח</string>
     <string name="settings_actions_take_a_screenshot">צלם מסך</string>
     <string name="settings_actions_open_digital_wellbeing">פתח רווחה דיגיטלית</string>
-    <string name="settings_actions_disabled">נָכֶה</string>
-    <string name="settings_units_metric">מֶטרִי</string>
-    <string name="settings_units_imperial">קֵיסָרִי</string>
-    <string name="settings_system">מַעֲרֶכֶת</string>
-    <string name="settings_ok">בְּסֵדֶר</string>
-    <string name="settings_cancel">לְבַטֵל</string>
+    <string name="settings_actions_disabled">מושבת</string>
+    <string name="settings_units_metric">שיטה מטרית</string>
+    <string name="settings_units_imperial">שיטה האימפריאלית</string>
+    <string name="settings_system">מערכת</string>
+    <string name="settings_ok">אישור</string>
+    <string name="settings_cancel">ביטול</string>
     <string name="authentication_title">אימות</string>
     <string name="authentication_subtitle">היכנס באמצעות האישורים הביומטריים שלך.</string>
     <string name="authentication_cancel">ביטול האימות</string>
     <string name="authentication_succeeded">האימות הצליח</string>
     <string name="authentication_failed">אימות נכשל</string>
     <string name="authentication_error">שגיאת אימות: %1$s(קוד %2$d)</string>
-    <string name="bottom_alignment_start">כּוֹכָב</string>
+    <string name="bottom_alignment_start">כוכב</string>
     <string name="bottom_alignment_center">מרכז</string>
     <string name="bottom_alignment_end">סוֹף</string>
     <string name="accessibility_settings_title">הגדרות נגישות</string>
@@ -166,13 +166,13 @@
     <string name="widgets_settings_show_weather">ווידג\'ט מזג אוויר</string>
     <string name="widgets_settings_show_weather_sun">הצג שקיעה &amp; זריחה</string>
     <string name="widgets_settings_show_battery">יישומון סוללה</string>
-    <string name="widgets_settings_display">לְהַצִיג</string>
+    <string name="widgets_settings_display">תצוגה</string>
     <string name="widgets_settings_select_order">בחר הזמנה</string>
-    <string name="widget_weather_feels_like">Feels Like : %s%</string>
-    <string name="widget_weather_wind">Wind : %1$.2f %2$s</string>
-    <string name="widget_weather_humidity">Humidity : %d %%</string>
-    <string name="widget_weather_pressure">Pressure : %d hPa</string>
-    <string name="acra_crash">לְהִתְרַסֵק</string>
+    <string name="widget_weather_feels_like">מרגיש כמו: %s%</string>
+    <string name="widget_weather_wind">רוח: %1$.2f %2$s</string>
+    <string name="widget_weather_humidity">לחות: %d%%</string>
+    <string name="widget_weather_pressure">לחץ: %d hPa</string>
+    <string name="acra_crash">קריסה</string>
     <string name="acra_dialog_text">אנו מצטערים, אבל %1$s נתקל בבעיה בלתי צפויה וצריך להיסגר. אנא עזור לנו להשתפר על ידי שליחת דוח קריסה.\n\n%1$s מעריכה את הפרטיות שלך והנתונים שנאספים משמשים אך ורק לשיפור יציבות האפליקציה. לא נאסף מידע אישי. תודה על תמיכתך!</string>
     <string name="acra_send_report">שלח דו\"ח</string>
     <string name="acra_dont_send">אל תשלח</string>
@@ -181,7 +181,7 @@
     <string name="work_permission_message">עליך להשתמש במנהל פרופילי העבודה כדי לבצע פעולה זו.</string>
     <string-array name="alignment_options">
         <item>שמאלה</item>
-        <item>מֶרְכָּז</item>
+        <item>מרכז</item>
         <item>ימין</item>
     </string-array>
 </resources>
