@@ -68,24 +68,26 @@ jobs:
         run: printf "%s" "${{ secrets.WEATHER_PROPERTIES }}" > $GITHUB_WORKSPACE/weather.properties
 
       - name: Build with Gradle
-        run: ./gradlew clean && ./gradlew bundleWithInternetNightlyRelease && ./gradlew bundleWithoutInternetNightlyRelease
+        run: ./gradlew clean && ./gradlew assembleWithInternetNightlyRelease && ./gradlew assembleWithoutInternetNightlyRelease
 
-      - name: Sign AAB - WithInternet
+      - name: Sign APK - WithInternet
         uses: ilharp/sign-android-release@v1.0.4
+        # ID used to access action output
         id: sign_app_withInternet
         with:
-          releaseDir: app/build/outputs/bundle/release/withInternetNightlyRelease.aab
+          releaseDir: app/build/outputs/apk/withInternetNightly/release
           signingKey: ${{ secrets.SIGNINGKEY_BASE64 }}
           keyAlias: ${{ secrets.KEY_ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
           buildToolsVersion: 35.0.0
 
-      - name: Sign AAB - WithoutInternet
+      - name: Sign APK - WithoutInternet
         uses: ilharp/sign-android-release@v1.0.4
+        # ID used to access action output
         id: sign_app_withoutInternet
         with:
-          releaseDir: app/build/outputs/bundle/release/withoutInternetNightlyRelease.aab
+          releaseDir: app/build/outputs/apk/withoutInternetNightly/release
           signingKey: ${{ secrets.SIGNINGKEY_BASE64 }}
           keyAlias: ${{ secrets.KEY_ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
@@ -102,8 +104,8 @@ jobs:
       - name: Rename files
         run: |
           mkdir -p ./build/release/
-          mv ${{steps.sign_app_withInternet.outputs.signedFile}} ./build/release/EasyLauncher-Internet-Nightly-Signed.aab
-          mv ${{steps.sign_app_withoutInternet.outputs.signedFile}} ./build/release/EasyLauncher-Nightly-Signed.aab
+          mv ${{steps.sign_app_withInternet.outputs.signedFile}} ./build/release/EasyLauncher-Internet-Nightly-Signed.apk
+          mv ${{steps.sign_app_withoutInternet.outputs.signedFile}} ./build/release/EasyLauncher-Nightly-Signed.apk
         shell: bash
 
       - name: Create and Upload Release
@@ -114,8 +116,8 @@ jobs:
           body: "![GitHub Downloads (total, specific tag)](https://img.shields.io/github/downloads/DroidWorksStudio/EasyLauncher/nightly/total)"
           append_body: false
           files: |
-            ./build/release/EasyLauncher-Internet-Nightly-Signed.aab
-            ./build/release/EasyLauncher-Nightly-Signed.aab
+            ./build/release/EasyLauncher-Internet-Nightly-Signed.apk
+            ./build/release/EasyLauncher-Nightly-Signed.apk
           prerelease: true
           generate_release_notes: true
         env:
