@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Strings used for basic parts of the launcher -->
-    <string name="favorite_apps">אפליקציות מועדפות</string>
-    <string name="hidden_apps">אפליקציות נסתרות</string>
+    <string name="favorite_apps">יישומים מועדפים</string>
+    <string name="hidden_apps">יישומים מוסתרים</string>
     <!-- Strings used for actions within the app -->
     <string name="action_settings">הגדרות</string>
     <!-- Strings used for settings menus -->
@@ -59,7 +59,7 @@
     <string name="bottom_dialog_remove_from_home">הסר מדף הבית</string>
     <string name="bottom_dialog_add_to_hidden">אפליקציה מוסתרת</string>
     <string name="bottom_dialog_remove_to_hidden">הסר את האפליקציה הנסתרת</string>
-    <string name="bottom_dialog_add_to_lock">נעילת יישומים</string>
+    <string name="bottom_dialog_add_to_lock">נעילת יישום</string>
     <string name="bottom_dialog_remove_to_unlock">ביטול נעילת האפליקציה</string>
     <string name="bottom_dialog_app_info">מידע על האפליקציה</string>
     <string name="bottom_dialog_app_uninstall">הסר את ההתקנה של האפליקציה</string>
