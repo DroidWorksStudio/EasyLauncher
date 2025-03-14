@@ -143,5 +143,5 @@ depends entirely on the support and generosity of its users to maintain its cont
 go a long way in helping us to keep EasyLauncher alive and thriving. We appreciate your continued support, and thank you for your contribution towards the betterment of our product. 😊
 
 <div align='center'>
-<a href="https://www.buymeacoffee.com/CreativeCodeCat"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=HeCodes2Much&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+<a href="https://www.buymeacoffee.com/CreativeCodeCat"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=CreativeCodeCat&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 </div>
