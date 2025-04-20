@@ -17,7 +17,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: set up JDK 17
-        uses: actions/setup-java@v4.7.0
+        uses: actions/setup-java@v4.7.1
         with:
           java-version: "17"
           distribution: "temurin"
@@ -42,7 +42,7 @@ jobs:
         run: ./gradlew clean && ./gradlew assembleWithInternetRelease && ./gradlew assembleWithoutInternetRelease
 
       - name: Sign APK - WithInternet
-        uses: ilharp/sign-android-release@v1.0.4
+        uses: ilharp/sign-android-release@v2.0.0
         # ID used to access action output
         id: sign_app_withInternet
         with:
@@ -63,7 +63,7 @@ jobs:
           overwrite: true
 
       - name: Sign APK - WithoutInternet
-        uses: ilharp/sign-android-release@v1.0.4
+        uses: ilharp/sign-android-release@v2.0.0
         # ID used to access action output
         id: sign_app_withoutInternet
         with:
