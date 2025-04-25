@@ -23,7 +23,7 @@
     <string name="advanced_settings_app_info">App-info</string>
     <string name="advanced_settings_app_info_description">%1$s</string>
     <string name="advanced_settings_default">Skift standardstartapp</string>
-    <string name="advanced_settings_restart_title">Genstart Launcher</string>
+    <string name="advanced_settings_restart_title">Genstart launcher</string>
     <string name="advanced_settings_restart_description">Har du prøvet at tænde og slukke for den?</string>
     <string name="advanced_settings_backup_restore_title">Sikkerhedskopiering/gendannelse</string>
     <string name="advanced_settings_backup_restore_description">Vær venligst forsigtig med hvad du ønsker dig?</string>
