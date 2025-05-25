@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_appearance_daily_word_default">
+        <item>كن مرنًا!</item>
+        <item>أنت قادر على هذا!</item>
+        <item>تألق!</item>
+        <item>اصنع قدرك.</item>
+        <item>احتضن رحلتك.</item>
+        <item>القوة بداخلك.</item>
+        <item>استمر بالدفع!</item>
+        <item>أنت رائع!</item>
+        <item>ثق، لا تتنازل.</item>
+        <item>إمكانات لا حدود لها.</item>
+        <item>التقدم أفضل من الكمال.</item>
+        <item>التحديات = نمو.</item>
+        <item>أنت تستحق النجاح.</item>
+        <item>طارد أحلامك.</item>
+        <item>تغلب على كل شيء!</item>
+        <item>العزيمة تفوز.</item>
+        <item>كل خطوة مهمة.</item>
+        <item>كن إيجابيًا!</item>
+        <item>المرونة رائعة.</item>
+        <item>القوة فيك.</item>
+        <item>احتفل بتقدمك.</item>
+        <item>العمل الجاد يؤتي ثماره.</item>
+        <item>ثق، آمن.</item>
+        <item>رحلة فريدة.</item>
+        <item>عينك على الهدف.</item>
+        <item>حقق أي شيء!</item>
+        <item>اتخذ خطوات جريئة.</item>
+        <item>الشغف يدفعك.</item>
+        <item>ركز على الأهداف.</item>
+        <item>ثابر، تنتصر.</item>
+        <item>الإيمان بالنفس هو المفتاح.</item>
+        <item>أنت تستحق الخير.</item>
+        <item>مد يدك لأحلامك.</item>
+        <item>شجاع، قوي، ذكي.</item>
+        <item>موقف إيجابي.</item>
+        <item>ثق بالرحلة.</item>
+        <item>عزيمة لا تتزعزع.</item>
+        <item>النكسات = عودة أقوى.</item>
+        <item>حول الأحلام حقيقة.</item>
+        <item>التزم بأهدافك.</item>
+        <item>قوة بلا حدود.</item>
+        <item>ارفع رأسك، واخترق.</item>
+        <item>إمكاناتك تتألق.</item>
+        <item>الأحلام في متناول اليد.</item>
+        <item>أنت لا تقهر!</item>
+        <item>آمن، حقق.</item>
+        <item>تجاوز الحدود.</item>
+        <item>المثابرة تؤتي ثمارها.</item>
+        <item>كن بلا خوف!</item>
+        <item>ارتقِ فوق التحديات.</item>
+        <item>استمر في الحلم الكبير.</item>
+        <item>عش بهدف.</item>
+        <item>ركز على الجيد.</item>
+        <item>القوة من الداخل.</item>
+        <item>آمن بالسحر.</item>
+        <item>ابتسم، أنت قادر.</item>
+        <item>لا تفقد الأمل أبدًا.</item>
+        <item>احتضن كل لحظة.</item>
+        <item>كن بطلك الخاص.</item>
+        <item>أنت كافٍ.</item>
+        <item>تغلب على مخاوفك.</item>
+        <item>اغتنم اليوم!</item>
+        <item>أحب نفسك أولاً.</item>
+        <item>كن إيجابيا، دائما.</item>
+        <item>أنت محارب.</item>
+        <item>آمن بنفسك.</item>
+        <item>احتضن الاحتمالات.</item>
+        <item>عش بشغف.</item>
+        <item>استمر في التقدم.</item>
+        <item>أنت لا تقهر!</item>
+        <item>كن صادقًا مع نفسك.</item>
+        <item>عش بجرأة.</item>
+        <item>حافظ على إيمانك.</item>
+        <item>القوة في الشدائد.</item>
+        <item>كل يوم، نمو.</item>
+        <item>مثابرة، انتصار.</item>
+        <item>طارد شغفك.</item>
+        <item>ابحث عن الفرح في رحلتك.</item>
+        <item>خاطر، تزدهر.</item>
+        <item>كن قويًا وشجاعًا.</item>
+        <item>ثق بحكمتك الداخلية.</item>
+        <item>استمر في التألق.</item>
+        <item>احلم، آمن، حقق.</item>
+        <item>كن لا تقهر.</item>
+        <item>امتلك عظمتك.</item>
+        <item>احتضن المجهول.</item>
+        <item>استمر في المضي قدمًا.</item>
+        <item>ثق بنفسك.</item>
+        <item>انشر اللطف دائمًا.</item>
+        <item>آمن بأحلامك.</item>
+        <item>كن مركزًا ومصممًا.</item>
+        <item>احتضن رحلتك.</item>
+        <item>ارفع رأسك.</item>
+        <item>لا تستسلم للأمل أبدًا.</item>
+        <item>القوة من الداخل.</item>
+        <item>كن مرنًا وقويًا.</item>
+        <item>أنت لا تقهر!</item>
+        <item>احتضن التحدي.</item>
+        <item>أبقِ الشعلة مشتعلة.</item>
+        <item>ركز على ما هو ممكن.</item>
+        <item>احلم كبيرًا، اعمل بجد.</item>
+        <item>أبقِ عينيك على الهدف.</item>
+        <item>ثق بالعملية.</item>
+        <item>كن صادقًا مع نفسك.</item>
+        <item>آمن، حقق، انجح.</item>
+        <item>كن ملهمًا دائمًا.</item>
+        <item>كن بلا خوف في سعيك.</item>
+        <item>كن راسخًا، ارتقِ.</item>
+        <item>جد القوة في الصراع.</item>
+        <item>احتضن كل تحد.</item>
+        <item>كن جريئًا، كن لامعًا.</item>
+        <item>أنت قادر على العظمة.</item>
+        <item>ثق برحلتك.</item>
+        <item>استمر في القتال، استمر في الارتقاء.</item>
+        <item>آمن بالمستحيل.</item>
+        <item>كن مرنًا، لا تستسلم أبدًا.</item>
+        <item>أنت أقوى مما تتخيل.</item>
+        <item>عش بشغف وهدف.</item>
+        <item>ابحث عن الفرح في كل رحلة.</item>
+        <item>احلم، آمن، حقق!</item>
+        <item>كن إيجابيا، كن قويا.</item>
+        <item>كل يوم فرصة جديدة.</item>
+        <item>اغتنم كل فرصة.</item>
+        <item>استمر في تجاوز الحدود.</item>
+        <item>ثق بقوتك الداخلية.</item>
+        <item>أنت مقدر للعظمة.</item>
+        <item>آمن بأحلامك!</item>
+        <item>كن مصممًا، انجح.</item>
+        <item>استمر في التحرك نحو أهدافك.</item>
+        <item>طارد أحلامك بلا كلل.</item>
+        <item>القوة تأتي من الداخل.</item>
+        <item>ابقَ مركزًا على أهدافك.</item>
+        <item>أنت قادر على أي شيء.</item>
+        <item>كن بلا خوف، كن قويا.</item>
+        <item>آمن، حقق، انجح!</item>
+        <item>ثق برحلتك.</item>
+        <item>كن مرنًا، ارتقِ فوق كل شيء.</item>
+        <item>لديك القوة بداخلك.</item>
+        <item>احلم كبيرًا، اعمل بجد، حقق.</item>
+        <item>ابقَ مركزًا، كن قويًا.</item>
+        <item>أنت أقوى مما تتخيل!</item>
+        <item>آمن بنفسك، دائما.</item>
+        <item>كن مصممًا، كن قويًا.</item>
+        <item>اغتنم كل فرصة.</item>
+        <item>أنت قادر على العظمة!</item>
+        <item>كن صادقًا مع نفسك.</item>
+        <item>ثق برحلتك.</item>
+        <item>استمر في المضي قدمًا.</item>
+        <item>احلم، آمن، حقق!</item>
+    </string-array>
+</resources>
