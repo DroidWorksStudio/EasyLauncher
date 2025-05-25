@@ -1,48 +1,48 @@
-<b>Features:</b>
+<b>الميزات:</b>
 
-- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
-- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
-- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
-- Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
-- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
-- Crash Reports: Report crashes via email, including log files for effective troubleshooting.
+- الوصول السريع للتطبيقات المفضلة: اعرض تطبيقاتك الأكثر استخدامًا على الشاشة الرئيسية بتنسيق نصي للوصول السريع، مما يبسط عملياتك.
+- إخفاء التطبيقات: قم بإخفاء التطبيقات التي لا ترغب في ظهورها بسهولة، مما يحافظ على شاشتك الرئيسية نظيفة ومركزة على المحتوى الأساسي.
+- إعادة تسمية التطبيقات: خصص تطبيقاتك بأسماء فريدة تتزامن بسلاسة بين التطبيقات المفضلة وجميع التطبيقات.
+- القفل: قم بتأمين خصوصيتك وبياناتك باستخدام قفل بصمة الإصبع للتطبيقات والإعدادات المحددة.
+- لا توجد أذونات إنترنت: لا يستخدم التطبيق أي أذونات إنترنت، مما يضمن بقاء بياناتك خاصة.
+- تقارير الأعطال: أرسل تقارير الأعطال عبر البريد الإلكتروني، بما في ذلك ملفات السجل لاستكشاف الأخطاء وإصلاحها بفعالية.
 
-<b>Personalized Customization:</b>
+<b>التخصيص الشخصي:</b>
 
-- Font Colors: Customize font colors using our color picker.
-- Position: Align Date, Time, and Apps to Left, Center, or Right.
-- Padding: Adjust padding between favorite apps and all apps.
-- Font Size: Set font size for each element on the home screen.
-- Toggle Items: Control display preferences on the home screen.
+- ألوان الخطوط: خصص ألوان الخطوط باستخدام أداة اختيار الألوان الخاصة بنا.
+- الموضع: قم بمحاذاة التاريخ والوقت والتطبيقات إلى اليسار أو الوسط أو اليمين.
+- المسافة البادئة: اضبط المسافة البادئة بين التطبيقات المفضلة وجميع التطبيقات.
+- حجم الخط: اضبط حجم الخط لكل عنصر على الشاشة الرئيسية.
+- تبديل العناصر: تحكم في تفضيلات العرض على الشاشة الرئيسية.
 
-<b>Possible Gestures Include:</b>
+<b>الإيماءات الممكنة تشمل:</b>
 
-- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
-- Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
-- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
-- Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
-- Battery Icon: Tap on the battery icon to access battery usage details.
+- إيماءات السحب: تنقل عن طريق السحب في اتجاهات مختلفة (أعلى، أسفل، يسار، يمين) للوصول إلى ميزات متنوعة أو الانتقال بين الشاشات.
+- النقر المزدوج: انقر بسرعة على الشاشة مرتين لتنفيذ إجراء محدد مسبقًا أو تنشيط ميزة.
+- التفاعل مع الساعة: انقر على الساعة لعرض معلومات إضافية مثل المنبهات أو الساعة العالمية.
+- التفاعل مع التاريخ: انقر على التاريخ لفتح تطبيق التقويم للجدولة والتخطيط.
+- أيقونة البطارية: انقر على أيقونة البطارية للوصول إلى تفاصيل استخدام البطارية.
 
-<b>Possible Actions Include:</b>
+<b>الإجراءات الممكنة تشمل:</b>
 
-- Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
-- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
-- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
-- Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
-- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
-- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
-- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
-- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
-- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
+- فتح تطبيق محدد: قم بتشغيل أي تطبيق تختاره على الفور للوصول السلس إلى مفضلاتك.
+- عرض قائمة التطبيقات: اعرض وادِر تطبيقاتك المثبتة بكفاءة من خلال عرض قائمة شاملة.
+- قفل الشاشة: قم بتأمين جهازك وحماية خصوصيتك بقفل شاشة سريع ومريح.
+- إظهار التطبيقات المفتوحة مؤخرًا: الوصول إلى التطبيقات المستخدمة مؤخرًا بسهولة لتعدد المهام السريع.
+- الوصول إلى درج الإشعارات: افتح درج الإشعارات بنقرة واحدة للتحقق من التحديثات والتنبيهات.
+- الإعدادات السريعة: أدر إعدادات الجهاز بسرعة عن طريق الوصول إلى الإعدادات السريعة مباشرة من الشاشة الرئيسية.
+- مربع حوار الطاقة: تحكم في خيارات الطاقة مثل إعادة التشغيل وإيقاف التشغيل والمزيد بسهولة باستخدام مربع حوار الطاقة.
+- التقاط لقطة شاشة: التقط شاشتك على الفور لحفظ ومشاركة المعلومات واللحظات المهمة.
+- تعطيل الإيماءات: قم بتعطيل إيماءات محددة مؤقتًا أو دائمًا لتخصيص تجربة التفاعل مع جهازك.
 
-<b>Permissions:</b>
+<b>الأذونات:</b>
 
-- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
-- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
-- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
-- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
-- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
-- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
-- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+- android.permission.SET_WALLPAPER: هذا الإذن مطلوب للتطبيق لتغيير أو تعيين خلفية الجهاز. يسمح للتطبيق بتعديل الخلفية المعروضة على الشاشة الرئيسية أو شاشة القفل برمجيًا.
+- android.permission.EXPAND_STATUS_BAR: يسمح هذا الإذن للتطبيق بتوسيع أو طي شريط الحالة، مما يوفر وظائف للتفاعل مع الإعدادات السريعة أو الإشعارات.
+- android.permission.USE_BIOMETRIC: هذا الإذن مطلوب للتطبيق لاستخدام طرق المصادقة البيومترية (مثل بصمة الإصبع أو التعرف على الوجه أو مسح القزحية).
+- android.permission.VIBRATE: يسمح هذا الإذن للتطبيق بالتحكم في اهتزاز الجهاز لتقديم ردود فعل لمسية (haptic feedback)، والتي يمكن استخدامها للتنبيهات أو الإشعارات أو التفاعلات المخصصة للمستخدم داخل التطبيق.
+- android.permission.QUERY_ALL_PACKAGES: يسمح هذا الإذن للتطبيق بالاستعلام وعرض قائمة بجميع التطبيقات المثبتة على الجهاز. يمكن أن يثير هذا الإذن مخاوف تتعلق بالخصوصية ويتم مراجعته غالبًا من قبل Google Play للاستخدام المناسب.
+- android.permission.REQUEST_DELETE_PACKAGES: يسمح هذا الإذن للتطبيق بطلب إلغاء تثبيت الحزم (التطبيقات) من الجهاز.
+- com.android.alarm.permission.SET_ALARM: هذا الإذن ضروري للتطبيق لضبط المنبهات على الجهاز. يسمح للتطبيق بجدولة المنبهات التي سيتم تشغيلها في أوقات محددة، ويستخدم عادة بواسطة تطبيقات الساعة أو التذكير أو المهام.
 
-For more details visit the <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> page.
+لمزيد من التفاصيل، يرجى زيارة صفحة <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a>.
