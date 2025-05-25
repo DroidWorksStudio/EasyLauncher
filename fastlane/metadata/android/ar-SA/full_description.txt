@@ -1,0 +1,48 @@
+<b>Features:</b>
+
+- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations.
+- Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content.
+- Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps.
+- Locking: Secure your privacy and data with fingerprint lock for selected apps and settings.
+- No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.
+- Crash Reports: Report crashes via email, including log files for effective troubleshooting.
+
+<b>Personalized Customization:</b>
+
+- Font Colors: Customize font colors using our color picker.
+- Position: Align Date, Time, and Apps to Left, Center, or Right.
+- Padding: Adjust padding between favorite apps and all apps.
+- Font Size: Set font size for each element on the home screen.
+- Toggle Items: Control display preferences on the home screen.
+
+<b>Possible Gestures Include:</b>
+
+- Swiping Gestures: Navigate by swiping in different directions (up, down, left, right) to access various features or move between screens.
+- Double Tap: Quickly tap the screen twice to perform a predefined action or activate a feature.
+- Clock Interaction: Tap on the clock to display additional information such as alarms or world clock.
+- Date Interaction: Tap on the date to open the calendar app for scheduling and planning.
+- Battery Icon: Tap on the battery icon to access battery usage details.
+
+<b>Possible Actions Include:</b>
+
+- Open Specified App: Instantly launch any app you choose for seamless access to your favorites.
+- Display App List: View and manage your installed apps efficiently with a comprehensive list display.
+- Screen Locking: Secure your device and protect your privacy with quick and convenient screen locking.
+- Show Recently Opened Apps: Access recently used apps effortlessly for swift multitasking.
+- Notification Drawer Access: Open the notification drawer with a single tap to check updates and alerts.
+- Quick Settings: Manage device settings swiftly by accessing quick settings directly from the home screen.
+- Power Dialog: Control power options such as restart, power off, and more with ease using the power dialog.
+- Take a Screenshot: Capture your screen instantly to save and share important information and moments.
+- Disable Gestures: Temporarily or permanently disable specific gestures to customize your device interaction experience.
+
+<b>Permissions:</b>
+
+- android.permission.SET_WALLPAPER: This permission is needed for the app to change or set the device's wallpaper. It allows the app to programmatically modify the wallpaper displayed on the home or lock screen.
+- android.permission.EXPAND_STATUS_BAR: This permission allows the app to expand or collapse the status bar, providing functionality to interact with the quick settings or notifications.
+- android.permission.USE_BIOMETRIC: This permission is needed for the app to use biometric authentication methods (such as fingerprint, face recognition, or iris scanning).
+- android.permission.VIBRATE: This permission allows the app to control the device’s vibrator to provide haptic feedback, which can be used for alerts, notifications, or custom user interactions within the app.
+- android.permission.QUERY_ALL_PACKAGES: This permission allows the app to query and view the list of all installed apps on the device. This permission can raise privacy concerns and is often reviewed by Google Play for appropriate use.
+- android.permission.REQUEST_DELETE_PACKAGES: This permission allows the app to request the uninstallation of packages (apps) from the device.This permission is highly restricted and usually only granted to system-level or enterprise apps.
+- com.android.alarm.permission.SET_ALARM: This permission is necessary for an app to set alarms on the device. It allows the app to schedule alarms that will trigger at specific times, commonly used by clock, reminder, or task apps.
+
+For more details visit the <a href="https://github.com/DroidWorksStudio/EasyLauncher/blob/main/README.md">Github</a> page.
