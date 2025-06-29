@@ -54,7 +54,7 @@ jobs:
           buildToolsVersion: 35.0.0
 
       - name: Release to GitHub - WithInternet
-        uses: svenstaro/upload-release-action@2.9.0
+        uses: svenstaro/upload-release-action@2.10.0
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{steps.sign_app_withInternet.outputs.signedFile}}
@@ -75,7 +75,7 @@ jobs:
           buildToolsVersion: 35.0.0
 
       - name: Release to GitHub  - WithoutInternet
-        uses: svenstaro/upload-release-action@2.9.0
+        uses: svenstaro/upload-release-action@2.10.0
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{steps.sign_app_withoutInternet.outputs.signedFile}}
